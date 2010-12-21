@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="welcome_screen">
+
+        <textarea name="heading" from="base_heading">
+            <value>Welcome to MythTV</value>
+        </textarea>
+
+        <shape name="welcome-backdrop" from="base_backdrop">
+            <area>20,36,1240,648</area>
+        </shape>
+
+        <shape name="welcome-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="welcome-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1234,34</area>
+        </shape>
+
+        <!--
+            current myth status
+        -->
+        <textarea name="status_text" from="basetextarea">
+            <area>40,56,1200,60</area>
+            <multiline>yes</multiline>
+            <font>baselarge</font>
+            <align>allcenter</align>
+            <value>MythTV is idle and will shutdown shortly.</value>
+        </textarea>
+
+        <shape name="welcome-status-line">
+            <area>40,130,1200,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <!--
+            current recordings status
+        -->
+        <textarea name="recording_label" from="basetextarea">
+            <area>40,140,1200,30</area>
+            <font>baselargeyellow</font>
+            <align>allcenter</align>
+            <value>Current Recording(s)</value>
+        </textarea>
+
+        <textarea name="recording_text" from="status_text">
+            <area>40,174,1200,170</area>
+            <align>hcenter,bottom</align>
+            <value>Retrieving Recording Status ...</value>
+        </textarea>
+
+        <shape name="welcome-recording-status-line">
+            <area>40,352,1200,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <!--
+            next scheduled recording status
+        -->
+        <textarea name="scheduled_label" from="recording_label">
+            <area>40,364,1200,30</area>
+            <value>Next Scheduled Recording(s)</value>
+        </textarea>
+
+        <textarea name="scheduled_text" from="recording_text">
+            <area>40,420,1200,136</area>
+            <value>Retrieving Scheduled Recordings ...</value>
+        </textarea>
+
+        <shape name="welcome-scheduled-recording-status-line">
+            <area>40,566,1200,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <!--
+            scheduled recordings conflict warning
+        -->
+        <textarea name="conflicts_text" from="basetextarea">
+            <area>32,588,1216,30</area>
+            <font>baselargered</font>
+            <align>allcenter</align>
+            <value>WARNING: There are conflicting scheduled recordings!</value>
+        </textarea>
+
+        <!--
+            start frontend button
+        -->
+        <button name="startfrontend_button" from="base_medium_button">
+            <position>465,632</position>
+            <value>Start Frontend</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

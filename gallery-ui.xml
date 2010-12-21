@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="gallery">
+
+        <textarea name="heading" from="base_heading">
+            <value>Image Gallery</value>
+        </textarea>
+
+        <shape name="image-gallery-backdrop">
+            <area>-4,36,1288,451</area>
+            <type>box</type>
+            <fill color="#000000" alpha="130" />
+            <line color="#666666" alpha="170" width="2" />
+        </shape>
+
+        <shape name="image-gallery-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>-16,39,1312,34</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>-16,450,1312,34</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-line">
+            <area>45,602,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <buttonlist name="images">
+            <area>35,66,1220,400</area>
+            <layout>grid</layout>
+            <spacing>8</spacing>
+            <buttonarea>0,0,1220,400</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,166,125</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,166,125</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <filename>images/image_gallery_no_image.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>56,10,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>56,10,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>60,73,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>-25,-18,240,180</area>
+                    <shape name="buttonbackground">
+                        <area>-12,-9,240,180</area>
+                        <type>roundbox</type>
+                        <fill color="#101017" alpha="255" />
+                        <line color="#666666" alpha="255" width="6" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>0,0,216,162</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <mask>images/masks/image_gallery_selector_mask.png</mask>
+                        <filename>images/image_gallery_no_image.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>82,38,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>82,38,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>88,106,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1146,422</position>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1176,422</position>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="noimages" from="basetextarea">
+            <area>20,36,1240,451</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="title" from="basetextarea">
+            <area>30,566,1220,35</area>
+            <font>basemediumyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="help1">
+            <area>0,608,1280,30</area>
+            <font>menu</font>
+            <align>allcenter</align>
+            <value>Press Select: To View Full Screen.</value>
+        </textarea>
+
+        <textarea name="help2">
+            <area>0,640,1280,30</area>
+            <font>menu</font>
+            <align>allcenter</align>
+            <value>Press Menu:  To Activate Gallery Options Menu.</value>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

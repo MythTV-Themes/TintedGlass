@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="browser">
+
+        <textarea name="heading" from="base_heading">
+            <value>Myth Web Browser</value>
+        </textarea>
+
+        <shape name="browser_page_list_backdrop" from="base_backdrop">
+            <area>20,36,1240,53</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="browser-page-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>25,39,1230,34</area>
+        </shape>
+
+        <shape name="web_browser_backdrop" from="base_backdrop">
+            <area>20,101,1240,552</area>
+            <cornerradius>10</cornerradius>
+        </shape>
+
+        <shape name="web-browser-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>22,104,1236,34</area>
+            <cornerradius>10</cornerradius>
+        </shape>
+
+        <shape name="web-browser-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>22,616,1236,34</area>
+            <cornerradius>10</cornerradius>
+        </shape>
+
+        <buttonlist name="pagelist" from="base_selector">
+            <area>30,43,400,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,400,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,370,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,400,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,370,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>405,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>405,21</position>
+            </statetype>
+        </buttonlist>
+
+        <webbrowser name="webbrowser">
+            <area>30,120,1220,514</area>
+            <zoom>1.4</zoom>
+        </webbrowser>
+
+        <!-- these are optional -->
+        <progressbar name="progressbar" from="baseprogressbar">
+            <position>24,672</position>
+            <imagetype name="background">
+                <area>0,0,1232,10</area>
+                <filename>images/progressbar/progressbar_background2.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,1232,10</area>
+                <filename>images/progressbar/progressbar_fill2.png</filename>
+            </imagetype>
+        </progressbar>
+
+        <textarea name="status" from="basetextarea">
+            <area>460,44,790,38</area>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+        </textarea>
+
+    </window>
+
+    <window name="bookmarkmanager">
+
+        <textarea name="heading" from="base_heading">
+            <value>Web Bookmarks</value>
+        </textarea>
+
+        <shape name="groupbox" from="base_group_box">
+            <area>-4,36,1288,30</area>
+        </shape>
+
+        <shape name="browser-left-list-backdrop" from="base_backdrop">
+            <area>20,78,1240,606</area>
+        </shape>
+
+        <shape name="browser-left-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,81,1234,34</area>
+        </shape>
+
+        <shape name="browser-left-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1234,34</area>
+        </shape>
+
+        <buttonlist name="grouplist">
+            <area>0,35,1280,30</area>
+            <spacing>0</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1280,30</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,255,53</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallerlightgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>8,0,400,83</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                        <alphapulse min="127" max="255" change="2"/>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="namelabel" from="basetextarea">
+            <font>basesmallyellow</font>
+            <area>20,83,520,24</area>
+            <align>allcenter</align>
+            <value>Website Name</value>
+        </textarea>
+
+        <textarea name="urllabel" from="basetextarea">
+            <font>basesmallyellow</font>
+            <area>600,83,710,24</area>
+            <align>allcenter</align>
+            <value>Website URL</value>
+        </textarea>
+
+        <buttonlist name="bookmarklist" from="base_list">
+            <area>22,109,1236,548</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <statetype name="buttoncheck">
+                        <position>18,7</position>
+                    </statetype>
+                    <textarea name="name" from="base_text_font_state_small">
+                        <area>52,4,558,24</area>
+                    </textarea>
+                    <textarea name="url" from="name">
+                        <area>630,4,588,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,34</area>
+                    <statetype name="buttoncheck">
+                        <position>18,7</position>
+                    </statetype>
+                    <textarea name="name" from="base_text_font_state_small">
+                        <area>52,4,558,24</area>
+                    </textarea>
+                    <textarea name="url" from="name">
+                        <area>630,4,588,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1194,-25</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1194,552</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="messagetext" from="basetextarea">
+            <font>basemedium</font>
+            <area>40,230,720,290</area>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+    <window name="browserconfig">
+
+        <textarea name="heading" from="base_heading">
+            <value>Configure Web Browser</value>
+        </textarea>
+
+        <shape name="configure-web-browser-top-backdrop" from="base_backdrop">
+            <area>215,36,850,489</area>
+        </shape>
+
+        <shape name="configure-web-browser-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>218,39,844,34</area>
+        </shape>
+
+        <shape name="configure-web-browser-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>218,488,844,34</area>
+        </shape>
+
+        <shape name="configure-web-browser-bottom-backdrop" from="base_backdrop">
+            <area>20,537,1240,147</area>
+        </shape>
+
+        <shape name="configure-web-browser-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,540,1234,34</area>
+        </shape>
+
+        <shape name="configure-web-browser-bottom-line">
+            <area>45,624,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="commandlabel" from="basetextarea">
+            <area>240,138,210,30</area>
+            <align>right,vcenter</align>
+            <value>Browser Command:</value>
+        </textarea>
+
+        <textedit name="command" from="base_wide_textedit">
+            <position>460,138</position>
+        </textedit>
+
+        <textarea name="zoomlabel" from="basetextarea">
+            <area>240,260,210,30</area>
+            <align>right,vcenter</align>
+            <value>Text Size:</value>
+        </textarea>
+
+        <textedit name="zoom" from="base_wide_textedit">
+            <position>460,260</position>
+        </textedit>
+
+        <textarea name="pluginlabel" from="basetextarea">
+            <area>240,382,210,30</area>
+            <align>right,vcenter</align>
+            <value>Enable Plugins:</value>
+        </textarea>
+
+        <checkbox name="enablepluginscheck" from="basecheckbox">
+            <position>460,382</position>
+        </checkbox>
+
+        <textarea name="description" from="basetextarea">
+            <area>40,543,1200,81</area>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="cancel" from="base_medium_button">
+            <position>193,634</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_medium_button">
+            <position>737,634</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="bookmarkeditor">
+
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="bookmark-editor-backdrop" from="base_popup_backdrop">
+            <area>232,102,816,516</area>
+        </shape>
+
+        <shape name="bookmark-editor-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>235,105,810,34</area>
+        </shape>
+
+        <shape name="bookmark-editor-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>235,581,810,34</area>
+        </shape>
+
+        <shape name="bookmark-editor-highlight">
+            <area>242,112,796,394</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="15" />
+            <line color="#FFFFFF" alpha="45" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="bookmark-editor-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>245,115,790,34</area>
+        </shape>
+
+        <shape name="bookmark-editor-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>245,469,790,34</area>
+        </shape>
+
+        <shape name="bookmark-editor-title-line">
+            <area>252,147,776,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="title">
+            <area>252,120,776,24</area>
+            <align>center</align>
+            <font>basesmallyellow</font>
+            <value>Configure Web Browser</value>
+        </textarea>
+
+        <textarea name="categorylabel" from="basetextarea">
+            <area>310,210,104,30</area>
+            <align>right,vcenter</align>
+            <value>Category:</value>
+        </textarea>
+
+        <textedit name="category" from="base_textedit">
+            <position>424,210</position>
+        </textedit>
+
+        <button name="findcategory" from="base_button">
+            <position>818,209</position>
+            <value>Find</value>
+        </button>
+
+        <textarea name="namelabel" from="basetextarea">
+            <area>282,310,100,30</area>
+            <align>right,vcenter</align>
+            <value>Name:</value>
+        </textarea>
+
+        <textedit name="name" from="base_wide_textedit">
+            <position>392,310</position>
+        </textedit>
+
+        <textarea name="urllabel" from="basetextarea">
+            <area>282,410,100,30</area>
+            <align>right,vcenter</align>
+            <value>URL:</value>
+        </textarea>
+
+        <textedit name="url" from="base_wide_textedit">
+            <position>392,410</position>
+        </textedit>
+
+        <button name="cancel" from="base_medium_button">
+            <position>270,542</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_medium_button">
+            <position>659,542</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "../mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="status">
+
+        <textarea name="heading" from="base_heading">
+            <value>System Status</value>
+        </textarea>
+
+        <shape name="groupbox" from="base_group_box">
+            <area>-4,36,1288,30</area>
+        </shape>
+
+        <shape name="status-backdrop" from="base_backdrop">
+            <area>20,78,1240,360</area>
+        </shape>
+
+        <shape name="status-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,81,1234,34</area>
+        </shape>
+
+        <shape name="status-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,402,1234,34</area>
+        </shape>
+
+        <shape name="status-bottom-backdrop" from="base_backdrop">
+            <area>20,450,1240,232</area>
+        </shape>
+
+        <shape name="status-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,453,1234,34</area>
+        </shape>
+
+        <shape name="status-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="status-bottom-top-line">
+            <area>45,484,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="status-bottom-bottom-line">
+            <area>45,648,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+       <buttonlist name="category">
+            <area>0,35,1280,30</area>
+            <spacing>0</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1280,30</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,255,53</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallerlightgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>8,0,400,83</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                        <alphapulse min="127" max="255" change="2"/>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="log" from="base_list">
+            <area>22,98,1236,328</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,31</area>
+                    <textarea name="buttontext">
+                        <area>18,-1,1218,31</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,31</area>
+                    <textarea name="buttontext">
+                        <area>18,-1,1218,31</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-18</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,320</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="helplabel">
+            <area>40,455,1200,34</area>
+            <value>Details</value>
+            <font>basemediumyellow</font>
+        </textarea>
+
+        <textarea name="helptext">
+            <area>50,485,1180,170</area>
+            <font>basesomewhatsmaller</font>
+            <value>This screen displays the status of various system components</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

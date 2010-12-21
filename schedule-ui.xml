@@ -1,0 +1,2817 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="programguide">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Guide</value>
+        </textarea>
+
+        <shape name="guide-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,429</area>
+        </shape>
+
+        <shape name="guide-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="guide-bottom-backdrop" from="base_backdrop">
+            <area>20,475,1240,210</area>
+        </shape>
+
+        <shape name="guide-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,34</area>
+        </shape>
+
+        <shape name="guide-time-highlight" from="base_highlight">
+            <area>229,45,1023,32</area>
+        </shape>
+
+        <shape name="guide-description-highlight" from="base_desc_highlight">
+            <area>30,560,1220,116</area>
+        </shape>
+
+        <shape name="guide-subtitle-highlight" from="base_highlight">
+            <area>30,518,660,34</area>
+        </shape>
+
+        <shape name="guide-recording-status-highlight" from="base_highlight">
+            <area>700,518,550,34</area>
+        </shape>
+
+        <textarea name="datetext" from="basetextarea">
+            <area>34,39,190,25</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="channelgroup" from="basetextarea">
+            <area>34,61,190,25</area>
+            <align>bottom,hcenter</align>
+            <font>basesmallpurple</font>
+        </textarea>
+
+        <guidegrid name="guidegrid">
+            <area>232,82,1017,375</area>
+            <layout>horizontal</layout>
+            <channels>5</channels>
+            <timeslots>4</timeslots>
+            <solidcolor>#003256</solidcolor>
+            <selector type="roundbox" linecolor="#ffff33" />
+            <showcategories>yes</showcategories>
+            <categoryalpha>130</categoryalpha>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>no</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>9,13</textoffset>
+            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
+            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
+            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
+            <recordstatus type="AllRecord" image="images/gg-rs-all.png"></recordstatus>
+            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"></recordstatus>
+            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"></recordstatus>
+            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"></recordstatus>
+            <arrow direction="left" image="images/gg-arrow-left.png"></arrow>
+            <arrow direction="right" image="imaages/gg-arrow-right.png"></arrow>
+            <font>basesmall</font>
+        </guidegrid>
+
+        <buttonlist name="timelist">
+            <area>232,44,1016,36</area>
+            <layout>horizontal</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1016,36</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,254,36</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,3,254,30</area>
+                        <font>basesmall</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="channellist">
+            <area>31,82,198,375</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,196,375</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,198,75</area>
+                        <shape name="gg-chans" from="base_desc_highlight">
+                            <area>0,0,198,75</area>
+                        </shape>
+                    <imagetype name="channelicon">
+                        <area>6,10,70,57</area>
+                        <preserveaspect>true</preserveaspect>
+                        <mask>images/masks/channelicon_mask.png</mask>
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>77,1,117,73</area>
+                        <font>baseesmall</font>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="channelicon">
+            <area>40,481,38,30</area>
+            <preserveaspect>true</preserveaspect>
+            <mask>images/masks/channelicon-small-mask.png</mask>
+            <alpha>200</alpha>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>100,473,1000,50</area>
+            <align>left,vcenter</align>
+            <font>baselargeyellow</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>44,520,632,30</area>
+            <align>left,vcenter</align>
+            <font>basesmall</font> 
+        </textarea>
+
+        <textarea name="description"  from="basetextarea">
+            <area>44,565,1196,112</area>
+            <multiline>yes</multiline>
+            <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
+        </textarea>
+
+        <textarea name="rectypestatus" from="basetextarea">
+            <area>710,520,526,30</area>
+            <align>right,vcenter</align>
+            <font>basesmall</font>
+        </textarea>
+
+    </window>
+
+    <window name="programguide-video">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Guide Video</value>
+        </textarea>
+
+        <shape name="guide-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,354</area>
+        </shape>
+
+        <shape name="guide-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="guide-video-backdrop">
+            <area>769,402,491,282</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+            <line color="#666666" alpha="170" width="2" />
+        </shape>
+
+        <shape name="guide-bottom-backdrop" from="base_backdrop">
+            <area>20,402,732,282</area>
+        </shape>
+
+        <shape name="guide-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,405,726,34</area>
+        </shape>
+
+        <shape name="guide-time-highlight" from="base_highlight">
+            <area>229,45,1023,32</area>
+        </shape>
+
+        <shape name="guide-bottom-subtitle-highlight" from="base_highlight">
+            <area>114,454,632,32</area>
+        </shape>
+
+        <shape name="guide-bottom-description-highlight" from="base_desc_highlight">
+            <area>26,492,720,186</area>
+        </shape>
+
+        <textarea name="datetext" from="basetextarea">
+            <area>34,39,190,25</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="channelgroup" from="basetextarea">
+            <area>34,61,190,25</area>
+            <align>bottom,hcenter</align>
+            <font>basesmallpurple</font>
+        </textarea>
+
+        <guidegrid name="guidegrid">
+            <area>232,82,1017,300</area>
+            <layout>horizontal</layout>
+            <channels>4</channels>
+            <timeslots>4</timeslots>
+            <solidcolor>#003256</solidcolor>
+            <selector type="roundbox" linecolor="#ffff33" />
+            <showcategories>yes</showcategories>
+            <categoryalpha>130</categoryalpha>
+            <recordingcolor>#00aa00</recordingcolor>
+            <conflictingcolor>#ff6600</conflictingcolor>
+            <cutdown>no</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>9,13</textoffset>
+            <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
+            <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
+            <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
+            <recordstatus type="AllRecord" image="images/gg-rs-all.png"></recordstatus>
+            <recordstatus type="WeekslotRecord" image="images/gg-rs-weekslot.png"></recordstatus>
+            <recordstatus type="FindOneRecord" image="images/gg-rs-findone.png"></recordstatus>
+            <recordstatus type="OverrideRecord" image="images/gg-rs-override.png"></recordstatus>
+            <arrow direction="left" image="images/gg-arrow-left.png"></arrow>
+            <arrow direction="right" image="imaages/gg-arrow-right.png"></arrow>
+            <font>basesmall</font>
+        </guidegrid>
+
+        <buttonlist name="timelist">
+            <area>232,44,1016,36</area>
+            <layout>horizontal</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,1016,36</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,254,36</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,3,254,30</area>
+                        <font>basesmall</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="channellist">
+            <area>31,82,198,300</area>
+            <layout>vertical</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,196,300</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,198,75</area>
+                        <shape name="gg-chans" from="base_desc_highlight">
+                            <area>0,0,198,75</area>
+                        </shape>
+                    <imagetype name="channelicon">
+                        <area>6,10,70,57</area>
+                        <preserveaspect>true</preserveaspect>
+                        <mask>images/masks/channelicon_mask.png</mask>
+                        <alpha>200</alpha>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>77,1,117,73</area>
+                        <font>baseesmall</font>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active"/>
+                <state name="selectedinactive" from="active"/>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename></filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="channum">
+            <area>40,467,70,24</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="channelicon">
+            <area>40,408,70,57</area>
+            <preserveaspect>true</preserveaspect>
+            <mask>images/masks/channelicon_mask.png</mask>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>120,414,628,30</area>
+            <align>left,vcenter</align>
+            <font>baselargeyellow</font>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>134,458,592,24</area>
+            <align>left,vcenter</align>
+            <font>basesmall</font> 
+            <value>%|"SUBTITLE|"%</value>
+        </textarea>
+
+        <textarea name="description"  from="basetextarea">
+            <area>46,496,680,178</area>
+            <multiline>yes</multiline>
+            <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
+        </textarea>
+
+        <imagetype name="video">
+            <area>773,405,483,272</area>
+        </imagetype>
+
+    </window>
+
+    <window name="manualschedule">
+
+        <textarea name="heading" from="base_heading">
+            <value>Manual Schedule</value>
+        </textarea>
+
+        <shape name="manual-schedule-top-backdrop" from="base_backdrop">
+            <area>200,36,880,516</area>
+        </shape>
+
+        <shape name="manual-schedule-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>203,39,874,34</area>
+        </shape>
+
+        <shape name="manual-schedule-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>203,515,874,34</area>
+        </shape>
+
+        <shape name="manual-schedule-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="manual-schedule-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="manual-schedule-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="titlelabel" from="basetextarea">
+            <area>197,80,260,30</area>
+            <font>basemedium</font>
+            <align>right</align>
+            <value>Title (Optional):</value>
+        </textarea>
+
+        <textedit name="title" from="base_wide_textedit">
+            <position>467,80</position>
+        </textedit>
+
+        <textarea name="channellabel" from="titlelabel">
+            <area>197,182,260,30</area>
+            <value>Channel:</value>
+        </textarea>
+
+        <buttonlist name="channel" from="base_selector">
+            <area>467,178,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="datelabel" from="titlelabel">
+            <area>197,284,260,30</area>
+            <value>Date, or day of week:</value>
+        </textarea>
+
+        <buttonlist name="startdate" from="channel">
+            <area>467,280,580,40</area>
+        </buttonlist>
+
+        <textarea name="timelabel" from="titlelabel">
+            <area>197,378,260,30</area>
+            <value>Start Time:</value>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="hourlabel" from="basetextarea">
+            <area>467,380,80,30</area>
+            <value>Hour</value>
+            <align>right</align>
+        </textarea>
+
+        <spinbox name="starthour" from="base_spinbox">
+            <position>557,374</position>
+        </spinbox>
+
+        <textarea name="minutelabel" from="hourlabel">
+            <position>670,380</position>
+            <value>Minute</value>
+        </textarea>
+
+        <spinbox name="startminute" from="base_spinbox">
+            <position>755,374</position>
+        </spinbox>
+
+        <textarea name="durationlabel" from="titlelabel">
+            <area>197,474,260,30</area>
+            <value>Duration:</value>
+        </textarea>
+
+        <spinbox name="duration" from="base_spinbox">
+            <position>467,470</position>
+        </spinbox>
+
+        <button name="cancel" from="base_medium_button">
+            <position>200,634</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="next" from="base_medium_button">
+            <position>730,634</position>
+            <value>Next</value>
+        </button>
+
+    </window>
+
+    <window name="viewscheduled">
+
+        <textarea name="heading" from="base_heading">
+            <value>Upcoming Recordings</value>
+        </textarea>
+
+        <shape name="groupbox" from="base_group_box">
+            <area>-4,36,1288,30</area>
+        </shape>
+
+        <shape name="upcoming-backdrop" from="base_backdrop">
+            <area>20,78,1240,400</area>
+        </shape>
+
+        <shape name="upcoming-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,81,1234,34</area>
+        </shape>
+
+        <shape name="upcoming-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,441,1234,34</area>
+        </shape>
+
+        <shape name="upcoming-bottom-backdrop" from="base_backdrop">
+            <area>20,490,1240,192</area>
+        </shape>
+
+        <shape name="upcoming-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,493,1234,34</area>
+        </shape>
+
+        <shape name="upcoming-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="upcoming-bottom-top-line">
+            <area>45,532,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="upcoming-bottom-bottom-line">
+            <area>45,640,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="keyinstr" from="basetextarea">
+            <area>20,78,1240,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>(1) All (2) Important</value>
+        </textarea>
+
+        <textarea name="filter" from="basetextarea">
+            <area>20,459,1240,20</area>
+            <align>allcenter</align>
+            <font>baseextrasmallyellow</font>
+            <template>Filter:  %1</template>
+        </textarea>
+
+        <buttonlist name="groups">
+            <area>0,35,1280,30</area>
+            <spacing>0</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1280,30</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,255,53</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallerlightgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>8,0,400,83</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                        <alphapulse min="127" max="255" change="2"/>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="schedules" from="base_list_medium">
+            <area>22,93,1236,368</area>
+            <align>bottom</align>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                        <area>18,5,190,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>206,5,200,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="shortstarttimedate">
+                        <area>416,5,753,24</area>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>1189,5,30,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                        <area>18,1,190,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>206,1,200,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="shortstarttimedate">
+                        <area>416,1,753,24</area>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>1189,1,30,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
+                        <area>18,25,350,20</area>
+                    </textarea>
+                    <textarea name="subtitle" from="base_text_font_state_smaller">
+                        <area>436,23,533,20</area>
+                    </textarea>
+<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
+<!--
+                    <textarea name="status" from="basetextarea">
+                        <area>400,25,350,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <font state="warning">baseextrasmallred</font>
+                        <align>vcenter</align>
+                    </textarea>
+-->
+                    <textarea name="timedate" from="base_text_font_state_extrasmall">
+                        <area>979,25,240,20</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-14</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,366</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,496,1200,30</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>40,536,1200,104</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
+        </textarea>
+
+        <textarea name="status" from="basetextarea">
+            <area>40,648,1200,24</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="norecordings_info">
+            <area>40,98,1200,360</area>
+            <font>basemedium</font>
+            <value>You Haven't Scheduled Any Programs To Be Recorded\n\nTo schedule a recording, exit this screen and\nSelect 'Program Guide' or 'Program Finder'</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="channelrecpriority">
+
+        <textarea name="heading" from="base_heading">
+            <value>Channel Recording Priorities</value>
+        </textarea>
+
+        <shape name="channel-record-priorities-backdrop" from="base_backdrop">
+            <area>20,39,1240,424</area>
+        </shape>
+
+        <shape name="channel-record-priorities-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,42,1234,34</area>
+        </shape>
+ 
+        <shape name="channel-record-priorities-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,426,1234,34</area>
+        </shape>
+
+        <shape name="channel-record-priorites-bottom-backdrop" from="base_backdrop">
+            <area>20,475,997,207</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,991,34</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,991,34</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-top-line">
+            <area>45,515,947,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-bottom-line">
+            <area>45,642,947,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="channel-record-priorites-bottom-right-backdrop" from="base_backdrop">
+            <area>1028,475,232,207</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>1031,478,226,34</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>1031,645,226,34</area>
+        </shape>
+
+        <textarea name="helptext">
+            <area>40,46,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <value>(1) Channel (2) Priority</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="channels" from="base_list_medium">
+            <area>22,69,1236,368</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="channum" from="buttontext">
+                        <area>18,5,77,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <imagetype name="icon">
+                        <area>122,5,25,25</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="callsign" from="channum">
+                        <area>220,5,210,24</area>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>450,5,718,24</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="priority" from="channum">
+                        <area>1188,5,30,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="channum" from="buttontext">
+                        <area>18,10,77,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <imagetype name="icon">
+                        <area>115,4,38,38</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="callsign" from="channum">
+                        <area>220,10,210,24</area>
+                    </textarea>
+                    <textarea name="name" from="channum">
+                        <area>450,10,498,24</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="priority" from="channum">
+                        <area>1078,1,140,24</area>
+                        <align>right,vcenter</align>
+                        <template>Priority: %1</template>
+                    </textarea>
+                    <textarea name="sourcename" from="base_text_font_state_extrasmall">
+                        <area>968,25,250,20</area>
+                        <align>right,vcenter</align>
+                        <template>Source: %1</template>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-23</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,370</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="channame" from="basetextarea">
+            <area>40,480,957,30</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="helptext2" from="basetextarea">
+            <area>45,517,947,125</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>To give greater or lesser priority to a channel in your lineup, select it from the list.  To increase the channel's priority, press the right arrow.  To decrease its priority, press the left arrow.</value>
+        </textarea>
+
+        <imagetype name="icon">
+            <area>1044,503,200,150</area>
+            <preserveaspect>true</preserveaspect>
+            <mask>images/masks/channelicon-mask-200x150.png</mask>
+        </imagetype>
+
+    </window>
+
+    <window name="programrecpriority">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Record Priority</value>
+        </textarea>
+
+        <shape name="program-record-priority-backdrop" from="base_backdrop">
+            <area>20,39,1240,424</area>
+        </shape>
+
+        <shape name="program-record-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,42,1234,34</area>
+        </shape>
+
+        <shape name="program-record-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,426,1234,34</area>
+        </shape>
+
+        <shape name="program-record-priority-bottom-backdrop" from="base_backdrop">
+            <area>20,475,1240,207</area>
+        </shape>
+
+        <shape name="program-record-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,34</area>
+        </shape>
+
+        <shape name="program-record-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="program-record-bottom-top-line">
+            <area>45,515,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="program-record-bottom-bottom-line">
+            <area>45,642,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="keyinstr">
+            <area>40,46,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>(1) Title (2) Priority (4) Type</value>
+        </textarea>
+
+        <textarea name="norecordings_info" from="basetextarea">
+            <area>20,39,1240,424</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>There are no Recordings Scheduled...</value>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="basetextarea">
+            <area>40,439,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="programs" from="base_list_medium">
+            <area>22,69,1236,368</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="rectype" from="buttontext">
+                        <area>18,5,14,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="rectype">
+                        <area>60,5,580,24</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="callsign" from="rectype">
+                        <area>660,5,114,24</area>
+                    </textarea>
+                    <textarea name="progpriority" from="rectype">
+                        <area>932,5,40,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="finalpriority" from="rectype">
+                        <area>1184,5,34,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="title" from="buttontext">
+                        <area>18,1,622,24</area>
+                    </textarea>
+                    <textarea name="callsign" from="title">
+                        <area>660,1,114,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="progpriority" from="title">
+                        <area>832,1,140,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                        <template>Priority:  %1</template>
+                    </textarea>
+                    <textarea name="finalpriority" from="title">
+                        <area>1032,1,186,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                        <template>Final Priority:  %1</template>
+                    </textarea>
+                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
+                        <area>18,25,350,20</area>
+                    </textarea>
+                    <textarea name="category" from="rectypestatus">
+                        <area>388,25,252,20</area>
+                        <template>Category: %1</template>
+                    </textarea>
+                    <textarea name="channel" from="rectypestatus">
+                        <area>660,25,378,20</area>
+                    </textarea>
+<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
+<!--
+                    <textarea name="rectypepriority" from="rectypestatus">
+                        <area>860,25,132,20</area>
+                        <align>right,vcenter</align>
+                        <template>Type Priority: %1</template>
+                    </textarea>
+-->
+                    <textarea name="lastrecorded" from="rectypestatus">
+                        <area>1058,25,160,20</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-23</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,370</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,480,1200,34</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>40,516,1200,128</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="rectypepriority" from="basetextarea">
+            <area>40,649,1200,24</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+            <template>Type Priority: %1</template>
+        </textarea>
+
+    </window>
+
+    <window name="custompriority">
+
+        <textarea name="heading" from="base_heading">
+            <value>Custom Priority Rules</value>
+        </textarea>
+
+        <shape name="custom-priority-rules-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,516</area>
+        </shape>
+
+        <shape name="custom-priority-rules-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,515,1234,34</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="custom-priority-ruiles-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="ruleslabel" from="basetextarea">
+            <area>235,60,190,30</area>
+            <font>basemedium</font>
+            <align>right</align>
+            <value>Existing Rules:</value>
+        </textarea>
+
+        <buttonlist name="rules" from="base_selector">
+            <area>435,58,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="titlelabel" from="ruleslabel">
+            <position>235,122</position>
+            <value>Rule Name:</value>
+        </textarea>
+
+        <textedit name="title" from="base_wide_textedit">
+            <position>435,124</position>
+        </textedit>
+
+        <textarea name="prioritylabel" from="ruleslabel">
+            <position>235,185</position>
+            <value>Priority Change:</value>
+        </textarea>
+
+        <spinbox name="priority" from="base_spinbox">
+            <position>435,182</position>
+        </spinbox>
+
+        <textarea name="clauseslabel" from="ruleslabel">
+            <area>338,255,600,40</area>
+            <value>Select a clause from the list.</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="clauses" from="base_selector">
+            <area>150,314,780,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,780,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,750,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,780,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,750,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>784,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>784,21</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="add" from="base_button">
+            <position>990,317</position>
+            <value>Add Clause</value>
+        </button>
+
+        <textedit name="description">
+            <area>80,380,1120,150</area>
+            <statetype name="background">
+                <state name="active">
+                    <shape name="background">
+                        <area>0,0,1120,150</area>
+                        <type>roundbox</type>
+                        <fill color="#404040" alpha="175" />
+                        <line color="#404040" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background">
+                        <area>0,0,1120,150</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="150" />
+                        <line color="#FFFFFF" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <imagetype name="cursor">
+                <filename>images/cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>12,13,1096,124</area>
+                <font>basesmallblack</font>
+                <multiline>yes</multiline>
+            </textarea>
+        </textedit>
+
+        <button name="cancel" from="base_button">
+            <position>78,637</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="delete" from="base_button">
+            <position>400,637</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="test" from="base_button">
+            <position>732,637</position>
+            <value>Test</value>
+        </button>
+
+        <button name="install" from="base_button">
+            <position>1054,637</position>
+            <value>Install</value>
+        </button>
+
+    </window>
+
+        <window name="phrasepopup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
+            <area>390,110,500,500</area>
+        </shape>
+
+        <shape name="phrase-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>393,113,494,34</area>
+        </shape>
+
+        <shape name="phrase-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>393,573,494,34</area>
+        </shape>
+
+        <shape name="edit-powersearch-top-line">
+            <area>425,160,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="edit-powersearch-bottom-line">
+            <area>425,550,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>410,120,460,40</area>
+            <font>baselargedarkyellow</font>
+            <align>hcenter,top</align>
+            <value>Search Term</value>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="base_button_list">
+            <area>410,175,460,320</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>10,310</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>40,310</position>
+            </statetype>
+        </buttonlist>
+
+        <textedit name="phrase_edit" from="base_textedit">
+            <position>500,510</position>
+        </textedit>
+
+        <button name="ok_button" from="base_button">
+            <position>405,562</position>
+            <value>OK</value>
+        </button>
+
+        <button name="delete_button" from="base_button">
+            <position>566,562</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="record_button" from="base_button">
+            <position>726,562</position>
+            <value>Record</value>
+        </button>
+
+    </window>
+
+    <window name="timepopup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="time-popup-backdrop" from="base_popup_backdrop">
+            <area>350,278,580,165</area>
+        </shape>
+
+        <shape name="time-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>353,281,574,34</area>
+        </shape>
+
+        <shape name="time-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>353,406,574,34</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>350,288,580,40</area>
+            <font>baselargedarkyellow</font>
+            <align>hcenter,top</align>
+            <value>Select Time</value>
+        </textarea>
+
+        <buttonlist name="date_list" from="base_selector">
+            <area>390,338,200,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,200,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,180,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,200,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,180,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>205,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>205,21</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="time_list" from="date_list">
+            <area>680,338,200,40</area>
+        </buttonlist>
+
+        <button name="ok_button" from="base_button">
+            <position>570,393</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="powersearchpopup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="power-search-backdrop" from="base_popup_backdrop">
+            <area>390,110,500,500</area>
+        </shape>
+
+        <shape name="power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>393,113,494,34</area>
+        </shape>
+
+        <shape name="power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>393,573,494,34</area>
+        </shape>
+
+        <shape name="edit-powersearch-top-line">
+            <area>425,160,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="edit-powersearch-bottom-line">
+            <area>425,550,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>410,120,460,40</area>
+            <font>baselargedarkyellow</font>
+            <align>hcenter,top</align>
+            <value>Select Search</value>
+        </textarea>
+
+        <buttonlist name="phrase_list" from="base_button_list">
+            <area>410,175,460,360</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>                     
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>10,349</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>40,349</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="edit_button" from="base_button">
+            <position>405,562</position>
+            <value>Edit</value>
+        </button>
+
+        <button name="delete_button" from="base_button">
+            <position>566,562</position>
+            <value>Delete</value>
+        </button>
+
+        <button name="record_button" from="base_button">
+            <position>726,562</position>
+            <value>Record</value>
+        </button>
+
+    </window>
+
+    <window name="editpowersearchpopup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
+            <area>390,85,500,550</area>
+        </shape>
+
+        <shape name="edit-power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>393,88,494,34</area>
+        </shape>
+
+        <shape name="edit-power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>393,598,494,34</area>
+        </shape>
+
+        <shape name="edit-powersearch-top-line">
+            <area>425,135,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="edit-powersearch-bottom-line">
+            <area>425,567,430,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="title_text" from="basetextarea">
+            <area>410,95,460,40</area>
+            <font>baselargedarkyellow</font>
+            <align>hcenter,top</align>
+            <value>Edit Power Search Fields</value>
+        </textarea>
+
+        <textarea name="titlelabel" from="basetextarea">
+            <area>498,145,390,30</area>
+            <font>basesmall</font>
+            <value>Optional title phrase:</value>
+        </textarea>
+
+        <textedit name="title_edit" from="base_textedit">
+            <position>498,175</position>
+        </textedit>
+
+        <textarea name="subtitlelabel" from="basetextarea">
+            <area>498,235,390,30</area>
+            <font>basesmall</font>
+            <value>Optional subtitle phrase:</value>
+        </textarea>
+
+        <textedit name="subtitle_edit" from="base_textedit">
+            <position>498,265</position>
+        </textedit>
+
+        <textarea name="desclabel" from="basetextarea">
+            <area>498,325,390,30</area>
+            <font>basesmall</font>
+            <value>Optional description phrase:</value>
+        </textarea>
+
+        <textedit name="desc_edit" from="base_textedit">
+            <position>498,355</position>
+        </textedit>
+
+        <buttonlist name="category_list" from="base_selector">
+            <area>430,415,400,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,400,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,370,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,400,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,370,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>405,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>405,21</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="genre_list" from="category_list">
+            <area>430,465,400,40</area>
+        </buttonlist>
+
+        <buttonlist name="channel_list" from="category_list">
+            <area>430,515,400,40</area>
+        </buttonlist>
+
+        <button name="ok_button" from="base_medium_button">
+            <position>465,581</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="programlist">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Listings</value>
+        </textarea>
+
+        <shape name="previously-recorded-backdrop" from="base_backdrop">
+            <area>20,39,1240,424</area>
+        </shape>
+
+        <shape name="previously-recorded-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,42,1234,34</area>
+        </shape>
+
+        <shape name="previously-recorded-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,426,1234,34</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-backdrop" from="base_backdrop">
+            <area>20,475,1240,207</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,34</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-top-line">
+            <area>45,515,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="previously-recorded-bottom-bottom-line">
+            <area>45,642,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="keyinstr" from="basetextarea">
+            <area>20,47,1240,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>(1) Time (2) Title</value>
+        </textarea>
+
+        <textarea name="curview" from="basetextarea">
+            <area>20,440,1240,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="proglist" from="base_list_medium">
+            <area>22,69,1236,368</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                        <area>18,5,168,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>206,5,190,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="shortstarttimedate">
+                        <area>416,5,753,24</area>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>1189,5,30,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                        <area>18,1,190,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>206,1,200,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="shortstarttimedate">
+                        <area>416,1,753,24</area>
+                    </textarea>
+                    <textarea name="card" from="shortstarttimedate">
+                        <area>1189,1,30,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
+                        <area>18,25,350,20</area>
+                    </textarea>
+                    <textarea name="subtitle" from="base_text_font_state_smaller">
+                        <area>436,23,522,20</area>
+                    </textarea>
+                    <textarea name="timedate" from="rectypestatus">
+                        <area>978,25,240,20</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-23</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,370</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,481,1200,30</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>40,516,1200,128</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
+        </textarea>
+
+    </window>
+
+    <window name="progdetails">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Details</value>
+        </textarea>
+
+        <shape name="program-details-backdrop" from="base_backdrop">
+            <area>20,43,1240,635</area>
+        </shape>
+
+        <shape name="program-details-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,46,1234,34</area>
+        </shape>
+
+        <shape name="program-details-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,641,1234,34</area>
+        </shape>
+
+        <webbrowser name="browser">
+            <area>40,70,1200,580</area>
+            <zoom>1.0</zoom>
+            <background color="#000000" alpha="1"/>
+        </webbrowser>
+
+    </window>
+
+    <window name="searchpopup" from="MythTextInputDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="search-popup-backdrop" from="base_popup_backdrop">
+            <area>135,26,1010,52</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>170,43,160,18</area>
+            <font>basesmalleryellow</font>
+            <align>left,vcenter</align>
+            <value>Enter Search Text</value>
+        </textarea>
+
+        <textedit name="input" from="base_wide_textedit">
+            <position>360,37</position>
+        </textedit>
+
+        <button name="ok" from="base_button">
+            <position>966,35</position>
+            <value>Close</value>
+        </button>
+
+    </window>
+
+    <window name="programfind">
+
+        <textarea name="heading" from="base_heading">
+            <value>Program Finder</value>
+        </textarea>
+
+        <shape name="alphabetbox" from="base_group_box">
+            <area>-4,36,1288,30</area>
+        </shape>
+
+        <shape name="program-find-title-backdrop" from="base_backdrop">
+            <area>20,78,822,400</area>
+        </shape>
+
+        <shape name="program-find-times-backdrop" from="base_backdrop">
+            <area>852,78,408,400</area>
+        </shape>
+
+        <shape name="program-find-title-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,81,816,34</area>
+        </shape>
+
+        <shape name="program-find-times-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>855,81,402,34</area>
+        </shape>
+
+        <shape name="program-find-title-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,441,816,34</area>
+        </shape>
+
+        <shape name="program-find-times-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>855,441,402,34</area>
+        </shape>
+
+        <shape name="program-find-bottom-backdrop" from="base_backdrop">
+            <area>20,490,822,192</area>
+        </shape>
+
+        <shape name="program-find-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,493,816,34</area>
+        </shape>
+
+        <shape name="program-find-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,816,34</area>
+        </shape>
+
+        <shape name="program-find-bottom-top-line">
+            <area>45,522,766,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="program-find-bottom-bottom-line">
+            <area>45,650,766,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="program-find-bottom-right-backdrop" from="base_backdrop">
+            <area>852,490,408,192</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>855,493,402,34</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>855,645,402,34</area>
+        </shape>
+
+        <buttonlist name="alphabet">
+            <area>0,36,1280,30</area>
+            <spacing>0</spacing>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1280,30</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,255,53</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallerlightgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>8,0,400,83</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>0,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                        <alphapulse min="127" max="255" change="2"/>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,240,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basemediumyellow</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="showlabel" from="basetextarea">
+            <area>22,82,818,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Show Name:</value>
+        </textarea>
+
+        <buttonlist name="shows" from="base_list">
+            <area>22,102,818,356</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,818,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,768,34</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,818,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,768,34</area>
+                    </textarea>
+                    <imagetype name="right_arrow" from="buttonarrow">
+                        <position>786,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <area>0,0,818,34</area>
+                    <textarea name="buttontext">
+                        <font>basesmalllightgrey</font>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>776,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>776,354</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="airdatelabel" from="basetextarea">
+            <area>854,82,404,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Air Date:</value>
+        </textarea>
+
+        <buttonlist name="times" from="base_list">
+            <area>854,102,404,356</area>    
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,404,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,368,34</area>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,404,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,368,34</area>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>362,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>362,354</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,494,782,28</area>
+            <font>basemediumyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,523,766,128</area>
+            <multiline>yes</multiline>
+            <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>872,514,368,28</area>
+            <font>baselargeyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="rectypestatus" from="basetextarea">
+            <area>872,555,368,24</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="longrepeat" from="basetextarea">
+            <area>872,591,368,24</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%LONGREPEAT%</template>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>872,632,368,24</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="help1text" from="basetextarea">
+            <area>40,492,782,28</area>
+            <font>basemediumlargeryellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="help2text" from="basetextarea">
+            <area>45,523,766,128</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="managerecrules">
+
+        <textarea name="heading" from="base_heading">
+            <value>Manage Recording Rules</value>
+        </textarea>
+
+        <shape name="manage-recordings-backdrop" from="base_backdrop">
+            <area>20,39,1240,424</area>
+        </shape>
+
+        <shape name="manage-recordings-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,42,1234,34</area>
+        </shape>
+
+        <shape name="manage-recordings-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,426,1234,34</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
+            <area>20,475,1240,207</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,34</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-top-line">
+            <area>45,515,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="manage-recordings-bottom-bottom-line">
+            <area>45,642,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="keyinstr">
+            <area>40,46,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>(1) Title (2) Priority (4) Type</value>
+        </textarea>
+
+        <textarea name="norecordings_info" from="basetextarea">
+            <area>20,39,1240,424</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>There are no Recordings Scheduled...</value>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="basetextarea">
+            <area>40,439,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="programs" from="base_list_medium">
+            <area>22,69,1236,368</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="rectype" from="buttontext">
+                        <area>18,5,14,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="title" from="rectype">
+                        <area>60,5,580,24</area>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                    <textarea name="callsign" from="rectype">
+                        <area>660,5,114,24</area>
+                    </textarea>
+                    <textarea name="lastrecorded" from="rectype">
+                        <area>784,5,276,24</area>
+                        <cutdown>yes</cutdown>
+                        <align>right</align>
+                    </textarea>
+                    <textarea name="finalpriority" from="rectype">
+                        <area>1184,5,34,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="title" from="buttontext">
+                        <area>18,1,622,24</area>
+                    </textarea>
+                    <textarea name="callsign" from="title">
+                        <area>660,1,114,24</area>
+                        <cutdown>no</cutdown>
+                    </textarea>
+                    <textarea name="finalpriority" from="title">
+                        <area>1079,1,140,24</area>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                        <template>Priority:  %1</template>
+                    </textarea>
+                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
+                        <area>18,25,350,20</area>
+                    </textarea>
+                    <textarea name="category" from="rectypestatus">
+                        <area>388,25,252,20</area>
+                        <align>left,vcenter</align>
+                        <template>Category: %1</template>
+                    </textarea>
+                    <textarea name="channel" from="rectypestatus">
+                        <area>660,25,378,20</area>
+                    </textarea>
+                    <textarea name="lastrecorded" from="rectypestatus">
+                        <area>1058,25,160,20</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
+<!--
+                    <textarea name="scheduleinfo" from="rectypestatus">
+                        <area>18,25,350,20</area>
+                    </textarea>
+-->
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-23</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,370</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,480,1200,34</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="recordinggroup" from="basetextarea">
+            <area>164,541,350,30</area>
+            <font>basesmall</font>
+            <template>Recording Group: %1</template>
+        </textarea>
+
+        <textarea name="category" from="basetextarea">
+            <area>244,594,350,30</area>
+            <font>basesmall</font>
+            <template>Category: %1</template>
+        </textarea>
+
+        <textarea name="storagegroup" from="basetextarea">
+            <area>860,541,350,30</area>
+            <font>basesmall</font>
+            <template>Storage Group: %1</template>            
+        </textarea>
+
+        <textarea name="recordingprofile" from="basetextarea">
+            <area>836,594,350,30</area>
+            <font>basesmall</font>
+            <template>Recording Profile: %1</template>
+        </textarea>
+
+    </window>
+
+    <window name="customedit">
+
+        <textarea name="heading" from="base_heading">
+            <value>Custom Record Rules</value>
+        </textarea>
+
+        <shape name="custom-record-rules-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,516</area>
+        </shape>
+
+        <shape name="custom-record-rules-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="custom-record-rules-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,515,1234,34</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="custom-record-ruiles-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="ruleslabel" from="basetextarea">
+            <area>240,60,190,30</area>
+            <font>basemedium</font>
+            <align>right</align>
+            <value>Existing Rules:</value>
+        </textarea>
+
+        <buttonlist name="rules" from="base_selector">
+            <area>440,58,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="titlelabel" from="ruleslabel">
+            <position>240,119</position>
+            <value>Rule Name:</value>
+        </textarea>
+
+        <textedit name="title" from="base_wide_textedit">
+            <position>440,117</position>
+        </textedit>
+
+        <buttonlist name="clauses" from="base_selector">
+            <area>250,164,780,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,780,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,750,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,780,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,750,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>784,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>784,21</position>
+            </statetype>
+        </buttonlist>
+
+        <shape name="custom-record-rules-clausetext-background">
+            <area>50,220,1180,40</area>
+            <type>roundbox</type>
+            <fill color="#404040" alpha="130" />
+            <line color="#404040" alpha="225" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <textarea name="clausetext" from="ruleslabel">
+            <area>70,223,1140,34</area>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textedit name="description">
+            <area>100,277,1080,150</area>
+            <statetype name="background">
+                <state name="active">
+                    <shape name="background">
+                        <area>0,0,1080,150</area>
+                        <type>roundbox</type>
+                        <fill color="#404040" alpha="175" />
+                        <line color="#404040" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background">
+                        <area>0,0,1080,150</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="150" />
+                        <line color="#FFFFFF" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <imagetype name="cursor">
+                <filename>images/cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>10,10,1060,130</area>
+                <font>basesmallblack</font>
+                <multiline>yes</multiline>
+            </textarea>
+        </textedit>
+
+        <textarea name="subtitlelabel" from="ruleslabel">
+            <area>70,445,220,85</area>
+            <value>Additional Tables:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textedit name="subtitle">
+            <area>300,445,880,85</area>
+            <statetype name="background">
+                <state name="active">
+                    <shape name="background">
+                        <area>0,0,880,85</area>
+                        <type>roundbox</type>
+                        <fill color="#404040" alpha="175" />
+                        <line color="#404040" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background">
+                        <area>0,0,880,85</area>
+                        <type>roundbox</type>
+                        <fill color="#FFFFFF" alpha="150" />
+                        <line color="#FFFFFF" alpha="225" width="1" />
+                        <cornerradius>20</cornerradius>
+                    </shape>
+                </state>
+                <state name="inactive" from="active" />
+            </statetype>
+            <imagetype name="cursor">
+                <filename>images/cursor.png</filename>
+            </imagetype>
+            <textarea name="text">
+                <area>10,10,860,75</area>
+                <font>basesmallblack</font>
+                <multiline>yes</multiline>
+            </textarea>
+        </textedit>
+
+        <button name="test" from="base_button">
+            <position>78,637</position>
+            <value>Test</value>
+        </button>
+
+        <button name="record" from="base_button">
+            <position>400,637</position>
+            <value>Record</value>
+        </button>
+
+        <button name="store" from="base_button">
+            <position>732,637</position>
+            <value>Store</value>
+        </button>
+
+        <button name="cancel" from="base_button">
+            <position>1054,637</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="scheduleeditor">
+
+        <textarea name="heading" from="base_heading">
+            <value>Schedule Editor</value>
+        </textarea>
+
+        <shape name="schedule-editor-backdrop" from="base_backdrop">
+            <area>20,36,546,362</area>
+        </shape>
+
+        <shape name="schedule-editor-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,540,34</area>
+        </shape>
+
+        <shape name="schedule-editor-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,361,540,34</area>
+        </shape>
+
+        <shape name="schedule-editor-options-backdrop" from="base_backdrop">
+            <area>574,36,686,362</area>
+        </shape>
+
+        <shape name="schedule-editor-options-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>577,39,680,34</area>
+        </shape>
+
+        <shape name="schedule-editor-options-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>577,361,680,34</area>
+        </shape>
+
+        <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
+            <area>20,409,1240,274</area>
+        </shape>
+
+        <shape name="schedule-editor-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,412,1234,34</area>
+        </shape>
+
+        <shape name="schedule-editor-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,646,1234,34</area>
+        </shape>
+
+        <shape name="schedule-editor-date-highlight" from="base_highlight">
+            <area>30,482,604,34</area>
+        </shape>
+
+        <shape name="schedule-editor-rectypestatus-highlight" from="base_highlight">
+            <area>640,482,604,34</area>
+        </shape>
+
+        <shape name="schedule-editor-description-highlight" from="base_backdrop_fanart">
+            <area>30,524,1220,140</area>
+        </shape>
+    
+        <shape name="schedule-editor-description-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>33,527,1214,34</area>
+        </shape>
+
+        <shape name="schedule-editor-description-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>33,627,1214,34</area>
+        </shape>
+
+        <buttonlist name="rules" from="base_selector_list_style">
+            <position>23,64</position>
+        </buttonlist>
+
+        <button name="schedoptions" from="base_button_list_style">
+            <position>23,102</position>
+            <value>Schedule Options</value>
+        </button>
+
+        <button name="storeoptions" from="base_button_list_style">
+            <position>23,140</position>
+            <value>Storage Options</value>
+        </button>
+
+        <button name="postprocessing" from="base_button_list_style">
+            <position>23,178</position>
+            <value>Post Processing</value>
+        </button>
+
+        <button name="schedinfo" from="base_button_list_style">
+            <position>23,216</position>
+            <value>Schedule Info</value>
+        </button>        
+
+        <button name="preview" from="base_button_list_style">
+            <position>23,254</position>
+            <value>Preview</value>
+        </button>
+
+        <button name="cancel" from="base_button_list_style">
+            <position>23,292</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="save" from="base_button_list_style">
+            <position>23,330</position>
+            <value>Save</value>
+        </button>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,419,930,30</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>980,421,260,24</area>
+            <font>basesmallyellow</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>55,449,1170,24</area>
+            <font>basesmall</font>
+            <value>%|"SUBTITLE|"%</value>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>50,482,564,34</area>
+            <font>basesmall</font>
+            <cutdown>no</cutdown>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="rectypestatus" from="basetextarea">
+            <area>660,482,564,34</area>
+            <font>basesmall</font>
+            <cutdown>no</cutdown>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>50,530,1180,128</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+    </window>
+
+    <window name="scheduleoptionseditor">
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <spinbox name="priority" from="base_spinbox_list_style">
+            <position>577,64</position>
+            <template type="negative">Reduce priority by %n</template>
+            <template type="zero">Normal recording priority</template>
+            <template type="positive">Raise priority by %n</template>
+        </spinbox>
+
+        <buttonlist name="input" from="base_wide_selector_list_style">
+            <position>577,102</position>
+        </buttonlist>
+
+        <spinbox name="startoffset" from="base_spinbox_list_style">
+            <position>577,140</position>
+            <template type="negative">Start recording %n minute(s) late</template>
+            <template type="zero">Start recording on time</template>
+            <template type="positive">Start recording %n minute(s) early</template>
+        </spinbox>
+
+        <spinbox name="endoffset" from="base_spinbox_list_style">
+            <position>577,178</position>
+            <template type="negative">End recording %n minute(s) early</template>
+            <template type="zero">End recording on time</template>
+            <template type="positive">End recording %n minute(s) late</template>
+        </spinbox>
+
+        <buttonlist name="dupmethod" from="base_wide_selector_list_style">
+            <position>577,216</position>
+        </buttonlist>
+
+        <buttonlist name="dupscope" from="base_wide_selector_list_style">
+            <position>577,254</position>
+        </buttonlist>
+
+        <shape name="rulesactive_background" from="base_select_bar_active">
+            <area>577,292,680,40</area>
+        </shape>
+
+        <checkbox name="ruleactive" from="basecheckbox">
+            <position>618,295</position>
+        </checkbox>
+
+        <textarea name="ruleactivelabel" from="basetextarea">
+            <area>662,292,300,40</area>
+            <align>vcenter</align>
+            <value>Recording Rule Active</value>
+        </textarea>
+
+        <button name="back" from="base_wide_button_list_style">
+            <position>577,330</position>
+            <value>Back</value>
+        </button>
+    </window>
+
+    <window name="storageoptionseditor">
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <buttonlist name="recprofile" from="base_wide_selector_list_style">
+            <position>577,64</position>
+        </buttonlist>
+
+        <buttonlist name="recgroup" from="base_wide_selector_list_style">
+            <position>577,102</position>
+        </buttonlist>
+
+        <buttonlist name="storagegroup" from="base_wide_selector_list_style">
+            <position>577,140</position>
+        </buttonlist>
+
+        <buttonlist name="playgroup" from="base_wide_selector_list_style">
+            <position>577,178</position>
+        </buttonlist>
+
+        <spinbox name="maxepisodes" from="base_spinbox_list_style">
+            <position>577,216</position>
+            <template type="zero">No episode limit</template>
+            <template type="positive">Keep at most %n episode(s)</template>
+        </spinbox>
+
+        <buttonlist name="maxnewest" from="base_wide_selector_list_style">
+            <position>577,254</position>
+        </buttonlist>
+
+        <shape name="autoexpire_background" from="base_select_bar_active">
+            <area>577,292,680,40</area>
+        </shape>
+
+        <checkbox name="autoexpire" from="basecheckbox">
+            <position>618,295</position>
+        </checkbox>
+
+        <textarea name="autoexpirelabel" from="basetextarea">
+            <area>662,292,450,40</area>
+            <align>vcenter</align>
+            <value>Allow recordings to expire?</value>
+        </textarea>
+
+        <button name="back" from="base_wide_button_list_style">
+            <position>577,330</position>
+            <value>Back</value>
+        </button>
+    </window>
+
+    <window name="postproceditor">
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <shape name="autocommflag_background" from="base_select_bar_active">
+            <area>577,64,680,40</area>
+        </shape>
+
+        <checkbox name="autocommflag" from="basecheckbox">
+            <position>618,67</position>
+        </checkbox>
+
+        <textarea name="autocommflaglabel" from="basetextarea">
+            <area>662,64,450,40</area>
+            <align>vcenter</align>
+            <value>Commercial Flag new recordings</value>
+        </textarea>
+
+        <shape name="autotranscode_background" from="base_select_bar_active">
+            <area>577,102,680,40</area>
+        </shape>
+
+        <checkbox name="autotranscode" from="basecheckbox">
+            <position>618,105</position>
+        </checkbox>
+
+        <textarea name="autotranscodelabel" from="basetextarea">
+            <area>662,102,300,40</area>
+            <align>vcenter</align>
+            <value>Transcode new recordings</value>
+        </textarea>
+
+        <buttonlist name="transcodeprofile" from="base_wide_selector_list_style">
+            <position>577,140</position>
+        </buttonlist>
+
+        <shape name="userjob1_background" from="base_select_bar_active">
+            <area>577,178,680,40</area>
+        </shape>
+
+        <checkbox name="userjob1" from="basecheckbox">
+            <position>618,181</position>
+        </checkbox>
+
+        <textarea name="userjob1label" from="basetextarea">
+            <area>662,178,300,40</area>
+            <align>vcenter</align>
+            <value>Run User Job #1</value>
+        </textarea>
+
+        <shape name="userjob2_background" from="base_select_bar_active">
+            <area>577,216,680,40</area>
+        </shape>
+
+        <checkbox name="userjob2" from="basecheckbox">
+            <position>618,219</position>
+        </checkbox>
+
+        <textarea name="userjob2label" from="basetextarea">
+            <area>662,216,300,40</area>
+            <align>vcenter</align>
+            <value>Run User job #2</value>
+        </textarea>
+
+        <shape name="userjob3_background" from="base_select_bar_active">
+            <area>577,254,680,40</area>
+        </shape>
+
+        <checkbox name="userjob3" from="basecheckbox">
+            <position>618,257</position>
+        </checkbox>
+
+        <textarea name="userjob3label" from="basetextarea">
+            <area>662,254,300,40</area>
+            <align>vcenter</align>
+            <value>Run User Job #3</value>
+        </textarea>
+
+        <shape name="userjob4_background" from="base_select_bar_active">
+            <area>577,292,680,40</area>
+        </shape>
+
+        <checkbox name="userjob4" from="basecheckbox">
+            <position>618,295</position>
+        </checkbox>
+
+        <textarea name="userjob4label" from="basetextarea">
+            <area>662,292,300,40</area>
+            <align>vcenter</align>
+            <value>Run User Job #4</value>
+        </textarea>
+
+        <button name="back" from="base_wide_button_list_style">
+            <position>577,330</position>
+            <value>Back</value>
+        </button>
+    </window>
+
+    <window name="schedulediff">
+
+        <textarea name="heading" from="base_heading">
+            <value>Preview Schedule Changes</value>
+        </textarea>
+
+        <shape name="preview-schedule-priority-backdrop" from="base_backdrop">
+            <area>20,39,1240,424</area>
+        </shape>
+
+        <shape name="preview-schedule-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,42,1234,34</area>
+        </shape>
+
+        <shape name="preview-schedule-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,426,1234,34</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-backdrop" from="base_backdrop">
+            <area>20,475,1240,207</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,34</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-top-line">
+            <area>45,512,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="preview-schedule-bottom-bottom-line">
+            <area>45,649,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="titletext">
+            <area>40,43,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="conflictlist" from="base_list_medium">
+            <area>22,63,1236,390</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,35</area> 
+                    <textarea name="shortstarttimedate" from="buttontext">
+                        <area>18,4,190,24</area>
+                    </textarea>
+                    <textarea name="channel" from="shortstarttimedate">
+                        <area>226,4,170,24</area>
+                    </textarea>
+                    <textarea name="titlesubtitle" from="shortstarttimedate">
+                        <area>414,4,728,24</area>
+                    </textarea>
+                    <textarea name="statusbefore" from="shortstarttimedate">
+                        <area>1160,4,20,24</area>
+                    </textarea>
+                    <textarea name="statusafter" from="shortstarttimedate">
+                        <area>1198,4,20,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,46</area>
+                    <textarea name="shortstarttimedate" from="buttontext">
+                        <area>18,1,190,24</area>
+                    </textarea>
+                    <textarea name="titlesubtitle" from="shortstarttimedate">
+                        <area>226,1,916,24</area>
+                    </textarea>
+                    <textarea name="statusbefore" from="shortstarttimedate">
+                        <area>1160,1,20,24</area>
+                    </textarea>
+                    <textarea name="statusafter" from="shortstarttimedate">
+                        <area>1198,1,20,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="programid" from="base_text_font_state_extrasmall">
+                        <area>18,25,250,20</area>
+                    </textarea>
+                    <textarea name="channel" from="programid">
+                        <area>286,25,564,20</area>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="timedate" from="programid">
+                        <area>868,25,350,20</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,378</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>45,478,1190,30</area>
+            <font>basemediumlargeryellow</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>45,518,1190,128</area>
+            <multiline>yes</multiline>
+            <template>%"|SUBTITLE|" %%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="nochanges" from="basetextarea">
+            <area>40,210,1200,70</area>
+            <align>allcenter</align>
+            <value>You Haven't Scheduled Any Programs To Be Recorded</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

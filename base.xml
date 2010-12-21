@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <!-- Base Font Definitions -->
+    <fontdef name="basefont" face="DejaVu Sans">
+        <color>#e6e6e6</color>
+        <pixelsize>21</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesupersmall" from="basefont">
+        <pixelsize>11</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="baseextrasmall" from="basefont">
+        <weight>bold</weight>
+        <pixelsize>13</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesmaller" from="basefont">
+        <pixelsize>18</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmaller" from="basefont">
+        <pixelsize>19</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesmall" from="basefont">
+        <pixelsize>21</pixelsize>
+    </fontdef>
+
+    <fontdef name="basemedium" from="basefont">
+        <pixelsize>22</pixelsize>
+    </fontdef>
+
+    <fontdef name="basemediumlarger" from="basefont">
+        <pixelsize>25</pixelsize>
+    </fontdef>
+
+    <fontdef name="baselarge" from="basefont">
+        <pixelsize>28</pixelsize>
+    </fontdef>
+
+    <fontdef name="baseextralarge" from="basefont">
+        <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <!-- Color variations on base fonts -->
+
+    <fontdef name="basesmallblack" from="basesmall">
+        <color>#000000</color>  
+    </fontdef>
+
+    <fontdef name="basemediumblack" from="basemedium">
+        <color>#000000</color>
+    </fontdef>
+
+    <fontdef name="basesupersmallblue" from="basesupersmall">
+        <color>#3a9ade</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallblue" from="baseextrasmall">
+        <color>#3a9ade</color>
+    </fontdef>
+
+    <fontdef name="basesmallerblue" from="basesmaller">
+        <color>#3a9ade</color>
+    </fontdef>
+
+    <fontdef name="basesmallblue" from="basesmall">
+        <color>#3a9ade</color>
+    </fontdef>
+
+    <fontdef name="basemediumblue" from="basemedium">
+        <color>#3a9ade</color>
+    </fontdef>
+
+    <fontdef name="basesupersmallgreen" from="basesupersmall">
+        <color>#80d400</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallgreen" from="baseextrasmall">
+        <color>#80d400</color>
+    </fontdef>
+
+    <fontdef name="basesmallergreen" from="basesmaller">
+        <color>#80d400</color>
+    </fontdef>
+
+    <fontdef name="basesmallgreen" from="basesmall">
+        <color>#80d400</color>
+    </fontdef>
+
+    <fontdef name="basemediumgreen" from="basemedium">
+        <color>#80d400</color>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmallergrey" from="basesomewhatsmaller">
+        <color>#666666</color>
+    </fontdef>
+
+    <fontdef name="basesmallgrey" from="basesmall">
+        <color>#666666</color>
+    </fontdef>
+
+    <fontdef name="basemediumgrey" from="basemedium">
+        <color>#666666</color>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmallerdarkgrey" from="basesomewhatsmaller">
+        <color>#4f4f4f</color>
+    </fontdef>
+
+    <fontdef name="basesmalldarkgrey" from="basesmall">
+        <color>#4f4f4f</color>
+    </fontdef>
+
+    <fontdef name="basemediumdarkgrey" from="basemedium">
+        <color>#4f4f4f</color>
+    </fontdef>
+
+    <fontdef name="basesmallerlightgrey" from="basesmaller">
+        <color>#a1a1a1</color>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmallerlightgrey" from="basesomewhatsmaller">
+        <color>#a1a1a1</color>
+    </fontdef>
+
+    <fontdef name="basesmalllightgrey" from="basesmall">
+        <color>#808080</color>
+    </fontdef>
+
+    <fontdef name="basemediumlightgrey" from="basemedium">
+        <color>#a1a1a1</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallorange" from="baseextrasmall">
+        <color>#d97616</color>
+    </fontdef>
+
+    <fontdef name="basesmallorange" from="basesmall">
+        <color>#d97616</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallpurple" from="baseextrasmall">
+        <color>#a3a3d9</color>
+    </fontdef>
+
+    <fontdef name="basesmallerpurple" from="basesmaller">
+        <color>#a3a3d9</color>
+    </fontdef>
+
+    <fontdef name="basesmallpurple" from="basesmall">
+        <color>#a3a3d9</color>
+    </fontdef>
+
+    <fontdef name="basemediumpurple" from="basemedium">
+        <color>#a3a3d9</color>
+    </fontdef>
+
+    <fontdef name="basesupersmallred" from="basesupersmall">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallred" from="baseextrasmall">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="basesmallerred" from="basesmaller">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="basesmallred" from="basesmall">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="basemediumred" from="basemedium">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="baselargered" from="baselarge">
+        <color>#d93636</color>
+    </fontdef>
+
+    <fontdef name="basesupersmallyellow" from="basesupersmall">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="baseextrasmallyellow" from="baseextrasmall">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="basesmalleryellow" from="basesmaller">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="basesmallyellow" from="basesmall">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="basemediumyellow" from="basemedium">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="basemediumlargeryellow" from="basemediumlarger">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="baselargeyellow" from="baselarge">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="baseextralargeyellow" from="baseextralarge">
+        <color>#d9d900</color>
+    </fontdef>
+
+    <fontdef name="basesmalldarkyellow" from="basesmall">
+        <color>#CCCC29</color>
+    </fontdef>
+
+    <fontdef name="basemediumlargerdarkyellow" from="basemediumlarger">
+        <color>#CCCC29</color>
+    </fontdef>
+
+    <fontdef name="baselargedarkyellow" from="baselarge">
+        <color>#CCCC29</color>
+    </fontdef>
+
+    <!-- Base definition of a textarea -->
+    <textarea name="basetextarea">
+        <area>0,0,10,10</area>
+        <font>basesmall</font>
+        <multiline>no</multiline>
+        <align>left</align>
+    </textarea>
+
+    <!-- Base definition of a text font state extra small -->
+    <textarea name="base_text_font_state_extrasmall" from="basetextarea">
+        <font>baseextrasmall</font>
+        <font state="disabled">baseextrasmallpurple</font>
+        <font state="error">baseextrasmallred</font>
+        <font state="warning">baseextrasmallyellow</font>
+        <font state="normal">baseextrasmallblue</font>
+        <font state="running">baseextrasmallgreen</font>
+        <cutdown>yes</cutdown>
+        <align>vcenter</align>
+    </textarea>
+
+    <!-- Base definition of a text font state smaller -->
+    <textarea name="base_text_font_state_smaller" from="basetextarea">
+        <font>basesmaller</font>
+        <font state="disabled">basesmallerpurple</font>
+        <font state="error">basesmallerred</font>
+        <font state="warning">basesmalleryellow</font>
+        <font state="normal">basesmallerblue</font>
+        <font state="running">basesmallergreen</font>
+        <cutdown>yes</cutdown>
+        <align>vcenter</align>
+    </textarea>
+
+    <!-- Base definition of a text font state small -->
+    <textarea name="base_text_font_state_small" from="basetextarea">
+        <font>basesmall</font>
+        <font state="disabled">basesmallpurple</font>
+        <font state="error">basesmallred</font>
+        <font state="warning">basesmallyellow</font>
+        <font state="normal">basesmallblue</font>
+        <font state="running">basesmallgreen</font>
+        <cutdown>yes</cutdown>
+        <align>vcenter</align>
+    </textarea>
+
+    <!-- Base heading definition. -->
+    <textarea name="base_heading">
+        <area>0,-1,1280,28</area>
+        <font>baseextrasmall</font>
+        <align>allcenter</align>
+        <value>Heading</value>
+    </textarea>
+
+    <!-- Base definition of a heading backdrop -->
+    <shape name="base_heading_backdrop">
+        <area>525,-25,230,51</area>
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient alpha="170" direction="vertical">
+                <stop position="0" color="#000000" alpha="180" />
+                <stop position="60" color="#000000" alpha="180" />
+                <stop position="100" color="#ffffff" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="2" />
+        <cornerradius>15</cornerradius>
+    </shape>
+
+    <!-- Base definition of a clock  backdrop -->
+    <shape name="base_clock_backdrop">
+        <area>525,695,230,51</area>
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient alpha="170" direction="vertical">
+                <stop position="0" color="#ffffff" />
+                <stop position="40" color="#000000" alpha="180" />
+                <stop position="100" color="#000000" alpha="180" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="2" />
+        <cornerradius>15</cornerradius>
+    </shape>
+
+    <!-- Base definition of a clock -->
+    <clock name="base_clock">
+        <area>529,698,219,25</area>
+        <font>baseextrasmall</font>
+        <template>%DATE%, %TIME%</template>
+        <align>allcenter</align>
+        <alpha>255</alpha>
+    </clock>
+
+    <!-- Base definition of a base group box -->
+    <shape name="base_group_box">
+        <area>-4,36,1288,30</area>
+        <type>box</type>
+        <fill style="gradient">
+            <gradient alpha="170" direction="vertical">
+                <stop position="0" color="#ffffff" />
+                <stop position="55" color="#000000" alpha="160" />
+                <stop position="100" color="#000000" alpha="160" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="2" />
+    </shape>
+
+    <!-- Base definition of a base backdrop -->
+    <shape name="base_backdrop">
+        <area>20,36,1240,648</area>
+        <type>roundbox</type>
+        <fill color="#000000" alpha="130" />
+        <line color="#666666" alpha="170" width="2" />
+        <cornerradius>20</cornerradius>
+    </shape>
+
+    <!-- Base definition of a base backdrop for fanart -->
+    <shape name="base_backdrop_fanart">
+        <type>roundbox</type>
+        <fill color="#000000" alpha="80" />
+        <line color="#666666" alpha="170" width="2" />
+        <cornerradius>20</cornerradius>
+    </shape>
+
+    <shape name="base_popup_backdrop" from="base_backdrop">
+        <fill color="#0a0a0e" alpha="255" />
+    </shape>
+
+    <shape name="base_backdrop_top_edge_highlight">
+        <area>0,0,0,34</area>
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="170">
+                <stop position="0" color="#ffffff" />
+                <stop position="85" color="#ffffff" alpha="0" />
+                <stop position="100" color="#ffffff" alpha="0" />
+            </gradient>
+        </fill>
+        <cornerradius>17</cornerradius>
+    </shape>
+
+    <shape name="base_backdrop_bottom_edge_highlight">
+        <area>0,0,0,34</area>
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="160">
+                <stop position="0" color="#ffffff" alpha="0" />
+                <stop position="15" color="#ffffff" alpha="0" />
+                <stop position="100" color="#ffffff" />
+            </gradient>
+        </fill>
+        <cornerradius>17</cornerradius>
+    </shape>
+
+    <!-- Base definition of a base highlight -->
+    <shape name="base_highlight">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="160">
+                <stop position="0" color="#ffffff" />
+                <stop position="75" color="#000000" alpha="50" />
+                <stop position="100" color="#000000" alpha="50" />
+            </gradient>
+        </fill>
+        <line color="#AAAAAA" alpha="75" width="2" />
+        <cornerradius>20</cornerradius>
+    </shape>
+
+    <!-- Base definition of a base description highlight -->
+    <shape name="base_desc_highlight">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="140">
+                <stop position="0" color="#ffffff" />
+                <stop position="33" color="#000000" alpha="50" />
+                <stop position="100" color="#000000" alpha="50" />
+            </gradient>
+        </fill>
+        <line color="#AAAAAA" alpha="75" width="2" />
+        <cornerradius>20</cornerradius>
+    </shape>
+
+    <shape name="base_select_bar_active">
+        <type>roundbox</type>
+        <fill color="#ffffff" alpha="0" />
+        <line color="#666666" alpha="80" width="1" />
+        <cornerradius>0</cornerradius>
+    </shape>
+
+    <shape name="base_select_bar_selectedactive_small">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="160">
+                <stop position="0" color="#ffffff" />
+                <stop position="55" color="#0a0a0e" alpha="160" />
+                <stop position="100" color="#0a0a0e" alpha="160" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="1" />
+        <cornerradius>10</cornerradius>
+    </shape>
+
+    <shape name="base_select_bar_selectedactive_medium">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="160">
+                <stop position="0" color="#ffffff" />
+                <stop position="55" color="#0a0a0e" alpha="160" />
+                <stop position="100" color="#0a0a0e" alpha="160" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="1" />
+        <cornerradius>12</cornerradius>
+    </shape>
+
+    <shape name="base_select_bar_selectedactive_large">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="160">
+                <stop position="0" color="#ffffff" />
+                <stop position="55" color="#0a0a0e" alpha="160" />
+                <stop position="100" color="#0a0a0e" alpha="160" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="1" />
+        <cornerradius>15</cornerradius>
+    </shape>
+
+    <!-- Base definition of a selected button background -->
+    <shape name="base_button_background_selected">
+        <type>roundbox</type>
+        <fill style="gradient">
+            <gradient direction="vertical" alpha="255">
+                <stop position="0" color="#666666" />
+                <stop position="66" color="#0a0a0e" />
+                <stop position="100" color="#0a0a0e" />
+            </gradient>
+        </fill>
+        <line color="#666666" alpha="170" width="1" />
+        <cornerradius>90</cornerradius>
+    </shape>
+
+    <!-- Base definition of a active button background -->
+    <shape name="base_button_background_active" from="base_button_background_selected">
+        <fill color="#666666" alpha="255" />
+        <line color="#FFFFFF" alpha="100" width="1" /> 
+    </shape>
+
+    <!-- Base definition of a disabled button background -->
+    <shape name="base_button_background_disabled" from="base_button_background_selected">
+        <fill color="#404040" alpha="200" />
+        <line color="#404040" alpha="0" width="0" />    
+    </shape>
+
+    <!-- Base definition of a pushed Button background -->
+    <shape name="base_button_background_pushed" from="base_button_background_selected">
+        <fill color="#4d4d4d" alpha="200" />
+        <line color="#666666" alpha="200" width="1" />
+    </shape>
+
+    <!-- Base definition of a active button background list style -->
+    <shape name="base_button_background_active_list_style" from="base_button_background_selected">
+        <fill color="#666666" alpha="0" />
+        <line color="#FFFFFF" alpha="0" width="1" /> 
+    </shape>
+
+    <!-- Base definition of a inactve button background list style -->
+    <shape name="base_button_background_inactive_list_style" from="base_button_background_selected">
+        <fill color="#404040" alpha="0" />
+        <line color="#404040" alpha="0" width="0" />
+    </shape>
+
+    <!-- Base definition of a button list -->
+    <buttonlist name="base_button_list">
+        <layout>vertical</layout>
+        <spacing>3</spacing>
+        <drawfrombottom>yes</drawfrombottom>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="buttonbackground" from="base_button_background_active">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmallblack</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+                <statetype name="buttoncheck">
+                    <state type="off">
+                        <imagetype name="checkoff">
+                            <filename>images/lb-check-empty.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>images/lb-check-half.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                            <filename>images/lb-check-full.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <imagetype name="buttonarrow">
+                    <filename>images/lists_right_arrow.png</filename>
+                </imagetype>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_button_background_selected">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmall</font>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="upscrollarrow">
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/lists_up_arrow.png</filename>
+                    <alpha>80</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/lists_up_arrow.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/lists_down_arrow.png</filename>
+                    <alpha>80</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/lists_down_arrow.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list with a small sized select bar -->
+    <buttonlist name="base_list">
+        <layout>vertical</layout>
+        <spacing>-2</spacing>
+        <scrollstyle>free</scrollstyle>
+        <arrange>stack</arrange>
+        <wrapstyle>items</wrapstyle>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="buttonbackground" from="base_select_bar_active">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                </textarea>
+                <statetype name="buttoncheck">
+                    <state type="off">
+                        <imagetype name="checkoff">
+                            <filename>images/lb-check-empty.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>images/lb-check-half.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                            <filename>images/lb-check-full.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <imagetype name="buttonarrow">
+                    <filename>images/lists_right_arrow.png</filename>
+                </imagetype>
+            </state>
+            <state name="selectedinactive" from="active">
+                <shape name="buttonbackground" from="base_button_background_disabled">
+                    <area>0,0,100%,100%</area>
+                    <cornerradius>0</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmalllightgrey</font>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/lists_up_arrow.png</filename>
+                    <alpha>80</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/lists_up_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/lists_down_arrow.png</filename>
+                    <alpha>80</alpha>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/lists_down_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list with a medium sized select bar-->
+    <buttonlist name="base_list_medium" from="base_list">
+        <statetype name="buttonitem">
+            <state name="selectedactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list with a large sized select bar -->
+    <buttonlist name="base_list_large" from="base_list">
+        <statetype name="buttonitem">
+            <state name="selectedactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a button -->
+    <button name="base_button">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <area>0,0,150,35</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="background" from="base_button_background_active">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="text">
+                    <area>7%,1,93%,100%</area>
+                    <align>allcenter</align>
+                    <font>basemediumblack</font>
+                    <font state="selected">basemedium</font>
+                    <font state="disabled">basemediumdarkgrey</font>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="base_button_background_selected">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+            <state name="disabled" from="active">
+                <shape name="background" from="base_button_background_disabled">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+            <state name="pushed" from="active">
+                <shape name="background" from="base_button_background_pushed">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- Base definition of a medium button -->
+    <button name="base_medium_button" from="base_button">     
+        <statetype name="buttonstate">
+            <area>0,0,350,40</area>
+        </statetype>
+    </button>
+
+    <!-- Base definition of a wide button -->
+    <button name="base_wide_button" from="base_button">
+        <statetype name="buttonstate">
+            <area>0,0,480,40</area>
+        </statetype>
+    </button>
+
+    <!-- Base definition of a wide button list style -->
+    <button name="base_button_list_style">
+        <position>0,0</position>
+        <statetype name="buttonstate">
+            <area>0,0,540,40</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="background" from="base_select_bar_active">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="text">
+                    <area>6%,0,94%,100%</area>
+                    <align>vcenter</align>
+                    <font>basesmall</font>
+                    <font state="selected">basesmall</font>
+                    <font state="disabled">basesmalldarkgrey</font>
+                </textarea>
+            </state>
+            <state name="selected" from="active">
+                <shape name="background" from="base_select_bar_selectedactive_medium">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active" />
+        </statetype>
+    </button>
+
+    <!-- Base definition of a wider button list style-->
+    <button name="base_wide_button_list_style" from="base_button_list_style">
+        <statetype name="buttonstate">
+            <area>0,0,680,40</area>
+        </statetype>
+    </button>
+
+    <!-- Base definition of a search button -->
+    <button name="basesearchbutton">
+        <area>0,0,32,32</area>
+        <statetype name="buttonstate">
+            <state name="active">
+                <imagetype name="background">
+                    <filename>images/unchecked.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected" from="active">
+                <imagetype name="background">
+                    <filename>images/checkbox_background_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active">
+                <imagetype name="background">
+                    <filename>images/checked_selected.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </button>
+
+    <!-- Base definition of checkbox -->
+    <checkbox name="basecheckbox">
+        <position>2,2</position>
+        <statetype name="background">
+            <state name="active">
+                <position>2,2</position>
+                <imagetype name="background">
+                    <filename>images/unchecked.png</filename>
+                </imagetype>
+            </state>
+            <state name="selected">
+                <position>0,0</position>
+                <imagetype name="background">
+                    <filename>images/checkbox_background_selected_bug-workaround.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" />
+        </statetype>
+        <statetype name="checkstate">
+            <position>2,2</position>
+            <state type="off">
+                <imagetype name="background">
+                    <filename>images/unchecked.png</filename>
+                </imagetype>
+            </state>
+            <state type="half" />
+            <state type="full">
+                <imagetype name="mark">
+                    <filename>images/checked.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </checkbox>
+
+    <!-- Base definition of a spinbox -->
+    <spinbox name="base_spinbox">
+        <area>0,0,80,40</area>
+        <layout>horizontal</layout>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,98%,100%</area>
+                <shape name="buttonbackground">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#404040" alpha="175" />
+                    <line color="#404040" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>11%,0,89%,100%</area>
+                    <font>basesmalllightgrey</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#FFFFFF" alpha="150" />
+                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmallblack</font>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>100%,2</position>
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>100%,21</position>
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </spinbox>
+
+    <!-- Base definition of a wide spinbox -->
+    <spinbox name="base_wide_spinbox" from="base_spinbox">
+        <area>0,0,580,40</area>
+    </spinbox>
+
+    <!-- Base definition of a spinbox list style -->
+    <spinbox name="base_spinbox_list_style">
+        <area>0,0,680,40</area>
+        <layout>horizontal</layout>
+        <wrapstyle>items</wrapstyle>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,100%,40</area>
+                <shape name="buttonbackground" from="base_select_bar_active">
+                    <area>0,0,100%,40</area>
+                </shape>
+                <textarea name="buttontext">
+                    <area>6%,0,94%,40</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+                <imagetype name="leftarrow">
+                    <position>10,10</position>
+                    <filename>images/lists_left_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+                <imagetype name="rightarrow">
+                    <position>660,10</position>
+                    <filename>images/lists_right_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                    <area>0,0,100%,40</area>
+                </shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+    </spinbox>
+
+    <!-- Base definition of a list in 'selector' configuration -->
+    <buttonlist name="base_selector">
+        <layout>horizontal</layout>
+        <wrapstyle>selection</wrapstyle>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="buttonbackground">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#404040" alpha="175" />
+                    <line color="#404040" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmalllightgrey</font>
+                    <cutdown>no</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#FFFFFF" alpha="150" />
+                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmallblack</font>
+                </textarea>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <state type="off">
+                <imagetype name="dnoff">
+                    <filename>images/lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnon">
+                    <filename>images/lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <state type="off">
+                <imagetype name="upoff">
+                    <filename>images/lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upon">
+                    <filename>images/lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a selector in list style -->
+    <buttonlist name="base_selector_list_style">
+        <area>0,0,540,40</area>
+        <layout>horizontal</layout>
+        <spacing>3</spacing>
+        <wrapstyle>items</wrapstyle>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="buttonbackground" from="base_select_bar_active">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                    <area>6%,0,94%,100%</area>
+                </textarea>
+                <imagetype name="leftarrow">
+                    <position>10,10</position>
+                    <filename>images/lists_left_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+                <imagetype name="rightarrow">
+                    <position>520,10</position>
+                    <filename>images/lists_right_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+    </buttonlist>
+
+    <buttonlist name="base_wide_selector_list_style" from="base_selector_list_style">
+        <area>0,0,680,40</area>
+        <statetype name="buttonitem">
+            <state name="active">
+                <imagetype name="rightarrow">
+                    <position>660,10</position>
+                </imagetype>
+            </state>
+            <state name="selectedactive">
+                <imagetype name="rightarrow">
+                    <position>660,10</position>
+                </imagetype>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a textedit -->
+    <textedit name="base_textedit">
+        <area>0,0,287,30</area>
+        <statetype name="background">
+           <state name="active">
+               <area>0,0,100%,100%</area>
+               <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#404040" alpha="175" />
+                    <line color="#404040" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+            </state>
+            <state name="selected" from="active">
+               <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#FFFFFF" alpha="150" />
+                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+            </state>
+            <state name="inactive" from="active">
+               <shape name="background">
+                    <area>0,0,100%,100%</area>
+                    <type>roundbox</type>
+                    <fill color="#404040" alpha="175" />
+                    <line color="#404040" alpha="225" width="1" />
+                    <cornerradius>90</cornerradius>
+                </shape>
+            </state>
+        </statetype>
+        <imagetype name="cursor">
+            <filename>images/cursor.png</filename>
+        </imagetype>
+        <textarea name="text">
+            <area>5%,0,95%,100%</area>
+            <font>basesmallblack</font>
+            <align>vcenter</align>
+        </textarea>
+    </textedit>
+
+    <!-- Base definition of a wide textedit -->
+    <textedit name="base_wide_textedit" from="base_textedit">
+        <area>0,0,580,30</area>
+        <textarea name="text">
+            <area>2%,0,98%,100%</area>
+        </textarea>
+    </textedit>
+
+    <!-- base definition of a rating -->
+    <statetype name="baserating">
+        <area>471,122,187,25</area>
+        <state name="0">
+        </state>
+        <state name="1">
+            <imagetype name="stars">
+                <filename>images/halfstar.png</filename>
+            </imagetype>
+        </state>
+        <state name="2">
+            <imagetype name="stars">
+                <filename>images/1star.png</filename>
+            </imagetype>
+        </state>
+        <state name="3">
+            <imagetype name="stars">
+                <filename>images/1.5star.png</filename>
+            </imagetype>
+        </state>
+        <state name="4">
+            <imagetype name="stars">
+                <filename>images/2star.png</filename>
+            </imagetype>
+        </state>
+        <state name="5">
+            <imagetype name="stars">
+                <filename>images/2.5star.png</filename>
+            </imagetype>
+        </state>
+        <state name="6">
+            <imagetype name="stars">
+                <filename>images/3star.png</filename>
+            </imagetype>
+        </state>
+        <state name="7">
+            <imagetype name="stars">
+                <filename>images/3.5star.png</filename>
+            </imagetype>
+        </state>
+        <state name="8">
+            <imagetype name="stars">
+                <filename>images/4star.png</filename>
+            </imagetype>
+        </state>
+        <state name="9">
+            <imagetype name="stars">
+                <filename>images/4.5star.png</filename>
+            </imagetype>
+        </state>
+        <state name="10">
+            <imagetype name="stars">
+                <filename>images/5star.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
+    <!-- Base definition of a progressbar -->
+    <progressbar name="baseprogressbar">
+        <area>0,0,10,10</area>
+        <layout>horizontal</layout>
+        <style>reveal</style>
+        <imagetype name="background">
+            <filename>images/progressbar/progressbar_background.png</filename>
+        </imagetype>
+        <imagetype name="progressimage">
+            <filename>images/progressbar/progressbar_fill.png</filename>
+        </imagetype>
+    </progressbar>
+
+    <!-- Base definition of popup darken background -->
+    <shape name="base_darken_popup_background">
+        <area>0,0,1280,720</area>
+        <type>box</type>
+        <fill color="#000000" alpha="60" />
+    </shape>
+
+    <!-- Base definition of a background -->
+    <window name="backgroundwindow">
+
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background.png</filename>
+        </imagetype>
+
+        <shape name="heading-backdrop" from="base_heading_backdrop" />
+
+        <shape name="clockbackdrop" from="base_clock_backdrop" />
+
+        <clock name="clock" from="base_clock" />
+    </window>
+
+    <!-- Popup Dialogue Box -->
+    <window name="MythPopupBox">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background">
+            <area>0,0,1280,720</area>
+        </shape>
+
+        <shape name="popup-backdrop" from="base_popup_backdrop">
+            <area>440,128,400,463</area>
+        </shape>
+
+        <shape name="popup-backdrop-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>443,131,394,34</area>
+        </shape>
+
+        <shape name="popup-backdrop-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>443,554,394,34</area>
+        </shape>
+
+        <shape name="popup-highlight">
+            <area>455,140,370,164</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="15" />
+            <line color="#FFFFFF" alpha="45" width="2" />
+            <cornerradius>15</cornerradius>
+        </shape>
+
+        <shape name="popup-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>458,143,364,34</area>
+        </shape>
+
+        <shape name="popup-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>458,267,364,34</area>
+        </shape>
+
+        <textarea name="messagearea" from="basetextarea">
+            <area>465,147,350,150</area>
+            <font>basesmalldarkyellow</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="list" from="base_button_list">
+            <area>455,310,370,264</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,370,40</area>
+                    <textarea name="buttontext">
+                        <area>8,0,354,40</area>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>347,11</position>
+                    </imagetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,369,40</area>
+                    <textarea name="buttontext">
+                        <area>8,0,354,40</area>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>347,11</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+        <statetype name="upscrollarrow">
+            <position>10,257</position>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>40,257</position>
+        </statetype>
+        </buttonlist>
+    </window>
+
+    <!-- Large Dialogue Box -->
+   <window name="MythDialogBox">
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
+            <area>236,102,815,516</area>
+        </shape>
+
+        <shape name="large-dialogbox-backdrop-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>239,105,809,34</area>
+        </shape>
+
+        <shape name="large-dialogbox-backdrop-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>239,581,809,34</area>
+        </shape>
+
+        <shape name="large-dialogbox-messagearea">
+            <area>254,120,779,282</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="15" />
+            <line color="#FFFFFF" alpha="45" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="large-dialogbox-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>257,123,773,34</area>
+        </shape>
+
+        <shape name="large-dialogbox-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>257,365,773,34</area>
+        </shape>
+
+        <textarea name="messagearea" from="basetextarea">
+            <area>264,130,759,262</area>
+            <multiline>yes</multiline>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="list" from="base_button_list">
+            <area>256,422,780,174</area>
+            <layout>grid</layout>
+            <wrapstyle>selection</wrapstyle>
+            <drawfrombottom>no</drawfrombottom>
+            <spacing>4</spacing>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,384,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,354,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,384,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,354,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,384,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,354,40</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>10,174</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>40,174</position>
+            </statetype>
+        </buttonlist>
+    </window>
+
+    <window name="MythBusyDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
+        </shape>
+
+        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>353,280,581,34</area>
+        </shape>
+
+        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>353,410,581,34</area>
+        </shape>
+
+        <imagetype name="animation">
+            <position>375,317</position>
+            <filepattern low="1" high="50">images/progressbar/progress%1.png</filepattern>
+            <delay>30</delay>
+        </imagetype>
+
+        <textarea name="message" from="basetextarea">
+            <area>351,347,560,65</area>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+        </textarea>
+    </window>
+
+    <window name="MythProgressDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
+        </shape>
+
+        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>353,280,581,34</area>
+        </shape>
+
+        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>353,410,581,34</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>370,297,540,60</area>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <progressbar name="progressbar" from="baseprogressbar">
+            <position>372,357</position>
+        </progressbar>
+
+        <textarea name="progresstext" from="basetextarea">
+            <area>380,407,200,30</area>
+            <align>left,top</align>
+            <value>0%</value>
+        </textarea>
+    </window>
+
+    <window name="MythConfirmationDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
+        </shape>
+
+        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>353,280,581,34</area>
+        </shape>
+
+        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>353,410,581,34</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>365,292,550,90</area>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+            <cutdown>no</cutdown>
+        </textarea>
+
+        <button name="cancel" from="base_button">
+            <position>440,387</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_button">
+            <position>688,387</position>
+            <value>OK</value>
+        </button>
+    </window>
+
+    <window name="MythTextInputDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
+        </shape>
+
+        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>353,280,581,34</area>
+        </shape>
+
+        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>353,410,581,34</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>370,297,540,30</area>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textedit name="input" from="base_textedit">
+            <position>492,337</position>
+        </textedit>
+
+        <button name="ok" from="base_button">
+            <position>559,387</position>
+            <value>OK</value>
+        </button>
+    </window>
+
+    <window name="MythSearchDialog">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>380,100,520,520</area>
+        </shape>
+
+        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>383,103,514,34</area>
+        </shape>
+
+        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>383,583,514,34</area>
+        </shape>
+
+        <shape name="edit-powersearch-top-line">
+            <area>415,170,450,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="edit-powersearch-bottom-line">
+            <area>415,560,450,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>405,108,470,60</area>
+            <font>basesmalldarkyellow</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <textedit name="input" from="base_textedit">
+            <position>497,184</position>
+        </textedit>
+
+        <buttonlist name="itemlist" from="base_button_list">
+            <area>410,226,460,320</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>10,310</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>40,310</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="cancel" from="base_button">
+            <position>457,572</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_button">
+            <position>674,572</position>
+            <value>OK</value>
+        </button>
+    </window>
+
+    <window name="MythFileBrowser">
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="myth-file-browser-backdrop" from="base_popup_backdrop">
+            <area>155,56,970,536</area>
+        </shape>
+
+        <shape name="myth-file-browser-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>158,59,964,34</area>
+        </shape>
+
+        <shape name="myth-file-browser-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>158,555,964,34</area>
+        </shape>
+
+        <shape name="myth-file-browser-left-highlight">
+            <area>184,85,534,479</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="15" />
+            <line color="#FFFFFF" alpha="45" width="2" />
+        </shape>
+
+        <shape name="myth-file-browser-left-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>187,88,528,34</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="myth-file-browser-left-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <type>box</type>
+            <area>187,527,528,34</area>
+        </shape>
+
+        <shape name="myth-file-browser-right-highlight">
+            <area>739,76,360,496</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="15" />
+            <line color="#FFFFFF" alpha="45" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="myth-file-browser-right-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>742,79,354,34</area>
+        </shape>
+
+        <shape name="myth-file-browser-right-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>742,535,354,34</area>
+        </shape>
+
+        <shape name="myth-file-browser-filename-backdrop" from="base_popup_backdrop">
+            <area>20,614,1240,50</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="myth-file-browser-filename-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,617,1234,34</area>
+        </shape>
+
+        <textedit name="location" from="base_textedit">
+            <position>777,94</position>
+        </textedit>
+
+        <buttonlist name="filelist">
+            <area>187,88,531,480</area>
+            <layout>grid</layout>
+            <spacing>0</spacing>
+            <buttonarea>0,0,530,480</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,106,158</area>
+                    <imagetype name="buttonbackground" />
+                    <imagetype name="buttonimage">
+                        <area>0,0,106,158</area>
+                        <alpha>160</alpha>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <state name="folder">
+                            <imagetype name="icon">
+                                <area>28,90,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>28,90,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="executable">
+                            <area>28,90,53,40</area>
+                            <imagetype name="icon">
+                                <area>0,0,106,158</area>
+                            </imagetype>
+                        </state>
+                        <state name="file">
+                            <area>28,90,53,40</area>
+                            <imagetype name="icon">
+                                <area>0,0,106,158</area>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive">
+                    <area>-40,-40,180,240</area>
+                    <statetype name="nodetype">
+                        <state name="folder">
+                            <imagetype name="icon">
+                                <area>65,130,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>65,130,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="executable">
+                            <area>65,130,53,40</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                        <state name="file">
+                            <area>65,130,53,40</area>
+                            <imagetype name="icon">
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonbackground">
+                        <area>12,11,160,217</area>
+                        <filename>images/mv_video_underlay.png</filename>
+                        <alphapulse min="80" max="255" change="2"/>
+                    </imagetype>
+                    <imagetype name="buttonimage">
+                        <area>12,9,160,220</area>
+                        <mask>images/mv_browsemodemask.png</mask>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <button name="back" from="base_button">
+            <area>754,132,138,28</area>
+            <value>Up Level</value>
+        </button>
+
+        <button name="home" from="base_button">
+            <area>933,132,138,28</area>
+            <value>Home</value>
+        </button>
+
+        <imagetype name="preview">
+            <area>752,173,335,321</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="info" from="basetextarea">
+            <area>754,495,335,25</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="cancel" from="base_button">
+            <position>933,520</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_button">
+            <position>754,520</position>
+            <value>Ok</value>
+        </button>
+
+        <textarea name="filename" from="basetextarea">
+            <area>40,622,1200,38</area>
+            <cutdown>yes</cutdown>
+            <font>basemedium</font>
+            <value>Filename</value>
+        </textarea>
+
+        <textarea name="buttontext" from="basetextarea">
+            <area>22,678,475,38</area>
+            <cutdown>yes</cutdown>
+            <font>baselarge</font>
+        </textarea>
+
+    </window>
+
+    <window name="videowindow">
+
+        <shape name="background">
+            <area>0,0,1280,720</area>
+            <type>box</type>
+            <fill color="#000000" alpha="255" />
+        </shape>
+
+        <shape name="videowindow_backdrop">
+            <area>350,50,580,70</area>
+            <type>roundbox</type>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="28" color="#000000" alpha="80" />
+                    <stop position="72" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160"/>
+                </gradient>
+            </fill>
+            <line color="#666666" alpha="170" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <textarea name="progresstext" from="basetextarea">
+            <area>350,50,580,70</area>
+            <font>basemediumlarger</font>
+            <value>Playback starting ...</value>
+            <align>allcenter</align>
+        </textarea>
+    </window>
+
+</mythuitheme>

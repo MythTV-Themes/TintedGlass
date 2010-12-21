@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+  <window name="netsearch">
+
+        <textarea name="heading" from="base_heading">
+            <value>Netvision Search</value>
+        </textarea>
+
+        <shape name="netvision-search-term-backdrop" from="base_backdrop">
+            <area>236,36,804,60</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="netvision-search-term-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>241,39,794,34</area>
+        </shape>
+
+        <shape name="netvision-search-sites-backdrop" from="base_backdrop">
+            <area>20,108,408,314</area>
+        </shape>
+
+        <shape name="netvision-search-list-backdrop" from="base_backdrop">
+            <area>438,108,822,314</area>
+        </shape>
+
+        <shape name="netvision-search-sites-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,111,402,34</area>
+        </shape>
+
+        <shape name="netvision-search-sites-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,385,402,34</area>
+        </shape>
+
+        <shape name="netvision-search-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>441,111,816,34</area>
+        </shape>
+
+        <shape name="netvision-search-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>441,385,816,34</area>
+        </shape>
+
+        <shape name="netvision-search-description-backdrop" from="base_backdrop_fanart">
+            <area>20,434,1240,250</area>
+        </shape>
+
+        <shape name="netvision-search-description-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,437,1234,244</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="100" color="#000000" alpha="90" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-search-author-highlight" from="base_highlight">
+            <area>130,474,432,35</area>
+        </shape>
+
+        <shape name="netvision-search-filesize-highlight" from="base_highlight">
+            <area>640,474,422,35</area>
+        </shape>
+
+        <shape name="netvision-search-description-highlight" from="base_desc_highlight">
+            <area>30,512,1032,156</area>
+        </shape>
+
+        <shape name="netvision-search-preview-highlight" from="base_desc_highlight">
+            <area>1066,484,184,184</area>
+            <cornerradius>5</cornerradius>
+        </shape>
+
+        <textarea name="searchlab" from="basetextarea">
+            <area>270,51,144,30</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <value>Search Term:</value>
+        </textarea>
+
+        <textedit name="search" from="base_wide_textedit">
+            <position>430,51</position>
+        </textedit>
+
+        <buttonlist name="sites" from="base_list">
+            <area>22,132,404,268</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,404,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,368,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,404,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,368,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,404,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,368,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>360,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>360,268</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="results" from="base_list">
+            <area>440,132,818,268</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,818,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,782,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,818,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,782,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,818,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,782,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>774,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>774,268</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,439,1200,30</area>
+            <font>baselargeyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="author-label" from="basetextarea">
+            <area>40,476,90,30</area>
+            <font>basesmall</font>
+            <align>vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+        <textarea name="author" from="basetextarea">
+            <area>145,476,402,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="filsize-label" from="basetextarea">
+            <area>579,476,90,30</area>
+            <font>basesmall</font>
+            <align>vcenter</align>
+            <value>Size:</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="basetextarea">
+            <area>655,476,392,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>50,514,992,156</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <imagetype name="preview">
+            <area>1070,488,176,176</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>458,108,782,314</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>Can't find any search scripts!  This usually indicates missing search script prerequisities.  Try running a script from the command line.</value>
+        </textarea>
+
+    </window>
+
+    <window name="treeeditor">
+
+        <textarea name="heading" from="base_heading">
+            <value>Manage Site Subscriptions</value>
+        </textarea>
+
+        <shape name="manage-sites-backdrop" from="base_backdrop">
+            <area>275,36,730,648</area>
+        </shape>
+
+        <shape name="manage-sites-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>278,39,724,34</area>
+        </shape>
+
+        <shape name="manage-sites-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>278,647,724,34</area>
+        </shape>
+
+        <buttonlist name="grabbers" from="base_list">
+            <area>277,56,726,610</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,726,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,726,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>683,-19</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>683,608</position>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+    <window name="rsseditor">
+
+        <textarea name="heading" from="base_heading">
+            <value>Manage RSS Subscriptions</value>
+        </textarea>
+
+        <shape name="manage-rss-subscriptions-top-backdrop" from="base_backdrop">
+            <area>275,36,730,60</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>280,39,720,34</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-middle-backdrop" from="base_backdrop">
+            <area>275,108,730,368</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-middle-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>278,111,724,34</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-middle-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>278,439,724,34</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-bottom-backdrop" from="base_backdrop">
+            <area>20,488,1240,196</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,491,1234,34</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-author-highlight" from="base_highlight">
+            <area>125,524,1000,35</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-description-highlight" from="base_highlight">
+            <area>30,562,1095,116</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-preview-highlight" from="base_desc_highlight">
+            <area>1130,494,120,184</area>
+            <cornerradius>10</cornerradius>
+        </shape>
+
+        <button name="edit" from="base_button">
+            <position>345,48</position>
+            <value>Edit</value>
+        </button>
+
+        <button name="new" from="base_button">
+            <position>565,48</position>
+            <value>New</value>
+        </button>
+
+        <button name="delete" from="base_button">
+            <position>785,48</position>
+            <value>Remove</value>
+        </button>
+
+        <buttonlist name="sites" from="base_list">
+            <area>277,131,726,324</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,726,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,726,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,726,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>686,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>686,324</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,492,1085,30</area>
+            <font>basemediumyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="author-label" from="basetextarea">
+            <area>30,526,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+        <textarea name="author" from="basetextarea">
+            <area>140,526,970,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>50,568,1055,108</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+        </textarea>
+
+        <imagetype name="preview">
+            <area>1135,498,110,176</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+    </window>
+
+    <window name="rsseditpopup">
+
+        <textarea name="heading" from="base_heading">
+            <value>Manage RSS Subscriptions</value>
+        </textarea>
+
+        <shape name="manage-rss-top-backdrop" from="base_backdrop">
+            <area>215,36,850,516</area>
+        </shape>
+
+        <shape name="manage-rss-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>218,39,844,34</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>218,515,844,34</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="title-label" from="basetextarea">
+            <area>242,74,190,30</area>
+            <align>right</align>
+            <value>Feed Name:</value>
+        </textarea>
+
+        <textedit name="title" from="base_wide_textedit">
+            <position>442,73</position>
+        </textedit>
+
+        <textarea name="url-label" from="basetextarea">
+            <area>242,144,190,30</area>
+            <align>right</align>
+            <value>Feed URL:</value>
+        </textarea>
+
+        <textedit name="url" from="base_wide_textedit">
+            <position>442,143</position>
+        </textedit>
+
+        <textarea name="desc-label" from="basetextarea">
+            <area>242,214,190,30</area>
+            <align>right</align>
+            <value>Site Description:</value>
+        </textarea>
+
+        <textedit name="description" from="base_wide_textedit">
+            <position>442,213</position>
+        </textedit>
+
+        <textarea name="author-label" from="basetextarea">
+            <area>242,284,190,30</area>
+            <align>right</align>
+            <value>Feed Author:</value>
+        </textarea>
+
+        <textedit name="author" from="base_wide_textedit">
+            <position>442,283</position>
+        </textedit>
+
+        <checkbox name="download" from="basecheckbox">
+            <position>800,370</position>
+        </checkbox>
+
+        <textarea name="download-label" from="basetextarea">
+            <area>425,374,365,30</area>
+            <align>right</align>
+            <value>Download this feed automatically:</value>
+        </textarea>
+
+        <imagetype name="preview">
+            <area>890,424,90,90</area>
+        </imagetype>
+
+        <button name="preview_browse" from="base_medium_button">
+            <position>465,450</position>
+            <value>Choose Image</value>
+        </button>
+
+        <button name="ok" from="base_medium_button">
+            <position>200,635</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="base_medium_button">
+            <position>730,635</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="tree">
+
+        <textarea name="heading" from="base_heading">
+            <value>Netvision List View</value>
+        </textarea>
+
+        <shape name="netvision-list-sites-backdrop" from="base_backdrop_fanart">
+            <area>20,36,613,300</area>
+        </shape>
+
+        <shape name="netvision-list-sites-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,607,294</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="93" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-list-videos-backdrop" from="base_backdrop_fanart">
+            <area>647,36,613,300</area>
+        </shape>
+
+        <shape name="netvision-list-videos-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>650,39,607,294</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="93" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-description-backdrop" from="base_backdrop_fanart">
+            <area>20,356,1240,328</area>
+        </shape>
+
+        <shape name="netvision-list-description-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,359,1234,322</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="100" color="#000000" alpha="90" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-list-author-highlight" from="base_highlight">
+            <area>130,402,710,35</area>
+        </shape>
+
+        <shape name="netvision-list-user-rating-highlight" from="base_highlight">
+            <area>940,402,303,35</area>
+        </shape>
+
+        <shape name="netvision-list-date-highlight" from="base_highlight">
+            <area>130,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-list-filesize-highlight" from="base_highlight">
+            <area>513,441,304,35</area>
+        </shape>
+
+        <shape name="netvision-list-runtime-highlight" from="base_highlight">
+            <area>940,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-list-description-highlight" from="base_desc_highlight">
+            <area>30,480,956,194</area>
+        </shape>
+
+        <shape name="netvision-list-preview-highlight" from="base_desc_highlight">
+            <area>991,480,259,194</area>
+            <cornerradius>15</cornerradius>
+        </shape>
+
+        <buttontree name="videos">
+            <area>22,57,1236,260</area>
+            <numlists>2</numlists>
+            <spacing>18</spacing>
+            <buttonlist name="listtemplate" from="base_list">
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,609,34</area>
+                        <textarea name="buttontext">
+                            <area>18,4,544,24</area>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive">
+                        <area>0,0,609,34</area>
+                        <textarea name="buttontext">
+                            <area>18,4,544,24</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>580,8</position>
+                        </imagetype>
+                    </state>
+                    <state name="selectedinactive">
+                        <area>0,0,609,34</area>
+                        <textarea name="buttontext">
+                            <area>18,4,544,24</area>
+                        </textarea>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <position>569,-19</position>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <position>569,259</position>
+                </statetype>
+            </buttonlist>
+        </buttontree>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,362,1200,34</area>
+            <cutdown>yes</cutdown>
+            <font>baselargeyellow</font>
+        </textarea>
+
+        <textarea name="author_label" from="basetextarea">
+            <area>30,403,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+        <textarea name="author" from="basetextarea">
+            <area>145,404,680,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="userratinglbl" from="basetextarea">
+            <area>830,403,100,30</area>
+            <align>right,vcenter</align>
+            <value>Rating:</value>
+        </textarea>
+
+        <textarea name="rating" from="basetextarea">
+            <area>955,404,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="date_label" from="basetextarea">
+            <area>30,443,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Posted:</value>
+        </textarea>
+
+        <textarea name="date" from="basetextarea">
+            <area>145,443,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="filesize_label" from="basetextarea">
+            <area>423,443,80,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Size:</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="basetextarea">
+            <area>528,443,274,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="lenlbl" from="basetextarea">
+            <area>830,441,100,35</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Runtime:</value>
+        </textarea>
+
+        <textarea name="duration" from="basetextarea">
+            <area>955,443,273,30</area>
+            <font>basesmalleyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>44,488,928,186</area>
+            <font>basesmall</font>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <imagetype name="preview">
+            <area>995,483,250,188</area>
+            <preserveaspect>true</preserveaspect>
+            <mask>images/masks/netvision_list_preview_mask.png</mask>
+        </imagetype>
+
+        <textarea name="nosites" from="description">
+            <area>24,36,609,300</area>
+              <multiline>yes</multiline>
+              <font>basesmall</font>
+              <align>allcenter</align>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+        </textarea>
+
+    </window>
+
+    <window name="browser">
+
+        <textarea name="heading" from="base_heading">
+            <value>Netvision Browse View</value>
+        </textarea>
+
+        <shape name="netvision-browse-backdrop">
+            <area>-4,57,1288,248</area>
+            <type>box</type>
+            <fill color="#000000" alpha="130" />
+            <line color="#666666" alpha="170" width="2" />
+        </shape>
+
+        <shape name="netvision-browse-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>-16,60,1312,34</area>
+        </shape>
+
+        <shape name="netvision-browse-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>-16,268,1312,34</area>
+        </shape>
+
+        <shape name="netvision-browse-description-backdrop" from="base_backdrop_fanart">
+            <area>20,366,1240,318</area>
+        </shape>
+
+        <shape name="netvision-browse-description-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,369,1234,312</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="100" color="#000000" alpha="90" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-browse-author-highlight" from="base_highlight">
+            <area>130,402,710,35</area>
+        </shape>
+
+        <shape name="netvision-browse-user-rating-highlight" from="base_highlight">
+            <area>940,402,303,35</area>
+        </shape>
+
+        <shape name="netvision-browse-date-highlight" from="base_highlight">
+            <area>130,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-browse-filesize-highlight" from="base_highlight">
+            <area>513,441,304,35</area>
+        </shape>
+
+        <shape name="netvision-browse-runtime-highlight" from="base_highlight">
+            <area>940,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-browse-description-highlight" from="base_desc_highlight">
+            <area>30,480,1220,194</area>
+        </shape>
+
+        <buttonlist name="videos">
+            <area>20,88,1240,298</area>
+            <layout>horizontal</layout>
+            <spacing>0</spacing>
+            <scrollstyle>center</scrollstyle>
+            <buttonarea>0,0,1240,298</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,248,186</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,248,186</area>
+                        <filename>images/image_gallery_no_image.png</filename>
+                        <preserveaspect>yes</preserveaspect>                        
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>97,100</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,0,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>0,0,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>101,112,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>-68,-52,384,288</area>
+                    <shape name="center-cover-frame">
+                        <area>0,0,384,288</area>
+                        <type>roundbox</type>
+                        <fill color="#101017" alpha="255" />
+                        <line color="#666666" alpha="255" width="4" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>8,6,368,276</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <filename>images/mv_browse_nocover.png</filename>
+                        <mask>images/masks/netvision_browse_selector_mask.png</mask>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>165,164</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>0,0,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder" from="subfolder">
+                            <imagetype name="arrow">
+                                <area>0,0,66,50</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>169,182,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>2,230</position>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_left_arrow_large.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1220,230</position>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_right_arrow_large.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,368,1090,34</area>
+            <cutdown>yes</cutdown>
+            <font>baselargeyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="author_label" from="basetextarea">
+            <area>30,403,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+        <textarea name="author" from="basetextarea">
+            <area>145,404,680,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="userratinglbl" from="basetextarea">
+            <area>830,403,100,30</area>
+            <align>right,vcenter</align>
+            <value>Rating:</value>
+        </textarea>
+
+        <textarea name="rating" from="basetextarea">
+            <area>955,404,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="date_label" from="basetextarea">
+            <area>30,443,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Posted:</value>
+        </textarea>
+
+        <textarea name="date" from="basetextarea">
+            <area>145,443,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="filesize_label" from="basetextarea">
+            <area>423,443,80,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Size:</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="basetextarea">
+            <area>528,443,274,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="lenlbl" from="basetextarea">
+            <area>830,441,100,35</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Runtime:</value>
+        </textarea>
+
+        <textarea name="duration" from="basetextarea">
+            <area>955,443,273,30</area>
+            <font>basesmalleyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>50,487,1180,186</area>
+            <font>basesmall</font>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>40,480,1200,194</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+        </textarea>
+
+    </window>
+
+    <window name="gallery">
+
+        <textarea name="heading" from="base_heading">
+            <value>Netvision Gallery View</value>
+        </textarea>
+
+        <shape name="netvision-gallery-backdrop">
+            <area>-4,36,1288,318</area>
+            <type>box</type>
+            <fill color="#000000" alpha="130" />
+            <line color="#666666" alpha="170" width="2" />
+        </shape>
+
+        <shape name="netvision-gallery-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>-16,39,1312,34</area>
+        </shape>
+
+        <shape name="netvision-gallery-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>-16,317,1312,34</area>
+        </shape>
+
+        <shape name="netvision-gallery-description-backdrop" from="base_backdrop_fanart">
+            <area>20,366,1240,318</area>
+        </shape>
+
+        <shape name="netvision-gallery-description-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,369,1234,312</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="90" />
+                    <stop position="100" color="#000000" alpha="90" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="netvision-gallery-author-highlight" from="base_highlight">
+            <area>130,402,710,35</area>
+        </shape>
+
+        <shape name="netvision-gallery-user-rating-highlight" from="base_highlight">
+            <area>940,402,303,35</area>
+        </shape>
+
+        <shape name="netvision-gallery-date-highlight" from="base_highlight">
+            <area>130,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-gallery-filesize-highlight" from="base_highlight">
+            <area>513,441,304,35</area>
+        </shape>
+
+        <shape name="netvision-gallery-runtime-highlight" from="base_highlight">
+            <area>940,441,303,35</area>
+        </shape>
+
+        <shape name="netvision-gallery-description-highlight" from="base_desc_highlight">
+            <area>30,480,1220,194</area>
+        </shape>
+
+        <buttonlist name="videos">
+            <area>35,66,1220,268</area>
+            <layout>grid</layout>
+            <spacing>8</spacing>
+            <buttonarea>0,0,1220,268</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,166,125</area>
+                    <imagetype name="buttonimage">
+                        <area>0,0,166,125</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <filename>images/image_gallery_no_image.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>56,10,53,40</area>
+                                <filename>images/folderclosed.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>56,10,53,40</area>
+                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>60,73,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>-25,-18,240,180</area>
+                    <shape name="buttonbackground">
+                        <area>-12,-9,240,180</area>
+                        <type>roundbox</type>
+                        <fill color="#101017" alpha="255" />
+                        <line color="#666666" alpha="255" width="6" />
+                        <cornerradius>15</cornerradius>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>0,0,216,162</area>
+                        <preserveaspect>yes</preserveaspect>
+                        <mask>images/masks/netvision_gallery_selector_mask.png</mask>
+                        <filename>images/image_gallery_no_image.png</filename>
+                    </imagetype>
+                    <statetype name="nodetype">
+                        <position>0,50</position>
+                        <state name="subfolder">
+                            <imagetype name="icon">
+                                <area>82,38,53,40</area>
+                                <filename>images/folderopen.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                        <state name="upfolder">
+                            <imagetype name="icon">
+                                <area>82,38,53,40</area>
+                                <filename>images/mv_gallery_dir_up_open.png</filename>
+                                <preserveaspect>yes</preserveaspect>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="childcount" from="basetextarea">
+                        <area>88,106,45,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1146,304</position>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1176,304</position>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,368,1090,34</area>
+            <cutdown>yes</cutdown>
+            <font>baselargeyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="author_label" from="basetextarea">
+            <area>30,403,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Author:</value>
+        </textarea>
+
+        <textarea name="author" from="basetextarea">
+            <area>145,404,680,30</area>
+            <font>basesmallyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="userratinglbl" from="basetextarea">
+            <area>830,403,100,30</area>
+            <align>right,vcenter</align>
+            <value>Rating:</value>
+        </textarea>
+
+        <textarea name="rating" from="basetextarea">
+            <area>955,404,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="date_label" from="basetextarea">
+            <area>30,443,90,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Posted:</value>
+        </textarea>
+
+        <textarea name="date" from="basetextarea">
+            <area>145,443,273,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="filesize_label" from="basetextarea">
+            <area>423,443,80,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Size:</value>
+        </textarea>
+
+        <textarea name="filesize_str" from="basetextarea">
+            <area>528,443,274,30</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="lenlbl" from="basetextarea">
+            <area>830,441,100,35</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Runtime:</value>
+        </textarea>
+
+        <textarea name="duration" from="basetextarea">
+            <area>955,443,273,30</area>
+            <font>basesmalleyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>50,487,1180,186</area>
+            <font>basesmall</font>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>0,36,1280,318</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>You haven't added any Sites/RSS Feeds yet!  To add a site, press MENU, then choose "Scan/Manage Subscriptions," then "Manage Site Subscriptions."</value>
+        </textarea>
+
+    </window>
+
+</mythuitheme>

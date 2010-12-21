@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="iconimport">
+
+        <textarea name="heading" from="base_heading">
+            <value>Icon Import</value>
+        </textarea>
+
+        <shape name="icon-import-search-term-backdrop" from="base_backdrop">
+            <area>236,36,804,110</area>
+        </shape>
+
+        <shape name="icon-import-search-term-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>239,39,798,34</area>
+        </shape>
+
+        <shape name="icon-import-search-term-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>239,109,798,34</area>
+        </shape>
+
+        <shape name="icon-import-icon-list-backdrop" from="base_backdrop">
+            <area>438,157,404,527</area>
+        </shape>
+
+        <shape name="icon-import-icon-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>441,160,398,34</area>
+        </shape>
+
+        <shape name="icon-import-icon-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>441,647,398,34</area>
+        </shape>
+
+        <textarea name="manuallabel" from="basetextarea">
+            <area>268,55,150,30</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <value>Search Terms:</value>
+        </textarea>
+
+        <textedit name="manualsearch" from="base_wide_textedit">
+            <position>430,55</position>
+        </textedit>
+
+        <button name="search" from="base_button">
+            <position>404,96</position>
+            <value>Search</value>
+        </button>
+
+        <button name="skip" from="base_button">
+            <position>722,96</position>
+            <value>Skip</value>
+        </button>
+
+        <textarea name="name" from="basetextarea">
+            <area>440,161,400,20</area>
+            <font>basesmalleryellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="icons" from="base_list_medium">
+            <area>440,189,400,480</area>
+            <layout>vertical</layout>
+            <spacing>-2</spacing>
+            <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,400,60</area>
+                    <imagetype name="icon">
+                        <area>0,5,80,50</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>100,5,292,50</area>
+                        <align>allcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,400,60</area>
+                    <imagetype name="icon">
+                        <area>0,5,80,50</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>100,5,292,50</area>
+                        <align>allcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>362,-23</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>362,469</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="status" from="basetextarea">
+            <area>438,157,404,520</area>
+	    <multiline>yes</multiline>
+<!-- Displays whether or not found. So better off just disabling it all together. -->
+            <alpha>0</alpha>
+            <align>allcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="channeloverview">
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit Channels</value>
+        </textarea>
+
+        <shape name="edit-channels-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,400</area>
+        </shape>
+
+        <shape name="edit-channels-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="edit-channels-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,399,1234,34</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
+            <area>20,448,1240,236</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,451,1234,34</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-line">
+            <area>45,624,1190,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="edit-channels-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1234,34</area>
+        </shape>
+
+    <buttonlist name="channels" from="base_list">
+        <area>22,59,1236,356</area>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,1236,34</area>
+                <textarea name="channum" from="buttontext">
+                    <area>18,5,60,24</area>
+                </textarea>
+                <imagetype name="icon">
+                    <area>96,5,36,24</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="name" from="channum">
+                    <area>150,4,750,24</area>
+                </textarea>
+                <textarea name="sourcename" from="channum">
+                    <area>918,4,300,24</area>
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive">
+                <area>0,0,1236,34</area>
+                <textarea name="channum" from="buttontext">
+                    <area>18,5,60,24</area>
+                </textarea>
+                <imagetype name="icon">
+                    <area>96,5,36,24</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="name" from="channum">
+                    <area>150,4,750,24</area>
+                </textarea>
+                <textarea name="sourcename" from="channum">
+                    <area>918,4,300,24</area>
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedinactive">
+                <area>0,0,1236,34</area>
+                <textarea name="channum" from="buttontext">
+                    <area>18,5,60,24</area>
+                </textarea>
+                <imagetype name="icon">
+                    <area>96,5,36,24</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                <textarea name="name" from="channum">
+                    <area>150,4,750,24</area>
+                </textarea>
+                <textarea name="sourcename" from="channum">
+                    <area>918,4,300,24</area>
+                    <align>right,vcenter</align>
+                </textarea>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>1196,-20</position>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>1196,356</position>
+        </statetype>
+    </buttonlist>
+
+        <textarea name="sortlabel" from="basetextarea">
+            <area>245,475,160,30</area>
+            <value>Sort Mode:</value>
+            <font>basemedium</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <buttonlist name="sorting" from="base_selector">
+            <area>415,470,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,550,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="sourcelabel" from="sortlabel">
+            <position>245,530</position>
+            <value>Video Source:</value>
+        </textarea>
+
+        <buttonlist name="source" from="sorting">
+            <area>415,525,580,40</area>
+        </buttonlist>
+
+        <button name="delete" from="base_button">
+            <position>1030,527</position>
+            <value>Delete</value>
+        </button>
+
+        <textarea name="nochannumlabel" from="basetextarea">
+            <area>450,585,500,60</area>
+            <value>Hide Channels without channel number.</value>
+        </textarea>
+
+        <checkbox name="nochannum" from="basecheckbox">
+            <position>410,580</position>
+        </checkbox>
+
+        <button name="scan" from="base_medium_button">
+            <position>68,634</position>
+            <value>Channel Scan</value>
+        </button>
+
+        <button name="importicons" from="base_medium_button">
+            <position>465,634</position>
+            <value>Icon Download</value>
+        </button>
+
+        <button name="edittransport" from="base_medium_button">
+            <position>862,634</position>
+            <value>Edit Transports</value>
+        </button>
+
+    </window>
+
+    <window name="osdmenueditor">
+
+        <textarea name="heading" from="base_heading">
+            <value>OSD Menu Editor</value>
+        </textarea>
+
+        <shape name="osd-menu-editor-context-backdrop" from="base_backdrop">
+            <area>126,36,420,480</area>
+        </shape>
+
+        <shape name="osd-menu-editor-context-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>129,39,414,34</area>
+        </shape>
+
+        <shape name="osd-menu-editor-context-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>129,479,414,34</area>
+        </shape>
+
+        <shape name="osd-menu-editor-items-backdrop" from="base_backdrop">
+            <area>734,36,420,480</area>
+        </shape>
+
+        <shape name="osd-menu-editor-items-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>737,39,414,34</area>
+        </shape>
+
+        <shape name="osd-menu-editor-items-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>737,479,414,34</area>
+        </shape>
+
+        <shape name="osd-menu-editor-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="osd-menu-editor-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="osd-menu-editor-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="leftdesc" from="basetextarea">
+            <area>136,36,400,30</area>
+            <font>basesmalleryellow</font>
+            <value>OSD Context</value>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="states" from="base_list">
+            <area>128,61,415,434</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,415,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,342,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>378,8</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,415,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,342,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>378,8</position>
+                    </statetype>
+                    <imagetype name="buttonarrow">
+                        <position>387,8</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,415,35</area>
+                    <textarea name="buttontext">
+                        <area>18,5,342,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>378,8</position>
+                    </statetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>374,-19</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>374,432</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="rightdesc" from="leftdesc">
+            <area>744,36,400,30</area>
+            <font>basesmalleryellow</font>
+            <value>OSD Menu Items</value>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="categories" from="states">
+            <area>736,61,416,434</area>
+        </buttonlist>
+
+        <button name="done" from="base_medium_button">
+            <position>465,634</position>
+            <value>Done</value>
+        </button>
+
+    </window>
+</mythuitheme>

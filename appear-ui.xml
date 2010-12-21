@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+    <window name="appearance">
+
+        <textarea name="heading" from="base_heading">
+            <value>Appearance Wizard</value>
+        </textarea>
+
+        <shape name="appearance-wizard-backdrop" from="base_backdrop">
+            <area>320,180,640,360</area>
+        </shape>
+
+        <shape name="appearance-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>323,183,634,34</area>
+        </shape>
+
+        <shape name="appearance-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>323,503,634,34</area>
+        </shape>
+
+        <imagetype name="topleft">
+            <position>0,0</position>
+            <filename>images/topleft.png</filename>
+        </imagetype>
+
+        <imagetype name="bottomright">
+            <position>800,600</position>
+            <filename>images/bottomright.png</filename>
+        </imagetype>
+
+        <textarea name="part1" from="basetextarea">
+            <font>basesmall</font>
+            <area>340,190,600,180</area>
+            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="size" from="basetextarea">
+            <font>basesmall</font>
+            <area>340,380,600,30</area>
+            <value>1280 x 720</value>
+        </textarea>
+
+        <textarea name="offsets" from="size">
+            <area>340,440,600,30</area>
+            <value>0 x 0</value>
+        </textarea>
+
+        <textarea name="changeamount" from="size">
+            <area>340,500,600,30</area>
+            <value>1 pixel</value>
+        </textarea>
+
+    </window>
+</mythuitheme>

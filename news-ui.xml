@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="news">
+
+        <textarea name="heading" from="base_heading">
+            <value>RSS Newsfeeds</value>
+        </textarea>
+
+        <shape name="siteslistbox" from="base_group_box">
+            <area>-4,36,1288,30</area>
+        </shape>
+
+        <shape name="news-feeds-backdrop" from="base_backdrop">
+            <area>20,78,1240,400</area>
+        </shape>
+
+        <shape name="news-feeds-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,81,1234,34</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,441,1234,34</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
+            <area>20,490,1240,192</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,493,1234,34</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,645,1234,34</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-top-line">
+            <area>40,521,1014,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="news-feeds-bottom-bottom-line">
+            <area>40,651,1014,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="news-feeds-thumbnail-highlight" from="base_desc_highlight">
+            <area>1074,521,170,132</area>
+            <cornerradius>5</cornerradius>
+        </shape>
+
+        <buttonlist name="siteslist">
+            <area>10,36,1260,30</area>
+            <spacing>0</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>items</wrapstyle>
+            <layout>horizontal</layout>
+            <buttonarea>0,0,1260,30</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,420,53</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,405,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallerlightgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,1,405,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallyellow</font>
+                        <alphapulse min="127" max="255" change="2" />
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,1,405,27</area>
+                        <align>hcenter,bottom</align>
+                        <cutdown>yes</cutdown>
+                        <font>basesmallyellow</font>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="articleslist" from="base_list">
+            <area>22,102,1236,360</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,1200,34</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,34</area>
+                    <textarea name="buttontext">
+                        <area>18,0,1200,34</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-19</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,354</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>40,98,1200,360</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="updated" from="basetextarea">
+            <area>40,456,1200,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="title" from="basetextarea">
+            <area>40,493,1200,30</area>
+            <font>basemediumyellow</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>40,523,1014,130</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <imagetype name="thumbnail">
+            <area>1079,526,160,120</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="enclosures">
+            <filename>images/enclosures.png</filename>
+            <area>664,654,26,26</area>
+        </imagetype>
+
+        <imagetype name="download">
+            <filename>images/need-download.png</filename>
+            <area>626,653,26,26</area>
+        </imagetype>
+
+        <imagetype name="ispodcast">
+            <filename>images/podcast.png</filename>
+            <area>588,653,26,26</area>
+        </imagetype>
+
+    </window>
+
+    <window name="editor">
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit RSS News Feed</value>
+        </textarea>
+
+        <shape name="news-edit-top-backdrop" from="base_backdrop">
+            <area>215,36,850,516</area>
+        </shape>
+
+        <shape name="news-edit-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>218,39,844,34</area>
+        </shape>
+
+        <shape name="news-edit-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>218,515,844,34</area>
+        </shape>
+
+        <shape name="news-edit-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="news-edit-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1236,34</area>
+        </shape>
+
+        <shape name="news-edit-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1236,34</area>
+        </shape>
+
+        <shape name="news-edit-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="namelabel" from="basetextarea">
+            <area>295,128,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textedit name="name" from="base_wide_textedit">
+            <position>405,130</position>
+        </textedit>
+
+        <textarea name="urllabel" from="basetextarea">
+            <area>295,229,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textedit name="url" from="base_wide_textedit">
+            <position>405,230</position>
+        </textedit>
+
+        <textarea name="iconlabel" from="basetextarea">
+            <area>295,329,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textedit name="icon" from="base_wide_textedit">
+            <position>405,330</position>
+        </textedit>
+
+        <textarea name="podcastlabel" from="basetextarea">
+            <area>295,425,100,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <checkbox name="podcast_check" from="basecheckbox">
+            <position>405,425</position>
+        </checkbox>
+
+        <button name="ok" from="base_medium_button">
+            <position>200,635</position>
+            <value>OK</value>
+        </button>
+
+        <button name="cancel" from="base_medium_button">
+            <position>730,635</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="config">
+
+        <textarea name="heading" from="base_heading">
+            <value>Subscribe to News Feeds</value>
+        </textarea>
+
+        <shape name="news-config-contexts-backdrop" from="base_backdrop">
+            <area>20,36,500,648</area>
+        </shape>
+
+        <shape name="news-config-contexts-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,494,34</area>
+        </shape>
+
+        <shape name="news-config-contexts-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,494,34</area>
+        </shape>
+
+        <shape name="news-config-actions-backdrop" from="base_backdrop">
+            <area>530,36,730,648</area>
+        </shape>
+
+        <shape name="news-config-actions-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>533,39,724,34</area>
+        </shape>
+
+        <shape name="news-config-actions-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>533,647,724,34</area>
+        </shape>
+
+        <textarea name="leftdesc" from="basetextarea">
+            <area>30,39,480,30</area>
+            <font>basesmalleryellow</font>
+            <value>Contexts</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="category" from="base_list">
+            <area>22,66,496,594</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,496,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,422,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>458,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,496,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,422,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>458,7</position>
+                    </statetype>
+                    <imagetype name="buttonarrow">
+                        <position>463,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,496,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,422,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>458,7</position>
+                    </statetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>452,-25</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>452,596</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="rightdesc" from="basetextarea">
+            <area>540,39,710,30</area>
+            <font>basesmalleryellow</font>
+            <value>Actions</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="sites" from="base_list">
+            <area>532,66,726,594</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,726,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,726,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,726,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,652,24</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>688,7</position>
+                    </statetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>682,-25</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>682,596</position>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>

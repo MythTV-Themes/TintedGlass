@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="mainmenu">
+
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background_main.png</filename>
+        </imagetype>
+
+        <shape name="heading-backdrop" from="base_heading_backdrop" />
+
+        <shape name="menuscroll-background">
+            <area>-4,560,1288,70</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="140">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#000000" alpha="200" />
+                    <stop position="100" color="#000000" alpha="200" />
+                </gradient>
+            </fill>
+            <line color="#666666" alpha="255" width="2" />
+        </shape>
+
+        <statetype name="titles">
+            <loadondemand>true</loadondemand>
+            <state name="TV">
+                <textarea name="heading" from="base_heading">
+                    <value>Television</value>
+                </textarea>
+            </state>
+            <state name="MAIN">
+                <textarea name="heading" from="base_heading">
+                    <value>Main Menu</value>
+                </textarea>
+            </state>
+            <state name="MUSIC">
+                <textarea name="heading" from="base_heading">
+                    <value>Music</value>
+                </textarea>
+            </state>
+            <state name="GALLERY">
+                <textarea name="heading" from="base_heading">
+                    <value>Gallery</value>
+                </textarea>
+            </state>
+            <state name="VIDEO">
+                <textarea name="heading" from="base_heading">
+                    <value>Videos</value>
+                </textarea>
+            </state>
+            <state name="GAMES">
+                <textarea name="heading" from="base_heading">
+                    <value>Games</value>
+                </textarea>
+            </state>
+            <state name="WEATHER">
+                <textarea name="heading" from="base_heading">
+                    <value>Weather</value>
+                </textarea>
+            </state>
+            <state name="SCHEDULE">
+                <textarea name="heading" from="base_heading">
+                    <value>Schedule Recordings</value>
+                </textarea>
+            </state>
+            <state name="SEARCH">
+                <textarea name="heading" from="base_heading">
+                    <value>Program Searches</value>
+                </textarea>
+            </state>
+            <state name="WORDS" from="SEARCH" />
+            <state name="LISTS" from="SEARCH" />
+            <state name="SETUP">
+                <textarea name="heading" from="base_heading">
+                    <value>Setup</value>
+                </textarea>
+            </state>
+            <state name="TVSETUP">
+                <textarea name="heading" from="base_heading">
+                    <value>TV Settings</value>
+                </textarea>
+            </state>
+            <state name="SETUP_TVRECPRIORITIES">
+                <textarea name="heading" from="base_heading">
+                    <value>Recording Priorities</value>
+                </textarea>
+            </state>
+            <state name="MEDIA_SETUP">
+                <textarea name="heading" from="base_heading">
+                    <value>Media Settings</value>
+                </textarea>
+            </state>
+            <state name="DVD">
+
+            </state>
+            <state name="DVD_SETTINGS" from="DVD" />
+            <state name="MUSIC_SETTINGS">
+                <textarea name="heading" from="base_heading">
+                    <value>Music Settings</value>
+                </textarea>
+            </state>
+            <state name="VIDEO_SETTINGS">
+                <textarea name="heading" from="base_heading">
+                    <value>Video Settings</value>
+                </textarea>
+            </state>
+            <state name="GAME_SETTINGS" from="GAMES" />
+            <state name="MANAGE_RECORDINGS">
+                <textarea name="heading" from="base_heading">
+                    <value>Manage Recordings</value>
+                </textarea>
+            </state>
+            <state name="LIBRARY">
+                <textarea name="heading" from="base_heading">
+                    <value>Media Library</value>
+                </textarea>
+            </state>
+            <state name="INFO_SETUP">
+                <textarea name="heading" from="base_heading">
+                    <value>Info Center Settings</value>
+                </textarea>
+            </state>
+            <state name="OPTICAL_DISK">
+                <textarea name="heading" from="base_heading">
+                    <value>Optical Disks</value>
+                </textarea>
+            </state>
+            <state name="UTIL" from="SETUP" />
+            <state name="NETFLIX" from="DVD" />
+            <state name="ADVANCED">
+                <textarea name="heading" from="base_heading">
+                    <value>Advanced</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <buttonlist name="menu">
+            <area>20,559,1240,65</area>
+            <layout>horizontal</layout>
+            <spacing>20</spacing>
+            <scrollstyle>center</scrollstyle>
+            <wrapstyle>items</wrapstyle>	
+            <buttonarea>0,0,1240,65</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,7,232,59</area>
+                    <imagetype name="background" />
+                    <textarea name="buttontext">
+                        <area>0,0,232,59</area>
+                        <font>basemediumlightgrey</font>
+                        <multiline>yes</multiline>
+                        <align>allcenter</align>
+                        <cutdown>yes</cutdown>
+                        <case>upper</case>
+                    </textarea>
+                </state>
+                <state name="selectedactive"> 
+                    <area>0,4,232,65</area>
+                    <imagetype name="background" />
+                    <textarea name="buttontext">
+                        <area>0,0,232,65</area>
+                        <font>basemediumlargerdarkyellow</font>
+                        <multiline>yes</multiline>
+                        <alphapulse min="100" max="255" change="2"/>
+                        <align>center,vcenter</align>
+                        <cutdown>yes</cutdown>
+                        <case>upper</case>
+                    </textarea>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <clock name="clock" from="base_clock" />
+
+    </window>
+
+</mythuitheme>

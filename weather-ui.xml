@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="weatherbase">
+
+        <textarea name="heading" from="base_heading">
+            <value>Weather Report</value>
+        </textarea>
+
+        <shape name="weather-base-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,60</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="weather-base-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>28,39,1224,34</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="weather-base-bottom-backdrop" from="base_backdrop">
+            <area>20,108,1240,576</area>
+        </shape>
+
+        <shape name="weather-base-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,111,1234,34</area>
+        </shape>
+
+        <shape name="weather-base-bottom-top-line">
+            <area>45,143,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <shape name="weather-base-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1234,34</area>
+        </shape>
+
+        <shape name="weather-base-bottom-bottm-line">
+            <area>45,647,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="header" from="basetextarea">
+            <area>40,50,1200,30</area>
+            <font>baselargeyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="pause_text" from="basetextarea">
+            <area>1040,112,195,30</area>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="update_text" from="basetextarea">
+            <area>45,650,1190,30</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Current Conditions">
+
+        <shape name="current-conditions-left-backdrop">
+            <area>45,153,785,488</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="current-conditions-left-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>48,156,779,34</area>
+        </shape>
+
+        <shape name="current-conditions-left-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>48,604,779,34</area>
+        </shape>
+
+        <shape name="current-conditions-right-backdrop">
+            <area>845,153,390,488</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="current-conditions-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>848,156,384,34</area>
+        </shape>
+
+        <shape name="current-conditions-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>848,604,384,34</area>
+        </shape>
+
+        <textarea name="cclocation" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="humiditylbl" from="basetextarea">
+            <area>135,245,300,50</area>
+            <font>baselarge</font>
+            <value>Humidity:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="relative_humidity" from="basetextarea">
+            <area>425,245,300,50</area>
+            <font>basemedium</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="pressurelbl" from="humiditylbl">
+            <area>135,295,300,50</area>
+            <value>Pressure:</value>
+        </textarea>
+
+        <textarea name="pressure" from="relative_humidity">
+            <area>425,295,300,50</area>
+        </textarea>
+
+        <textarea name="windlbl" from="humiditylbl">
+            <area>135,345,300,50</area>
+            <value>Wind(Gust):</value>
+        </textarea>
+
+        <textarea name="wind_spdgst" from="relative_humidity">
+            <area>425,345,300,50</area>
+        </textarea>
+
+        <textarea name="dirlbl" from="humiditylbl">
+            <area>135,395,300,50</area>
+            <value>Wind Direction:</value>
+        </textarea>
+
+        <textarea name="wind_dir" from="relative_humidity">
+            <area>425,395,300,50</area>
+        </textarea>
+
+        <textarea name="visilbl" from="humiditylbl">
+            <area>135,445,300,50</area>
+            <value>Visibility:</value>
+        </textarea>
+
+        <textarea name="visibility" from="relative_humidity">
+            <area>425,445,300,50</area>
+        </textarea>
+
+        <textarea name="apptlbl" from="humiditylbl">
+            <area>135,495,300,50</area>
+            <value>Feels Like:</value>
+        </textarea>
+
+        <textarea name="appt" from="relative_humidity">
+            <area>425,495,300,50</area>
+        </textarea>
+
+        <textarea name="temp" from="basetextarea">
+            <area>855,540,380,100</area>
+            <font>baseextralarge</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="weather" from="basetextarea">
+            <area>850,150,380,100</area>
+            <font>basemedium</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="weather_icon">
+            <area>845,190,380,400</area>
+            <filename>images/unknown.png</filename>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <textarea name="observation_time" from="basetextarea">
+            <area>45,650,595,30</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Three Day Forecast">
+
+        <textarea name="3dlocation" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <shape name="background-0">
+            <area>115,230,320,325</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>118,233,314,34</area>
+        </shape>
+
+        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>118,518,314,34</area>
+        </shape>
+
+        <shape name="background-1" from="background-0">
+            <position>480,230</position>
+        </shape>
+
+        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>483,233,314,34</area>
+        </shape>
+
+        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>483,518,314,34</area>
+        </shape>
+
+        <shape name="background-2" from="background-0">
+            <position>845,230</position>
+        </shape>
+
+        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>848,233,314,34</area>
+        </shape>
+
+        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>848,518,314,34</area>
+        </shape>
+
+        <textarea name="date-0">
+            <area>125,235,300,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="icon-0">
+            <area>175,286,200,150</area>
+        </imagetype>
+
+        <textarea name="lolbl0" from="basetextarea">
+            <area>150,510,100,26</area>
+            <value>Low</value>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="hilbl0" from="lolbl0">
+            <position>150,465</position>
+            <value>High</value>
+        </textarea>
+
+        <textarea name="low-0" from="basetextarea">
+            <area>300,510,100,26</area>
+            <cutdown>no</cutdown>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="high-0" from="low-0">
+            <position>300,465</position>
+        </textarea>
+
+        <textarea name="date-1" from="date-0">
+            <position>490,235</position>
+        </textarea>
+
+        <imagetype name="icon-1" from="icon-0">
+            <position>540,286</position>
+        </imagetype>
+
+        <textarea name="lolbl1" from="lolbl0">
+            <position>515,510</position>
+        </textarea>
+
+        <textarea name="hilbl1" from="hilbl0">
+            <position>515,465</position>
+        </textarea>
+
+        <textarea name="low-1" from="low-0">
+            <position>665,510</position>
+        </textarea>
+
+        <textarea name="high-1" from="low-0">
+            <position>665,465</position>
+        </textarea>
+
+        <textarea name="date-2" from="date-0">
+            <position>855,235</position>
+        </textarea>
+
+        <imagetype name="icon-2" from="icon-0">
+            <position>905,286</position>
+        </imagetype>
+
+        <textarea name="lolbl2" from="lolbl0">
+            <position>880,510</position>
+        </textarea>
+
+        <textarea name="hilbl2" from="hilbl0">
+            <position>880,465</position>
+        </textarea>
+
+        <textarea name="low-2" from="low-0">
+            <position>1030,510</position>
+        </textarea>
+
+        <textarea name="high-2" from="low-0">
+            <position>1030,465</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Six Day Forecast">
+
+        <textarea name="6dlocation" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <shape name="background-0">
+            <area>90,161,350,230</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>93,164,346,34</area>
+        </shape>
+
+        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>93,354,346,34</area>
+        </shape>
+
+        <shape name="background-1" from="background-0">
+            <position>465,161</position>
+        </shape>
+
+        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>468,164,346,34</area>
+        </shape>
+
+        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>468,354,346,34</area>
+        </shape>
+
+        <shape name="background-2" from="background-0">
+            <position>840,161</position>
+        </shape>
+
+        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>843,164,346,34</area>
+        </shape>
+
+        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>843,354,346,34</area>
+        </shape>
+
+        <shape name="background-3" from="background-0">
+            <position>90,401</position>
+        </shape>
+
+        <shape name="background3-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>93,404,346,34</area>
+        </shape>
+
+        <shape name="background3-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>93,597,346,34</area>
+        </shape>
+
+        <shape name="background-4" from="background-0">
+            <position>465,401</position>
+        </shape>
+
+        <shape name="background4-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>468,404,346,34</area>
+        </shape>
+
+        <shape name="background4-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>468,597,346,34</area>
+        </shape>
+
+        <shape name="background-5" from="background-0">
+            <position>840,401</position>
+        </shape>
+
+        <shape name="background5-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>843,404,346,34</area>
+        </shape>
+
+        <shape name="background5-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>843,597,346,34</area>
+        </shape>
+
+        <textarea name="date-0" from="basetextarea">
+            <area>90,171,350,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="date-1" from="date-0">
+            <position>465,171</position>
+        </textarea>
+        <textarea name="date-2" from="date-0">
+            <position>840,171</position>
+        </textarea>
+        <textarea name="date-3" from="date-0">
+            <position>90,416</position>
+        </textarea>
+        <textarea name="date-4" from="date-0">
+            <position>465,416</position>
+        </textarea>
+        <textarea name="date-5" from="date-0">
+            <position>840,416</position>
+        </textarea>
+
+        <imagetype name="icon-0">
+            <area>181,214,167,125</area>
+        </imagetype>
+        <imagetype name="icon-1" from="icon-0">
+            <position>556,214</position>
+        </imagetype>
+        <imagetype name="icon-2" from="icon-0">
+            <position>931,214</position>
+        </imagetype>
+        <imagetype name="icon-3" from="icon-0">
+            <position>181,453</position>
+        </imagetype>
+        <imagetype name="icon-4" from="icon-0">
+            <position>556,453</position>
+        </imagetype>
+        <imagetype name="icon-5" from="icon-0">
+            <position>931,453</position>
+        </imagetype>
+
+        <textarea name="hilbl0" from="basetextarea">
+            <area>100,316,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>High</value>
+        </textarea>
+        <textarea name="hilbl1" from="hilbl0">
+            <position>475,316</position>
+        </textarea>
+        <textarea name="hilbl2" from="hilbl0">
+            <position>850,316</position>
+        </textarea>
+        <textarea name="hilbl3" from="hilbl0">
+            <position>100,556</position>
+        </textarea>
+        <textarea name="hilbl4" from="hilbl0">
+            <position>475,556</position>
+        </textarea>
+        <textarea name="hilbl5" from="hilbl0">
+            <position>850,556</position>
+        </textarea>
+
+        <textarea name="lolbl0" from="basetextarea">
+            <area>330,316,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>Low</value>
+        </textarea>
+        <textarea name="lolbl1" from="lolbl0">
+            <position>705,316</position>
+        </textarea>
+        <textarea name="lolbl2" from="lolbl0">
+            <position>1080,316</position>
+        </textarea>
+        <textarea name="lolbl3" from="lolbl0">
+            <position>330,556</position>
+        </textarea>
+        <textarea name="lolbl4" from="lolbl0">
+            <position>705,556</position>
+        </textarea>
+        <textarea name="lolbl5" from="lolbl0">
+            <position>1080,556</position>
+        </textarea>
+
+        <textarea name="high-0" from="basetextarea">
+            <area>100,351,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="high-1" from="high-0">
+            <position>475,351</position>
+        </textarea>
+        <textarea name="high-2" from="high-0">
+            <position>850,351</position>
+        </textarea>
+        <textarea name="high-3" from="high-0">
+            <position>100,591</position>
+        </textarea>
+        <textarea name="high-4" from="high-0">
+            <position>475,591</position>
+        </textarea>
+        <textarea name="high-5" from="high-0">
+            <position>850,591</position>
+        </textarea>
+
+        <textarea name="low-0" from="basetextarea">
+            <area>330,351,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="low-1" from="low-0">
+            <position>705,351</position>
+        </textarea>
+        <textarea name="low-2" from="low-0">
+            <position>1080,351</position>
+        </textarea>
+        <textarea name="low-3" from="low-0">
+            <position>330,591</position>
+        </textarea>
+        <textarea name="low-4" from="low-0">
+            <position>705,591</position>
+        </textarea>
+        <textarea name="low-5" from="low-0">
+            <position>1080,591</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Static Map">
+
+        <textarea name="smdesc" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="map">
+            <area>55,155,1170,480</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Animated Map">
+
+        <textarea name="amdesc" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="animatedimage">
+            <area>55,155,1170,480</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="Severe Weather Alerts">
+
+        <textarea name="swlocation" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <shape name="weather-alert-bottom-backdrop">
+            <area>45,155,1190,480</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="weather-alert-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>48,158,1184,34</area>
+        </shape>
+
+        <shape name="weather-alert-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>48,598,1184,34</area>
+        </shape>
+
+        <textarea name="alerts" from="basetextarea">
+            <area>65,165,1150,460</area>
+            <multiline>yes</multiline>
+            <value>Weather Alerts</value>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="18 Hour Forecast">
+
+        <textarea name="18hrlocation" from="basetextarea">
+            <area>45,112,1190,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <shape name="background-0">
+            <area>90,161,350,230</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="120" />
+            <line color="#5e6166" alpha="100" width="2" />
+            <cornerradius>20</cornerradius>
+        </shape>
+
+        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>93,164,346,34</area>
+        </shape>
+
+        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>93,354,346,34</area>
+        </shape>
+
+        <shape name="background-1" from="background-0">
+            <position>465,161</position>
+        </shape>
+
+        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>468,164,346,34</area>
+        </shape>
+
+        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>468,354,346,34</area>
+        </shape>
+
+        <shape name="background-2" from="background-0">
+            <position>840,161</position>
+        </shape>
+
+        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>843,164,346,34</area>
+        </shape>
+
+        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>843,354,346,34</area>
+        </shape>
+
+        <shape name="background-3" from="background-0">
+            <position>90,401</position>
+        </shape>
+
+        <shape name="background3-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>93,404,346,34</area>
+        </shape>
+
+        <shape name="background3-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>93,597,346,34</area>
+        </shape>
+
+        <shape name="background-4" from="background-0">
+            <position>465,401</position>
+        </shape>
+
+        <shape name="background4-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>468,404,346,34</area>
+        </shape>
+
+        <shape name="background4-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>468,597,346,34</area>
+        </shape>
+
+        <shape name="background-5" from="background-0">
+            <position>840,401</position>
+        </shape>
+
+        <shape name="background5-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>843,404,346,34</area>
+        </shape>
+
+        <shape name="background5-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>843,597,346,34</area>
+        </shape>
+
+        <textarea name="time-0" from="basetextarea">
+            <area>90,171,350,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="time-1" from="time-0">
+            <position>465,171</position>
+        </textarea>
+        <textarea name="time-2" from="time-0">
+            <position>840,171</position>
+        </textarea>
+        <textarea name="time-3" from="time-0">
+            <position>90,411</position>
+        </textarea>
+        <textarea name="time-4" from="time-0">
+            <position>465,411</position>
+        </textarea>
+        <textarea name="time-5" from="time-0">
+            <position>840,411</position>
+        </textarea>
+
+        <imagetype name="18icon-0">
+            <area>181,196,167,125</area>
+        </imagetype>
+        <imagetype name="18icon-1" from="18icon-0">
+            <position>556,196</position>
+        </imagetype>
+        <imagetype name="18icon-2" from="18icon-0">
+            <position>931,196</position>
+        </imagetype>
+        <imagetype name="18icon-3" from="18icon-0">
+            <position>181,436</position>
+        </imagetype>
+        <imagetype name="18icon-4" from="18icon-0">
+            <position>556,436</position>
+        </imagetype>
+        <imagetype name="18icon-5" from="18icon-0">
+            <position>931,436</position>
+        </imagetype>
+
+        <textarea name="tmplbl0" from="basetextarea">
+            <area>100,316,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>Temp</value>
+        </textarea>
+        <textarea name="tmplbl1" from="tmplbl0">
+            <position>475,316</position>
+        </textarea>
+        <textarea name="tmplbl2" from="tmplbl0">
+            <position>850,316</position>
+        </textarea>
+        <textarea name="tmplbl3" from="tmplbl0">
+            <position>100,556</position>
+        </textarea>
+        <textarea name="tmplbl4" from="tmplbl0">
+            <position>475,556</position>
+        </textarea>
+        <textarea name="tmplbl5" from="tmplbl0">
+            <position>850,556</position>
+        </textarea>
+
+        <textarea name="poplbl0" from="basetextarea">
+            <area>330,316,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>Precip</value>
+        </textarea>
+        <textarea name="poplbl1" from="poplbl0">
+            <position>705,316</position>
+        </textarea>
+        <textarea name="poplbl2" from="poplbl0">
+            <position>1080,316</position>
+        </textarea>
+        <textarea name="poplbl3" from="poplbl0">
+            <position>330,556</position>
+        </textarea>
+        <textarea name="poplbl4" from="poplbl0">
+            <position>705,556</position>
+        </textarea>
+        <textarea name="poplbl5" from="poplbl0">
+            <position>1080,556</position>
+        </textarea>
+
+        <textarea name="temp-0" from="basetextarea">
+            <area>100,351,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="temp-1" from="temp-0">
+            <position>475,351</position>
+        </textarea>
+        <textarea name="temp-2" from="temp-0">
+            <position>850,351</position>
+        </textarea>
+        <textarea name="temp-3" from="temp-0">
+            <position>100,591</position>
+        </textarea>
+        <textarea name="temp-4" from="temp-0">
+            <position>475,591</position>
+        </textarea>
+        <textarea name="temp-5" from="temp-0">
+            <position>850,591</position>
+        </textarea>
+
+        <textarea name="pop-0" from="basetextarea">
+            <area>330,351,100,26</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+        <textarea name="pop-1" from="pop-0">
+            <position>705,351</position>
+        </textarea>
+        <textarea name="pop-2" from="pop-0">
+            <position>1080,351</position>
+        </textarea>
+        <textarea name="pop-3" from="pop-0">
+            <position>330,591</position>
+        </textarea>
+        <textarea name="pop-4" from="pop-0">
+            <position>705,591</position>
+        </textarea>
+        <textarea name="pop-5" from="pop-0">
+            <position>1080,591</position>
+        </textarea>
+
+        <textarea name="copyright" from="basetextarea">
+            <area>640,650,595,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+    </window>
+
+    <window name="global-setup">
+
+        <textarea name="heading" from="base_heading">
+            <value>Weather Global Settings</value>
+        </textarea>
+
+        <shape name="global-settings-top-backdrop" from="base_backdrop">
+            <area>215,36,850,516</area>
+        </shape>
+
+        <shape name="global-settings-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>218,39,844,34</area>
+        </shape>
+
+        <shape name="global-settings-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>218,515,844,34</area>
+        </shape>
+
+        <shape name="global-settings-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="global-settings-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="global-settings-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="backgroundlbl" from="basetextarea">
+            <area>408,162,352,60</area>
+            <align>right,vcenter</align>
+            <value>Retrieve data in the background:</value>
+        </textarea>
+
+        <checkbox name="backgroundcheck" from="basecheckbox">
+            <position>770,175</position>
+        </checkbox>
+
+        <textarea name="timeout_text" from="basetextarea">
+            <area>420,354,340,60</area>
+            <align>right,vcenter</align>
+            <value>Seconds to display each page:</value>
+        </textarea>
+
+        <spinbox name="timeout_spinbox" from="base_spinbox">
+            <position>770,365</position>
+        </spinbox>
+
+        <button name="finishbutton" from="base_medium_button">
+            <position>465,635</position>
+        </button>
+
+    </window>
+
+    <window name="screen-setup">
+
+        <textarea name="heading" from="base_heading">
+            <value>Weather Screen Setup</value>
+        </textarea>
+
+        <shape name="screen-setup-inactive-backdrop" from="base_backdrop">
+            <area>126,36,420,446</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>129,39,414,34</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>129,445,414,34</area>
+        </shape>
+
+        <shape name="screen-setup-active-backdrop" from="base_backdrop">
+            <area>734,36,420,446</area>
+        </shape>
+
+        <shape name="screen-setup-active-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>737,39,414,34</area>
+        </shape>
+
+        <shape name="screen-setup-active-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>737,445,414,34</area>
+        </shape>
+
+        <shape name="screen-setup-bottom-backdrop" from="base_backdrop">
+            <area>20,494,1240,190</area>
+        </shape>
+
+        <shape name="screen-setup-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,497,1234,34</area>
+        </shape>
+
+        <shape name="screen-setup-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="inactivehdr" from="basetextarea">
+            <area>136,38,400,30</area>
+            <font>basesmalleryellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="inactivelist" from="base_list">
+            <area>128,66,416,386</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                    <imagetype name="rightarrow" from="buttonarrow">
+                        <position>387,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>376,-24</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>376,393</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="activehdr" from="inactivehdr">
+            <position>744,38</position>
+        </textarea>
+
+        <buttonlist name="activelist" from="base_list">
+            <area>736,66,416,386</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                   <imagetype name="rightarrow" from="buttonarrow">
+                        <position>387,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>376,-24</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>376,393</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="helptxt" from="basetextarea">
+            <area>40,490,1200,140</area>
+            <font>basesomewhatsmaller</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="finishbutton" from="base_medium_button">
+            <position>465,634</position>
+        </button>
+
+    </window>
+
+    <window name="source-setup">
+
+        <textarea name="heading" from="base_heading">
+            <value>Weather Source Setup</value>
+        </textarea>
+
+        <shape name="weather-source-backdrop" from="base_backdrop">
+            <area>20,36,420,479</area>
+        </shape>
+
+        <shape name="weather-source-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,414,34</area>
+        </shape>
+
+        <shape name="weather-source-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,478,414,34</area>
+        </shape>
+
+        <shape name="weather-data-retrieval-backdrop" from="base_backdrop">
+            <area>460,36,800,479</area>
+        </shape>
+
+        <shape name="weather-data-retrieval-top-line">
+            <area>480,70,760,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <shape name="weather-data-retrieval-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>463,39,794,34</area>
+        </shape>
+
+        <shape name="weather-data-retrieval-bottom-line">
+            <area>480,481,760,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <shape name="weather-data-retrieval-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>463,478,794,34</area>
+        </shape>
+
+        <shape name="weather-source-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="weather-source-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="weather-source-bottom-backdrop-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <buttonlist name="srclist" from="base_list">
+            <area>22,69,416,418</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                    <imagetype name="rightarrow" from="buttonarrow">
+                        <position>387,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,416,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,351,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>376,-24</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>376,420</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="updatetxt" from="basetextarea">
+            <area>680,110,300,60</area>
+            <multiline>yes</multiline>
+            <value>Data Retrieval Interval (minutes):</value>
+        </textarea>
+
+        <textarea name="retrievetxt" from="basetextarea">
+            <area>680,250,300,60</area>
+            <multiline>yes</multiline>
+            <value>Source Update Timeout (seconds):</value>
+        </textarea>
+
+        <spinbox name="update_spinbox" from="base_spinbox">
+            <position>970,110</position>
+        </spinbox>
+
+        <spinbox name="retrieve_spinbox" from="base_spinbox">
+            <position>970,250</position>
+        </spinbox>
+
+        <textarea name="srcinfo" from="basetextarea">
+            <area>480,360,760,90</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="finishbutton" from="base_medium_button">
+            <position>465,634</position>
+        </button>
+
+    </window>
+
+    <window name="setup-location">
+
+        <textarea name="heading" from="base_heading">
+            <value>Weather Location Search</value>
+        </textarea>
+
+        <shape name="weather-search-top-backdrop" from="base_backdrop">
+            <area>20,36,1240,147</area>
+        </shape>
+
+        <shape name="weather-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-top-line">
+            <area>45,109,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <shape name="weather-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,146,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-middle-backdrop" from="base_backdrop">
+            <area>20,195,1240,330</area>
+        </shape>
+
+        <shape name="weather-search-middle-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,198,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-middle-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,488,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-bottom-backdrop" from="base_backdrop">
+            <area>20,537,1240,147</area>
+        </shape>
+
+        <shape name="weather-search-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,540,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>23,647,1234,34</area>
+        </shape>
+
+        <shape name="weather-search-bottom-line">
+            <area>45,624,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="editlbl" from="basetextarea">
+            <area>235,61,180,30</area>
+            <value>Enter Location:</value>
+            <align>right,top</align>
+        </textarea>
+
+        <textedit name="loc-edit" from="base_wide_textedit">
+            <position>425,60</position>
+        </textedit>
+
+        <textarea name="helptxt" from="basetextarea">
+            <area>40,109,1200,74</area>
+            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="results" from="base_list">
+            <area>22,216,1236,290</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1236,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,1200,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1236,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,1200,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,1236,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,1200,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1196,-19</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1196,288</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="numresults" from="basetextarea">
+            <area>40,553,1200,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="source" from="basetextarea">
+            <area>40,583,1200,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="searchbtn" from="base_medium_button">
+            <position>465,633</position>
+        </button>
+
+    </window>
+
+</mythuitheme>

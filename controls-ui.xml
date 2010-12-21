@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="keygrabpopup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
+            <area>390,210,500,300</area>
+        </shape>
+
+        <shape name="key-grab-popup-top-line">
+            <area>405,270,470,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="key-grab-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>393,213,494,34</area>
+        </shape>
+
+        <shape name="key-grab-popup-bottom-line">
+            <area>405,450,470,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="key-grab-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>393,473,494,34</area>
+        </shape>
+
+        <textarea name="heading" from="basetextarea">
+            <area>390,231,500,26</area>
+            <font>basesmallyellow</font>
+            <value>Key Grabber</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="message" from="basetextarea">
+            <area>405,276,470,168</area>
+            <font>basesmall</font>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="cancel" from="base_button">
+            <position>456,459</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok" from="base_button">
+            <position>673,459</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="controls">
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit keys</value>
+        </textarea>
+
+        <shape name="edit-keys-contexts-backdrop" from="base_backdrop">
+            <area>126,36,420,480</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>129,39,414,34</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>129,479,414,34</area>
+        </shape>
+
+        <shape name="edit-keys-actions-backdrop" from="base_backdrop">
+            <area>734,36,420,480</area>
+        </shape>
+
+        <shape name="edit-keys-actions-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>737,39,414,34</area>
+        </shape>
+
+        <shape name="edit-keys-actions-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>737,479,414,34</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,120</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,567,1234,34</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-line">
+            <area>45,626,1190,2</area>
+            <type>box</type>
+            <fill color="#AAAAAA" alpha="75" />
+        </shape>
+
+        <textarea name="leftdesc" from="basetextarea">
+            <area>136,35,400,30</area>
+            <font>basesmalleryellow</font>
+            <value>Contexts</value>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="leftlist" from="base_list">
+            <area>128,59,415,438</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,415,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,359,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,415,33</area>
+                    <imagetype name="buttonarrow">
+                        <position>387,6</position>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>18,4,359,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,415,33</area>
+                    <textarea name="buttontext">
+                        <area>18,4,359,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>375,-20</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>375,436</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="rightdesc" from="leftdesc">
+            <area>744,35,400,30</area>
+            <font>basesmalleryellow</font>
+            <value>Actions</value>
+            <align>center</align>
+        </textarea>
+
+        <buttonlist name="rightlist" from="leftlist">
+            <area>736,59,415,438</area>
+        </buttonlist>
+
+        <button name="action_0" from="base_button">
+            <position>78,637</position>
+        </button>
+
+        <button name="action_1" from="action_0">
+            <position>400,637</position>
+        </button>
+
+        <button name="action_2" from="action_0">
+            <position>732,637</position>
+        </button>
+
+        <button name="action_3" from="action_0">
+            <position>1054,637</position>
+        </button>
+
+        <textarea name="description" from="basetextarea">
+            <area>64,568,1152,56</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+    </window>
+</mythuitheme>

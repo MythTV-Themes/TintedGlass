@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="rawsettingseditor">
+
+        <textarea name="heading" from="base_heading">
+        </textarea>
+
+        <shape name="system-events-top-backdrop" from="base_backdrop">
+            <area>320,36,640,489</area>
+        </shape>
+
+        <shape name="system-events-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>323,39,634,34</area>
+        </shape>
+
+        <shape name="system-events-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
+            <area>323,488,634,34</area>
+        </shape>
+
+        <shape name="system-events-bottom-backdrop" from="base_backdrop">
+            <area>20,537,1240,147</area>
+        </shape>
+
+        <shape name="system-events-bottom-top-line">
+            <area>35,576,1210,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <shape name="system-events-bottom-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,540,1234,34</area>
+        </shape>
+
+        <shape name="system-events-bottom-bottom-line">
+            <area>35,628,1210,2</area>
+            <type>box</type>
+            <fill color="#FFFFFF" alpha="45" />
+        </shape>
+
+        <buttonlist name="settings" from="base_list">
+            <area>322,57,636,452</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,636,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,571,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,636,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,571,24</area>
+                    </textarea>
+                    <imagetype name="rightarrow" from="buttonarrow">
+                        <position>607,7</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,636,34</area>
+                    <textarea name="buttontext">
+                        <area>18,4,571,24</area>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>596,-18</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>596,449</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="label-text" from="basetextarea">
+            <area>40,545,1200,26</area>
+            <font>basesmallyellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textedit name="settingvalue" from="base_wide_textedit">
+            <area>186,588,908,30</area>
+        </textedit>
+
+        <button name="cancel" from="base_medium_button">
+            <position>193,636</position>
+            <value>Cancel</value>
+        </button>
+    
+        <button name="save" from="base_medium_button">
+            <position>737,636</position>
+            <value>Save</value>
+        </button>
+
+    </window>
+
+    <window name="themechooser">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Theme Chooser</value>
+        </textarea>
+
+        <shape name="theme-chooser-backdrop" from="base_backdrop_fanart">
+            <area>20,36,615,648</area>
+        </shape>
+
+        <shape name="theme-chooser-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,609,643</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="90" />
+                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="theme-chooser-preview-backdrop" from="base_backdrop_fanart">
+            <area>645,36,615,648</area>
+        </shape>
+
+        <shape name="theme-chooser-preview-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>648,39,609,643</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="90" />
+                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="preview-shape" from="base_backdrop_fanart">
+            <area>692,65,520,390</area>
+        </shape>
+
+        <shape name="preview-shape-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>695,68,514,385</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="90" />
+                    <stop position="95" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <buttonlist name="themes" from="base_list_large">
+            <area>23,63,609,596</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,609,68</area>
+<!-- State to show whether a theme is locally installed or remotely downloadable -->
+                    <statetype name="themelocation">
+                        <area>10,26,16,16</area>
+                        <state name="local">
+                            <shape name="location">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#00FF00" alpha="200" />
+                            </shape>
+                        </state>
+                        <state name="remote">
+                            <shape name="location">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#FF0000" alpha="200" />
+                            </shape>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonimage">
+                        <area>30,6,110,56</area>
+                        <alpha>160</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>150,6,425,56</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+<!-- State to indicate whether an installed downloadable theme is up to date or not -->
+                    <statetype name="themestatus">
+                        <area>583,26,16,16</area>
+                        <state name="uptodate">
+                            <shape name="status">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#00FF00" alpha="200" />
+                            </shape>
+                        </state>
+                        <state name="updateavailable">
+                            <shape name="status">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#0000FF" alpha="200" />
+                            </shape>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,609,68</area>
+<!-- State to show whether a theme is locally installed or remotely downloadable -->
+                    <statetype name="themelocation">
+                        <area>10,26,16,16</area>
+                        <state name="local">
+                            <shape name="location">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#00FF00" alpha="200" />
+                            </shape>
+                        </state>
+                        <state name="remote">
+                            <shape name="location">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#FF0000" alpha="200" />
+                            </shape>
+                        </state>
+                    </statetype>
+                    <imagetype name="buttonimage">
+                        <area>30,6,110,56</area>
+                        <alpha>255</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>150,6,425,56</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                        <alpha>210</alpha>
+                    </textarea>
+<!-- State to indicate whether an installed downloadable theme is up to date or not -->
+                    <statetype name="themestatus">
+                        <area>583,26,16,16</area>
+                        <state name="uptodate">
+                            <shape name="status">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#00FF00" alpha="200" />
+                            </shape>
+                        </state>
+                        <state name="updateavailable">
+                            <shape name="status">
+                                <area>0,0,16,16</area>
+                                <type>ellipse</type>
+                                <fill color="#0000FF" alpha="200" />
+                            </shape>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>540,597</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>570,597</position>
+            </statetype>
+        </buttonlist>
+
+        <progressbar name="downloadprogressbar" from="baseprogressbar">
+            <position>692,48</position>
+            <imagetype name="background">
+                <area>0,0,520,10</area>
+                <filename>images/progressbar/progressbar_background2.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,520,8</area>
+                <filename>images/progressbar/progressbar_fill2.png</filename>
+            </imagetype>
+        </progressbar>
+
+        <imagetype name="preview">
+            <area>712,80,480,360</area>
+            <filename />
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="name" from="basetextarea">
+            <area>665,456,575,35</area>
+            <multiline>no</multiline>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="resolution" from="basetextarea">
+            <area>680,491,280,30</area>
+            <multiline>no</multiline>
+            <font>basesmallgreen</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="aspect" from="basetextarea">
+            <area>960,491,280,30</area>
+            <multiline>no</multiline>
+            <font>basesmallgreen</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>680,521,560,150</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>left,top</align>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <statetype name="fullpreviewstate">
+            <area>0,0,1280,720</area>
+            <state name="fullscreen">
+                <area>0,0,1280,720</area>
+                <imagetype name="fullscreenpreview">
+                    <area>0,0,1280,720</area>
+                    <filename />
+                </imagetype>
+
+                <shape name="fullscreennameback" from="basebackground">
+                    <area>440,10,400,80</area>
+                    <fill color="#000000" alpha="220" />
+                </shape>
+
+                <textarea name="fullscreenname" from="basetextarea">
+                    <area>450,20,380,60</area>
+                    <multiline>no</multiline>
+                    <font>basemediumgreen</font>
+                    <align>center,vcenter</align>
+                </textarea>
+            </state>
+        </statetype>
+
+    </window>
+
+</mythuitheme>
