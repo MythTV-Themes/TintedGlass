@@ -149,6 +149,55 @@
             </fill>
         </shape>
 
+        <!-- Icon status help -->
+
+        <shape name="installed_icon">
+            <area>37,47,8,8</area>
+            <type>ellipse</type>
+            <fill color="#00FF00" alpha="200" />
+        </shape>
+        <textarea name="installed_text">
+            <area>53,43,70,16</area>
+            <align>left,vcenter</align>
+            <font>basesupersmall</font>
+            <value>Installed</value>
+        </textarea>
+        <shape name="Downloadable_icon">
+            <area>127,47,8,8</area>
+            <type>ellipse</type>
+            <fill color="#FF0000" alpha="200" />
+        </shape>
+        <textarea name="not_installed_text">
+            <area>143,43,100,16</area>
+            <align>left,vcenter</align>
+            <font>basesupersmall</font>
+            <value>Downloadable</value>
+        </textarea>
+        <shape name="update_icon">
+            <area>610,47,8,8</area>
+            <type>ellipse</type>
+            <fill color="#00FF00" alpha="200" />
+        </shape>
+        <textarea name="update_text">
+            <area>532,43,70,16</area>
+            <align>right,vcenter</align>
+            <font>basesupersmall</font>
+            <value>UpToDate</value>
+        </textarea>
+        <shape name="update_available_icon">
+            <area>518,47,8,8</area>
+            <type>ellipse</type>
+            <fill color="#0000FF" alpha="200" />
+        </shape>
+        <textarea name="update_available_text">
+            <area>400,43,110,16</area>
+            <align>right,vcenter</align>
+            <font>basesupersmall</font>
+            <value>UpdateAvailable</value>
+        </textarea>
+
+        <!-- End icon status help -->
+
         <buttonlist name="themes" from="base_list_large">
             <area>23,63,609,596</area>
             <statetype name="buttonitem">
