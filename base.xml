@@ -1336,26 +1336,27 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>337,286,606,148</area>
         </shape>
 
         <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,280,581,34</area>
+            <area>340,289,600,34</area>
         </shape>
 
         <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,410,581,34</area>
+            <area>340,397,600,34</area>
         </shape>
 
         <imagetype name="animation">
-            <position>375,317</position>
-            <filepattern low="1" high="50">images/progressbar/progress%1.png</filepattern>
-            <delay>30</delay>
+            <position>372,352</position>
+            <filepattern low="1" high="60" cycle="reverse">images/busy/busy%1.png</filepattern>
+            <delay>14</delay>
         </imagetype>
 
         <textarea name="message" from="basetextarea">
-            <area>351,347,560,65</area>
-            <font>basesmalldarkyellow</font>
+            <area>347,376,586,50</area>
+            <font>basesmalleryellow</font>
+            <multiline>true</multiline>
             <align>allcenter</align>
         </textarea>
     </window>

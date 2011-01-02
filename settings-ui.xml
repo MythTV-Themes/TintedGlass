@@ -315,11 +315,11 @@
             <position>692,48</position>
             <imagetype name="background">
                 <area>0,0,520,10</area>
-                <filename>images/progressbar/progressbar_background2.png</filename>
+                <filename>images/progressbar/progressbar_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,520,8</area>
-                <filename>images/progressbar/progressbar_fill2.png</filename>
+                <filename>images/progressbar/progressbar_fill.png</filename>
             </imagetype>
         </progressbar>
 
