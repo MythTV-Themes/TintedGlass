@@ -2571,25 +2571,46 @@
             <position>442,213</position>
         </textedit>
 
-        <textarea name="vcd_text" from="basetextarea">
+        <textarea name="bluraymount_text" from="basetextarea">
             <area>242,284,190,30</area>
             <align>right</align>
-            <value>VCD Player:</value>
+            <value>Blu-ray Mount:</value>
         </textarea>
 
-        <textedit name="vcdplayer" from="base_wide_textedit">
+        <textedit name="bluraymount" from="base_wide_textedit">
             <position>442,283</position>
         </textedit>
 
-        <textarea name="vcddrive_text" from="basetextarea">
+        <textarea name="blureg_text" from="basetextarea">
             <area>242,354,190,30</area>
             <align>right</align>
-            <value>VCD Drive:</value>
+            <value>Blu-ray Region:</value>
         </textarea>
 
-        <textedit name="vcddrive" from="base_wide_textedit">
-            <position>442,353</position>
-        </textedit>
+        <buttonlist name="blurayregionlist" from="base_selector">
+            <area>442,353,580,30</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,30</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,30</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,30</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,30</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,-3</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,16</position>
+            </statetype>
+        </buttonlist>
 
         <checkbox name="altcheck" from="basecheckbox">
             <position>750,420</position>
