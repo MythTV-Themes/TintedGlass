@@ -450,10 +450,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="manual-schedule-bottom-line">
+        <shape name="manual-schedule-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="titlelabel" from="basetextarea">
@@ -586,16 +584,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="upcoming-bottom-top-line">
+        <shape name="upcoming-bottom-top-line" from="base_line">
             <area>45,532,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="upcoming-bottom-bottom-line">
+        <shape name="upcoming-bottom-bottom-line" from="base_line">
             <area>45,640,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="keyinstr" from="basetextarea">
@@ -778,16 +772,12 @@
             <area>23,645,991,34</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-top-line">
+        <shape name="channel-record-priorities-bottom-top-line" from="base_line">
             <area>45,515,947,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="channel-record-priorities-bottom-bottom-line">
+        <shape name="channel-record-priorities-bottom-bottom-line" from="base_line">
             <area>45,642,947,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="channel-record-priorites-bottom-right-backdrop" from="base_backdrop">
@@ -923,16 +913,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="program-record-bottom-top-line">
+        <shape name="program-record-bottom-top-line" from="base_line">
             <area>45,515,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="program-record-bottom-bottom-line">
+        <shape name="program-record-bottom-bottom-line" from="base_line">
             <area>45,642,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="keyinstr">
@@ -1082,10 +1068,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="custom-priority-ruiles-bottom-line">
+        <shape name="custom-priority-ruiles-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
@@ -1246,16 +1230,12 @@
             <area>393,573,494,34</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line">
+        <shape name="edit-powersearch-top-line" from="base_line">
             <area>425,160,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="edit-powersearch-bottom-line">
+        <shape name="edit-powersearch-bottom-line" from="base_line">
             <area>425,550,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -1388,16 +1368,12 @@
             <area>393,573,494,34</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line">
+        <shape name="edit-powersearch-top-line" from="base_line">
             <area>425,160,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="edit-powersearch-bottom-line">
+        <shape name="edit-powersearch-bottom-line" from="base_line">
             <area>425,550,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -1466,16 +1442,12 @@
             <area>393,598,494,34</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line">
+        <shape name="edit-powersearch-top-line" from="base_line">
             <area>425,135,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="edit-powersearch-bottom-line">
+        <shape name="edit-powersearch-bottom-line" from="base_line">
             <area>425,567,430,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -1585,16 +1557,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="previously-recorded-bottom-top-line">
+        <shape name="previously-recorded-bottom-top-line" from="base_line">
             <area>45,515,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="previously-recorded-bottom-bottom-line">
+        <shape name="previously-recorded-bottom-bottom-line" from="base_line">
             <area>45,642,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="keyinstr" from="basetextarea">
@@ -1782,16 +1750,12 @@
             <area>23,645,816,34</area>
         </shape>
 
-        <shape name="program-find-bottom-top-line">
+        <shape name="program-find-bottom-top-line" from="base_line">
             <area>45,522,766,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="program-find-bottom-bottom-line">
+        <shape name="program-find-bottom-bottom-line" from="base_line">
             <area>45,650,766,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="program-find-bottom-right-backdrop" from="base_backdrop">
@@ -1999,16 +1963,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-top-line">
+        <shape name="manage-recordings-bottom-top-line" from="base_line">
             <area>45,515,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="manage-recordings-bottom-bottom-line">
+        <shape name="manage-recordings-bottom-bottom-line" from="base_line">
             <area>45,642,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="keyinstr">
@@ -2161,10 +2121,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="custom-record-ruiles-bottom-line">
+        <shape name="custom-record-ruiles-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
@@ -2717,16 +2675,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="preview-schedule-bottom-top-line">
+        <shape name="preview-schedule-bottom-top-line" from="base_line">
             <area>45,512,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="preview-schedule-bottom-bottom-line">
+        <shape name="preview-schedule-bottom-bottom-line" from="base_line">
             <area>45,649,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="titletext">

@@ -97,16 +97,12 @@
             </fill>
         </shape>
 
-        <shape name="bottom-list-top-line">
+        <shape name="bottom-list-top-line" from="base_line">
             <area>40,486,769,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
-        <shape name="bottom-list-bottom-line">
+        <shape name="bottom-list-bottom-line" from="base_line">
             <area>40,647,769,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop_fanart" >
@@ -690,16 +686,12 @@
             </fill>
         </shape>
 
-        <shape name="bottom-list-top-line">
+        <shape name="bottom-list-top-line" from="base_line">
             <area>40,486,769,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
-        <shape name="bottom-list-bottom-line">
+        <shape name="bottom-list-bottom-line" from="base_line">
             <area>40,647,769,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop_fanart" >
@@ -1206,10 +1198,8 @@
             <area>453,554,374,34</area>
         </shape>
 
-        <shape name="change-view-top-line">
+        <shape name="change-view-top-line" from="base_line">
             <area>465,202,350,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1629,16 +1619,12 @@
             <area>333,518,614,34</area>
         </shape>
 
-        <shape name="edit-metadata-top-line">
+        <shape name="edit-metadata-top-line" from="base_line">
             <area>350,216,580,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="edit-metadata-bottom-line">
+        <shape name="edit-metadata-bottom-line" from="base_line">
             <area>350,496,580,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="label" from="basetextarea">

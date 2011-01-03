@@ -31,10 +31,8 @@
             <value>MythTV is idle and will shutdown shortly.</value>
         </textarea>
 
-        <shape name="welcome-status-line">
+        <shape name="welcome-status-line" from="base_line">
             <area>40,130,1200,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <!--
@@ -53,10 +51,8 @@
             <value>Retrieving Recording Status ...</value>
         </textarea>
 
-        <shape name="welcome-recording-status-line">
+        <shape name="welcome-recording-status-line" from="base_line">
             <area>40,352,1200,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <!--
@@ -72,10 +68,8 @@
             <value>Retrieving Scheduled Recordings ...</value>
         </textarea>
 
-        <shape name="welcome-scheduled-recording-status-line">
+        <shape name="welcome-scheduled-recording-status-line" from="base_line">
             <area>40,566,1200,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <!--

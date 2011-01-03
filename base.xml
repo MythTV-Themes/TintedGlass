@@ -408,6 +408,18 @@
         <cornerradius>20</cornerradius>
     </shape>
 
+    <!-- Base definition of base line -->
+    <shape name="base_line">
+        <type>box</type>
+        <fill style="gradient">
+            <gradient direction="horizontal" alpha="35">
+                <stop position="0" color="#ffffff" />
+                <stop position="50" color="#ffffff" alpha="120" />
+                <stop position="100" color="#ffffff" />
+            </gradient>
+        </fill>
+    </shape>
+
     <shape name="base_select_bar_active">
         <type>roundbox</type>
         <fill color="#ffffff" alpha="0" />
@@ -1479,16 +1491,12 @@
             <area>383,583,514,34</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line">
+        <shape name="edit-powersearch-top-line" from="base_line">
             <area>415,170,450,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="edit-powersearch-bottom-line">
+        <shape name="edit-powersearch-bottom-line" from="base_line">
             <area>415,560,450,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title" from="basetextarea">

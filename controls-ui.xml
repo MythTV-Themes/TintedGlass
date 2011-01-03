@@ -11,20 +11,16 @@
             <area>390,210,500,300</area>
         </shape>
 
-        <shape name="key-grab-popup-top-line">
+        <shape name="key-grab-popup-top-line" from="base_line">
             <area>405,270,470,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="key-grab-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>393,213,494,34</area>
         </shape>
 
-        <shape name="key-grab-popup-bottom-line">
+        <shape name="key-grab-popup-bottom-line" from="base_line">
             <area>405,450,470,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="key-grab-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
@@ -95,10 +91,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="edit-keys-bottom-line">
+        <shape name="edit-keys-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
