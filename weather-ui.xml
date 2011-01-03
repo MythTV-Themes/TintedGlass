@@ -26,20 +26,16 @@
             <area>23,111,1234,34</area>
         </shape>
 
-        <shape name="weather-base-bottom-top-line">
+        <shape name="weather-base-bottom-top-line" from="base_line">
             <area>45,143,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <shape name="weather-base-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>23,647,1234,34</area>
         </shape>
 
-        <shape name="weather-base-bottom-bottm-line">
+        <shape name="weather-base-bottom-bottm-line" from="base_line">
             <area>45,647,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="header" from="basetextarea">
@@ -869,10 +865,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="global-settings-bottom-line">
+        <shape name="global-settings-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="backgroundlbl" from="basetextarea">
@@ -939,10 +933,8 @@
             <area>23,497,1234,34</area>
         </shape>
 
-        <shape name="screen-setup-bottom-line">
+        <shape name="screen-setup-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="inactivehdr" from="basetextarea">
@@ -1056,20 +1048,16 @@
             <area>460,36,800,479</area>
         </shape>
 
-        <shape name="weather-data-retrieval-top-line">
+        <shape name="weather-data-retrieval-top-line" from="base_line">
             <area>480,70,760,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <shape name="weather-data-retrieval-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>463,39,794,34</area>
         </shape>
 
-        <shape name="weather-data-retrieval-bottom-line">
+        <shape name="weather-data-retrieval-bottom-line" from="base_line">
             <area>480,481,760,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <shape name="weather-data-retrieval-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
@@ -1084,10 +1072,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="weather-source-bottom-backdrop-line">
+        <shape name="weather-source-bottom-backdrop-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <buttonlist name="srclist" from="base_list">
@@ -1169,10 +1155,8 @@
             <area>23,39,1234,34</area>
         </shape>
 
-        <shape name="weather-search-top-line">
+        <shape name="weather-search-top-line" from="base_line">
             <area>45,109,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <shape name="weather-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
@@ -1203,10 +1187,8 @@
             <area>23,647,1234,34</area>
         </shape>
 
-        <shape name="weather-search-bottom-line">
+        <shape name="weather-search-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="editlbl" from="basetextarea">

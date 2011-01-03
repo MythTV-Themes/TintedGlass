@@ -408,10 +408,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="manage-rss-bottom-line">
+        <shape name="manage-rss-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="title-label" from="basetextarea">

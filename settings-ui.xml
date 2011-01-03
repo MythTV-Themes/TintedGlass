@@ -23,20 +23,16 @@
             <area>20,537,1240,147</area>
         </shape>
 
-        <shape name="system-events-bottom-top-line">
+        <shape name="system-events-bottom-top-line" from="base_line">
             <area>35,576,1210,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="system-events-bottom-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>23,540,1234,34</area>
         </shape>
 
-        <shape name="system-events-bottom-bottom-line">
+        <shape name="system-events-bottom-bottom-line" from="base_line">
             <area>35,628,1210,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <buttonlist name="settings" from="base_list">

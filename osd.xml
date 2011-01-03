@@ -257,13 +257,25 @@
         <shape name="description-top-line">
             <area>286,494,874,2</area>
             <type>box</type>
-            <fill color="#ffffff" alpha="45" />
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="35">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="description-bottom-line">
             <area>286,633,874,2</area>
             <type>box</type>
-            <fill color="#ffffff" alpha="45" />
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="35">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="titlesubtitle">

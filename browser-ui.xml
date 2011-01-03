@@ -229,10 +229,8 @@
             <area>23,540,1234,34</area>
         </shape>
 
-        <shape name="configure-web-browser-bottom-line">
+        <shape name="configure-web-browser-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="commandlabel" from="basetextarea">
@@ -317,10 +315,8 @@
             <area>245,469,790,34</area>
         </shape>
 
-        <shape name="bookmark-editor-title-line">
+        <shape name="bookmark-editor-title-line" from="base_line">
             <area>252,147,776,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title">

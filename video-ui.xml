@@ -90,16 +90,12 @@
             <value>Cast Members</value>
         </textarea>
 
-        <shape name="cast-popup-top-line">
+        <shape name="cast-popup-top-line" from="base_line">
             <area>376,147,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
         
-        <shape name="cast-popup-bottom-line">
+        <shape name="cast-popup-bottom-line" from="base_line">
             <area>376,515,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <buttonlist name="cast" from="base_button_list">
@@ -200,10 +196,8 @@
             <value>Full Plot</value>
         </textarea>
 
-        <shape name="full-plot-top-title-line">
+        <shape name="full-plot-top-title-line" from="base_line">
             <area>376,147,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="description" from="basetextarea">
@@ -292,16 +286,12 @@
             </fill>
         </shape>
 
-        <shape name="video-bottom-top-line">
+        <shape name="video-bottom-top-line" from="base_line">
             <area>45,470,991,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
-        <shape name="video-bottom-bottom-line">
+        <shape name="video-bottom-bottom-line" from="base_line">
             <area>45,603,991,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
         <shape name="video-coverimage-backdrop" from="base_backdrop_fanart">
@@ -1387,16 +1377,12 @@
             <area>728,431,160,35</area>
         </shape>
 
-        <shape name="video-bottom-description-top-line">
+        <shape name="video-bottom-description-top-line" from="base_line">
             <area>40,472,1022,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
-        <shape name="video-bottom-description-bottom-line">
+        <shape name="video-bottom-description-bottom-line" from="base_line">
             <area>40,635,1022,2</area>
-            <type>box</type>
-            <fill color="#ffffff" alpha="45" />
         </shape>
 
         <shape name="video-coverimage-highlight" from="base_desc_highlight">
@@ -1693,10 +1679,8 @@
             <area>23,540,1234,34</area>
         </shape>
 
-        <shape name="file-extensions-bottom-line">
+        <shape name="file-extensions-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="extension_text" from="basetextarea">
@@ -2128,16 +2112,12 @@
             <area>243,633,794,34</area>
         </shape>
 
-        <shape name="filter-top-line">
+        <shape name="filter-top-line" from="base_line">
             <area>275,100,730,2</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="filter-bottom-line">
+        <shape name="filter-bottom-line" from="base_line">
             <area>275,600,730,2</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -2379,11 +2359,8 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <shape name="video-item-detail-popup-title-line">
+        <shape name="video-item-detail-popup-title-line" from="base_line">
             <area>233,147,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="15" width="2" />
         </shape>
 
         <textarea name="description" from="basetextarea">
@@ -2392,11 +2369,8 @@
             <font>basesmaller</font>
         </textarea>
 
-        <shape name="video-item-detail-popup-description-line">
+        <shape name="video-item-detail-popup-description-line" from="base_line">
             <area>233,374,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="15" width="2" />
         </shape>
 
         <textarea name="cast" from="basetextarea">
@@ -2405,11 +2379,8 @@
             <font>basesmaller</font>
         </textarea>
 
-        <shape name="video-item-detail-popup-cast-line">
+        <shape name="video-item-detail-popup-cast-line" from="base_line">
             <area>233,422,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="15" width="2" />
         </shape>
 
         <textarea name="dirlbl" from="basetextarea">
@@ -2424,11 +2395,8 @@
             <font>basesmaller</font>
         </textarea>
 
-        <shape name="video-item-detail-popup-director-line">
+        <shape name="video-item-detail-popup-director-line" from="base_line">
             <area>233,455,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="15" width="2" />
         </shape>
         
         <textarea name="year" from="basetextarea">
@@ -2442,11 +2410,8 @@
             <align>right</align>
         </textarea>
 
-        <shape name="video-item-detail-popup-length-line">
+        <shape name="video-item-detail-popup-length-line" from="base_line">
             <area>233,480,527,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="15" width="2" />
         </shape>
 
        <textarea name="seasonlbl" from="basetextarea">
@@ -2572,10 +2537,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="player-settings-bottom-line">
+        <shape name="player-settings-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="default_text" from="basetextarea">
@@ -2702,10 +2665,8 @@
             <area>23,540,1234,34</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-line">
+        <shape name="metadata-settings-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
         
         <textarea name="autometacheck_text" from="basetextarea">

@@ -36,16 +36,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="news-feeds-bottom-top-line">
+        <shape name="news-feeds-bottom-top-line" from="base_line">
             <area>40,521,1014,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="news-feeds-bottom-bottom-line">
+        <shape name="news-feeds-bottom-bottom-line" from="base_line">
             <area>40,651,1014,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="news-feeds-thumbnail-highlight" from="base_desc_highlight">
@@ -192,10 +188,8 @@
             <area>23,647,1236,34</area>
         </shape>
 
-        <shape name="news-edit-bottom-line">
+        <shape name="news-edit-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="namelabel" from="basetextarea">

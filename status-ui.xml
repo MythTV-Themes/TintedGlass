@@ -36,16 +36,12 @@
             <area>23,645,1234,34</area>
         </shape>
 
-        <shape name="status-bottom-top-line">
+        <shape name="status-bottom-top-line" from="base_line">
             <area>45,484,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
-        <shape name="status-bottom-bottom-line">
+        <shape name="status-bottom-bottom-line" from="base_line">
             <area>45,648,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
        <buttonlist name="category">

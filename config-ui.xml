@@ -138,10 +138,8 @@
             <area>23,451,1234,34</area>
         </shape>
 
-        <shape name="edit-channels-bottom-line">
+        <shape name="edit-channels-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
         </shape>
 
         <shape name="edit-channels-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
@@ -321,10 +319,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="osd-menu-editor-bottom-line">
+        <shape name="osd-menu-editor-bottom-line" from="base_line">
             <area>45,626,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
