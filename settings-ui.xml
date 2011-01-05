@@ -194,11 +194,14 @@
 
         <!-- End icon status help -->
 
-        <buttonlist name="themes" from="base_list_large">
+        <buttonlist name="themes" from="base_list_large_selector">
             <area>23,63,609,596</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,609,68</area>
+                    <shape name="bottom_line" from="base_list_line">
+                        <area>1%,98%,99%,1</area>
+                    </shape>
 <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
                         <area>10,26,16,16</area>

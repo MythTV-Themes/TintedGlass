@@ -644,7 +644,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="schedules" from="base_list_medium">
+        <buttonlist name="schedules" from="base_list_medium_selector_large_width">
             <area>22,93,1236,368</area>
             <align>bottom</align>
             <statetype name="buttonitem">
@@ -799,7 +799,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="channels" from="base_list_medium">
+        <buttonlist name="channels" from="base_list_medium_selector_large_width">
             <area>22,69,1236,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -941,7 +941,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="programs" from="base_list_medium">
+        <buttonlist name="programs" from="base_list_medium_selector_large_width">
             <area>22,69,1236,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1578,7 +1578,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="proglist" from="base_list_medium">
+        <buttonlist name="proglist" from="base_list_medium_selector_large_width">
             <area>22,69,1236,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1855,7 +1855,7 @@
             <value>Air Date:</value>
         </textarea>
 
-        <buttonlist name="times" from="base_list">
+        <buttonlist name="times" from="base_list_small_width">
             <area>854,102,404,356</area>    
             <statetype name="buttonitem">
                 <state name="active">
@@ -1991,7 +1991,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="programs" from="base_list_medium">
+        <buttonlist name="programs" from="base_list_medium_selector_large_width">
             <area>22,69,1236,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -2477,8 +2477,12 @@
             <position>577,254</position>
         </buttonlist>
 
-        <shape name="rulesactive_background" from="base_select_bar_active">
-            <area>577,292,680,40</area>
+        <shape name="rulesactive_top_line" from="base_list_line">
+            <area>591,292,652,1</area>
+        </shape>
+
+        <shape name="rulesactive_bottom_line" from="base_list_line">
+            <area>591,330,652,1</area>
         </shape>
 
         <checkbox name="ruleactive" from="basecheckbox">
@@ -2527,8 +2531,12 @@
             <position>577,254</position>
         </buttonlist>
 
-        <shape name="autoexpire_background" from="base_select_bar_active">
-            <area>577,292,680,40</area>
+        <shape name="autoexpire_top_line" from="base_list_line">
+            <area>591,292,652,1</area>
+        </shape>
+
+        <shape name="autoexpire_bottom_line" from="base_list_line">
+            <area>591,330,652,1</area>
         </shape>
 
         <checkbox name="autoexpire" from="basecheckbox">
@@ -2551,8 +2559,12 @@
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
 
-        <shape name="autocommflag_background" from="base_select_bar_active">
-            <area>577,64,680,40</area>
+        <shape name="autocommflag_top_line" from="base_list_line">
+            <area>591,64,652,1</area>
+        </shape>
+
+        <shape name="autocommflag_bottom_line" from="base_list_line">
+            <area>591,102,652,1</area>
         </shape>
 
         <checkbox name="autocommflag" from="basecheckbox">
@@ -2565,8 +2577,12 @@
             <value>Commercial Flag new recordings</value>
         </textarea>
 
-        <shape name="autotranscode_background" from="base_select_bar_active">
-            <area>577,102,680,40</area>
+        <shape name="autotranscode_top_line" from="base_list_line">
+            <area>591,102,652,1</area>
+        </shape>
+
+        <shape name="autotranscode_bottom_line" from="base_list_line">
+            <area>591,140,652,1</area>
         </shape>
 
         <checkbox name="autotranscode" from="basecheckbox">
@@ -2583,8 +2599,12 @@
             <position>577,140</position>
         </buttonlist>
 
-        <shape name="userjob1_background" from="base_select_bar_active">
-            <area>577,178,680,40</area>
+        <shape name="userjob1_top_line" from="base_list_line">
+            <area>591,178,652,1</area>
+        </shape>
+
+        <shape name="userjob1_bottom_line" from="base_list_line">
+            <area>591,216,652,1</area>
         </shape>
 
         <checkbox name="userjob1" from="basecheckbox">
@@ -2597,8 +2617,12 @@
             <value>Run User Job #1</value>
         </textarea>
 
-        <shape name="userjob2_background" from="base_select_bar_active">
-            <area>577,216,680,40</area>
+        <shape name="userjob2_top_line" from="base_list_line">
+            <area>591,216,652,1</area>
+        </shape>
+
+        <shape name="userjob2_bottom_line" from="base_list_line">
+            <area>591,254,652,1</area>
         </shape>
 
         <checkbox name="userjob2" from="basecheckbox">
@@ -2611,8 +2635,12 @@
             <value>Run User job #2</value>
         </textarea>
 
-        <shape name="userjob3_background" from="base_select_bar_active">
-            <area>577,254,680,40</area>
+        <shape name="userjob3_top_line" from="base_list_line">
+            <area>591,254,652,1</area>
+        </shape>
+
+        <shape name="userjob3_bottom_line" from="base_list_line">
+            <area>591,292,652,1</area>
         </shape>
 
         <checkbox name="userjob3" from="basecheckbox">
@@ -2625,8 +2653,12 @@
             <value>Run User Job #3</value>
         </textarea>
 
-        <shape name="userjob4_background" from="base_select_bar_active">
-            <area>577,292,680,40</area>
+        <shape name="userjob4_top_line" from="base_list_line">
+            <area>591,292,652,1</area>
+        </shape>
+
+        <shape name="userjob4_bottom_line" from="base_list_line">
+            <area>591,330,652,1</area>
         </shape>
 
         <checkbox name="userjob4" from="basecheckbox">
@@ -2689,7 +2721,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="conflictlist" from="base_list_medium">
+        <buttonlist name="conflictlist" from="base_list_medium_selector_large_width">
             <area>22,63,1236,390</area>
             <statetype name="buttonitem">
                 <state name="active">

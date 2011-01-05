@@ -420,6 +420,17 @@
         </fill>
     </shape>
 
+    <shape name="base_list_line">
+        <type>boxw</type>
+        <fill style="gradient">
+            <gradient direction="horizontal" alpha="10">
+                <stop position="0" color="#ffffff" />
+                <stop position="50" color="#ffffff" alpha="50" />
+                <stop position="100" color="#ffffff" />
+            </gradient>
+        </fill>
+    </shape>
+
     <shape name="base_select_bar_active">
         <type>roundbox</type>
         <fill color="#ffffff" alpha="0" />
@@ -597,7 +608,14 @@
             <state name="active">
                 <shape name="buttonbackground" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
+                    <line color="#666666" alpha="0" width="1" />
                 </shape>
+		<shape name="top_line" from="base_list_line">
+                    <area>2%,0,98%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>2%,96%,98%,1</area>
+                </shape>                 
                 <textarea name="buttontext" from="base_text_font_state_small">
                 </textarea>
                 <statetype name="buttoncheck">
@@ -618,10 +636,29 @@
                     </state>
                 </statetype>
             </state>
-            <state name="selectedactive" from="active">
+            <state name="selectedactive">
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
                     <area>0,0,100%,100%</area>
                 </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                </textarea>
+                <statetype name="buttoncheck">
+                    <state type="off">
+                        <imagetype name="checkoff">
+                            <filename>images/lb-check-empty.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="half">
+                        <imagetype name="checkhalf">
+                            <filename>images/lb-check-half.png</filename>
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="checkfull">
+                            <filename>images/lb-check-full.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
                 <imagetype name="buttonarrow">
                     <filename>images/lists_right_arrow.png</filename>
                 </imagetype>
@@ -666,8 +703,36 @@
         </statetype>
     </buttonlist>
 
+    <!-- Base definition of a list with a small width -->
+    <buttonlist name="base_list_small_width" from="base_list">
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="top_line" from="base_list_line">
+                    <area>4%,0,96%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>4%,96%,96%,1</area>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list with a large width -->
+    <buttonlist name="base_list_large_width" from="base_list">
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="top_line" from="base_list_line">
+                    <area>1%,0,99%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>1%,96%,99%,1</area>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a list with a medium sized select bar-->
-    <buttonlist name="base_list_medium" from="base_list">
+    <buttonlist name="base_list_medium_selector_large_width" from="base_list_large_width">
         <statetype name="buttonitem">
             <state name="selectedactive">
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
@@ -678,7 +743,18 @@
     </buttonlist>
 
     <!-- Base definition of a list with a large sized select bar -->
-    <buttonlist name="base_list_large" from="base_list">
+    <buttonlist name="base_list_large_selector" from="base_list">
+        <statetype name="buttonitem">
+            <state name="selectedactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                    <area>0,0,100%,100%</area>
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a list with a large sized select bar -->
+    <buttonlist name="base_list_large_selector_large_width" from="base_list_large_width">
         <statetype name="buttonitem">
             <state name="selectedactive">
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
@@ -747,6 +823,13 @@
                 <area>0,0,100%,100%</area>
                 <shape name="background" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
+                    <line color="#666666" alpha="0" width="1" />
+                </shape>
+                <shape name="top_line" from="base_list_line">
+                    <area>2%,0,98%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="text">
                     <area>6%,0,94%,100%</area>
@@ -756,10 +839,18 @@
                     <font state="disabled">basesmalldarkgrey</font>
                 </textarea>
             </state>
-            <state name="selected" from="active">
+            <state name="selected">
+                <area>0,0,100%,100%</area>
                 <shape name="background" from="base_select_bar_selectedactive_medium">
                     <area>0,0,100%,100%</area>
                 </shape>
+                <textarea name="text">
+                    <area>6%,0,94%,100%</area>
+                    <align>vcenter</align>
+                    <font>basesmall</font>
+                    <font state="selected">basesmall</font>
+                    <font state="disabled">basesmalldarkgrey</font>
+                </textarea>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active" />
@@ -907,7 +998,14 @@
             <state name="active">
                 <area>0,0,100%,40</area>
                 <shape name="buttonbackground" from="base_select_bar_active">
-                    <area>0,0,100%,40</area>
+                    <area>0,0,100%,100%</area>
+                    <line color="#666666" alpha="0" width="1" />
+                </shape>
+                <shape name="top_line" from="base_list_line">
+                    <area>2%,0,98%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="buttontext">
                     <area>6%,0,94%,40</area>
@@ -926,10 +1024,27 @@
                     <alpha>200</alpha>
                 </imagetype>
             </state>
-            <state name="selectedactive" from="active">
+            <state name="selectedactive">
+                <area>0,0,100%,40</area>
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
                     <area>0,0,100%,40</area>
                 </shape>
+                <textarea name="buttontext">
+                    <area>6%,0,94%,40</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+                <imagetype name="leftarrow">
+                    <position>10,10</position>
+                    <filename>images/lists_left_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+                <imagetype name="rightarrow">
+                    <position>660,10</position>
+                    <filename>images/lists_right_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -1008,6 +1123,13 @@
                 <area>0,0,100%,100%</area>
                 <shape name="buttonbackground" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
+                    <line color="#666666" alpha="0" width="1" />
+                </shape>
+                <shape name="top_line" from="base_list_line">
+                    <area>2%,0,98%,1</area>
+                </shape>
+                <shape name="bottom_line" from="base_list_line">
+                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
                     <area>6%,0,94%,100%</area>
@@ -1023,10 +1145,24 @@
                     <alpha>200</alpha>
                 </imagetype>
             </state>
-            <state name="selectedactive" from="active">
+            <state name="selectedactive">
+                <area>0,0,100%,100%</area>
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
                     <area>0,0,100%,100%</area>
                 </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                    <area>6%,0,94%,100%</area>
+                </textarea>
+                <imagetype name="leftarrow">
+                    <position>10,10</position>
+                    <filename>images/lists_left_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
+                <imagetype name="rightarrow">
+                    <position>520,10</position>
+                    <filename>images/lists_right_arrow.png</filename>
+                    <alpha>200</alpha>
+                </imagetype>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>

@@ -31,10 +31,8 @@
             <area>23,567,1234,34</area>
         </shape>
 
-        <shape name="image-gallery-bottom-line">
+        <shape name="image-gallery-bottom-line" from="base_line">
             <area>45,602,1190,2</area>
-            <type>box</type>
-            <fill color="#AAAAAA" alpha="75" />
         </shape>
 
         <buttonlist name="images">

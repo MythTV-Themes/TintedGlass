@@ -84,7 +84,7 @@
             <position>430,51</position>
         </textedit>
 
-        <buttonlist name="sites" from="base_list">
+        <buttonlist name="sites" from="base_list_small_width">
             <area>22,132,404,268</area>
             <statetype name="buttonitem">
                 <state name="active">

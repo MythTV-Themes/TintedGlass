@@ -82,7 +82,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="log" from="base_list">
+        <buttonlist name="log" from="base_list_large_width">
             <area>22,98,1236,328</area>
             <statetype name="buttonitem">
                 <state name="active">
