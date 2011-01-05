@@ -59,7 +59,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="icons" from="base_list_medium">
+        <buttonlist name="icons" from="base_list_medium_selector_large_width">
             <area>440,189,400,480</area>
             <layout>vertical</layout>
             <spacing>-2</spacing>
@@ -146,7 +146,7 @@
             <area>23,647,1234,34</area>
         </shape>
 
-    <buttonlist name="channels" from="base_list">
+    <buttonlist name="channels" from="base_list_large_width">
         <area>22,59,1236,356</area>
         <statetype name="buttonitem">
             <state name="active">

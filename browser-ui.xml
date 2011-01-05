@@ -157,7 +157,7 @@
             <value>Website URL</value>
         </textarea>
 
-        <buttonlist name="bookmarklist" from="base_list">
+        <buttonlist name="bookmarklist" from="base_list_large_width">
             <area>22,109,1236,548</area>
             <statetype name="buttonitem">
                 <state name="active">

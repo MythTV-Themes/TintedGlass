@@ -102,7 +102,7 @@
             <align>center</align>
         </textarea>
 
-        <buttonlist name="leftlist" from="base_list">
+        <buttonlist name="leftlist" from="base_list_small_width">
             <area>128,59,415,438</area>
             <statetype name="buttonitem">
                 <state name="active">

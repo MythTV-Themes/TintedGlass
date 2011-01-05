@@ -159,7 +159,7 @@
             </statetype>
         </buttonlist>
         
-        <buttonlist name="recordings" from="base_list_large">
+        <buttonlist name="recordings" from="base_list_large_selector">
             <area>279,88,979,330</area>
             <align>bottom</align>
             <statetype name="buttonitem">
@@ -748,7 +748,7 @@
             </statetype>
         </buttonlist>
         
-        <buttonlist name="recordings" from="base_list_large">
+        <buttonlist name="recordings" from="base_list_large_selector">
             <area>279,88,979,330</area>
             <align>bottom</align>
             <statetype name="buttonitem">

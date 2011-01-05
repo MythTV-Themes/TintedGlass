@@ -1522,7 +1522,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <buttonlist name="tracks" from="base_list">
+        <buttonlist name="tracks" from="base_list_large_width">
             <area>52,339,1176,300</area>
             <statetype name="buttonitem">
                 <state name="active">
