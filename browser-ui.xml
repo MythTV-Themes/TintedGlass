@@ -240,7 +240,7 @@
         </textarea>
 
         <textedit name="command" from="base_wide_textedit">
-            <position>460,137</position>
+            <area>460,137,580,32</area>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
@@ -250,7 +250,7 @@
         </textarea>
 
         <textedit name="zoom" from="base_wide_textedit">
-            <position>460,259</position>
+            <area>460,259,580,32</area>
         </textedit>
 
         <textarea name="pluginlabel" from="basetextarea">
@@ -333,7 +333,7 @@
         </textarea>
 
         <textedit name="category" from="base_textedit">
-            <position>424,209</position>
+            <area>424,209,287,32</area>
         </textedit>
 
         <button name="findcategory" from="base_button">
@@ -348,7 +348,7 @@
         </textarea>
 
         <textedit name="name" from="base_wide_textedit">
-            <position>392,309</position>
+            <area>392,309,580,32</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
@@ -358,7 +358,7 @@
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <position>392,409</position>
+            <area>392,409,580,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">

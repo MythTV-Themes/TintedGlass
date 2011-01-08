@@ -462,7 +462,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>467,79</position>
+            <area>467,79,580,32</area>
         </textedit>
 
         <textarea name="channellabel" from="titlelabel">
@@ -1110,7 +1110,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>435,123</position>
+            <area>435,123,580,32</area>
         </textedit>
 
         <textarea name="prioritylabel" from="ruleslabel">
@@ -1166,7 +1166,7 @@
                         <area>0,0,1120,150</area>
                         <type>roundbox</type>
                         <fill color="#404040" alpha="175" />
-                        <line color="#404040" alpha="225" width="1" />
+                        <line color="#404040" alpha="225" width="2" />
                         <cornerradius>20</cornerradius>
                     </shape>
                 </state>
@@ -1174,19 +1174,20 @@
                     <shape name="background">
                         <area>0,0,1120,150</area>
                         <type>roundbox</type>
-                        <fill color="#FFFFFF" alpha="150" />
-                        <line color="#FFFFFF" alpha="225" width="1" />
+                        <fill color="#000000" alpha="255" />
+                        <line color="#FFFFFF" alpha="120" width="2" />
                         <cornerradius>20</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
             <imagetype name="cursor">
+                <area>0,0,4,20%</area>
                 <filename>images/cursor.png</filename>
             </imagetype>
             <textarea name="text">
                 <area>12,13,1096,124</area>
-                <font>basesmallblack</font>
+                <font>basesmall</font>
                 <multiline>yes</multiline>
             </textarea>
         </textedit>
@@ -1271,7 +1272,7 @@
         </buttonlist>
 
         <textedit name="phrase_edit" from="base_textedit">
-            <position>500,509</position>
+            <area>500,509,287,32</area>
         </textedit>
 
         <button name="ok_button" from="base_button">
@@ -1464,7 +1465,7 @@
         </textarea>
 
         <textedit name="title_edit" from="base_textedit">
-            <position>498,174</position>
+            <area>498,174,287,32</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
@@ -1474,7 +1475,7 @@
         </textarea>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <position>498,264</position>
+            <area>498,264,287,32</area>
         </textedit>
 
         <textarea name="desclabel" from="basetextarea">
@@ -1484,7 +1485,7 @@
         </textarea>
 
         <textedit name="desc_edit" from="base_textedit">
-            <position>498,354</position>
+            <area>498,354,287,32</area>
         </textedit>
 
         <buttonlist name="category_list" from="base_selector">
@@ -1694,7 +1695,7 @@
         </textarea>
 
         <textedit name="input" from="base_wide_textedit">
-            <position>360,36</position>
+            <area>360,36,580,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
@@ -2163,7 +2164,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>440,116</position>
+            <area>440,116,580,32</area>
         </textedit>
 
         <buttonlist name="clauses" from="base_selector">
@@ -2222,14 +2223,14 @@
                         <area>0,0,1080,150</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="255" />
-                        <line color="#888888" alpha="255" width="2" />
+                        <line color="#FFFFFF" alpha="120" width="2" />
                         <cornerradius>20</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
             <imagetype name="cursor">
-                <area>0,0,3,20%</area>
+                <area>0,0,4,20%</area>
                 <filename>images/cursor.png</filename>
             </imagetype>
             <textarea name="text">
@@ -2262,14 +2263,14 @@
                         <area>0,0,880,85</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="255" />
-                        <line color="#888888" alpha="255" width="2" />
+                        <line color="#FFFFFF" alpha="120" width="2" />
                         <cornerradius>20</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
             <imagetype name="cursor">
-                <area>0,0,3,30%</area>
+                <area>0,0,4,30%</area>
                 <filename>images/cursor.png</filename>
             </imagetype>
             <textarea name="text">
