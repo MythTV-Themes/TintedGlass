@@ -40,7 +40,7 @@
         </textarea>
 
         <textedit name="manualsearch" from="base_wide_textedit">
-            <position>430,54</position>
+            <area>430,54,580,32</area>
         </textedit>
 
         <button name="search" from="base_button">

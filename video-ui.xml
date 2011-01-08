@@ -1803,7 +1803,7 @@
         </textarea>
         
         <textedit name="command" from="base_wide_textedit">
-            <position>435,223</position>
+            <area>435,223,580,32</area>
         </textedit>
         
         <textarea name="default_text" from="basetextarea">
@@ -2417,7 +2417,7 @@
         </buttonlist>
         
         <textedit name="textfilter_input" from="base_textedit">
-            <position>560,444</position>
+            <area>560,444,287,32</area>
         </textedit>
 
         <textarea name="numvideos_text" from="basetextarea">
@@ -2698,7 +2698,7 @@
         </textarea>
 
         <textedit name="defaultplayer" from="base_wide_textedit">
-            <position>442,72</position>
+            <area>442,72,580,32</area>
         </textedit>
 
         <textarea name="dvd_text" from="basetextarea">
@@ -2708,7 +2708,7 @@
         </textarea>
 
         <textedit name="dvdplayer" from="base_wide_textedit">
-            <position>442,142</position>
+            <area>442,142,580,32</area>
         </textedit>
 
         <textarea name="dvddrive_text" from="basetextarea">
@@ -2718,7 +2718,7 @@
         </textarea>
 
         <textedit name="dvddrive" from="base_wide_textedit">
-            <position>442,212</position>
+            <area>442,212,580,32</area>
         </textedit>
 
         <textarea name="vcd_text" from="basetextarea">
@@ -2758,7 +2758,7 @@
         </textarea>
 
         <textedit name="altplayer" from="base_wide_textedit">
-            <position>442,482</position>
+            <area>442,482,580,32</area>
         </textedit>
 
         <textarea name="helptext" from="basetextarea">

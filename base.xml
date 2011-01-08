@@ -1195,7 +1195,7 @@
         </statetype>
     </buttonlist>
 
-    <!-- Base definition of a textedit -->
+    <!-- Base definition of a textedit (DONT USE POSITION ALWAYS USE AREA)-->
     <textedit name="base_textedit">
         <area>0,0,287,32</area>
         <statetype name="background">
@@ -1231,7 +1231,7 @@
         </textarea>
     </textedit>
 
-    <!-- Base definition of a wide textedit -->
+    <!-- Base definition of a wide textedit (DONT USE POSITION ALWAYS USE AREA)-->
     <textedit name="base_wide_textedit" from="base_textedit">
         <area>0,0,580,32</area>
         <textarea name="text">
@@ -1604,7 +1604,7 @@
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <position>492,336</position>
+            <area>492,336,287,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
@@ -1646,7 +1646,7 @@
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <position>497,183</position>
+            <area>497,183,287,32</area>
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
@@ -1746,7 +1746,7 @@
         </shape>
 
         <textedit name="location" from="base_textedit">
-            <position>777,93</position>
+            <area>777,93,287,32</area>
         </textedit>
 
         <buttonlist name="filelist">
