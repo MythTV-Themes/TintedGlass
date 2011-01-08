@@ -4,46 +4,112 @@
     
     <!-- Popups -->
     <window name="moviesel">
-        <area>-1,-1,420,526</area>
-        
-        <shape name="shape">
-            <area>0,0,420,526</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="130" />
-            <line color="#FFFFFF" alpha="145" width="2" />
-            <cornerradius>20</cornerradius>
+        <area>-1,-1,1280,720</area>
+
+        <shape name="darken" from="base_darken_popup_background" />
+
+        <shape name="moviesel-backdrop" from="base_popup_backdrop">
+            <area>320,36,640,648</area>
+        </shape>
+
+        <shape name="moviesel-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>323,39,634,643</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="90" />
+                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
         
-        <textarea name="searchedname" from="basetextarea">
-            <area>20,10,380,100</area>
-            <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>center</align>
+        <textarea name="title" from="basetextarea">
+            <area>323,42,634,20</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Movie Selector</value>
         </textarea>
 
-        <buttonlist name="results" from="base_button_list">
-            <area>20,122,380,380</area>
-            <drawfrombottom>no</drawfrombottom>
+        <buttonlist name="results" from="base_list_large_selector">
+            <area>323,64,634,600</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,380,40</area>
+                    <area>0,0,634,51</area>
+                    <shape name="bottom_line" from="base_list_line">
+                        <area>1%,98%,99%,1</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>15,3,59,44</area>
+                        <alpha>200</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
                     <textarea name="buttontext">
-                        <area>15,7,350,24</area>
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>84,0,535,30</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>84,30,329,21</area>
+                        <font>basesmaller</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="releasedate">
+                        <area>419,31,200,18</area>
+                        <font>basesupersmallyellow</font>
+                        <align>right,bottom</align>
+                        <template>Released %1</template>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,380,40</area>
+                    <area>0,0,634,204</area>
+                    <imagetype name="buttonimage">
+                        <area>15,2,133,200</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
                     <textarea name="buttontext">
-                        <area>15,7,350,24</area>
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>158,0,476,30</area>
+                        <font>basesmallyellow</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="subtitle">
+                        <area>158,32,476,24</area>
+                        <font>basesmaller</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="releasedate">
+                        <area>419,182,200,20</area>
+                        <font>basesupersmallyellow</font>
+                        <align>right,vcenter</align>
+                        <template>Released %1</template>
+                    </textarea>
+                    <textarea name="userrating">
+                        <area>158,182,255,20</area>
+                        <multiline>no</multiline>
+                        <font>basesupersmallyellow</font>
+                        <align>left,vcenter</align>
+                        <template>User Rating: %1</template>
+                    </textarea>
+                    <textarea name="description">
+                        <area>158,62,472,120</area>
+                        <multiline>yes</multiline>
+                        <font>baseevensmaller</font>
+                        <align>vcenter,left</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,376</position>
+                <position>555,598</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,376</position>
+                <position>585,598</position>
             </statetype>
         </buttonlist>
     </window>
