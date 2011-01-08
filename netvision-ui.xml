@@ -81,7 +81,7 @@
         </textarea>
 
         <textedit name="search" from="base_wide_textedit">
-            <position>430,51</position>
+            <position>430,50</position>
         </textedit>
 
         <buttonlist name="sites" from="base_list_small_width">
@@ -419,7 +419,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>442,73</position>
+            <position>442,72</position>
         </textedit>
 
         <textarea name="url-label" from="basetextarea">
@@ -429,7 +429,7 @@
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <position>442,143</position>
+            <position>442,142</position>
         </textedit>
 
         <textarea name="desc-label" from="basetextarea">
@@ -439,7 +439,7 @@
         </textarea>
 
         <textedit name="description" from="base_wide_textedit">
-            <position>442,213</position>
+            <position>442,212</position>
         </textedit>
 
         <textarea name="author-label" from="basetextarea">
@@ -449,7 +449,7 @@
         </textarea>
 
         <textedit name="author" from="base_wide_textedit">
-            <position>442,283</position>
+            <position>442,282</position>
         </textedit>
 
         <checkbox name="download" from="basecheckbox">

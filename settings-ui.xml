@@ -75,7 +75,7 @@
         </textarea>
 
         <textedit name="settingvalue" from="base_wide_textedit">
-            <area>186,588,908,30</area>
+            <area>186,587,908,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">

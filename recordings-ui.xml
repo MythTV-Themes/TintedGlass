@@ -1296,7 +1296,7 @@
         </textarea>
 
         <textedit name="oldpassword" from="base_textedit">
-            <position>587,288</position>
+            <position>587,287</position>
         </textedit>
 
         <textarea name="newlabel" from="basetextarea">
@@ -1306,7 +1306,7 @@
         </textarea>
 
         <textedit name="newpassword" from="base_textedit">
-            <position>587,388</position>
+            <position>587,387</position>
         </textedit>
 
         <button name="ok" from="base_button">
@@ -1641,7 +1641,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>350,286</position>
+            <position>350,285</position>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
@@ -1650,7 +1650,7 @@
         </textarea>
 
         <textedit name="subtitle" from="base_wide_textedit">
-            <position>350,401</position>
+            <position>350,400</position>
         </textedit>
 
         <button name="ok" from="base_medium_button">

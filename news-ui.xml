@@ -198,7 +198,7 @@
         </textarea>
 
         <textedit name="name" from="base_wide_textedit">
-            <position>405,130</position>
+            <position>405,129</position>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
@@ -207,7 +207,7 @@
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <position>405,230</position>
+            <position>405,229</position>
         </textedit>
 
         <textarea name="iconlabel" from="basetextarea">
@@ -216,7 +216,7 @@
         </textarea>
 
         <textedit name="icon" from="base_wide_textedit">
-            <position>405,330</position>
+            <position>405,329</position>
         </textedit>
 
         <textarea name="podcastlabel" from="basetextarea">

@@ -420,6 +420,16 @@
         </fill>
     </shape>
 
+    <shape name="base_vertical_line">
+        <fill style="gradient">
+            <gradient alpha="80" direction="vertical">
+                <stop position="0" color="#ffffff" />
+                <stop position="50" color="#ffffff" alpha="160" />
+                <stop position="100" color="#ffffff" />
+            </gradient>
+        </fill>
+    </shape>
+
     <shape name="base_list_line">
         <type>boxw</type>
         <fill style="gradient">
@@ -1187,7 +1197,7 @@
 
     <!-- Base definition of a textedit -->
     <textedit name="base_textedit">
-        <area>0,0,287,30</area>
+        <area>0,0,287,32</area>
         <statetype name="background">
            <state name="active">
                <area>0,0,100%,100%</area>
@@ -1195,7 +1205,7 @@
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <fill color="#404040" alpha="175" />
-                    <line color="#404040" alpha="225" width="1" />
+                    <line color="#404040" alpha="225" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
@@ -1203,34 +1213,27 @@
                <shape name="background">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#FFFFFF" alpha="150" />
-                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <fill color="#000000" alpha="255" />
+                    <line color="#FFFFFF" alpha="120" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
-            <state name="inactive" from="active">
-               <shape name="background">
-                    <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#404040" alpha="175" />
-                    <line color="#404040" alpha="225" width="1" />
-                    <cornerradius>90</cornerradius>
-                </shape>
-            </state>
+            <state name="inactive" from="active" />
         </statetype>
         <imagetype name="cursor">
+            <area>0,0,4,100%</area>
             <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
             <area>5%,0,95%,100%</area>
-            <font>basesmallblack</font>
+            <font>basesmall</font>
             <align>vcenter</align>
         </textarea>
     </textedit>
 
     <!-- Base definition of a wide textedit -->
     <textedit name="base_wide_textedit" from="base_textedit">
-        <area>0,0,580,30</area>
+        <area>0,0,580,32</area>
         <textarea name="text">
             <area>2%,0,98%,100%</area>
         </textarea>
@@ -1601,7 +1604,7 @@
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <position>492,337</position>
+            <position>492,336</position>
         </textedit>
 
         <button name="ok" from="base_button">
@@ -1643,7 +1646,7 @@
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <position>497,184</position>
+            <position>497,183</position>
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
@@ -1743,7 +1746,7 @@
         </shape>
 
         <textedit name="location" from="base_textedit">
-            <position>777,94</position>
+            <position>777,93</position>
         </textedit>
 
         <buttonlist name="filelist">
