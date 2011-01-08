@@ -18,6 +18,11 @@
         <pixelsize>13</pixelsize>
     </fontdef>
 
+    <fontdef name="baseevensmaller" from="basefont">
+        <weight>bold</weight>
+        <pixelsize>16</pixelsize>
+    </fontdef>
+
     <fontdef name="basesmaller" from="basefont">
         <pixelsize>18</pixelsize>
     </fontdef>
