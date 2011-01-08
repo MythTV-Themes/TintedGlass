@@ -2727,7 +2727,6 @@
             <value>VCD Player:</value>
         </textarea>
 
-
         <textedit name="vcdplayer" from="base_wide_textedit">
             <position>442,283</position>
         </textedit>
