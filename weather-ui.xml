@@ -1198,7 +1198,7 @@
         </textarea>
 
         <textedit name="loc-edit" from="base_wide_textedit">
-            <position>425,60</position>
+            <position>425,59</position>
         </textedit>
 
         <textarea name="helptxt" from="basetextarea">

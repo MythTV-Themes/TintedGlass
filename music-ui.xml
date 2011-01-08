@@ -1193,7 +1193,7 @@
         <!-- data fields -->
 
         <textedit name="location" from="base_textedit">
-            <position>520,69</position>
+            <position>520,68</position>
         </textedit>
 
         <button name="directoryfinder" from="basesearchbutton">
@@ -1463,7 +1463,7 @@
         </buttonlist>
 
         <textedit name="artist" from="base_textedit">
-            <position>510,100</position>
+            <position>510,99</position>
         </textedit>
 
         <button name="searchartist" from="basesearchbutton">
@@ -1471,7 +1471,7 @@
         </button>
 
         <textedit name="album" from="base_textedit">
-            <position>510,135</position>
+            <position>510,134</position>
         </textedit>
 
         <button name="searchalbum" from="basesearchbutton">
@@ -1479,7 +1479,7 @@
         </button>
 
         <textedit name="genre" from="base_textedit">
-            <position>510,170</position>
+            <position>510,169</position>
         </textedit>
 
         <button name="searchgenre" from="basesearchbutton">
@@ -1496,7 +1496,7 @@
         </button>
 
         <textedit name="year" from="base_textedit">
-            <position>716,215</position>
+            <position>716,214</position>
         </textedit>
 
         <textarea name="track_label" from="basetextarea">

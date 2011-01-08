@@ -462,7 +462,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>467,80</position>
+            <position>467,79</position>
         </textedit>
 
         <textarea name="channellabel" from="titlelabel">
@@ -1110,7 +1110,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>435,124</position>
+            <position>435,123</position>
         </textedit>
 
         <textarea name="prioritylabel" from="ruleslabel">
@@ -1271,7 +1271,7 @@
         </buttonlist>
 
         <textedit name="phrase_edit" from="base_textedit">
-            <position>500,510</position>
+            <position>500,509</position>
         </textedit>
 
         <button name="ok_button" from="base_button">
@@ -1464,7 +1464,7 @@
         </textarea>
 
         <textedit name="title_edit" from="base_textedit">
-            <position>498,175</position>
+            <position>498,174</position>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
@@ -1474,7 +1474,7 @@
         </textarea>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <position>498,265</position>
+            <position>498,264</position>
         </textedit>
 
         <textarea name="desclabel" from="basetextarea">
@@ -1484,7 +1484,7 @@
         </textarea>
 
         <textedit name="desc_edit" from="base_textedit">
-            <position>498,355</position>
+            <position>498,354</position>
         </textedit>
 
         <buttonlist name="category_list" from="base_selector">
@@ -1694,7 +1694,7 @@
         </textarea>
 
         <textedit name="input" from="base_wide_textedit">
-            <position>360,37</position>
+            <position>360,36</position>
         </textedit>
 
         <button name="ok" from="base_button">
@@ -2163,7 +2163,7 @@
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <position>440,117</position>
+            <position>440,116</position>
         </textedit>
 
         <buttonlist name="clauses" from="base_selector">
