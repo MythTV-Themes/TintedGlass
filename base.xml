@@ -69,6 +69,10 @@
         <color>#3a9ade</color>
     </fontdef>
 
+    <fontdef name="baseevensmallerblue" from="baseevensmaller">
+        <color>#3a9ade</color>
+    </fontdef>
+
     <fontdef name="basesmallerblue" from="basesmaller">
         <color>#3a9ade</color>
     </fontdef>
@@ -1691,194 +1695,216 @@
     </window>
 
     <window name="MythFileBrowser">
-        <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>0,0,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background.png</filename>
+        </imagetype>
 
-        <shape name="myth-file-browser-backdrop" from="base_popup_backdrop">
-            <area>155,56,970,536</area>
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+        </imagetype>
+
+        <shape name="heading-backdrop" from="base_heading_backdrop" />
+
+        <textarea name="heading" from="base_heading">
+            <value>FileBrowser</value>
+        </textarea>
+
+        <shape name="file-browser-preview-backdrop" from="base_backdrop_fanart">
+            <area>20,36,615,648</area>
         </shape>
 
-        <shape name="myth-file-browser-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>158,59,964,34</area>
+        <shape name="file-browser-preview-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,609,643</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="90" />
+                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="myth-file-browser-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>158,555,964,34</area>
+        <shape name="preview-shape" from="base_backdrop_fanart">
+            <area>43,120,569,323</area>
         </shape>
 
-        <shape name="myth-file-browser-left-highlight">
-            <area>184,85,534,479</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="45" width="2" />
+        <shape name="preview-shape-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>46,123,563,317</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="90" />
+                    <stop position="95" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="myth-file-browser-left-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>187,88,528,34</area>
-            <type>box</type>
+        <shape name="file-browser-backdrop" from="base_backdrop_fanart">
+            <area>645,36,615,648</area>
         </shape>
 
-        <shape name="myth-file-browser-left-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <type>box</type>
-            <area>187,527,528,34</area>
+        <shape name="file-browser-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>648,39,609,643</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="90" />
+                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="myth-file-browser-right-highlight">
-            <area>739,76,360,496</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
-        </shape>
-
-        <shape name="myth-file-browser-right-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>742,79,354,34</area>
-        </shape>
-
-        <shape name="myth-file-browser-right-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>742,535,354,34</area>
-        </shape>
-
-        <shape name="myth-file-browser-filename-backdrop" from="base_popup_backdrop">
-            <area>20,614,1240,50</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
-        <shape name="myth-file-browser-filename-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,617,1234,34</area>
-        </shape>
-
-        <textedit name="location" from="base_textedit">
-            <area>777,93,287,32</area>
-        </textedit>
-
-        <buttonlist name="filelist">
-            <area>187,88,531,480</area>
-            <layout>grid</layout>
-            <spacing>0</spacing>
-            <buttonarea>0,0,530,480</buttonarea>
+        <buttonlist name="filelist" from="base_list_large_selector">
+            <area>648,64,609,596</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,106,158</area>
-                    <imagetype name="buttonbackground" />
+                    <area>0,0,609,51</area>
+                    <shape name="bottom_line" from="base_list_line">
+                        <area>1%,98%,99%,1</area>
+                    </shape>
                     <imagetype name="buttonimage">
-                        <area>0,0,106,158</area>
-                        <alpha>160</alpha>
+                        <area>15,3,80,45</area>
+                        <alpha>200</alpha>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
+                    <textarea name="buttontext">
+                        <area>105,0,489,51</area>
+                        <font>basesmaller</font>
+                        <align>left,vcenter</align>
+                    </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>28,90,53,40</area>
+                                <area>28,6,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>28,90,53,40</area>
+                                <area>28,6,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>28,90,53,40</area>
+                            <area>28,6,53,40</area>
                             <imagetype name="icon">
-                                <area>0,0,106,158</area>
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>28,90,53,40</area>
+                            <area>28,6,53,40</area>
                             <imagetype name="icon">
-                                <area>0,0,106,158</area>
                             </imagetype>
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
-                    <area>-40,-40,180,240</area>
+                    <area>0,0,609,102</area>
+                    <imagetype name="buttonimage">
+                        <area>15,3,170,96</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>195,0,399,102</area>
+                        <font>basesmalleryellow</font>
+                        <align>left,vcenter</align>
+                    </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>65,130,53,40</area>
+                                <area>74,31,53,40</area>
                                 <filename>images/folderopen.png</filename>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>65,130,53,40</area>
+                                <area>74,31,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>65,130,53,40</area>
+                            <area>74,31,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>65,130,53,40</area>
+                            <area>74,31,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                     </statetype>
-                    <imagetype name="buttonbackground">
-                        <area>12,11,160,217</area>
-                        <filename>images/mv_video_underlay.png</filename>
-                        <alphapulse min="80" max="255" change="2"/>
-                    </imagetype>
-                    <imagetype name="buttonimage">
-                        <area>12,9,160,220</area>
-                        <mask>images/mv_browsemodemask.png</mask>
-                    </imagetype>
                 </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>540,596</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>570,596</position>
             </statetype>
         </buttonlist>
 
+        <textedit name="location" from="base_textedit">
+            <area>40,50,575,32</area>
+        </textedit>
+
+        <textarea name="fullpath" from="basetextarea">
+            <area>40,90,575,24</area>
+            <cutdown>yes</cutdown>
+            <font>baseevensmallerblue</font>
+             <align>allcenter</align>
+            <value>Filename</value>
+        </textarea>
+
+        <imagetype name="preview">
+            <area>46,123,563,317</area>
+            <filename />
+            <mask>images/masks/myth_file_browser_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
         <button name="back" from="base_button">
-            <area>754,132,138,28</area>
+            <position>252,457</position>
             <value>Up Level</value>
         </button>
 
         <button name="home" from="base_button">
-            <area>933,132,138,28</area>
+            <position>252,514</position>
             <value>Home</value>
         </button>
 
-        <imagetype name="preview">
-            <area>752,173,335,321</area>
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
-
-        <textarea name="info" from="basetextarea">
-            <area>754,495,335,25</area>
-            <align>allcenter</align>
-        </textarea>
-
         <button name="cancel" from="base_button">
-            <position>933,520</position>
+            <position>252,572</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>754,520</position>
+            <position>252,629</position>
             <value>Ok</value>
         </button>
 
-        <textarea name="filename" from="basetextarea">
-            <area>40,622,1200,38</area>
-            <cutdown>yes</cutdown>
-            <font>basemedium</font>
-            <value>Filename</value>
+        <textarea name="info_label" from="basetextarea">
+            <area>408,530,221,24</area>
+            <align>allcenter</align>
+            <value>File Size:</value>
         </textarea>
 
-        <textarea name="buttontext" from="basetextarea">
-            <area>22,678,475,38</area>
-            <cutdown>yes</cutdown>
-            <font>baselarge</font>
+        <textarea name="info" from="basetextarea">
+            <area>408,560,221,24</area>
+            <font>baseevensmallerblue</font>
+            <align>allcenter</align>
         </textarea>
 
+        <shape name="clockbackdrop" from="base_clock_backdrop" />
+
+        <clock name="clock" from="base_clock" />
     </window>
 
     <window name="videowindow">
