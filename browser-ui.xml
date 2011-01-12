@@ -14,7 +14,8 @@
         </shape>
 
         <shape name="browser-page-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>25,39,1230,34</area>
+            <area>26,39,1228,34</area>
+            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="web_browser_backdrop" from="base_backdrop">
@@ -24,12 +25,12 @@
 
         <shape name="web-browser-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>22,104,1236,34</area>
-            <cornerradius>10</cornerradius>
+            <cornerradius>9</cornerradius>
         </shape>
 
         <shape name="web-browser-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>22,616,1236,34</area>
-            <cornerradius>10</cornerradius>
+            <cornerradius>9</cornerradius>
         </shape>
 
         <buttonlist name="pagelist" from="base_selector">
@@ -304,7 +305,7 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="bookmark-editor-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">

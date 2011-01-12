@@ -435,11 +435,11 @@
         </shape>
 
         <shape name="manual-schedule-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>203,39,874,34</area>
+            <area>203,39,875,34</area>
         </shape>
 
         <shape name="manual-schedule-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>203,515,874,34</area>
+            <area>203,515,875,34</area>
         </shape>
 
         <shape name="manual-schedule-bottom-backdrop" from="base_backdrop">
@@ -1167,7 +1167,7 @@
                         <type>roundbox</type>
                         <fill color="#404040" alpha="175" />
                         <line color="#404040" alpha="225" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="selected" from="active">
@@ -1176,7 +1176,7 @@
                         <type>roundbox</type>
                         <fill color="#000000" alpha="255" />
                         <line color="#FFFFFF" alpha="120" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
@@ -1224,11 +1224,11 @@
         </shape>
 
         <shape name="phrase-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,113,494,34</area>
+            <area>393,113,495,34</area>
         </shape>
 
         <shape name="phrase-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,573,494,34</area>
+            <area>393,573,495,34</area>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1362,11 +1362,11 @@
         </shape>
 
         <shape name="power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,113,494,34</area>
+            <area>393,113,495,34</area>
         </shape>
 
         <shape name="power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,573,494,34</area>
+            <area>393,573,495,34</area>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1436,11 +1436,11 @@
         </shape>
 
         <shape name="edit-power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,88,494,34</area>
+            <area>393,88,495,34</area>
         </shape>
 
         <shape name="edit-power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,598,494,34</area>
+            <area>393,598,495,34</area>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -2215,7 +2215,7 @@
                         <type>roundbox</type>
                         <fill color="#404040" alpha="175" />
                         <line color="#404040" alpha="225" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="selected" from="active">
@@ -2224,7 +2224,7 @@
                         <type>roundbox</type>
                         <fill color="#000000" alpha="255" />
                         <line color="#FFFFFF" alpha="120" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
@@ -2255,7 +2255,7 @@
                         <type>roundbox</type>
                         <fill color="#404040" alpha="175" />
                         <line color="#404040" alpha="225" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="selected" from="active">
@@ -2264,7 +2264,7 @@
                         <type>roundbox</type>
                         <fill color="#000000" alpha="255" />
                         <line color="#FFFFFF" alpha="120" width="2" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />

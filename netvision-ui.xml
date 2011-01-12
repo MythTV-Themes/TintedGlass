@@ -14,7 +14,8 @@
         </shape>
 
         <shape name="netvision-search-term-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>241,39,794,34</area>
+            <area>243,39,790,34</area>
+            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="netvision-search-sites-backdrop" from="base_backdrop">
@@ -293,7 +294,7 @@
 
         <shape name="manage-rss-subscriptions-preview-highlight" from="base_desc_highlight">
             <area>1130,494,120,184</area>
-            <cornerradius>10</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <button name="edit" from="base_button">
@@ -562,7 +563,7 @@
 
         <shape name="netvision-list-preview-highlight" from="base_desc_highlight">
             <area>991,480,259,194</area>
-            <cornerradius>15</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <buttontree name="videos">
@@ -1035,7 +1036,7 @@
                 <state name="selectedactive">
                     <area>-25,-18,240,180</area>
                     <shape name="buttonbackground">
-                        <area>-12,-9,240,180</area>
+                        <area>-10,-9,236,180</area>
                         <type>roundbox</type>
                         <fill color="#101017" alpha="255" />
                         <line color="#666666" alpha="255" width="6" />
