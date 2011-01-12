@@ -1340,7 +1340,7 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>15</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="group-selector-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">

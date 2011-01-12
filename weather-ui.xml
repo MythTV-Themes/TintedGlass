@@ -58,12 +58,10 @@
 
     <window name="Current Conditions">
 
-        <shape name="current-conditions-left-backdrop">
+        <shape name="current-conditions-left-backdrop" from="base_backdrop">
             <area>45,153,785,488</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="current-conditions-left-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -74,12 +72,10 @@
             <area>48,604,779,34</area>
         </shape>
 
-        <shape name="current-conditions-right-backdrop">
+        <shape name="current-conditions-right-backdrop" from="base_backdrop">
             <area>845,153,390,488</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="current-conditions-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -194,12 +190,10 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="base_backdrop">
             <area>115,230,320,325</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -331,12 +325,10 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="base_backdrop">
             <area>90,161,350,230</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -591,12 +583,10 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="weather-alert-bottom-backdrop">
+        <shape name="weather-alert-bottom-backdrop" from="base_backdrop">
             <area>45,155,1190,480</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="weather-alert-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -629,12 +619,10 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="base_backdrop">
             <area>90,161,350,230</area>
-            <type>roundbox</type>
             <fill color="#000000" alpha="120" />
             <line color="#5e6166" alpha="100" width="2" />
-            <cornerradius>20</cornerradius>
         </shape>
 
         <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">

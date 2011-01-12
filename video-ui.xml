@@ -220,7 +220,7 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="cast-popup-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -326,7 +326,7 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="full-plot-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
@@ -946,7 +946,7 @@
                         <type>roundbox</type>
                         <fill color="#101017" alpha="255" />
                         <line color="#666666" alpha="255" width="6" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="coverart">
                         <area>4,4,202,315</area>
@@ -1535,6 +1535,7 @@
 
         <shape name="video-coverimage-highlight" from="base_desc_highlight">
             <area>1071,392,174,248</area>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="video-browse-runtime-highlight" from="base_highlight">
@@ -1723,7 +1724,7 @@
         </textarea>
         
         <imagetype name="coverart">
-            <area>1074,395,166,242</area>
+            <area>1074,395,168,242</area>
             <preserveaspect>no</preserveaspect>
             <mask>images/masks/video_list_mask.png</mask>
         </imagetype>
@@ -2528,15 +2529,17 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-description-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>228,115,537,34</area>
+            <cornerradius>11</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-description-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>228,469,537,34</area>
+            <cornerradius>11</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-cover-highlight">
@@ -2544,15 +2547,17 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-cover-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>781,115,271,34</area>
+            <cornerradius>11</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-cover-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>781,469,271,34</area>
+            <cornerradius>11</cornerradius>
         </shape>
 
         <shape name="video-item-detail-popup-button-highlight">
@@ -2560,11 +2565,12 @@
             <type>roundbox</type>
             <fill color="#FFFFFF" alpha="15" />
             <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>13</cornerradius>
         </shape>
         
         <shape name="video-item-detail-popup-button-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>228,517,824,34</area>
+            <cornerradius>11</cornerradius>
         </shape>
 
         <textarea name="title" from="basetextarea">

@@ -169,11 +169,11 @@
         </shape>
 
         <shape name="news-edit-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>218,39,844,34</area>
+            <area>218,39,845,34</area>
         </shape>
 
         <shape name="news-edit-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>218,515,844,34</area>
+            <area>218,515,845,34</area>
         </shape>
 
         <shape name="news-edit-bottom-backdrop" from="base_backdrop">
