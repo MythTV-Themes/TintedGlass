@@ -8,36 +8,73 @@
             <value>Program Guide</value>
         </textarea>
 
-        <shape name="guide-top-backdrop" from="base_backdrop">
+        <shape name="guide-top-backdrop" from="base_backdrop_fanart">
             <area>20,36,1240,429</area>
         </shape>
 
+        <shape name="guide-top-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,1234,423</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="80" />
+                    <stop position="95" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+<!--
         <shape name="guide-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
             <area>23,39,1234,34</area>
         </shape>
-
-        <shape name="guide-bottom-backdrop" from="base_backdrop">
+-->
+        <shape name="guide-bottom-backdrop" from="base_backdrop_fanart">
             <area>20,475,1240,210</area>
         </shape>
 
-        <shape name="guide-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,34</area>
+        <shape name="guide-bottom-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,478,1234,204</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="8" color="#000000" alpha="80" />
+                    <stop position="92" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
-
+<!--
         <shape name="guide-time-highlight" from="base_highlight">
             <area>229,45,1023,32</area>
         </shape>
+-->
 
-        <shape name="guide-description-highlight" from="base_desc_highlight">
-            <area>30,560,1220,116</area>
+        <shape name="guide-grid-top-line" from="base_line">
+            <area>232,80,1017,2</area>
         </shape>
 
-        <shape name="guide-subtitle-highlight" from="base_highlight">
-            <area>30,518,660,34</area>
+        <shape name="guide-grid-bottom-line" from="base_line">
+            <area>232,446,1017,2</area>
         </shape>
 
-        <shape name="guide-recording-status-highlight" from="base_highlight">
-            <area>700,518,550,34</area>
+        <shape name="guide-title-bottom-line" from="base_line">
+            <area>40,514,1200,2</area>
+        </shape>
+
+        <shape name="guide-description-top-line" from="base_line">
+            <area>42,554,1197,2</area>
+        </shape>
+
+        <shape name="guide-description-bottom-line" from="base_line">
+            <area>42,668,1197,2</area>
+        </shape>
+
+        <shape name="guide-description-left-line" from="base_vertical_line">
+            <area>40,554,2,116</area>
+        </shape>
+
+        <shape name="guide-description-right-line" from="base_vertical_line">
+            <area>1238,554,2,116</area>
         </shape>
 
         <textarea name="datetext" from="basetextarea">
@@ -52,7 +89,7 @@
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>232,82,1017,375</area>
+            <area>232,84,1017,360</area>
             <layout>horizontal</layout>
             <channels>5</channels>
             <timeslots>4</timeslots>
@@ -121,24 +158,24 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>31,82,198,375</area>
+            <area>31,84,198,360</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,196,375</buttonarea>
+            <buttonarea>0,0,196,360</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,198,75</area>
+                    <area>0,0,198,72</area>
                         <shape name="gg-chans" from="base_desc_highlight">
-                            <area>0,0,198,75</area>
+                            <area>0,0,198,72</area>
                         </shape>
                     <imagetype name="channelicon">
-                        <area>6,10,70,57</area>
+                        <area>6,9,70,57</area>
                         <preserveaspect>true</preserveaspect>
                         <mask>images/masks/channelicon_mask.png</mask>
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>77,1,117,73</area>
+                        <area>77,1,117,70</area>
                         <font>baseesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -177,34 +214,34 @@
         </buttonlist>
 
         <imagetype name="channelicon">
-            <area>40,481,38,30</area>
+            <area>40,482,38,30</area>
             <preserveaspect>true</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>100,473,1000,50</area>
+            <area>100,472,1000,50</area>
             <align>left,vcenter</align>
-            <font>baselargeyellow</font>
+            <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>44,520,632,30</area>
             <align>left,vcenter</align>
-            <font>basesmall</font> 
+            <font>basesmallblue</font> 
         </textarea>
 
         <textarea name="description"  from="basetextarea">
-            <area>44,565,1196,112</area>
+            <area>48,559,1188,112</area>
             <multiline>yes</multiline>
             <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>710,520,526,30</area>
+            <area>710,518,526,30</area>
             <align>right,vcenter</align>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
         </textarea>
 
     </window>
@@ -2308,60 +2345,76 @@
             <value>Schedule Editor</value>
         </textarea>
 
-        <shape name="schedule-editor-backdrop" from="base_backdrop">
+        <shape name="schedule-editor-backdrop" from="base_backdrop_fanart">
             <area>20,36,546,362</area>
         </shape>
 
-        <shape name="schedule-editor-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,540,34</area>
+        <shape name="schedule-editor-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,39,540,356</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="schedule-editor-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,361,540,34</area>
-        </shape>
-
-        <shape name="schedule-editor-options-backdrop" from="base_backdrop">
+        <shape name="schedule-editor-options-backdrop" from="base_backdrop_fanart">
             <area>574,36,686,362</area>
         </shape>
 
-        <shape name="schedule-editor-options-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>577,39,680,34</area>
+        <shape name="schedule-editor-options-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>577,39,680,356</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="schedule-editor-options-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>577,361,680,34</area>
-        </shape>
-
-        <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
+        <shape name="schedule-editor-bottom-backdrop" from="base_backdrop_fanart">
             <area>20,409,1240,274</area>
         </shape>
 
-        <shape name="schedule-editor-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,412,1234,34</area>
+        <shape name="schedule-editor-bottom-edge-highlight" from="base_backdrop_top_edge_highlight">
+            <area>23,412,1234,268</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="schedule-editor-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,646,1234,34</area>
+        <shape name="schedule-editor-description-first-line" from="base_line">
+            <area>42,449,1196,2</area>
         </shape>
 
-        <shape name="schedule-editor-date-highlight" from="base_highlight">
-            <area>30,482,604,34</area>
+        <shape name="schedule-editor-description-second-line" from="base_line">
+            <area>42,482,1196,2</area>
         </shape>
 
-        <shape name="schedule-editor-rectypestatus-highlight" from="base_highlight">
-            <area>640,482,604,34</area>
+        <shape name="schedule-editor-description-third-line" from="base_line">
+            <area>42,513,1196,2</area>
         </shape>
 
-        <shape name="schedule-editor-description-highlight" from="base_backdrop_fanart">
-            <area>30,524,1220,140</area>
-        </shape>
-    
-        <shape name="schedule-editor-description-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>33,527,1214,34</area>
+        <shape name="schedule-editor-description-fourth-line" from="base_line">
+            <area>42,666,1196,2</area>
         </shape>
 
-        <shape name="schedule-editor-description-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>33,627,1214,34</area>
+        <shape name="schedule-editor-description-left-line" from="base_vertical_line">
+            <area>40,513,2,155</area>
+        </shape>
+
+        <shape name="schedule-editor-description-right-line" from="base_vertical_line">
+            <area>1238,513,2,155</area>
         </shape>
 
         <buttonlist name="rules" from="base_selector_list_style">
@@ -2404,32 +2457,32 @@
         </button>
 
         <textarea name="title" from="basetextarea">
-            <area>40,419,930,30</area>
+            <area>40,415,930,30</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>980,421,260,24</area>
+            <area>980,419,260,24</area>
             <font>basesmallyellow</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>55,449,1170,24</area>
+            <area>55,453,1170,24</area>
             <font>basesmall</font>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
             <area>50,482,564,34</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <cutdown>no</cutdown>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
             <area>660,482,564,34</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <cutdown>no</cutdown>
             <align>right,vcenter</align>
         </textarea>
