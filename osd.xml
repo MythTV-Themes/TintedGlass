@@ -14,7 +14,7 @@
         <shape name="background">
             <area>352,52,576,66</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -51,7 +51,7 @@
         <shape name="background">
             <area>102,52,206,66</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -88,7 +88,7 @@
         <shape name="background">
             <area>102,582,1076,86</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -182,7 +182,7 @@
         <shape name="background">
             <area>102,368,1076,300</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>15</cornerradius>
         </shape>
 
@@ -710,7 +710,7 @@
         <shape name="background">
             <area>102,464,1076,204</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>15</cornerradius>
         </shape>
 
@@ -890,7 +890,7 @@
         <shape name="background">
             <area>340,110,600,500</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <line color="#666666" alpha="170" width="2" />
             <cornerradius>15</cornerradius>
         </shape>
@@ -1069,7 +1069,7 @@
         <shape name="background">
             <area>102,582,1076,86</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -1170,7 +1170,7 @@
         <shape name="background">
             <area>340,110,600,500</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="80" />
+            <fill color="#000000" alpha="90" />
             <line color="#666666" alpha="170" width="2" />
             <cornerradius>15</cornerradius>
         </shape>
