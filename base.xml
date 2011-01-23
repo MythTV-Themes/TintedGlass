@@ -346,7 +346,7 @@
     <shape name="base_backdrop">
         <area>20,36,1240,648</area>
         <type>roundbox</type>
-        <fill color="#000000" alpha="130" />
+        <fill color="#000000" alpha="140" />
         <line color="#666666" alpha="170" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
@@ -354,7 +354,7 @@
     <!-- Base definition of a base backdrop for fanart -->
     <shape name="base_backdrop_fanart">
         <type>roundbox</type>
-        <fill color="#000000" alpha="80" />
+        <fill color="#000000" alpha="90" />
         <line color="#666666" alpha="170" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
