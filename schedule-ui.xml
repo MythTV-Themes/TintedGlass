@@ -8,46 +8,37 @@
             <value>Program Guide</value>
         </textarea>
 
-        <shape name="guide-top-backdrop" from="base_backdrop_fanart">
+        <shape name="guide-top-backdrop" from="base_backdrop">
+            <area>22,38,1236,425</area>
+        </shape>
+
+        <shape name="guide-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,429</area>
-        </shape>
-
-        <shape name="guide-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,423</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
-<!--
-        <shape name="guide-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,34</area>
+
+        <shape name="guide-bottom-backdrop" from="base_backdrop">
+            <area>22,477,1236,206</area>
         </shape>
--->
-        <shape name="guide-bottom-backdrop" from="base_backdrop_fanart">
+
+        <shape name="guide-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,475,1240,210</area>
-        </shape>
-
-        <shape name="guide-bottom-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,204</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
-<!--
-        <shape name="guide-time-highlight" from="base_highlight">
-            <area>229,45,1023,32</area>
-        </shape>
--->
 
         <shape name="guide-grid-top-line" from="base_line">
             <area>232,80,1017,2</area>
@@ -158,14 +149,14 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>31,84,198,360</area>
+            <area>31,84,198,364</area>
             <layout>vertical</layout>
-            <spacing>0</spacing>
+            <spacing>1</spacing>
             <buttonarea>0,0,196,360</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,198,72</area>
-                        <shape name="gg-chans" from="base_desc_highlight">
+                        <shape name="gg-chans" from="base_channel_highlight">
                             <area>0,0,198,72</area>
                         </shape>
                     <imagetype name="channelicon">
@@ -253,38 +244,71 @@
         </textarea>
 
         <shape name="guide-top-backdrop" from="base_backdrop">
+            <area>22,38,1236,350</area>
+        </shape>
+
+        <shape name="guide-top-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,354</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="guide-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,34</area>
+        <shape name="guide-video-first-line" from="base_line">
+            <area>762,402,498,2</area>
         </shape>
 
-        <shape name="guide-video-backdrop">
-            <area>769,402,491,282</area>
-            <type>box</type>
-            <fill color="#000000" alpha="255" />
-            <line color="#666666" alpha="170" width="2" />
+        <shape name="guide-video-second-line" from="base_line">
+            <area>762,682,498,2</area>
+        </shape>
+
+        <shape name="guide-video-left-line" from="base_vertical_line">
+            <area>762,404,2,278</area>
+        </shape>
+
+        <shape name="guide-video-right-line" from="base_vertical_line">
+            <area>1258,404,2,278</area>
         </shape>
 
         <shape name="guide-bottom-backdrop" from="base_backdrop">
+            <area>22,404,728,278</area>
+        </shape>
+
+        <shape name="guide-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,402,732,282</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="80" />
+                    <stop position="95" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="guide-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,405,726,34</area>
+        <shape name="guide-subtitle-line" from="base_line">
+            <area>120,452,618,2</area>
         </shape>
 
-        <shape name="guide-time-highlight" from="base_highlight">
-            <area>229,45,1023,32</area>
+        <shape name="guide-description-top-line" from="base_line">
+            <area>34,492,704,2</area>
         </shape>
 
-        <shape name="guide-bottom-subtitle-highlight" from="base_highlight">
-            <area>114,454,632,32</area>
+        <shape name="guide-description-bottom-line" from="base_line">
+            <area>34,668,704,2</area>
         </shape>
 
-        <shape name="guide-bottom-description-highlight" from="base_desc_highlight">
-            <area>26,492,720,186</area>
+        <shape name="guide-description-left-line" from="base_vertical_line">
+            <area>34,494,2,174</area>
+        </shape>
+
+        <shape name="guide-description-right-line" from="base_vertical_line">
+            <area>736,494,2,174</area>
         </shape>
 
         <textarea name="datetext" from="basetextarea">
@@ -375,7 +399,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,198,75</area>
-                        <shape name="gg-chans" from="base_desc_highlight">
+                        <shape name="gg-chans" from="base_channel_highlight">
                             <area>0,0,198,75</area>
                         </shape>
                     <imagetype name="channelicon">
@@ -424,7 +448,7 @@
         </buttonlist>
 
         <textarea name="channum">
-            <area>40,467,70,24</area>
+            <area>40,466,70,24</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
@@ -437,26 +461,26 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>120,414,628,30</area>
+            <area>120,414,618,30</area>
             <align>left,vcenter</align>
             <font>baselargeyellow</font>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>134,458,592,24</area>
+            <area>130,462,598,24</area>
             <align>left,vcenter</align>
             <font>basesmall</font> 
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="description"  from="basetextarea">
-            <area>46,496,680,178</area>
+            <area>42,494,690,174</area>
             <multiline>yes</multiline>
             <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
 
         <imagetype name="video">
-            <area>773,405,483,272</area>
+            <area>764,404,494,278</area>
         </imagetype>
 
     </window>
@@ -468,23 +492,35 @@
         </textarea>
 
         <shape name="manual-schedule-top-backdrop" from="base_backdrop">
+            <area>202,38,876,512</area>
+        </shape>
+
+        <shape name="manual-schedule-top-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>200,36,880,516</area>
-        </shape>
-
-        <shape name="manual-schedule-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>203,39,875,34</area>
-        </shape>
-
-        <shape name="manual-schedule-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>203,515,875,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="manual-schedule-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="manual-schedule-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="manual-schedule-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="manual-schedule-bottom-line" from="base_line">
@@ -598,27 +634,35 @@
         </shape>
 
         <shape name="upcoming-backdrop" from="base_backdrop">
+            <area>22,80,1236,396</area>
+        </shape>
+
+        <shape name="upcoming-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,78,1240,400</area>
-        </shape>
-
-        <shape name="upcoming-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,81,1234,34</area>
-        </shape>
-
-        <shape name="upcoming-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,441,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="upcoming-bottom-backdrop" from="base_backdrop">
+            <area>22,492,1236,188</area>
+        </shape>
+
+        <shape name="upcoming-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,490,1240,192</area>
-        </shape>
-
-        <shape name="upcoming-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,493,1234,34</area>
-        </shape>
-
-        <shape name="upcoming-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="upcoming-bottom-top-line" from="base_line">
@@ -786,47 +830,59 @@
         </textarea>
 
         <shape name="channel-record-priorities-backdrop" from="base_backdrop">
-            <area>20,39,1240,424</area>
+            <area>22,41,1236,420</area>
         </shape>
 
-        <shape name="channel-record-priorities-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,42,1234,34</area>
-        </shape>
- 
-        <shape name="channel-record-priorities-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,426,1234,34</area>
+        <shape name="channel-record-priorities-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,39,1240,424</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="channel-record-priorites-bottom-backdrop" from="base_backdrop">
-            <area>20,475,997,207</area>
+            <area>22,477,1236,203</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,991,34</area>
-        </shape>
-
-        <shape name="channel-record-priorities-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,991,34</area>
+        <shape name="channel-record-priorities-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,475,1240,207</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="channel-record-priorities-bottom-top-line" from="base_line">
-            <area>45,515,947,2</area>
+            <area>40,515,946,2</area>
         </shape>
 
         <shape name="channel-record-priorities-bottom-bottom-line" from="base_line">
-            <area>45,642,947,2</area>
+            <area>40,642,946,2</area>
         </shape>
 
-        <shape name="channel-record-priorites-bottom-right-backdrop" from="base_backdrop">
-            <area>1028,475,232,207</area>
+        <shape name="channel-record-priorities-icon-top-line" from="base_line">
+            <area>1006,489,240,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>1031,478,226,34</area>
+        <shape name="channel-record-priorities-icon-bottom-line" from="base_line">
+            <area>1006,666,240,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>1031,645,226,34</area>
+        <shape name="channel-record-priorities-icon-left-line" from="base_vertical_line">
+            <area>1006,491,2,175</area>
+        </shape>
+
+        <shape name="channel-record-priorities-icon-right-line" from="base_vertical_line">
+            <area>1244,491,2,175</area>
         </shape>
 
         <textarea name="helptext">
@@ -900,12 +956,12 @@
         </buttonlist>
 
         <textarea name="channame" from="basetextarea">
-            <area>40,480,957,30</area>
+            <area>42,480,942,30</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="helptext2" from="basetextarea">
-            <area>45,517,947,125</area>
+            <area>42,517,942,125</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
@@ -913,9 +969,8 @@
         </textarea>
 
         <imagetype name="icon">
-            <area>1044,503,200,150</area>
-            <preserveaspect>true</preserveaspect>
-            <mask>images/masks/channelicon-mask-200x150.png</mask>
+            <area>1008,491,236,175</area>
+            <preserveaspect>false</preserveaspect>
         </imagetype>
 
     </window>
@@ -927,27 +982,35 @@
         </textarea>
 
         <shape name="program-record-priority-backdrop" from="base_backdrop">
+            <area>22,41,1236,420</area>
+        </shape>
+
+        <shape name="program-record-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,39,1240,424</area>
-        </shape>
-
-        <shape name="program-record-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,42,1234,34</area>
-        </shape>
-
-        <shape name="program-record-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,426,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="program-record-priority-bottom-backdrop" from="base_backdrop">
+            <area>22,477,1236,203</area>
+        </shape>
+
+        <shape name="program-record-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,475,1240,207</area>
-        </shape>
-
-        <shape name="program-record-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,34</area>
-        </shape>
-
-        <shape name="program-record-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="program-record-bottom-top-line" from="base_line">
@@ -1086,23 +1149,35 @@
         </textarea>
 
         <shape name="custom-priority-rules-top-backdrop" from="base_backdrop">
+            <area>22,38,1236,512</area>
+        </shape>
+
+        <shape name="custom-priority-rules-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,516</area>
-        </shape>
-
-        <shape name="custom-priority-rules-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,34</area>
-        </shape>
-
-        <shape name="custom-priority-rules-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,515,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="custom-priority-rules-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="custom-priority-rules-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="custom-priority-ruiles-bottom-line" from="base_line">
@@ -1257,15 +1332,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
+            <area>392,112,496,496</area>
+        </shape>
+
+        <shape name="phrase-popup-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>390,110,500,500</area>
-        </shape>
-
-        <shape name="phrase-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,113,495,34</area>
-        </shape>
-
-        <shape name="phrase-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,573,495,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1335,15 +1414,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="time-popup-backdrop" from="base_popup_backdrop">
+            <area>352,280,576,161</area>
+        </shape>
+
+        <shape name="time-popup-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>350,278,580,165</area>
-        </shape>
-
-        <shape name="time-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,281,574,34</area>
-        </shape>
-
-        <shape name="time-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,406,574,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="9" color="#000000" alpha="0" />
+                    <stop position="91" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1395,15 +1478,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="power-search-backdrop" from="base_popup_backdrop">
+            <area>392,112,496,496</area>
+        </shape>
+
+        <shape name="power-search-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>390,110,500,500</area>
-        </shape>
-
-        <shape name="power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,113,495,34</area>
-        </shape>
-
-        <shape name="power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,573,495,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1469,15 +1556,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
+            <area>392,87,496,546</area>
+        </shape>
+
+        <shape name="edit-power-search-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>390,85,500,550</area>
-        </shape>
-
-        <shape name="edit-power-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,88,495,34</area>
-        </shape>
-
-        <shape name="edit-power-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,598,495,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1572,27 +1663,35 @@
         </textarea>
 
         <shape name="previously-recorded-backdrop" from="base_backdrop">
+            <area>22,41,1236,420</area>
+        </shape>
+
+        <shape name="previously-recorded-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,39,1240,424</area>
-        </shape>
-
-        <shape name="previously-recorded-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,42,1234,34</area>
-        </shape>
-
-        <shape name="previously-recorded-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,426,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="previously-recorded-bottom-backdrop" from="base_backdrop">
+            <area>22,477,1236,203</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,475,1240,207</area>
-        </shape>
-
-        <shape name="previously-recorded-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,34</area>
-        </shape>
-
-        <shape name="previously-recorded-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="previously-recorded-bottom-top-line" from="base_line">
@@ -1697,15 +1796,19 @@
         </textarea>
 
         <shape name="program-details-backdrop" from="base_backdrop">
+            <area>22,45,1236,631</area>
+        </shape>
+
+        <shape name="program-details-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,43,1240,635</area>
-        </shape>
-
-        <shape name="program-details-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,46,1234,34</area>
-        </shape>
-
-        <shape name="program-details-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,641,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="2" color="#000000" alpha="80" />
+                    <stop position="98" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <webbrowser name="browser">
@@ -1720,7 +1823,20 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
+            <area>137,28,1006,48</area>
+            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="search-popup-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>135,26,1010,52</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="28" color="#000000" alpha="0" />
+                    <stop position="72" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -1753,39 +1869,51 @@
         </shape>
 
         <shape name="program-find-title-backdrop" from="base_backdrop">
-            <area>20,78,822,400</area>
+            <area>22,80,818,396</area>
         </shape>
 
         <shape name="program-find-times-backdrop" from="base_backdrop">
+            <area>854,80,404,396</area>
+        </shape>
+
+        <shape name="program-find-title-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,78,822,400</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="program-find-times-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>852,78,408,400</area>
-        </shape>
-
-        <shape name="program-find-title-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,81,816,34</area>
-        </shape>
-
-        <shape name="program-find-times-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>855,81,402,34</area>
-        </shape>
-
-        <shape name="program-find-title-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,441,816,34</area>
-        </shape>
-
-        <shape name="program-find-times-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>855,441,402,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
+            <area>22,492,818,188</area>
+        </shape>
+
+        <shape name="program-find-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,490,822,192</area>
-        </shape>
-
-        <shape name="program-find-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,493,816,34</area>
-        </shape>
-
-        <shape name="program-find-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,816,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="8" color="#000000" alpha="80" />
+                    <stop position="92" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="program-find-bottom-top-line" from="base_line">
@@ -1797,15 +1925,19 @@
         </shape>
 
         <shape name="program-find-bottom-right-backdrop" from="base_backdrop">
+            <area>854,492,404,188</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>852,490,408,192</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>855,493,402,34</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>855,645,402,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="8" color="#000000" alpha="80" />
+                    <stop position="92" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <buttonlist name="alphabet">
@@ -1978,27 +2110,35 @@
         </textarea>
 
         <shape name="manage-recordings-backdrop" from="base_backdrop">
+            <area>22,41,1236,420</area>
+        </shape>
+
+        <shape name="manage-recordings-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,39,1240,424</area>
-        </shape>
-
-        <shape name="manage-recordings-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,42,1234,34</area>
-        </shape>
-
-        <shape name="manage-recordings-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,426,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
+            <area>22,477,1236,203</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,475,1240,207</area>
-        </shape>
-
-        <shape name="manage-recordings-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,34</area>
-        </shape>
-
-        <shape name="manage-recordings-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="manage-recordings-bottom-top-line" from="base_line">
@@ -2140,23 +2280,35 @@
         </textarea>
 
         <shape name="custom-record-rules-top-backdrop" from="base_backdrop">
+            <area>22,38,1236,512</area>
+        </shape>
+
+        <shape name="custom-record-rules-top-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,516</area>
-        </shape>
-
-        <shape name="custom-record-rules-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,34</area>
-        </shape>
-
-        <shape name="custom-record-rules-top-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,515,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="custom-record-rules-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="custom-record-rules-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="custom-record-ruiles-bottom-line" from="base_line">
@@ -2345,49 +2497,49 @@
             <value>Schedule Editor</value>
         </textarea>
 
-        <shape name="schedule-editor-backdrop" from="base_backdrop_fanart">
+        <shape name="schedule-editor-backdrop" from="base_backdrop">
+            <area>22,38,542,358</area>
+        </shape>
+
+        <shape name="schedule-editor-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,546,362</area>
-        </shape>
-
-        <shape name="schedule-editor-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,540,356</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="6" color="#000000" alpha="80" />
-                    <stop position="94" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="schedule-editor-options-backdrop" from="base_backdrop_fanart">
+        <shape name="schedule-editor-options-backdrop" from="base_backdrop">
+            <area>576,38,682,358</area>
+        </shape>
+
+        <shape name="schedule-editor-options-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>574,36,686,362</area>
-        </shape>
-
-        <shape name="schedule-editor-options-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>577,39,680,356</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="6" color="#000000" alpha="80" />
-                    <stop position="94" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="schedule-editor-bottom-backdrop" from="base_backdrop_fanart">
-            <area>20,409,1240,276</area>
+        <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
+            <area>22,411,1236,272</area>
         </shape>
 
-        <shape name="schedule-editor-bottom-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,412,1234,270</area>
+        <shape name="schedule-editor-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,409,1240,276</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="5" color="#000000" alpha="80" />
+                    <stop position="95" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -2740,27 +2892,35 @@
         </textarea>
 
         <shape name="preview-schedule-priority-backdrop" from="base_backdrop">
+            <area>22,41,1236,420</area>
+        </shape>
+
+        <shape name="preview-schedule-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,39,1240,424</area>
-        </shape>
-
-        <shape name="preview-schedule-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,42,1234,34</area>
-        </shape>
-
-        <shape name="preview-schedule-list-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,426,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="preview-schedule-bottom-backdrop" from="base_backdrop">
+            <area>22,477,1236,203</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,475,1240,207</area>
-        </shape>
-
-        <shape name="preview-schedule-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,478,1234,34</area>
-        </shape>
-
-        <shape name="preview-schedule-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="preview-schedule-bottom-top-line" from="base_line">

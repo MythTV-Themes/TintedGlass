@@ -13,27 +13,35 @@
         </shape>
 
         <shape name="status-backdrop" from="base_backdrop">
+            <area>22,80,1236,356</area>
+        </shape>
+
+        <shape name="status-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,78,1240,360</area>
-        </shape>
-
-        <shape name="status-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,81,1234,34</area>
-        </shape>
-
-        <shape name="status-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,402,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="status-bottom-backdrop" from="base_backdrop">
+            <area>22,452,1236,228</area>
+        </shape>
+
+        <shape name="status-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,450,1240,232</area>
-        </shape>
-
-        <shape name="status-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,453,1234,34</area>
-        </shape>
-
-        <shape name="status-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,645,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="status-bottom-top-line" from="base_line">

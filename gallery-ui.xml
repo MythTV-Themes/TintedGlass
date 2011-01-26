@@ -8,27 +8,38 @@
             <value>Image Gallery</value>
         </textarea>
 
-        <shape name="image-gallery-backdrop">
+        <shape name="image-gallery-backdrop" from="base_backdrop">
+            <area>-2,38,1284,447</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="image-gallery-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>-4,36,1288,451</area>
             <type>box</type>
-            <fill color="#000000" alpha="130" />
-            <line color="#666666" alpha="170" width="2" />
-        </shape>
-
-        <shape name="image-gallery-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>-16,39,1312,34</area>
-        </shape>
-
-        <shape name="image-gallery-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>-16,450,1312,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="image-gallery-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="image-gallery-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="image-gallery-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="image-gallery-bottom-line" from="base_line">

@@ -24,8 +24,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="26" color="#000000" alpha="80" />
-                    <stop position="74" color="#000000" alpha="80" />
+                    <stop position="22" color="#000000" alpha="80" />
+                    <stop position="78" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -61,8 +61,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="26" color="#000000" alpha="80" />
-                    <stop position="74" color="#000000" alpha="80" />
+                    <stop position="22" color="#000000" alpha="80" />
+                    <stop position="78" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -98,8 +98,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="16" color="#000000" alpha="80" />
-                    <stop position="84" color="#000000" alpha="80" />
+                    <stop position="17" color="#000000" alpha="80" />
+                    <stop position="83" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -192,8 +192,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="5" color="#000000" alpha="80" />
+                    <stop position="95" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -645,7 +645,7 @@
 
         <imagetype name="iconpath">
             <area>129,513,130,100</area>
-            <mask>images/osd/osd_program_icon_mask.png</mask>
+            <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
 
@@ -720,8 +720,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="9" color="#000000" alpha="80" />
-                    <stop position="91" color="#000000" alpha="80" />
+                    <stop position="7" color="#000000" alpha="80" />
+                    <stop position="93" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -817,7 +817,7 @@
 
         <imagetype name="iconpath">
             <area>125,521,120,90</area>
-            <mask>images/osd/osd_browse_icon_mask.png</mask>
+            <mask>images/osd/masks/osd_browse_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
 
@@ -871,10 +871,6 @@
             <pixelsize>21</pixelsize>
         </fontdef>
 
-        <fontdef name="smallblack" from="small">
-            <color>#000000</color>
-        </fontdef>
-
         <fontdef name="smallblue" from="small">
             <color>#3a9ade</color>
         </fontdef>
@@ -888,25 +884,25 @@
         </fontdef>
 
         <shape name="background">
-            <area>340,110,600,500</area>
+            <area>342,112,596,496</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="90" />
-            <line color="#666666" alpha="170" width="2" />
             <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="background-edge-highlight">
-            <area>343,113,594,495</area>
+            <area>340,110,600,500</area>
             <type>roundbox</type>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
-            <cornerradius>13</cornerradius>
+            <line color="#666666" alpha="170" width="2" />
+            <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="title-message-first-line">
@@ -966,15 +962,22 @@
             <area>522,298,403,55</area>
             <statetype name="background">
                 <state name="active">
-                    <imagetype name="background">
+                    <shape name="background">
                         <area>0,0,403,55</area>
-                        <filename>images/osd/osd_channel_editor_button_background_active.png</filename>
-                    </imagetype>
+                        <type>roundbox</type>
+                        <fill color="#404040" alpha="175" />
+                        <line color="#404040" alpha="225" width="2" />
+                        <cornerradius>90</cornerradius>
+                    </shape>
                 </state>
                 <state name="selected" from="active">
-                    <imagetype name="background">
-                        <filename>images/osd/osd_channel_editor_button_background_selected.png</filename>
-                    </imagetype>
+                    <shape name="background">
+                        <area>0,0,403,55</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="255" />
+                        <line color="#FFFFFF" alpha="120" width="2" />
+                        <cornerradius>90</cornerradius>
+                    </shape>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -984,7 +987,7 @@
             </imagetype>
             <textarea name="text">
                 <area>20,0,363,100%</area>
-                <font>smallblack</font>
+                <font>small</font>
                 <align>left,vcenter</align>
             </textarea>
         </textedit>
@@ -1079,8 +1082,8 @@
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="20" color="#000000" alpha="80" />
-                    <stop position="80" color="#000000" alpha="80" />
+                    <stop position="17" color="#000000" alpha="80" />
+                    <stop position="83" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -1168,15 +1171,14 @@
         </fontdef>
 
         <shape name="background">
-            <area>340,110,600,500</area>
+            <area>342,112,596,496</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="90" />
-            <line color="#666666" alpha="170" width="2" />
             <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="background-edge-highlight">
-            <area>343,113,594,495</area>
+            <area>340,110,600,500</area>
             <type>roundbox</type>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
@@ -1186,7 +1188,8 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
-            <cornerradius>13</cornerradius>
+            <line color="#666666" alpha="170" width="2" />
+            <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="messagearea-first-line">
@@ -1206,7 +1209,7 @@
         </shape>
 
         <shape name="messagearea-left-line">
-            <area>354,126,2,191</area>
+            <area>354,126,2,194</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="80">
@@ -1218,7 +1221,7 @@
         </shape>
 
         <shape name="messagearea-right-line" from="messagearea-left-line">
-            <area>924,126,2,192</area>
+            <area>924,126,2,194</area>
         </shape>
 
         <textarea name="messagearea">
