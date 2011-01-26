@@ -344,67 +344,35 @@
 
     <!-- Base definition of a base backdrop -->
     <shape name="base_backdrop">
-        <area>20,36,1240,648</area>
-        <type>roundbox</type>
-        <fill color="#000000" alpha="140" />
-        <line color="#666666" alpha="170" width="2" />
-        <cornerradius>15</cornerradius>
-    </shape>
-
-    <!-- Base definition of a base backdrop for fanart -->
-    <shape name="base_backdrop_fanart">
+        <area>102,368,1076,300</area>
         <type>roundbox</type>
         <fill color="#000000" alpha="90" />
-        <line color="#666666" alpha="170" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
 
+    <!-- Base definition of a base popup backdrop -->
     <shape name="base_popup_backdrop" from="base_backdrop">
         <fill color="#0a0a0e" alpha="255" />
     </shape>
 
-    <shape name="base_backdrop_top_edge_highlight">
-        <area>0,0,0,34</area>
+    <shape name="base_backdrop_with_edge_highlight">
+        <area>100,366,1080,304</area>
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="170">
+            <gradient alpha="170" direction="vertical">
                 <stop position="0" color="#ffffff" />
-                <stop position="85" color="#ffffff" alpha="0" />
-                <stop position="100" color="#ffffff" alpha="0" />
+                <stop position="5" color="#000000" alpha="80" />
+                <stop position="95" color="#000000" alpha="80" />
+                <stop position="100" color="#ffffff" alpha="160" />
             </gradient>
         </fill>
-        <cornerradius>13</cornerradius>
-    </shape>
-
-    <shape name="base_backdrop_bottom_edge_highlight">
-        <area>0,0,0,34</area>
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient direction="vertical" alpha="160">
-                <stop position="0" color="#ffffff" alpha="0" />
-                <stop position="15" color="#ffffff" alpha="0" />
-                <stop position="100" color="#ffffff" />
-            </gradient>
-        </fill>
-        <cornerradius>13</cornerradius>
-    </shape>
-
-    <!-- Base definition of a base highlight -->
-    <shape name="base_highlight">
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient direction="vertical" alpha="160">
-                <stop position="0" color="#ffffff" />
-                <stop position="75" color="#000000" alpha="50" />
-                <stop position="100" color="#000000" alpha="50" />
-            </gradient>
-        </fill>
-        <line color="#AAAAAA" alpha="75" width="2" />
+        <line color="#666666" alpha="170" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
 
-    <!-- Base definition of a base description highlight -->
-    <shape name="base_desc_highlight">
+    <!-- Base definition of a base channel highlight -->
+    <!-- KEEP the program guide will not work with the base_backdrop_with_edge_highlight definition. KEEP -->
+    <shape name="base_channel_highlight">
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="140">
@@ -1349,17 +1317,21 @@
         </shape>
 
         <shape name="popup-backdrop" from="base_popup_backdrop">
+            <area>442,130,396,459</area>
+        </shape>
+
+        <shape name="popup-backdrop-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>440,128,400,463</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
-
-        <shape name="popup-backdrop-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>443,131,395,34</area>
-        </shape>
-
-        <shape name="popup-backdrop-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>443,554,395,34</area>
-        </shape>
-
+<!--
         <shape name="popup-highlight">
             <area>455,140,370,164</area>
             <type>roundbox</type>
@@ -1375,9 +1347,25 @@
         <shape name="popup-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>458,267,364,34</area>
         </shape>
+-->
+        <shape name="popup-first-line" from="base_line">
+            <area>454,140,372,2</area>
+        </shape>
+
+        <shape name="popup-second-line" from="base_line">
+            <area>454,302,372,2</area>
+        </shape>
+
+        <shape name="popup-left-line" from="base_vertical_line">
+            <area>454,142,2,160</area>
+        </shape>
+
+        <shape name="popup-right-line" from="base_vertical_line">
+            <area>824,142,2,160</area>
+        </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>465,147,350,150</area>
+            <area>462,148,356,146</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
@@ -1423,17 +1411,21 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
+            <area>238,104,811,512</area>
+        </shape>
+
+        <shape name="large-dialogbox-backdrop-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>236,102,815,516</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
-
-        <shape name="large-dialogbox-backdrop-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>239,104,809,34</area>
-        </shape>
-
-        <shape name="large-dialogbox-backdrop-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>239,581,809,34</area>
-        </shape>
-
+<!--
         <shape name="large-dialogbox-messagearea">
             <area>254,120,779,282</area>
             <type>roundbox</type>
@@ -1449,9 +1441,25 @@
         <shape name="large-dialogbox-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>256,365,773,34</area>
         </shape>
+-->
+        <shape name="large-dialogbox-first-line" from="base_line">
+            <area>250,116,787,2</area>
+        </shape>
+
+        <shape name="large-dialogbox-second-line" from="base_line">
+            <area>250,400,787,2</area>
+        </shape>
+
+        <shape name="large-dialogbox-left-line" from="base_vertical_line">
+            <area>250,118,2,282</area>
+        </shape>
+
+        <shape name="large-dialogbox-right-line" from="base_vertical_line">
+            <area>1035,118,2,282</area>
+        </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>264,130,759,262</area>
+            <area>258,124,771,270</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
@@ -1496,15 +1504,19 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>339,288,602,144</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>337,286,606,148</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>340,289,600,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>340,397,600,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="10" color="#000000" alpha="0" />
+                    <stop position="90" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <imagetype name="animation">
@@ -1525,15 +1537,19 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>352,279,583,166</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>350,277,587,170</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,280,581,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,410,581,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="9" color="#000000" alpha="0" />
+                    <stop position="91" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="message" from="basetextarea">
@@ -1559,15 +1575,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>352,279,583,166</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>350,277,587,170</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,280,581,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,410,581,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="9" color="#000000" alpha="0" />
+                    <stop position="91" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="message" from="basetextarea">
@@ -1595,15 +1615,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>352,279,583,166</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>350,277,587,170</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,280,581,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,410,581,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="9" color="#000000" alpha="0" />
+                    <stop position="91" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="message" from="basetextarea">
@@ -1628,15 +1652,19 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>382,102,516,516</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>380,100,520,520</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>383,103,514,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>383,583,514,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-powersearch-top-line" from="base_line">
@@ -1712,49 +1740,45 @@
             <value>FileBrowser</value>
         </textarea>
 
-        <shape name="file-browser-preview-backdrop" from="base_backdrop_fanart">
+        <shape name="file-browser-preview-backdrop" from="base_backdrop">
+            <area>22,38,611,644</area>
+        </shape>
+
+        <shape name="file-browser-preview-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,615,648</area>
-        </shape>
-
-        <shape name="file-browser-preview-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,609,643</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="90" />
-                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="2" color="#000000" alpha="80" />
+                    <stop position="98" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="preview-shape" from="base_backdrop_fanart">
-            <area>43,120,569,323</area>
+        <shape name="file-browser-preview-shape-top-line" from="base_line">
+            <area>42,120,569,2</area>
         </shape>
 
-        <shape name="preview-shape-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>46,123,563,317</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="90" />
-                    <stop position="95" color="#000000" alpha="90" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
+        <shape name="file-browser-preview-shape-bottom-line" from="base_line">
+            <area>42,440,569,2</area>
         </shape>
 
-        <shape name="file-browser-backdrop" from="base_backdrop_fanart">
+        <shape name="file-browser-preview-shape-left-line" from="base_vertical_line">
+            <area>42,122,2,318</area>
+        </shape>
+
+        <shape name="file-browser-preview-shape-right-line" from="base_vertical_line">
+            <area>609,122,2,318</area>
+        </shape>
+
+        <shape name="file-browser-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>645,36,615,648</area>
-        </shape>
-
-        <shape name="file-browser-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>648,39,609,643</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="90" />
-                    <stop position="97" color="#000000" alpha="90" />
+                    <stop position="2" color="#000000" alpha="90" />
+                    <stop position="98" color="#000000" alpha="90" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -1864,9 +1888,8 @@
         </textarea>
 
         <imagetype name="preview">
-            <area>46,123,563,317</area>
+            <area>44,122,565,318</area>
             <filename />
-            <mask>images/masks/myth_file_browser_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

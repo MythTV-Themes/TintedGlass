@@ -9,29 +9,41 @@
         </textarea>
 
         <shape name="weather-base-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,60</area>
+            <area>22,38,1236,56</area>
             <cornerradius>90</cornerradius>
         </shape>
 
-        <shape name="weather-base-top-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>28,39,1224,34</area>
+        <shape name="weather-base-top-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,36,1240,60</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="20" color="#000000" alpha="80" />
+                    <stop position="80" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
         <shape name="weather-base-bottom-backdrop" from="base_backdrop">
-            <area>20,108,1240,576</area>
+            <area>22,110,1236,572</area>
         </shape>
 
-        <shape name="weather-base-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,111,1234,34</area>
+        <shape name="weather-base-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,108,1240,576</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="2" color="#000000" alpha="80" />
+                    <stop position="98" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-base-bottom-top-line" from="base_line">
             <area>45,143,1190,2</area>
-        </shape>
-
-        <shape name="weather-base-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,647,1234,34</area>
         </shape>
 
         <shape name="weather-base-bottom-bottm-line" from="base_line">
@@ -51,6 +63,7 @@
 
         <textarea name="update_text" from="basetextarea">
             <area>45,650,1190,30</area>
+            <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
@@ -58,36 +71,41 @@
 
     <window name="Current Conditions">
 
-        <shape name="current-conditions-left-backdrop" from="base_backdrop">
-            <area>45,153,785,488</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="current-conditions-left-first-line" from="base_line">
+            <area>45,153,785,2</area>
         </shape>
 
-        <shape name="current-conditions-left-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>48,156,779,34</area>
+        <shape name="current-conditions-left-second-line" from="base_line">
+            <area>45,639,785,2</area>
         </shape>
 
-        <shape name="current-conditions-left-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>48,604,779,34</area>
+        <shape name="current-conditions-left-left-line" from="base_vertical_line">
+            <area>45,155,2,484</area>
         </shape>
 
-        <shape name="current-conditions-right-backdrop" from="base_backdrop">
-            <area>845,153,390,488</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="current-conditions-left-right-line" from="base_vertical_line">
+            <area>828,155,2,484</area>
         </shape>
 
-        <shape name="current-conditions-right-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>848,156,384,34</area>
+        <shape name="current-conditions-right-first-line" from="base_line">
+            <area>845,153,390,2</area>
         </shape>
 
-        <shape name="current-conditions-right-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>848,604,384,34</area>
+        <shape name="current-conditions-right-second-line" from="base_line">
+            <area>845,639,390,2</area>
+        </shape>
+
+        <shape name="current-conditions-right-left-line" from="base_vertical_line">
+            <area>845,155,2,484</area>
+        </shape>
+
+        <shape name="current-conditions-right-right-line" from="base_vertical_line">
+            <area>1233,155,2,484</area>
         </shape>
 
         <textarea name="cclocation" from="basetextarea">
             <area>45,112,1190,30</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
@@ -170,13 +188,13 @@
 
         <textarea name="observation_time" from="basetextarea">
             <area>45,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -186,46 +204,56 @@
 
         <textarea name="3dlocation" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0" from="base_backdrop">
-            <area>115,230,320,325</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="day0-fist-line" from="base_line">
+            <area>115,230,320,2</area>
         </shape>
 
-        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>118,233,314,34</area>
+        <shape name="day0-second-line" from="base_line">
+            <area>115,553,320,2</area>
         </shape>
 
-        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>118,518,314,34</area>
+        <shape name="day0-left-line" from="base_vertical_line">
+            <area>115,232,2,321</area>
         </shape>
 
-        <shape name="background-1" from="background-0">
-            <position>480,230</position>
+        <shape name="day0-right-line" from="base_vertical_line">
+            <area>433,232,2,321</area>
         </shape>
 
-        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>483,233,314,34</area>
+        <shape name="day1-fist-line" from="base_line">
+            <area>480,230,320,2</area>
         </shape>
 
-        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>483,518,314,34</area>
+        <shape name="day1-second-line" from="base_line">
+            <area>480,553,320,2</area>
         </shape>
 
-        <shape name="background-2" from="background-0">
-            <position>845,230</position>
+        <shape name="day1-left-line" from="base_vertical_line">
+            <area>480,232,2,321</area>
         </shape>
 
-        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>848,233,314,34</area>
+        <shape name="day1-right-line" from="base_vertical_line">
+            <area>798,232,2,321</area>
         </shape>
 
-        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>848,518,314,34</area>
+        <shape name="day2-fist-line" from="base_line">
+            <area>845,230,320,2</area>
+        </shape>
+
+        <shape name="day2-second-line" from="base_line">
+            <area>845,553,320,2</area>
+        </shape>
+
+        <shape name="day2-left-line" from="base_vertical_line">
+            <area>845,232,2,321</area>
+        </shape>
+
+        <shape name="day2-right-line" from="base_vertical_line">
+            <area>1165,232,2,321</area>
         </shape>
 
         <textarea name="date-0">
@@ -311,7 +339,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -321,82 +349,104 @@
 
         <textarea name="6dlocation" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0" from="base_backdrop">
-            <area>90,161,350,230</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="day0-fist-line" from="base_line">
+            <area>90,161,350,2</area>
         </shape>
 
-        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>93,164,346,34</area>
+        <shape name="day0-second-line" from="base_line">
+            <area>90,389,350,2</area>
         </shape>
 
-        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>93,354,346,34</area>
+        <shape name="day0-left-line" from="base_vertical_line">
+            <area>90,163,2,226</area>
         </shape>
 
-        <shape name="background-1" from="background-0">
-            <position>465,161</position>
+        <shape name="day0-right-line" from="base_vertical_line">
+            <area>438,163,2,226</area>
         </shape>
 
-        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>468,164,346,34</area>
+        <shape name="day1-fist-line" from="base_line">
+            <area>465,161,350,2</area>
         </shape>
 
-        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>468,354,346,34</area>
+        <shape name="day1-second-line" from="base_line">
+            <area>465,389,350,2</area>
         </shape>
 
-        <shape name="background-2" from="background-0">
-            <position>840,161</position>
+        <shape name="day1-left-line" from="base_vertical_line">
+            <area>465,163,2,226</area>
         </shape>
 
-        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,164,346,34</area>
+        <shape name="day1-right-line" from="base_vertical_line">
+            <area>813,163,2,226</area>
         </shape>
 
-        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>843,354,346,34</area>
+        <shape name="day2-fist-line" from="base_line">
+            <area>840,161,350,2</area>
         </shape>
 
-        <shape name="background-3" from="background-0">
-            <position>90,401</position>
+        <shape name="day2-second-line" from="base_line">
+            <area>840,389,350,2</area>
         </shape>
 
-        <shape name="background3-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>93,404,346,34</area>
+        <shape name="day2-left-line" from="base_vertical_line">
+            <area>840,163,2,226</area>
         </shape>
 
-        <shape name="background3-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>93,597,346,34</area>
+        <shape name="day2-right-line" from="base_vertical_line">
+            <area>1188,163,2,226</area>
         </shape>
 
-        <shape name="background-4" from="background-0">
-            <position>465,401</position>
+        <shape name="day3-fist-line" from="base_line">
+            <area>90,401,350,2</area>
         </shape>
 
-        <shape name="background4-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>468,404,346,34</area>
+        <shape name="day3-second-line" from="base_line">
+            <area>90,629,350,2</area>
         </shape>
 
-        <shape name="background4-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>468,597,346,34</area>
+        <shape name="day3-left-line" from="base_vertical_line">
+            <area>90,403,2,226</area>
         </shape>
 
-        <shape name="background-5" from="background-0">
-            <position>840,401</position>
+        <shape name="day3-right-line" from="base_vertical_line">
+            <area>438,403,2,226</area>
         </shape>
 
-        <shape name="background5-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,404,346,34</area>
+        <shape name="day4-fist-line" from="base_line">
+            <area>465,401,350,2</area>
         </shape>
 
-        <shape name="background5-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>843,597,346,34</area>
+        <shape name="day4-second-line" from="base_line">
+            <area>465,629,350,2</area>
+        </shape>
+
+        <shape name="day4-left-line" from="base_vertical_line">
+            <area>465,403,2,226</area>
+        </shape>
+
+        <shape name="day4-right-line" from="base_vertical_line">
+            <area>813,403,2,226</area>
+        </shape>
+
+        <shape name="day5-fist-line" from="base_line">
+            <area>840,401,350,2</area>
+        </shape>
+
+        <shape name="day5-second-line" from="base_line">
+            <area>840,629,350,2</area>
+        </shape>
+
+        <shape name="day5-left-line" from="base_vertical_line">
+            <area>840,403,2,226</area>
+        </shape>
+
+        <shape name="day5-right-line" from="base_vertical_line">
+            <area>1188,403,2,226</area>
         </shape>
 
         <textarea name="date-0" from="basetextarea">
@@ -527,7 +577,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -537,7 +587,7 @@
 
         <textarea name="smdesc" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
@@ -548,7 +598,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -558,7 +608,7 @@
 
         <textarea name="amdesc" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
@@ -569,7 +619,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -579,22 +629,24 @@
 
         <textarea name="swlocation" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="weather-alert-bottom-backdrop" from="base_backdrop">
-            <area>45,155,1190,480</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="weather-alert-fist-line" from="base_line">
+            <area>45,155,1190,2</area>
         </shape>
 
-        <shape name="weather-alert-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>48,158,1184,34</area>
+        <shape name="weather-alert-second-line" from="base_line">
+            <area>45,633,1190,2</area>
         </shape>
 
-        <shape name="weather-alert-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>48,598,1184,34</area>
+        <shape name="weather-alert-left-line" from="base_vertical_line">
+            <area>45,157,2,476</area>
+        </shape>
+
+        <shape name="weather-alert-right-line" from="base_vertical_line">
+            <area>1233,157,2,476</area>
         </shape>
 
         <textarea name="alerts" from="basetextarea">
@@ -605,7 +657,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -615,82 +667,104 @@
 
         <textarea name="18hrlocation" from="basetextarea">
             <area>45,112,1190,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0" from="base_backdrop">
-            <area>90,161,350,230</area>
-            <fill color="#000000" alpha="120" />
-            <line color="#5e6166" alpha="100" width="2" />
+        <shape name="time0-fist-line" from="base_line">
+            <area>90,161,350,2</area>
         </shape>
 
-        <shape name="background0-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>93,164,346,34</area>
+        <shape name="time0-second-line" from="base_line">
+            <area>90,389,350,2</area>
         </shape>
 
-        <shape name="background0-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>93,354,346,34</area>
+        <shape name="time0-left-line" from="base_vertical_line">
+            <area>90,163,2,226</area>
         </shape>
 
-        <shape name="background-1" from="background-0">
-            <position>465,161</position>
+        <shape name="time0-right-line" from="base_vertical_line">
+            <area>438,163,2,226</area>
         </shape>
 
-        <shape name="background1-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>468,164,346,34</area>
+        <shape name="time1-fist-line" from="base_line">
+            <area>465,161,350,2</area>
         </shape>
 
-        <shape name="background1-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>468,354,346,34</area>
+        <shape name="time1-second-line" from="base_line">
+            <area>465,389,350,2</area>
         </shape>
 
-        <shape name="background-2" from="background-0">
-            <position>840,161</position>
+        <shape name="time1-left-line" from="base_vertical_line">
+            <area>465,163,2,226</area>
         </shape>
 
-        <shape name="background2-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,164,346,34</area>
+        <shape name="time1-right-line" from="base_vertical_line">
+            <area>813,163,2,226</area>
         </shape>
 
-        <shape name="background2-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>843,354,346,34</area>
+        <shape name="time2-fist-line" from="base_line">
+            <area>840,161,350,2</area>
         </shape>
 
-        <shape name="background-3" from="background-0">
-            <position>90,401</position>
+        <shape name="time2-second-line" from="base_line">
+            <area>840,389,350,2</area>
         </shape>
 
-        <shape name="background3-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>93,404,346,34</area>
+        <shape name="time2-left-line" from="base_vertical_line">
+            <area>840,163,2,226</area>
         </shape>
 
-        <shape name="background3-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>93,597,346,34</area>
+        <shape name="time2-right-line" from="base_vertical_line">
+            <area>1188,163,2,226</area>
         </shape>
 
-        <shape name="background-4" from="background-0">
-            <position>465,401</position>
+        <shape name="time3-fist-line" from="base_line">
+            <area>90,401,350,2</area>
         </shape>
 
-        <shape name="background4-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>468,404,346,34</area>
+        <shape name="time3-second-line" from="base_line">
+            <area>90,629,350,2</area>
         </shape>
 
-        <shape name="background4-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>468,597,346,34</area>
+        <shape name="time3-left-line" from="base_vertical_line">
+            <area>90,403,2,226</area>
         </shape>
 
-        <shape name="background-5" from="background-0">
-            <position>840,401</position>
+        <shape name="time3-right-line" from="base_vertical_line">
+            <area>438,403,2,226</area>
         </shape>
 
-        <shape name="background5-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,404,346,34</area>
+        <shape name="time4-fist-line" from="base_line">
+            <area>465,401,350,2</area>
         </shape>
 
-        <shape name="background5-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>843,597,346,34</area>
+        <shape name="time4-second-line" from="base_line">
+            <area>465,629,350,2</area>
+        </shape>
+
+        <shape name="time4-left-line" from="base_vertical_line">
+            <area>465,403,2,226</area>
+        </shape>
+
+        <shape name="time4-right-line" from="base_vertical_line">
+            <area>813,403,2,226</area>
+        </shape>
+
+        <shape name="time5-fist-line" from="base_line">
+            <area>840,401,350,2</area>
+        </shape>
+
+        <shape name="time5-second-line" from="base_line">
+            <area>840,629,350,2</area>
+        </shape>
+
+        <shape name="time5-left-line" from="base_vertical_line">
+            <area>840,403,2,226</area>
+        </shape>
+
+        <shape name="time5-right-line" from="base_vertical_line">
+            <area>1188,403,2,226</area>
         </shape>
 
         <textarea name="time-0" from="basetextarea">
@@ -821,7 +895,7 @@
 
         <textarea name="copyright" from="basetextarea">
             <area>640,650,595,30</area>
-            <font>basesmall</font>
+            <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
@@ -834,23 +908,35 @@
         </textarea>
 
         <shape name="global-settings-top-backdrop" from="base_backdrop">
+            <area>217,38,846,512</area>
+        </shape>
+
+        <shape name="global-settings-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>215,36,850,516</area>
-        </shape>
-
-        <shape name="global-settings-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>218,39,844,34</area>
-        </shape>
-
-        <shape name="global-settings-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>218,515,844,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="global-settings-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="global-settings-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="global-settings-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="global-settings-bottom-line" from="base_line">
@@ -890,35 +976,51 @@
         </textarea>
 
         <shape name="screen-setup-inactive-backdrop" from="base_backdrop">
+            <area>128,38,416,442</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>126,36,420,446</area>
-        </shape>
-
-        <shape name="screen-setup-inactive-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>129,39,414,34</area>
-        </shape>
-
-        <shape name="screen-setup-inactive-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>129,445,414,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="screen-setup-active-backdrop" from="base_backdrop">
+            <area>736,38,416,442</area>
+        </shape>
+
+        <shape name="screen-setup-active-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>734,36,420,446</area>
-        </shape>
-
-        <shape name="screen-setup-active-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>737,39,414,34</area>
-        </shape>
-
-        <shape name="screen-setup-active-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>737,445,414,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="screen-setup-bottom-backdrop" from="base_backdrop">
-            <area>20,494,1240,190</area>
+            <area>22,496,1236,186</area>
         </shape>
 
-        <shape name="screen-setup-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,497,1234,34</area>
+        <shape name="screen-setup-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,494,1240,190</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="8" color="#000000" alpha="80" />
+                    <stop position="92" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="screen-setup-bottom-line" from="base_line">
@@ -1021,43 +1123,59 @@
         </textarea>
 
         <shape name="weather-source-backdrop" from="base_backdrop">
+            <area>22,38,416,475</area>
+        </shape>
+
+        <shape name="weather-source-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,420,479</area>
-        </shape>
-
-        <shape name="weather-source-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,414,34</area>
-        </shape>
-
-        <shape name="weather-source-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,478,414,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-data-retrieval-backdrop" from="base_backdrop">
+            <area>462,38,796,475</area>
+        </shape>
+
+        <shape name="weather-data-retrieval-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>460,36,800,479</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-data-retrieval-top-line" from="base_line">
             <area>480,70,760,2</area>
         </shape>
 
-        <shape name="weather-data-retrieval-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>463,39,794,34</area>
-        </shape>
-
         <shape name="weather-data-retrieval-bottom-line" from="base_line">
             <area>480,481,760,2</area>
         </shape>
 
-        <shape name="weather-data-retrieval-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>463,478,794,34</area>
-        </shape>
-
         <shape name="weather-source-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="weather-source-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="weather-source-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-source-bottom-backdrop-line" from="base_line">
@@ -1136,43 +1254,55 @@
         </textarea>
 
         <shape name="weather-search-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,147</area>
+            <area>22,38,1236,143</area>
         </shape>
 
-        <shape name="weather-search-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,39,1234,34</area>
+        <shape name="weather-search-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,36,1240,147</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="10" color="#000000" alpha="80" />
+                    <stop position="90" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-search-top-line" from="base_line">
             <area>45,109,1190,2</area>
         </shape>
 
-        <shape name="weather-search-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,146,1234,34</area>
-        </shape>
-
         <shape name="weather-search-middle-backdrop" from="base_backdrop">
+            <area>22,197,1236,326</area>
+        </shape>
+
+        <shape name="weather-search-middle-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,195,1240,330</area>
-        </shape>
-
-        <shape name="weather-search-middle-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,198,1234,34</area>
-        </shape>
-
-        <shape name="weather-search-middle-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,488,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-search-bottom-backdrop" from="base_backdrop">
+            <area>22,539,1236,143</area>
+        </shape>
+
+        <shape name="weather-search-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,537,1240,147</area>
-        </shape>
-
-        <shape name="weather-search-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,540,1234,34</area>
-        </shape>
-
-        <shape name="weather-search-bottom-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>23,647,1234,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="10" color="#000000" alpha="80" />
+                    <stop position="90" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="weather-search-bottom-line" from="base_line">

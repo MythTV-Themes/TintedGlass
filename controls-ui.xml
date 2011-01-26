@@ -8,23 +8,27 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
+            <area>392,212,496,296</area>
+        </shape>
+
+        <shape name="key-grab-popup-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>390,210,500,300</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="0" />
+                    <stop position="95" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="key-grab-popup-top-line" from="base_line">
             <area>405,270,470,2</area>
         </shape>
 
-        <shape name="key-grab-popup-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>393,213,494,34</area>
-        </shape>
-
         <shape name="key-grab-popup-bottom-line" from="base_line">
             <area>405,450,470,2</area>
-        </shape>
-
-        <shape name="key-grab-popup-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>393,473,494,34</area>
         </shape>
 
         <textarea name="heading" from="basetextarea">
@@ -60,35 +64,51 @@
         </textarea>
 
         <shape name="edit-keys-contexts-backdrop" from="base_backdrop">
+            <area>128,38,416,476</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>126,36,420,480</area>
-        </shape>
-
-        <shape name="edit-keys-contexts-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>129,39,414,34</area>
-        </shape>
-
-        <shape name="edit-keys-contexts-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>129,479,414,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-keys-actions-backdrop" from="base_backdrop">
+            <area>736,38,416,476</area>
+        </shape>
+
+        <shape name="edit-keys-actions-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>734,36,420,480</area>
-        </shape>
-
-        <shape name="edit-keys-actions-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>737,39,414,34</area>
-        </shape>
-
-        <shape name="edit-keys-actions-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>737,479,414,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="80" />
+                    <stop position="97" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+            <area>22,566,1236,116</area>
         </shape>
 
-        <shape name="edit-keys-bottom-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,567,1234,34</area>
+        <shape name="edit-keys-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,564,1240,120</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="12" color="#000000" alpha="80" />
+                    <stop position="88" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-keys-bottom-line" from="base_line">

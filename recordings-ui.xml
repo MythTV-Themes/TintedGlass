@@ -49,49 +49,49 @@
             <fill color="#666666" alpha="170" />
         </shape>
 
-        <shape name="coverart-backdrop" from="base_backdrop_fanart">
+        <shape name="coverart-backdrop" from="base_backdrop">
+            <area>22,76,242,358</area>
+        </shape>
+
+        <shape name="coverart-backdrop-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,74,246,362</area>
-        </shape>
-
-        <shape name="coverart-backdrop-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,77,240,357</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="reclist-backdrop" from="base_backdrop_fanart">
+        <shape name="reclist-backdrop" from="base_backdrop">
+            <area>279,76,979,358</area>
+        </shape>
+
+        <shape name="reclist-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>277,74,983,362</area>
-        </shape>
-
-        <shape name="reclist-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>280,76,977,357</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="bottom-list-backdrop" from="base_backdrop_fanart">
-            <area>20,449,809,239</area>
+        <shape name="bottom-list-backdrop" from="base_backdrop">
+            <area>22,451,805,235</area>
         </shape>
 
-        <shape name="bottom-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,452,803,233</area>
+        <shape name="bottom-list-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,449,809,239</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="9" color="#000000" alpha="80" />
-                    <stop position="91" color="#000000" alpha="80" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -105,17 +105,17 @@
             <area>40,647,769,2</area>
         </shape>
 
-        <shape name="preview-backdrop" from="base_backdrop_fanart" >
-            <area>840,449,420,239</area>
+        <shape name="preview-backdrop" from="base_backdrop" >
+            <area>842,451,416,235</area>
         </shape>
 
-        <shape name="preview-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,452,414,233</area>
+        <shape name="preview-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>840,449,420,239</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="9" color="#000000" alpha="80" />
-                    <stop position="91" color="#000000" alpha="80" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -638,49 +638,49 @@
             <fill color="#666666" alpha="170" />
         </shape>
 
-        <shape name="coverart-backdrop" from="base_backdrop_fanart">
+        <shape name="coverart-backdrop" from="base_backdrop">
+            <area>22,76,242,358</area>
+        </shape>
+
+        <shape name="coverart-backdrop-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,74,246,362</area>
-        </shape>
-
-        <shape name="coverart-backdrop-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,77,240,357</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="reclist-backdrop" from="base_backdrop_fanart">
+        <shape name="reclist-backdrop" from="base_backdrop">
+            <area>279,76,979,358</area>
+        </shape>
+
+        <shape name="reclist-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>277,74,983,362</area>
-        </shape>
-
-        <shape name="reclist-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>280,76,977,357</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
+                    <stop position="4" color="#000000" alpha="80" />
+                    <stop position="96" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="bottom-list-backdrop" from="base_backdrop_fanart">
-            <area>20,449,809,239</area>
+        <shape name="bottom-list-backdrop" from="base_backdrop">
+            <area>22,451,805,235</area>
         </shape>
 
-        <shape name="bottom-list-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>23,452,803,233</area>
+        <shape name="bottom-list-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>20,449,809,239</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="9" color="#000000" alpha="80" />
-                    <stop position="91" color="#000000" alpha="80" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -694,17 +694,17 @@
             <area>40,647,769,2</area>
         </shape>
 
-        <shape name="preview-backdrop" from="base_backdrop_fanart" >
-            <area>840,449,420,239</area>
+        <shape name="preview-backdrop" from="base_backdrop" >
+            <area>842,451,416,235</area>
         </shape>
 
-        <shape name="preview-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>843,452,414,233</area>
+        <shape name="preview-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>840,449,420,239</area>
             <fill style="gradient">
                 <gradient alpha="170" direction="vertical">
                     <stop position="0" color="#ffffff" />
-                    <stop position="9" color="#000000" alpha="80" />
-                    <stop position="91" color="#000000" alpha="80" />
+                    <stop position="6" color="#000000" alpha="80" />
+                    <stop position="94" color="#000000" alpha="80" />
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
@@ -1187,15 +1187,19 @@
         </shape>
 
         <shape name="change-view-backdrop" from="base_popup_backdrop">
+            <area>452,130,376,459</area>
+        </shape>
+
+        <shape name="change-view-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>450,128,380,463</area>
-        </shape>
-
-        <shape name="change-view-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>453,131,374,34</area>
-        </shape>
-
-        <shape name="change-view-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>453,554,374,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="change-view-top-line" from="base_line">
@@ -1278,15 +1282,19 @@
         </shape>
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>352,230,583,266</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>350,228,587,270</area>
-        </shape>
-
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>353,231,581,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>353,461,581,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="5" color="#000000" alpha="0" />
+                    <stop position="95" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="oldlabel" from="basetextarea">
@@ -1324,17 +1332,21 @@
         </shape>
 
         <shape name="group-selector-backdrop" from="base_popup_backdrop">
+            <area>452,130,376,459</area>
+        </shape>
+
+        <shape name="group-selector-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>450,128,380,463</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
-
-        <shape name="group-selector-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>453,131,374,34</area>
-        </shape>
-
-        <shape name="group-selector-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>453,554,374,34</area>
-        </shape>
-
+<!--
         <shape name="group-selector-highlight">
             <area>465,142,350,161</area>
             <type>roundbox</type>
@@ -1349,6 +1361,22 @@
 
         <shape name="group-selector-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
             <area>468,266,344,34</area>
+        </shape>
+-->
+        <shape name="group-selector-first-line" from="base_line">
+            <area>465,142,350,2</area>
+        </shape>
+
+        <shape name="group-selector-second-line" from="base_line">
+            <area>465,301,350,2</area>
+        </shape>
+
+        <shape name="group-selector-left-line" from="base_vertical_line">
+            <area>465,144,2,157</area>
+        </shape>
+
+        <shape name="group-selector-right-line" from="base_vertical_line">
+            <area>813,144,2,157</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
@@ -1394,29 +1422,21 @@
         </shape>
 
         <shape name="boxshape" from="base_popup_backdrop">
+            <area>292,112,696,496</area>
+        </shape>
+
+        <shape name="boxshape-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>290,110,700,500</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="3" color="#000000" alpha="0" />
+                    <stop position="97" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="boxshape-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>293,113,694,34</area>
-        </shape>
-
-        <shape name="boxshape-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>293,573,694,34</area>
-        </shape>
-<!--
-        <shape name="icon-help-top-line">
-            <area>325,160,630,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
-        </shape>
-
-        <shape name="icon-help-bottom-line">
-            <area>325,569,630,2</area>
-            <type>box</type>
-            <fill color="#FFFFFF" alpha="45" />
-        </shape>
--->
         <textarea name="title" from="basetextarea">
             <area>290,108,700,50</area>
             <value>Status Icon Help</value>
@@ -1608,15 +1628,19 @@
         </shape>
 
         <shape name="edit-metadata-backdrop" from="base_popup_backdrop">
+            <area>332,167,616,386</area>
+        </shape>
+
+        <shape name="edit-metadata-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>330,165,620,390</area>
-        </shape>
-
-        <shape name="edit-metadata-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>333,168,614,34</area>
-        </shape>
-
-        <shape name="edit-metadata-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>333,518,614,34</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="4" color="#000000" alpha="0" />
+                    <stop position="96" color="#000000" alpha="0" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
         </shape>
 
         <shape name="edit-metadata-top-line" from="base_line">
