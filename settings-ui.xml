@@ -142,39 +142,39 @@
         </shape>
 
         <shape name="preview-shape-top-line" from="base_line">
-            <area>667,76,569,2</area>
+            <area>659,66,587,2</area>
         </shape>
 
         <shape name="preview-shape-bottom-line" from="base_line">
-            <area>667,396,569,2</area>
+            <area>659,396,587,2</area>
         </shape>
 
         <shape name="preview-shape-left-line" from="base_vertical_line">
-            <area>667,78,2,318</area>
+            <area>659,68,2,328</area>
         </shape>
 
         <shape name="preview-shape-right-line" from="base_vertical_line">
-            <area>1234,78,2,318</area>
+            <area>1244,68,2,328</area>
         </shape>
 
         <shape name="theme-chooser-name-line" from="base_line">
-            <area>670,438,565,2</area>
+            <area>659,438,587,2</area>
         </shape>
 
         <shape name="theme-chooser-description-top-line" from="base_line">
-            <area>670,475,565,2</area>
+            <area>659,475,587,2</area>
         </shape>
 
         <shape name="theme-chooser-desription-left-line" from="base_vertical_line">
-            <area>670,477,2,186</area>
+            <area>659,477,2,191</area>
         </shape>
 
         <shape name="theme-chooser-description-right-line" from="base_vertical_line">
-            <area>1233,477,2,186</area>
+            <area>1244,477,2,191</area>
         </shape>
 
         <shape name="theme-chooser-description-bottom-line" from="base_line">
-            <area>670,663,565,2</area>
+            <area>659,668,587,2</area>
         </shape>
 
         <!-- Icon status help -->
@@ -343,49 +343,67 @@
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>692,56</position>
+            <position>661,50</position>
             <imagetype name="background">
-                <area>0,0,520,10</area>
+                <area>0,0,583,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <area>0,0,520,8</area>
+                <area>0,0,583,8</area>
                 <filename>images/progressbar/progressbar_fill.png</filename>
             </imagetype>
         </progressbar>
 
         <imagetype name="preview">
-            <area>669,78,565,318</area>
+            <area>661,68,583,328</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>670,400,565,35</area>
+            <area>661,400,583,35</area>
             <multiline>no</multiline>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
+        <textarea name="resolution_label" from="basetextarea">
+            <area>661,443,122,30</area>
+            <multiline>no</multiline>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Resolution:</value>
+        </textarea>
+
         <textarea name="resolution" from="basetextarea">
-            <area>680,443,280,30</area>
+            <area>793,443,280,30</area>
             <multiline>no</multiline>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
+        <textarea name="aspect_label" from="basetextarea">
+            <area>1092,443,80,30</area>
+            <multiline>no</multiline>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <cutdown>yes</cutdown>
+            <value>Aspect:</value>
+        </textarea>
+
         <textarea name="aspect" from="basetextarea">
-            <area>960,443,280,30</area>
+            <area>1182,443,62,30</area>
             <multiline>no</multiline>
             <font>basesmallblue</font>
-            <align>left,vcenter</align>
+            <align>right,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>678,484,549,172</area>
+            <area>667,486,571,172</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
