@@ -645,93 +645,196 @@
 
     <window name="audiowizard">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
+        <textarea name="heading" from="base_heading">
             <value>Audio Configuration</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
         </textarea>
 
-        <textarea name="helptext" from="basetextarea">
-            <area>50,350,700,280</area>
-            <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
-        </textarea>
+        <shape name="audiowizard-backdrop" from="base_backdrop">
+            <area>217,38,846,644</area>
+        </shape>
+
+        <shape name="audiowizard-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>215,36,850,648</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="2" color="#000000" alpha="80" />
+                    <stop position="98" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="audiowizard-top-line" from="base_line">
+            <area>229,50,822,2</area>
+        </shape>
+
+        <shape name="audiowizard-bottom-line" from="base_line">
+            <area>229,438,822,2</area>
+        </shape>
+
+        <shape name="audiowizard-left-line" from="base_vertical_line">
+            <area>229,52,2,386</area>
+        </shape>
+
+        <shape name="audiowizard-right-line" from="base_vertical_line">
+            <area>1049,52,2,386</area>
+        </shape>
+
+        <shape name="checkbox-top-line" from="base_line">
+            <area>249,170,782,2</area>
+        </shape>
+
+        <shape name="checkbox-bottom-line" from="base_line">
+            <area>249,372,782,2</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_line">
+            <area>229,452,822,2</area>
+        </shape>
+
+        <shape name="helptext-bottom-line" from="base_line">
+            <area>229,668,822,2</area>
+        </shape>
+
+        <shape name="helptext-left-line" from="base_vertical_line">
+            <area>229,454,2,214</area>
+        </shape>
+
+        <shape name="helptext-right-line" from="base_vertical_line">
+            <area>1049,454,2,214</area>
+        </shape>
+
+        <shape name="buttons-top-line" from="base_line">
+            <area>249,607,782,2</area>
+        </shape>
 
         <textarea name="auddev_text" from="basetextarea">
-            <area>75,103,225,30</area>
+            <area>237,72,224,24</area>
             <font>basesmall</font>
+            <align>right,vcenter</align>
             <value>Audio Device:</value>
         </textarea>
 
+        <buttonlist name="audiodevices" from="base_selector">
+            <area>471,64,556,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,556,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,526,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,556,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,526,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>560,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>560,21</position>
+            </statetype>
+        </buttonlist>
+
         <textarea name="speaktext_text" from="basetextarea">
-            <area>75,168,225,30</area>
+            <area>237,124,224,24</area>
             <font>basesmall</font>
+            <align>right,vcenter</align>
             <value>Number of Speakers:</value>
         </textarea>
 
+        <buttonlist name="speakers" from="base_selector">
+            <area>471,118,556,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,556,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,526,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,556,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,526,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>560,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>560,21</position>
+            </statetype>
+        </buttonlist>
+
         <textarea name="ac3_text" from="basetextarea">
-            <area>310,230,375,30</area>
+            <area>431,189,462,24</area>
             <font>basesmall</font>
+            <align>left,vcenter</align>
             <value>My speaker supports Dolby Digital</value>
         </textarea>
 
+        <checkbox name="ac3check" from="basecheckbox">
+            <position>371,184</position>
+        </checkbox>
+
         <textarea name="dts_text" from="basetextarea">
-            <area>310,275,375,30</area>
+            <area>431,237,462,24</area>
             <font>basesmall</font>
+            <align>left,vcenter</align>
             <value>My speaker supports DTS</value>
         </textarea>
 
+        <checkbox name="dtscheck" from="basecheckbox">
+            <position>371,232</position>
+        </checkbox>
+
         <textarea name="hd_text" from="basetextarea">
-            <area>310,320,375,30</area>
+            <area>431,285,462,24</area>
             <font>basesmall</font>
+            <align>left,vcenter</align>
             <value>My speaker supports E-AC-3 of DTS-HD</value>
         </textarea>
 
+        <checkbox name="hdcheck" from="basecheckbox">
+            <position>371,280</position>
+        </checkbox>
+
         <textarea name="hdplus_text" from="basetextarea">
-            <area>310,365,375,30</area>
+            <area>431,333,462,24</area>
             <font>basesmall</font>
+            <align>left,vcenter</align>
             <value>My speaker supports TrueHD or DTS-HD MA</value>
         </textarea>
 
-    <!--Widgets-->
-
-        <buttonlist name="audiodevices" from="basewideselector">
-            <position>310,97</position>
-        </buttonlist>
-
-        <buttonlist name="speakers" from="basewideselector">
-            <position>310,162</position>
-        </buttonlist>
-
-        <checkbox name="ac3check" from="basecheckbox">
-            <position>250,227</position>
-        </checkbox>
-
-        <checkbox name="dtscheck" from="basecheckbox">
-            <position>250,272</position>
-        </checkbox>
-
-        <checkbox name="hdcheck" from="basecheckbox">
-            <position>250,317</position>
-        </checkbox>
-
         <checkbox name="hdpluscheck" from="basecheckbox">
-            <position>250,362</position>
+            <position>371,328</position>
         </checkbox>
 
-        <button name="testspeakers" from="basewidebutton">
-            <position>250,407</position>
+        <button name="testspeakers" from="base_medium_button">
+            <position>457,386</position>
         </button>
 
-        <button name="previous" from="basebutton">
-            <position>188,530</position>
+        <textarea name="helptext" from="basetextarea">
+            <area>237,460,806,141</area>
+            <multiline>yes</multiline>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="previous" from="base_button">
+            <position>403,621</position>
             <value>Previous</value>
         </button>
 
-        <button name="next" from="basebutton">
-            <position>435,530</position>
+        <button name="next" from="base_button">
+            <position>727,621</position>
             <value>Next</value>
         </button>
 
