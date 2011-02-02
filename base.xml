@@ -1176,9 +1176,10 @@
     <textedit name="base_textedit">
         <area>0,0,287,32</area>
         <statetype name="background">
-           <state name="active">
-               <area>0,0,100%,100%</area>
-               <shape name="background">
+            <area>0,0,100%,100%</area>
+            <state name="active">
+                <area>0,0,100%,100%</area>
+                <shape name="background">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <fill color="#404040" alpha="175" />
@@ -1187,7 +1188,8 @@
                 </shape>
             </state>
             <state name="selected" from="active">
-               <shape name="background">
+                <area>0,0,100%,100%</area>
+                <shape name="background">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <fill color="#000000" alpha="255" />
@@ -1331,23 +1333,7 @@
                 </gradient>
             </fill>
         </shape>
-<!--
-        <shape name="popup-highlight">
-            <area>455,140,370,164</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>13</cornerradius>
-        </shape>
 
-        <shape name="popup-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>458,143,364,34</area>
-        </shape>
-
-        <shape name="popup-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>458,267,364,34</area>
-        </shape>
--->
         <shape name="popup-first-line" from="base_line">
             <area>454,140,372,2</area>
         </shape>
@@ -1425,23 +1411,7 @@
                 </gradient>
             </fill>
         </shape>
-<!--
-        <shape name="large-dialogbox-messagearea">
-            <area>254,120,779,282</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="15" />
-            <line color="#FFFFFF" alpha="45" width="2" />
-            <cornerradius>13</cornerradius>
-        </shape>
 
-        <shape name="large-dialogbox-highlight-top-edge-highlight" from="base_backdrop_top_edge_highlight">
-            <area>256,123,773,34</area>
-        </shape>
-
-        <shape name="large-dialogbox-highlight-bottom-edge-highlight" from="base_backdrop_bottom_edge_highlight">
-            <area>256,365,773,34</area>
-        </shape>
--->
         <shape name="large-dialogbox-first-line" from="base_line">
             <area>250,116,787,2</area>
         </shape>

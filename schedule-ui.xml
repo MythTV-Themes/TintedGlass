@@ -149,7 +149,7 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>31,84,198,364</area>
+            <area>31,84,198,366</area>
             <layout>vertical</layout>
             <spacing>1</spacing>
             <buttonarea>0,0,196,360</buttonarea>
