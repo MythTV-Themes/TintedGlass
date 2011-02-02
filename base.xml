@@ -1176,6 +1176,7 @@
     <textedit name="base_textedit">
         <area>0,0,287,32</area>
         <statetype name="background">
+           <area>0,0,100%,100%</area>
            <state name="active">
                <area>0,0,100%,100%</area>
                <shape name="background">
@@ -1187,6 +1188,7 @@
                 </shape>
             </state>
             <state name="selected" from="active">
+               <area>0,0,100%,100%</area>
                <shape name="background">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>

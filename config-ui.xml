@@ -472,59 +472,172 @@
 
     <window name="generalwizard">
 
-        <textarea name="title" from="basetextarea">
-            <area>20,40,760,40</area>
-            <value>MythTV Configuration Wizard</value>
-            <align>hcenter,vcenter</align>
-            <font>baselarge</font>
+        <textarea name="heading" from="base_heading">
+            <value>MythTV Config Wizard</value>
         </textarea>
 
-        <textarea name="helptext" from="basetextarea">
-            <area>50,350,700,280</area>
-            <multiline>yes</multiline>
-            <font>basesmall</font>
-            <align>allcenter</align>
-        </textarea>
+        <shape name="generalwizard-backdrop" from="base_backdrop">
+            <area>217,38,846,644</area>
+        </shape>
+
+        <shape name="generalwizard-edge-highlight" from="base_backdrop_with_edge_highlight">
+            <area>215,36,850,648</area>
+            <fill style="gradient">
+                <gradient alpha="170" direction="vertical">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="2" color="#000000" alpha="80" />
+                    <stop position="98" color="#000000" alpha="80" />
+                    <stop position="100" color="#ffffff" alpha="160" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="generalwizard-top-line" from="base_line">
+            <area>229,50,822,2</area>
+        </shape>
+
+        <shape name="generalwizard-bottom-line" from="base_line">
+            <area>229,354,822,2</area>
+        </shape>
+
+        <shape name="generalwizard-left-line" from="base_vertical_line">
+            <area>229,52,2,302</area>
+        </shape>
+
+        <shape name="generalwizard-right-line" from="base_vertical_line">
+            <area>1049,52,2,302</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_line">
+            <area>229,364,822,2</area>
+        </shape>
+
+        <shape name="helptext-bottom-line" from="base_line">
+            <area>229,668,822,2</area>
+        </shape>
+
+        <shape name="helptext-left-line" from="base_vertical_line">
+            <area>229,366,2,302</area>
+        </shape>
+
+        <shape name="helptext-right-line" from="base_vertical_line">
+            <area>1049,366,2,302</area>
+        </shape>
+
+        <shape name="buttons-top-line" from="base_line">
+            <area>249,607,782,2</area>
+        </shape>
 
         <textarea name="ldate_text" from="basetextarea">
-            <area>75,173,225,30</area>
+            <area>237,104,204,24</area>
             <font>basesmall</font>
+            <align>right,vcenter</align>
             <value>Long Date Format:</value>
         </textarea>
 
+        <buttonlist name="longdate" from="base_selector">
+            <area>451,98,576,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,576,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,546,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>580,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>580,21</position>
+            </statetype>
+        </buttonlist>
+
         <textarea name="sdate_text" from="basetextarea">
-            <area>75,238,225,30</area>
+            <area>237,189,204,24</area>
             <font>basesmall</font>
+            <align>right,vcenter</align>
             <value>Short Date Format:</value>
         </textarea>
 
+        <buttonlist name="shortdate" from="base_selector">
+            <area>451,183,576,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,546,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,546,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>580,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>580,21</position>
+            </statetype>
+        </buttonlist>
+
         <textarea name="time_text" from="basetextarea">
-            <area>75,303,225,30</area>
+            <area>237,274,204,24</area>
             <font>basesmall</font>
+            <align>right,vcenter</align>
             <value>Time Format:</value>
         </textarea>
 
-    <!--Widgets-->
-
-        <buttonlist name="longdate" from="basewideselector">
-            <position>310,167</position>
+        <buttonlist name="timeformat" from="base_selector">
+            <area>451,268,576,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,452,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,576,40</area>
+                    <textarea name="buttontext">
+                        <area>15,8,546,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>580,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>580,21</position>
+            </statetype>
         </buttonlist>
 
-        <buttonlist name="shortdate" from="basewideselector">
-            <position>310,232</position>
-        </buttonlist>
+        <textarea name="helptext" from="basetextarea">
+            <area>237,372,806,227</area>
+            <multiline>yes</multiline>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+        </textarea>
 
-        <buttonlist name="timeformat" from="basewideselector">
-            <position>310,297</position>
-        </buttonlist>
-
-        <button name="cancel" from="basebutton">
-            <position>188,530</position>
+        <button name="cancel" from="base_button">
+            <position>403,621</position>
             <value>Cancel</value>
         </button>
 
-        <button name="next" from="basebutton">
-            <position>435,530</position>
+        <button name="next" from="base_button">
+            <position>727,621</position>
             <value>Next</value>
         </button>
 
