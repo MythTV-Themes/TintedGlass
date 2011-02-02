@@ -87,7 +87,7 @@
         </textarea>
 
         <textedit name="settingvalue" from="base_wide_textedit">
-            <area>186,587,908,32</area>
+            <area>193,587,894,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">
@@ -349,7 +349,7 @@
                 <filename>images/progressbar/progressbar_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <area>0,0,583,8</area>
+                <area>0,0,583,10</area>
                 <filename>images/progressbar/progressbar_fill.png</filename>
             </imagetype>
         </progressbar>
