@@ -40,12 +40,56 @@
             </fill>
         </shape>
 
+        <shape name="time-top-line" from="base_line">
+            <area>34,50,1212,2</area>
+        </shape>
+
+        <shape name="channel-left-end-separator" from="base_vertical_line">
+            <area>34,52,2,35</area>
+        </shape>
+
+        <shape name="time-right-end-separator" from="base_vertical_line">
+            <area>1244,52,2,35</area>
+        </shape>
+
         <shape name="guide-grid-top-line" from="base_line">
-            <area>232,80,1017,2</area>
+            <area>34,87,1212,2</area>
         </shape>
 
         <shape name="guide-grid-bottom-line" from="base_line">
-            <area>232,446,1017,2</area>
+            <area>34,449,1212,2</area>
+        </shape>
+
+        <shape name="guide-grid-left-line" from="base_vertical_line">
+            <area>34,89,2,360</area>
+        </shape>
+
+        <shape name="guide-grid-middle-line" from="base_vertical_line">
+            <area>242,89,2,360</area>
+        </shape>
+
+        <shape name="guide-grid-right-line" from="base_vertical_line">
+            <area>1244,89,2,360</area>
+        </shape>
+
+        <shape name="first-channel-separator" from="base_line">
+            <area>51,148,178,2</area>
+        </shape>
+
+        <shape name="second-channel-separator" from="base_line">
+            <area>51,208,178,2</area>
+        </shape>
+
+        <shape name="third-channel-separator" from="base_line">
+            <area>51,268,178,2</area>
+        </shape>
+
+        <shape name="fourth-channel-separator" from="base_line">
+            <area>51,328,178,2</area>
+        </shape>
+
+        <shape name="fifth-channel-separator" from="base_line">
+            <area>51,388,178,2</area>
         </shape>
 
         <shape name="guide-title-bottom-line" from="base_line">
@@ -69,21 +113,22 @@
         </shape>
 
         <textarea name="datetext" from="basetextarea">
-            <area>34,39,190,25</area>
+            <area>36,53,192,20</area>
+            <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="channelgroup" from="basetextarea">
-            <area>34,61,190,25</area>
-            <align>bottom,hcenter</align>
-            <font>basesmallpurple</font>
+            <area>36,72,192,16</area>
+            <align>allcenter</align>
+            <font>baseextrasmallpurple</font>
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>232,84,1017,360</area>
+            <area>244,89,1000,360</area>
             <layout>horizontal</layout>
-            <channels>5</channels>
-            <timeslots>4</timeslots>
+            <channels>6</channels>
+            <timeslots>5</timeslots>
             <solidcolor>#003256</solidcolor>
             <selector type="roundbox" linecolor="#ffff33" />
             <showcategories>yes</showcategories>
@@ -92,7 +137,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
-            <textoffset>9,13</textoffset>
+            <textoffset>6,4</textoffset>
             <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
@@ -106,15 +151,18 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>232,44,1016,36</area>
+            <area>244,52,1000,35</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1016,36</buttonarea>
+            <buttonarea>0,0,1000,35</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,254,36</area>
+                    <area>-1,0,200,35</area>
+                    <shape name="separator" from="base_vertical_line">
+                        <area>0,5,2,26</area>
+                    </shape>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,3,254,30</area>
+                        <area>0,1,200,35</area>
                         <font>basesmall</font>
                         <align>allcenter</align>
                     </textarea>
@@ -149,25 +197,22 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>31,84,198,360</area>
+            <area>36,89,192,360</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,196,360</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,198,72</area>
-                        <shape name="gg-chans" from="base_channel_highlight">
-                            <area>0,0,198,72</area>
-                        </shape>
+                    <area>0,0,192,60</area>
                     <imagetype name="channelicon">
-                        <area>6,9,70,57</area>
+                        <area>6,6,64,48</area>
                         <preserveaspect>true</preserveaspect>
                         <mask>images/masks/channelicon_mask.png</mask>
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>77,1,117,70</area>
-                        <font>baseesmall</font>
+                        <area>76,0,124,60</area>
+                        <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
                         <font state="favunavailable">basesmallpurple</font>
