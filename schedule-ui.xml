@@ -197,13 +197,13 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>36,89,192,360</area>
+            <area>36,89,206,360</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,196,360</buttonarea>
+            <buttonarea>0,0,206,360</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,192,60</area>
+                    <area>0,0,206,60</area>
                     <imagetype name="channelicon">
                         <area>6,6,64,48</area>
                         <preserveaspect>true</preserveaspect>
