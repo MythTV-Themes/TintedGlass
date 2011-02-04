@@ -2003,6 +2003,14 @@
             </fill>
         </shape>
 
+        <shape name="program-find-bottom-right-top-line" from="base_line">
+            <area>867,504,378,2</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-bottom-line" from="base_line">
+            <area>867,666,378,2</area>
+        </shape>
+
         <buttonlist name="alphabet">
             <area>0,36,1280,30</area>
             <spacing>0</spacing>
@@ -2128,27 +2136,27 @@
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>872,514,368,28</area>
-            <font>baselargeyellow</font>
+            <area>858,514,396,28</area>
+            <font>baselarge</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>872,555,368,24</area>
-            <font>basesmall</font>
+            <area>858,555,396,24</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="longrepeat" from="basetextarea">
-            <area>872,591,368,24</area>
-            <font>basesmall</font>
+            <area>858,591,396,24</area>
+            <font>basesmallred</font>
             <align>allcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>872,632,368,24</area>
-            <font>basesmall</font>
+            <area>858,632,396,24</area>
+            <font>basesomewhatsmaller</font>
             <align>allcenter</align>
         </textarea>
 
