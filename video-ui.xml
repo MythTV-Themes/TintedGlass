@@ -2994,30 +2994,45 @@
         </shape>
 
         <textarea name="dirlbl" from="basetextarea">
-            <area>235,429,142,24</area>
+            <area>235,427,112,24</area>
             <font>basesmaller</font>
             <value>Directed by:</value>
-            <align>left</align>
+            <align>left,vcenter</align>
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>383,429,375,24</area>
-            <font>basesmaller</font>
+            <area>357,428,401,24</area>
+            <font>basesmallerblue</font>
+            <align>left,vcenter</align>
         </textarea>
 
         <shape name="video-item-detail-popup-director-line" from="base_line">
             <area>233,455,527,2</area>
         </shape>
         
-        <textarea name="year" from="basetextarea">
-            <area>235,458,80,24</area>
+        <textarea name="yearlbl" from="basetextarea">
+            <area>235,456,46,24</area>
             <font>basesmaller</font>
+            <align>left,vcenter</align>
+            <value>Year:</value>
+        </textarea>
+
+        <textarea name="year" from="basetextarea">
+            <area>291,458,80,24</area>
+            <font>basesmallerblue</font>
+        </textarea>
+
+        <textarea name="lengthlbl" from="basetextarea">
+            <area>550,456,84,24</area>
+            <font>basesmaller</font>
+            <align>right,vcenter</align>
+            <value>Runtime:</value>
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>478,458,278,24</area>
-            <font>basesmaller</font>
-            <align>right</align>
+            <area>644,457,114,24</area>
+            <font>basesmallerblue</font>
+            <align>left,vcenter</align>
         </textarea>
 
         <shape name="video-item-detail-popup-length-line" from="base_line">
@@ -3033,7 +3048,7 @@
 
         <textarea name="season" from="basetextarea">
             <area>400,484,110,20</area>
-            <font>baseextrasmall</font>
+            <font>baseextrasmallblue</font>
             <align>vcenter</align>
         </textarea>
 
@@ -3046,7 +3061,7 @@
 
         <textarea name="episode" from="basetextarea">
             <area>645,484,110,20</area>
-            <font>baseextrasmall</font>
+            <font>baseextrasmallblue</font>
             <align>vcenter</align>
         </textarea>
 
