@@ -755,6 +755,14 @@
             </fill>
         </shape>
 
+        <shape name="upcoming-list-top-line" from="base_line">
+            <area>34,107,1212,2</area>
+        </shape>
+
+        <shape name="upcoming-list-bottom-line" from="base_line">
+            <area>34,448,1212,2</area>
+        </shape>
+
         <shape name="upcoming-bottom-backdrop" from="base_backdrop">
             <area>22,492,1236,188</area>
         </shape>
@@ -780,14 +788,14 @@
         </shape>
 
         <textarea name="keyinstr" from="basetextarea">
-            <area>20,78,1240,20</area>
+            <area>20,84,1240,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>(1) All (2) Important</value>
         </textarea>
 
         <textarea name="filter" from="basetextarea">
-            <area>20,459,1240,20</area>
+            <area>20,453,1240,20</area>
             <align>allcenter</align>
             <font>baseextrasmallyellow</font>
             <template>Filter:  %1</template>
@@ -832,49 +840,49 @@
         </buttonlist>
 
         <buttonlist name="schedules" from="base_list_medium_selector_large_width">
-            <area>22,93,1236,368</area>
+            <area>22,90,1236,360</area>
             <align>bottom</align>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1236,36</area>
                     <textarea name="shortstarttimedate" from="base_text_font_state_small">
-                        <area>18,5,190,24</area>
+                        <area>18,6,190,24</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>206,5,200,24</area>
+                        <area>206,6,200,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="shortstarttimedate">
-                        <area>416,5,753,24</area>
+                        <area>416,6,753,24</area>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
-                        <area>1189,5,30,24</area>
+                        <area>1189,6,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,46</area>
+                    <area>0,0,1236,70</area>
                     <textarea name="shortstarttimedate" from="base_text_font_state_small">
-                        <area>18,1,190,24</area>
+                        <area>18,2,190,24</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>206,1,200,24</area>
+                        <area>206,2,200,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="shortstarttimedate">
-                        <area>416,1,753,24</area>
+                        <area>416,2,753,24</area>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
-                        <area>1189,1,30,24</area>
+                        <area>1189,2,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>18,25,350,20</area>
+                        <area>18,48,350,20</area>
                     </textarea>
                     <textarea name="subtitle" from="base_text_font_state_smaller">
-                        <area>436,23,533,20</area>
+                        <area>436,28,783,20</area>
                     </textarea>
 <!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
 <!--
@@ -886,17 +894,17 @@
                     </textarea>
 -->
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>979,25,240,20</area>
+                        <area>937,48,282,20</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-14</position>
+                <position>1196,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,366</position>
+                <position>1196,365</position>
             </statetype>
         </buttonlist>
 
@@ -949,6 +957,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="channel-record-priorities-top-line" from="base_line">
+            <area>34,68,1212,2</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-line" from="base_line">
+            <area>34,433,1212,2</area>
         </shape>
 
         <shape name="channel-record-priorites-bottom-backdrop" from="base_backdrop">
@@ -1077,6 +1093,7 @@
         <imagetype name="icon">
             <area>1008,491,236,175</area>
             <preserveaspect>false</preserveaspect>
+            <alpha>200</alpha>
         </imagetype>
 
     </window>
@@ -1101,6 +1118,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="program-record-list-top-line" from="base_line">
+            <area>34,68,1212,2</area>
+        </shape>
+
+        <shape name="program-record-list-bottom-line" from="base_line">
+            <area>34,433,1212,2</area>
         </shape>
 
         <shape name="program-record-priority-bottom-backdrop" from="base_backdrop">
@@ -1784,6 +1809,14 @@
             </fill>
         </shape>
 
+        <shape name="previously-recorded-list-top-line" from="base_line">
+            <area>34,68,1212,2</area>
+        </shape>
+
+        <shape name="previously-recorded-list-bottom-line" from="base_line">
+            <area>34,433,1212,2</area>
+        </shape>
+
         <shape name="previously-recorded-bottom-backdrop" from="base_backdrop">
             <area>22,477,1236,203</area>
         </shape>
@@ -1917,6 +1950,14 @@
             </fill>
         </shape>
 
+        <shape name="program-details-top-line" from="base_line">
+            <area>40,62,1200,2</area>
+        </shape>
+
+        <shape name="program-details-bottom-line" from="base_line">
+            <area>40,657,1200,2</area>
+        </shape>
+
         <webbrowser name="browser">
             <area>40,70,1200,580</area>
             <zoom>1.0</zoom>
@@ -1994,6 +2035,14 @@
             </fill>
         </shape>
 
+        <shape name="program-find-title-top-line" from="base_line">
+            <area>38,102,786,2</area>
+        </shape>
+
+        <shape name="program-find-title-bottom-line" from="base_line">
+            <area>38,454,786,2</area>
+        </shape>
+
         <shape name="program-find-times-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>852,78,408,400</area>
             <fill style="gradient">
@@ -2004,6 +2053,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="program-find-times-top-line" from="base_line">
+            <area>870,102,372,2</area>
+        </shape>
+
+        <shape name="program-find-times-bottom-line" from="base_line">
+            <area>870,454,372,2</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
@@ -2237,6 +2294,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="manage-recordings-list-top-line" from="base_line">
+            <area>34,68,1212,2</area>
+        </shape>
+
+        <shape name="manage-recordings-list-bottom-line" from="base_line">
+            <area>34,433,1212,2</area>
         </shape>
 
         <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
@@ -2627,6 +2692,14 @@
             </fill>
         </shape>
 
+        <shape name="schedule-editor-top-line" from="base_line">
+            <area>34,64,518,2</area>
+        </shape>
+
+        <shape name="schedule-editor-bottom-line" from="base_line">
+            <area>34,368,518,2</area>
+        </shape>
+
         <shape name="schedule-editor-options-backdrop" from="base_backdrop">
             <area>576,38,682,358</area>
         </shape>
@@ -2641,6 +2714,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="schedule-editor-options-top-line" from="base_line">
+            <area>591,64,652,2</area>
+        </shape>
+
+        <shape name="schedule-editor-options-bottom-line" from="base_line">
+            <area>591,368,652,2</area>
         </shape>
 
         <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
@@ -3021,6 +3102,14 @@
             </fill>
         </shape>
 
+        <shape name="preview-schedule-list-top-line" from="base_line">
+            <area>34,62,1212,2</area>
+        </shape>
+
+        <shape name="preview-schedule-list-bottom-line" from="base_line">
+            <area>34,437,1212,2</area>
+        </shape>
+
         <shape name="preview-schedule-bottom-backdrop" from="base_backdrop">
             <area>22,477,1236,203</area>
         </shape>
@@ -3046,7 +3135,7 @@
         </shape>
 
         <textarea name="titletext">
-            <area>40,43,1200,20</area>
+            <area>40,42,1200,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
