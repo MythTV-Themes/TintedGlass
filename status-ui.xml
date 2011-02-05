@@ -28,6 +28,14 @@
             </fill>
         </shape>
 
+        <shape name="status-top-first-line" from="base_line">
+            <area>34,98,1212,2</area>
+        </shape>
+
+        <shape name="status-top-second-line" from="base_line">
+            <area>34,417,1212,2</area>
+        </shape>
+
         <shape name="status-bottom-backdrop" from="base_backdrop">
             <area>22,452,1236,228</area>
         </shape>
