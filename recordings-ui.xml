@@ -81,6 +81,14 @@
             </fill>
         </shape>
 
+        <shape name="reclist-top-line" from="base_line">
+            <area>298,93,941,2</area>
+        </shape>
+
+        <shape name="reclist-bottom-line" from="base_line">
+            <area>298,413,941,2</area>
+        </shape>
+
         <shape name="bottom-list-backdrop" from="base_backdrop">
             <area>22,451,805,235</area>
         </shape>
@@ -160,7 +168,7 @@
         </buttonlist>
         
         <buttonlist name="recordings" from="base_list_large_selector">
-            <area>279,88,979,330</area>
+            <area>279,75,979,340</area>
             <align>bottom</align>
             <statetype name="buttonitem">
                 <state name="active">
@@ -182,7 +190,7 @@
                 </state>
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
-                    <area>0,0,979,70</area>
+                    <area>0,0,979,66</area>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>18,2,759,24</area>
                         <font state="normal">basesmall</font>
@@ -501,34 +509,34 @@
                         </state>
                     </statetype>
                     <textarea name="originalairdate" from="base_text_font_state_extrasmall">
-                        <area>18,46,214,20</area>
+                        <area>18,44,214,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
                         <template>Original Airdate: %1</template> 
                     </textarea>
                     <textarea name="repeat" from="base_text_font_state_extrasmall">
-                        <area>292,46,70,20</area>
+                        <area>292,44,70,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_extrasmall">
-                        <area>387,46,196,20</area>
+                        <area>387,44,196,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>601,46,360,20</area>
+                        <area>601,44,360,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>939,-12</position>
+                <position>939,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>939,328</position>
+                <position>939,339</position>
             </statetype>
         </buttonlist>
 
@@ -670,6 +678,14 @@
             </fill>
         </shape>
 
+        <shape name="reclist-top-line" from="base_line">
+            <area>298,93,941,2</area>
+        </shape>
+
+        <shape name="reclist-bottom-line" from="base_line">
+            <area>298,413,941,2</area>
+        </shape>
+
         <shape name="bottom-list-backdrop" from="base_backdrop">
             <area>22,451,805,235</area>
         </shape>
@@ -749,7 +765,7 @@
         </buttonlist>
         
         <buttonlist name="recordings" from="base_list_large_selector">
-            <area>279,88,979,330</area>
+            <area>279,75,979,340</area>
             <align>bottom</align>
             <statetype name="buttonitem">
                 <state name="active">
@@ -771,7 +787,7 @@
                 </state>
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
-                    <area>0,0,979,70</area>
+                    <area>0,0,979,66</area>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>18,2,759,24</area>
                         <font state="normal">basesmall</font>
@@ -1090,34 +1106,34 @@
                         </state>
                     </statetype>
                     <textarea name="originalairdate" from="base_text_font_state_extrasmall">
-                        <area>18,46,214,20</area>
+                        <area>18,44,214,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
                         <template>Original Airdate: %1</template>
                     </textarea>
                     <textarea name="repeat" from="base_text_font_state_extrasmall">
-                        <area>292,46,70,20</area>
+                        <area>292,44,70,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_extrasmall">
-                        <area>387,46,196,20</area>
+                        <area>387,44,196,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>601,46,360,20</area>
+                        <area>601,44,360,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>939,-12</position>
+                <position>939,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>939,328</position>
+                <position>939,339</position>
             </statetype>
         </buttonlist>
 

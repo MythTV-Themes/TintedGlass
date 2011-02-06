@@ -23,6 +23,14 @@
             </fill>
         </shape>
 
+        <shape name="system-events-top-line" from="base_line">
+            <area>334,56,612,2</area>
+        </shape>
+
+        <shape name="system-events-bottom-line" from="base_line">
+            <area>334,505,612,2</area>
+        </shape>
+
         <shape name="system-events-bottom-backdrop" from="base_backdrop">
             <area>22,539,1236,143</area>
         </shape>
@@ -123,6 +131,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="theme-chooser-top-line" from="base_line">
+            <area>29,62,595,2</area>
+        </shape>
+
+        <shape name="theme-chooser-bottom-line" from="base_line">
+            <area>29,657,595,2</area>
         </shape>
 
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">
@@ -231,6 +247,9 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,609,68</area>
+		    <shape name="top_line" from="base_list_line">
+                        <area>1%,0,99%,1</area>
+                    </shape>
                     <shape name="bottom_line" from="base_list_line">
                         <area>1%,98%,99%,1</area>
                     </shape>

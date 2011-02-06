@@ -23,6 +23,14 @@
                 </gradient>
             </fill>
         </shape>
+
+        <shape name="moviesel-top-line" from="base_line">
+            <area>335,63,610,2</area>
+        </shape>
+
+        <shape name="moviesel-bottom-line" from="base_line">
+            <area>335,658,610,2</area>
+        </shape>
         
         <textarea name="title" from="basetextarea">
             <area>323,42,634,20</area>
@@ -37,7 +45,7 @@
                 <state name="active">
                     <area>0,0,634,51</area>
                     <shape name="bottom_line" from="base_list_line">
-                        <area>1%,98%,99%,1</area>
+                        <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>15,3,59,44</area>
@@ -135,6 +143,14 @@
             </fill>
         </shape>
 
+        <shape name="artworksel-top-line" from="base_line">
+            <area>347,66,586,2</area>
+        </shape>
+
+        <shape name="artworksel-bottom-line" from="base_line">
+            <area>347,654,586,2</area>
+        </shape>
+
         <textarea name="title" from="basetextarea">
             <area>332,36,616,34</area>
             <value>Online Artwork Selector</value>
@@ -149,7 +165,7 @@
                 <state name="active">
                     <area>0,0,610,100</area>
                     <shape name="bottom_line" from="base_list_line">
-                        <area>1%,98%,99%,1</area>
+                        <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>15,5,156,88</area>
@@ -424,6 +440,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="video-top-line" from="base_line">
+            <area>34,57,1211,2</area>
+        </shape>
+
+        <shape name="video-bottom-line" from="base_line">
+            <area>34,397,1211,2</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">
@@ -1735,6 +1759,14 @@
             </fill>
         </shape>
 
+        <shape name="video-tree-top-line" from="base_line">
+            <area>34,56,585,2</area>
+        </shape>
+
+        <shape name="video-tree-bottom-line" from="base_line">
+            <area>34,344,585,2</area>
+        </shape>
+
         <shape name="video-tree-files-backdrop" from="base_backdrop">
             <area>649,38,609,326</area>
         </shape>
@@ -1749,6 +1781,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="video-tree-files-top-line" from="base_line">
+            <area>661,56,585,2</area>
+        </shape>
+
+        <shape name="video-tree-files-bottom-line" from="base_line">
+            <area>661,344,585,2</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">

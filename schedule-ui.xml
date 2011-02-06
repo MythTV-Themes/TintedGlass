@@ -756,11 +756,11 @@
         </shape>
 
         <shape name="upcoming-list-top-line" from="base_line">
-            <area>34,107,1212,2</area>
+            <area>34,108,1212,2</area>
         </shape>
 
         <shape name="upcoming-list-bottom-line" from="base_line">
-            <area>34,448,1212,2</area>
+            <area>34,447,1212,2</area>
         </shape>
 
         <shape name="upcoming-bottom-backdrop" from="base_backdrop">
@@ -839,8 +839,8 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="schedules" from="base_list_medium_selector_large_width">
-            <area>22,90,1236,360</area>
+        <buttonlist name="schedules" from="base_list_large_selector_large_width">
+            <area>22,89,1236,360</area>
             <align>bottom</align>
             <statetype name="buttonitem">
                 <state name="active">
@@ -901,7 +901,7 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-6</position>
+                <position>1196,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
                 <position>1196,365</position>
@@ -1153,7 +1153,7 @@
         </shape>
 
         <textarea name="keyinstr">
-            <area>40,46,1200,20</area>
+            <area>40,45,1200,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>(1) Title (2) Priority (4) Type</value>
@@ -1167,7 +1167,7 @@
         </textarea>
 
         <textarea name="scheduleinfo" from="basetextarea">
-            <area>40,439,1200,20</area>
+            <area>40,438,1200,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
@@ -1842,14 +1842,14 @@
         </shape>
 
         <textarea name="keyinstr" from="basetextarea">
-            <area>20,47,1240,20</area>
+            <area>20,45,1240,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>(1) Time (2) Title</value>
         </textarea>
 
         <textarea name="curview" from="basetextarea">
-            <area>20,440,1240,20</area>
+            <area>20,438,1240,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
@@ -2329,7 +2329,7 @@
         </shape>
 
         <textarea name="keyinstr">
-            <area>40,46,1200,20</area>
+            <area>40,45,1200,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>(1) Title (2) Priority (4) Type</value>
@@ -2343,7 +2343,7 @@
         </textarea>
 
         <textarea name="scheduleinfo" from="basetextarea">
-            <area>40,439,1200,20</area>
+            <area>40,438,1200,20</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
