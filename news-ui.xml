@@ -28,6 +28,14 @@
             </fill>
         </shape>
 
+        <shape name="news-feeds-top-line" from="base_line">
+            <area>34,102,1212,2</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-line" from="base_line">
+            <area>34,454,1212,2</area>
+        </shape>
+
         <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
             <area>22,492,1236,188</area>
         </shape>
@@ -289,6 +297,14 @@
             </fill>
         </shape>
 
+        <shape name="news-config-contexts-top-line" from="base_line">
+            <area>41,66,458,2</area>
+        </shape>
+
+        <shape name="news-config-contexts-bottom-line" from="base_line">
+            <area>41,655,458,2</area>
+        </shape>
+
         <shape name="news-config-actions-backdrop" from="base_backdrop">
             <area>532,38,726,644</area>
         </shape>
@@ -303,6 +319,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="news-config-actions-top-line" from="base_line">
+            <area>546,66,698,2</area>
+        </shape>
+
+        <shape name="news-config-actions-bottom-line" from="base_line">
+            <area>546,655,698,2</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
