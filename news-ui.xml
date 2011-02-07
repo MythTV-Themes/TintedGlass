@@ -33,7 +33,7 @@
         </shape>
 
         <shape name="news-feeds-bottom-line" from="base_line">
-            <area>34,454,1212,2</area>
+            <area>34,453,1212,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-backdrop" from="base_backdrop">

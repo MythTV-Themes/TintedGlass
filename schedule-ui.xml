@@ -2040,7 +2040,7 @@
         </shape>
 
         <shape name="program-find-title-bottom-line" from="base_line">
-            <area>38,454,786,2</area>
+            <area>38,452,786,2</area>
         </shape>
 
         <shape name="program-find-times-edge-highlight" from="base_backdrop_with_edge_highlight">
@@ -2060,7 +2060,7 @@
         </shape>
 
         <shape name="program-find-times-bottom-line" from="base_line">
-            <area>870,454,372,2</area>
+            <area>870,452,372,2</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">

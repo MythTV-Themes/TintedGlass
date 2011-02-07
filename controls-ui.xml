@@ -79,6 +79,14 @@
             </fill>
         </shape>
 
+        <shape name="edit-keys-contexts-top-line" from="base_line">
+            <area>144,58,383,2</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-bottom-line" from="base_line">
+            <area>144,493,383,2</area>
+        </shape>
+
         <shape name="edit-keys-actions-backdrop" from="base_backdrop">
             <area>736,38,416,476</area>
         </shape>
@@ -93,6 +101,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="edit-keys-actions-top-line" from="base_line">
+            <area>752,58,383,2</area>
+        </shape>
+
+        <shape name="edit-keys-actions-bottom-line" from="base_line">
+            <area>752,493,383,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
@@ -116,8 +132,8 @@
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>136,35,400,30</area>
-            <font>basesmalleryellow</font>
+            <area>136,34,400,30</area>
+            <font>baseevensmalleryellow</font>
             <value>Contexts</value>
             <align>center</align>
         </textarea>
@@ -156,8 +172,8 @@
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>744,35,400,30</area>
-            <font>basesmalleryellow</font>
+            <area>744,34,400,30</area>
+            <font>baseevensmalleryellow</font>
             <value>Actions</value>
             <align>center</align>
         </textarea>
@@ -184,6 +200,7 @@
 
         <textarea name="description" from="basetextarea">
             <area>64,568,1152,56</area>
+            <font>basesmallblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>

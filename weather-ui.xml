@@ -991,6 +991,14 @@
             </fill>
         </shape>
 
+        <shape name="screen-setup-inactive-top-line" from="base_line">
+            <area>144,66,384,2</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-bottom-line" from="base_line">
+            <area>144,451,384,2</area>
+        </shape>
+
         <shape name="screen-setup-active-backdrop" from="base_backdrop">
             <area>736,38,416,442</area>
         </shape>
@@ -1005,6 +1013,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="screen-setup-active-top-line" from="base_line">
+            <area>752,66,384,2</area>
+        </shape>
+
+        <shape name="screen-setup-active-bottom-line" from="base_line">
+            <area>752,451,384,2</area>
         </shape>
 
         <shape name="screen-setup-bottom-backdrop" from="base_backdrop">
@@ -1136,6 +1152,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="weather-source-top-line" from="base_line">
+            <area>38,68,384,2</area>
+        </shape>
+
+        <shape name="weather-source-bottom-line" from="base_line">
+            <area>38,482,384,2</area>
         </shape>
 
         <shape name="weather-data-retrieval-backdrop" from="base_backdrop">
@@ -1287,6 +1311,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="weather-search-middle-top-line" from="base_line">
+            <area>34,215,1212,2</area>
+        </shape>
+
+        <shape name="weather-search-middle-bottom-line" from="base_line">
+            <area>34,502,1212,2</area>
         </shape>
 
         <shape name="weather-search-bottom-backdrop" from="base_backdrop">
