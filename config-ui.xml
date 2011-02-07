@@ -40,6 +40,14 @@
             </fill>
         </shape>
 
+        <shape name="icon-import-icon-list-top-line" from="base_line">
+            <area>444,189,392,2</area>
+        </shape>
+
+        <shape name="icon-import-icon-list-bottom-line" from="base_line">
+            <area>444,652,392,2</area>
+        </shape>
+
         <textarea name="manuallabel" from="basetextarea">
             <area>268,55,150,30</area>
             <font>basesmall</font>
@@ -62,8 +70,8 @@
         </button>
 
         <textarea name="name" from="basetextarea">
-            <area>440,161,400,20</area>
-            <font>basesmalleryellow</font>
+            <area>440,166,400,20</area>
+            <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
@@ -142,6 +150,14 @@
             </fill>
         </shape>
 
+        <shape name="edit-channels-top-line" from="base_line">
+            <area>34,59,1212,2</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-line" from="base_line">
+            <area>34,411,1212,2</area>
+        </shape>
+
         <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
             <area>22,450,1236,232</area>
         </shape>
@@ -158,7 +174,7 @@
             </fill>
         </shape>
 
-        <shape name="edit-channels-bottom-line" from="base_line">
+        <shape name="edit-channels-bottom-bottom-line" from="base_line">
             <area>45,624,1190,2</area>
         </shape>
 

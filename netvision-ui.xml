@@ -46,6 +46,14 @@
             </fill>
         </shape>
 
+        <shape name="netvision-search-sites-top-line" from="base_line">
+            <area>38,132,372,2</area>
+        </shape>
+
+        <shape name="netvision-search-sites-bottom-line" from="base_line">
+            <area>38,363,372,2</area>
+        </shape>
+
         <shape name="netvision-search-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>438,108,822,281</area>
             <fill style="gradient">
@@ -56,6 +64,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="netvision-search-list-top-line" from="base_line">
+            <area>456,132,786,2</area>
+        </shape>
+
+        <shape name="netvision-search-list-bottom-line" from="base_line">
+            <area>456,363,786,2</area>
         </shape>
 
         <shape name="netvision-search-description-backdrop" from="base_backdrop">
@@ -256,6 +272,14 @@
             </fill>
         </shape>
 
+        <shape name="manage-sites-top-line" from="base_line">
+            <area>291,56,698,2</area>
+        </shape>
+
+        <shape name="manage-sites-bottom-line" from="base_line">
+            <area>291,661,698,2</area>
+        </shape>
+
         <buttonlist name="grabbers" from="base_list">
             <area>277,56,726,610</area>
             <statetype name="buttonitem">
@@ -327,6 +351,14 @@
                     <stop position="100" color="#ffffff" alpha="160" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-middle-top-line" from="base_line">
+            <area>291,131,698,2</area>
+        </shape>
+
+        <shape name="manage-rss-subscriptions-middle-bottom-line" from="base_line">
+            <area>291,451,698,2</area>
         </shape>
 
         <shape name="manage-rss-subscriptions-bottom-backdrop" from="base_backdrop">
@@ -602,6 +634,14 @@
             </fill>
         </shape>
 
+        <shape name="netvision-list-sites-top-line" from="base_line">
+            <area>34,57,585,2</area>
+        </shape>
+
+        <shape name="netvision-list-sites-bottom-line" from="base_line">
+            <area>34,313,585,2</area>
+        </shape>
+
         <shape name="netvision-list-videos-backdrop" from="base_backdrop">
             <area>649,38,609,296</area>
         </shape>
@@ -616,6 +656,14 @@
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
+        </shape>
+
+        <shape name="netvision-list-videos-top-line" from="base_line">
+            <area>661,57,585,2</area>
+        </shape>
+
+        <shape name="netvision-list-videos-bottom-line" from="base_line">
+            <area>661,313,585,2</area>
         </shape>
 
         <shape name="netvision-description-backdrop" from="base_backdrop">

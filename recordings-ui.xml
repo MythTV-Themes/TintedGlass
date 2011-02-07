@@ -174,15 +174,15 @@
                 <state name="active">
                     <area>0,0,979,34</area>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>18,4,759,24</area>
+                        <area>18,3,759,24</area>
                         <font state="normal">basesmall</font>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,5,80,24</area>
+                        <area>795,4,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,9,72,18</area>
+                        <area>893,8,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -771,15 +771,15 @@
                 <state name="active">
                     <area>0,0,979,34</area>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>18,4,759,24</area>
+                        <area>18,3,759,24</area>
                         <font state="normal">basesmall</font>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,5,80,24</area>
+                        <area>795,4,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,9,72,18</area>
+                        <area>893,8,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>

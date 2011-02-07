@@ -28,7 +28,7 @@
         </shape>
 
         <shape name="system-events-bottom-line" from="base_line">
-            <area>334,505,612,2</area>
+            <area>334,503,612,2</area>
         </shape>
 
         <shape name="system-events-bottom-backdrop" from="base_backdrop">
@@ -138,7 +138,7 @@
         </shape>
 
         <shape name="theme-chooser-bottom-line" from="base_line">
-            <area>29,657,595,2</area>
+            <area>29,655,595,2</area>
         </shape>
 
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">

@@ -29,7 +29,7 @@
         </shape>
 
         <shape name="moviesel-bottom-line" from="base_line">
-            <area>335,658,610,2</area>
+            <area>335,656,610,2</area>
         </shape>
         
         <textarea name="title" from="basetextarea">
@@ -61,12 +61,12 @@
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>84,30,329,21</area>
+                        <area>84,28,329,21</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>419,31,200,18</area>
+                        <area>419,29,200,18</area>
                         <font>basesupersmallyellow</font>
                         <align>right,bottom</align>
                         <template>Released %1</template>
@@ -148,7 +148,7 @@
         </shape>
 
         <shape name="artworksel-bottom-line" from="base_line">
-            <area>347,654,586,2</area>
+            <area>347,651,586,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -159,7 +159,7 @@
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>335,66,610,596</area>
+            <area>335,66,610,600</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">
                 <state name="active">
@@ -447,7 +447,7 @@
         </shape>
 
         <shape name="video-bottom-line" from="base_line">
-            <area>34,397,1211,2</area>
+            <area>34,395,1211,2</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">
@@ -1764,7 +1764,7 @@
         </shape>
 
         <shape name="video-tree-bottom-line" from="base_line">
-            <area>34,344,585,2</area>
+            <area>34,343,585,2</area>
         </shape>
 
         <shape name="video-tree-files-backdrop" from="base_backdrop">
@@ -1788,7 +1788,7 @@
         </shape>
 
         <shape name="video-tree-files-bottom-line" from="base_line">
-            <area>661,344,585,2</area>
+            <area>661,343,585,2</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">

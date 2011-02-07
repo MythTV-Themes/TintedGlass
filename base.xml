@@ -201,6 +201,10 @@
         <color>#d9d900</color>
     </fontdef>
 
+    <fontdef name="baseevensmalleryellow" from="basesmaller">
+        <color>#d9d900</color>
+    </fontdef>
+
     <fontdef name="basesmalleryellow" from="basesmaller">
         <color>#d9d900</color>
     </fontdef>
@@ -1754,13 +1758,21 @@
             </fill>
         </shape>
 
+        <shape name="file-browser-top-line" from="base_line">
+            <area>660,63,585,2</area>
+        </shape>
+
+        <shape name="file-browser-bottom-line" from="base_line">
+            <area>660,653,585,2</area>
+        </shape>
+
         <buttonlist name="filelist" from="base_list_large_selector">
             <area>648,64,609,596</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,609,51</area>
                     <shape name="bottom_line" from="base_list_line">
-                        <area>1%,98%,99%,1</area>
+                        <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>15,3,80,45</area>

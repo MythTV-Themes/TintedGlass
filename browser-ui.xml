@@ -44,6 +44,14 @@
             <cornerradius>10</cornerradius>
         </shape>
 
+        <shape name="web-browser-top-line" from="base_line">
+            <area>42,114,1196,2</area>
+        </shape>
+
+        <shape name="web-browser-bottom-line" from="base_line">
+            <area>42,640,1196,2</area>
+        </shape>
+
         <buttonlist name="pagelist" from="base_selector">
             <area>30,43,400,40</area>
             <statetype name="buttonitem">
@@ -121,6 +129,14 @@
             </fill>
         </shape>
 
+        <shape name="bookmark-list-top-line" from="base_line">
+            <area>34,109,1212,2</area>
+        </shape>
+
+        <shape name="bookmark-list-bottom-line" from="base_line">
+            <area>34,651,1212,2</area>
+        </shape>
+
         <buttonlist name="grouplist">
             <area>0,35,1280,30</area>
             <spacing>0</spacing>
@@ -160,15 +176,15 @@
         </buttonlist>
 
         <textarea name="namelabel" from="basetextarea">
-            <font>basesmallyellow</font>
-            <area>20,83,520,24</area>
+            <font>baseevensmalleryellow</font>
+            <area>20,84,520,24</area>
             <align>allcenter</align>
             <value>Website Name</value>
         </textarea>
 
         <textarea name="urllabel" from="basetextarea">
-            <font>basesmallyellow</font>
-            <area>600,83,710,24</area>
+            <font>baseevensmalleryellow</font>
+            <area>600,84,710,24</area>
             <align>allcenter</align>
             <value>Website URL</value>
         </textarea>
