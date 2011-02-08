@@ -884,15 +884,10 @@
                     <textarea name="subtitle" from="base_text_font_state_smaller">
                         <area>436,28,783,20</area>
                     </textarea>
-<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
-<!--
-                    <textarea name="status" from="basetextarea">
-                        <area>400,25,350,20</area>
-                        <font>baseextrasmallyellow</font>
-                        <font state="warning">baseextrasmallred</font>
-                        <align>vcenter</align>
+                    <textarea name="longrepeat" from="base_text_font_state_extrasmall">
+                        <area>380,48,476,20</area>
+                        <align>allcenter</align>
                     </textarea>
--->
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
                         <area>937,48,282,20</area>
                         <align>right,vcenter</align>
@@ -3107,7 +3102,7 @@
         </shape>
 
         <shape name="preview-schedule-list-bottom-line" from="base_line">
-            <area>34,437,1212,2</area>
+            <area>34,436,1212,2</area>
         </shape>
 
         <shape name="preview-schedule-bottom-backdrop" from="base_backdrop">

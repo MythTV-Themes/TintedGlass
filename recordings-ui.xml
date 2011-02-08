@@ -533,10 +533,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>939,0</position>
+                <position>931,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>939,339</position>
+                <position>931,339</position>
             </statetype>
         </buttonlist>
 

@@ -51,7 +51,7 @@
         </shape>
 
         <shape name="netvision-search-sites-bottom-line" from="base_line">
-            <area>38,363,372,2</area>
+            <area>38,362,372,2</area>
         </shape>
 
         <shape name="netvision-search-list-edge-highlight" from="base_backdrop_with_edge_highlight">
@@ -71,7 +71,7 @@
         </shape>
 
         <shape name="netvision-search-list-bottom-line" from="base_line">
-            <area>456,363,786,2</area>
+            <area>456,362,786,2</area>
         </shape>
 
         <shape name="netvision-search-description-backdrop" from="base_backdrop">
