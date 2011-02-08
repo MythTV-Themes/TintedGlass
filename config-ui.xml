@@ -155,7 +155,7 @@
         </shape>
 
         <shape name="edit-channels-bottom-line" from="base_line">
-            <area>34,411,1212,2</area>
+            <area>34,410,1212,2</area>
         </shape>
 
         <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
