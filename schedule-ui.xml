@@ -1177,11 +1177,11 @@
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
-                        <area>60,5,580,24</area>
+                        <area>60,5,570,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                     <textarea name="callsign" from="rectype">
-                        <area>660,5,114,24</area>
+                        <area>650,5,124,24</area>
                     </textarea>
                     <textarea name="progpriority" from="rectype">
                         <area>932,5,40,24</area>
@@ -1195,10 +1195,10 @@
                 <state name="selectedactive">
                     <area>0,0,1236,46</area>
                     <textarea name="title" from="buttontext">
-                        <area>18,1,622,24</area>
+                        <area>18,1,612,24</area>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>660,1,114,24</area>
+                        <area>650,1,162,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="progpriority" from="title">
@@ -2353,11 +2353,11 @@
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
-                        <area>60,5,580,24</area>
+                        <area>60,5,570,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                     <textarea name="callsign" from="rectype">
-                        <area>660,5,114,24</area>
+                        <area>650,5,124,24</area>
                     </textarea>
                     <textarea name="lastrecorded" from="rectype">
                         <area>784,5,276,24</area>
@@ -2372,10 +2372,10 @@
                 <state name="selectedactive">
                     <area>0,0,1236,46</area>
                     <textarea name="title" from="buttontext">
-                        <area>18,1,622,24</area>
+                        <area>18,1,612,24</area>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>660,1,114,24</area>
+                        <area>650,1,409,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="finalpriority" from="title">
