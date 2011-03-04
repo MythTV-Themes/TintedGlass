@@ -13,19 +13,7 @@
         </shape>
 
         <shape name="news-feeds-backdrop" from="base_backdrop">
-            <area>22,80,1236,396</area>
-        </shape>
-
-        <shape name="news-feeds-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,78,1240,400</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-feeds-top-line" from="base_line">
@@ -37,19 +25,7 @@
         </shape>
 
         <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
-            <area>22,492,1236,188</area>
-        </shape>
-
-        <shape name="news-feeds-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,490,1240,192</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-feeds-bottom-top-line" from="base_line">
@@ -192,35 +168,11 @@
         </textarea>
 
         <shape name="news-edit-top-backdrop" from="base_backdrop">
-            <area>217,38,846,512</area>
-        </shape>
-
-        <shape name="news-edit-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>215,36,850,516</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-edit-bottom-backdrop" from="base_backdrop">
-            <area>22,566,1236,116</area>
-        </shape>
-
-        <shape name="news-edit-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,564,1240,120</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="11" color="#000000" alpha="80" />
-                    <stop position="89" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-edit-bottom-line" from="base_line">
@@ -282,19 +234,7 @@
         </textarea>
 
         <shape name="news-config-contexts-backdrop" from="base_backdrop">
-            <area>22,38,496,644</area>
-        </shape>
-
-        <shape name="news-config-contexts-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,500,648</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-config-contexts-top-line" from="base_line">
@@ -306,19 +246,7 @@
         </shape>
 
         <shape name="news-config-actions-backdrop" from="base_backdrop">
-            <area>532,38,726,644</area>
-        </shape>
-
-        <shape name="news-config-actions-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>530,36,730,648</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="news-config-actions-top-line" from="base_line">

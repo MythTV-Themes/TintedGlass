@@ -9,39 +9,12 @@
         </textarea>
 
         <shape name="browser_page_list_backdrop" from="base_backdrop">
-            <area>22,38,1236,49</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
-        <shape name="browser-page-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,53</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="22" color="#000000" alpha="80" />
-                    <stop position="78" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
         <shape name="web_browser_backdrop" from="base_backdrop">
-            <area>22,103,1236,548</area>
-            <cornerradius>10</cornerradius>
-        </shape>
-
-        <shape name="web-browser-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,101,1240,552</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
-            <cornerradius>10</cornerradius>
         </shape>
 
         <shape name="web-browser-top-line" from="base_line">
@@ -114,19 +87,7 @@
         </shape>
 
         <shape name="bookmark-list-backdrop" from="base_backdrop">
-            <area>22,80,1236,602</area>
-        </shape>
-
-        <shape name="bookmark-list-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,78,1240,606</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="bookmark-list-top-line" from="base_line">
@@ -242,35 +203,11 @@
         </textarea>
 
         <shape name="configure-web-browser-top-backdrop" from="base_backdrop">
-            <area>217,38,846,485</area>
-        </shape>
-
-        <shape name="configure-web-browser-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>215,36,850,489</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="configure-web-browser-bottom-backdrop" from="base_backdrop">
-            <area>22,539,1236,143</area>
-        </shape>
-
-        <shape name="configure-web-browser-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,537,1240,147</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="10" color="#000000" alpha="80" />
-                    <stop position="90" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="configure-web-browser-bottom-line" from="base_line">
@@ -332,19 +269,7 @@
         <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="bookmark-editor-backdrop" from="base_popup_backdrop">
-            <area>234,104,812,512</area>
-        </shape>
-
-        <shape name="bookmark-editor-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>232,102,816,516</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="0" />
-                    <stop position="97" color="#000000" alpha="0" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="bookmark-editor-fist-line" from="base_line">

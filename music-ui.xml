@@ -1085,19 +1085,7 @@
         </textarea>
 
         <shape name="import-files-top-backdrop" from="base_backdrop">
-            <area>22,41,1236,128</area>
-        </shape>
-
-        <shape name="import-files-top-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,39,1240,132</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="11" color="#000000" alpha="80" />
-                    <stop position="89" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="import-files-top-fist-line" from="base_line">
@@ -1117,35 +1105,11 @@
         </shape>
 
         <shape name="import-files-middle-backdrop" from="base_backdrop">
-            <area>22,186,1236,349</area>
-        </shape>
-
-        <shape name="import-files-middle-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,184,1240,353</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="import-files-bottom-backdrop" from="base_backdrop">
-            <area>22,552,1236,128</area>
-        </shape>
-
-        <shape name="import-files-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,550,1240,132</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="11" color="#000000" alpha="80" />
-                    <stop position="89" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="import-files-bottom-fist-line" from="base_line">
@@ -1356,19 +1320,7 @@
         <area>0,0,1280,720</area>
 
         <shape name="mini-player-backdrop" from="base_popup_backdrop">
-            <area>428,630,423,108</area>
-        </shape>
-
-        <shape name="mini-player-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>426,628,427,112</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="13" color="#000000" alpha="0" />
-                    <stop position="87" color="#000000" alpha="0" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1410,35 +1362,11 @@
         </textarea>
 
         <shape name="import-cd-backdrop" from="base_backdrop">
-            <area>22,45,1236,214</area>
-        </shape>
-
-        <shape name="import-cd-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,43,1240,218</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="6" color="#000000" alpha="80" />
-                    <stop position="94" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="import-cd-bottom-backdrop" from="base_backdrop">
-            <area>22,275,1236,401</area>
-        </shape>
-
-        <shape name="import-cd-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,273,1240,405</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="import-cd-list-highlight" from="base_backdrop_fanart">
@@ -1655,19 +1583,7 @@
         <shape name="darken" from="base_darken_popup_background" />
 
 	<shape name="cd-rip-backdrop" from="base_popup_backdrop">
-            <area>242,182,796,356</area>
-        </shape>
-
-        <shape name="cd-rip-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>240,180,800,360</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="0" />
-                    <stop position="96" color="#000000" alpha="0" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <textarea name="overall_label" from="basetextarea">

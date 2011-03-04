@@ -9,41 +9,16 @@
         </textarea>
 
         <shape name="netvision-search-term-backdrop" from="base_backdrop">
-            <area>238,38,800,56</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
-        <shape name="netvision-search-term-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>236,36,804,60</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="22" color="#000000" alpha="80" />
-                    <stop position="78" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
         <shape name="netvision-search-sites-backdrop" from="base_backdrop">
-            <area>22,110,404,277</area>
+            <area>20,108,408,281</area>
         </shape>
 
         <shape name="netvision-search-list-backdrop" from="base_backdrop">
-            <area>440,110,818,277</area>
-        </shape>
-
-        <shape name="netvision-search-sites-edge-highlight" from="base_backdrop_with_edge_highlight">
-            <area>20,108,408,281</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
+            <area>438,108,822,281</area>
         </shape>
 
         <shape name="netvision-search-sites-top-line" from="base_line">
@@ -52,18 +27,6 @@
 
         <shape name="netvision-search-sites-bottom-line" from="base_line">
             <area>38,362,372,2</area>
-        </shape>
-
-        <shape name="netvision-search-list-edge-highlight" from="base_backdrop_with_edge_highlight">
-            <area>438,108,822,281</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-search-list-top-line" from="base_line">
@@ -75,19 +38,7 @@
         </shape>
 
         <shape name="netvision-search-description-backdrop" from="base_backdrop">
-            <area>22,403,1236,284</area>
-        </shape>
-
-        <shape name="netvision-search-description-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,401,1240,288</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-search-description-first-line" from="base_line">
@@ -257,19 +208,7 @@
         </textarea>
 
         <shape name="manage-sites-backdrop" from="base_backdrop">
-            <area>277,38,726,644</area>
-        </shape>
-
-        <shape name="manage-sites-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>275,36,730,648</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="manage-sites-top-line" from="base_line">
@@ -320,37 +259,12 @@
         </textarea>
 
         <shape name="manage-rss-subscriptions-top-backdrop" from="base_backdrop">
-            <area>277,38,726,56</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
-        <shape name="manage-rss-subscriptions-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>275,36,730,60</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="22" color="#000000" alpha="80" />
-                    <stop position="78" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
         <shape name="manage-rss-subscriptions-middle-backdrop" from="base_backdrop">
-            <area>277,110,726,364</area>
-        </shape>
-
-        <shape name="manage-rss-subscriptions-middle-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>275,108,730,368</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="manage-rss-subscriptions-middle-top-line" from="base_line">
@@ -362,19 +276,7 @@
         </shape>
 
         <shape name="manage-rss-subscriptions-bottom-backdrop" from="base_backdrop">
-            <area>22,490,1236,192</area>
-        </shape>
-
-        <shape name="manage-rss-subscriptions-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,488,1240,196</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="7" color="#000000" alpha="80" />
-                    <stop position="93" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="manage-rss-subscriptions-description-first-line" from="base_line">
@@ -506,35 +408,11 @@
         </textarea>
 
         <shape name="manage-rss-top-backdrop" from="base_backdrop">
-            <area>217,38,846,512</area>
-        </shape>
-
-        <shape name="manage-rss-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>215,36,850,516</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="manage-rss-bottom-backdrop" from="base_backdrop">
-            <area>22,566,1236,116</area>
-        </shape>
-
-        <shape name="manage-rss-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,564,1240,120</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="12" color="#000000" alpha="80" />
-                    <stop position="88" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="manage-rss-bottom-line" from="base_line">
@@ -619,19 +497,7 @@
         </textarea>
 
         <shape name="netvision-list-sites-backdrop" from="base_backdrop">
-            <area>22,38,609,296</area>
-        </shape>
-
-        <shape name="netvision-list-sites-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,613,300</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-list-sites-top-line" from="base_line">
@@ -643,19 +509,7 @@
         </shape>
 
         <shape name="netvision-list-videos-backdrop" from="base_backdrop">
-            <area>649,38,609,296</area>
-        </shape>
-
-        <shape name="netvision-list-videos-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>647,36,613,300</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-list-videos-top-line" from="base_line">
@@ -667,19 +521,7 @@
         </shape>
 
         <shape name="netvision-description-backdrop" from="base_backdrop">
-            <area>22,358,1236,324</area>
-        </shape>
-
-        <shape name="netvision-list-description-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,356,1240,328</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="90" />
-                    <stop position="96" color="#000000" alpha="90" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-list-description-first-line" from="base_line">
@@ -859,37 +701,12 @@
         </textarea>
 
         <shape name="netvision-browse-backdrop" from="base_backdrop">
-            <area>-2,59,1284,244</area>
+            <area>0,57,1280,248</area>
             <type>box</type>
-        </shape>
-
-        <shape name="netvision-browse-edge-highlight" from="base_backdrop_with_edge_highlight">
-            <area>-4,57,1288,248</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="5" color="#000000" alpha="80" />
-                    <stop position="95" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-browse-description-backdrop" from="base_backdrop">
-            <area>22,368,1236,314</area>
-        </shape>
-
-        <shape name="netvision-browse-description-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,366,1240,318</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-browse-description-fist-line" from="base_line">
@@ -1103,37 +920,12 @@
         </textarea>
 
         <shape name="netvision-gallery-backdrop" from="base_backdrop">
-            <area>-2,38,1284,314</area>
+            <area>0,36,1280,318</area>
             <type>box</type>
-        </shape>
-
-        <shape name="netvision-gallery-edge-highlight" from="base_backdrop_with_edge_highlight">
-            <area>-4,36,1288,318</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-gallery-description-backdrop" from="base_backdrop">
-            <area>22,368,1236,314</area>
-        </shape>
-
-        <shape name="netvision-gallery-description-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,366,1240,318</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000"alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="netvision-gallery-description-fist-line" from="base_line">

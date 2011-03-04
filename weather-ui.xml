@@ -9,37 +9,12 @@
         </textarea>
 
         <shape name="weather-base-top-backdrop" from="base_backdrop">
-            <area>22,38,1236,56</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
-        <shape name="weather-base-top-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,60</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="20" color="#000000" alpha="80" />
-                    <stop position="80" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
             <cornerradius>90</cornerradius>
         </shape>
 
         <shape name="weather-base-bottom-backdrop" from="base_backdrop">
-            <area>22,110,1236,572</area>
-        </shape>
-
-        <shape name="weather-base-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,108,1240,576</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="2" color="#000000" alpha="80" />
-                    <stop position="98" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-base-bottom-top-line" from="base_line">
@@ -908,35 +883,11 @@
         </textarea>
 
         <shape name="global-settings-top-backdrop" from="base_backdrop">
-            <area>217,38,846,512</area>
-        </shape>
-
-        <shape name="global-settings-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>215,36,850,516</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="global-settings-bottom-backdrop" from="base_backdrop">
-            <area>22,566,1236,116</area>
-        </shape>
-
-        <shape name="global-settings-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,564,1240,120</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="12" color="#000000" alpha="80" />
-                    <stop position="88" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="global-settings-bottom-line" from="base_line">
@@ -976,19 +927,7 @@
         </textarea>
 
         <shape name="screen-setup-inactive-backdrop" from="base_backdrop">
-            <area>128,38,416,442</area>
-        </shape>
-
-        <shape name="screen-setup-inactive-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>126,36,420,446</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="screen-setup-inactive-top-line" from="base_line">
@@ -1000,19 +939,7 @@
         </shape>
 
         <shape name="screen-setup-active-backdrop" from="base_backdrop">
-            <area>736,38,416,442</area>
-        </shape>
-
-        <shape name="screen-setup-active-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>734,36,420,446</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="screen-setup-active-top-line" from="base_line">
@@ -1024,19 +951,7 @@
         </shape>
 
         <shape name="screen-setup-bottom-backdrop" from="base_backdrop">
-            <area>22,496,1236,186</area>
-        </shape>
-
-        <shape name="screen-setup-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,494,1240,190</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="8" color="#000000" alpha="80" />
-                    <stop position="92" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="screen-setup-bottom-line" from="base_line">
@@ -1139,19 +1054,7 @@
         </textarea>
 
         <shape name="weather-source-backdrop" from="base_backdrop">
-            <area>22,38,416,475</area>
-        </shape>
-
-        <shape name="weather-source-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,420,479</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-source-top-line" from="base_line">
@@ -1163,19 +1066,7 @@
         </shape>
 
         <shape name="weather-data-retrieval-backdrop" from="base_backdrop">
-            <area>462,38,796,475</area>
-        </shape>
-
-        <shape name="weather-data-retrieval-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>460,36,800,479</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="3" color="#000000" alpha="80" />
-                    <stop position="97" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-data-retrieval-top-line" from="base_line">
@@ -1187,19 +1078,7 @@
         </shape>
 
         <shape name="weather-source-bottom-backdrop" from="base_backdrop">
-            <area>22,566,1236,116</area>
-        </shape>
-
-        <shape name="weather-source-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,564,1240,120</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="12" color="#000000" alpha="80" />
-                    <stop position="88" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-source-bottom-backdrop-line" from="base_line">
@@ -1278,19 +1157,7 @@
         </textarea>
 
         <shape name="weather-search-top-backdrop" from="base_backdrop">
-            <area>22,38,1236,143</area>
-        </shape>
-
-        <shape name="weather-search-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,36,1240,147</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="10" color="#000000" alpha="80" />
-                    <stop position="90" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-search-top-line" from="base_line">
@@ -1298,19 +1165,7 @@
         </shape>
 
         <shape name="weather-search-middle-backdrop" from="base_backdrop">
-            <area>22,197,1236,326</area>
-        </shape>
-
-        <shape name="weather-search-middle-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,195,1240,330</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="4" color="#000000" alpha="80" />
-                    <stop position="96" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-search-middle-top-line" from="base_line">
@@ -1322,19 +1177,7 @@
         </shape>
 
         <shape name="weather-search-bottom-backdrop" from="base_backdrop">
-            <area>22,539,1236,143</area>
-        </shape>
-
-        <shape name="weather-search-bottom-edge-highlight" from="base_backdrop_with_edge_highlight">
             <area>20,537,1240,147</area>
-            <fill style="gradient">
-                <gradient alpha="170" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="10" color="#000000" alpha="80" />
-                    <stop position="90" color="#000000" alpha="80" />
-                    <stop position="100" color="#ffffff" alpha="160" />
-                </gradient>
-            </fill>
         </shape>
 
         <shape name="weather-search-bottom-line" from="base_line">
