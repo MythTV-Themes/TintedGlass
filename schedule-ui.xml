@@ -9,99 +9,103 @@
         </textarea>
 
         <shape name="guide-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,429</area>
+            <area>20,36,1240,417</area>
         </shape>
 
         <shape name="guide-bottom-backdrop" from="base_backdrop">
-            <area>20,475,1240,210</area>
+            <area>20,463,1240,222</area>
         </shape>
 
         <shape name="time-top-line" from="base_line">
-            <area>34,50,1212,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="channel-left-end-separator" from="base_vertical_line">
-            <area>34,52,2,35</area>
+            <area>28,46,2,35</area>
         </shape>
 
         <shape name="time-right-end-separator" from="base_vertical_line">
-            <area>1244,52,2,35</area>
+            <area>1250,46,2,35</area>
         </shape>
 
         <shape name="guide-grid-top-line" from="base_line">
-            <area>34,87,1212,2</area>
+            <area>28,81,1224,2</area>
         </shape>
 
         <shape name="guide-grid-bottom-line" from="base_line">
-            <area>34,449,1212,2</area>
+            <area>28,443,1224,2</area>
         </shape>
 
         <shape name="guide-grid-left-line" from="base_vertical_line">
-            <area>34,89,2,360</area>
+            <area>28,83,2,360</area>
         </shape>
 
         <shape name="guide-grid-middle-line" from="base_vertical_line">
-            <area>242,89,2,360</area>
+            <area>238,83,2,360</area>
         </shape>
 
         <shape name="guide-grid-right-line" from="base_vertical_line">
-            <area>1244,89,2,360</area>
+            <area>1250,83,2,360</area>
         </shape>
 
         <shape name="first-channel-separator" from="base_line">
-            <area>51,148,176,2</area>
+            <area>45,142,178,2</area>
         </shape>
 
         <shape name="second-channel-separator" from="base_line">
-            <area>51,208,176,2</area>
+            <area>45,202,178,2</area>
         </shape>
 
         <shape name="third-channel-separator" from="base_line">
-            <area>51,268,176,2</area>
+            <area>45,262,178,2</area>
         </shape>
 
         <shape name="fourth-channel-separator" from="base_line">
-            <area>51,328,176,2</area>
+            <area>45,322,178,2</area>
         </shape>
 
         <shape name="fifth-channel-separator" from="base_line">
-            <area>51,388,176,2</area>
-        </shape>
-
-        <shape name="guide-title-bottom-line" from="base_line">
-            <area>34,514,1212,2</area>
+            <area>45,382,178,2</area>
         </shape>
 
         <shape name="guide-description-top-line" from="base_line">
-            <area>34,554,1212,2</area>
+            <area>28,471,1224,2</area>
         </shape>
 
         <shape name="guide-description-bottom-line" from="base_line">
-            <area>34,668,1212,2</area>
+            <area>28,675,1224,2</area>
         </shape>
 
         <shape name="guide-description-left-line" from="base_vertical_line">
-            <area>34,556,2,112</area>
+            <area>28,473,2,202</area>
         </shape>
 
         <shape name="guide-description-right-line" from="base_vertical_line">
-            <area>1244,556,2,112</area>
+            <area>1250,473,2,202</area>
+        </shape>
+
+        <shape name="guide-description-seperator-first-line" from="base_line">
+            <area>43,513,1194,2</area>
+        </shape>
+
+        <shape name="guide-description-seperator-second-line" from="base_line">
+            <area>43,555,1194,2</area>
         </shape>
 
         <textarea name="datetext" from="basetextarea">
-            <area>36,53,206,20</area>
+            <area>30,47,208,20</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="channelgroup" from="basetextarea">
-            <area>36,72,206,16</area>
+            <area>30,66,208,16</area>
             <align>allcenter</align>
             <font>baseextrasmallpurple</font>
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>244,89,1000,360</area>
+            <area>240,83,1010,360</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>5</timeslots>
@@ -127,18 +131,18 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>244,52,1000,35</area>
+            <area>240,46,1010,35</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1000,35</buttonarea>
+            <buttonarea>0,0,1010,35</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>-1,0,200,35</area>
+                    <area>-1,0,202,35</area>
                     <shape name="separator" from="base_vertical_line">
                         <area>0,5,2,26</area>
                     </shape>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,1,200,35</area>
+                        <area>0,1,202,35</area>
                         <font>basesmall</font>
                         <align>allcenter</align>
                     </textarea>
@@ -173,13 +177,13 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>36,89,206,360</area>
+            <area>30,83,208,360</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,206,360</buttonarea>
+            <buttonarea>0,0,208,360</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,206,60</area>
+                    <area>0,0,208,60</area>
                     <imagetype name="channelicon">
                         <area>6,6,64,48</area>
                         <preserveaspect>true</preserveaspect>
@@ -187,7 +191,7 @@
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>76,0,124,60</area>
+                        <area>76,0,126,60</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -226,32 +230,33 @@
         </buttonlist>
 
         <imagetype name="channelicon">
-            <area>36,482,38,30</area>
+            <area>44,478,38,30</area>
             <preserveaspect>true</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>94,472,1150,50</area>
+            <area>102,475,1132,35</area>
             <align>left,vcenter</align>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>36,520,640,30</area>
+            <area>44,520,640,30</area>
             <align>left,vcenter</align>
             <font>basesmallblue</font> 
         </textarea>
 
         <textarea name="description"  from="basetextarea">
-            <area>42,559,1196,112</area>
+            <area>44,565,1190,110</area>
+            <font>basesmall</font>
             <multiline>yes</multiline>
             <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>710,518,534,30</area>
+            <area>700,520,534,30</area>
             <align>right,vcenter</align>
             <font>basesmallblue</font>
         </textarea>
