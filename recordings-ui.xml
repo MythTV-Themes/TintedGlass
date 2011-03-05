@@ -19,66 +19,105 @@
             <value>Watch Recordings</value>
         </textarea>
 
-<!-- Mythtv has a fit if I use a shape with negative values here even though I can use it every where else ? -->
-<!--
-        <shape name="groupbox" from="base_group_box">
-            <area>-4,34,1288,30</area>
+        <shape name="groupbox" from="base_backdrop">
+            <area>0,34,1280,29</area>
+            <type>box</type>
         </shape>
--->
-        <shape name="groupbox-top-line">
+
+	<shape name="groupbox-top-line" from="base_line">
             <area>0,34,1280,2</area>
-            <type>box</type>
-            <fill color="#666666" alpha="170" />
         </shape>
 
-        <shape name="groupbox">
-            <area>0,36,1280,26</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient alpha="160" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="55" color="#000000" alpha="160" />
-                    <stop position="100" color="#000000" alpha="160" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="groupbox-bottom-line">
+        <shape name="groupbox-bottom-line" from="base_line">
             <area>0,61,1280,2</area>
-            <type>box</type>
-            <fill color="#666666" alpha="170" />
         </shape>
 
         <shape name="coverart-backdrop" from="base_backdrop">
-            <area>20,74,246,362</area>
+            <area>20,72,246,359</area>
+        </shape>
+
+        <shape name="coverart-top-line" from="base_line">
+            <area>28,80,231,2</area>
+        </shape>
+
+        <shape name="coverart-bottom-line" from="base_line">
+            <area>28,421,231,2</area>
+        </shape>
+
+        <shape name="coverart-left-line" from="base_vertical_line">
+            <area>28,82,2,339</area>
+        </shape>
+
+        <shape name="coverart-right-line" from="base_vertical_line">
+            <area>257,82,2,339</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
-            <area>277,74,983,362</area>
+            <area>277,72,983,359</area>
         </shape>
 
         <shape name="reclist-top-line" from="base_line">
-            <area>298,93,941,2</area>
+            <area>285,80,968,2</area>
         </shape>
 
         <shape name="reclist-bottom-line" from="base_line">
-            <area>298,413,941,2</area>
+            <area>285,421,968,2</area>
         </shape>
 
-        <shape name="bottom-list-backdrop" from="base_backdrop">
-            <area>20,449,809,239</area>
+        <shape name="reclist-left-line" from="base_vertical_line">
+            <area>285,82,2,339</area>
         </shape>
 
-        <shape name="bottom-list-top-line" from="base_line">
-            <area>40,486,769,2</area>
+        <shape name="reclist-right-line" from="base_vertical_line">
+            <area>1251,82,2,339</area>
         </shape>
 
-        <shape name="bottom-list-bottom-line" from="base_line">
-            <area>40,647,769,2</area>
+        <shape name="description-backdrop" from="base_backdrop">
+            <area>20,441,806,246</area>
+        </shape>
+
+        <shape name="description-top-line" from="base_line">
+            <area>28,449,791,2</area>
+        </shape>
+
+        <shape name="description-bottom-line" from="base_line">
+            <area>28,677,791,2</area>
+        </shape>
+
+        <shape name="description-left-line" from="base_vertical_line">
+            <area>28,451,2,226</area>
+        </shape>
+
+        <shape name="description-right-line" from="base_vertical_line">
+            <area>817,451,2,226</area>
+        </shape>
+
+        <shape name="description-seperator-top-line" from="base_line">
+            <area>40,482,769,2</area>
+        </shape>
+
+        <shape name="description-seperator-bottom-line" from="base_line">
+            <area>40,643,769,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>840,449,420,239</area>
+            <area>838,441,422,246</area>
+        </shape>
+
+        <shape name="preview-top-line" from="base_line">
+            <area>846,449,407,2</area>
+        </shape>
+
+        <shape name="preview-bottom-line" from="base_line">
+            <area>846,677,407,2</area>
+        </shape>
+
+        <shape name="preview-left-line" from="base_vertical_line">
+            <area>846,451,2,226</area>
+        </shape>
+
+        <shape name="preview-right-line" from="base_vertical_line">
+            <area>1251,451,2,226</area>
         </shape>
 
         <buttonlist name="groups">
@@ -120,21 +159,21 @@
         </buttonlist>
         
         <buttonlist name="recordings" from="base_list_large_selector">
-            <area>279,75,979,340</area>
-            <align>bottom</align>
+            <area>287,81,963,342</area>
+            <align>top</align>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,979,34</area>
+                    <area>0,0,963,36</area>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>18,3,759,24</area>
+                        <area>8,5,759,24</area>
                         <font state="normal">basesmall</font>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,4,80,24</area>
+                        <area>785,6,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,8,72,18</area>
+                        <area>883,9,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -142,18 +181,18 @@
                 </state>
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
-                    <area>0,0,979,66</area>
+                    <area>0,0,963,70</area>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
-                        <area>18,2,759,24</area>
+                        <area>8,2,759,24</area>
                         <font state="normal">basesmall</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,3,80,24</area>
+                        <area>785,3,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,7,72,18</area>
+                        <area>883,7,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -161,7 +200,7 @@
                     <statetype name="playlist">
                         <state name="no">
                             <textarea name="play-list" from="basetextarea">
-                                <area>42,26,80,20</area>
+                                <area>32,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -171,7 +210,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="play-list" from="basetextarea">
-                                <area>42,26,80,20</area>
+                                <area>32,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -183,7 +222,7 @@
                         <showempty>yes</showempty>
                         <state name="mono">
                             <textarea name="mono" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -192,7 +231,7 @@
                         </state>
                         <state name="stereo">
                             <textarea name="stereo" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -201,7 +240,7 @@
                         </state>
                         <state name="surround">
                             <textarea name="surround" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -210,7 +249,7 @@
                         </state>
                         <state name="dolby">
                             <textarea name="dolby" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -222,7 +261,7 @@
                         <showempty>yes</showempty>
                         <state name="hdtv">
                             <textarea name="hdtv" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -231,7 +270,7 @@
                         </state>
                         <state name="widescreen">
                             <textarea name="widescreen" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -240,7 +279,7 @@
                         </state>
                         <state name="avchd">
                             <textarea name="avchd" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -249,7 +288,7 @@
                         </state>
                         <state name="hd720">
                             <textarea name="hd720" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -258,7 +297,7 @@
                         </state>
                         <state name="hd1080">
                             <textarea name="hd1080" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -269,7 +308,7 @@
                     <statetype name="watched">
                         <state name="no">
                             <textarea name="watchedoff" from="basetextarea">
-                                <area>233,26,80,20</area>
+                                <area>223,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -279,7 +318,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="watchedoff" from="basetextarea">
-                                <area>233,26,80,20</area>
+                                <area>223,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -290,7 +329,7 @@
                     <statetype name="autoexpire">
                         <state name="no">
                             <textarea name="autoexpireoff" from="basetextarea">
-                                <area>323,26,80,20</area>
+                                <area>313,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -300,7 +339,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="autoexpire" from="basetextarea">
-                                <area>323,26,80,20</area>
+                                <area>313,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -311,7 +350,7 @@
                     <statetype name="commflagged">
                         <state name="no">
                             <textarea name="commflaggedoff" from="basetextarea">
-                                <area>418,26,90,20</area>
+                                <area>408,26,90,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -321,7 +360,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="commflagged" from="basetextarea">
-                                <area>418,26,90,20</area>
+                                <area>408,26,90,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -332,7 +371,7 @@
                     <statetype name="bookmark">
                         <state name="no">
                             <textarea name="bookmarkoff" from="basetextarea">
-                                <area>526,26,90,20</area>
+                                <area>516,26,90,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -342,7 +381,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="bookmark" from="basetextarea">
-                                <area>526,26,90,20</area>
+                                <area>516,26,90,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -353,7 +392,7 @@
                     <statetype name="cutlist">
                         <state name="no">
                             <textarea name="cutlistoff" from="basetextarea">
-                                <area>618,26,80,20</area>
+                                <area>608,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -363,7 +402,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="cutlist" from="basetextarea">
-                                <area>618,26,80,20</area>
+                                <area>608,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -372,7 +411,7 @@
                         </state>
                     </statetype>
                     <textarea name="onscreensuboff" from="basetextarea">
-                        <area>694,26,80,20</area>
+                        <area>684,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -380,7 +419,7 @@
                         <value>SUBTITLES</value>
                     </textarea>
                     <textarea name="subtitleoff" from="basetextarea">
-                        <area>694,26,80,20</area>
+                        <area>684,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -388,7 +427,7 @@
                         <value>SUBTITLES</value>
                     </textarea>
                     <textarea name="ccoff" from="basetextarea">
-                        <area>752,26,80,20</area>
+                        <area>742,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -399,7 +438,7 @@
                         <showempty>yes</showempty>
                         <state name="onscreensub">
                             <textarea name="onscreensub" from="basetextarea">
-                                <area>694,26,80,20</area>
+                                <area>684,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -408,7 +447,7 @@
                         </state>
                         <state name="subtitles">
                             <textarea name="subtitles" from="basetextarea">
-                                <area>694,26,80,20</area>
+                                <area>684,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -417,7 +456,7 @@
                         </state>
                         <state name="cc">
                             <textarea name="ccoff" from="basetextarea">
-                                <area>752,26,80,20</area>
+                                <area>742,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -429,7 +468,7 @@
                         <state name="commflagging">
                             <area>0,0,100%,100%</area>
                             <textarea name="commflagging" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -440,7 +479,7 @@
                         <state name="recording">
                             <area>0,0,100%,100%</area>
                             <textarea name="recording" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -451,7 +490,7 @@
                         <state name="transcoding">
                            <area>0,0,100%,100%</area>
                            <textarea name="transcoding" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -461,58 +500,57 @@
                         </state>
                     </statetype>
                     <textarea name="originalairdate" from="base_text_font_state_extrasmall">
-                        <area>18,44,214,20</area>
+                        <area>8,46,260,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
                         <template>Original Airdate: %1</template> 
                     </textarea>
                     <textarea name="repeat" from="base_text_font_state_extrasmall">
-                        <area>292,44,70,20</area>
+                        <area>292,46,70,20</area>
                         <font state="normal">baseextrasmall</font>
-                        <align>vcenter</align>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_extrasmall">
-                        <area>387,44,196,20</area>
+                        <area>380,46,190,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>601,44,360,20</area>
+                        <area>595,46,360,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>931,0</position>
+                <position>949,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>931,339</position>
+                <position>949,341</position>
             </statetype>
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>23,76,240,356</area>
-            <mask>images/masks/recordings_coverart_mask.png</mask>
+            <area>30,82,226,339</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>40,457,769,24</area>
+            <area>40,454,769,24</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,491,769,151</area>
+            <area>40,487,769,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>86,660</position>
+            <position>86,656</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -524,15 +562,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>20,667,809,20</area>
+            <area>20,660,809,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>844,451,414,233</area>
-            <mask>images/masks/preview_mask.png</mask>
+            <area>848,451,402,226</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -565,69 +602,108 @@
         <shape name="heading-backdrop" from="base_heading_backdrop" />
 
         <textarea name="heading" from="base_heading">
-            <value>Delete Recordings</value>
+            <value>Watch Recordings</value>
         </textarea>
 
-<!-- Mythtv has a fit if I use a shape with negative values here even though I can use it every where else ? -->
-<!--
-        <shape name="groupbox" from="base_group_box">
-            <area>-4,34,1288,30</area>
+        <shape name="groupbox" from="base_backdrop">
+            <area>0,34,1280,29</area>
+            <type>box</type>
         </shape>
--->
-        <shape name="groupbox-top-line">
+
+	<shape name="groupbox-top-line" from="base_line">
             <area>0,34,1280,2</area>
-            <type>box</type>
-            <fill color="#666666" alpha="170" />
         </shape>
 
-        <shape name="groupbox">
-            <area>0,36,1280,26</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient alpha="160" direction="vertical">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="55" color="#000000" alpha="160" />
-                    <stop position="100" color="#000000" alpha="160" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="groupbox-bottom-line">
+        <shape name="groupbox-bottom-line" from="base_line">
             <area>0,61,1280,2</area>
-            <type>box</type>
-            <fill color="#666666" alpha="170" />
         </shape>
 
         <shape name="coverart-backdrop" from="base_backdrop">
-            <area>20,74,246,362</area>
+            <area>20,72,246,359</area>
+        </shape>
+
+        <shape name="coverart-top-line" from="base_line">
+            <area>28,80,231,2</area>
+        </shape>
+
+        <shape name="coverart-bottom-line" from="base_line">
+            <area>28,421,231,2</area>
+        </shape>
+
+        <shape name="coverart-left-line" from="base_vertical_line">
+            <area>28,82,2,339</area>
+        </shape>
+
+        <shape name="coverart-right-line" from="base_vertical_line">
+            <area>257,82,2,339</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
-            <area>277,74,983,362</area>
+            <area>277,72,983,359</area>
         </shape>
 
         <shape name="reclist-top-line" from="base_line">
-            <area>298,93,941,2</area>
+            <area>285,80,968,2</area>
         </shape>
 
         <shape name="reclist-bottom-line" from="base_line">
-            <area>298,413,941,2</area>
+            <area>285,421,968,2</area>
         </shape>
 
-        <shape name="bottom-list-backdrop" from="base_backdrop">
-            <area>20,449,809,239</area>
+        <shape name="reclist-left-line" from="base_vertical_line">
+            <area>285,82,2,339</area>
         </shape>
 
-        <shape name="bottom-list-top-line" from="base_line">
-            <area>40,486,769,2</area>
+        <shape name="reclist-right-line" from="base_vertical_line">
+            <area>1251,82,2,339</area>
         </shape>
 
-        <shape name="bottom-list-bottom-line" from="base_line">
-            <area>40,647,769,2</area>
+        <shape name="description-backdrop" from="base_backdrop">
+            <area>20,441,806,246</area>
+        </shape>
+
+        <shape name="description-top-line" from="base_line">
+            <area>28,449,791,2</area>
+        </shape>
+
+        <shape name="description-bottom-line" from="base_line">
+            <area>28,677,791,2</area>
+        </shape>
+
+        <shape name="description-left-line" from="base_vertical_line">
+            <area>28,451,2,226</area>
+        </shape>
+
+        <shape name="description-right-line" from="base_vertical_line">
+            <area>817,451,2,226</area>
+        </shape>
+
+        <shape name="description-seperator-top-line" from="base_line">
+            <area>40,482,769,2</area>
+        </shape>
+
+        <shape name="description-seperator-bottom-line" from="base_line">
+            <area>40,643,769,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>840,449,420,239</area>
+            <area>838,441,422,246</area>
+        </shape>
+
+        <shape name="preview-top-line" from="base_line">
+            <area>846,449,407,2</area>
+        </shape>
+
+        <shape name="preview-bottom-line" from="base_line">
+            <area>846,677,407,2</area>
+        </shape>
+
+        <shape name="preview-left-line" from="base_vertical_line">
+            <area>846,451,2,226</area>
+        </shape>
+
+        <shape name="preview-right-line" from="base_vertical_line">
+            <area>1251,451,2,226</area>
         </shape>
 
         <buttonlist name="groups">
@@ -669,21 +745,21 @@
         </buttonlist>
         
         <buttonlist name="recordings" from="base_list_large_selector">
-            <area>279,75,979,340</area>
-            <align>bottom</align>
+            <area>287,81,963,342</area>
+            <align>top</align>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,979,34</area>
+                    <area>0,0,963,36</area>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>18,3,759,24</area>
+                        <area>8,5,759,24</area>
                         <font state="normal">basesmall</font>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,4,80,24</area>
+                        <area>785,6,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,8,72,18</area>
+                        <area>883,9,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -691,18 +767,18 @@
                 </state>
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
-                    <area>0,0,979,66</area>
+                    <area>0,0,963,70</area>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
-                        <area>18,2,759,24</area>
+                        <area>8,2,759,24</area>
                         <font state="normal">basesmall</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
-                        <area>795,3,80,24</area>
+                        <area>785,3,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
-                        <area>893,7,72,18</area>
+                        <area>883,7,72,18</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -710,7 +786,7 @@
                     <statetype name="playlist">
                         <state name="no">
                             <textarea name="play-list" from="basetextarea">
-                                <area>42,26,80,20</area>
+                                <area>32,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -720,7 +796,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="play-list" from="basetextarea">
-                                <area>42,26,80,20</area>
+                                <area>32,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -732,7 +808,7 @@
                         <showempty>yes</showempty>
                         <state name="mono">
                             <textarea name="mono" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -741,7 +817,7 @@
                         </state>
                         <state name="stereo">
                             <textarea name="stereo" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -750,7 +826,7 @@
                         </state>
                         <state name="surround">
                             <textarea name="surround" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -759,7 +835,7 @@
                         </state>
                         <state name="dolby">
                             <textarea name="dolby" from="basetextarea">
-                                <area>96,26,80,20</area>
+                                <area>86,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -771,7 +847,7 @@
                         <showempty>yes</showempty>
                         <state name="hdtv">
                             <textarea name="hdtv" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -780,7 +856,7 @@
                         </state>
                         <state name="widescreen">
                             <textarea name="widescreen" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -789,7 +865,7 @@
                         </state>
                         <state name="avchd">
                             <textarea name="avchd" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -798,7 +874,7 @@
                         </state>
                         <state name="hd720">
                             <textarea name="hd720" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -807,7 +883,7 @@
                         </state>
                         <state name="hd1080">
                             <textarea name="hd1080" from="basetextarea">
-                                <area>160,26,80,20</area>
+                                <area>150,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -818,7 +894,7 @@
                     <statetype name="watched">
                         <state name="no">
                             <textarea name="watchedoff" from="basetextarea">
-                                <area>233,26,80,20</area>
+                                <area>223,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -828,7 +904,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="watchedoff" from="basetextarea">
-                                <area>233,26,80,20</area>
+                                <area>223,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -839,7 +915,7 @@
                     <statetype name="autoexpire">
                         <state name="no">
                             <textarea name="autoexpireoff" from="basetextarea">
-                                <area>323,26,80,20</area>
+                                <area>313,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -849,7 +925,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="autoexpire" from="basetextarea">
-                                <area>323,26,80,20</area>
+                                <area>313,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -860,7 +936,7 @@
                     <statetype name="commflagged">
                         <state name="no">
                             <textarea name="commflaggedoff" from="basetextarea">
-                                <area>418,26,90,20</area>
+                                <area>408,26,90,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -870,7 +946,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="commflagged" from="basetextarea">
-                                <area>418,26,90,20</area>
+                                <area>408,26,90,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -881,7 +957,7 @@
                     <statetype name="bookmark">
                         <state name="no">
                             <textarea name="bookmarkoff" from="basetextarea">
-                                <area>526,26,90,20</area>
+                                <area>516,26,90,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -891,7 +967,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="bookmark" from="basetextarea">
-                                <area>526,26,90,20</area>
+                                <area>516,26,90,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -902,7 +978,7 @@
                     <statetype name="cutlist">
                         <state name="no">
                             <textarea name="cutlistoff" from="basetextarea">
-                                <area>618,26,80,20</area>
+                                <area>608,26,80,20</area>
                                 <font>basesupersmall</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -912,7 +988,7 @@
                         </state>
                         <state name="yes">
                             <textarea name="cutlist" from="basetextarea">
-                                <area>618,26,80,20</area>
+                                <area>608,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -921,7 +997,7 @@
                         </state>
                     </statetype>
                     <textarea name="onscreensuboff" from="basetextarea">
-                        <area>694,26,80,20</area>
+                        <area>684,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -929,7 +1005,7 @@
                         <value>SUBTITLES</value>
                     </textarea>
                     <textarea name="subtitleoff" from="basetextarea">
-                        <area>694,26,80,20</area>
+                        <area>684,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -937,7 +1013,7 @@
                         <value>SUBTITLES</value>
                     </textarea>
                     <textarea name="ccoff" from="basetextarea">
-                        <area>752,26,80,20</area>
+                        <area>742,26,80,20</area>
                         <font>basesupersmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -948,7 +1024,7 @@
                         <showempty>yes</showempty>
                         <state name="onscreensub">
                             <textarea name="onscreensub" from="basetextarea">
-                                <area>694,26,80,20</area>
+                                <area>684,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -957,7 +1033,7 @@
                         </state>
                         <state name="subtitles">
                             <textarea name="subtitles" from="basetextarea">
-                                <area>694,26,80,20</area>
+                                <area>684,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -966,7 +1042,7 @@
                         </state>
                         <state name="cc">
                             <textarea name="ccoff" from="basetextarea">
-                                <area>752,26,80,20</area>
+                                <area>742,26,80,20</area>
                                 <font>basesupersmallblue</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -978,7 +1054,7 @@
                         <state name="commflagging">
                             <area>0,0,100%,100%</area>
                             <textarea name="commflagging" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>left,vcenter</align>
@@ -989,7 +1065,7 @@
                         <state name="recording">
                             <area>0,0,100%,100%</area>
                             <textarea name="recording" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -1000,7 +1076,7 @@
                         <state name="transcoding">
                            <area>0,0,100%,100%</area>
                            <textarea name="transcoding" from="basetextarea">
-                                <area>814,26,92,20</area>
+                                <area>804,26,92,20</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -1010,58 +1086,57 @@
                         </state>
                     </statetype>
                     <textarea name="originalairdate" from="base_text_font_state_extrasmall">
-                        <area>18,44,214,20</area>
+                        <area>8,46,260,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
-                        <template>Original Airdate: %1</template>
+                        <template>Original Airdate: %1</template> 
                     </textarea>
                     <textarea name="repeat" from="base_text_font_state_extrasmall">
-                        <area>292,44,70,20</area>
+                        <area>292,46,70,20</area>
                         <font state="normal">baseextrasmall</font>
-                        <align>vcenter</align>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_extrasmall">
-                        <area>387,44,196,20</area>
+                        <area>380,46,190,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>601,44,360,20</area>
+                        <area>595,46,360,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>931,0</position>
+                <position>949,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>931,339</position>
+                <position>949,341</position>
             </statetype>
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>23,76,240,356</area>
-            <mask>images/masks/recordings_coverart_mask.png</mask>
+            <area>30,82,226,339</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>40,457,769,24</area>
+            <area>40,454,769,24</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,491,769,151</area>
+            <area>40,487,769,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>86,660</position>
+            <position>86,656</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -1073,15 +1148,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>20,667,809,20</area>
+            <area>20,660,809,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>844,451,414,233</area>
-            <mask>images/masks/preview_mask.png</mask>
+            <area>848,451,402,226</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -1228,7 +1302,7 @@
         </shape>
 
         <shape name="group-selector-backdrop" from="base_popup_backdrop">
-            <area>450,128,380,462</area>
+            <area>450,128,380,463</area>
         </shape>
 
         <shape name="group-selector-first-line" from="base_line">

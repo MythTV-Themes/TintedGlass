@@ -428,14 +428,14 @@
     <shape name="base_select_bar_selectedactive_large">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="160">
-                <stop position="0" color="#ffffff" />
-                <stop position="55" color="#0a0a0e" alpha="160" />
-                <stop position="100" color="#0a0a0e" alpha="160" />
+            <gradient direction="vertical" alpha="255">
+                <stop position="0" color="#777777" />
+                <stop position="45" color="#0a0a0e" alpha="255" />
+                <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>15</cornerradius>
+        <cornerradius>0</cornerradius>
     </shape>
 
     <!-- Base definition of a selected button background -->
@@ -1288,39 +1288,39 @@
     <window name="MythPopupBox">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background">
-            <area>0,0,1280,720</area>
-        </shape>
-
         <shape name="popup-backdrop" from="base_popup_backdrop">
             <area>440,128,400,463</area>
         </shape>
 
         <shape name="popup-first-line" from="base_line">
-            <area>454,140,372,2</area>
+            <area>448,136,384,2</area>
         </shape>
 
         <shape name="popup-second-line" from="base_line">
-            <area>454,302,372,2</area>
+            <area>463,302,354,2</area>
+        </shape>
+
+        <shape name="popup-third-line" from="base_line">
+            <area>448,581,384,2</area>
         </shape>
 
         <shape name="popup-left-line" from="base_vertical_line">
-            <area>454,142,2,160</area>
+            <area>448,138,2,443</area>
         </shape>
 
         <shape name="popup-right-line" from="base_vertical_line">
-            <area>824,142,2,160</area>
+            <area>830,138,2,443</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>462,148,356,146</area>
+            <area>456,144,368,152</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>455,310,370,264</area>
+            <area>455,316,370,264</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,370,40</area>
@@ -1343,10 +1343,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
         <statetype name="upscrollarrow">
-            <position>10,257</position>
+            <position>0,255</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>40,257</position>
+            <position>20,255</position>
         </statetype>
         </buttonlist>
     </window>
@@ -1424,17 +1424,33 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>335,288,602,144</area>
+            <area>339,288,602,144</area>
+        </shape>
+
+        <shape name="busy-dialog-first-line" from="base_line">
+            <area>347,296,586,2</area>
+        </shape>
+
+        <shape name="busy-dialog-second-line" from="base_line">
+            <area>347,424,586,2</area>
+        </shape>
+
+        <shape name="busy-dialog-left-line" from="base_vertical_line">
+            <area>347,298,2,126</area>
+        </shape>
+
+        <shape name="busy-dialog-right-line" from="base_vertical_line">
+            <area>931,298,2,126</area>
         </shape>
 
         <imagetype name="animation">
-            <position>372,352</position>
+            <position>372,353</position>
             <filepattern low="1" high="60" cycle="reverse">images/busy/busy%1.png</filepattern>
             <delay>14</delay>
         </imagetype>
 
         <textarea name="message" from="basetextarea">
-            <area>347,376,586,50</area>
+            <area>351,374,578,45</area>
             <font>basesmalleryellow</font>
             <multiline>true</multiline>
             <align>allcenter</align>
