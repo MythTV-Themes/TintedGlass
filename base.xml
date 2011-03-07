@@ -1356,30 +1356,32 @@
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
             <area>236,102,815,516</area>
         </shape>
 
-        <shape name="large-dialogbox-first-line" from="base_line">
-            <area>250,116,787,2</area>
+        <shape name="large-dialogbox-top-line" from="base_line">
+            <area>244,110,799,2</area>
         </shape>
 
-        <shape name="large-dialogbox-second-line" from="base_line">
-            <area>250,400,787,2</area>
+        <shape name="large-dialogbox-bottom-line" from="base_line">
+            <area>244,608,799,2</area>
         </shape>
 
         <shape name="large-dialogbox-left-line" from="base_vertical_line">
-            <area>250,118,2,282</area>
+            <area>244,112,2,496</area>
         </shape>
 
         <shape name="large-dialogbox-right-line" from="base_vertical_line">
-            <area>1035,118,2,282</area>
+            <area>1041,112,2,496</area>
+        </shape>
+
+        <shape name="large-dialogbox-seperator-first-line" from="base_line">
+            <area>259,400,769,2</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>258,124,771,270</area>
+            <area>250,118,785,276</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
@@ -1412,10 +1414,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,174</position>
+                <position>0,174</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,174</position>
+                <position>20,174</position>
             </statetype>
         </buttonlist>
     </window>

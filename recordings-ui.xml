@@ -3,6 +3,7 @@
 <mythuitheme>
 
     <window name="watchrecordings">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -589,6 +590,7 @@
 
 <!-- Exact copy of watchrecordings except for the heading.-->
     <window name="deleterecordings">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -1380,7 +1382,6 @@
     </window>
 
     <window name="iconhelp">
-
         <area>-1,-1,1280,720</area>
 
         <shape name="icon-help-backdrop" from="base_popup_backdrop">

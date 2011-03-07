@@ -3,6 +3,7 @@
 <mythuitheme>
 
     <window name="programguide">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Guide</value>
@@ -264,6 +265,7 @@
     </window>
 
     <window name="programguide-video">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Guide Video</value>
@@ -543,6 +545,7 @@
     </window>
 
     <window name="manualschedule">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Manual Schedule</value>
@@ -687,6 +690,7 @@
     </window>
 
     <window name="viewscheduled">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Upcoming Recordings</value>
@@ -889,7 +893,7 @@
         </textarea>
 
         <textarea name="norecordings_info">
-            <area>40,98,1200,360</area>
+            <area>30,88,1220,337</area>
             <font>basemedium</font>
             <value>You Haven't Scheduled Any Programs To Be Recorded\n\nTo schedule a recording, exit this screen and\nSelect 'Program Guide' or 'Program Finder'</value>
             <multiline>yes</multiline>
@@ -899,6 +903,7 @@
     </window>
 
     <window name="channelrecpriority">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Channel Recording Priorities</value>
@@ -1060,141 +1065,138 @@
     </window>
 
     <window name="programrecpriority">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Record Priority</value>
         </textarea>
 
         <shape name="program-record-priority-list-backdrop" from="base_backdrop">
-            <area>20,39,1240,424</area>
+            <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="program-record-list-top-line" from="base_line">
-            <area>34,68,1212,2</area>
+        <shape name="program-record-priority-list-top-line" from="base_line">
+            <area>28,44,1224,2</area>
         </shape>
 
-        <shape name="program-record-list-bottom-line" from="base_line">
-            <area>34,433,1212,2</area>
+        <shape name="program-record-priority-list-bottom-line" from="base_line">
+            <area>28,409,1224,2</area>
+        </shape>
+
+        <shape name="program-record-priority-list-left-line" from="base_vertical_line">
+            <area>28,46,2,363</area>
+        </shape>
+
+        <shape name="program-record-priority-list-right-line" from="base_vertical_line">
+            <area>1250,46,2,363</area>
         </shape>
 
         <shape name="program-record-priority-bottom-backdrop" from="base_backdrop">
-            <area>20,475,1240,207</area>
+            <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="program-record-bottom-top-line" from="base_line">
-            <area>45,515,1190,2</area>
+        <shape name="program-record-priority-bottom-top-line" from="base_line">
+            <area>28,437,1224,2</area>
         </shape>
 
-        <shape name="program-record-bottom-bottom-line" from="base_line">
-            <area>45,642,1190,2</area>
+        <shape name="program-record-priority-bottom-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
         </shape>
 
-        <textarea name="keyinstr">
-            <area>40,45,1200,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-            <value>(1) Title (2) Priority (4) Type</value>
-        </textarea>
+        <shape name="program-record-priority-bottom-left-line" from="base_vertical_line">
+            <area>28,439,2,236</area>
+        </shape>
 
-        <textarea name="norecordings_info" from="basetextarea">
-            <area>20,39,1240,424</area>
-            <font>basesmall</font>
-            <align>allcenter</align>
-            <value>There are no Recordings Scheduled...</value>
-        </textarea>
+        <shape name="program-record-priority-bottom-right-line" from="base_vertical_line">
+            <area>1250,439,2,236</area>
+        </shape>
 
-        <textarea name="scheduleinfo" from="basetextarea">
-            <area>40,438,1200,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-        </textarea>
+        <shape name="program-record-priority-bottom-seperator-first-line" from="base_line">
+            <area>43,479,1194,2</area>
+        </shape>
+
+        <shape name="program-record-priority-bottom-seperator-second-line" from="base_line">
+            <area>43,633,1194,2</area>
+        </shape>
 
         <buttonlist name="programs" from="base_list_medium_selector_large_width">
-            <area>22,69,1236,368</area>
+            <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,34</area>
                     <textarea name="rectype" from="buttontext">
-                        <area>18,5,14,24</area>
+                        <area>8,5,14,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
-                        <area>60,5,570,24</area>
+                        <area>50,5,574,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                     <textarea name="callsign" from="rectype">
-                        <area>650,5,124,24</area>
+                        <area>644,5,124,24</area>
                     </textarea>
                     <textarea name="progpriority" from="rectype">
-                        <area>932,5,40,24</area>
+                        <area>926,5,40,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="finalpriority" from="rectype">
-                        <area>1184,5,34,24</area>
+                        <area>1178,5,34,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,46</area>
+                    <area>0,0,1220,46</area>
                     <textarea name="title" from="buttontext">
-                        <area>18,1,612,24</area>
+                        <area>8,1,616,24</area>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>650,1,162,24</area>
+                        <area>644,1,162,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="progpriority" from="title">
-                        <area>832,1,140,24</area>
+                        <area>826,1,140,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                         <template>Priority:  %1</template>
                     </textarea>
                     <textarea name="finalpriority" from="title">
-                        <area>1032,1,186,24</area>
+                        <area>1026,1,186,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                         <template>Final Priority:  %1</template>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>18,25,350,20</area>
+                        <area>8,25,354,20</area>
                     </textarea>
                     <textarea name="category" from="rectypestatus">
-                        <area>388,25,252,20</area>
+                        <area>382,25,252,20</area>
                         <template>Category: %1</template>
                     </textarea>
                     <textarea name="channel" from="rectypestatus">
-                        <area>660,25,378,20</area>
+                        <area>654,25,318,20</area>
                     </textarea>
-<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
-<!--
-                    <textarea name="rectypepriority" from="rectypestatus">
-                        <area>860,25,132,20</area>
-                        <align>right,vcenter</align>
-                        <template>Type Priority: %1</template>
-                    </textarea>
--->
                     <textarea name="lastrecorded" from="rectypestatus">
-                        <area>1058,25,160,20</area>
+                        <area>992,25,220,20</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-23</position>
+                <position>1197,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,370</position>
+                <position>1197,366</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>40,480,1200,34</area>
+            <area>44,442,1192,34</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,516,1200,128</area>
+            <area>44,483,1192,150</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -1202,15 +1204,36 @@
         </textarea>
 
         <textarea name="rectypepriority" from="basetextarea">
-            <area>40,649,1200,24</area>
-            <font>basesmallyellow</font>
+            <area>44,646,397,18</area>
+            <font>baseextrasmallblue</font>
             <align>allcenter</align>
             <template>Type Priority: %1</template>
+        </textarea>
+
+        <textarea name="keyinstr">
+            <area>441,646,398,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+            <value>(1) Title (2) Priority (4) Type</value>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="basetextarea">
+            <area>839,646,397,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="norecordings_info" from="basetextarea">
+            <area>30,46,1220,363</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>There are no Recordings Scheduled...</value>
         </textarea>
 
     </window>
 
     <window name="custompriority">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Custom Priority Rules</value>
@@ -1220,12 +1243,44 @@
             <area>20,36,1240,516</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="custom-priority-rules-top-line" from="base_line">
+            <area>28,44,1224,2</area>
         </shape>
 
-        <shape name="custom-priority-ruiles-bottom-line" from="base_line">
-            <area>45,626,1190,2</area>
+        <shape name="custom-priority-rules-bottom-line" from="base_line">
+            <area>28,542,1224,2</area>
+        </shape>
+
+        <shape name="custom-priority-rules-left-line" from="base_vertical_line">
+            <area>28,46,2,496</area>
+        </shape>
+
+        <shape name="custom-priority-rules-right-line" from="base_vertical_line">
+            <area>1250,46,2,496</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,121</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-top-line" from="base_line">
+            <area>28,572,1224,2</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-left-line" from="base_vertical_line">
+            <area>28,574,2,101</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-right-line" from="base_vertical_line">
+            <area>1250,574,2,101</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-seperator-first-line" from="base_line">
+            <area>43,624,1194,2</area>
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
@@ -1349,53 +1404,67 @@
         </textedit>
 
         <button name="cancel" from="base_button">
-            <position>78,637</position>
+            <position>78,633</position>
             <value>Cancel</value>
         </button>
 
         <button name="delete" from="base_button">
-            <position>400,637</position>
+            <position>400,633</position>
             <value>Delete</value>
         </button>
 
         <button name="test" from="base_button">
-            <position>732,637</position>
+            <position>732,633</position>
             <value>Test</value>
         </button>
 
         <button name="install" from="base_button">
-            <position>1054,637</position>
+            <position>1054,633</position>
             <value>Install</value>
         </button>
 
     </window>
 
-        <window name="phrasepopup">
+    <window name="phrasepopup">
         <area>-1,-1,1280,720</area>
-
-        <shape name="darken" from="base_darken_popup_background" />
 
         <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
             <area>390,110,500,500</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line" from="base_line">
-            <area>425,160,430,2</area>
+        <shape name="phrase-popup-top-line" from="base_line">
+            <area>398,118,484,2</area>
         </shape>
 
-        <shape name="edit-powersearch-bottom-line" from="base_line">
-            <area>425,550,430,2</area>
+        <shape name="phrase-popup-bottom-line" from="base_line">
+            <area>398,600,484,2</area>
+        </shape>
+
+        <shape name="phrase-popup-left-line" from="base_vertical_line">
+            <area>398,120,2,480</area>
+        </shape>
+
+        <shape name="phrase-popup-right-line" from="base_vertical_line">
+            <area>880,120,2,480</area>
+        </shape>
+
+        <shape name="phrase-popup-seperator-first-line" from="base_line">
+            <area>413,160,454,2</area>
+        </shape>
+
+        <shape name="phrase-popup-seperator-second-line" from="base_line">
+            <area>413,546,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>410,120,460,40</area>
-            <font>baselargedarkyellow</font>
+            <area>400,123,480,34</area>
+            <font>basemediumlargerdarkyellow</font>
             <align>hcenter,top</align>
             <value>Search Term</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>410,175,460,320</area>
+            <area>410,174,460,320</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,460,40</area>
@@ -1412,29 +1481,29 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,310</position>
+                <position>0,310</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,310</position>
+                <position>20,310</position>
             </statetype>
         </buttonlist>
 
         <textedit name="phrase_edit" from="base_textedit">
-            <area>500,509,287,32</area>
+            <area>500,505,287,32</area>
         </textedit>
 
         <button name="ok_button" from="base_button">
-            <position>405,562</position>
+            <position>405,557</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>566,562</position>
+            <position>566,557</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>726,562</position>
+            <position>726,557</position>
             <value>Record</value>
         </button>
 
@@ -1443,10 +1512,24 @@
     <window name="timepopup">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="time-popup-backdrop" from="base_popup_backdrop">
             <area>350,278,580,165</area>
+        </shape>
+
+        <shape name="time-popup-top-line" from="base_line">
+            <area>358,286,564,2</area>
+        </shape>
+
+        <shape name="time-popup-bottom-line" from="base_line">
+            <area>358,433,564,2</area>
+        </shape>
+
+        <shape name="time-popup-left-line" from="base_vertical_line">
+            <area>358,288,2,145</area>
+        </shape>
+
+        <shape name="time-popup-right-line" from="base_vertical_line">
+            <area>920,288,2,145</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1495,24 +1578,38 @@
     <window name="powersearchpopup">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="power-search-backdrop" from="base_popup_backdrop">
             <area>390,110,500,500</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line" from="base_line">
-            <area>425,160,430,2</area>
+        <shape name="power-search-top-line" from="base_line">
+            <area>398,118,484,2</area>
         </shape>
 
-        <shape name="edit-powersearch-bottom-line" from="base_line">
-            <area>425,550,430,2</area>
+        <shape name="power-search-bottom-line" from="base_line">
+            <area>398,600,484,2</area>
+        </shape>
+
+        <shape name="power-search-left-line" from="base_vertical_line">
+            <area>398,120,2,480</area>
+        </shape>
+
+        <shape name="power-search-right-line" from="base_vertical_line">
+            <area>880,120,2,480</area>
+        </shape>
+
+        <shape name="power-search-seperator-first-line" from="base_line">
+            <area>413,160,454,2</area>
+        </shape>
+
+        <shape name="power-search-seperator-second-line" from="base_line">
+            <area>413,545,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>410,120,460,40</area>
-            <font>baselargedarkyellow</font>
-            <align>hcenter,top</align>
+            <area>400,122,480,34</area>
+            <font>basemediumlargerdarkyellow</font>
+            <align>allcenter</align>
             <value>Select Search</value>
         </textarea>
 
@@ -1534,25 +1631,25 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,349</position>
+                <position>0,349</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,349</position>
+                <position>20,349</position>
             </statetype>
         </buttonlist>
 
         <button name="edit_button" from="base_button">
-            <position>405,562</position>
+            <position>405,556</position>
             <value>Edit</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>566,562</position>
+            <position>566,556</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>726,562</position>
+            <position>726,556</position>
             <value>Record</value>
         </button>
 
@@ -1561,24 +1658,38 @@
     <window name="editpowersearchpopup">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
             <area>390,85,500,550</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line" from="base_line">
-            <area>425,135,430,2</area>
+        <shape name="edit-power-search-top-line" from="base_line">
+            <area>398,93,484,2</area>
         </shape>
 
-        <shape name="edit-powersearch-bottom-line" from="base_line">
-            <area>425,567,430,2</area>
+        <shape name="edit-power-search-bottom-line" from="base_line">
+            <area>398,625,484,2</area>
+        </shape>
+
+        <shape name="edit-power-search-left-line" from="base_vertical_line">
+            <area>398,95,2,530</area>
+        </shape>
+
+        <shape name="edit-power-search-right-line" from="base_vertical_line">
+            <area>880,95,2,530</area>
+        </shape>
+
+        <shape name="edit-power-search-seperator-first-line" from="base_line">
+            <area>413,135,454,2</area>
+        </shape>
+
+        <shape name="edit-power-search-seperator-second-line" from="base_line">
+            <area>413,567,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>410,95,460,40</area>
-            <font>baselargedarkyellow</font>
-            <align>hcenter,top</align>
+            <area>400,97,480,34</area>
+            <font>basemediumlargerdarkyellow</font>
+            <align>allcenter</align>
             <value>Edit Power Search Fields</value>
         </textarea>
 
@@ -1646,149 +1757,183 @@
         </buttonlist>
 
         <button name="ok_button" from="base_medium_button">
-            <position>465,581</position>
+            <position>465,577</position>
             <value>OK</value>
         </button>
 
     </window>
 
     <window name="programlist">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Listings</value>
         </textarea>
 
         <shape name="previously-recorded-backdrop" from="base_backdrop">
-            <area>20,39,1240,424</area>
+            <area>20,36,1240,383</area>
         </shape>
 
         <shape name="previously-recorded-list-top-line" from="base_line">
-            <area>34,68,1212,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="previously-recorded-list-bottom-line" from="base_line">
-            <area>34,433,1212,2</area>
+            <area>28,409,1224,2</area>
+        </shape>
+
+        <shape name="previously-recorded-list-left-line" from="base_vertical_line">
+            <area>28,46,2,363</area>
+        </shape>
+
+        <shape name="previously-recorded-list-right-line" from="base_vertical_line">
+            <area>1250,46,2,363</area>
         </shape>
 
         <shape name="previously-recorded-bottom-backdrop" from="base_backdrop">
-            <area>20,475,1240,207</area>
+            <area>20,429,1240,256</area>
         </shape>
 
         <shape name="previously-recorded-bottom-top-line" from="base_line">
-            <area>45,515,1190,2</area>
+            <area>28,437,1224,2</area>
         </shape>
 
         <shape name="previously-recorded-bottom-bottom-line" from="base_line">
-            <area>45,642,1190,2</area>
+            <area>28,675,1224,2</area>
         </shape>
 
-        <textarea name="keyinstr" from="basetextarea">
-            <area>20,45,1240,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-            <value>(1) Time (2) Title</value>
-        </textarea>
+        <shape name="previously-recorded-bottom-left-line" from="base_vertical_line">
+            <area>28,439,2,236</area>
+        </shape>
 
-        <textarea name="curview" from="basetextarea">
-            <area>20,438,1240,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-        </textarea>
+        <shape name="previously-recorded-bottom-right-line" from="base_vertical_line">
+            <area>1250,439,2,236</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-seperator-first-line" from="base_line">
+            <area>43,479,1194,2</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-seperator-second-line" from="base_line">
+            <area>43,633,1194,2</area>
+        </shape>
 
         <buttonlist name="proglist" from="base_list_medium_selector_large_width">
-            <area>22,69,1236,368</area>
+            <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,34</area>
                     <textarea name="shortstarttimedate" from="base_text_font_state_small">
-                        <area>18,5,168,24</area>
+                        <area>8,5,168,24</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>206,5,190,24</area>
+                        <area>196,5,190,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="shortstarttimedate">
-                        <area>416,5,753,24</area>
+                        <area>406,5,756,24</area>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
-                        <area>1189,5,30,24</area>
+                        <area>1182,5,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,46</area>
+                    <area>0,0,1220,46</area>
                     <textarea name="shortstarttimedate" from="base_text_font_state_small">
-                        <area>18,1,190,24</area>
+                        <area>8,1,190,24</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>206,1,200,24</area>
+                        <area>196,1,200,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="shortstarttimedate">
-                        <area>416,1,753,24</area>
+                        <area>406,1,756,24</area>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
-                        <area>1189,1,30,24</area>
+                        <area>1182,1,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>18,25,350,20</area>
+                        <area>8,25,408,20</area>
                     </textarea>
                     <textarea name="subtitle" from="base_text_font_state_smaller">
-                        <area>436,23,522,20</area>
+                        <area>436,23,466,20</area>
                     </textarea>
                     <textarea name="timedate" from="rectypestatus">
-                        <area>978,25,240,20</area>
+                        <area>922,25,290,20</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-23</position>
+                <position>1198,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,370</position>
+                <position>1198,366</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>40,481,1200,30</area>
+            <area>44,442,1192,34</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,516,1200,128</area>
+            <area>44,483,1192,150</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
 
+        <textarea name="curview" from="basetextarea">
+            <area>44,646,397,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="keyinstr" from="basetextarea">
+            <area>441,646,398,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+            <value>(1) Time (2) Title</value>
+        </textarea>
+
     </window>
 
     <window name="progdetails">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Details</value>
         </textarea>
 
         <shape name="program-details-backdrop" from="base_backdrop">
-            <area>20,43,1240,635</area>
+            <area>20,36,1240,649</area>
         </shape>
 
         <shape name="program-details-top-line" from="base_line">
-            <area>40,62,1200,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="program-details-bottom-line" from="base_line">
-            <area>40,657,1200,2</area>
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="program-details-left-line" from="base_vertical_line">
+            <area>28,46,2,629</area>
+        </shape>
+
+        <shape name="program-details-right-line" from="base_vertical_line">
+            <area>1250,46,2,629</area>
         </shape>
 
         <webbrowser name="browser">
-            <area>40,70,1200,580</area>
+            <area>30,46,1220,629</area>
             <zoom>1.0</zoom>
             <background color="#000000" alpha="1"/>
         </webbrowser>
@@ -1800,7 +1945,22 @@
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
             <area>135,26,1010,52</area>
-            <cornerradius>90</cornerradius>
+        </shape>
+
+        <shape name="search-popup-top-line" from="base_line">
+            <area>139,30,1002,2</area>
+        </shape>
+
+        <shape name="search-popup-bottom-line" from="base_line">
+            <area>139,72,1002,2</area>
+        </shape>
+
+        <shape name="search-popup-left-line" from="base_vertical_line">
+            <area>139,32,2,40</area>
+        </shape>
+
+        <shape name="search-popup-right-line" from="base_vertical_line">
+            <area>1139,32,2,40</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
@@ -1822,61 +1982,107 @@
     </window>
 
     <window name="programfind">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Program Finder</value>
         </textarea>
 
-        <shape name="alphabetbox" from="base_group_box">
-            <area>-4,36,1288,30</area>
+        <shape name="alphabetbox" from="base_backdrop">
+            <area>0,36,1280,30</area>
+            <type>box</type>
         </shape>
 
-        <shape name="program-find-title-backdrop" from="base_backdrop">
-            <area>20,78,822,400</area>
+        <shape name="alphabetbox-top-line" from="base_line">
+            <area>0,36,1280,2</area>
+        </shape>
+
+        <shape name="alphabetbox-bottom-line" from="base_line">
+            <area>0,64,1280,2</area>
+        </shape>
+
+        <shape name="program-find-shows-backdrop" from="base_backdrop">
+            <area>20,78,822,371</area>
+        </shape>
+
+        <shape name="program-find-shows-top-line" from="base_line">
+            <area>28,86,806,2</area>
+        </shape>
+
+        <shape name="program-find-shows-bottom-line" from="base_line">
+            <area>28,439,806,2</area>
+        </shape>
+
+        <shape name="program-find-shows-left-line" from="base_vertical_line">
+            <area>28,88,2,351</area>
+        </shape>
+
+        <shape name="program-find-shows-right-line" from="base_vertical_line">
+            <area>832,88,2,351</area>
         </shape>
 
         <shape name="program-find-times-backdrop" from="base_backdrop">
-            <area>852,78,408,400</area>
-        </shape>
-
-        <shape name="program-find-title-top-line" from="base_line">
-            <area>38,102,786,2</area>
-        </shape>
-
-        <shape name="program-find-title-bottom-line" from="base_line">
-            <area>38,452,786,2</area>
+            <area>852,78,408,371</area>
         </shape>
 
         <shape name="program-find-times-top-line" from="base_line">
-            <area>870,102,372,2</area>
+            <area>860,86,392,2</area>
         </shape>
 
         <shape name="program-find-times-bottom-line" from="base_line">
-            <area>870,452,372,2</area>
+            <area>860,439,392,2</area>
+        </shape>
+
+        <shape name="program-find-times-left-line" from="base_vertical_line">
+            <area>860,88,2,351</area>
+        </shape>
+
+        <shape name="program-find-times-right-line" from="base_vertical_line">
+            <area>1250,88,2,351</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
-            <area>20,490,822,192</area>
+            <area>20,459,822,226</area>
         </shape>
 
         <shape name="program-find-bottom-top-line" from="base_line">
-            <area>45,522,766,2</area>
+            <area>28,467,806,2</area>
         </shape>
 
         <shape name="program-find-bottom-bottom-line" from="base_line">
-            <area>45,650,766,2</area>
+            <area>28,675,806,2</area>
+        </shape>
+
+        <shape name="program-find-bottom-left-line" from="base_vertical_line">
+            <area>28,469,2,206</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-line" from="base_vertical_line">
+            <area>832,469,2,206</area>
+        </shape>
+
+        <shape name="program-find-bottom-seperator-first-line" from="base_line">
+            <area>43,509,776,2</area>
         </shape>
 
         <shape name="program-find-bottom-right-backdrop" from="base_backdrop">
-            <area>852,490,408,192</area>
+            <area>852,459,408,226</area>
         </shape>
 
         <shape name="program-find-bottom-right-top-line" from="base_line">
-            <area>867,504,378,2</area>
+            <area>860,467,392,2</area>
         </shape>
 
         <shape name="program-find-bottom-right-bottom-line" from="base_line">
-            <area>867,666,378,2</area>
+            <area>860,675,392,2</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-left-line" from="base_vertical_line">
+            <area>860,469,2,206</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-right-line" from="base_vertical_line">
+            <area>1250,469,2,206</area>
         </shape>
 
         <buttonlist name="alphabet">
@@ -1917,286 +2123,293 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="showlabel" from="basetextarea">
-            <area>22,82,818,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-            <value>Show Name:</value>
-        </textarea>
-
         <buttonlist name="shows" from="base_list">
-            <area>22,102,818,356</area>
+            <area>30,87,802,356</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,818,34</area>
+                    <area>0,0,802,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,768,34</area>
+                        <area>8,0,786,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,818,34</area>
+                    <area>0,0,802,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,768,34</area>
+                        <area>8,0,766,34</area>
                     </textarea>
                     <imagetype name="right_arrow" from="buttonarrow">
-                        <position>786,7</position>
+                        <position>784,7</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <area>0,0,818,34</area>
+                    <area>0,0,802,34</area>
                     <textarea name="buttontext">
                         <font>basesmalllightgrey</font>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>776,-20</position>
+                <position>781,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>776,354</position>
+                <position>781,354</position>
             </statetype>
         </buttonlist>
 
-        <textarea name="airdatelabel" from="basetextarea">
-            <area>854,82,404,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-            <value>Air Date:</value>
-        </textarea>
-
         <buttonlist name="times" from="base_list_small_width">
-            <area>854,102,404,356</area>    
+            <area>862,87,388,356</area>    
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,404,34</area>
+                    <area>0,0,388,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,368,34</area>
+                        <area>8,0,372,34</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,404,34</area>
+                    <area>0,0,388,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,368,34</area>
+                        <area>8,0,372,34</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>362,-20</position>
+                <position>367,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>362,354</position>
+                <position>367,354</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>40,494,782,28</area>
+            <area>44,475,774,28</area>
+            <font>basemediumyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="help1text" from="basetextarea">
+            <area>44,475,774,28</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,523,766,128</area>
+            <area>44,519,774,148</area>
+            <font>basesmall</font>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
+        <textarea name="help2text" from="basetextarea">
+            <area>44,519,774,148</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
         <textarea name="channel" from="basetextarea">
-            <area>858,514,396,28</area>
+            <area>862,487,388,28</area>
             <font>baselarge</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>858,555,396,24</area>
+            <area>862,538,388,24</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="longrepeat" from="basetextarea">
-            <area>858,591,396,24</area>
+            <area>862,583,388,24</area>
             <font>basesmallred</font>
             <align>allcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>858,632,396,24</area>
+            <area>862,632,388,24</area>
             <font>basesomewhatsmaller</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="help1text" from="basetextarea">
-            <area>40,492,782,28</area>
-            <font>basemediumlargeryellow</font>
-            <align>vcenter</align>
-        </textarea>
-
-        <textarea name="help2text" from="basetextarea">
-            <area>45,523,766,128</area>
-            <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
     </window>
 
     <window name="managerecrules">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Manage Recording Rules</value>
         </textarea>
 
         <shape name="manage-recordings-list-backdrop" from="base_backdrop">
-            <area>20,39,1240,424</area>
+            <area>20,36,1240,383</area>
         </shape>
 
         <shape name="manage-recordings-list-top-line" from="base_line">
-            <area>34,68,1212,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="manage-recordings-list-bottom-line" from="base_line">
-            <area>34,433,1212,2</area>
+            <area>28,409,1224,2</area>
+        </shape>
+
+        <shape name="manage-recordings-list-left-line" from="base_vertical_line">
+            <area>28,46,2,363</area>
+        </shape>
+
+        <shape name="manage-recordings-list-right-line" from="base_vertical_line">
+            <area>1250,46,2,363</area>
         </shape>
 
         <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
-            <area>20,475,1240,207</area>
+            <area>20,429,1240,256</area>
         </shape>
 
         <shape name="manage-recordings-bottom-top-line" from="base_line">
-            <area>45,515,1190,2</area>
+            <area>28,437,1224,2</area>
         </shape>
 
         <shape name="manage-recordings-bottom-bottom-line" from="base_line">
-            <area>45,642,1190,2</area>
+            <area>28,675,1224,2</area>
         </shape>
 
-        <textarea name="keyinstr">
-            <area>40,45,1200,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-            <value>(1) Title (2) Priority (4) Type</value>
-        </textarea>
+        <shape name="manage-recordings-bottom-left-line" from="base_vertical_line">
+            <area>28,439,2,236</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-right-line" from="base_vertical_line">
+            <area>1250,439,2,236</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-seperator-first-line" from="base_line">
+            <area>43,479,1194,2</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-seperator-second-line" from="base_line">
+            <area>43,633,1194,2</area>
+        </shape>
 
         <textarea name="norecordings_info" from="basetextarea">
-            <area>20,39,1240,424</area>
+            <area>30,46,1220,363</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>There are no Recordings Scheduled...</value>
         </textarea>
 
-        <textarea name="scheduleinfo" from="basetextarea">
-            <area>40,438,1200,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-        </textarea>
-
         <buttonlist name="programs" from="base_list_medium_selector_large_width">
-            <area>22,69,1236,368</area>
+            <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,34</area>
                     <textarea name="rectype" from="buttontext">
-                        <area>18,5,14,24</area>
+                        <area>8,5,14,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
-                        <area>60,5,570,24</area>
+                        <area>50,5,574,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                     <textarea name="callsign" from="rectype">
-                        <area>650,5,124,24</area>
+                        <area>644,5,124,24</area>
                     </textarea>
                     <textarea name="lastrecorded" from="rectype">
-                        <area>784,5,276,24</area>
+                        <area>780,5,300,24</area>
                         <cutdown>yes</cutdown>
                         <align>right</align>
                     </textarea>
                     <textarea name="finalpriority" from="rectype">
-                        <area>1184,5,34,24</area>
+                        <area>1178,5,34,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,46</area>
+                    <area>0,0,1220,46</area>
                     <textarea name="title" from="buttontext">
-                        <area>18,1,612,24</area>
+                        <area>8,1,615,24</area>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>650,1,409,24</area>
+                        <area>643,1,409,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="finalpriority" from="title">
-                        <area>1079,1,140,24</area>
+                        <area>1072,1,140,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                         <template>Priority:  %1</template>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>18,25,350,20</area>
+                        <area>8,25,350,20</area>
                     </textarea>
                     <textarea name="category" from="rectypestatus">
-                        <area>388,25,252,20</area>
+                        <area>378,25,252,20</area>
                         <align>left,vcenter</align>
                         <template>Category: %1</template>
                     </textarea>
                     <textarea name="channel" from="rectypestatus">
-                        <area>660,25,378,20</area>
+                        <area>650,25,322,20</area>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypestatus">
-                        <area>1058,25,160,20</area>
+                        <area>992,25,220,20</area>
                         <align>right,vcenter</align>
                     </textarea>
-<!-- DOES NOT WORK INSIDE A BUTTON LIST ? -->
-<!--
-                    <textarea name="scheduleinfo" from="rectypestatus">
-                        <area>18,25,350,20</area>
-                    </textarea>
--->
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-23</position>
+                <position>1197,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,370</position>
+                <position>1197,366</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>40,480,1200,34</area>
+            <area>44,442,1192,34</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="recordinggroup" from="basetextarea">
-            <area>164,541,350,30</area>
+            <area>164,517,350,30</area>
             <font>basesmall</font>
             <template>Recording Group: %1</template>
         </textarea>
 
         <textarea name="category" from="basetextarea">
-            <area>244,594,350,30</area>
+            <area>244,570,350,30</area>
             <font>basesmall</font>
             <template>Category: %1</template>
         </textarea>
 
         <textarea name="storagegroup" from="basetextarea">
-            <area>860,541,350,30</area>
+            <area>860,517,350,30</area>
             <font>basesmall</font>
             <template>Storage Group: %1</template>            
         </textarea>
 
         <textarea name="recordingprofile" from="basetextarea">
-            <area>836,594,350,30</area>
+            <area>836,570,350,30</area>
             <font>basesmall</font>
             <template>Recording Profile: %1</template>
+        </textarea>
+
+        <textarea name="scheduleinfo" from="basetextarea">
+            <area>44,646,397,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="keyinstr">
+            <area>441,646,398,18</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+            <value>(1) Title (2) Priority (4) Type</value>
         </textarea>
 
     </window>
 
     <window name="customedit">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Custom Record Rules</value>
@@ -2206,12 +2419,44 @@
             <area>20,36,1240,516</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="custom-record-rules-top-line" from="base_line">
+            <area>28,44,1224,2</area>
         </shape>
 
-        <shape name="custom-record-ruiles-bottom-line" from="base_line">
-            <area>45,626,1190,2</area>
+        <shape name="custom-record-rules-bottom-line" from="base_line">
+            <area>28,542,1224,2</area>
+        </shape>
+
+        <shape name="custom-record-rules-left-line" from="base_vertical_line">
+            <area>28,46,2,496</area>
+        </shape>
+
+        <shape name="custom-record-rules-right-line" from="base_vertical_line">
+            <area>1250,46,2,496</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-backdrop" from="base_backdrop">
+            <area>20,564,1240,121</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-top-line" from="base_line">
+            <area>28,572,1224,2</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-left-line" from="base_vertical_line">
+            <area>28,574,2,101</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-right-line" from="base_vertical_line">
+            <area>1250,574,2,101</area>
+        </shape>
+
+        <shape name="custom-record-ruiles-bottom-seperator-first-line" from="base_line">
+            <area>43,621,1194,2</area>
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
@@ -2369,28 +2614,29 @@
         </textedit>
 
         <button name="test" from="base_button">
-            <position>78,637</position>
+            <position>78,632</position>
             <value>Test</value>
         </button>
 
         <button name="record" from="base_button">
-            <position>400,637</position>
+            <position>400,632</position>
             <value>Record</value>
         </button>
 
         <button name="store" from="base_button">
-            <position>732,637</position>
+            <position>732,632</position>
             <value>Store</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>1054,637</position>
+            <position>1054,632</position>
             <value>Cancel</value>
         </button>
 
     </window>
 
     <window name="scheduleeditor">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Schedule Editor</value>
@@ -2765,6 +3011,7 @@
     </window>
 
     <window name="schedulediff">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Preview Schedule Changes</value>
