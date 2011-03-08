@@ -2643,129 +2643,149 @@
         </textarea>
 
         <shape name="schedule-editor-backdrop" from="base_backdrop">
-            <area>20,36,546,362</area>
+            <area>20,36,546,322</area>
         </shape>
 
         <shape name="schedule-editor-top-line" from="base_line">
-            <area>34,64,518,2</area>
+            <area>28,44,530,2</area>
         </shape>
 
         <shape name="schedule-editor-bottom-line" from="base_line">
-            <area>34,368,518,2</area>
+            <area>28,348,530,2</area>
+        </shape>
+
+        <shape name="schedule-editor-left-line" from="base_vertical_line">
+            <area>28,46,2,302</area>
+        </shape>
+
+        <shape name="schedule-editor-right-line" from="base_vertical_line">
+            <area>556,46,2,302</area>
         </shape>
 
         <shape name="schedule-editor-options-backdrop" from="base_backdrop">
-            <area>574,36,686,362</area>
+            <area>574,36,686,322</area>
         </shape>
 
         <shape name="schedule-editor-options-top-line" from="base_line">
-            <area>591,64,652,2</area>
+            <area>582,44,670,2</area>
         </shape>
 
         <shape name="schedule-editor-options-bottom-line" from="base_line">
-            <area>591,368,652,2</area>
+            <area>582,348,670,2</area>
+        </shape>
+
+        <shape name="schedule-editor-options-left-line" from="base_vertical_line">
+            <area>582,46,2,302</area>
+        </shape>
+
+        <shape name="schedule-editor-options-right-line" from="base_vertical_line">
+            <area>1250,46,2,302</area>
         </shape>
 
         <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
-            <area>20,409,1240,276</area>
+            <area>20,368,1240,317</area>
         </shape>
 
-        <shape name="schedule-editor-description-first-line" from="base_line">
-            <area>34,449,1212,2</area>
+        <shape name="schedule-editor-description-top-line" from="base_line">
+            <area>28,376,1224,2</area>
         </shape>
 
-        <shape name="schedule-editor-description-second-line" from="base_line">
-            <area>34,482,1212,2</area>
-        </shape>
-
-        <shape name="schedule-editor-description-third-line" from="base_line">
-            <area>34,513,1212,2</area>
-        </shape>
-
-        <shape name="schedule-editor-description-fourth-line" from="base_line">
-            <area>34,667,1212,2</area>
+        <shape name="schedule-editor-description-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
         </shape>
 
         <shape name="schedule-editor-description-left-line" from="base_vertical_line">
-            <area>34,515,2,152</area>
+            <area>28,378,2,297</area>
         </shape>
 
         <shape name="schedule-editor-description-right-line" from="base_vertical_line">
-            <area>1244,515,2,152</area>
+            <area>1250,378,2,297</area>
+        </shape>
+
+        <shape name="schedule-editor-description-seperator-first-line" from="base_line">
+            <area>43,418,1194,2</area>
+        </shape>
+
+        <shape name="schedule-editor-description-seperator-second-line" from="base_line">
+            <area>43,460,1194,2</area>
+        </shape>
+
+        <shape name="schedule-editor-description-seperator-third-line" from="base_line">
+            <area>43,502,1194,2</area>
         </shape>
 
         <buttonlist name="rules" from="base_selector_list_style">
-            <position>23,64</position>
+            <position>30,44</position>
         </buttonlist>
 
         <button name="schedoptions" from="base_button_list_style">
-            <position>23,102</position>
+            <position>30,82</position>
             <value>Schedule Options</value>
         </button>
 
         <button name="storeoptions" from="base_button_list_style">
-            <position>23,140</position>
+            <position>30,120</position>
             <value>Storage Options</value>
         </button>
 
         <button name="postprocessing" from="base_button_list_style">
-            <position>23,178</position>
+            <position>30,158</position>
             <value>Post Processing</value>
         </button>
 
         <button name="schedinfo" from="base_button_list_style">
-            <position>23,216</position>
+            <position>30,196</position>
             <value>Schedule Info</value>
         </button>        
 
         <button name="preview" from="base_button_list_style">
-            <position>23,254</position>
+            <position>30,234</position>
             <value>Preview</value>
         </button>
 
         <button name="cancel" from="base_button_list_style">
-            <position>23,292</position>
+            <position>30,272</position>
             <value>Cancel</value>
         </button>
 
         <button name="save" from="base_button_list_style">
-            <position>23,330</position>
+            <position>30,310</position>
             <value>Save</value>
         </button>
 
         <textarea name="title" from="basetextarea">
-            <area>36,415,934,30</area>
+            <area>44,382,919,30</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>980,419,264,24</area>
+            <area>973,386,264,24</area>
             <font>basesmallyellow</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>46,453,1198,24</area>
+            <area>44,426,1192,24</area>
             <font>basesmall</font>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>36,482,578,34</area>
+            <area>44,464,578,34</area>
             <font>basesmallblue</font>
             <cutdown>no</cutdown>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>666,482,578,34</area>
+            <area>659,464,578,34</area>
             <font>basesmallblue</font>
             <cutdown>no</cutdown>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>42,518,1196,148</area>
+            <area>44,514,1192,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
@@ -2778,58 +2798,58 @@
         <area>-1,-1,1280,720</area>
 
         <spinbox name="priority" from="base_spinbox_list_style">
-            <position>577,64</position>
+            <position>584,44</position>
             <template type="negative">Reduce priority by %n</template>
             <template type="zero">Normal recording priority</template>
             <template type="positive">Raise priority by %n</template>
         </spinbox>
 
         <buttonlist name="input" from="base_wide_selector_list_style">
-            <position>577,102</position>
+            <position>584,82</position>
         </buttonlist>
 
         <spinbox name="startoffset" from="base_spinbox_list_style">
-            <position>577,140</position>
+            <position>584,120</position>
             <template type="negative">Start recording %n minute(s) late</template>
             <template type="zero">Start recording on time</template>
             <template type="positive">Start recording %n minute(s) early</template>
         </spinbox>
 
         <spinbox name="endoffset" from="base_spinbox_list_style">
-            <position>577,178</position>
+            <position>584,158</position>
             <template type="negative">End recording %n minute(s) early</template>
             <template type="zero">End recording on time</template>
             <template type="positive">End recording %n minute(s) late</template>
         </spinbox>
 
         <buttonlist name="dupmethod" from="base_wide_selector_list_style">
-            <position>577,216</position>
+            <position>584,196</position>
         </buttonlist>
 
         <buttonlist name="dupscope" from="base_wide_selector_list_style">
-            <position>577,254</position>
+            <position>584,234</position>
         </buttonlist>
 
         <shape name="rulesactive_top_line" from="base_list_line">
-            <area>591,292,652,1</area>
+            <area>598,272,638,1</area>
         </shape>
 
         <shape name="rulesactive_bottom_line" from="base_list_line">
-            <area>591,330,652,1</area>
+            <area>598,310,638,1</area>
         </shape>
 
         <checkbox name="ruleactive" from="basecheckbox">
-            <position>618,295</position>
+            <position>625,275</position>
         </checkbox>
 
         <textarea name="ruleactivelabel" from="basetextarea">
-            <area>662,292,300,40</area>
+            <area>669,272,300,40</area>
             <align>vcenter</align>
             <value>Recording Rule Active</value>
         </textarea>
 
         <button name="back" from="base_wide_button_list_style">
-            <position>577,330</position>
+            <position>584,310</position>
             <value>Back</value>
         </button>
     </window>
@@ -2839,51 +2859,51 @@
         <area>-1,-1,1280,720</area>
 
         <buttonlist name="recprofile" from="base_wide_selector_list_style">
-            <position>577,64</position>
+            <position>584,44</position>
         </buttonlist>
 
         <buttonlist name="recgroup" from="base_wide_selector_list_style">
-            <position>577,102</position>
+            <position>584,82</position>
         </buttonlist>
 
         <buttonlist name="storagegroup" from="base_wide_selector_list_style">
-            <position>577,140</position>
+            <position>584,120</position>
         </buttonlist>
 
         <buttonlist name="playgroup" from="base_wide_selector_list_style">
-            <position>577,178</position>
+            <position>584,158</position>
         </buttonlist>
 
         <spinbox name="maxepisodes" from="base_spinbox_list_style">
-            <position>577,216</position>
+            <position>584,196</position>
             <template type="zero">No episode limit</template>
             <template type="positive">Keep at most %n episode(s)</template>
         </spinbox>
 
         <buttonlist name="maxnewest" from="base_wide_selector_list_style">
-            <position>577,254</position>
+            <position>584,234</position>
         </buttonlist>
 
         <shape name="autoexpire_top_line" from="base_list_line">
-            <area>591,292,652,1</area>
+            <area>598,272,638,1</area>
         </shape>
 
         <shape name="autoexpire_bottom_line" from="base_list_line">
-            <area>591,330,652,1</area>
+            <area>598,310,638,1</area>
         </shape>
 
         <checkbox name="autoexpire" from="basecheckbox">
-            <position>618,295</position>
+            <position>625,275</position>
         </checkbox>
 
         <textarea name="autoexpirelabel" from="basetextarea">
-            <area>662,292,450,40</area>
+            <area>669,272,450,40</area>
             <align>vcenter</align>
             <value>Allow recordings to expire?</value>
         </textarea>
 
         <button name="back" from="base_wide_button_list_style">
-            <position>577,330</position>
+            <position>584,310</position>
             <value>Back</value>
         </button>
     </window>
@@ -2893,119 +2913,119 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="autocommflag_top_line" from="base_list_line">
-            <area>591,64,652,1</area>
+            <area>598,44,638,1</area>
         </shape>
 
         <shape name="autocommflag_bottom_line" from="base_list_line">
-            <area>591,102,652,1</area>
+            <area>598,82,638,1</area>
         </shape>
 
         <checkbox name="autocommflag" from="basecheckbox">
-            <position>618,67</position>
+            <position>625,47</position>
         </checkbox>
 
         <textarea name="autocommflaglabel" from="basetextarea">
-            <area>662,64,450,40</area>
+            <area>669,44,450,40</area>
             <align>vcenter</align>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
         <shape name="autotranscode_top_line" from="base_list_line">
-            <area>591,102,652,1</area>
+            <area>598,82,638,1</area>
         </shape>
 
         <shape name="autotranscode_bottom_line" from="base_list_line">
-            <area>591,140,652,1</area>
+            <area>598,120,638,1</area>
         </shape>
 
         <checkbox name="autotranscode" from="basecheckbox">
-            <position>618,105</position>
+            <position>625,85</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
-            <area>662,102,300,40</area>
+            <area>669,82,300,40</area>
             <align>vcenter</align>
             <value>Transcode new recordings</value>
         </textarea>
 
         <buttonlist name="transcodeprofile" from="base_wide_selector_list_style">
-            <position>577,140</position>
+            <position>584,120</position>
         </buttonlist>
 
         <shape name="userjob1_top_line" from="base_list_line">
-            <area>591,178,652,1</area>
+            <area>598,158,638,1</area>
         </shape>
 
         <shape name="userjob1_bottom_line" from="base_list_line">
-            <area>591,216,652,1</area>
+            <area>598,196,638,1</area>
         </shape>
 
         <checkbox name="userjob1" from="basecheckbox">
-            <position>618,181</position>
+            <position>625,161</position>
         </checkbox>
 
         <textarea name="userjob1label" from="basetextarea">
-            <area>662,178,300,40</area>
+            <area>669,158,300,40</area>
             <align>vcenter</align>
             <value>Run User Job #1</value>
         </textarea>
 
         <shape name="userjob2_top_line" from="base_list_line">
-            <area>591,216,652,1</area>
+            <area>598,196,638,1</area>
         </shape>
 
         <shape name="userjob2_bottom_line" from="base_list_line">
-            <area>591,254,652,1</area>
+            <area>598,234,638,1</area>
         </shape>
 
         <checkbox name="userjob2" from="basecheckbox">
-            <position>618,219</position>
+            <position>625,199</position>
         </checkbox>
 
         <textarea name="userjob2label" from="basetextarea">
-            <area>662,216,300,40</area>
+            <area>669,196,300,40</area>
             <align>vcenter</align>
             <value>Run User job #2</value>
         </textarea>
 
         <shape name="userjob3_top_line" from="base_list_line">
-            <area>591,254,652,1</area>
+            <area>598,234,638,1</area>
         </shape>
 
         <shape name="userjob3_bottom_line" from="base_list_line">
-            <area>591,292,652,1</area>
+            <area>598,272,638,1</area>
         </shape>
 
         <checkbox name="userjob3" from="basecheckbox">
-            <position>618,257</position>
+            <position>625,237</position>
         </checkbox>
 
         <textarea name="userjob3label" from="basetextarea">
-            <area>662,254,300,40</area>
+            <area>669,234,300,40</area>
             <align>vcenter</align>
             <value>Run User Job #3</value>
         </textarea>
 
         <shape name="userjob4_top_line" from="base_list_line">
-            <area>591,292,652,1</area>
+            <area>598,272,638,1</area>
         </shape>
 
         <shape name="userjob4_bottom_line" from="base_list_line">
-            <area>591,330,652,1</area>
+            <area>598,310,638,1</area>
         </shape>
 
         <checkbox name="userjob4" from="basecheckbox">
-            <position>618,295</position>
+            <position>625,275</position>
         </checkbox>
 
         <textarea name="userjob4label" from="basetextarea">
-            <area>662,292,300,40</area>
+            <area>669,272,300,40</area>
             <align>vcenter</align>
             <value>Run User Job #4</value>
         </textarea>
 
         <button name="back" from="base_wide_button_list_style">
-            <position>577,330</position>
+            <position>584,310</position>
             <value>Back</value>
         </button>
     </window>
@@ -3018,107 +3038,125 @@
         </textarea>
 
         <shape name="preview-schedule-priority-backdrop" from="base_backdrop">
-            <area>20,39,1240,424</area>
+            <area>20,36,1240,383</area>
         </shape>
 
         <shape name="preview-schedule-list-top-line" from="base_line">
-            <area>34,62,1212,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="preview-schedule-list-bottom-line" from="base_line">
-            <area>34,436,1212,2</area>
+            <area>28,409,1224,2</area>
+        </shape>
+
+        <shape name="preview-schedule-list-left-line" from="base_vertical_line">
+            <area>28,46,2,363</area>
+        </shape>
+
+        <shape name="preview-schedule-list-right-line" from="base_vertical_line">
+            <area>1250,46,2,363</area>
         </shape>
 
         <shape name="preview-schedule-bottom-backdrop" from="base_backdrop">
-            <area>20,475,1240,207</area>
+            <area>20,429,1240,256</area>
         </shape>
 
         <shape name="preview-schedule-bottom-top-line" from="base_line">
-            <area>45,512,1190,2</area>
+            <area>28,437,1224,2</area>
         </shape>
 
         <shape name="preview-schedule-bottom-bottom-line" from="base_line">
-            <area>45,649,1190,2</area>
+            <area>28,675,1234,2</area>
         </shape>
 
-        <textarea name="titletext">
-            <area>40,42,1200,20</area>
-            <font>baseextrasmallyellow</font>
-            <align>allcenter</align>
-        </textarea>
+        <shape name="preview-schedule-bottom-left-line" from="base_vertical_line">
+            <area>28,439,2,236</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-right-line" from="base_vertical_line">
+            <area>1250,439,2,236</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-seperator-first-line" from="base_line">
+            <area>43,479,1194,2</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-seperator-second-line" from="base_line">
+            <area>43,633,1194,2</area>
+        </shape>
 
         <buttonlist name="conflictlist" from="base_list_medium_selector_large_width">
-            <area>22,63,1236,390</area>
+            <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,35</area> 
+                    <area>0,0,1220,34</area> 
                     <textarea name="shortstarttimedate" from="buttontext">
-                        <area>18,4,190,24</area>
+                        <area>8,5,190,24</area>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
-                        <area>226,4,170,24</area>
+                        <area>216,5,170,24</area>
                     </textarea>
                     <textarea name="titlesubtitle" from="shortstarttimedate">
-                        <area>414,4,728,24</area>
+                        <area>404,5,732,24</area>
                     </textarea>
                     <textarea name="statusbefore" from="shortstarttimedate">
-                        <area>1160,4,20,24</area>
+                        <area>1154,5,20,24</area>
                     </textarea>
                     <textarea name="statusafter" from="shortstarttimedate">
-                        <area>1198,4,20,24</area>
+                        <area>1192,5,20,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,46</area>
+                    <area>0,0,1220,46</area>
                     <textarea name="shortstarttimedate" from="buttontext">
-                        <area>18,1,190,24</area>
+                        <area>8,1,190,24</area>
                     </textarea>
                     <textarea name="titlesubtitle" from="shortstarttimedate">
-                        <area>226,1,916,24</area>
+                        <area>216,1,920,24</area>
                     </textarea>
                     <textarea name="statusbefore" from="shortstarttimedate">
-                        <area>1160,1,20,24</area>
+                        <area>1154,1,20,24</area>
                     </textarea>
                     <textarea name="statusafter" from="shortstarttimedate">
-                        <area>1198,1,20,24</area>
+                        <area>1192,1,20,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="programid" from="base_text_font_state_extrasmall">
-                        <area>18,25,250,20</area>
+                        <area>8,25,250,20</area>
                     </textarea>
                     <textarea name="channel" from="programid">
-                        <area>286,25,564,20</area>
+                        <area>276,25,568,20</area>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="programid">
-                        <area>868,25,350,20</area>
+                        <area>862,25,350,20</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-20</position>
+                <position>1198,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,378</position>
+                <position>1198,366</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>45,478,1190,30</area>
+            <area>44,442,1192,34</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>45,518,1190,128</area>
+            <area>44,483,1192,150</area>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="nochanges" from="basetextarea">
-            <area>40,210,1200,70</area>
+            <area>30,46,1220,363</area>
             <align>allcenter</align>
             <value>You Haven't Scheduled Any Programs To Be Recorded</value>
             <multiline>yes</multiline>

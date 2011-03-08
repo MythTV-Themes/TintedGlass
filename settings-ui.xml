@@ -7,80 +7,100 @@
         <textarea name="heading" from="base_heading">
         </textarea>
 
-        <shape name="system-events-top-backdrop" from="base_backdrop">
-            <area>320,36,640,489</area>
+        <shape name="system-events-backdrop" from="base_backdrop">
+            <area>220,36,840,649</area>
         </shape>
 
-        <shape name="system-events-top-line" from="base_line">
-            <area>334,56,612,2</area>
+        <shape name="system-events-list-top-line" from="base_line">
+            <area>228,44,824,2</area>
         </shape>
 
-        <shape name="system-events-bottom-line" from="base_line">
-            <area>334,503,612,2</area>
+        <shape name="system-events-list-bottom-line" from="base_line">
+            <area>228,493,824,2</area>
         </shape>
 
-        <shape name="system-events-bottom-backdrop" from="base_backdrop">
-            <area>20,537,1240,147</area>
+        <shape name="system-events-list-left-line" from="base_vertical_line">
+            <area>228,46,2,447</area>
+        </shape>
+
+        <shape name="system-events-list-right-line" from="base_vertical_line">
+            <area>1050,46,2,447</area>
         </shape>
 
         <shape name="system-events-bottom-top-line" from="base_line">
-            <area>35,576,1210,2</area>
+            <area>228,503,824,2</area>
         </shape>
 
         <shape name="system-events-bottom-bottom-line" from="base_line">
-            <area>35,628,1210,2</area>
+            <area>228,675,824,2</area>
+        </shape>
+
+        <shape name="system-events-bottom-left-line" from="base_vertical_line">
+            <area>228,505,2,170</area>
+        </shape>
+
+        <shape name="system-events-bottom-right-line" from="base_vertical_line">
+            <area>1050,505,2,170</area>
+        </shape>
+
+        <shape name="system-events-bottom-seperator-first-line" from="base_line">
+            <area>243,553,794,2</area>
+        </shape>
+
+        <shape name="system-events-bottom-seperator-second-line" from="base_line">
+            <area>243,625,794,2</area>
         </shape>
 
         <buttonlist name="settings" from="base_list">
-            <area>322,57,636,452</area>
+            <area>230,45,820,452</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,636,34</area>
+                    <area>0,0,820,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,571,24</area>
+                        <area>8,4,804,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,636,34</area>
+                    <area>0,0,820,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,571,24</area>
+                        <area>8,4,782,24</area>
                     </textarea>
                     <imagetype name="rightarrow" from="buttonarrow">
-                        <position>607,7</position>
+                        <position>800,7</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,636,34</area>
+                    <area>0,0,820,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,571,24</area>
+                        <area>8,4,804,24</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>596,-18</position>
+                <position>796,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>596,449</position>
+                <position>796,450</position>
             </statetype>
         </buttonlist>
 
         <textarea name="label-text" from="basetextarea">
-            <area>40,545,1200,26</area>
-            <font>basesmallyellow</font>
+            <area>244,516,792,24</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="settingvalue" from="base_wide_textedit">
-            <area>193,587,894,32</area>
+            <area>243,574,794,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">
-            <position>193,636</position>
+            <position>270,631</position>
             <value>Cancel</value>
         </button>
     
         <button name="save" from="base_medium_button">
-            <position>737,636</position>
+            <position>660,631</position>
             <value>Save</value>
         </button>
 
@@ -94,55 +114,67 @@
         </textarea>
 
         <shape name="theme-chooser-backdrop" from="base_backdrop">
-            <area>20,36,615,648</area>
+            <area>20,36,615,649</area>
         </shape>
 
         <shape name="theme-chooser-top-line" from="base_line">
-            <area>29,62,595,2</area>
+            <area>28,64,599,2</area>
         </shape>
 
         <shape name="theme-chooser-bottom-line" from="base_line">
-            <area>29,655,595,2</area>
+            <area>28,675,599,2</area>
+        </shape>
+
+        <shape name="theme-chooser-left-line" from="base_vertical_line">
+            <area>28,66,2,609</area>
+        </shape>
+
+        <shape name="theme-chooser-right-line" from="base_vertical_line">
+            <area>625,66,2,609</area>
         </shape>
 
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">
-            <area>645,36,615,648</area>
+            <area>645,36,615,649</area>
         </shape>
 
-        <shape name="preview-shape-top-line" from="base_line">
-            <area>659,66,587,2</area>
+        <shape name="theme-chooser-preview-top-line" from="base_line">
+            <area>653,64,599,2</area>
         </shape>
 
-        <shape name="preview-shape-bottom-line" from="base_line">
-            <area>659,396,587,2</area>
+        <shape name="theme-chooser-preview-bottom-line" from="base_line">
+            <area>653,401,599,2</area>
         </shape>
 
-        <shape name="preview-shape-left-line" from="base_vertical_line">
-            <area>659,68,2,328</area>
+        <shape name="theme-chooser-preview-left-line" from="base_vertical_line">
+            <area>653,66,2,335</area>
         </shape>
 
-        <shape name="preview-shape-right-line" from="base_vertical_line">
-            <area>1244,68,2,328</area>
-        </shape>
-
-        <shape name="theme-chooser-name-line" from="base_line">
-            <area>659,438,587,2</area>
+        <shape name="theme-chooser-preview-right-line" from="base_vertical_line">
+            <area>1250,66,2,335</area>
         </shape>
 
         <shape name="theme-chooser-description-top-line" from="base_line">
-            <area>659,475,587,2</area>
-        </shape>
-
-        <shape name="theme-chooser-desription-left-line" from="base_vertical_line">
-            <area>659,477,2,191</area>
-        </shape>
-
-        <shape name="theme-chooser-description-right-line" from="base_vertical_line">
-            <area>1244,477,2,191</area>
+            <area>653,411,599,2</area>
         </shape>
 
         <shape name="theme-chooser-description-bottom-line" from="base_line">
-            <area>659,668,587,2</area>
+            <area>653,675,599,2</area>
+        </shape>
+
+        <shape name="theme-chooser-description-left-line" from="base_vertical_line">
+            <area>653,413,2,262</area>
+        </shape>
+
+        <shape name="theme-chooser-description-right-line" from="base_vertical_line">
+            <area>1250,413,2,262</area>
+        </shape>
+
+        <shape name="theme-chooser-description-seperator-first-line" from="base_line">
+            <area>668,449,569,2</area>
+        </shape>
+
+        <shape name="theme-chooser-description-seperator-second-line" from="base_line">
+            <area>668,487,569,2</area>
         </shape>
 
         <!-- Icon status help -->
@@ -195,10 +227,10 @@
         <!-- End icon status help -->
 
         <buttonlist name="themes" from="base_list_large_selector">
-            <area>23,63,609,596</area>
+            <area>30,63,595,614</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,609,68</area>
+                    <area>0,0,595,70</area>
 		    <shape name="top_line" from="base_list_line">
                         <area>1%,0,99%,1</area>
                     </shape>
@@ -207,7 +239,7 @@
                     </shape>
 <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
-                        <area>10,26,16,16</area>
+                        <area>8,26,16,16</area>
                         <state name="local">
                             <shape name="location">
                                 <area>0,0,16,16</area>
@@ -229,14 +261,14 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>150,6,425,56</area>
+                        <area>146,6,415,56</area>
                         <align>left,vcenter</align>
                         <font>basemedium</font>
                         <alpha>210</alpha>
                     </textarea>
 <!-- State to indicate whether an installed downloadable theme is up to date or not -->
                     <statetype name="themestatus">
-                        <area>583,26,16,16</area>
+                        <area>571,26,16,16</area>
                         <state name="uptodate">
                             <shape name="status">
                                 <area>0,0,16,16</area>
@@ -254,10 +286,10 @@
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,609,68</area>
+                    <area>0,0,595,70</area>
 <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
-                        <area>10,26,16,16</area>
+                        <area>8,26,16,16</area>
                         <state name="local">
                             <shape name="location">
                                 <area>0,0,16,16</area>
@@ -279,14 +311,14 @@
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>150,6,425,56</area>
+                        <area>146,6,415,56</area>
                         <align>left,vcenter</align>
                         <font>basemedium</font>
                         <alpha>210</alpha>
                     </textarea>
 <!-- State to indicate whether an installed downloadable theme is up to date or not -->
                     <statetype name="themestatus">
-                        <area>583,26,16,16</area>
+                        <area>571,26,16,16</area>
                         <state name="uptodate">
                             <shape name="status">
                                 <area>0,0,16,16</area>
@@ -306,15 +338,15 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>540,597</position>
+                <position>0,614</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>570,597</position>
+                <position>20,614</position>
             </statetype>
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>661,50</position>
+            <position>661,46</position>
             <imagetype name="background">
                 <area>0,0,583,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -326,13 +358,13 @@
         </progressbar>
 
         <imagetype name="preview">
-            <area>661,68,583,328</area>
+            <area>655,66,595,335</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>661,400,583,35</area>
+            <area>669,413,567,36</area>
             <multiline>no</multiline>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
@@ -340,7 +372,7 @@
         </textarea>
 
         <textarea name="resolution_label" from="basetextarea">
-            <area>661,443,122,30</area>
+            <area>669,451,122,36</area>
             <multiline>no</multiline>
             <font>basesmall</font>
             <align>left,vcenter</align>
@@ -349,7 +381,7 @@
         </textarea>
 
         <textarea name="resolution" from="basetextarea">
-            <area>793,443,280,30</area>
+            <area>795,451,280,36</area>
             <multiline>no</multiline>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
@@ -357,7 +389,7 @@
         </textarea>
 
         <textarea name="aspect_label" from="basetextarea">
-            <area>1092,443,80,30</area>
+            <area>1090,451,80,36</area>
             <multiline>no</multiline>
             <font>basesmall</font>
             <align>right,vcenter</align>
@@ -366,7 +398,7 @@
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
-            <area>1182,443,62,30</area>
+            <area>1174,451,62,36</area>
             <multiline>no</multiline>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
@@ -374,7 +406,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>667,486,571,172</area>
+            <area>669,496,567,172</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -389,17 +421,26 @@
                     <area>0,0,1280,720</area>
                     <filename />
                 </imagetype>
-
-                <shape name="fullscreennameback" from="basebackground">
-                    <area>440,10,400,80</area>
-                    <fill color="#000000" alpha="220" />
+                <shape name="theme-chooser-full-preview-backdrop" from="base_backdrop">
+                    <area>390,36,500,90</area>
                 </shape>
-
+                <shape name="theme-chooser-top-line" from="base_line">
+                    <area>398,44,484,2</area>
+                </shape>
+                <shape name="theme-chooser-bottom-line" from="base_line">
+                    <area>398,116,484,2</area>
+                </shape>
+                <shape name="theme-chooser-left-line" from="base_vertical_line">
+                    <area>398,46,2,70</area>
+                </shape>
+                <shape name="theme-chooser-right-line" from="base_vertical_line">
+                    <area>880,46,2,70</area>
+                </shape>
                 <textarea name="fullscreenname" from="basetextarea">
-                    <area>450,20,380,60</area>
+                    <area>402,48,476,64</area>
                     <multiline>no</multiline>
-                    <font>basemediumgreen</font>
-                    <align>center,vcenter</align>
+                    <font>basemediumyellow</font>
+                    <align>allcenter</align>
                 </textarea>
             </state>
         </statetype>

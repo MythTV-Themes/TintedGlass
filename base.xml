@@ -402,36 +402,36 @@
     <shape name="base_select_bar_selectedactive_small">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="160">
-                <stop position="0" color="#ffffff" />
-                <stop position="55" color="#0a0a0e" alpha="160" />
-                <stop position="100" color="#0a0a0e" alpha="160" />
+            <gradient direction="vertical" alpha="180">
+                <stop position="0" color="#aaaaaa" />
+                <stop position="55" color="#0a0a0e" alpha="180" />
+                <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>10</cornerradius>
+        <cornerradius>0</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_medium">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="160">
-                <stop position="0" color="#ffffff" />
-                <stop position="55" color="#0a0a0e" alpha="160" />
-                <stop position="100" color="#0a0a0e" alpha="160" />
+            <gradient direction="vertical" alpha="180">
+                <stop position="0" color="#aaaaaa" />
+                <stop position="55" color="#0a0a0e" alpha="180" />
+                <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>12</cornerradius>
+        <cornerradius>0</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_large">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#777777" />
-                <stop position="45" color="#0a0a0e" alpha="255" />
-                <stop position="100" color="#0a0a0e" alpha="255" />
+            <gradient direction="vertical" alpha="180">
+                <stop position="0" color="#aaaaaa" />
+                <stop position="45" color="#0a0a0e" alpha="180" />
+                <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
@@ -779,7 +779,7 @@
     <button name="base_button_list_style">
         <position>0,0</position>
         <statetype name="buttonstate">
-            <area>0,0,540,40</area>
+            <area>0,0,526,40</area>
             <state name="active">
                 <area>0,0,100%,100%</area>
                 <shape name="background" from="base_select_bar_active">
@@ -821,7 +821,7 @@
     <!-- Base definition of a wider button list style-->
     <button name="base_wide_button_list_style" from="base_button_list_style">
         <statetype name="buttonstate">
-            <area>0,0,680,40</area>
+            <area>0,0,666,40</area>
         </statetype>
     </button>
 
@@ -952,7 +952,7 @@
 
     <!-- Base definition of a spinbox list style -->
     <spinbox name="base_spinbox_list_style">
-        <area>0,0,680,40</area>
+        <area>0,0,666,40</area>
         <layout>horizontal</layout>
         <wrapstyle>items</wrapstyle>
         <statetype name="buttonitem">
@@ -980,7 +980,7 @@
                     <alpha>200</alpha>
                 </imagetype>
                 <imagetype name="rightarrow">
-                    <position>660,10</position>
+                    <position>646,10</position>
                     <filename>images/lists_right_arrow.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
@@ -1002,7 +1002,7 @@
                     <alpha>200</alpha>
                 </imagetype>
                 <imagetype name="rightarrow">
-                    <position>660,10</position>
+                    <position>646,10</position>
                     <filename>images/lists_right_arrow.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
@@ -1073,7 +1073,7 @@
 
     <!-- Base definition of a selector in list style -->
     <buttonlist name="base_selector_list_style">
-        <area>0,0,540,40</area>
+        <area>0,0,526,40</area>
         <layout>horizontal</layout>
         <spacing>3</spacing>
         <wrapstyle>items</wrapstyle>
@@ -1101,7 +1101,7 @@
                     <alpha>200</alpha>
                 </imagetype>
                 <imagetype name="rightarrow">
-                    <position>520,10</position>
+                    <position>506,10</position>
                     <filename>images/lists_right_arrow.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
@@ -1120,7 +1120,7 @@
                     <alpha>200</alpha>
                 </imagetype>
                 <imagetype name="rightarrow">
-                    <position>520,10</position>
+                    <position>506,10</position>
                     <filename>images/lists_right_arrow.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
@@ -1130,16 +1130,16 @@
     </buttonlist>
 
     <buttonlist name="base_wide_selector_list_style" from="base_selector_list_style">
-        <area>0,0,680,40</area>
+        <area>0,0,666,40</area>
         <statetype name="buttonitem">
             <state name="active">
                 <imagetype name="rightarrow">
-                    <position>660,10</position>
+                    <position>646,10</position>
                 </imagetype>
             </state>
             <state name="selectedactive">
                 <imagetype name="rightarrow">
-                    <position>660,10</position>
+                    <position>646,10</position>
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active" />
@@ -1514,14 +1514,28 @@
     <window name="MythTextInputDialog">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
-        <shape name="boxshape" from="base_popup_backdrop">
+        <shape name="text-input-backdrop" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
 
+        <shape name="text-input-dialog-top-line" from="base_line">
+            <area>358,285,571,2</area>
+        </shape>
+
+        <shape name="text-input-dialog-bottom-line" from="base_line">
+            <area>358,437,571,2</area>
+        </shape>
+
+        <shape name="text-input-dialog-left-line" from="base_vertical_line">
+            <area>358,287,2,150</area>
+        </shape>
+
+        <shape name="text-input-dialog-right-line" from="base_vertical_line">
+            <area>927,287,2,150</area>
+        </shape>
+
         <textarea name="message" from="basetextarea">
-            <area>370,297,540,30</area>
+            <area>366,297,555,30</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
@@ -1539,22 +1553,36 @@
     <window name="MythSearchDialog">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="boxshape" from="base_popup_backdrop">
             <area>380,100,520,520</area>
         </shape>
 
-        <shape name="edit-powersearch-top-line" from="base_line">
-            <area>415,170,450,2</area>
+        <shape name="search-dialog-top-line" from="base_line">
+            <area>388,108,504,2</area>
         </shape>
 
-        <shape name="edit-powersearch-bottom-line" from="base_line">
-            <area>415,560,450,2</area>
+        <shape name="search-dialog-bottom-line" from="base_line">
+            <area>388,610,504,2</area>
+        </shape>
+
+        <shape name="search-dialog-left-line" from="base_vertical_line">
+            <area>388,110,2,500</area>
+        </shape>
+
+        <shape name="search-dialog-right-line" from="base_vertical_line">
+            <area>890,110,2,500</area>
+        </shape>
+
+        <shape name="search-dialog-seperator-first-line" from="base_line">
+            <area>403,170,474,2</area>
+        </shape>
+
+        <shape name="search-dialog-seperator-second-line" from="base_line">
+            <area>403,560,474,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>405,108,470,60</area>
+            <area>404,112,472,58</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
@@ -1582,20 +1610,20 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,310</position>
+                <position>0,310</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,310</position>
+                <position>20,310</position>
             </statetype>
         </buttonlist>
 
         <button name="cancel" from="base_button">
-            <position>457,572</position>
+            <position>457,569</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>674,572</position>
+            <position>674,569</position>
             <value>OK</value>
         </button>
     </window>

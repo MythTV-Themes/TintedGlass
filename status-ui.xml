@@ -8,32 +8,61 @@
             <value>System Status</value>
         </textarea>
 
-        <shape name="groupbox" from="base_group_box">
-            <area>-4,36,1288,30</area>
+        <shape name="groupbox" from="base_backdrop">
+            <area>0,36,1280,30</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="groupbox-top-line" from="base_line">
+            <area>0,36,1280,2</area>
+        </shape>
+
+        <shape name="groupbox-bottom-line" from="base_line">
+            <area>0,64,1280,2</area>
         </shape>
 
         <shape name="status-backdrop" from="base_backdrop">
-            <area>20,78,1240,360</area>
+            <area>20,76,1240,337</area>
         </shape>
 
-        <shape name="status-top-first-line" from="base_line">
-            <area>34,98,1212,2</area>
+        <shape name="status-list-top-line" from="base_line">
+            <area>28,84,1224,2</area>
         </shape>
 
-        <shape name="status-top-second-line" from="base_line">
-            <area>34,417,1212,2</area>
+        <shape name="status-list-bottom-line" from="base_line">
+            <area>28,403,1224,2</area>
+        </shape>
+
+        <shape name="status-list-left-line" from="base_vertical_line">
+            <area>28,86,2,317</area>
+        </shape>
+
+        <shape name="status-list-right-line" from="base_vertical_line">
+            <area>1250,86,2,317</area>
         </shape>
 
         <shape name="status-bottom-backdrop" from="base_backdrop">
-            <area>20,450,1240,232</area>
+            <area>20,423,1240,262</area>
         </shape>
 
         <shape name="status-bottom-top-line" from="base_line">
-            <area>45,484,1190,2</area>
+            <area>28,431,1224,2</area>
         </shape>
 
         <shape name="status-bottom-bottom-line" from="base_line">
-            <area>45,648,1190,2</area>
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="status-bottom-left-line" from="base_vertical_line">
+            <area>28,433,2,244</area>
+        </shape>
+
+        <shape name="status-bottom-right-line" from="base_vertical_line">
+            <area>1250,433,2,244</area>
+        </shape>
+
+        <shape name="status-bottom-seperator-first-line" from="base_line">
+            <area>43,469,1194,2</area>
         </shape>
 
        <buttonlist name="category">
@@ -75,38 +104,38 @@
         </buttonlist>
 
         <buttonlist name="log" from="base_list_large_width">
-            <area>22,98,1236,328</area>
+            <area>30,84,1220,328</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,31</area>
+                    <area>0,0,1220,31</area>
                     <textarea name="buttontext">
-                        <area>18,-1,1218,31</area>
+                        <area>8,-1,1204,31</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,31</area>
+                    <area>0,0,1220,31</area>
                     <textarea name="buttontext">
-                        <area>18,-1,1218,31</area>
+                        <area>8,-1,1204,31</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-18</position>
+                <position>1203,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,320</position>
+                <position>1203,321</position>
             </statetype>
         </buttonlist>
 
         <textarea name="helplabel">
-            <area>40,455,1200,34</area>
+            <area>44,436,1192,34</area>
             <value>Details</value>
             <font>basemediumyellow</font>
         </textarea>
 
         <textarea name="helptext">
-            <area>50,485,1180,170</area>
+            <area>44,473,1192,200</area>
             <font>basesomewhatsmaller</font>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
