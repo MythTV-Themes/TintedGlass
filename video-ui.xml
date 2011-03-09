@@ -6,37 +6,47 @@
     <window name="moviesel">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="moviesel-backdrop" from="base_popup_backdrop">
-            <area>320,36,640,648</area>
+            <area>320,36,640,649</area>
         </shape>
 
         <shape name="moviesel-top-line" from="base_line">
-            <area>335,63,610,2</area>
+            <area>328,44,624,2</area>
         </shape>
 
         <shape name="moviesel-bottom-line" from="base_line">
-            <area>335,656,610,2</area>
+            <area>328,675,624,2</area>
         </shape>
         
+        <shape name="moviesel-left-line" from="base_vertical_line">
+            <area>328,46,2,629</area>
+        </shape>
+
+        <shape name="moviesel-right-line" from="base_vertical_line">
+            <area>950,46,2,629</area>
+        </shape>
+
+        <shape name="moviesel-seperator-first-line" from="base_line">
+            <area>341,81,598,2</area>
+        </shape>
+
         <textarea name="title" from="basetextarea">
-            <area>323,42,634,20</area>
-            <font>baseextrasmallyellow</font>
+            <area>323,46,634,35</area>
+            <font>basesmalleryellow</font>
             <align>allcenter</align>
             <value>Movie Selector</value>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>323,64,634,600</area>
+            <area>330,81,620,600</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,634,51</area>
+                    <area>0,0,620,51</area>
                     <shape name="bottom_line" from="base_list_line">
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>15,3,59,44</area>
+                        <area>8,3,59,44</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
@@ -44,56 +54,56 @@
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>84,0,535,30</area>
+                        <area>77,0,535,30</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>84,28,329,21</area>
+                        <area>77,28,325,21</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>419,29,200,18</area>
+                        <area>412,29,200,18</area>
                         <font>basesupersmallyellow</font>
                         <align>right,bottom</align>
                         <template>Released %1</template>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,634,204</area>
+                    <area>0,0,620,204</area>
                     <imagetype name="buttonimage">
-                        <area>15,2,133,200</area>
+                        <area>8,2,133,200</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>158,0,476,30</area>
+                        <area>151,0,461,30</area>
                         <font>basesmallyellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>158,32,476,24</area>
+                        <area>151,32,461,24</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>419,182,200,20</area>
+                        <area>412,182,200,20</area>
                         <font>basesupersmallyellow</font>
                         <align>right,vcenter</align>
                         <template>Released %1</template>
                     </textarea>
                     <textarea name="userrating">
-                        <area>158,182,255,20</area>
+                        <area>151,182,251,20</area>
                         <multiline>no</multiline>
                         <font>basesupersmallyellow</font>
                         <align>left,vcenter</align>
                         <template>User Rating: %1</template>
                     </textarea>
                     <textarea name="description">
-                        <area>158,62,472,120</area>
+                        <area>151,62,461,120</area>
                         <multiline>yes</multiline>
                         <font>baseevensmaller</font>
                         <align>vcenter,left</align>
@@ -102,10 +112,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>555,598</position>
+                <position>0,596</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>585,598</position>
+                <position>20,596</position>
             </statetype>
         </buttonlist>
     </window>
@@ -113,66 +123,76 @@
     <window name="artworksel">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="artworksel-backdrop" from="base_popup_backdrop">
-            <area>332,36,616,648</area>
+            <area>332,36,616,649</area>
         </shape>
 
         <shape name="artworksel-top-line" from="base_line">
-            <area>347,66,586,2</area>
+            <area>340,44,600,2</area>
         </shape>
 
         <shape name="artworksel-bottom-line" from="base_line">
-            <area>347,651,586,2</area>
+            <area>340,675,600,2</area>
+        </shape>
+
+        <shape name="moviesel-left-line" from="base_vertical_line">
+            <area>340,46,2,629</area>
+        </shape>
+
+        <shape name="moviesel-right-line" from="base_vertical_line">
+            <area>938,46,2,629</area>
+        </shape>
+
+        <shape name="artworksel-seperator-first-line" from="base_line">
+            <area>350,87,580,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>332,36,616,34</area>
+            <area>342,46,596,41</area>
             <value>Online Artwork Selector</value>
-            <font>baseextrasmallyellow</font>
+            <font>basesmalleryellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>335,66,610,600</area>
+            <area>342,87,596,600</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,610,100</area>
+                    <area>0,0,596,100</area>
                     <shape name="bottom_line" from="base_list_line">
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>15,5,156,88</area>
+                        <area>8,5,156,88</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>176,0,419,56</area>
+                        <area>174,0,414,56</area>
                         <align>left,vcenter</align>
                         <font>basemediumlarger</font>
                     </textarea>
                     <textarea name="url">
-                        <area>176,64,419,20</area>
+                        <area>174,64,414,20</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,610,100</area>
+                    <area>0,0,596,100</area>
                     <imagetype name="buttonimage">
-                        <area>15,5,156,88</area>
+                        <area>8,5,156,88</area>
                         <alpha>255</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>176,0,419,56</area>
+                        <area>174,0,414,56</area>
                         <align>left,vcenter</align>
                         <font>basemediumlarger</font>
                     </textarea>
                     <textarea name="url">
-                        <area>176,64,419,20</area>
+                        <area>174,64,414,20</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmall</font>
                     </textarea>
@@ -180,10 +200,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>535,594</position>
+                <position>0,590</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>565,594</position>
+                <position>20,590</position>
             </statetype>
         </buttonlist>
     </window>
@@ -193,45 +213,43 @@
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="cast-popup-backdrop" from="base_popup_backdrop">
             <area>358,102,563,516</area>
         </shape>
 
-        <shape name="cast-popup-first-line" from="base_line">
-            <area>368,112,543,2</area>
+        <shape name="cast-popup-top-line" from="base_line">
+            <area>366,110,547,2</area>
         </shape>
 
-        <shape name="cast-popup-second-line" from="base_line">
-            <area>368,550,543,2</area>
+        <shape name="cast-popup-bottom-line" from="base_line">
+            <area>366,608,547,2</area>
         </shape>
 
         <shape name="cast-popup-left-line" from="base_vertical_line">
-            <area>368,114,2,436</area>
+            <area>366,112,2,496</area>
         </shape>
 
         <shape name="cast-popup-right-line" from="base_vertical_line">
-            <area>909,114,2,436</area>
+            <area>911,112,2,496</area>
+        </shape>
+
+        <shape name="cast-popup-seperator-first-line" from="base_line">
+            <area>381,154,517,2</area>
+        </shape>
+
+        <shape name="cast-popup-seperator-second-line" from="base_line">
+            <area>381,551,517,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>378,116,523,34</area>
+            <area>368,112,543,42</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
             <value>Cast Members</value>
         </textarea>
 
-        <shape name="cast-popup-top-line" from="base_line">
-            <area>376,147,527,2</area>
-        </shape>
-        
-        <shape name="cast-popup-bottom-line" from="base_line">
-            <area>376,515,527,2</area>
-        </shape>
-
         <buttonlist name="cast" from="base_button_list">
-            <area>378,164,523,342</area>
+            <area>378,184,523,342</area>
             <buttonarea>0,0,523,342</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -249,22 +267,22 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
         <statetype name="upscrollarrow">
-            <position>10,361</position>
+            <position>0,348</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>40,361</position>
+            <position>20,348</position>
         </statetype>
         </buttonlist>
 
         <button name="ok" from="base_wide_button">
-            <area>368,563,543,40</area>
+            <area>378,560,523,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
-                        <area>0,0,543,40</area>
+                        <area>0,0,523,40</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>10,5,523,30</area>
+                        <area>10,5,503,30</area>
                         <align>allcenter</align>
                         <font>basesmallblack</font>
                         <value>OK</value>
@@ -272,10 +290,10 @@
                 </state>
                 <state name="selected" from="active">
                     <shape name="background" from="base_button_background_selected">
-                        <area>0,0,543,40</area>
+                        <area>0,0,523,40</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>10,5,523,30</area>
+                        <area>10,5,503,30</area>
                         <align>allcenter</align>
                         <font>basesmall</font>
                         <value>OK</value>
@@ -362,6 +380,7 @@
     
     <!-- Main Windows -->
     <window name="manager">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -768,6 +787,7 @@
     </window>
     
     <window name="browser">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -1186,6 +1206,7 @@
     </window>
     
     <window name="gallery">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -1592,7 +1613,8 @@
         
     </window>
     
-    <window name="tree">        
+    <window name="tree">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -2024,6 +2046,7 @@
     </window>
     
     <window name="file_associations">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -2131,6 +2154,7 @@
     </window>
     
     <window name="edit_metadata">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -2927,6 +2951,7 @@
     </window>
 
     <window name="playersettings">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
@@ -3064,6 +3089,7 @@
     </window>
 
     <window name="metadatasettings">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>

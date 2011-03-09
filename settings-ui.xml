@@ -3,6 +3,7 @@
 <mythuitheme>
 
     <window name="rawsettingseditor">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
         </textarea>

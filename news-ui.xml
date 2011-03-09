@@ -3,53 +3,87 @@
 <mythuitheme>
 
     <window name="news">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>RSS Newsfeeds</value>
         </textarea>
 
-        <shape name="siteslistbox" from="base_group_box">
-            <area>-4,36,1288,30</area>
+        <shape name="siteslistbox" from="base_backdrop">
+            <area>0,36,1280,30</area>
+            <type>box</type>
+        </shape>
+
+	<shape name="siteslistbox-top-line" from="base_line">
+            <area>0,36,1280,2</area>
+        </shape>
+
+        <shape name="siteslistbox-bottom-line" from="base_line">
+            <area>0,64,1280,2</area>
         </shape>
 
         <shape name="news-feeds-backdrop" from="base_backdrop">
-            <area>20,78,1240,400</area>
+            <area>20,76,1240,370</area>
         </shape>
 
         <shape name="news-feeds-top-line" from="base_line">
-            <area>34,102,1212,2</area>
+            <area>28,84,1224,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-line" from="base_line">
-            <area>34,453,1212,2</area>
+            <area>28,436,1224,2</area>
+        </shape>
+
+        <shape name="news-feeds-left-line" from="base_vertical_line">
+            <area>28,86,2,350</area>
+        </shape>
+
+        <shape name="news-feeds-right-line" from="base_vertical_line">
+            <area>1250,86,2,350</area>
         </shape>
 
         <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
-            <area>20,490,1240,192</area>
+            <area>20,456,1240,229</area>
         </shape>
 
         <shape name="news-feeds-bottom-top-line" from="base_line">
-            <area>40,521,1014,2</area>
+            <area>28,464,935,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-bottom-line" from="base_line">
-            <area>40,651,1014,2</area>
+            <area>28,675,935,2</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-left-line" from="base_vertical_line">
+            <area>28,466,2,209</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-right-line" from="base_vertical_line">
+            <area>961,466,2,209</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-seperator-first-line" from="base_line">
+            <area>43,504,905,2</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-seperator-second-line" from="base_line">
+            <area>43,635,905,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-top-line" from="base_line">
-            <area>1074,521,170,2</area>
+            <area>969,464,283,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-bottom-line" from="base_line">
-            <area>1074,651,170,2</area>
+            <area>969,675,283,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-left-line" from="base_vertical_line">
-            <area>1074,523,2,128</area>
+            <area>969,466,2,209</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-right-line" from="base_vertical_line">
-            <area>1242,523,2,128</area>
+            <area>1250,466,2,209</area>
         </shape>
 
         <buttonlist name="siteslist">
@@ -61,18 +95,18 @@
             <buttonarea>0,0,1260,30</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,420,53</area>
+                    <area>0,0,420,30</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,405,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,405,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,1,405,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,405,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallyellow</font>
                         <alphapulse min="127" max="255" change="2" />
@@ -80,8 +114,8 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,1,405,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,405,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallyellow</font>
                     </textarea>
@@ -90,93 +124,123 @@
         </buttonlist>
 
         <buttonlist name="articleslist" from="base_list_large_width">
-            <area>22,102,1236,360</area>
+            <area>30,84,1220,360</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,1200,34</area>
+                        <area>8,0,1204,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,34</area>
                     <textarea name="buttontext">
-                        <area>18,0,1200,34</area>
+                        <area>8,0,1204,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-19</position>
+                <position>1204,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,354</position>
+                <position>1204,353</position>
             </statetype>
         </buttonlist>
 
-        <textarea name="nosites" from="basetextarea">
-            <area>40,98,1200,360</area>
-            <font>basesmall</font>
-            <align>allcenter</align>
-            <multiline>yes</multiline>
-        </textarea>
-
         <textarea name="updated" from="basetextarea">
-            <area>40,456,1200,20</area>
-            <font>baseextrasmallyellow</font>
+            <area>320,637,350,38</area>
+            <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>40,493,1200,30</area>
+            <area>44,466,903,38</area>
             <font>basemediumyellow</font>
+            <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,523,1014,130</area>
+            <area>44,509,903,124</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
         </textarea>
 
         <imagetype name="thumbnail">
-            <area>1079,526,160,120</area>
+            <area>971,466,279,209</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="enclosures">
             <filename>images/enclosures.png</filename>
-            <area>664,654,26,26</area>
+            <area>849,643,26,26</area>
         </imagetype>
 
         <imagetype name="download">
             <filename>images/need-download.png</filename>
-            <area>626,653,26,26</area>
+            <area>885,643,26,26</area>
         </imagetype>
 
         <imagetype name="ispodcast">
             <filename>images/podcast.png</filename>
-            <area>588,653,26,26</area>
+            <area>921,643,26,26</area>
         </imagetype>
+
+        <textarea name="nosites" from="basetextarea">
+            <area>30,86,1220,350</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
 
     </window>
 
     <window name="editor">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Edit RSS News Feed</value>
         </textarea>
 
-        <shape name="news-edit-top-backdrop" from="base_backdrop">
-            <area>215,36,850,516</area>
+        <shape name="news-edit-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
         </shape>
 
-        <shape name="news-edit-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="news-edit-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
         <shape name="news-edit-bottom-line" from="base_line">
-            <area>45,626,1190,2</area>
+            <area>223,538,834,2</area>
+        </shape>
+
+        <shape name="news-edit-left-line" from="base_vertical_line">
+            <area>223,46,2,492</area>
+        </shape>
+
+        <shape name="news-edit-right-line" from="base_vertical_line">
+            <area>1055,46,2,492</area>
+        </shape>
+
+        <shape name="news-edit-bottom-top-line" from="base_line">
+            <area>223,546,834,2</area>
+        </shape>
+
+        <shape name="news-edit-bottom-bottom-line" from="base_line">
+            <area>223,675,834,2</area>
+        </shape>
+
+        <shape name="news-edit-bottom-left-line" from="base_vertical_line">
+            <area>223,548,2,127</area>
+        </shape>
+
+        <shape name="news-edit-bottom-right-line" from="base_vertical_line">
+            <area>1055,548,2,127</area>
+        </shape>
+
+        <shape name="news-edit-bottom-seperator-first-line" from="base_line">
+            <area>238,610,804,2</area>
         </shape>
 
         <textarea name="namelabel" from="basetextarea">
@@ -216,139 +280,147 @@
         </checkbox>
 
         <button name="ok" from="base_medium_button">
-            <position>200,635</position>
+            <position>272,624</position>
             <value>OK</value>
         </button>
 
         <button name="cancel" from="base_medium_button">
-            <position>730,635</position>
+            <position>657,624</position>
             <value>Cancel</value>
         </button>
 
     </window>
 
     <window name="config">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Subscribe to News Feeds</value>
         </textarea>
 
-        <shape name="news-config-contexts-backdrop" from="base_backdrop">
+        <shape name="news-config-categories-backdrop" from="base_backdrop">
             <area>20,36,500,648</area>
         </shape>
 
-        <shape name="news-config-contexts-top-line" from="base_line">
-            <area>41,66,458,2</area>
+        <shape name="news-config-categories-top-line" from="base_line">
+            <area>28,49,484,2</area>
         </shape>
 
-        <shape name="news-config-contexts-bottom-line" from="base_line">
-            <area>41,655,458,2</area>
+        <shape name="news-config-categories-bottom-line" from="base_line">
+            <area>28,675,484,2</area>
         </shape>
 
-        <shape name="news-config-actions-backdrop" from="base_backdrop">
+        <shape name="news-config-categories-left-line" from="base_vertical_line">
+            <area>28,51,2,624</area>
+        </shape>
+
+        <shape name="news-config-categories-right-line" from="base_vertical_line">
+            <area>510,51,2,624</area>
+        </shape>
+
+        <shape name="news-config-feeds-backdrop" from="base_backdrop">
             <area>530,36,730,648</area>
         </shape>
 
-        <shape name="news-config-actions-top-line" from="base_line">
-            <area>546,66,698,2</area>
+        <shape name="news-config-feeds-top-line" from="base_line">
+            <area>538,49,714,2</area>
         </shape>
 
-        <shape name="news-config-actions-bottom-line" from="base_line">
-            <area>546,655,698,2</area>
+        <shape name="news-config-feeds-bottom-line" from="base_line">
+            <area>538,675,714,2</area>
+        </shape>
+
+        <shape name="news-config-feeds-left-line" from="base_vertical_line">
+            <area>538,51,2,624</area>
+        </shape>
+
+        <shape name="news-config-feeds-right-line" from="base_vertical_line">
+            <area>1250,51,2,624</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>30,39,480,30</area>
-            <font>basesmalleryellow</font>
-            <value>Contexts</value>
+            <area>30,32,480,18</area>
+            <font>basesupersmallyellow</font>
+            <value>Categories</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="category" from="base_list_small_width">
-            <area>22,66,496,594</area>
+            <area>30,49,480,630</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,496,33</area>
+                    <area>0,0,480,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,422,24</area>
+                        <area>8,4,442,24</area>
                     </textarea>
-                    <statetype name="buttoncheck">
-                        <position>458,7</position>
-                    </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,496,33</area>
+                    <area>0,0,480,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,422,24</area>
+                        <area>8,4,442,24</area>
                     </textarea>
-                    <statetype name="buttoncheck">
-                        <position>458,7</position>
-                    </statetype>
                     <imagetype name="buttonarrow">
-                        <position>463,7</position>
+                        <position>460,7</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,496,33</area>
+                    <area>0,0,480,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,422,24</area>
+                        <area>8,4,442,24</area>
                     </textarea>
-                    <statetype name="buttoncheck">
-                        <position>458,7</position>
-                    </statetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>452,-25</position>
+                <position>457,-10</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>452,596</position>
+                <position>457,627</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="basetextarea">
-            <area>540,39,710,30</area>
-            <font>basesmalleryellow</font>
-            <value>Actions</value>
+            <area>540,32,710,18</area>
+            <font>basesupersmallyellow</font>
+            <value>News Feeds</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="sites" from="base_list">
-            <area>532,66,726,594</area>
+            <area>540,49,710,630</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,726,33</area>
+                    <area>0,0,710,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,4,664,24</area>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>682,7</position>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,726,33</area>
+                    <area>0,0,710,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,4,664,24</area>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>682,7</position>
                     </statetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,726,33</area>
+                    <area>0,0,710,35</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,4,664,24</area>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>682,7</position>
                     </statetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>682,-25</position>
+                <position>684,-10</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>682,596</position>
+                <position>684,627</position>
             </statetype>
         </buttonlist>
 

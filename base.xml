@@ -1381,14 +1381,14 @@
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>250,118,785,276</area>
+            <area>251,118,785,276</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>256,422,780,174</area>
+            <area>257,420,772,174</area>
             <layout>grid</layout>
             <wrapstyle>selection</wrapstyle>
             <drawfrombottom>no</drawfrombottom>
@@ -1541,11 +1541,11 @@
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <area>492,336,287,32</area>
+            <area>500,336,287,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>559,387</position>
+            <position>568,387</position>
             <value>OK</value>
         </button>
     </window>
