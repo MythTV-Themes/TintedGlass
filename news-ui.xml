@@ -299,11 +299,11 @@
         </textarea>
 
         <shape name="news-config-categories-backdrop" from="base_backdrop">
-            <area>20,36,500,648</area>
+            <area>20,36,500,649</area>
         </shape>
 
         <shape name="news-config-categories-top-line" from="base_line">
-            <area>28,49,484,2</area>
+            <area>28,44,484,2</area>
         </shape>
 
         <shape name="news-config-categories-bottom-line" from="base_line">
@@ -311,19 +311,23 @@
         </shape>
 
         <shape name="news-config-categories-left-line" from="base_vertical_line">
-            <area>28,51,2,624</area>
+            <area>28,46,2,629</area>
         </shape>
 
         <shape name="news-config-categories-right-line" from="base_vertical_line">
-            <area>510,51,2,624</area>
+            <area>510,46,2,629</area>
+        </shape>
+
+        <shape name="news-config-categories-seperator-first-line" from="base_line">
+            <area>48,68,444,2</area>
         </shape>
 
         <shape name="news-config-feeds-backdrop" from="base_backdrop">
-            <area>530,36,730,648</area>
+            <area>530,36,730,649</area>
         </shape>
 
         <shape name="news-config-feeds-top-line" from="base_line">
-            <area>538,49,714,2</area>
+            <area>538,44,714,2</area>
         </shape>
 
         <shape name="news-config-feeds-bottom-line" from="base_line">
@@ -331,31 +335,35 @@
         </shape>
 
         <shape name="news-config-feeds-left-line" from="base_vertical_line">
-            <area>538,51,2,624</area>
+            <area>538,46,2,629</area>
         </shape>
 
         <shape name="news-config-feeds-right-line" from="base_vertical_line">
-            <area>1250,51,2,624</area>
+            <area>1250,46,2,629</area>
+        </shape>
+
+        <shape name="news-config-feeds-seperator-first-line" from="base_line">
+            <area>553,68,684,2</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>30,32,480,18</area>
-            <font>basesupersmallyellow</font>
+            <area>30,46,480,21</area>
+            <font>baseextrasmallyellow</font>
             <value>Categories</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="category" from="base_list_small_width">
-            <area>30,49,480,630</area>
+            <area>30,67,480,610</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,480,35</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
                         <area>8,4,442,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,480,35</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
                         <area>8,4,442,24</area>
                     </textarea>
@@ -364,32 +372,32 @@
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,480,35</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
                         <area>8,4,442,24</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>457,-10</position>
+                <position>457,-30</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>457,627</position>
+                <position>457,610</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="basetextarea">
-            <area>540,32,710,18</area>
-            <font>basesupersmallyellow</font>
+            <area>540,46,710,21</area>
+            <font>baseextrasmallyellow</font>
             <value>News Feeds</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="sites" from="base_list">
-            <area>540,49,710,630</area>
+            <area>540,67,710,610</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,710,35</area>
+                    <area>0,0,710,34</area>
                     <textarea name="buttontext">
                         <area>8,4,664,24</area>
                     </textarea>
@@ -398,7 +406,7 @@
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,710,35</area>
+                    <area>0,0,710,34</area>
                     <textarea name="buttontext">
                         <area>8,4,664,24</area>
                     </textarea>
@@ -407,7 +415,7 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,710,35</area>
+                    <area>0,0,710,34</area>
                     <textarea name="buttontext">
                         <area>8,4,664,24</area>
                     </textarea>
@@ -417,10 +425,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>684,-10</position>
+                <position>684,-30</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>684,627</position>
+                <position>684,610</position>
             </statetype>
         </buttonlist>
 

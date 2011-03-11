@@ -334,16 +334,9 @@
 
     <!-- Base definition of a base group box -->
     <shape name="base_group_box">
-        <area>-4,36,1288,30</area>
+        <area>0,36,1280,30</area>
         <type>box</type>
-        <fill style="gradient">
-            <gradient alpha="170" direction="vertical">
-                <stop position="0" color="#ffffff" />
-                <stop position="55" color="#000000" alpha="160" />
-                <stop position="100" color="#000000" alpha="160" />
-            </gradient>
-        </fill>
-        <line color="#666666" alpha="170" width="2" />
+        <fill color="#000000" alpha="140" />
     </shape>
 
     <!-- Base definition of a base backdrop -->
