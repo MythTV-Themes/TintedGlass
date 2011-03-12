@@ -15,11 +15,11 @@
         </shape>
 
 	<shape name="siteslistbox-top-line" from="base_line">
-            <area>0,36,1280,2</area>
+            <area>0,37,1280,2</area>
         </shape>
 
         <shape name="siteslistbox-bottom-line" from="base_line">
-            <area>0,64,1280,2</area>
+            <area>0,63,1280,2</area>
         </shape>
 
         <shape name="news-feeds-backdrop" from="base_backdrop">

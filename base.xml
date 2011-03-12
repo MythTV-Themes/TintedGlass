@@ -1459,6 +1459,22 @@
             <area>350,277,587,170</area>
         </shape>
 
+        <shape name="progress-dialog-top-line" from="base_line">
+            <area>358,285,571,2</area>
+        </shape>
+
+        <shape name="progress-dialog-bottom-line" from="base_line">
+            <area>358,437,571,2</area>
+        </shape>
+
+        <shape name="progress-dialog-left-line" from="base_vertical_line">
+            <area>358,287,2,150</area>
+        </shape>
+
+        <shape name="progress-dialog-right-line" from="base_vertical_line">
+            <area>927,287,2,150</area>
+        </shape>
+
         <textarea name="message" from="basetextarea">
             <area>370,297,540,60</area>
             <font>basesmalldarkyellow</font>

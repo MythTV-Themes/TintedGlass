@@ -5,20 +5,6 @@
     <window name="keygrabpopup">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
-        <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
-            <area>390,210,500,300</area>
-        </shape>
-
-        <shape name="key-grab-popup-top-line" from="base_line">
-            <area>405,270,470,2</area>
-        </shape>
-
-        <shape name="key-grab-popup-bottom-line" from="base_line">
-            <area>405,450,470,2</area>
-        </shape>
-
         <textarea name="heading" from="basetextarea">
             <area>390,231,500,26</area>
             <font>basesmallyellow</font>
@@ -26,132 +12,185 @@
             <align>allcenter</align>
         </textarea>
 
+        <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
+            <area>390,210,500,300</area>
+        </shape>
+
+        <shape name="key-grab-popup-top-line" from="base_line">
+            <area>398,218,484,2</area>
+        </shape>
+
+        <shape name="key-grab-popup-bottom-line" from="base_line">
+            <area>398,500,484,2</area>
+        </shape>
+
+        <shape name="key-grab-popup-left-line" from="base_vertical_line">
+            <area>398,220,2,280</area>
+        </shape>
+
+        <shape name="key-grab-popup-right-line" from="base_vertical_line">
+            <area>880,220,2,280</area>
+        </shape>
+
         <textarea name="message" from="basetextarea">
-            <area>405,276,470,168</area>
+            <area>400,220,480,235</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>456,459</position>
+            <position>456,455</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>673,459</position>
+            <position>673,455</position>
             <value>OK</value>
         </button>
 
     </window>
 
     <window name="controls">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Edit keys</value>
         </textarea>
 
-        <shape name="edit-keys-contexts-backdrop" from="base_backdrop">
-            <area>126,36,420,480</area>
+        <shape name="edit-keys-backdrop" from="base_backdrop">
+            <area>205,36,870,649</area>
         </shape>
 
         <shape name="edit-keys-contexts-top-line" from="base_line">
-            <area>144,58,383,2</area>
+            <area>213,44,419,2</area>
         </shape>
 
         <shape name="edit-keys-contexts-bottom-line" from="base_line">
-            <area>144,493,383,2</area>
+            <area>213,510,419,2</area>
         </shape>
 
-        <shape name="edit-keys-actions-backdrop" from="base_backdrop">
-            <area>734,36,420,480</area>
+        <shape name="edit-keys-contexts-left-line" from="base_vertical_line">
+            <area>213,46,2,464</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-right-line" from="base_vertical_line">
+            <area>630,46,2,464</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-seperator-first-line" from="base_line">
+            <area>228,76,389,2</area>
         </shape>
 
         <shape name="edit-keys-actions-top-line" from="base_line">
-            <area>752,58,383,2</area>
+            <area>648,44,419,2</area>
         </shape>
 
         <shape name="edit-keys-actions-bottom-line" from="base_line">
-            <area>752,493,383,2</area>
+            <area>648,510,419,2</area>
         </shape>
 
-        <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="edit-keys-actions-left-line" from="base_vertical_line">
+            <area>648,46,2,464</area>
         </shape>
 
-        <shape name="edit-keys-bottom-line" from="base_line">
-            <area>45,626,1190,2</area>
+        <shape name="edit-keys-actions-right-line" from="base_vertical_line">
+            <area>1065,46,2,464</area>
+        </shape>
+
+        <shape name="edit-keys-actions-seperator-first-line" from="base_line">
+            <area>663,76,389,2</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-top-line" from="base_line">
+            <area>213,520,854,2</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-bottom-line" from="base_line">
+            <area>213,675,854,2</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-left-line" from="base_vertical_line">
+            <area>213,522,2,153</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-right-line" from="base_vertical_line">
+            <area>1065,522,2,153</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-seperator-first-line" from="base_line">
+            <area>228,598,824,2</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>136,34,400,30</area>
+            <area>215,46,443,30</area>
             <font>baseevensmalleryellow</font>
             <value>Contexts</value>
-            <align>center</align>
+            <align>allcenter</align>
         </textarea>
 
         <buttonlist name="leftlist" from="base_list_small_width">
-            <area>128,59,415,438</area>
+            <area>215,76,415,438</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,415,33</area>
                     <textarea name="buttontext">
-                        <area>18,4,359,24</area>
+                        <area>8,4,379,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,415,33</area>
                     <imagetype name="buttonarrow">
-                        <position>387,6</position>
+                        <position>395,6</position>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>18,4,359,24</area>
+                        <area>8,4,379,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,415,33</area>
                     <textarea name="buttontext">
-                        <area>18,4,359,24</area>
+                        <area>8,4,379,24</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>375,-20</position>
+                <position>392,-39</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>375,436</position>
+                <position>392,436</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>744,34,400,30</area>
+            <area>650,46,415,30</area>
             <font>baseevensmalleryellow</font>
             <value>Actions</value>
-            <align>center</align>
+            <align>allcenter</align>
         </textarea>
 
         <buttonlist name="rightlist" from="leftlist">
-            <area>736,59,415,438</area>
+            <area>650,76,415,438</area>
         </buttonlist>
 
         <button name="action_0" from="base_button">
-            <position>78,637</position>
+            <position>273,620</position>
         </button>
 
         <button name="action_1" from="action_0">
-            <position>400,637</position>
+            <position>467,620</position>
         </button>
 
         <button name="action_2" from="action_0">
-            <position>732,637</position>
+            <position>662,620</position>
         </button>
 
         <button name="action_3" from="action_0">
-            <position>1054,637</position>
+            <position>856,620</position>
         </button>
 
         <textarea name="description" from="basetextarea">
-            <area>64,568,1152,56</area>
+            <area>229,522,822,76</area>
             <font>basesmallblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>

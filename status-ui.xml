@@ -10,7 +10,7 @@
         </textarea>
 
         <shape name="groupbox" from="base_backdrop">
-            <area>0,36,1280,30</area>
+            <area>0,35,1280,32</area>
             <type>box</type>
         </shape>
 
@@ -67,7 +67,7 @@
         </shape>
 
        <buttonlist name="category">
-            <area>0,35,1280,30</area>
+            <area>0,36,1280,30</area>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
@@ -77,8 +77,8 @@
                 <state name="active">
                     <area>0,0,255,53</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
@@ -86,8 +86,8 @@
                 <state name="selectedactive">
                     <area>8,0,400,83</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
@@ -95,8 +95,8 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                     </textarea>

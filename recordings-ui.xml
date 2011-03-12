@@ -21,12 +21,12 @@
         </textarea>
 
         <shape name="groupbox" from="base_backdrop">
-            <area>0,34,1280,29</area>
+            <area>0,34,1280,30</area>
             <type>box</type>
         </shape>
 
 	<shape name="groupbox-top-line" from="base_line">
-            <area>0,34,1280,2</area>
+            <area>0,35,1280,2</area>
         </shape>
 
         <shape name="groupbox-bottom-line" from="base_line">
@@ -608,12 +608,12 @@
         </textarea>
 
         <shape name="groupbox" from="base_backdrop">
-            <area>0,34,1280,29</area>
+            <area>0,34,1280,30</area>
             <type>box</type>
         </shape>
 
 	<shape name="groupbox-top-line" from="base_line">
-            <area>0,34,1280,2</area>
+            <area>0,35,1280,2</area>
         </shape>
 
         <shape name="groupbox-bottom-line" from="base_line">
