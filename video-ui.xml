@@ -393,7 +393,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Manage View</value>
@@ -810,7 +810,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -828,7 +828,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
         
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Browse View</value>
@@ -1245,7 +1245,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
         
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -1263,7 +1263,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
         
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Gallery View</value>
@@ -1669,7 +1669,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
         
@@ -1687,7 +1687,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video List View</value>
@@ -2125,7 +2125,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -2139,7 +2139,7 @@
             <filename>images/backgrounds/background.png</filename>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Add File Extensions</value>
@@ -2261,7 +2261,7 @@
             <value>Delete</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
         
@@ -2279,7 +2279,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Metadata Editor</value>
@@ -2679,7 +2679,7 @@
             <value>Done</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -3116,7 +3116,7 @@
             <filename>images/backgrounds/background.png</filename>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Player Settings</value>
@@ -3270,7 +3270,7 @@
             <value>Cancel</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -3284,7 +3284,7 @@
             <filename>images/backgrounds/background.png</filename>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Metadata Settings</value>
@@ -3397,7 +3397,7 @@
             <value>Cancel</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 

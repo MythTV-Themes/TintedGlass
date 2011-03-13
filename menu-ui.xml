@@ -9,19 +9,19 @@
             <filename>images/backgrounds/background_main.png</filename>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
-        <shape name="menuscroll-background">
-            <area>-4,560,1288,70</area>
+        <shape name="menuscroll-background" from="base_backdrop">
+            <area>0,560,1280,70</area>
             <type>box</type>
-            <fill style="gradient">
-                <gradient direction="vertical" alpha="140">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#000000" alpha="200" />
-                    <stop position="100" color="#000000" alpha="200" />
-                </gradient>
-            </fill>
-            <line color="#666666" alpha="255" width="2" />
+        </shape>
+
+        <shape name="menuscroll-top-line" from="base_line">
+            <area>0,561,1280,2</area>
+        </shape>
+
+        <shape name="menuscroll-bottom-line" from="base_line">
+            <area>0,627,1280,2</area>
         </shape>
 
         <statetype name="titles">
@@ -173,7 +173,7 @@
             </statetype>
         </buttonlist>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
         <clock name="clock" from="base_clock" />
 
     </window>

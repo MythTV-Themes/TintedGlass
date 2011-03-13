@@ -14,7 +14,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Watch Recordings</value>
@@ -582,7 +582,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -601,7 +601,7 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Watch Recordings</value>
@@ -1169,7 +1169,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 

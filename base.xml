@@ -285,73 +285,6 @@
         <align>vcenter</align>
     </textarea>
 
-    <!-- Base heading definition. -->
-    <textarea name="base_heading">
-        <area>0,-1,1280,28</area>
-        <font>baseextrasmall</font>
-        <align>allcenter</align>
-        <value>Heading</value>
-    </textarea>
-
-    <!-- Base definition of a heading backdrop -->
-    <shape name="base_heading_backdrop">
-        <area>525,-25,230,51</area>
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient alpha="170" direction="vertical">
-                <stop position="0" color="#000000" alpha="180" />
-                <stop position="60" color="#000000" alpha="180" />
-                <stop position="100" color="#ffffff" />
-            </gradient>
-        </fill>
-        <line color="#666666" alpha="170" width="2" />
-        <cornerradius>15</cornerradius>
-    </shape>
-
-    <!-- Base definition of a clock  backdrop -->
-    <shape name="base_clock_backdrop">
-        <area>525,695,230,51</area>
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient alpha="170" direction="vertical">
-                <stop position="0" color="#ffffff" />
-                <stop position="40" color="#000000" alpha="180" />
-                <stop position="100" color="#000000" alpha="180" />
-            </gradient>
-        </fill>
-        <line color="#666666" alpha="170" width="2" />
-        <cornerradius>15</cornerradius>
-    </shape>
-
-    <!-- Base definition of a clock -->
-    <clock name="base_clock">
-        <area>529,698,219,25</area>
-        <font>baseextrasmall</font>
-        <template>%DATE%, %TIME%</template>
-        <align>allcenter</align>
-        <alpha>255</alpha>
-    </clock>
-
-    <!-- Base definition of a base group box -->
-    <shape name="base_group_box">
-        <area>0,36,1280,30</area>
-        <type>box</type>
-        <fill color="#000000" alpha="140" />
-    </shape>
-
-    <!-- Base definition of a base backdrop -->
-    <shape name="base_backdrop">
-        <area>102,368,1076,300</area>
-        <type>roundbox</type>
-        <fill color="#000000" alpha="140" />
-        <cornerradius>5</cornerradius>
-    </shape>
-
-    <!-- Base definition of a base popup backdrop -->
-    <shape name="base_popup_backdrop" from="base_backdrop">
-        <fill color="#0a0a0e" alpha="255" />
-    </shape>
-
     <!-- Base definition of base line -->
     <shape name="base_line">
         <type>box</type>
@@ -383,6 +316,80 @@
                 <stop position="100" color="#ffffff" />
             </gradient>
         </fill>
+    </shape>
+
+    <!-- Base heading definition. -->
+    <textarea name="base_heading">
+        <area>0,0,1280,22</area>
+        <font>baseextrasmall</font>
+        <align>allcenter</align>
+        <value>Heading</value>
+    </textarea>
+
+    <!-- Base definition of a heading group -->
+    <group name="base_heading_group">
+        <area>0,0,1280,720</area>
+        <shape name="base_heading_backdrop">
+            <area>500,0,280,25</area>
+            <type>box</type>
+            <fill color="#000000" alpha="140" />
+        </shape>
+        <shape name="heading-left-line" from="base_vertical_line">
+            <area>501,0,2,22</area>
+        </shape>
+        <shape name="heading-right-line" from="base_vertical_line">
+            <area>777,0,2,22</area>
+        </shape>
+        <shape name="heading-bottom-line" from="base_line">
+            <area>501,22,278,2</area>
+        </shape>
+    </group>
+
+    <!-- Base definition of a clock  group -->
+    <group name="base_clock_group">
+        <shape name="base_clock_backdrop">
+            <area>500,695,280,25</area>
+            <type>box</type>
+            <fill color="#000000" alpha="140" />
+        </shape>
+        <shape name="clock-top-line" from="base_line">
+            <area>501,696,278,2</area>
+        </shape>
+        <shape name="clock-left-line" from="base_vertical_line">
+            <area>501,698,2,22</area>
+        </shape>
+        <shape name="clock-right-line" from="base_vertical_line">
+            <area>777,698,2,22</area>
+        </shape>
+    </group>
+
+    <!-- Base definition of a clock -->
+    <clock name="base_clock">
+        <area>529,698,219,22</area>
+        <font>baseextrasmall</font>
+        <template>%DATE%, %TIME%</template>
+        <align>allcenter</align>
+        <alpha>255</alpha>
+    </clock>
+
+    <!-- Base definition of a base group box -->
+    <shape name="base_group_box">
+        <area>0,36,1280,30</area>
+        <type>box</type>
+        <fill color="#000000" alpha="140" />
+    </shape>
+
+    <!-- Base definition of a base backdrop -->
+    <shape name="base_backdrop">
+        <area>102,368,1076,300</area>
+        <type>roundbox</type>
+        <fill color="#000000" alpha="140" />
+        <cornerradius>5</cornerradius>
+    </shape>
+
+    <!-- Base definition of a base popup backdrop -->
+    <shape name="base_popup_backdrop" from="base_backdrop">
+        <fill color="#0a0a0e" alpha="255" />
     </shape>
 
     <shape name="base_select_bar_active">
@@ -1270,9 +1277,9 @@
             <filename>images/backgrounds/background.png</filename>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
     </window>
@@ -1649,120 +1656,145 @@
             <area>0,0,1280,720</area>
         </imagetype>
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>FileBrowser</value>
         </textarea>
 
         <shape name="file-browser-preview-backdrop" from="base_backdrop">
-            <area>20,36,615,648</area>
+            <area>20,36,615,649</area>
         </shape>
 
-        <shape name="file-browser-preview-shape-top-line" from="base_line">
-            <area>42,120,569,2</area>
+        <shape name="file-browser-preview-top-line" from="base_line">
+            <area>28,44,599,2</area>
         </shape>
 
-        <shape name="file-browser-preview-shape-bottom-line" from="base_line">
-            <area>42,440,569,2</area>
+        <shape name="file-browser-preview-bottom-line" from="base_line">
+            <area>28,675,599,2</area>
         </shape>
 
-        <shape name="file-browser-preview-shape-left-line" from="base_vertical_line">
-            <area>42,122,2,318</area>
+        <shape name="file-browser-preview-left-line" from="base_vertical_line">
+            <area>28,46,2,629</area>
         </shape>
 
-        <shape name="file-browser-preview-shape-right-line" from="base_vertical_line">
-            <area>609,122,2,318</area>
+        <shape name="file-browser-preview-right-line" from="base_vertical_line">
+            <area>625,46,2,629</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-top-line" from="base_line">
+            <area>42,124,569,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-bottom-line" from="base_line">
+            <area>42,444,569,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-left-line" from="base_vertical_line">
+            <area>42,126,2,318</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-right-line" from="base_vertical_line">
+            <area>609,126,2,318</area>
         </shape>
 
         <shape name="file-browser-edge-backdrop" from="base_backdrop">
-            <area>645,36,615,648</area>
+            <area>645,36,615,649</area>
         </shape>
 
         <shape name="file-browser-top-line" from="base_line">
-            <area>660,63,585,2</area>
+            <area>653,44,599,2</area>
         </shape>
 
         <shape name="file-browser-bottom-line" from="base_line">
-            <area>660,652,585,2</area>
+            <area>653,675,599,2</area>
+        </shape>
+
+        <shape name="file-browser-left-line" from="base_vertical_line">
+            <area>653,46,2,629</area>
+        </shape>
+
+        <shape name="file-browser-right-line" from="base_vertical_line">
+            <area>1250,46,2,629</area>
         </shape>
 
         <buttonlist name="filelist" from="base_list_large_selector">
-            <area>648,64,609,596</area>
+            <area>655,45,595,632</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,609,51</area>
+                    <area>0,0,595,65</area>
                     <shape name="bottom_line" from="base_list_line">
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>15,3,80,45</area>
+                        <area>8,10,80,45</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>105,0,489,51</area>
+                        <area>98,0,489,65</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>28,6,53,40</area>
+                                <area>18,12,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>28,6,53,40</area>
+                                <area>18,12,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>28,6,53,40</area>
+                            <area>18,12,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>28,6,53,40</area>
+                            <area>18,12,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,609,102</area>
+                    <area>0,0,595,128</area>
                     <imagetype name="buttonimage">
-                        <area>15,3,170,96</area>
+                        <area>8,16,170,96</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>195,0,399,102</area>
+                        <area>188,6,407,116</area>
                         <font>basesmalleryellow</font>
+                        <multiline>true</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>74,31,53,40</area>
+                                <area>64,44,53,40</area>
                                 <filename>images/folderopen.png</filename>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>74,31,53,40</area>
+                                <area>64,44,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>74,31,53,40</area>
+                            <area>64,44,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>74,31,53,40</area>
+                            <area>64,44,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
@@ -1771,19 +1803,19 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>540,596</position>
+                <position>578,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>570,596</position>
+                <position>578,632</position>
             </statetype>
         </buttonlist>
 
         <textedit name="location" from="base_textedit">
-            <area>40,50,575,32</area>
+            <area>40,54,575,32</area>
         </textedit>
 
         <textarea name="fullpath" from="basetextarea">
-            <area>40,90,575,24</area>
+            <area>40,94,575,24</area>
             <cutdown>yes</cutdown>
             <font>baseevensmallerblue</font>
              <align>allcenter</align>
@@ -1791,44 +1823,44 @@
         </textarea>
 
         <imagetype name="preview">
-            <area>44,122,565,318</area>
+            <area>44,126,565,318</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <button name="back" from="base_button">
-            <position>252,457</position>
+            <position>252,458</position>
             <value>Up Level</value>
         </button>
 
         <button name="home" from="base_button">
-            <position>252,514</position>
+            <position>252,515</position>
             <value>Home</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>252,572</position>
+            <position>252,573</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>252,629</position>
+            <position>252,630</position>
             <value>Ok</value>
         </button>
 
         <textarea name="info_label" from="basetextarea">
-            <area>408,530,221,24</area>
+            <area>408,531,221,24</area>
             <align>allcenter</align>
             <value>File Size:</value>
         </textarea>
 
         <textarea name="info" from="basetextarea">
-            <area>408,560,221,24</area>
+            <area>408,561,221,24</area>
             <font>baseevensmallerblue</font>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
     </window>

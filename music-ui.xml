@@ -855,7 +855,7 @@
 
     <window name="albumart_browser">
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Album Art</value>
@@ -936,7 +936,7 @@
             <value>Done</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
@@ -944,7 +944,7 @@
 
     <window name="import_coverart">
 
-        <shape name="heading-backdrop" from="base_heading_backdrop" />
+        <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Import Cover Art</value>
@@ -1072,7 +1072,7 @@
             <value>Done</value>
         </button>
 
-        <shape name="clockbackdrop" from="base_clock_backdrop" />
+        <group name="clock-backdrop" from="base_clock_group" />
 
         <clock name="clock" from="base_clock" />
 
