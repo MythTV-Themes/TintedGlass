@@ -79,7 +79,7 @@
         </shape>
 
         <shape name="edit-keys-contexts-seperator-first-line" from="base_line">
-            <area>228,76,389,2</area>
+            <area>230,76,385,2</area>
         </shape>
 
         <shape name="edit-keys-actions-top-line" from="base_line">
@@ -99,7 +99,7 @@
         </shape>
 
         <shape name="edit-keys-actions-seperator-first-line" from="base_line">
-            <area>663,76,389,2</area>
+            <area>665,76,385,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-top-line" from="base_line">
@@ -123,7 +123,7 @@
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>215,46,443,30</area>
+            <area>215,46,415,30</area>
             <font>baseevensmalleryellow</font>
             <value>Contexts</value>
             <align>allcenter</align>
