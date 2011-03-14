@@ -73,6 +73,10 @@
         <color>#3a9ade</color>
     </fontdef>
 
+    <fontdef name="basesomewhatsmallerblue" from="basesomewhatsmaller">
+        <color>#3a9ade</color>
+    </fontdef>
+
     <fontdef name="basesmallerblue" from="basesmaller">
         <color>#3a9ade</color>
     </fontdef>
@@ -330,7 +334,7 @@
     <group name="base_heading_group">
         <area>0,0,1280,720</area>
         <shape name="base_heading_backdrop">
-            <area>500,0,280,25</area>
+            <area>500,-1,280,26</area>
             <type>box</type>
             <fill color="#000000" alpha="140" />
         </shape>
@@ -348,7 +352,7 @@
     <!-- Base definition of a clock  group -->
     <group name="base_clock_group">
         <shape name="base_clock_backdrop">
-            <area>500,695,280,25</area>
+            <area>500,695,280,26</area>
             <type>box</type>
             <fill color="#000000" alpha="140" />
         </shape>
