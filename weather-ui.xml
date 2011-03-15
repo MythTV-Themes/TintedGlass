@@ -1137,98 +1137,125 @@
         </textarea>
 
         <shape name="weather-source-backdrop" from="base_backdrop">
-            <area>20,36,420,479</area>
+            <area>140,36,1000,649</area>
         </shape>
 
         <shape name="weather-source-top-line" from="base_line">
-            <area>38,68,384,2</area>
+            <area>148,44,484,2</area>
         </shape>
 
         <shape name="weather-source-bottom-line" from="base_line">
-            <area>38,482,384,2</area>
+            <area>148,457,484,2</area>
         </shape>
 
-        <shape name="weather-data-retrieval-backdrop" from="base_backdrop">
-            <area>460,36,800,479</area>
+        <shape name="weather-source-left-line" from="base_vertical_line">
+            <area>148,46,2,411</area>
         </shape>
 
-        <shape name="weather-data-retrieval-top-line" from="base_line">
-            <area>480,70,760,2</area>
+        <shape name="weather-source-right-line" from="base_vertical_line">
+            <area>630,46,2,411</area>
         </shape>
 
-        <shape name="weather-data-retrieval-bottom-line" from="base_line">
-            <area>480,481,760,2</area>
+        <shape name="weather-data-top-line" from="base_line">
+            <area>648,44,484,2</area>
         </shape>
 
-        <shape name="weather-source-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="weather-data-bottom-line" from="base_line">
+            <area>648,457,484,2</area>
         </shape>
 
-        <shape name="weather-source-bottom-backdrop-line" from="base_line">
-            <area>45,626,1190,2</area>
+        <shape name="weather-data-left-line" from="base_vertical_line">
+            <area>648,46,2,411</area>
+        </shape>
+
+        <shape name="weather-data-right-line" from="base_vertical_line">
+            <area>1130,46,2,411</area>
+        </shape>
+
+        <shape name="weather-source-bottom-top-line" from="base_line">
+            <area>148,468,984,2</area>
+        </shape>
+
+        <shape name="weather-source-bottom-bottom-line" from="base_line">
+            <area>148,675,984,2</area>
+        </shape>
+
+        <shape name="weather-source-bottom-left-line" from="base_vertical_line">
+            <area>148,470,2,205</area>
+        </shape>
+
+        <shape name="weather-source-bottom-right-line" from="base_vertical_line">
+            <area>1130,470,2,205</area>
+        </shape>
+
+        <shape name="weather-source-bottom-seperator-first-line" from="base_line">
+            <area>163,600,954,2</area>
         </shape>
 
         <buttonlist name="srclist" from="base_list_small_width">
-            <area>22,69,416,418</area>
+            <area>150,44,480,418</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,416,34</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,351,24</area>
+                        <area>8,4,464,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,416,34</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,351,24</area>
+                        <area>8,4,444,24</area>
                     </textarea>
                     <imagetype name="rightarrow" from="buttonarrow">
-                        <position>387,7</position>
+                        <position>460,7</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,416,34</area>
+                    <area>0,0,480,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,351,24</area>
+                        <area>8,4,464,24</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>376,-24</position>
+                <position>456,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>376,420</position>
+                <position>456,415</position>
             </statetype>
         </buttonlist>
 
         <textarea name="updatetxt" from="basetextarea">
-            <area>680,110,300,60</area>
-            <multiline>yes</multiline>
+            <area>684,160,310,40</area>
+            <font>basesmaller</font>
+            <align>left,vcenter</align>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
         <textarea name="retrievetxt" from="basetextarea">
-            <area>680,250,300,60</area>
-            <multiline>yes</multiline>
+            <area>684,314,310,40</area>
+            <font>basesmaller</font>
+            <align>left,vcenter</align>
             <value>Source Update Timeout (seconds):</value>
         </textarea>
 
         <spinbox name="update_spinbox" from="base_spinbox">
-            <position>970,110</position>
+            <position>1004,160</position>
         </spinbox>
 
         <spinbox name="retrieve_spinbox" from="base_spinbox">
-            <position>970,250</position>
+            <position>1004,314</position>
         </spinbox>
 
         <textarea name="srcinfo" from="basetextarea">
-            <area>480,360,760,90</area>
+            <area>164,470,952,130</area>
+            <font>basesmallblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="finishbutton" from="base_medium_button">
-            <position>465,634</position>
+            <position>465,619</position>
         </button>
 
     </window>
@@ -1241,93 +1268,128 @@
         </textarea>
 
         <shape name="weather-search-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,147</area>
+            <area>320,36,640,649</area>
         </shape>
 
         <shape name="weather-search-top-line" from="base_line">
-            <area>45,109,1190,2</area>
-        </shape>
-
-        <shape name="weather-search-middle-backdrop" from="base_backdrop">
-            <area>20,195,1240,330</area>
-        </shape>
-
-        <shape name="weather-search-middle-top-line" from="base_line">
-            <area>34,215,1212,2</area>
-        </shape>
-
-        <shape name="weather-search-middle-bottom-line" from="base_line">
-            <area>34,502,1212,2</area>
-        </shape>
-
-        <shape name="weather-search-bottom-backdrop" from="base_backdrop">
-            <area>20,537,1240,147</area>
+            <area>328,44,624,2</area>
         </shape>
 
         <shape name="weather-search-bottom-line" from="base_line">
-            <area>45,624,1190,2</area>
+            <area>328,206,624,2</area>
         </shape>
 
-        <textarea name="editlbl" from="basetextarea">
-            <area>235,61,180,30</area>
-            <value>Enter Location:</value>
-            <align>right,top</align>
-        </textarea>
+        <shape name="weather-search-left-line" from="base_vertical_line">
+            <area>328,46,2,160</area>
+        </shape>
 
-        <textedit name="loc-edit" from="base_wide_textedit">
-            <area>425,59,580,32</area>
-        </textedit>
+        <shape name="weather-search-right-line" from="base_vertical_line">
+            <area>950,46,2,160</area>
+        </shape>
+
+        <shape name="weather-search-seperator-first-line" from="base_line">
+            <area>343,125,594,2</area>
+        </shape>
+
+        <shape name="weather-search-middle-top-line" from="base_line">
+            <area>328,216,624,2</area>
+        </shape>
+
+        <shape name="weather-search-middle-bottom-line" from="base_line">
+            <area>328,504,624,2</area>
+        </shape>
+
+        <shape name="weather-search-middle-left-line" from="base_vertical_line">
+            <area>328,218,2,288</area>
+        </shape>
+
+        <shape name="weather-search-middle-right-line" from="base_vertical_line">
+            <area>950,218,2,288</area>
+        </shape>
+
+        <shape name="weather-search-bottom-top-line" from="base_line">
+            <area>328,514,624,2</area>
+        </shape>
+
+        <shape name="weather-search-bottom-bottom-line" from="base_line">
+            <area>328,675,624,2</area>
+        </shape>
+
+        <shape name="weather-search-bottom-left-line" from="base_vertical_line">
+            <area>328,516,2,159</area>
+        </shape>
+
+        <shape name="weather-search-bottom-right-line" from="base_vertical_line">
+            <area>950,516,2,159</area>
+        </shape>
+
+        <shape name="weather-search-bottom-seperator-first-line" from="base_line">
+            <area>343,595,594,2</area>
+        </shape>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>40,109,1200,74</area>
-            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
+            <area>330,46,620,79</area>
+            <font>basesmallerblue</font>
+            <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported. Hit the right or down arrow to continue. </value>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
+        <textarea name="editlbl" from="basetextarea">
+            <area>394,128,180,78</area>
+            <value>Enter Location:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textedit name="loc-edit" from="base_textedit">
+            <area>584,151,287,32</area>
+        </textedit>
+
+        <button name="searchbtn" from="base_medium_button">
+            <position>465,616</position>
+        </button>
+
         <buttonlist name="results" from="base_list_large_width">
-            <area>22,216,1236,290</area>
+            <area>330,216,620,290</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,620,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,1200,24</area>
+                        <area>8,4,604,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,620,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,1200,24</area>
+                        <area>8,4,604,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,620,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,1200,24</area>
+                        <area>8,4,604,24</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1196,-19</position>
+                <position>602,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1196,288</position>
+                <position>602,290</position>
             </statetype>
         </buttonlist>
 
         <textarea name="numresults" from="basetextarea">
-            <area>40,553,1200,30</area>
+            <area>330,516,620,39</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="source" from="basetextarea">
-            <area>40,583,1200,30</area>
+            <area>330,555,620,40</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
-
-        <button name="searchbtn" from="base_medium_button">
-            <position>465,633</position>
-        </button>
 
     </window>
 

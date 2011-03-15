@@ -11,6 +11,22 @@
             <area>320,180,640,360</area>
         </shape>
 
+        <shape name="appearance-top-line" from="base_line">
+            <area>328,188,624,2</area>
+        </shape>
+
+        <shape name="appearance-bottom-line" from="base_line">
+            <area>328,530,624,2</area>
+        </shape>
+
+        <shape name="appearance-left-line" from="base_vertical_line">
+            <area>328,190,2,340</area>
+        </shape>
+
+        <shape name="appearance-right-line" from="base_vertical_line">
+            <area>950,190,2,340</area>
+        </shape>
+
         <imagetype name="topleft">
             <position>0,0</position>
             <filename>images/topleft.png</filename>
@@ -23,7 +39,7 @@
 
         <textarea name="part1" from="basetextarea">
             <font>basesmall</font>
-            <area>340,190,600,180</area>
+            <area>340,192,600,178</area>
             <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
             <multiline>yes</multiline>
         </textarea>

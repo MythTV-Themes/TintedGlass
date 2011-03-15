@@ -8,71 +8,83 @@
             <value>Myth Web Browser</value>
         </textarea>
 
-        <shape name="browser_page_list_backdrop" from="base_backdrop">
-            <area>20,36,1240,53</area>
-            <cornerradius>90</cornerradius>
-        </shape>
-
         <shape name="web_browser_backdrop" from="base_backdrop">
-            <area>20,101,1240,552</area>
+            <area>20,36,1240,649</area>
         </shape>
 
         <shape name="web-browser-top-line" from="base_line">
-            <area>42,114,1196,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="web-browser-bottom-line" from="base_line">
-            <area>42,640,1196,2</area>
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="web-browser-left-line" from="base_vertical_line">
+            <area>28,46,2,629</area>
+        </shape>
+
+        <shape name="web-browser-right-line" from="base_vertical_line">
+            <area>1250,46,2,629</area>
+        </shape>
+
+        <shape name="web-browser-seperator-first-line" from="base_line">
+            <area>43,98,1194,2</area>
+        </shape>
+
+        <shape name="web-browser-seperator-second-line" from="base_line">
+            <area>43,651,1194,2</area>
         </shape>
 
         <buttonlist name="pagelist" from="base_selector">
-            <area>30,43,400,40</area>
+            <area>40,52,583,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,400,40</area>
+                    <area>0,0,583,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,370,24</area>
+                        <area>15,8,553,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,400,40</area>
+                    <area>0,0,583,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,370,24</area>
+                        <area>15,8,553,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>405,2</position>
+                <position>583,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>405,21</position>
+                <position>583,21</position>
             </statetype>
         </buttonlist>
 
+        <textarea name="status" from="basetextarea">
+            <area>640,52,600,40</area>
+            <font>baseextrasmallblue</font>
+            <align>allcenter</align>
+            <multiline>no</multiline>
+        </textarea>
+
         <webbrowser name="webbrowser">
-            <area>30,120,1220,514</area>
-            <zoom>1.4</zoom>
+            <area>32,102,1216,547</area>
+            <zoom>1.2</zoom>
         </webbrowser>
 
         <!-- these are optional -->
         <progressbar name="progressbar" from="baseprogressbar">
-            <position>24,672</position>
+            <position>44,659</position>
             <imagetype name="background">
-                <area>0,0,1232,10</area>
+                <area>0,0,1192,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <area>0,0,1232,10</area>
+                <area>0,0,1192,10</area>
                 <filename>images/progressbar/progressbar_fill.png</filename>
             </imagetype>
         </progressbar>
-
-        <textarea name="status" from="basetextarea">
-            <area>460,44,790,38</area>
-            <align>allcenter</align>
-            <multiline>no</multiline>
-        </textarea>
 
     </window>
 
@@ -82,24 +94,44 @@
             <value>Web Bookmarks</value>
         </textarea>
 
-        <shape name="groupbox" from="base_group_box">
-            <area>-4,36,1288,30</area>
+        <shape name="groupbox" from="base_backdrop">
+            <area>0,35,1280,32</area>
+            <type>box</type>
         </shape>
 
-        <shape name="bookmark-list-backdrop" from="base_backdrop">
-            <area>20,78,1240,606</area>
+        <shape name="groupbox-top-line" from="base_line">
+            <area>0,36,1280,2</area>
         </shape>
 
-        <shape name="bookmark-list-top-line" from="base_line">
-            <area>34,109,1212,2</area>
+        <shape name="groupbox-bottom-line" from="base_line">
+            <area>0,64,1280,2</area>
         </shape>
 
-        <shape name="bookmark-list-bottom-line" from="base_line">
-            <area>34,651,1212,2</area>
+        <shape name="bookmark-backdrop" from="base_backdrop">
+            <area>20,76,1240,609</area>
+        </shape>
+
+        <shape name="bookmark-top-line" from="base_line">
+            <area>28,84,1224,2</area>
+        </shape>
+
+        <shape name="bookmark-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="bookmark-left-line" from="base_vertical_line">
+            <area>28,86,2,589</area>
+        </shape>
+
+        <shape name="bookmark-right-line" from="base_vertical_line">
+            <area>1250,86,2,589</area>
+        </shape>
+        <shape name="bookmark-seperator-first-line" from="base_line">
+            <area>42,115,1196,2</area>
         </shape>
 
         <buttonlist name="grouplist">
-            <area>0,35,1280,30</area>
+            <area>0,36,1280,30</area>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
@@ -109,8 +141,8 @@
                 <state name="active">
                     <area>0,0,255,53</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
@@ -118,8 +150,8 @@
                 <state name="selectedactive">
                     <area>8,0,400,83</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
@@ -127,8 +159,8 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>8,0,240,30</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                     </textarea>
@@ -138,58 +170,62 @@
 
         <textarea name="namelabel" from="basetextarea">
             <font>baseevensmalleryellow</font>
-            <area>20,84,520,24</area>
+            <area>30,86,610,29</area>
             <align>allcenter</align>
             <value>Website Name</value>
         </textarea>
 
         <textarea name="urllabel" from="basetextarea">
             <font>baseevensmalleryellow</font>
-            <area>600,84,710,24</area>
+            <area>610,86,610,29</area>
             <align>allcenter</align>
             <value>Website URL</value>
         </textarea>
 
         <buttonlist name="bookmarklist" from="base_list_large_width">
-            <area>22,109,1236,548</area>
+            <area>30,115,1220,578</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,42</area>
                     <statetype name="buttoncheck">
-                        <position>18,7</position>
+                        <position>8,11</position>
                     </statetype>
                     <textarea name="name" from="base_text_font_state_small">
-                        <area>52,4,558,24</area>
+                        <area>36,0,569,42</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>630,4,588,24</area>
+                        <area>615,0,597,42</area>
+                        <align>vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1236,34</area>
+                    <area>0,0,1220,42</area>
                     <statetype name="buttoncheck">
-                        <position>18,7</position>
+                        <position>8,11</position>
                     </statetype>
                     <textarea name="name" from="base_text_font_state_small">
-                        <area>52,4,558,24</area>
+                        <area>36,0,569,42</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>630,4,588,24</area>
+                        <area>615,0,597,42</area>
+                        <align>vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1194,-25</position>
+                <position>1190,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1194,552</position>
+                <position>1190,562</position>
             </statetype>
         </buttonlist>
 
         <textarea name="messagetext" from="basetextarea">
             <font>basemedium</font>
-            <area>40,230,720,290</area>
+            <area>30,117,1220,558</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
         </textarea>
@@ -202,60 +238,90 @@
             <value>Configure Web Browser</value>
         </textarea>
 
-        <shape name="configure-web-browser-top-backdrop" from="base_backdrop">
-            <area>215,36,850,489</area>
+        <shape name="configure-web-browser-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
         </shape>
 
-        <shape name="configure-web-browser-bottom-backdrop" from="base_backdrop">
-            <area>20,537,1240,147</area>
+        <shape name="web-browser-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
-        <shape name="configure-web-browser-bottom-line" from="base_line">
-            <area>45,624,1190,2</area>
+        <shape name="web-browser-bottom-line" from="base_line">
+            <area>223,456,834,2</area>
+        </shape>
+
+        <shape name="web-browser-left-line" from="base_vertical_line">
+            <area>223,46,2,410</area>
+        </shape>
+
+        <shape name="web-browser-right-line" from="base_vertical_line">
+            <area>1055,46,2,410</area>
+        </shape>
+
+        <shape name="web-browser-bottom-top-line" from="base_line">
+            <area>223,466,834,2</area>
+        </shape>
+
+        <shape name="web-browser-bottom-bottom-line" from="base_line">
+            <area>223,675,834,2</area>
+        </shape>
+
+        <shape name="web-browser-bottom-left-line" from="base_vertical_line">
+            <area>223,468,2,207</area>
+        </shape>
+
+        <shape name="web-browser-bottom-right-line" from="base_vertical_line">
+            <area>1055,468,2,207</area>
+        </shape>
+
+        <shape name="configure-web-browser-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
         </shape>
 
         <textarea name="commandlabel" from="basetextarea">
-            <area>240,138,210,30</area>
+            <area>240,114,210,30</area>
             <align>right,vcenter</align>
             <value>Browser Command:</value>
         </textarea>
 
         <textedit name="command" from="base_wide_textedit">
-            <area>460,137,580,32</area>
+            <area>460,113,580,32</area>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
-            <area>240,260,210,30</area>
+            <area>240,236,210,30</area>
             <align>right,vcenter</align>
             <value>Text Size:</value>
         </textarea>
 
         <textedit name="zoom" from="base_wide_textedit">
-            <area>460,259,580,32</area>
+            <area>460,235,580,32</area>
         </textedit>
 
         <textarea name="pluginlabel" from="basetextarea">
-            <area>240,382,210,30</area>
+            <area>240,358,210,30</area>
             <align>right,vcenter</align>
             <value>Enable Plugins:</value>
         </textarea>
 
         <checkbox name="enablepluginscheck" from="basecheckbox">
-            <position>460,382</position>
+            <position>460,358</position>
         </checkbox>
 
         <textarea name="description" from="basetextarea">
-            <area>40,543,1200,81</area>
+            <area>239,468,802,145</area>
+            <font>basesmallblue</font>
             <multiline>yes</multiline>
+            <align>allcenter</align>
         </textarea>
 
         <button name="cancel" from="base_medium_button">
-            <position>193,634</position>
+            <position>266,625</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_medium_button">
-            <position>737,634</position>
+            <position>660,625</position>
             <value>OK</value>
         </button>
 
@@ -266,35 +332,49 @@
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="bookmark-editor-backdrop" from="base_popup_backdrop">
             <area>232,102,816,516</area>
         </shape>
 
-        <shape name="bookmark-editor-fist-line" from="base_line">
-            <area>242,112,796,2</area>
+        <shape name="bookmark-editor-top-line" from="base_line">
+            <area>240,110,800,2</area>
         </shape>
 
-        <shape name="bookmark-editor-second-line" from="base_line">
-            <area>242,504,796,2</area>
+        <shape name="bookmark-editor-bottom-line" from="base_line">
+            <area>240,504,800,2</area>
         </shape>
 
         <shape name="bookmark-editor-left-line" from="base_vertical_line">
-            <area>242,114,2,390</area>
+            <area>240,112,2,392</area>
         </shape>
 
         <shape name="bookmark-editor-right-line" from="base_vertical_line">
-            <area>1036,114,2,390</area>
+            <area>1038,112,2,392</area>
         </shape>
 
-        <shape name="bookmark-editor-title-line" from="base_line">
-            <area>252,147,776,2</area>
+        <shape name="bookmark-editor-bottom-top-line" from="base_line">
+            <area>240,514,800,2</area>
+        </shape>
+
+        <shape name="bookmark-editor-bottom-bottom-line" from="base_line">
+            <area>240,608,800,2</area>
+        </shape>
+
+        <shape name="bookmark-editor-bottom-left-line" from="base_vertical_line">
+            <area>240,516,2,92</area>
+        </shape>
+
+        <shape name="bookmark-editor-bottom-right-line" from="base_vertical_line">
+            <area>1038,516,2,92</area>
+        </shape>
+
+        <shape name="bookmark-editor-seperator-first-line" from="base_line">
+            <area>255,147,770,2</area>
         </shape>
 
         <textarea name="title">
-            <area>252,120,776,24</area>
-            <align>center</align>
+            <area>242,112,796,35</area>
+            <align>allcenter</align>
             <font>basesmallyellow</font>
             <value>Configure Web Browser</value>
         </textarea>
