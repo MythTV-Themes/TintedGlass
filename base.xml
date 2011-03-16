@@ -1493,7 +1493,7 @@
         </textarea>
 
         <progressbar name="progressbar" from="baseprogressbar">
-            <position>372,357</position>
+            <position>375,357</position>
         </progressbar>
 
         <textarea name="progresstext" from="basetextarea">
@@ -1506,14 +1506,32 @@
     <window name="MythConfirmationDialog">
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>350,262,587,200</area>
+        </shape>
+
+        <shape name="confirmation-dialog-top-line" from="base_line">
+            <area>358,270,571,2</area>
+        </shape>
+
+        <shape name="confirmation-dialog-bottom-line" from="base_line">
+            <area>358,452,571,2</area>
+        </shape>
+
+        <shape name="confirmation-dialog-left-line" from="base_vertical_line">
+            <area>358,272,2,180</area>
+        </shape>
+
+        <shape name="confirmation-dialog-right-line" from="base_vertical_line">
+            <area>927,272,2,180</area>
+        </shape>
+
+        <shape name="confirmation-dialog-seperator-first-line" from="base_line">
+            <area>373,401,541,2</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>365,292,550,90</area>
+            <area>364,276,559,121</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <multiline>yes</multiline>
@@ -1521,12 +1539,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>440,387</position>
+            <position>449,410</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>688,387</position>
+            <position>688,410</position>
             <value>OK</value>
         </button>
     </window>

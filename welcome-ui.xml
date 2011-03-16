@@ -3,6 +3,7 @@
 <mythuitheme>
 
     <window name="welcome_screen">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Welcome to MythTV</value>

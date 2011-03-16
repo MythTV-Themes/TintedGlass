@@ -3,6 +3,7 @@
 <mythuitheme>
 
     <window name="browser">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Myth Web Browser</value>
@@ -89,6 +90,7 @@
     </window>
 
     <window name="bookmarkmanager">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Web Bookmarks</value>
@@ -233,6 +235,7 @@
     </window>
 
     <window name="browserconfig">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Configure Web Browser</value>
@@ -328,6 +331,7 @@
     </window>
 
     <window name="bookmarkeditor">
+        <area>0,0,1280,720</area>
 
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>

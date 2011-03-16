@@ -3,83 +3,103 @@
 <mythuitheme>
 
     <window name="iconimport">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Icon Import</value>
         </textarea>
 
-        <shape name="icon-import-search-term-backdrop" from="base_backdrop">
-            <area>236,36,804,110</area>
+        <shape name="icon-import-backdrop" from="base_backdrop">
+            <area>236,36,804,649</area>
         </shape>
 
-        <shape name="icon-import-icon-list-backdrop" from="base_backdrop">
-            <area>438,157,404,527</area>
+        <shape name="icon-import-top-line" from="base_line">
+            <area>244,44,788,2</area>
         </shape>
 
-        <shape name="icon-import-icon-list-top-line" from="base_line">
-            <area>444,189,392,2</area>
+        <shape name="icon-import-bottom-line" from="base_line">
+            <area>244,144,788,2</area>
         </shape>
 
-        <shape name="icon-import-icon-list-bottom-line" from="base_line">
-            <area>444,652,392,2</area>
+        <shape name="icon-import-left-line" from="base_vertical_line">
+            <area>244,46,2,98</area>
+        </shape>
+
+        <shape name="icon-import-right-line" from="base_vertical_line">
+            <area>1030,46,2,98</area>
+        </shape>
+
+        <shape name="icon-import-bottom-top-line" from="base_line">
+            <area>244,154,788,2</area>
+        </shape>
+
+        <shape name="icon-import-bottom-bottom-line" from="base_line">
+            <area>244,675,788,2</area>
+        </shape>
+
+        <shape name="icon-import-bottom-left-line" from="base_vertical_line">
+            <area>244,156,2,521</area>
+        </shape>
+
+        <shape name="icon-import-bottom-right-line" from="base_vertical_line">
+            <area>1030,156,2,521</area>
+        </shape>
+
+        <shape name="icon-import-bottom-seperator-first-line" from="base_line">
+            <area>253,196,770,2</area>
         </shape>
 
         <textarea name="manuallabel" from="basetextarea">
-            <area>268,55,150,30</area>
+            <area>268,58,150,30</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Search Terms:</value>
         </textarea>
 
         <textedit name="manualsearch" from="base_wide_textedit">
-            <area>430,54,580,32</area>
+            <area>430,57,580,32</area>
         </textedit>
 
         <button name="search" from="base_button">
-            <position>404,96</position>
+            <position>404,99</position>
             <value>Search</value>
         </button>
 
         <button name="skip" from="base_button">
-            <position>722,96</position>
+            <position>722,99</position>
             <value>Skip</value>
         </button>
 
         <textarea name="name" from="basetextarea">
-            <area>440,166,400,20</area>
+            <area>246,156,784,40</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="icons" from="base_list_medium_selector_large_width">
-            <area>440,189,400,480</area>
-            <layout>vertical</layout>
+            <area>246,195,784,496</area>
             <spacing>-2</spacing>
-            <scrollstyle>free</scrollstyle>
-            <arrange>stack</arrange>
-            <wrapstyle>items</wrapstyle>
-            <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,400,60</area>
+                    <area>0,0,784,62</area>
                     <imagetype name="icon">
-                        <area>0,5,80,50</area>
+                        <area>8,6,80,50</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>100,5,292,50</area>
+                        <area>96,0,680,62</area>
                         <align>allcenter</align>
                         <multiline>yes</multiline>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,400,60</area>
+                    <area>0,0,784,62</area>
                     <imagetype name="icon">
-                        <area>0,5,80,50</area>
+                        <area>8,6,80,50</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>100,5,292,50</area>
+                        <area>96,0,680,62</area>
                         <align>allcenter</align>
                         <multiline>yes</multiline>
                     </textarea>
@@ -87,10 +107,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>362,-23</position>
+                <position>760,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>362,469</position>
+                <position>760,481</position>
             </statetype>
         </buttonlist>
 
@@ -105,103 +125,134 @@
     </window>
 
     <window name="channeloverview">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Edit Channels</value>
         </textarea>
 
         <shape name="edit-channels-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,400</area>
+            <area>20,36,1240,393</area>
         </shape>
 
         <shape name="edit-channels-top-line" from="base_line">
-            <area>34,59,1212,2</area>
+            <area>28,44,1224,2</area>
         </shape>
 
         <shape name="edit-channels-bottom-line" from="base_line">
-            <area>34,410,1212,2</area>
+            <area>28,419,1224,2</area>
+        </shape>
+
+        <shape name="edit-channels-left-line" from="base_vertical_line">
+            <area>28,46,2,372</area>
+        </shape>
+
+        <shape name="edit-channels-right-line" from="base_vertical_line">
+            <area>1250,46,2,372</area>
         </shape>
 
         <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
-            <area>20,448,1240,236</area>
+            <area>20,439,1240,246</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-top-line" from="base_line">
+            <area>28,447,1224,2</area>
         </shape>
 
         <shape name="edit-channels-bottom-bottom-line" from="base_line">
-            <area>45,624,1190,2</area>
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-left-line" from="base_vertical_line">
+            <area>28,449,2,226</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-right-line" from="base_vertical_line">
+            <area>1250,449,2,226</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-seperator-first-line" from="base_line">
+            <area>43,617,1194,2</area>
         </shape>
 
     <buttonlist name="channels" from="base_list_large_width">
-        <area>22,59,1236,356</area>
+        <area>30,45,1220,396</area>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,1236,34</area>
+                <area>0,0,1220,36</area>
                 <textarea name="channum" from="buttontext">
-                    <area>18,5,60,24</area>
+                    <area>8,0,70,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <imagetype name="icon">
-                    <area>96,5,36,24</area>
+                    <area>86,6,36,24</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
                 <textarea name="name" from="channum">
-                    <area>150,4,750,24</area>
+                    <area>130,0,774,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <textarea name="sourcename" from="channum">
-                    <area>918,4,300,24</area>
+                    <area>912,0,300,36</area>
                     <align>right,vcenter</align>
                 </textarea>
             </state>
             <state name="selectedactive">
-                <area>0,0,1236,34</area>
+                <area>0,0,1220,36</area>
                 <textarea name="channum" from="buttontext">
-                    <area>18,5,60,24</area>
+                    <area>8,0,70,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <imagetype name="icon">
-                    <area>96,5,36,24</area>
+                    <area>86,6,36,24</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
                 <textarea name="name" from="channum">
-                    <area>150,4,750,24</area>
+                    <area>130,0,774,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <textarea name="sourcename" from="channum">
-                    <area>918,4,300,24</area>
+                    <area>912,0,300,36</area>
                     <align>right,vcenter</align>
                 </textarea>
             </state>
             <state name="selectedinactive">
-                <area>0,0,1236,34</area>
+                <area>0,0,1220,34</area>
                 <textarea name="channum" from="buttontext">
-                    <area>18,5,60,24</area>
+                    <area>8,0,70,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <imagetype name="icon">
-                    <area>96,5,36,24</area>
+                    <area>86,6,36,24</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
                 <textarea name="name" from="channum">
-                    <area>150,4,750,24</area>
+                    <area>130,0,774,36</area>
+                    <align>vcenter</align>
                 </textarea>
                 <textarea name="sourcename" from="channum">
-                    <area>918,4,300,24</area>
+                    <area>912,0,300,36</area>
                     <align>right,vcenter</align>
                 </textarea>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>1196,-20</position>
+            <position>1204,-8</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>1196,356</position>
+            <position>1204,375</position>
         </statetype>
     </buttonlist>
 
         <textarea name="sortlabel" from="basetextarea">
-            <area>245,475,160,30</area>
+            <area>245,469,160,30</area>
             <value>Sort Mode:</value>
             <font>basemedium</font>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="sorting" from="base_selector">
-            <area>415,470,580,40</area>
+            <area>415,464,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -226,100 +277,101 @@
         </buttonlist>
 
         <textarea name="sourcelabel" from="sortlabel">
-            <position>245,530</position>
+            <position>245,524</position>
             <value>Video Source:</value>
         </textarea>
 
         <buttonlist name="source" from="sorting">
-            <area>415,525,580,40</area>
+            <area>415,519,580,40</area>
         </buttonlist>
 
         <button name="delete" from="base_button">
-            <position>1030,527</position>
+            <position>1030,521</position>
             <value>Delete</value>
         </button>
 
         <textarea name="nochannumlabel" from="basetextarea">
-            <area>450,585,500,60</area>
+            <area>450,579,500,60</area>
             <value>Hide Channels without channel number.</value>
         </textarea>
 
         <checkbox name="nochannum" from="basecheckbox">
-            <position>410,580</position>
+            <position>410,574</position>
         </checkbox>
 
         <button name="scan" from="base_medium_button">
-            <position>68,634</position>
+            <position>68,627</position>
             <value>Channel Scan</value>
         </button>
 
         <button name="importicons" from="base_medium_button">
-            <position>465,634</position>
+            <position>465,627</position>
             <value>Icon Download</value>
         </button>
 
         <button name="edittransport" from="base_medium_button">
-            <position>862,634</position>
+            <position>862,627</position>
             <value>Edit Transports</value>
         </button>
 
     </window>
 
     <window name="grabbersettings">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Artwork, Metadata Sources</value>
         </textarea>
 
         <shape name="grabbersettings-backdrop" from="base_backdrop">
-            <area>215,36,850,648</area>
+            <area>215,36,850,649</area>
         </shape>
 
         <shape name="grabbersettings-top-line" from="base_line">
-            <area>229,50,822,2</area>
+            <area>223,44,834,2</area>
         </shape>
 
         <shape name="grabbersettings-bottom-line" from="base_line">
-            <area>229,354,822,2</area>
+            <area>223,354,834,2</area>
         </shape>
 
         <shape name="grabbersettings-left-line" from="base_vertical_line">
-            <area>229,52,2,302</area>
+            <area>223,46,2,308</area>
         </shape>
 
         <shape name="grabbersettings-right-line" from="base_vertical_line">
-            <area>1049,52,2,302</area>
+            <area>1055,46,2,308</area>
         </shape>
 
         <shape name="helptext-top-line" from="base_line">
-            <area>229,364,822,2</area>
+            <area>223,364,834,2</area>
         </shape>
 
         <shape name="helptext-bottom-line" from="base_line">
-            <area>229,668,822,2</area>
+            <area>223,675,834,2</area>
         </shape>
 
         <shape name="helptext-left-line" from="base_vertical_line">
-            <area>229,366,2,302</area>
+            <area>223,366,2,309</area>
         </shape>
 
         <shape name="helptext-right-line" from="base_vertical_line">
-            <area>1049,366,2,302</area>
+            <area>1055,366,2,309</area>
         </shape>
 
-        <shape name="buttons-top-line" from="base_line">
+        <shape name="helptext-seperator-first-line" from="base_line">
             <area>249,607,782,2</area>
         </shape>
 
         <textarea name="moviegrabber_text" from="basetextarea">
-            <area>237,104,298,24</area>
+            <area>237,101,298,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Movie Metadata Source:</value>
         </textarea>
 
         <buttonlist name="moviegrabber" from="base_selector">
-            <area>545,98,482,40</area>
+            <area>545,95,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -344,14 +396,14 @@
         </buttonlist>
 
         <textarea name="tvgrabber_text" from="basetextarea">
-            <area>237,189,298,24</area>
+            <area>237,186,298,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Television Metadata Source:</value>
         </textarea>
 
         <buttonlist name="tvgrabber" from="base_selector">
-            <area>545,183,482,40</area>
+            <area>545,180,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -376,14 +428,14 @@
         </buttonlist>
 
         <textarea name="gamegrabber_text" from="basetextarea">
-            <area>237,274,298,24</area>
+            <area>237,271,298,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Game Metadata Source:</value>
         </textarea>
 
         <buttonlist name="gamegrabber" from="base_selector">
-            <area>545,268,482,40</area>
+            <area>545,265,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -415,158 +467,78 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>403,621</position>
+            <position>403,625</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>727,621</position>
+            <position>727,625</position>
             <value>OK</value>
         </button>
 
     </window>
 
     <window name="generalwizard">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
-            <value>MythTV Config Wizard</value>
+            <value>MythTV Configuration Wizard</value>
         </textarea>
 
         <shape name="generalwizard-backdrop" from="base_backdrop">
-            <area>215,36,850,648</area>
+            <area>215,36,850,649</area>
         </shape>
 
         <shape name="generalwizard-top-line" from="base_line">
-            <area>229,50,822,2</area>
+            <area>223,44,834,2</area>
         </shape>
 
         <shape name="generalwizard-bottom-line" from="base_line">
-            <area>229,354,822,2</area>
+            <area>223,354,834,2</area>
         </shape>
 
         <shape name="generalwizard-left-line" from="base_vertical_line">
-            <area>229,52,2,302</area>
+            <area>223,46,2,308</area>
         </shape>
 
         <shape name="generalwizard-right-line" from="base_vertical_line">
-            <area>1049,52,2,302</area>
+            <area>1055,46,2,308</area>
         </shape>
 
         <shape name="helptext-top-line" from="base_line">
-            <area>229,364,822,2</area>
+            <area>223,364,834,2</area>
         </shape>
 
         <shape name="helptext-bottom-line" from="base_line">
-            <area>229,668,822,2</area>
+            <area>223,675,834,2</area>
         </shape>
 
         <shape name="helptext-left-line" from="base_vertical_line">
-            <area>229,366,2,302</area>
+            <area>223,366,2,309</area>
         </shape>
 
         <shape name="helptext-right-line" from="base_vertical_line">
-            <area>1049,366,2,302</area>
+            <area>1055,366,2,309</area>
         </shape>
 
-        <shape name="buttons-top-line" from="base_line">
-            <area>249,607,782,2</area>
+        <shape name="helptext-seperator-first-line" from="base_line">
+            <area>238,607,804,2</area>
         </shape>
 
-        <textarea name="ldate_text" from="basetextarea">
-            <area>237,104,204,24</area>
-            <font>basesmall</font>
-            <align>right,vcenter</align>
-            <value>Long Date Format:</value>
-        </textarea>
+        <button name="submit" from="base_wide_button">
+            <position>400,93</position>
+            <value>Submit your hardware profile</value>
+        </button>
 
-        <buttonlist name="longdate" from="base_selector">
-            <area>451,98,576,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,576,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,546,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>580,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>580,21</position>
-            </statetype>
-        </buttonlist>
+        <button name="view" from="base_wide_button">
+            <position>400,180</position>
+            <value>View your hardware profile</value>
+        </button>
 
-        <textarea name="sdate_text" from="basetextarea">
-            <area>237,189,204,24</area>
-            <font>basesmall</font>
-            <align>right,vcenter</align>
-            <value>Short Date Format:</value>
-        </textarea>
-
-        <buttonlist name="shortdate" from="base_selector">
-            <area>451,183,576,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,546,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,546,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>580,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>580,21</position>
-            </statetype>
-        </buttonlist>
-
-        <textarea name="time_text" from="basetextarea">
-            <area>237,274,204,24</area>
-            <font>basesmall</font>
-            <align>right,vcenter</align>
-            <value>Time Format:</value>
-        </textarea>
-
-        <buttonlist name="timeformat" from="base_selector">
-            <area>451,268,576,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,452,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,576,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,546,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>580,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>580,21</position>
-            </statetype>
-        </buttonlist>
+        <button name="delete" from="base_wide_button">
+            <position>400,267</position>
+            <value>Delete your hardware profile</value>
+        </button>
 
         <textarea name="helptext" from="basetextarea">
             <area>237,372,806,227</area>
@@ -576,80 +548,81 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>403,621</position>
+            <position>403,625</position>
             <value>Cancel</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>727,621</position>
+            <position>727,625</position>
             <value>Next</value>
         </button>
 
     </window>
 
     <window name="audiowizard">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Audio Configuration</value>
         </textarea>
 
         <shape name="audiowizard-backdrop" from="base_backdrop">
-            <area>215,36,850,648</area>
+            <area>215,36,850,649</area>
         </shape>
 
         <shape name="audiowizard-top-line" from="base_line">
-            <area>229,50,822,2</area>
+            <area>223,44,834,2</area>
         </shape>
 
         <shape name="audiowizard-bottom-line" from="base_line">
-            <area>229,438,822,2</area>
+            <area>223,438,834,2</area>
         </shape>
 
         <shape name="audiowizard-left-line" from="base_vertical_line">
-            <area>229,52,2,386</area>
+            <area>223,46,2,392</area>
         </shape>
 
         <shape name="audiowizard-right-line" from="base_vertical_line">
-            <area>1049,52,2,386</area>
+            <area>1055,46,2,392</area>
         </shape>
 
-        <shape name="checkbox-top-line" from="base_line">
-            <area>249,170,782,2</area>
+        <shape name="audiowizard-seperator-first-line" from="base_line">
+            <area>238,170,804,2</area>
         </shape>
 
-        <shape name="checkbox-bottom-line" from="base_line">
-            <area>249,372,782,2</area>
+        <shape name="audiowizard-seperator-second-line" from="base_line">
+            <area>238,372,804,2</area>
         </shape>
 
         <shape name="helptext-top-line" from="base_line">
-            <area>229,452,822,2</area>
+            <area>223,448,834,2</area>
         </shape>
 
         <shape name="helptext-bottom-line" from="base_line">
-            <area>229,668,822,2</area>
+            <area>223,675,834,2</area>
         </shape>
 
         <shape name="helptext-left-line" from="base_vertical_line">
-            <area>229,454,2,214</area>
+            <area>223,450,2,225</area>
         </shape>
 
         <shape name="helptext-right-line" from="base_vertical_line">
-            <area>1049,454,2,214</area>
+            <area>1055,450,2,225</area>
         </shape>
 
-        <shape name="buttons-top-line" from="base_line">
-            <area>249,607,782,2</area>
+        <shape name="helptext-seperator-first-line" from="base_line">
+            <area>238,607,804,2</area>
         </shape>
 
         <textarea name="auddev_text" from="basetextarea">
-            <area>237,72,224,24</area>
+            <area>237,68,224,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Audio Device:</value>
         </textarea>
 
         <buttonlist name="audiodevices" from="base_selector">
-            <area>471,64,556,40</area>
+            <area>471,60,556,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,556,40</area>
@@ -674,14 +647,14 @@
         </buttonlist>
 
         <textarea name="speaktext_text" from="basetextarea">
-            <area>237,124,224,24</area>
+            <area>237,121,224,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Number of Speakers:</value>
         </textarea>
 
         <buttonlist name="speakers" from="base_selector">
-            <area>471,118,556,40</area>
+            <area>471,115,556,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,556,40</area>
@@ -706,131 +679,143 @@
         </buttonlist>
 
         <textarea name="ac3_text" from="basetextarea">
-            <area>431,189,462,24</area>
+            <area>491,180,462,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>My speaker supports Dolby Digital</value>
         </textarea>
 
         <checkbox name="ac3check" from="basecheckbox">
-            <position>371,184</position>
+            <position>431,180</position>
         </checkbox>
 
         <textarea name="dts_text" from="basetextarea">
-            <area>431,237,462,24</area>
+            <area>491,218,462,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>My speaker supports DTS</value>
         </textarea>
 
         <checkbox name="dtscheck" from="basecheckbox">
-            <position>371,232</position>
+            <position>431,218</position>
         </checkbox>
 
-        <textarea name="hd_text" from="basetextarea">
-            <area>431,285,462,24</area>
+        <textarea name="eac3_text" from="basetextarea">
+            <area>491,256,462,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports E-AC-3 of DTS-HD</value>
+            <value>My speaker supports E-AC-3</value>
         </textarea>
 
-        <checkbox name="hdcheck" from="basecheckbox">
-            <position>371,280</position>
+        <checkbox name="eac3check" from="basecheckbox">
+            <position>431,256</position>
         </checkbox>
 
-        <textarea name="hdplus_text" from="basetextarea">
-            <area>431,333,462,24</area>
+        <textarea name="truehd_text" from="basetextarea">
+            <area>491,294,462,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports TrueHD or DTS-HD MA</value>
+            <value>My speaker supports TrueHD</value>
         </textarea>
 
-        <checkbox name="hdpluscheck" from="basecheckbox">
-            <position>371,328</position>
+        <checkbox name="truehdcheck" from="basecheckbox">
+            <position>431,294</position>
+        </checkbox>
+
+        <textarea name="dtshd_text" from="basetextarea">
+            <area>491,332,462,32</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <value>My speaker supports DTS-HD</value>
+        </textarea>
+
+        <checkbox name="dtshdcheck" from="basecheckbox">
+            <position>431,332</position>
         </checkbox>
 
         <button name="testspeakers" from="base_medium_button">
-            <position>457,386</position>
+            <position>465,386</position>
         </button>
 
         <textarea name="helptext" from="basetextarea">
-            <area>237,460,806,141</area>
+            <area>239,460,802,141</area>
             <multiline>yes</multiline>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <button name="previous" from="base_button">
-            <position>403,621</position>
+            <position>401,624</position>
             <value>Previous</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>727,621</position>
+            <position>729,624</position>
             <value>Next</value>
         </button>
 
     </window>
 
     <window name="videowizard">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Video Configuration</value>
         </textarea>
 
         <shape name="videowizard-backdrop" from="base_backdrop">
-            <area>215,36,850,648</area>
+            <area>215,36,850,649</area>
         </shape>
 
         <shape name="videowizard-top-line" from="base_line">
-            <area>229,50,822,2</area>
+            <area>223,44,834,2</area>
         </shape>
 
         <shape name="videowizard-bottom-line" from="base_line">
-            <area>229,354,822,2</area>
+            <area>223,354,834,2</area>
         </shape>
 
         <shape name="videowizard-left-line" from="base_vertical_line">
-            <area>229,52,2,302</area>
+            <area>223,46,2,308</area>
         </shape>
 
         <shape name="videowizard-right-line" from="base_vertical_line">
-            <area>1049,52,2,302</area>
+            <area>1055,46,2,308</area>
         </shape>
 
-        <shape name="definition-buttons-top-line" from="base_line">
-            <area>249,184,782,2</area>
+        <shape name="videowizard-seperator-first-line" from="base_line">
+            <area>238,184,804,2</area>
         </shape>
 
         <shape name="helptext-top-line" from="base_line">
-            <area>229,364,822,2</area>
+            <area>223,364,834,2</area>
         </shape>
 
         <shape name="helptext-bottom-line" from="base_line">
-            <area>229,668,822,2</area>
+            <area>223,675,834,2</area>
         </shape>
 
         <shape name="helptext-left-line" from="base_vertical_line">
-            <area>229,366,2,302</area>
+            <area>223,366,2,309</area>
         </shape>
 
         <shape name="helptext-right-line" from="base_vertical_line">
-            <area>1049,366,2,302</area>
+            <area>1055,366,2,309</area>
         </shape>
 
-        <shape name="buttons-top-line" from="base_line">
-            <area>249,607,782,2</area>
+        <shape name="helptext-seperator-first-line" from="base_line">
+            <area>238,607,804,2</area>
         </shape>
 
         <textarea name="prof_text" from="basetextarea">
-            <area>237,103,244,24</area>
+            <area>237,100,244,24</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Video Playback Profile:</value>
         </textarea>
 
         <buttonlist name="playbackprofiles" from="base_selector">
-            <area>491,98,536,40</area>
+            <area>491,95,536,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,536,40</area>
@@ -855,12 +840,12 @@
         </buttonlist>
 
         <button name="testsd" from="base_wide_button">
-            <position>392,215</position>
+            <position>400,215</position>
             <value>Test Standard Definition</value>
         </button>
 
         <button name="testhd" from="base_wide_button">
-            <position>392,285</position>
+            <position>400,285</position>
             <value>Test High Definition</value>
         </button>
 
@@ -872,12 +857,12 @@
         </textarea>
 
         <button name="previous" from="base_button">
-            <position>403,621</position>
+            <position>401,624</position>
             <value>Previous</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>727,621</position>
+            <position>729,624</position>
             <value>Finish</value>
         </button>
 
