@@ -1079,188 +1079,193 @@
     </window>
 
     <window name="import_music">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Import Files</value>
         </textarea>
 
-        <shape name="import-files-top-backdrop" from="base_backdrop">
-            <area>20,39,1240,132</area>
+        <shape name="import-music-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
         </shape>
 
-        <shape name="import-files-top-fist-line" from="base_line">
-            <area>250,47,780,2</area>
+        <shape name="import-files-top-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
-        <shape name="import-files-top-second-line" from="base_line">
-            <area>250,161,780,2</area>
+        <shape name="import-files-top-bottom-line" from="base_line">
+            <area>223,158,834,2</area>
         </shape>
 
         <shape name="import-files-top-left-line" from="base_vertical_line">
-            <area>250,49,2,112</area>
+            <area>223,46,2,112</area>
         </shape>
 
         <shape name="import-files-top-right-line" from="base_vertical_line">
-            <area>1028,49,2,112</area>
+            <area>1055,46,2,112</area>
         </shape>
 
-        <shape name="import-files-middle-backdrop" from="base_backdrop">
-            <area>20,184,1240,353</area>
+        <shape name="import-files-middle-top-line" from="base_line">
+            <area>223,168,834,2</area>
         </shape>
 
-        <shape name="import-files-bottom-backdrop" from="base_backdrop">
-            <area>20,550,1240,132</area>
+        <shape name="import-files-middle-bottom-line" from="base_line">
+            <area>223,551,834,2</area>
         </shape>
 
-        <shape name="import-files-bottom-fist-line" from="base_line">
-            <area>250,558,780,2</area>
+        <shape name="import-files-middle-left-line" from="base_vertical_line">
+            <area>223,170,2,381</area>
         </shape>
 
-        <shape name="import-files-bottom-second-line" from="base_line">
-            <area>250,672,780,2</area>
+        <shape name="import-files-middle-right-line" from="base_vertical_line">
+            <area>1055,170,2,381</area>
+        </shape>
+
+        <shape name="import-files-middle-seperator-first-line" from="base_line">
+            <area>238,496,804,2</area>
+        </shape>
+
+        <shape name="import-files-bottom-top-line" from="base_line">
+            <area>223,561,834,2</area>
+        </shape>
+
+        <shape name="import-files-bottom-bottom-line" from="base_line">
+            <area>223,675,834,2</area>
         </shape>
 
         <shape name="import-files-bottom-left-line" from="base_vertical_line">
-            <area>250,560,2,112</area>
+            <area>223,563,2,112</area>
         </shape>
 
         <shape name="import-files-bottom-right-line" from="base_vertical_line">
-            <area>1028,560,2,112</area>
+            <area>1055,563,2,112</area>
         </shape>
 
-        <!-- Labels -->
-
         <textarea name="location_label" from="basetextarea">
-            <area>420,70,170,30</area>
+            <area>280,63,170,30</area>
             <value>Location:</value>
         </textarea>
 
-        <textarea name="filename_label" from="location_label">
-            <position>50,208</position>
-            <value>Filename:</value>
-        </textarea>
-
-        <textarea name="compilation_label" from="location_label">
-            <position>50,248</position>
-            <value>Compilation:</value>
-        </textarea>
-
-        <textarea name="compilation_artist_label" from="location_label">
-            <position>50,288</position>
-            <value>Comp. Artist:</value>
-        </textarea>
-
-        <textarea name="artist_label" from="location_label">
-            <position>50,328</position>
-            <value>Artist:</value>
-        </textarea>
-
-        <textarea name="album_label" from="location_label">
-            <position>50,368</position>
-            <value>Album:</value>
-        </textarea>
-
-        <textarea name="title_text" from="location_label">
-            <position>50,408</position>
-            <value>Title:</value>
-        </textarea>
-
-        <textarea name="genre_label" from="location_label">
-            <position>50,448</position>
-            <value>Genre:</value>
-        </textarea>
-
-        <textarea name="year_label" from="location_label">
-            <position>50,488</position>
-            <value>Year:</value>
-        </textarea>
-
-        <textarea name="track_label" from="location_label">
-            <position>400,488</position>
-            <value>Track No.:</value>
-        </textarea>
-
-        <textarea name="position" from="basetextarea">
-            <area>490,578,300,30</area>
-            <align>hcenter</align>
-        </textarea>
-
-        <textarea name="status" from="position">
-            <position>490,628</position>
-            <value>Already in database</value>
-        </textarea>
-
-        <!-- data fields -->
-
-        <textedit name="location" from="base_textedit">
-            <area>520,68,287,32</area>
+        <textedit name="location" from="base_wide_textedit">
+            <area>380,61,580,32</area>
         </textedit>
 
         <button name="directoryfinder" from="basesearchbutton">
-            <position>815,69</position>
+            <position>968,62</position>
         </button>
 
         <button name="scan" from="base_button">
-            <position>566,116</position>
+            <position>566,109</position>
             <value>Search</value>
         </button>
 
-        <button name="coverart" from="base_button">
-            <position>830,230</position>
-            <value>Cover Art</value>
-        </button>
+        <textarea name="filename_label" from="location_label">
+            <position>233,180</position>
+            <value>Filename:</value>
+        </textarea>
 
         <textarea name="filename" from="basetextarea">
-            <area>235,208,995,30</area>
+            <area>418,180,629,30</area>
+            <font>basesmallblue</font>
             <align>left</align>
         </textarea>
 
+        <textarea name="compilation_label" from="location_label">
+            <position>233,220</position>
+            <value>Compilation:</value>
+        </textarea>
+
         <checkbox name="compilation" from="basecheckbox">
-            <position>230,243</position>
+            <position>413,215</position>
         </checkbox>
 
+        <textarea name="compilation_artist_label" from="location_label">
+            <position>233,260</position>
+            <value>Comp. Artist:</value>
+        </textarea>
+
         <textarea name="compartist" from="basetextarea">
-            <area>235,288,515,30</area>
+            <area>418,260,629,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="artist_label" from="location_label">
+            <position>233,300</position>
+            <value>Artist:</value>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>235,328,515,30</area>
+            <area>418,300,629,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="album_label" from="location_label">
+            <position>233,340</position>
+            <value>Album:</value>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>235,368,515,30</area>
+            <area>418,340,629,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="title_text" from="location_label">
+            <position>233,380</position>
+            <value>Title:</value>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>235,408,995,30</area>
+            <area>418,380,629,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="genre_label" from="location_label">
+            <position>233,420</position>
+            <value>Genre:</value>
         </textarea>
 
         <textarea name="genre" from="basetextarea">
-            <area>235,448,515,30</area>
+            <area>418,420,629,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="year_label" from="location_label">
+            <position>233,460</position>
+            <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>235,488,165,30</area>
+            <area>418,460,165,30</area>
+            <font>basesmallblue</font>
+        </textarea>
+
+        <textarea name="track_label" from="location_label">
+            <position>583,460</position>
+            <value>Track No.:</value>
         </textarea>
 
         <textarea name="track" from="basetextarea">
-            <area>585,488,165,30</area>
+            <area>768,460,279,30</area>
+            <font>basesmallblue</font>
         </textarea>
 
-        <!-- Push buttons -->
+        <button name="coverart" from="base_button">
+            <position>565,507</position>
+            <value>Cover Art</value>
+        </button>
 
         <button name="play" from="base_button">
-            <position>265,573</position>
+            <position>265,576</position>
             <value>Play</value>
         </button>
 
         <button name="add" from="base_button">
-            <position>265,623</position>
+            <position>265,626</position>
             <value>Add</value>
         </button>
 
         <button name="prev">
-            <area>460,563,60,60</area>
+            <area>460,566,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1282,7 +1287,7 @@
         </button>
 
         <button name="next">
-            <area>756,563,60,60</area>
+            <area>756,566,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1303,13 +1308,23 @@
             </statetype>
         </button>
 
+        <textarea name="position" from="basetextarea">
+            <area>490,581,300,30</area>
+            <align>hcenter</align>
+        </textarea>
+
+        <textarea name="status" from="position">
+            <position>490,631</position>
+            <value>Already in database</value>
+        </textarea>
+
         <button name="nextnew" from="base_button">
-            <position>864,573</position>
+            <position>864,576</position>
             <value>Next New</value>
         </button>
 
         <button name="addallnew" from="base_button">
-            <position>864,623</position>
+            <position>864,626</position>
             <value>Add New</value>
         </button>
 
@@ -1320,37 +1335,258 @@
         <area>0,0,1280,720</area>
 
         <shape name="mini-player-backdrop" from="base_popup_backdrop">
-            <area>426,628,427,112</area>
+            <area>418,598,444,123</area>
+        </shape>
+
+        <shape name="mini-player-top-line" from="base_line">
+            <area>422,602,436,2</area>
+        </shape>
+
+        <shape name="mini-player-left-line" from="base_vertical_line">
+            <area>422,604,2,117</area>
+        </shape>
+
+        <shape name="mini-player-right-line" from="base_vertical_line">
+            <area>856,604,2,117</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>446,633,387,24</area>
+            <area>446,611,387,24</area>
             <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>446,657,387,22</area>
+            <area>446,635,387,22</area>
             <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>446,679,387,22</area>
+            <area>446,657,387,22</area>
             <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="info" from="basetextarea">
-            <area>446,702,287,18</area>
+            <area>446,680,287,18</area>
             <font>baseextrasmallyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>733,702,100,18</area>
+            <area>733,680,100,18</area>
             <font>baseextrasmallyellow</font>
             <align>right,vcenter</align>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <position>440,702</position>
+            <imagetype name="background">
+                <area>0,0,400,10</area>
+                <filename>images/progressbar/progressbar_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,400,10</area>
+                <filename>images/progressbar/progressbar_fill.png</filename>
+            </imagetype>
+        </progressbar>
+
+    </window>
+
+    <window name="volume_popup">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="boxshape" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
+        </shape>
+
+        <shape name="volume-popup-top-line" from="base_line">
+            <area>358,285,571,2</area>
+        </shape>
+
+        <shape name="volume-popup-bottom-line" from="base_line">
+            <area>358,437,571,2</area>
+        </shape>
+
+        <shape name="volume-popup-left-line" from="base_vertical_line">
+            <area>358,287,2,150</area>
+        </shape>
+
+        <shape name="volume-popup-right-line" from="base_vertical_line">
+            <area>927,287,2,150</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>370,297,540,60</area>
+            <font>basesmalldarkyellow</font>
+            <align>allcenter</align>
+            <value>Volume</value>
+        </textarea>
+
+        <statetype name="mutestate">
+            <position>878,407</position>
+            <state name="off">
+                <imagetype name="statusimage">
+                    <filename>mythmusic/mm_volume.png</filename>
+                </imagetype>
+            </state>
+            <state name="on">
+                <imagetype name="statusimage">
+                    <filename>mythmusic/mm_volume_muted.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <progressbar name="volumeprogress" from="baseprogressbar">
+            <position>375,357</position>
+        </progressbar>
+
+        <textarea name="volume" from="basetextarea">
+            <area>380,407,200,30</area>
+            <align>left,top</align>
+            <template>%VOLUMEPERCENT%</template>
+        </textarea>
+
+    </window>
+
+    <window name="trackdetail_popup">
+        <area>0,0,1280,720</area>
+
+        <shape name="track-detail-backdrop" from="base_backdrop">
+            <area>60,60,1160,600</area>
+        </shape>
+
+        <shape name="track-detail-popup-top-line" from="base_line">
+            <area>68,68,1144,2</area>
+        </shape>
+
+        <shape name="track-detail-popup-bottom-line" from="base_line">
+            <area>68,650,1144,2</area>
+        </shape>
+
+        <shape name="track-detail-popup-left-line" from="base_vertical_line">
+            <area>68,70,2,580</area>
+        </shape>
+
+        <shape name="track-detail-popup-right-line" from="base_vertical_line">
+            <area>1210,70,2,580</area>
+        </shape>
+
+        <shape name="track-detail-popup-vertical-seperator-first-line" from="base_vertical_line">
+            <area>402,83,3,554</area>
+        </shape>
+
+        <imagetype name="coverart">
+            <area>84,210,300,300</area>
+            <filename>mythmusic/mm_nothumb.png</filename>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="titlelbl" from="basetextarea">
+            <area>400,96,150,35</area>
+            <font>basemedium</font>
+            <value>Title:</value>
+            <align>right</align>
+        </textarea>
+
+        <textarea name="title" from="basetextarea">
+            <area>560,96,642,35</area>
+            <font>basemediumblue</font>
+        </textarea>
+
+        <textarea name="artistlbl" from="titlelbl">
+            <area>400,146,150,35</area>
+            <value>Artist:</value>
+        </textarea>
+
+        <textarea name="artist" from="title">
+            <area>560,146,642,35</area>
+        </textarea>
+
+        <textarea name="albumlbl" from="titlelbl">
+            <area>400,196,150,35</area>
+            <value>Album:</value>
+        </textarea>
+
+        <textarea name="album" from="title">
+            <area>560,196,642,35</area>
+        </textarea>
+
+        <textarea name="genrelbl" from="titlelbl">
+            <area>400,296,150,35</area>
+            <value>Genre:</value>
+        </textarea>
+
+        <textarea name="genre" from="title">
+            <area>560,296,642,35</area>
+        </textarea>
+
+        <textarea name="tracknumlbl" from="titlelbl">
+            <area>750,246,150,35</area>
+            <value>Track No.:</value>
+        </textarea>
+
+        <textarea name="tracknum" from="title">
+            <area>920,246,100,35</area>
+        </textarea>
+
+        <textarea name="lenlbl" from="titlelbl">
+            <area>400,246,150,35</area>
+            <value>Length:</value>
+        </textarea>
+
+        <textarea name="length" from="title">
+            <area>560,246,177,35</area>
+        </textarea>
+
+        <textarea name="yearlbl" from="titlelbl">
+            <area>400,346,150,35</area>
+            <value>Year:</value>
+        </textarea>
+
+        <textarea name="year" from="title">
+            <area>560,346,100,35</area>
+        </textarea>
+
+        <textarea name="ratinglbl" from="titlelbl">
+            <area>400,396,150,35</area>
+            <align>right,top</align>
+            <value>Rating:</value>
+        </textarea>
+
+        <statetype name="rating_state" from="base_rating_state">
+            <position>560,401</position>
+        </statetype>
+
+        <textarea name="lastplaylbl" from="titlelbl">
+            <area>340,446,210,35</area>
+            <value>Last Played:</value>
+        </textarea>
+
+        <textarea name="lastplayed" from="title">
+            <area>560,446,642,35</area>
+            <value>Last Value</value>
+        </textarea>
+
+        <textarea name="playcountlbl" from="titlelbl">
+            <area>400,496,150,35</area>
+            <value>Played:</value>
+        </textarea>
+
+        <textarea name="playcount" from="title">
+            <area>560,496,642,35</area>
+            <template>%playcount% times</template>
+        </textarea>
+
+        <textarea name="filenamelbl" from="titlelbl">
+            <area>400,546,150,35</area>
+            <value>Filename:</value>
+        </textarea>
+
+        <textarea name="filename" from="title">
+            <area>560,551,642,90</area>
+            <multiline>yes</multiline>
         </textarea>
 
     </window>

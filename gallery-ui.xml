@@ -9,20 +9,44 @@
         </textarea>
 
         <shape name="image-gallery-backdrop" from="base_backdrop">
-            <area>0,36,1280,451</area>
+            <area>0,36,1280,450</area>
             <type>box</type>
         </shape>
 
-        <shape name="image-gallery-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="image-gallery-top-line" from="base_line">
+            <area>0,37,1280,2</area>
         </shape>
 
         <shape name="image-gallery-bottom-line" from="base_line">
-            <area>45,602,1190,2</area>
+            <area>0,483,1280,2</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-backdrop" from="base_backdrop">
+            <area>20,496,1240,189</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-top-line" from="base_line">
+            <area>28,504,1224,2</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-left-line" from="base_vertical_line">
+            <area>28,506,2,169</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-right-line" from="base_vertical_line">
+            <area>1250,506,2,169</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-seperator-first-line" from="base_line">
+            <area>43,591,1194,2</area>
         </shape>
 
         <buttonlist name="images">
-            <area>35,66,1220,400</area>
+            <area>35,65,1220,400</area>
             <layout>grid</layout>
             <spacing>8</spacing>
             <buttonarea>0,0,1220,400</buttonarea>
@@ -63,13 +87,12 @@
                         <area>-12,-9,240,180</area>
                         <type>roundbox</type>
                         <fill color="#101017" alpha="255" />
-                        <line color="#666666" alpha="255" width="6" />
-                        <cornerradius>15</cornerradius>
+                        <line color="#777777" alpha="255" width="6" />
+                        <cornerradius>0</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,216,162</area>
                         <preserveaspect>yes</preserveaspect>
-                        <mask>images/masks/image_gallery_selector_mask.png</mask>
                         <filename>images/image_gallery_no_image.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
@@ -97,7 +120,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1146,422</position>
+                <position>1188,422</position>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>images/lists_up_arrow.png</filename>
@@ -105,7 +128,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1176,422</position>
+                <position>1208,422</position>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>images/lists_down_arrow.png</filename>
@@ -121,21 +144,22 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>30,566,1220,35</area>
-            <font>basemediumyellow</font>
+            <area>30,506,1220,85</area>
+            <font>basemedium</font>
+            <multiline>true</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="help1">
-            <area>0,608,1280,30</area>
-            <font>menu</font>
+            <area>0,593,1280,41</area>
+            <font>basesmallerblue</font>
             <align>allcenter</align>
             <value>Press Select: To View Full Screen.</value>
         </textarea>
 
         <textarea name="help2">
-            <area>0,640,1280,30</area>
-            <font>menu</font>
+            <area>0,634,1280,41</area>
+            <font>basesmallerblue</font>
             <align>allcenter</align>
             <value>Press Menu:  To Activate Gallery Options Menu.</value>
         </textarea>

@@ -1196,59 +1196,62 @@
         </textarea>
     </textedit>
 
-    <!-- base definition of a rating -->
-    <statetype name="baserating">
-        <area>471,122,187,25</area>
+    <!-- Base definition of a state used for ratings 0 to 10 -->
+    <statetype name="base_rating_state">
+        <position>0,0</position>
         <state name="0">
+            <imagetype name="stars">
+                <filename>images/0_stars.png</filename>
+            </imagetype>
         </state>
         <state name="1">
             <imagetype name="stars">
-                <filename>images/halfstar.png</filename>
+                <filename>images/1_stars.png</filename>
             </imagetype>
         </state>
         <state name="2">
             <imagetype name="stars">
-                <filename>images/1star.png</filename>
+                <filename>images/2_stars.png</filename>
             </imagetype>
         </state>
         <state name="3">
             <imagetype name="stars">
-                <filename>images/1.5star.png</filename>
+                <filename>images/3_stars.png</filename>
             </imagetype>
         </state>
         <state name="4">
             <imagetype name="stars">
-                <filename>images/2star.png</filename>
+                <filename>images/4_stars.png</filename>
             </imagetype>
         </state>
         <state name="5">
             <imagetype name="stars">
-                <filename>images/2.5star.png</filename>
+                <filename>images/5_stars.png</filename>
             </imagetype>
         </state>
         <state name="6">
             <imagetype name="stars">
-                <filename>images/3star.png</filename>
+                <filename>images/6_stars.png</filename>
             </imagetype>
         </state>
         <state name="7">
             <imagetype name="stars">
-                <filename>images/3.5star.png</filename>
+                <filename>images/7_stars.png</filename>
             </imagetype>
         </state>
         <state name="8">
             <imagetype name="stars">
-                <filename>images/4star.png</filename>
+                <filename>images/8_stars.png</filename>
             </imagetype>
         </state>
         <state name="9">
             <imagetype name="stars">
-                <filename>images/4.5star.png</filename>
+                <filename>images/9_stars.png</filename>
             </imagetype>
         </state>
         <state name="10">
             <imagetype name="stars">
-                <filename>images/5star.png</filename>
+                <filename>images/10_stars.png</filename>
             </imagetype>
         </state>
     </statetype>
