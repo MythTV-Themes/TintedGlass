@@ -950,125 +950,194 @@
             <value>Import Cover Art</value>
         </textarea>
 
-        <shape name="bgimage1">
-            <area>275,60,765,40</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="60" />
-            <cornerradius>3</cornerradius>
+        <shape name="import-cover-art-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
         </shape>
 
-        <shape name="bgimage2" from="bgimage1">
-            <area>275,460,765,40</area>
+        <shape name="import-cover-art-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
-        <shape name="bgimage3" from="bgimage1">
-            <area>335,150,250,40</area>
+        <shape name="import-cover-art-bottom-line" from="base_line">
+            <area>223,168,834,2</area>
         </shape>
 
-        <shape name="bgimage4" from="bgimage1">
-            <area>310,240,300,40</area>
+        <shape name="import-cover-art-left-line" from="base_vertical_line">
+            <area>223,46,2,122</area>
         </shape>
 
-        <!-- Labels -->
+        <shape name="import-cover-art-right-line" from="base_vertical_line">
+            <area>1055,46,2,122</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-top-line" from="base_line">
+            <area>223,178,834,2</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-bottom-line" from="base_line">
+            <area>223,541,834,2</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-left-line" from="base_vertical_line">
+            <area>223,180,2,361</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-right-line" from="base_vertical_line">
+            <area>1055,180,2,361</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-vertical-seperator-first-line" from="base_vertical_line">
+            <area>712,193,3,331</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-top-line" from="base_line">
+            <area>223,551,834,2</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-bottom-line" from="base_line">
+            <area>223,675,834,2</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-left-line" from="base_vertical_line">
+            <area>223,553,2,122</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-right-line" from="base_vertical_line">
+            <area>1055,553,2,122</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
+        </shape>
+
         <textarea name="file_label" from="basetextarea">
-            <area>80,65,170,30</area>
+            <area>239,46,44,122</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
             <value>File:</value>
-            <align>right</align>
         </textarea>
 
-        <textarea name="destination_label" from="file_label">
-            <position>80,465</position>
-            <value>Destination:</value>
+        <textarea name="file" from="basetextarea">
+            <area>293,46,748,122</area>
+            <font>basesmallblue</font>
+            <multiline>true</multiline>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="title" from="file_label">
-            <position>80,400</position>
-            <value>Image Type:</value>
-        </textarea>
-
-        <!-- data fields -->
-
-        <imagetype name="coverart">
-            <area>680,125,300,300</area>
-            <filename>mm_trans_background.png</filename>
-        </imagetype>
-
-        <button name="prev" from="basebutton">
-            <area>290,140,60,60</area>
+        <button name="prev">
+            <area>290,189,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
-                        <filename>mm_prev_off.png</filename>
+                        <filename>mythmusic/mm_prev_off.png</filename>
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
                     <imagetype name="background">
-                        <filename>mm_prev_on.png</filename>
+                        <filename>mythmusic/mm_prev_on.png</filename>
                     </imagetype>
                 </state>
                 <state name="disabled" from="active" />
                 <state name="pushed" from="active">
                     <imagetype name="background">
-                        <filename>mm_prev_pushed.png</filename>
+                        <filename>mythmusic/mm_prev_pushed.png</filename>
                     </imagetype>
                 </state>
             </statetype>
         </button>
 
-        <button name="next" from="basebutton">
-            <area>570,140,60,60</area>
+        <textarea name="position" from="basetextarea">
+            <area>350,189,237,60</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <button name="next">
+            <area>587,189,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
-                        <filename>mm_next_off.png</filename>
+                        <filename>mythmusic/mm_next_off.png</filename>
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
                     <imagetype name="background">
-                        <filename>mm_next_on.png</filename>
+                        <filename>mythmusic/mm_next_on.png</filename>
                     </imagetype>
                 </state>
                 <state name="disabled" from="active" />
                 <state name="pushed" from="active">
                     <imagetype name="background">
-                        <filename>mm_next_pushed.png</filename>
+                        <filename>mythmusic/mm_next_pushed.png</filename>
                     </imagetype>
                 </state>
             </statetype>
         </button>
 
-        <button name="copy" from="basebutton">
-            <position>390,310</position>
+        <textarea name="status" from="basetextarea">
+            <area>233,300,471,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>Already in database</value>
+        </textarea>
+
+        <button name="copy" from="base_button">
+            <position>393,370</position>
             <value>Copy</value>
         </button>
 
-        <textarea name="file" from="basetextarea">
-            <area>295,65,730,30</area>
-            <align>right</align>
+        <textarea name="title" from="basetextarea">
+            <area>290,480,130,40</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <value>Image Type:</value>
+        </textarea>
+
+        <buttonlist name="type" from="base_selector">
+            <area>430,480,200,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,200,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,180,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,200,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,180,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>205,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>205,21</position>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="coverart">
+            <area>735,210,300,300</area>
+            <filename>mm_trans_background.png</filename>
+        </imagetype>
+
+        <textarea name="destination_label" from="basetextarea">
+            <area>239,553,130,60</area>
+            <align>left,vcenter</align>
+            <value>Destination:</value>
         </textarea>
 
         <textarea name="destination" from="basetextarea">
-            <area>295,465,730,30</area>
-            <align>right</align>
+            <area>379,553,662,60</area>
+            <font>basesmallblue</font>
+            <multiline>true</multiline>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="position" from="basetextarea">
-            <area>310,160,300,30</area>
-            <align>hcenter</align>
-        </textarea>
-
-        <textarea name="status" from="basetextarea">
-            <area>310,250,300,30</area>
-            <value>Already in database</value>
-            <align>hcenter</align>
-        </textarea>
-
-        <buttonlist name="type" from="baseselector">
-            <position>275,400</position>
-        </buttonlist>
-
-        <button name="exit" from="basebutton">
-            <position>565,640</position>
+        <button name="exit" from="base_button">
+            <position>565,628</position>
             <value>Done</value>
         </button>
 
@@ -1269,18 +1338,18 @@
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
-                        <filename>mm_prev_off.png</filename>
+                        <filename>mythmusic/mm_prev_off.png</filename>
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
                     <imagetype name="background">
-                        <filename>mm_prev_on.png</filename>
+                        <filename>mythmusic/mm_prev_on.png</filename>
                     </imagetype>
                 </state>
                 <state name="disabled" from="active" />
                 <state name="pushed" from="active">
                     <imagetype name="background">
-                        <filename>mm_prev_pushed.png</filename>
+                        <filename>mythmusic/mm_prev_pushed.png</filename>
                     </imagetype>
                 </state>
             </statetype>
@@ -1291,18 +1360,18 @@
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
-                        <filename>mm_next_off.png</filename>
+                        <filename>mythmusic/mm_next_off.png</filename>
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
                     <imagetype name="background">
-                        <filename>mm_next_on.png</filename>
+                        <filename>mythmusic/mm_next_on.png</filename>
                     </imagetype>
                 </state>
                 <state name="disabled" from="active" />
                 <state name="pushed" from="active">
                     <imagetype name="background">
-                        <filename>mm_next_pushed.png</filename>
+                        <filename>mythmusic/mm_next_pushed.png</filename>
                     </imagetype>
                 </state>
             </statetype>
@@ -1453,7 +1522,7 @@
     <window name="trackdetail_popup">
         <area>0,0,1280,720</area>
 
-        <shape name="track-detail-backdrop" from="base_backdrop">
+        <shape name="track-detail-backdrop" from="base_popup_backdrop">
             <area>60,60,1160,600</area>
         </shape>
 
@@ -1598,71 +1667,67 @@
         </textarea>
 
         <shape name="import-cd-backdrop" from="base_backdrop">
-            <area>20,43,1240,218</area>
+            <area>20,36,1240,257</area>
+        </shape>
+
+        <shape name="import-cd-top-line" from="base_line">
+            <area>28,44,1224,2</area>
+        </shape>
+
+        <shape name="import-cd-bottom-line" from="base_line">
+            <area>28,283,1224,2</area>
+        </shape>
+
+        <shape name="import-cd-left-line" from="base_vertical_line">
+            <area>28,46,2,237</area>
+        </shape>
+
+        <shape name="import-cd-right-line" from="base_vertical_line">
+            <area>1250,46,2,237</area>
         </shape>
 
         <shape name="import-cd-bottom-backdrop" from="base_backdrop">
-            <area>20,273,1240,405</area>
+            <area>20,303,1240,382</area>
         </shape>
 
-        <shape name="import-cd-list-highlight" from="base_backdrop_fanart">
-            <area>50,319,1180,312</area>
+        <shape name="import-cd-bottom-top-line" from="base_line">
+            <area>28,311,1224,2</area>
         </shape>
 
-        <shape name="import-cd-list-bottom-fist-line" from="base_line">
-            <area>50,319,1180,2</area>
+        <shape name="import-cd-bottom-bottom-line" from="base_line">
+            <area>28,675,1224,2</area>
         </shape>
 
-        <shape name="import-cd-list-bottom-second-line" from="base_line">
-            <area>50,629,1180,2</area>
+        <shape name="import-cd-bottom-left-line" from="base_vertical_line">
+            <area>28,313,2,362</area>
         </shape>
 
-        <shape name="import-cd-list-bottom-left-line" from="base_vertical_line">
-            <area>50,321,2,308</area>
+        <shape name="import-cd-bottom-right-line" from="base_vertical_line">
+            <area>1250,313,2,362</area>
         </shape>
 
-        <shape name="import-cd-list-bottom-right-line" from="base_vertical_line">
-            <area>1228,321,2,308</area>
+        <shape name="import-cd-bottom-seperator-first-line" from="base_line">
+            <area>43,358,1194,2</area>
         </shape>
 
-        <!-- Labels -->
+        <shape name="import-cd-bottom-seperator-second-line" from="base_line">
+            <area>43,628,1194,2</area>
+        </shape>
+
+        <button name="scan" from="base_button">
+            <position>565,50</position>
+            <value>Scan CD</value>
+        </button>
 
         <textarea name="quality_label">
-            <area>330,59,170,30</area>
+            <area>400,91,170,40</area>
             <font>basemedium</font>
             <value>Quality:</value>
-            <align>right</align>
+            <align>right,vcenter</align>
         </textarea>
-
-        <textarea name="artist_label" from="quality_label">
-            <position>330,99</position>
-            <value>Artist:</value>
-        </textarea>
-
-        <textarea name="album_label" from="quality_label">
-            <position>330,134</position>
-            <value>Album:</value>
-        </textarea>
-
-        <textarea name="genre_text" from="quality_label">
-            <position>330,169</position>
-            <value>Genre:</value>
-        </textarea>
-
-        <textarea name="comp_label" from="quality_label">
-            <position>265,217</position>
-            <value>Multi-Artist:</value>
-        </textarea>
-
-        <textarea name="year_label" from="quality_label">
-            <area>585,215,120,30</area>
-            <value>Year:</value>
-        </textarea>
-
-        <!-- edits -->
 
         <buttonlist name="quality" from="base_selector">
-            <area>510,55,200,40</area>
+            <area>580,91,200,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,200,40</area>
@@ -1686,126 +1751,152 @@
             </statetype>
         </buttonlist>
 
-        <textedit name="artist" from="base_textedit">
-            <area>510,99,287,32</area>
+        <textarea name="artist_label">
+            <area>184,136,170,32</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Artist:</value>
+        </textarea>
+
+        <textedit name="artist" from="base_wide_textedit">
+            <area>364,136,580,32</area>
         </textedit>
 
         <button name="searchartist" from="basesearchbutton">
-            <position>810,100</position>
+            <position>957,136</position>
         </button>
 
-        <textedit name="album" from="base_textedit">
-            <area>510,134,287,32</area>
+        <textarea name="album_label" from="artist_label">
+            <position>184,173</position>
+            <value>Album:</value>
+        </textarea>
+
+        <textedit name="album" from="base_wide_textedit">
+            <area>364,173,580,32</area>
         </textedit>
 
         <button name="searchalbum" from="basesearchbutton">
-            <position>810,134</position>
+            <position>957,173</position>
         </button>
 
-        <textedit name="genre" from="base_textedit">
-            <area>510,169,287,32</area>
+        <textarea name="genre_text" from="artist_label">
+            <position>184,209</position>
+            <value>Genre:</value>
+        </textarea>
+
+        <textedit name="genre" from="base_wide_textedit">
+            <area>364,209,580,32</area>
         </textedit>
 
         <button name="searchgenre" from="basesearchbutton">
-            <position>810,168</position>
+            <position>957,209</position>
         </button>
 
+        <textarea name="year_label" from="artist_label">
+            <position>184,246</position>
+            <value>Year:</value>
+        </textarea>
+
+        <textedit name="year" from="base_textedit">
+            <area>364,246,287,32</area>
+        </textedit>
+
+        <textarea name="comp_label" from="artist_label">
+            <position>667,246</position>
+            <value>Multi-Artist:</value>
+        </textarea>
+
         <checkbox name="compilation" from="basecheckbox">
-            <position>445,215</position>
+            <position>847,246</position>
         </checkbox>
 
         <button name="switch" from="base_medium_button">
-            <position>95,632</position>
+            <position>892,242</position>
             <value>Switch Titles</value>
         </button>
 
-        <textedit name="year" from="base_textedit">
-            <area>716,214,287,32</area>
-        </textedit>
-
         <textarea name="track_label" from="basetextarea">
-            <area>56,286,83,24</area>
+            <area>38,313,75,45</area>
             <font>basesmallyellow</font>
             <value>Track</value>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title_label" from="track_label">
-            <area>119,286,583,24</area>
+            <area>139,313,643,45</area>
             <value>Title</value>
         </textarea>
 
         <textarea name="list_artist_label" from="track_label">
-            <area>720,286,358,24</area>
+            <area>802,313,358,45</area>
             <value>Artist</value>
         </textarea>
 
         <textarea name="length_label" from="track_label">
-            <area>1139,286,76,24</area>
+            <area>1172,313,74,45</area>
             <value>Length</value>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="tracks" from="base_list_large_width">
-            <area>52,339,1176,300</area>
+            <area>30,358,1230,300</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1176,32</area>
+                    <area>0,0,1220,32</area>
                     <statetype name="buttoncheck">
-                        <area>18,7,20,20</area>
+                        <area>8,6,20,20</area>
                     </statetype>
                     <textarea name="track" from="buttontext">
-                        <area>56,4,45,24</area>
+                        <area>46,0,45,32</area>
+                        <align>allcenter</align>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>119,4,583,24</area>
+                        <area>109,0,643,32</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="artist" from="buttontext">
-                        <area>720,4,358,24</area>
+                        <area>772,0,358,32</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1096,4,62,24</area>
+                        <area>1150,0,62,32</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1176,32</area>
+                    <area>0,0,1220,32</area>
                     <statetype name="buttoncheck">
-                        <area>18,7,20,20</area>
+                        <area>8,6,20,20</area>
                     </statetype>
                     <textarea name="track" from="buttontext">
-                        <area>56,4,45,24</area>
+                        <area>46,0,45,32</area>
+                        <align>allcenter</align>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>119,4,583,24</area>
+                        <area>109,0,643,32</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="artist" from="buttontext">
-                        <area>720,4,358,24</area>
+                        <area>772,0,358,32</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1096,4,62,24</area>
+                        <area>1150,0,62,32</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1136,-17</position>
+                <position>1190,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1136,271</position>
+                <position>1190,272</position>
             </statetype>
         </buttonlist>
 
-        <!-- Buttons -->
-
-        <button name="scan" from="base_button">
-            <position>475,635</position>
-            <value>Scan CD</value>
-        </button>
-
         <button name="rip" from="base_button">
-            <position>655,635</position>
+            <position>565,635</position>
             <value>Rip CD</value>
         </button>
 
@@ -1816,22 +1907,53 @@
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
 
-        <shape name="darken" from="base_darken_popup_background" />
-
 	<shape name="cd-rip-backdrop" from="base_popup_backdrop">
             <area>240,180,800,360</area>
         </shape>
 
+        <shape name="cd-rip-top-line" from="base_line">
+            <area>248,188,784,2</area>
+        </shape>
+
+        <shape name="cd-rip-bottom-line" from="base_line">
+            <area>248,530,784,2</area>
+        </shape>
+
+        <shape name="cd-rip-left-line" from="base_vertical_line">
+            <area>248,190,2,340</area>
+        </shape>
+
+        <shape name="cd-rip-right-line" from="base_vertical_line">
+            <area>1030,190,2,340</area>
+        </shape>
+
         <textarea name="overall_label" from="basetextarea">
             <area>250,200,780,30</area>
-            <font>basesmall</font>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
             <value>Overall Progress</value>
         </textarea>
 
-        <textarea name="overall" from="overall_label">
+        <textarea name="overall" from="basetextarea">
             <area>250,250,780,30</area>
+            <font>basesmall</font>
             <align>hcenter</align>
+        </textarea>
+
+        <progressbar name="overall_progress" from="baseprogressbar">
+            <position>372,304</position>
+        </progressbar>
+
+        <textarea name="overallpct" from="basetextarea">
+            <area>372,320,100,30</area>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="status" from="basetextarea">
+            <area>250,342,780,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
         </textarea>
 
         <textarea name="track_label" from="overall_label">
@@ -1839,30 +1961,20 @@
             <value>Encoding Track</value>
         </textarea>
 
-        <textarea name="track" from="overall">
+        <textarea name="track" from="basetextarea">
             <area>250,490,780,30</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
         </textarea>
-
-        <textarea name="status" from="overall">
-            <area>250,342,780,30</area>
-        </textarea>
-
-        <progressbar name="overall_progress" from="baseprogressbar">
-            <position>372,290</position>
-        </progressbar>
 
         <progressbar name="track_progress" from="baseprogressbar">
-            <position>372,410</position>
+            <position>372,404</position>
         </progressbar>
 
-        <textarea name="overallpct" from="basetextarea">
-            <area>260,286,100,30</area>
-            <align>right</align>
-        </textarea>
-
         <textarea name="trackpct" from="basetextarea">
-            <area>260,406,100,30</area>
-            <align>right</align>
+            <area>372,420,100,30</area>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
         </textarea>
 
     </window>

@@ -1269,13 +1269,6 @@
         </imagetype>
     </progressbar>
 
-    <!-- Base definition of popup darken background -->
-    <shape name="base_darken_popup_background">
-        <area>0,0,1280,720</area>
-        <type>box</type>
-        <fill color="#000000" alpha="60" />
-    </shape>
-
     <!-- Base definition of a background -->
     <window name="backgroundwindow">
 
