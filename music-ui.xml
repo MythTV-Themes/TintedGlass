@@ -21,6 +21,12 @@
             <bold>no</bold>
         </font>
 
+        <font name="infoblue" face="Trebuchet MS">
+            <color>#3a9ade</color>
+            <size>16</size>
+            <bold>no</bold>
+        </font>
+
         <font name="baseextrasmall" face="DejaVu Sans">
             <color>#ffffff</color>
             <size>10</size>
@@ -31,36 +37,26 @@
             <area>20,0,1240,504</area>
 
             <image name="heading-backdrop" draworder="0" fleximage="no">
-                <position>506,-25</position>
-                <filename>mythmusic//mm_heading_backdrop.png</filename>
+                <position>488,-1</position>
+                <filename>mythmusic/mm_heading_backdrop.png</filename>
             </image>
 
             <textarea name="heading" draworder="1" align="center">
-                <area>0,0,1240,28</area>
+                <area>0,0,1240,22</area>
                 <font>baseextrasmall</font>
                 <value>Edit Playlist</value>
             </textarea>
 
-            <image name="backdrop1" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_list_backdrop.png</filename>
+            <image name="selection-top-backdrop" draworder="0" fleximage="no">
+                <filename>mythmusic/mm_selection_backdrop.png</filename>
                 <position>0,36</position>
             </image>
 
-            <image name="backdrop2" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_list_backdrop.png</filename>
-                <position>419,36</position>
-            </image>
-
-            <image name="backdrop3" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_list_backdrop.png</filename>
-                <position>838,36</position>
-            </image>
-
             <listtreearea name="musictree" draworder="0">
-                <area>16,56,1208,420</area>
-                <listsize>0,0,372,420</listsize>
-                <leveloffset>49</leveloffset>
-                <gradient type="unselected" start="#343440" end="#343440" alpha="150">
+                <area>15,49,1210,420</area>
+                <listsize>0,0,390,420</listsize>
+                <leveloffset>20</leveloffset>
+                <gradient type="unselected" start="#343440" end="#343440" alpha="255">
                 </gradient>
                 <gradient type="selected" start="#4d4d4d" end="#0a0a0d" alpha="255">
                 </gradient>
@@ -70,46 +66,46 @@
         </container>
 
         <container name="info">
-            <area>20,504,1240,180</area>
+            <area>20,492,1240,193</area>
 
             <image name="background" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_list_bottom_backdrop.png</filename>
+                <filename>mythmusic/mm_selection_bottom_backdrop.png</filename>
                 <position>0,0</position>
             </image>
 
-            <textarea name="line1" draworder="1">
+            <textarea name="line1" draworder="1" align="center">
                 <font>info</font>
-                <area>20,6,1200,28</area>
+                <area>10,10,915,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
-            <textarea name="line2" draworder="1">
-                <font>info</font>
-                <area>20,34,1200,28</area>
+            <textarea name="line2" draworder="1" align="center">
+                <font>infoblue</font>
+                <area>10,68,915,57</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
-            <textarea name="line3" draworder="1">
+            <textarea name="line3" draworder="1" align="center">
                 <font>info</font>
-                <area>20,62,1200,28</area>
+                <area>10,125,915,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
-            <textarea name="line4" draworder="1">
+            <textarea name="line4" draworder="1" align="center">
                 <font>info</font>
-                <area>20,90,1200,28</area>
+                <area>927,10,303,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
-            <textarea name="line5" draworder="1">
-                <font>info</font>
-                <area>20,118,1200,28</area>
+            <textarea name="line5" draworder="1" align="center">
+                <font>infoblue</font>
+                <area>927,68,303,57</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
-            <textarea name="line6" draworder="1">
+            <textarea name="line6" draworder="1" align="center">
                 <font>info</font>
-                <area>20,146,1200,28</area>
+                <area>927,125,303,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
         </container>
