@@ -261,45 +261,66 @@
         </textarea>
 
         <shape name="manage-sites-backdrop" from="base_backdrop">
-            <area>275,36,730,648</area>
+            <area>275,36,730,649</area>
         </shape>
 
         <shape name="manage-sites-top-line" from="base_line">
-            <area>291,56,698,2</area>
+            <area>283,44,714,2</area>
         </shape>
 
         <shape name="manage-sites-bottom-line" from="base_line">
-            <area>291,661,698,2</area>
+            <area>283,675,714,2</area>
         </shape>
 
+        <shape name="manage-sites-left-line" from="base_vertical_line">
+            <area>283,46,2,629</area>
+        </shape>
+
+        <shape name="manage-sites-right-line" from="base_vertical_line">
+            <area>995,46,2,629</area>
+        </shape>
+
+        <shape name="manage-sites-seperator-first-line" from="base_line">
+            <area>298,69,684,2</area>
+        </shape>
+
+        <textarea name="grabbers_label" from="basetextarea">
+            <area>298,46,684,23</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Netvision Site Grabbers</value>
+        </textarea>
+
         <buttonlist name="grabbers" from="base_list">
-            <area>277,56,726,610</area>
+            <area>285,68,710,610</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,726,34</area>
+                    <area>0,0,710,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,0,666,34</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>682,7</position>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,726,34</area>
+                    <area>0,0,710,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,0,666,34</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>682,7</position>
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>683,-19</position>
+                <position>681,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>683,608</position>
+                <position>681,609</position>
             </statetype>
         </buttonlist>
 
@@ -312,143 +333,157 @@
         </textarea>
 
         <shape name="manage-rss-subscriptions-top-backdrop" from="base_backdrop">
-            <area>275,36,730,60</area>
-            <cornerradius>90</cornerradius>
+            <area>215,36,850,431</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-middle-backdrop" from="base_backdrop">
-            <area>275,108,730,368</area>
+        <shape name="manage-rss-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-middle-top-line" from="base_line">
-            <area>291,131,698,2</area>
+        <shape name="manage-rss-bottom-line" from="base_line">
+            <area>223,457,834,2</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-middle-bottom-line" from="base_line">
-            <area>291,451,698,2</area>
+        <shape name="manage-rss-left-line" from="base_vertical_line">
+            <area>223,46,2,411</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-bottom-backdrop" from="base_backdrop">
-            <area>20,488,1240,196</area>
+        <shape name="manage-rss-right-line" from="base_vertical_line">
+            <area>1055,46,2,411</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-description-first-line" from="base_line">
-            <area>34,527,974,2</area>
+        <shape name="manage-rss-seperator-first-line" from="base_line">
+            <area>241,104,798,2</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-description-second-line" from="base_line">
-            <area>34,563,974,2</area>
+        <shape name="manage-rss-bottom-backdrop" from="base_backdrop">
+            <area>20,477,1240,208</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-description-third-line" from="base_line">
-            <area>34,670,974,2</area>
+        <shape name="manage-rss-bottom-top-line" from="base_line">
+            <area>28,485,963,2</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-description-left-line" from="base_vertical_line">
-            <area>34,565,2,105</area>
+        <shape name="manage-rss-bottom-bottom-line" from="base_line">
+            <area>28,675,963,2</area>
         </shape>
 
-        <shape name="manage-rss-subscriptions-description-right-line" from="base_vertical_line">
-            <area>1006,565,2,105</area>
+        <shape name="manage-rss-bottom-left-line" from="base_vertical_line">
+            <area>28,487,2,188</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-right-line" from="base_vertical_line">
+            <area>989,487,2,188</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-bottom-seperator-first-line" from="base_line">
+            <area>43,527,933,2</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-bottom-seperator-second-line" from="base_line">
+            <area>43,569,933,2</area>
         </shape>
 
         <shape name="netvision-list-preview-top-line" from="base_line">
-            <area>1021,502,225,2</area>
+            <area>997,485,255,2</area>
         </shape>
 
         <shape name="netvision-list-preview-bottom-line" from="base_line">
-            <area>1021,670,225,2</area>
+            <area>997,675,255,2</area>
         </shape>
 
         <shape name="netvision-list-preview-left-line" from="base_vertical_line">
-            <area>1021,504,2,166</area>
+            <area>997,487,2,188</area>
         </shape>
 
         <shape name="netvision-list-preview-right-line" from="base_vertical_line">
-            <area>1244,504,2,166</area>
+            <area>1250,487,2,188</area>
         </shape>
 
         <button name="edit" from="base_button">
-            <position>345,48</position>
+            <position>320,57</position>
             <value>Edit</value>
         </button>
 
         <button name="new" from="base_button">
-            <position>565,48</position>
+            <position>565,57</position>
             <value>New</value>
         </button>
 
         <button name="delete" from="base_button">
-            <position>785,48</position>
+            <position>810,57</position>
             <value>Remove</value>
         </button>
 
         <buttonlist name="sites" from="base_list">
-            <area>277,131,726,324</area>
+            <area>225,104,830,354</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,726,34</area>
+                    <area>0,0,830,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,0,786,34</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>802,7</position>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,726,34</area>
+                    <area>0,0,830,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,0,786,34</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>802,7</position>
                     </statetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,726,34</area>
+                    <area>0,0,830,34</area>
                     <textarea name="buttontext">
-                        <area>18,4,652,24</area>
+                        <area>8,0,786,34</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>688,7</position>
+                        <position>802,7</position>
                     </statetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>686,-20</position>
+                <position>796,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>686,324</position>
+                <position>796,355</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>36,494,970,30</area>
+            <area>44,487,931,40</area>
             <font>basemediumyellow</font>
-            <align>vcenter</align>
+            <align>left,vcenter</align>
         </textarea>
 
         <textarea name="author-label" from="basetextarea">
-            <area>36,530,82,30</area>
+            <area>44,529,82,40</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Author:</value>
         </textarea>
 
         <textarea name="author" from="basetextarea">
-            <area>133,530,873,30</area>
+            <area>141,529,834,40</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>42,567,958,97</area>
+            <area>44,573,931,97</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
         </textarea>
 
         <imagetype name="preview">
-            <area>1023,504,221,166</area>
+            <area>999,487,251,188</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -457,67 +492,95 @@
     <window name="rsseditpopup">
 
         <textarea name="heading" from="base_heading">
-            <value>Manage RSS Subscriptions</value>
+            <value>Edit RSS Subscriptions</value>
         </textarea>
 
-        <shape name="manage-rss-top-backdrop" from="base_backdrop">
-            <area>215,36,850,516</area>
+        <shape name="edit-rss-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
         </shape>
 
-        <shape name="manage-rss-bottom-backdrop" from="base_backdrop">
-            <area>20,564,1240,120</area>
+        <shape name="edit-rss-top-line" from="base_line">
+            <area>223,44,834,2</area>
         </shape>
 
-        <shape name="manage-rss-bottom-line" from="base_line">
-            <area>45,626,1190,2</area>
+        <shape name="edit-rss-bottom-line" from="base_line">
+            <area>223,541,834,2</area>
+        </shape>
+
+        <shape name="edit-rss-left-line" from="base_vertical_line">
+            <area>223,46,2,495</area>
+        </shape>
+
+        <shape name="edit-rss-right-line" from="base_vertical_line">
+            <area>1055,46,2,495</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-top-line" from="base_line">
+            <area>223,551,834,2</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-bottom-line" from="base_line">
+            <area>223,675,834,2</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-left-line" from="base_vertical_line">
+            <area>223,553,2,122</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-right-line" from="base_vertical_line">
+            <area>1055,553,2,122</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
         </shape>
 
         <textarea name="title-label" from="basetextarea">
-            <area>242,74,190,30</area>
+            <area>242,80,190,30</area>
             <align>right</align>
             <value>Feed Name:</value>
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <area>442,72,580,32</area>
+            <area>442,78,580,32</area>
         </textedit>
 
         <textarea name="url-label" from="basetextarea">
-            <area>242,144,190,30</area>
+            <area>242,154,190,30</area>
             <align>right</align>
             <value>Feed URL:</value>
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <area>442,142,580,32</area>
+            <area>442,152,580,32</area>
         </textedit>
 
         <textarea name="desc-label" from="basetextarea">
-            <area>242,214,190,30</area>
+            <area>242,224,190,30</area>
             <align>right</align>
             <value>Site Description:</value>
         </textarea>
 
         <textedit name="description" from="base_wide_textedit">
-            <area>442,212,580,32</area>
+            <area>442,222,580,32</area>
         </textedit>
 
         <textarea name="author-label" from="basetextarea">
-            <area>242,284,190,30</area>
+            <area>242,294,190,30</area>
             <align>right</align>
             <value>Feed Author:</value>
         </textarea>
 
         <textedit name="author" from="base_wide_textedit">
-            <area>442,282,580,32</area>
+            <area>442,292,580,32</area>
         </textedit>
 
         <checkbox name="download" from="basecheckbox">
-            <position>800,370</position>
+            <position>800,382</position>
         </checkbox>
 
         <textarea name="download-label" from="basetextarea">
-            <area>425,374,365,30</area>
+            <area>425,386,365,30</area>
             <align>right</align>
             <value>Download this feed automatically:</value>
         </textarea>
@@ -527,17 +590,17 @@
         </imagetype>
 
         <button name="preview_browse" from="base_medium_button">
-            <position>465,450</position>
+            <position>465,470</position>
             <value>Choose Image</value>
         </button>
 
         <button name="ok" from="base_medium_button">
-            <position>200,635</position>
+            <position>268,625</position>
             <value>Save</value>
         </button>
 
         <button name="cancel" from="base_medium_button">
-            <position>730,635</position>
+            <position>662,625</position>
             <value>Cancel</value>
         </button>
 
@@ -550,182 +613,218 @@
         </textarea>
 
         <shape name="netvision-list-sites-backdrop" from="base_backdrop">
-            <area>20,36,613,300</area>
+            <area>20,36,613,306</area>
         </shape>
 
         <shape name="netvision-list-sites-top-line" from="base_line">
-            <area>34,57,585,2</area>
+            <area>28,44,597,2</area>
         </shape>
 
         <shape name="netvision-list-sites-bottom-line" from="base_line">
-            <area>34,313,585,2</area>
+            <area>28,332,597,2</area>
+        </shape>
+
+        <shape name="netvision-list-sites-left-line" from="base_vertical_line">
+            <area>28,46,2,286</area>
+        </shape>
+
+        <shape name="netvision-list-sites-right-line" from="base_vertical_line">
+            <area>623,46,2,286</area>
         </shape>
 
         <shape name="netvision-list-videos-backdrop" from="base_backdrop">
-            <area>647,36,613,300</area>
+            <area>647,36,613,306</area>
         </shape>
 
         <shape name="netvision-list-videos-top-line" from="base_line">
-            <area>661,57,585,2</area>
+            <area>655,44,597,2</area>
         </shape>
 
         <shape name="netvision-list-videos-bottom-line" from="base_line">
-            <area>661,313,585,2</area>
+            <area>655,332,597,2</area>
         </shape>
 
-        <shape name="netvision-description-backdrop" from="base_backdrop">
-            <area>20,356,1240,328</area>
+        <shape name="netvision-list-videos-left-line" from="base_vertical_line">
+            <area>655,46,2,286</area>
         </shape>
 
-        <shape name="netvision-list-description-first-line" from="base_line">
-            <area>36,396,1208,2</area>
+        <shape name="netvision-list-videos-right-line" from="base_vertical_line">
+            <area>1250,46,2,286</area>
         </shape>
 
-        <shape name="netvision-list-description-second-line" from="base_line">
-            <area>36,431,1208,2</area>
+        <shape name="netvision-list-bottom-backdrop" from="base_backdrop">
+            <area>20,352,1240,333</area>
         </shape>
 
-        <shape name="netvision-list-description-third-line" from="base_line">
-            <area>36,475,938,2</area>
+        <shape name="netvision-list-bottom-top-line" from="base_line">
+            <area>28,360,1224,2</area>
         </shape>
 
-        <shape name="netvision-list-description-fourth-line" from="base_line">
-            <area>36,665,938,2</area>
+        <shape name="netvision-list-bottom-bottom-line" from="base_line">
+            <area>28,477,1224,2</area>
+        </shape>
+
+        <shape name="netvision-list-bottom-left-line" from="base_vertical_line">
+            <area>28,362,2,115</area>
+        </shape>
+
+        <shape name="netvision-list-bottom-right-line" from="base_vertical_line">
+            <area>1250,362,2,115</area>
+        </shape>
+
+        <shape name="netvision-list-bottom-seperator-first-line" from="base_line">
+            <area>43,399,1194,2</area>
+        </shape>
+
+        <shape name="netvision-list-bottom-seperator-second-line" from="base_line">
+            <area>43,438,1194,2</area>
+        </shape>
+
+        <shape name="netvision-list-description-top-line" from="base_line">
+            <area>28,485,964,2</area>
+        </shape>
+
+        <shape name="netvision-list-description-bottom-line" from="base_line">
+            <area>28,675,964,2</area>
         </shape>
 
         <shape name="netvision-list-description-left-line" from="base_vertical_line">
-            <area>36,477,2,188</area>
+            <area>28,487,2,188</area>
         </shape>
 
         <shape name="netvision-list-description-right-line" from="base_vertical_line">
-            <area>972,477,2,188</area>
+            <area>990,487,2,188</area>
         </shape>
 
         <shape name="netvision-list-preview-top-line" from="base_line">
-            <area>990,475,254,2</area>
+            <area>998,485,254,2</area>
         </shape>
 
         <shape name="netvision-list-preview-bottom-line" from="base_line">
-            <area>990,665,254,2</area>
+            <area>998,675,254,2</area>
         </shape>
 
         <shape name="netvision-list-preview-left-line" from="base_vertical_line">
-            <area>990,477,2,188</area>
+            <area>998,487,2,188</area>
         </shape>
 
         <shape name="netvision-list-preview-right-line" from="base_vertical_line">
-            <area>1242,477,2,188</area>
+            <area>1250,487,2,188</area>
         </shape>
 
         <buttontree name="videos">
-            <area>22,57,1236,260</area>
+            <area>30,44,1220,290</area>
             <numlists>2</numlists>
-            <spacing>18</spacing>
+            <spacing>34</spacing>
             <buttonlist name="listtemplate" from="base_list">
                 <statetype name="buttonitem">
                     <state name="active">
-                        <area>0,0,609,34</area>
+                        <area>0,0,593,34</area>
                         <textarea name="buttontext">
-                            <area>18,4,544,24</area>
+                            <area>8,0,577,34</area>
+                            <align>left,vcenter</align>
                         </textarea>
                     </state>
                     <state name="selectedactive">
-                        <area>0,0,609,34</area>
+                        <area>0,0,593,34</area>
                         <textarea name="buttontext">
-                            <area>18,4,544,24</area>
+                            <area>8,0,549,34</area>
+                            <align>left,vcenter</align>
                         </textarea>
                         <imagetype name="buttonarrow">
-                            <position>580,8</position>
+                            <position>565,7</position>
                         </imagetype>
                     </state>
                     <state name="selectedinactive">
-                        <area>0,0,609,34</area>
+                        <area>0,0,593,34</area>
                         <textarea name="buttontext">
-                            <area>18,4,544,24</area>
+                            <area>8,0,577,34</area>
+                            <align>left,vcenter</align>
                         </textarea>
                     </state>
                 </statetype>
                 <statetype name="upscrollarrow">
-                    <position>569,-19</position>
+                    <position>576,-8</position>
                 </statetype>
                 <statetype name="downscrollarrow">
-                    <position>569,259</position>
+                    <position>576,290</position>
                 </statetype>
             </buttonlist>
         </buttontree>
 
         <textarea name="title" from="basetextarea">
-            <area>38,362,1204,30</area>
+            <area>44,362,1192,37</area>
             <cutdown>yes</cutdown>
             <font>basemediumlargeryellow</font>
+            <align>left,vcenter</align>
         </textarea>
 
         <textarea name="author_label" from="basetextarea">
-            <area>38,398,82,30</area>
+            <area>44,401,82,37</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Author:</value>
         </textarea>
 
         <textarea name="author" from="basetextarea">
-            <area>135,399,703,30</area>
+            <area>141,401,703,37</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="userratinglbl" from="basetextarea">
-            <area>858,398,82,30</area>
+            <area>864,401,82,37</area>
             <align>right,vcenter</align>
             <value>Rating:</value>
         </textarea>
 
         <textarea name="rating" from="basetextarea">
-            <area>955,399,287,30</area>
+            <area>961,401,259,37</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="date_label" from="basetextarea">
-            <area>38,438,82,30</area>
+            <area>44,440,82,37</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Posted:</value>
         </textarea>
 
         <textarea name="date" from="basetextarea">
-            <area>135,438,286,30</area>
+            <area>141,440,286,37</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="filesize_label" from="basetextarea">
-            <area>441,438,82,30</area>
+            <area>447,440,82,37</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Size:</value>
         </textarea>
 
         <textarea name="filesize_str" from="basetextarea">
-            <area>538,438,282,30</area>
+            <area>544,440,282,37</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="lenlbl" from="basetextarea">
-            <area>840,438,100,30</area>
+            <area>846,440,100,37</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Runtime:</value>
         </textarea>
 
         <textarea name="duration" from="basetextarea">
-            <area>955,438,287,30</area>
+            <area>961,440,259,37</area>
             <font>basesmalleblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,482,922,186</area>
+            <area>36,494,948,172</area>
             <font>basesmall</font>
             <align>justify</align>
             <multiline>yes</multiline>
@@ -733,12 +832,12 @@
         </textarea>
 
         <imagetype name="preview">
-            <area>992,477,250,188</area>
+            <area>1000,487,250,188</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="nosites" from="description">
-            <area>24,36,609,300</area>
+            <area>30,46,593,286</area>
               <multiline>yes</multiline>
               <font>basesmall</font>
               <align>allcenter</align>
