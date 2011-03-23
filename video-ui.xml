@@ -927,12 +927,11 @@
                         <type>roundbox</type>
                         <fill color="#101017" alpha="255" />
                         <line color="#666666" alpha="255" width="6" />
-                        <cornerradius>15</cornerradius>
+                        <cornerradius>0</cornerradius>
                     </shape>
                     <imagetype name="coverart">
                         <area>4,4,202,315</area>
                         <filename>images/mv_browse_nocover.png</filename>
-                        <mask>images/masks/video_browse_poster_mask.png</mask>
                     </imagetype>
                     <statetype name="nodetype">
                         <position>83,176</position>
@@ -1269,17 +1268,17 @@
             <value>Video Gallery View</value>
         </textarea>
 
-        <shape name="video-gallery-box-backdrop" from="base_backdrop">
-            <area>0,36,1280,347</area>
+        <shape name="video-gallery-backdrop" from="base_backdrop">
+            <area>0,36,1280,350</area>
             <type>box</type>
         </shape>
 
-        <shape name="video-gallery-box-top-line" from="base_line">
+        <shape name="video-gallery-top-line" from="base_line">
             <area>0,37,1280,2</area>
         </shape>
 
-        <shape name="video-gallery-box-bottom-line" from="base_line">
-            <area>0,380,1280,2</area>
+        <shape name="video-gallery-bottom-line" from="base_line">
+            <area>0,383,1280,2</area>
         </shape>
 
         <shape name="video-gallery-bottom-backdrop" from="base_backdrop">
@@ -1315,10 +1314,10 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>0,87,1280,250</area>
+            <area>0,88,1280,250</area>
             <layout>grid</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1280,375</buttonarea>
+            <buttonarea>0,0,1280,250</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,80,125</area>
@@ -1363,13 +1362,12 @@
                 <state name="selectedactive">
                     <area>-40,-40,160,220</area>
                     <imagetype name="buttonbackground">
-                        <area>2,-8,160,217</area>
+                        <area>0,-8,160,217</area>
                         <filename>images/mv_video_underlay.png</filename>
                         <alphapulse min="80" max="255" change="2"/>
                     </imagetype>
                     <imagetype name="buttonimage">
                         <area>10,0,140,200</area>
-                        <mask>images/masks/mv_browsemodemask.png</mask>
                         <filename>images/mv_browse_nocover.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
@@ -1399,9 +1397,9 @@
         </buttonlist>
 
         <textarea name="position" from="basetextarea">
-            <area>0,378,1280,30</area>
-            <align>hcenter,vcenter</align>
-            <font>basesmall</font>
+            <area>0,386,1280,18</area>
+            <font>baseevensmaller</font>
+            <align>allcenter</align>
         </textarea>
 
         <textarea name="title" from="basetextarea">
