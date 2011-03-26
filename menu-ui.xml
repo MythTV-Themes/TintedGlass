@@ -12,16 +12,16 @@
         <group name="heading-backdrop" from="base_heading_group" />
 
         <shape name="menuscroll-background" from="base_backdrop">
-            <area>0,560,1280,70</area>
+            <area>0,525,1280,70</area>
             <type>box</type>
         </shape>
 
         <shape name="menuscroll-top-line" from="base_line">
-            <area>0,561,1280,2</area>
+            <area>0,526,1280,2</area>
         </shape>
 
         <shape name="menuscroll-bottom-line" from="base_line">
-            <area>0,627,1280,2</area>
+            <area>0,592,1280,2</area>
         </shape>
 
         <statetype name="titles">
@@ -138,18 +138,18 @@
         </statetype>
 
         <buttonlist name="menu">
-            <area>20,559,1240,65</area>
+            <area>20,528,1240,64</area>
             <layout>horizontal</layout>
             <spacing>20</spacing>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>	
-            <buttonarea>0,0,1240,65</buttonarea>
+            <buttonarea>0,0,1240,64</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,7,232,59</area>
+                    <area>0,0,232,64</area>
                     <imagetype name="background" />
                     <textarea name="buttontext">
-                        <area>0,0,232,59</area>
+                        <area>0,0,232,64</area>
                         <font>basemediumlightgrey</font>
                         <multiline>yes</multiline>
                         <align>allcenter</align>
@@ -158,14 +158,14 @@
                     </textarea>
                 </state>
                 <state name="selectedactive"> 
-                    <area>0,4,232,65</area>
+                    <area>0,0,232,64</area>
                     <imagetype name="background" />
                     <textarea name="buttontext">
-                        <area>0,0,232,65</area>
+                        <area>0,0,232,64</area>
                         <font>basemediumlargerdarkyellow</font>
                         <multiline>yes</multiline>
                         <alphapulse min="100" max="255" change="2"/>
-                        <align>center,vcenter</align>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <case>upper</case>
                     </textarea>
