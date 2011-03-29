@@ -458,14 +458,14 @@
 
     <!-- Base definition of a active button background -->
     <shape name="base_button_background_active" from="base_button_background_selected">
-        <fill color="#666666" alpha="255" />
-        <line color="#FFFFFF" alpha="100" width="1" /> 
+        <fill color="#CCCCCC" alpha="150" />
+        <line color="#CCCCCC" alpha="150" width="2" /> 
     </shape>
 
     <!-- Base definition of a disabled button background -->
     <shape name="base_button_background_disabled" from="base_button_background_selected">
-        <fill color="#404040" alpha="200" />
-        <line color="#404040" alpha="0" width="0" />    
+        <fill color="#333333" alpha="175" />
+        <line color="#454545" alpha="180" width="2" />    
     </shape>
 
     <!-- Base definition of a pushed Button background -->
@@ -896,13 +896,13 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#404040" alpha="175" />
-                    <line color="#404040" alpha="225" width="1" />
+                    <fill color="#333333" alpha="175" />
+                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
                     <area>11%,0,89%,100%</area>
-                    <font>basesmalllightgrey</font>
+                    <font>basesmall</font>
                     <cutdown>yes</cutdown>
                     <align>allcenter</align>
                 </textarea>
@@ -911,8 +911,8 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#FFFFFF" alpha="150" />
-                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <fill color="#CCCCCC" alpha="150" />
+                    <line color="#CCCCCC" alpha="150" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
@@ -1025,12 +1025,12 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#404040" alpha="175" />
-                    <line color="#404040" alpha="225" width="1" />
+                    <fill color="#333333" alpha="175" />
+                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
-                    <font>basesmalllightgrey</font>
+                    <font>basesmall</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
                 </textarea>
@@ -1039,8 +1039,8 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#FFFFFF" alpha="150" />
-                    <line color="#FFFFFF" alpha="225" width="1" />
+                    <fill color="#CCCCCC" alpha="150" />
+                    <line color="#CCCCCC" alpha="150" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
@@ -1160,8 +1160,8 @@
                <shape name="background">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#404040" alpha="175" />
-                    <line color="#404040" alpha="225" width="2" />
+                    <fill color="#333333" alpha="175" />
+                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
@@ -1171,7 +1171,7 @@
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <fill color="#000000" alpha="255" />
-                    <line color="#FFFFFF" alpha="120" width="2" />
+                    <line color="#FFFFFF" alpha="110" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
