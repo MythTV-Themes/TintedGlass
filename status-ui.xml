@@ -111,12 +111,14 @@
                     <area>0,0,1220,31</area>
                     <textarea name="buttontext">
                         <area>8,-1,1204,31</area>
+			<font state="normal">basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,31</area>
                     <textarea name="buttontext">
                         <area>8,-1,1204,31</area>
+			<font state="normal">basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
