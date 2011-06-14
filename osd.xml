@@ -4,6 +4,229 @@
 
 <!-- TintedGlass-osd -->
 
+    <window name="osd_debug">
+        <area>0,0,1280,720</area>
+
+        <fontdef name="medium" face="DejaVu Sans">
+            <pixelsize>16</pixelsize>
+            <color>#e6e6e6</color>
+        </fontdef>
+
+        <fontdef name="mediumblue" from="medium">
+            <color>#3a9ade</color>
+        </fontdef>
+
+        <shape name="background">
+            <area>70,44,1140,128</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="140" />
+            <cornerradius>5</cornerradius>
+        </shape>
+
+        <shape name="top-line">
+            <area>78,52,1124,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="35">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="bottom-line" from="top-line">
+            <area>78,162,1124,2</area>
+        </shape>
+
+        <shape name="left-line">
+            <area>78,54,2,108</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="80">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="160" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="right-line" from="left-line">
+            <area>1200,54,2,108</area>
+        </shape>
+
+        <textarea name="file">
+            <font>medium</font>
+            <area>83,59,180,25</area>
+            <align>right,vcenter</align>
+            <value>Filename :</value>
+        </textarea>
+
+        <textarea name="filename">
+            <font>mediumblue</font>
+            <area>268,59,926,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="storage">
+            <font>medium</font>
+            <area>83,84,180,25</area>
+            <align>right,vcenter</align>
+            <value>Storage to Buffer :</value>
+        </textarea>
+
+        <textarea name="storagerate">
+            <font>mediumblue</font>
+            <area>268,84,117,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="decoder">
+            <font>medium</font>
+            <area>83,109,180,25</area>
+            <align>right,vcenter</align>
+            <value>Buffer to Decoder :</value>
+        </textarea>
+
+        <textarea name="decoderrate">
+            <font>mediumblue</font>
+            <area>268,109,117,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="buffer">
+            <font>medium</font>
+            <area>83,134,180,25</area>
+            <align>right,vcenter</align>
+            <value>Available Buffer :</value>
+        </textarea>
+
+        <textarea name="bufferavail">
+            <font>mediumblue</font>
+            <area>268,134,117,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="video">
+            <font>medium</font>
+            <area>390,84,100,25</area>
+            <align>right,vcenter</align>
+            <value>Video :</value>
+        </textarea>
+
+        <textarea name="videowidth">
+            <font>mediumblue</font>
+            <area>495,84,250,25</area>
+            <align>left,vcenter</align>
+            <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
+        </textarea>
+
+        <textarea name="vidcodec">
+            <font>medium</font>
+            <area>390,109,100,25</area>
+            <align>right,vcenter</align>
+            <value>Codec :</value>
+        </textarea>
+
+        <textarea name="videocodec">
+            <font>mediumblue</font>
+            <area>495,109,150,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="viddec">
+            <font>medium</font>
+            <area>390,134,100,25</area>
+            <align>right,vcenter</align>
+            <value>Decoder :</value>
+        </textarea>
+
+        <textarea name="videodecoder">
+            <font>mediumblue</font>
+            <area>495,134,150,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="sync">
+            <font>medium</font>
+            <area>700,84,150,25</area>
+            <align>right,vcenter</align>
+            <value>A/V Sync :</value>
+        </textarea>
+
+        <textarea name="avsync">
+            <font>mediumblue</font>
+            <area>855,84,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="fps">
+            <font>medium</font>
+            <area>650,109,200,25</area>
+            <align>right,vcenter</align>
+            <value>FPS :</value>
+        </textarea>
+
+        <textarea name="framerate">
+            <font>mediumblue</font>
+            <area>855,109,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="frames">
+            <font>medium</font>
+            <area>650,134,200,25</area>
+            <align>right,vcenter</align>
+            <value>Frames decoded/free :</value>
+        </textarea>
+
+        <textarea name="videoframes">
+            <font>mediumblue</font>
+            <area>855,134,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="audio">
+            <font>medium</font>
+            <area>960,84,130,25</area>
+            <align>right,vcenter</align>
+            <value>Audio :</value>
+        </textarea>
+
+        <textarea name="audiocodec">
+            <font>mediumblue</font>
+            <area>1095,84,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="channels">
+            <font>medium</font>
+            <area>960,109,130,25</area>
+            <align>right,vcenter</align>
+            <value>Channels :</value>
+        </textarea>
+
+        <textarea name="audiochannels">
+            <font>mediumblue</font>
+            <area>1095,109,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="audiorate">
+            <font>medium</font>
+            <area>960,134,130,25</area>
+            <align>right,vcenter</align>
+            <value>Sample rate :</value>
+        </textarea>
+
+        <textarea name="samplerate">
+            <font>mediumblue</font>
+            <area>1095,134,100,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+    </window>
+
     <window name="osd_message">
         <area>0,0,1280,720</area>
 
