@@ -2835,28 +2835,149 @@
             <position>584,234</position>
         </buttonlist>
 
-        <shape name="rulesactive_top_line" from="base_list_line">
-            <area>598,272,638,1</area>
-        </shape>
+        <button name="filters" from="base_wide_button_list_style">
+            <position>584,272</position>
+            <value>Schedule filters</value>
+            <helptext></helptext>
+        </button>
 
-        <shape name="rulesactive_bottom_line" from="base_list_line">
+        <shape name="rulesactive_top_line" from="base_list_line">
             <area>598,310,638,1</area>
         </shape>
 
+        <shape name="rulesactive_right_line" from="base_vertical_line">
+            <area>915,311,2,37</area>
+        </shape>
+
         <checkbox name="ruleactive" from="basecheckbox">
-            <position>625,275</position>
+            <position>625,313</position>
         </checkbox>
 
         <textarea name="ruleactivelabel" from="basetextarea">
-            <area>669,272,300,40</area>
+            <area>669,310,300,40</area>
+            <font>basesomewhatsmaller</font>
             <align>vcenter</align>
             <value>Recording Rule Active</value>
         </textarea>
 
-        <button name="back" from="base_wide_button_list_style">
-            <position>584,310</position>
+        <button name="back" from="base_button_list_style">
+            <position>917,310</position>
+            <statetype name="buttonstate">
+                <area>0,0,333,40</area>
+            <state name="active">
+                <shape name="top_line" from="base_list_line">
+                    <area>2%,0,98%,1</area>
+                    <fill style="gradient">
+                        <gradient direction="horizontal" alpha="0">
+                            <stop position="0" color="#ffffff" />
+                            <stop position="50" color="#ffffff" alpha="0" />
+                            <stop position="100" color="#ffffff" />
+                            </gradient>
+                    </fill>
+                </shape>
+                <shape name="bottom_line" from="top_line">
+                    <area>2%,96%,98%,1</area>
+                </shape>
+                <textarea name="text">
+                    <align>allcenter</align>
+                    <value>Back</value>
+                </textarea>
+            </state>
+            <state name="selected">
+                <textarea name="text">
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="disabled" from="active" />
+            <state name="pushed" from="active" />
+            </statetype>
+        </button>
+
+    </window>
+
+    <window name="schedulefiltereditor">
+	<!-- Make window behave as a popup -->
+        <area>-1,-1,1280,720</area>
+
+        <shape name="background" from="base_popup_backdrop">
+            <area>360,36,560,322</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-top-line" from="base_line">
+            <area>368,44,544,2</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-highlight-top-line" from="base_line">
+            <area>380,82,520,2</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-highlight-bottom-line" from="base_line">
+            <area>380,309,520,2</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-bottom-line" from="base_line">
+            <area>368,348,544,2</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-left-line" from="base_vertical_line">
+            <area>368,46,2,302</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-right-line" from="base_vertical_line">
+            <area>910,46,2,302</area>
+        </shape>
+
+	<textarea name="Window_label" from="basetextarea">
+            <area>370,46,540,36</area>
+            <align>allcenter</align>
+            <font>baseevensmalleryellow</font>
+            <value>Schedule Filter Editor</value>
+        </textarea>
+
+	<buttonlist name="filters" from="base_list">
+	    <area>370,82,540,232</area>
+	    <statetype name="buttonitem">
+		<state name="active">
+		    <area>0,0,540,40</area>
+		    <textarea name="buttontext">
+			<area>36,5,476,30</area>
+		    </textarea>
+		    <statetype name="buttoncheck">
+			<position>8,10</position>
+		    </statetype>
+                    <imagetype name="rightarrow">
+                        <position>520,10</position>
+                        <filename>images/lists_right_arrow.png</filename>
+                    </imagetype>
+		</state>
+		<state name="selectedactive">
+                    <area>0,0,540,40</area>
+                    <textarea name="buttontext">
+                        <area>36,5,476,30</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>8,10</position>
+                    </statetype>
+                    <imagetype name="rightarrow">
+                        <position>520,10</position>
+                        <filename>images/lists_right_arrow.png</filename>
+                    </imagetype>
+		</state>
+		<state name="selectedinactive" from="active" />
+	    </statetype>
+            <statetype name="upscrollarrow">
+                <position>516,-8</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>516,230</position>
+            </statetype>
+	</buttonlist>
+
+        <button name="back" from="base_button">
+            <position>565,312</position>
             <value>Back</value>
         </button>
+
     </window>
 
     <window name="storageoptionseditor">

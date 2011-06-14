@@ -312,7 +312,7 @@
     </shape>
 
     <shape name="base_list_line">
-        <type>boxw</type>
+        <type>box</type>
         <fill style="gradient">
             <gradient direction="horizontal" alpha="10">
                 <stop position="0" color="#ffffff" />
