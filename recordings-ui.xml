@@ -1634,22 +1634,34 @@
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>364,256,300,30</area>
+            <area>364,233,300,30</area>
             <font>basmesmall</font>
+            <align>left,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <area>350,285,580,32</area>
+            <area>350,263,580,32</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
-            <area>364,371,300,30</area>
+            <area>364,322,300,30</area>
+            <align>left,vcenter</align>
             <value>Subtitle:</value>
         </textarea>
 
         <textedit name="subtitle" from="base_wide_textedit">
-            <area>350,400,580,32</area>
+            <area>350,352,580,32</area>
+        </textedit>
+
+        <textarea name="descriptionlabel" from="basetextarea">
+            <area>364,408,300,30</area>
+            <align>left,vcenter</align>
+            <value>Description:</value>
+        </textarea>
+
+        <textedit name="description" from="base_wide_textedit">
+            <area>350,438,580,32</area>
         </textedit>
 
         <button name="ok" from="base_medium_button">
