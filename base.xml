@@ -293,7 +293,7 @@
     <shape name="base_line">
         <type>box</type>
         <fill style="gradient">
-            <gradient direction="horizontal" alpha="35">
+            <gradient direction="horizontal" alpha="45">
                 <stop position="0" color="#ffffff" />
                 <stop position="50" color="#ffffff" alpha="120" />
                 <stop position="100" color="#ffffff" />
@@ -303,7 +303,7 @@
 
     <shape name="base_vertical_line">
         <fill style="gradient">
-            <gradient alpha="80" direction="vertical">
+            <gradient alpha="100" direction="vertical">
                 <stop position="0" color="#ffffff" />
                 <stop position="50" color="#ffffff" alpha="160" />
                 <stop position="100" color="#ffffff" />
@@ -391,9 +391,9 @@
 
     <shape name="base_select_bar_active">
         <type>roundbox</type>
-        <fill color="#ffffff" alpha="0" />
-        <line color="#666666" alpha="80" width="1" />
-        <cornerradius>0</cornerradius>
+        <fill color="#000000" alpha="0" />
+        <line color="#666666" alpha="150" width="1" />
+        <cornerradius>90</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_small">
@@ -406,7 +406,7 @@
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>0</cornerradius>
+        <cornerradius>15</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_medium">
@@ -419,7 +419,7 @@
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>0</cornerradius>
+        <cornerradius>10</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_large">
@@ -432,7 +432,7 @@
             </gradient>
         </fill>
         <line color="#666666" alpha="170" width="1" />
-        <cornerradius>0</cornerradius>
+        <cornerradius>12</cornerradius>
     </shape>
 
     <!-- Base definition of a selected button background -->
@@ -482,7 +482,7 @@
     <!-- Base definition of a button list -->
     <buttonlist name="base_button_list">
         <layout>vertical</layout>
-        <spacing>3</spacing>
+        <spacing>2</spacing>
         <drawfrombottom>yes</drawfrombottom>
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
@@ -566,14 +566,7 @@
             <state name="active">
                 <shape name="buttonbackground" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
-                    <line color="#666666" alpha="0" width="1" />
                 </shape>
-		<shape name="top_line" from="base_list_line">
-                    <area>2%,0,98%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>2%,96%,98%,1</area>
-                </shape>                 
                 <textarea name="buttontext" from="base_text_font_state_small">
                 </textarea>
                 <statetype name="buttoncheck">
@@ -665,12 +658,14 @@
     <buttonlist name="base_list_small_width" from="base_list">
         <statetype name="buttonitem">
             <state name="active">
+<!--
                 <shape name="top_line" from="base_list_line">
                     <area>4%,0,96%,1</area>
                 </shape>
                 <shape name="bottom_line" from="base_list_line">
                     <area>4%,96%,96%,1</area>
                 </shape>
+-->
             </state>
         </statetype>
     </buttonlist>
@@ -679,12 +674,14 @@
     <buttonlist name="base_list_large_width" from="base_list">
         <statetype name="buttonitem">
             <state name="active">
+<!--
                 <shape name="top_line" from="base_list_line">
                     <area>1%,0,99%,1</area>
                 </shape>
                 <shape name="bottom_line" from="base_list_line">
                     <area>1%,96%,99%,1</area>
                 </shape>
+-->
             </state>
         </statetype>
     </buttonlist>
@@ -781,13 +778,6 @@
                 <area>0,0,100%,100%</area>
                 <shape name="background" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
-                    <line color="#666666" alpha="0" width="1" />
-                </shape>
-                <shape name="top_line" from="base_list_line">
-                    <area>2%,0,98%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="text">
                     <area>6%,0,94%,100%</area>
@@ -799,7 +789,7 @@
             </state>
             <state name="selected">
                 <area>0,0,100%,100%</area>
-                <shape name="background" from="base_select_bar_selectedactive_medium">
+                <shape name="background" from="base_select_bar_selectedactive_small">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="text">
@@ -957,13 +947,6 @@
                 <area>0,0,100%,40</area>
                 <shape name="buttonbackground" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
-                    <line color="#666666" alpha="0" width="1" />
-                </shape>
-                <shape name="top_line" from="base_list_line">
-                    <area>2%,0,98%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="buttontext">
                     <area>6%,0,94%,40</area>
@@ -984,7 +967,7 @@
             </state>
             <state name="selectedactive">
                 <area>0,0,100%,40</area>
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
                     <area>0,0,100%,40</area>
                 </shape>
                 <textarea name="buttontext">
@@ -1081,13 +1064,6 @@
                 <area>0,0,100%,100%</area>
                 <shape name="buttonbackground" from="base_select_bar_active">
                     <area>0,0,100%,100%</area>
-                    <line color="#666666" alpha="0" width="1" />
-                </shape>
-                <shape name="top_line" from="base_list_line">
-                    <area>2%,0,98%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>2%,96%,98%,1</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
                     <area>6%,0,94%,100%</area>
@@ -1105,7 +1081,7 @@
             </state>
             <state name="selectedactive">
                 <area>0,0,100%,100%</area>
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
@@ -1286,7 +1262,7 @@
         </shape>
 
         <shape name="popup-first-line" from="base_line">
-            <area>448,136,384,2</area>
+            <area>441,129,398,2</area>
         </shape>
 
         <shape name="popup-second-line" from="base_line">
@@ -1294,26 +1270,26 @@
         </shape>
 
         <shape name="popup-third-line" from="base_line">
-            <area>448,581,384,2</area>
+            <area>441,588,398,2</area>
         </shape>
 
         <shape name="popup-left-line" from="base_vertical_line">
-            <area>448,138,2,443</area>
+            <area>441,131,2,457</area>
         </shape>
 
         <shape name="popup-right-line" from="base_vertical_line">
-            <area>830,138,2,443</area>
+            <area>837,131,2,457</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>456,144,368,152</area>
+            <area>456,137,368,159</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>455,316,370,264</area>
+            <area>455,319,370,264</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,370,40</area>
@@ -1354,19 +1330,19 @@
         </shape>
 
         <shape name="large-dialogbox-top-line" from="base_line">
-            <area>244,110,799,2</area>
+            <area>237,103,813,2</area>
         </shape>
 
         <shape name="large-dialogbox-bottom-line" from="base_line">
-            <area>244,608,799,2</area>
+            <area>237,615,813,2</area>
         </shape>
 
         <shape name="large-dialogbox-left-line" from="base_vertical_line">
-            <area>244,112,2,496</area>
+            <area>237,105,2,510</area>
         </shape>
 
         <shape name="large-dialogbox-right-line" from="base_vertical_line">
-            <area>1041,112,2,496</area>
+            <area>1048,105,2,510</area>
         </shape>
 
         <shape name="large-dialogbox-seperator-first-line" from="base_line">
@@ -1374,14 +1350,14 @@
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>251,118,785,276</area>
+            <area>251,111,785,283</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>257,420,772,174</area>
+            <area>257,423,772,174</area>
             <layout>grid</layout>
             <wrapstyle>selection</wrapstyle>
             <drawfrombottom>no</drawfrombottom>

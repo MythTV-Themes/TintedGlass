@@ -38,19 +38,19 @@
         </shape>
 
         <shape name="coverart-top-line" from="base_line">
-            <area>28,80,231,2</area>
+            <area>21,73,244,2</area>
         </shape>
 
         <shape name="coverart-bottom-line" from="base_line">
-            <area>28,421,231,2</area>
+            <area>21,428,244,2</area>
         </shape>
 
         <shape name="coverart-left-line" from="base_vertical_line">
-            <area>28,82,2,339</area>
+            <area>21,75,2,353</area>
         </shape>
 
         <shape name="coverart-right-line" from="base_vertical_line">
-            <area>257,82,2,339</area>
+            <area>263,75,2,353</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
@@ -58,19 +58,19 @@
         </shape>
 
         <shape name="reclist-top-line" from="base_line">
-            <area>285,80,968,2</area>
+            <area>278,73,981,2</area>
         </shape>
 
         <shape name="reclist-bottom-line" from="base_line">
-            <area>285,421,968,2</area>
+            <area>278,428,981,2</area>
         </shape>
 
         <shape name="reclist-left-line" from="base_vertical_line">
-            <area>285,82,2,339</area>
+            <area>278,75,2,353</area>
         </shape>
 
         <shape name="reclist-right-line" from="base_vertical_line">
-            <area>1251,82,2,339</area>
+            <area>1257,75,2,353</area>
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
@@ -78,19 +78,19 @@
         </shape>
 
         <shape name="description-top-line" from="base_line">
-            <area>28,449,791,2</area>
+            <area>21,442,804,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_line">
-            <area>28,677,791,2</area>
+            <area>21,684,804,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_vertical_line">
-            <area>28,451,2,226</area>
+            <area>21,444,2,240</area>
         </shape>
 
         <shape name="description-right-line" from="base_vertical_line">
-            <area>817,451,2,226</area>
+            <area>823,444,2,240</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
@@ -106,19 +106,19 @@
         </shape>
 
         <shape name="preview-top-line" from="base_line">
-            <area>846,449,407,2</area>
+            <area>839,442,420,2</area>
         </shape>
 
         <shape name="preview-bottom-line" from="base_line">
-            <area>846,677,407,2</area>
+            <area>839,684,420,2</area>
         </shape>
 
         <shape name="preview-left-line" from="base_vertical_line">
-            <area>846,451,2,226</area>
+            <area>839,444,2,240</area>
         </shape>
 
         <shape name="preview-right-line" from="base_vertical_line">
-            <area>1251,451,2,226</area>
+            <area>1257,444,2,240</area>
         </shape>
 
         <buttonlist name="groups">
@@ -525,15 +525,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>949,-9</position>
+                <position>954,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>949,341</position>
+                <position>954,339</position>
             </statetype>
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>30,82,226,339</area>
+            <area>25,77,236,349</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
@@ -570,7 +570,7 @@
         </textarea>
 
         <imagetype name="preview">
-            <area>848,451,402,226</area>
+            <area>843,446,412,236</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

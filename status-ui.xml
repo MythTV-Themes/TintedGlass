@@ -27,19 +27,19 @@
         </shape>
 
         <shape name="status-list-top-line" from="base_line">
-            <area>28,84,1224,2</area>
+            <area>21,77,1238,2</area>
         </shape>
 
         <shape name="status-list-bottom-line" from="base_line">
-            <area>28,403,1224,2</area>
+            <area>21,410,1238,2</area>
         </shape>
 
         <shape name="status-list-left-line" from="base_vertical_line">
-            <area>28,86,2,317</area>
+            <area>21,79,2,331</area>
         </shape>
 
         <shape name="status-list-right-line" from="base_vertical_line">
-            <area>1250,86,2,317</area>
+            <area>1257,79,2,331</area>
         </shape>
 
         <shape name="status-bottom-backdrop" from="base_backdrop">
@@ -47,19 +47,19 @@
         </shape>
 
         <shape name="status-bottom-top-line" from="base_line">
-            <area>28,431,1224,2</area>
+            <area>21,424,1238,2</area>
         </shape>
 
         <shape name="status-bottom-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>21,682,1238,2</area>
         </shape>
 
         <shape name="status-bottom-left-line" from="base_vertical_line">
-            <area>28,433,2,244</area>
+            <area>21,426,2,258</area>
         </shape>
 
         <shape name="status-bottom-right-line" from="base_vertical_line">
-            <area>1250,433,2,244</area>
+            <area>1257,426,2,258</area>
         </shape>
 
         <shape name="status-bottom-seperator-first-line" from="base_line">
@@ -124,10 +124,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1203,-8</position>
+                <position>1211,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1203,321</position>
+                <position>1211,319</position>
             </statetype>
         </buttonlist>
 
@@ -138,7 +138,7 @@
         </textarea>
 
         <textarea name="helptext">
-            <area>44,473,1192,200</area>
+            <area>44,476,1192,200</area>
             <font>basesomewhatsmaller</font>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
