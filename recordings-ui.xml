@@ -38,19 +38,19 @@
         </shape>
 
         <shape name="coverart-top-line" from="base_line">
-            <area>21,73,244,2</area>
+            <area>22,74,242,2</area>
         </shape>
 
         <shape name="coverart-bottom-line" from="base_line">
-            <area>21,428,244,2</area>
+            <area>22,427,242,2</area>
         </shape>
 
         <shape name="coverart-left-line" from="base_vertical_line">
-            <area>21,75,2,353</area>
+            <area>22,76,2,351</area>
         </shape>
 
         <shape name="coverart-right-line" from="base_vertical_line">
-            <area>263,75,2,353</area>
+            <area>262,76,2,351</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
@@ -58,19 +58,19 @@
         </shape>
 
         <shape name="reclist-top-line" from="base_line">
-            <area>278,73,981,2</area>
+            <area>279,74,979,2</area>
         </shape>
 
         <shape name="reclist-bottom-line" from="base_line">
-            <area>278,428,981,2</area>
+            <area>279,427,979,2</area>
         </shape>
 
         <shape name="reclist-left-line" from="base_vertical_line">
-            <area>278,75,2,353</area>
+            <area>279,76,2,351</area>
         </shape>
 
         <shape name="reclist-right-line" from="base_vertical_line">
-            <area>1257,75,2,353</area>
+            <area>1256,76,2,351</area>
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
@@ -78,27 +78,27 @@
         </shape>
 
         <shape name="description-top-line" from="base_line">
-            <area>21,442,804,2</area>
+            <area>22,443,802,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_line">
-            <area>21,684,804,2</area>
+            <area>22,683,802,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_vertical_line">
-            <area>21,444,2,240</area>
+            <area>22,445,2,238</area>
         </shape>
 
         <shape name="description-right-line" from="base_vertical_line">
-            <area>823,444,2,240</area>
+            <area>822,445,2,238</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>40,482,769,2</area>
+            <area>40,482,766,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>40,643,769,2</area>
+            <area>40,643,766,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
@@ -533,18 +533,18 @@
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>25,77,236,349</area>
+            <area>26,78,234,347</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>40,454,769,24</area>
+            <area>40,454,766,24</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,487,769,151</area>
+            <area>40,487,766,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
@@ -1328,19 +1328,19 @@
         </shape>
 
         <shape name="group-selector-top-line" from="base_line">
-            <area>458,136,364,2</area>
+            <area>452,130,376,2</area>
         </shape>
 
         <shape name="group-selector-bottom-line" from="base_line">
-            <area>458,581,364,2</area>
+            <area>452,587,376,2</area>
         </shape>
 
         <shape name="group-selector-left-line" from="base_vertical_line">
-            <area>458,138,2,443</area>
+            <area>452,132,2,455</area>
         </shape>
 
         <shape name="group-selector-right-line" from="base_vertical_line">
-            <area>820,138,2,443</area>
+            <area>826,132,2,455</area>
         </shape>
 
         <shape name="group-selector-seperator-first-line" from="base_line">
@@ -1348,13 +1348,13 @@
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>464,142,352,155</area>
+            <area>464,136,352,161</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
         </textarea>
 
         <buttonlist name="groups" from="base_button_list">
-            <area>466,314,349,264</area>
+            <area>466,317,349,264</area>
             <drawfrombottom>yes</drawfrombottom>
             <statetype name="buttonitem">
                 <state name="active">

@@ -27,19 +27,19 @@
         </shape>
 
         <shape name="news-feeds-top-line" from="base_line">
-            <area>28,84,1224,2</area>
+            <area>22,78,1236,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-line" from="base_line">
-            <area>28,436,1224,2</area>
+            <area>22,442,1236,2</area>
         </shape>
 
         <shape name="news-feeds-left-line" from="base_vertical_line">
-            <area>28,86,2,350</area>
+            <area>22,80,2,362</area>
         </shape>
 
         <shape name="news-feeds-right-line" from="base_vertical_line">
-            <area>1250,86,2,350</area>
+            <area>1256,80,2,362</area>
         </shape>
 
         <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
@@ -47,43 +47,43 @@
         </shape>
 
         <shape name="news-feeds-bottom-top-line" from="base_line">
-            <area>28,464,935,2</area>
+            <area>22,458,933,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-bottom-line" from="base_line">
-            <area>28,675,935,2</area>
+            <area>22,681,933,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-left-line" from="base_vertical_line">
-            <area>28,466,2,209</area>
+            <area>21,460,2,221</area>
         </shape>
 
         <shape name="news-feeds-bottom-right-line" from="base_vertical_line">
-            <area>961,466,2,209</area>
+            <area>953,460,2,221</area>
         </shape>
 
         <shape name="news-feeds-bottom-seperator-first-line" from="base_line">
-            <area>43,504,905,2</area>
+            <area>37,504,903,2</area>
         </shape>
 
         <shape name="news-feeds-bottom-seperator-second-line" from="base_line">
-            <area>43,635,905,2</area>
+            <area>37,635,903,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-top-line" from="base_line">
-            <area>969,464,283,2</area>
+            <area>961,458,297,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-bottom-line" from="base_line">
-            <area>969,675,283,2</area>
+            <area>961,681,297,2</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-left-line" from="base_vertical_line">
-            <area>969,466,2,209</area>
+            <area>961,460,2,221</area>
         </shape>
 
         <shape name="news-feeds-thumbnail-right-line" from="base_vertical_line">
-            <area>1250,466,2,209</area>
+            <area>1256,460,2,221</area>
         </shape>
 
         <buttonlist name="siteslist">
@@ -141,50 +141,50 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1204,-8</position>
+                <position>1210,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1204,353</position>
+                <position>1210,351</position>
             </statetype>
         </buttonlist>
 
         <textarea name="updated" from="basetextarea">
-            <area>320,637,350,38</area>
+            <area>314,640,350,38</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>44,466,903,38</area>
+            <area>38,463,901,38</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,509,903,124</area>
+            <area>38,509,901,124</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
         </textarea>
 
         <imagetype name="thumbnail">
-            <area>971,466,279,209</area>
+            <area>965,462,289,217</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="enclosures">
             <filename>images/enclosures.png</filename>
-            <area>849,643,26,26</area>
+            <area>843,646,26,26</area>
         </imagetype>
 
         <imagetype name="download">
             <filename>images/need-download.png</filename>
-            <area>885,643,26,26</area>
+            <area>879,646,26,26</area>
         </imagetype>
 
         <imagetype name="ispodcast">
             <filename>images/podcast.png</filename>
-            <area>921,643,26,26</area>
+            <area>915,646,26,26</area>
         </imagetype>
 
         <textarea name="nosites" from="basetextarea">

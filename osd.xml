@@ -20,11 +20,11 @@
             <area>70,44,1140,128</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>5</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="top-line">
-            <area>78,52,1124,2</area>
+            <area>72,46,1136,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="35">
@@ -36,11 +36,11 @@
         </shape>
 
         <shape name="bottom-line" from="top-line">
-            <area>78,162,1124,2</area>
+            <area>72,168,1136,2</area>
         </shape>
 
         <shape name="left-line">
-            <area>78,54,2,108</area>
+            <area>72,48,2,120</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="80">
@@ -52,7 +52,7 @@
         </shape>
 
         <shape name="right-line" from="left-line">
-            <area>1200,54,2,108</area>
+            <area>1206,48,2,120</area>
         </shape>
 
         <textarea name="file">
@@ -365,11 +365,11 @@
             <area>70,384,1140,292</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>5</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="title-first-line">
-            <area>71,385,973,2</area>
+            <area>72,386,972,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="35">
@@ -381,11 +381,11 @@
         </shape>
 
         <shape name="title-second-line" from="title-first-line">
-            <area>71,472,973,2</area>
+            <area>72,472,972,2</area>
         </shape>
 
         <shape name="title-left-line">
-            <area>71,387,2,85</area>
+            <area>72,388,2,84</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="80">
@@ -397,43 +397,43 @@
         </shape>
 
         <shape name="title-right-line" from="title-left-line">
-            <area>1042,387,2,85</area>
+            <area>1042,388,2,84</area>
         </shape>
 
         <shape name="clock-first-line" from="title-first-line">
-            <area>1050,385,159,2</area>
+            <area>1050,386,158,2</area>
         </shape>
 
         <shape name="clock-second-line" from="title-first-line">
-            <area>1050,472,159,2</area>
+            <area>1050,472,158,2</area>
         </shape>
 
         <shape name="clock-left-line" from="title-left-line">
-            <area>1050,387,2,85</area>
+            <area>1050,386,2,84</area>
         </shape>
 
         <shape name="clock-right-line" from="title-left-line">
-            <area>1207,387,2,85</area>
+            <area>1206,386,2,84</area>
         </shape>
 
         <shape name="preview-first-line" from="title-first-line">
-            <area>71,480,167,2</area>
+            <area>72,480,166,2</area>
         </shape>
 
         <shape name="preview-second-line" from="title-first-line">
-            <area>71,673,167,2</area>
+            <area>72,672,166,2</area>
         </shape>
 
         <shape name="preview-left-line" from="title-left-line">
-            <area>71,482,2,191</area>
+            <area>72,482,2,190</area>
         </shape>
 
         <shape name="preview-right-line" from="title-left-line">
-            <area>236,482,2,191</area>
+            <area>236,482,2,190</area>
         </shape>
 
         <shape name="description-first-line" from="title-first-line">
-            <area>244,480,965,2</area>
+            <area>244,480,964,2</area>
         </shape>
 
         <shape name="description-second-line" from="title-first-line">
@@ -445,25 +445,25 @@
         </shape>
 
         <shape name="description-fourth-line" from="title-first-line">
-            <area>244,673,965,2</area>
+            <area>244,672,964,2</area>
         </shape>
 
         <shape name="description-left-line" from="title-left-line">
-            <area>244,482,2,191</area>
+            <area>244,482,2,190</area>
         </shape> 
 
         <shape name="description-right-line" from="title-left-line">
-            <area>1207,482,2,191</area>
+            <area>1206,482,2,190</area>
         </shape>
 
         <textarea name="titlesubtitle">
             <font>medium</font>
-            <area>79,388,957,30</area>
+            <area>80,389,956,30</area>
             <align>vcenter</align>
         </textarea>
 
         <clock name="clock">
-            <area>1052,387,155,85</area>
+            <area>1052,388,154,84</area>
             <font>verylarge</font>
             <template>%TIME%</template>
             <align>allcenter</align>
@@ -792,7 +792,7 @@
 
         <textarea name="timedate">
             <font>mediumsmall</font>
-            <area>79,445,476,24</area>
+            <area>80,445,475,24</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>
@@ -806,7 +806,7 @@
 
         <textarea name="channum">
             <font>large</font>
-            <area>73,483,163,46</area>
+            <area>74,483,162,46</area>
             <align>allcenter</align>
         </textarea>
 
@@ -817,26 +817,26 @@
         </imagetype>
 
         <imagetype name="coverart">
-            <area>74,483,161,189</area>
+            <area>76,484,158,186</area>
             <alpha>225</alpha>
         </imagetype>
 
         <textarea name="callsign">
             <font>large</font>
-            <area>73,628,163,46</area>
+            <area>74,628,162,46</area>
             <align>allcenter</align>
         </textarea>
 
 	<textarea name="category">
             <font>supersmallblue</font>
-            <area>263,488,926,20</area>
+            <area>263,488,925,20</area>
             <align>allcenter</align>
             <template>Category: %CATEGORY%               PlayBackGroup: %PLAYGROUP%               RecGroup: %RECGROUP%               StorageGroup: %STORAGEGROUP%</template>
         </textarea>
 
         <textarea name="description">
             <font>small</font>
-            <area>263,516,926,126</area>
+            <area>263,516,925,126</area>
             <align>left,top</align>
             <multiline>yes</multiline>
             <template>%YEARSTARS| %%DESCRIPTION%</template>
@@ -844,7 +844,7 @@
 
         <textarea name="programid">
             <font>supersmallblue</font>
-            <area>263,650,926,20</area>
+            <area>263,650,925,20</area>
             <align>allcenter</align>
             <template>ProgramID: %PROGRAMID%               SeriesID: %SERIESID%</template>
         </textarea>
@@ -1308,11 +1308,11 @@
             <area>339,116,602,488</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>5</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="mythpopup-box-first-line">
-            <area>347,124,586,2</area>
+            <area>341,118,598,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="35">
@@ -1324,11 +1324,11 @@
         </shape>
 
         <shape name="mythpopup-box-second-line" from="mythpopup-box-first-line">
-            <area>347,594,586,2</area>
+            <area>341,600,598,2</area>
         </shape>
 
         <shape name="mythpopup-box-left-line">
-            <area>347,126,2,468</area>
+            <area>341,120,2,480</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="80">
@@ -1340,7 +1340,7 @@
         </shape>
 
         <shape name="mythpopup-box-right-line" from="mythpopup-box-left-line">
-            <area>931,126,2,468</area>
+            <area>937,120,2,480</area>
         </shape>
 
         <shape name="message-area-seperator-line" from="mythpopup-box-first-line">
@@ -1348,14 +1348,14 @@
         </shape>
 
         <textarea name="messagearea">
-            <area>355,132,570,190</area>
+            <area>349,126,582,196</area>
             <font>small</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list">
-            <area>355,337,570,252</area>
+            <area>355,340,570,252</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
             <drawfrombottom>yes</drawfrombottom>
@@ -1404,7 +1404,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,259</position>
+                <position>0,251</position>
                 <state type="off">
                     <imagetype name="upon">
                         <filename>images/osd/lists_up_arrow.png</filename>
@@ -1418,7 +1418,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,259</position>
+                <position>20,251</position>
                 <state type="off">
                     <imagetype name="dnon">
                         <filename>images/osd/lists_down_arrow.png</filename>

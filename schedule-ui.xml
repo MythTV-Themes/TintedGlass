@@ -18,71 +18,71 @@
         </shape>
 
         <shape name="time-top-line" from="base_line">
-            <area>21,37,1238,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="channel-left-end-separator" from="base_vertical_line">
-            <area>21,39,2,41</area>
+            <area>22,40,2,41</area>
         </shape>
 
         <shape name="time-right-end-separator" from="base_vertical_line">
-            <area>1257,39,2,41</area>
+            <area>1256,40,2,41</area>
         </shape>
 
         <shape name="guide-grid-top-line" from="base_line">
-            <area>21,80,1238,2</area>
+            <area>22,81,1236,2</area>
         </shape>
 
         <shape name="guide-grid-bottom-line" from="base_line">
-            <area>21,450,1238,2</area>
+            <area>22,449,1236,2</area>
         </shape>
 
         <shape name="guide-grid-left-line" from="base_vertical_line">
-            <area>21,82,2,368</area>
+            <area>22,83,2,366</area>
         </shape>
 
         <shape name="guide-grid-middle-line" from="base_vertical_line">
-            <area>238,82,2,368</area>
+            <area>238,83,2,366</area>
         </shape>
 
         <shape name="guide-grid-right-line" from="base_vertical_line">
-            <area>1257,82,2,368</area>
+            <area>1256,83,2,366</area>
         </shape>
 
         <shape name="first-channel-separator" from="base_line">
-            <area>38,143,185,2</area>
+            <area>39,143,184,2</area>
         </shape>
 
         <shape name="second-channel-separator" from="base_line">
-            <area>38,204,185,2</area>
+            <area>39,204,184,2</area>
         </shape>
 
         <shape name="third-channel-separator" from="base_line">
-            <area>38,265,185,2</area>
+            <area>39,265,184,2</area>
         </shape>
 
         <shape name="fourth-channel-separator" from="base_line">
-            <area>38,326,185,2</area>
+            <area>39,326,184,2</area>
         </shape>
 
         <shape name="fifth-channel-separator" from="base_line">
-            <area>38,387,185,2</area>
+            <area>39,387,184,2</area>
         </shape>
 
         <shape name="guide-description-top-line" from="base_line">
-            <area>21,464,1238,2</area>
+            <area>22,465,1236,2</area>
         </shape>
 
         <shape name="guide-description-bottom-line" from="base_line">
-            <area>21,682,1238,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="guide-description-left-line" from="base_vertical_line">
-            <area>21,466,2,216</area>
+            <area>22,467,2,214</area>
         </shape>
 
         <shape name="guide-description-right-line" from="base_vertical_line">
-            <area>1257,466,2,216</area>
+            <area>1256,467,2,214</area>
         </shape>
 
         <shape name="guide-description-seperator-first-line" from="base_line">
@@ -132,7 +132,7 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>240,39,1015,41</area>
+            <area>240,40,1015,41</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <buttonarea>0,0,1015,41</buttonarea>
@@ -178,21 +178,21 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>23,83,215,366</area>
+            <area>24,83,214,366</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,215,366</buttonarea>
+            <buttonarea>0,0,214,366</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,215,61</area>
+                    <area>0,0,214,61</area>
                     <imagetype name="channelicon">
-                        <area>6,6,64,48</area>
+                        <area>6,7,64,48</area>
                         <preserveaspect>true</preserveaspect>
                         <mask>images/masks/channelicon_mask.png</mask>
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>76,0,133,61</area>
+                        <area>76,0,132,61</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -714,19 +714,19 @@
         </shape>
 
         <shape name="upcoming-list-top-line" from="base_line">
-            <area>21,79,1238,2</area>
+            <area>22,80,1236,2</area>
         </shape>
 
         <shape name="upcoming-list-bottom-line" from="base_line">
-            <area>21,414,1238,2</area>
+            <area>22,413,1236,2</area>
         </shape>
 
         <shape name="upcoming-list-left-line" from="base_vertical_line">
-            <area>21,81,2,333</area>
+            <area>22,82,2,331</area>
         </shape>
 
         <shape name="upcoming-list-right-line" from="base_vertical_line">
-            <area>1257,81,2,333</area>
+            <area>1256,82,2,331</area>
         </shape>
 
         <shape name="upcoming-bottom-backdrop" from="base_backdrop">
@@ -734,19 +734,19 @@
         </shape>
 
         <shape name="upcoming-bottom-top-line" from="base_line">
-            <area>21,428,1238,2</area>
+            <area>22,429,1236,2</area>
         </shape>
 
         <shape name="upcoming-bottom-bottom-line" from="base_line">
-            <area>21,682,1238,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="upcoming-bottom-left-line" from="base_vertical_line">
-            <area>21,430,2,252</area>
+            <area>22,431,2,250</area>
         </shape>
 
         <shape name="upcoming-bottom-right-line" from="base_vertical_line">
-            <area>1257,430,2,252</area>
+            <area>1256,431,2,250</area>
         </shape>
 
         <shape name="upcoming-bottom-seperator-first-line" from="base_line">
@@ -2252,19 +2252,19 @@
         </shape>
 
         <shape name="manage-recordings-list-top-line" from="base_line">
-            <area>21,37,1238,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-list-bottom-line" from="base_line">
-            <area>21,416,1238,2</area>
+            <area>22,415,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-list-left-line" from="base_vertical_line">
-            <area>21,39,2,377</area>
+            <area>22,40,2,375</area>
         </shape>
 
         <shape name="manage-recordings-list-right-line" from="base_vertical_line">
-            <area>1257,39,2,377</area>
+            <area>1256,40,2,375</area>
         </shape>
 
         <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
@@ -2272,19 +2272,19 @@
         </shape>
 
         <shape name="manage-recordings-bottom-top-line" from="base_line">
-            <area>21,430,1238,2</area>
+            <area>22,431,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-bottom-bottom-line" from="base_line">
-            <area>21,682,1238,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-bottom-left-line" from="base_vertical_line">
-            <area>21,432,2,250</area>
+            <area>22,433,2,248</area>
         </shape>
 
         <shape name="manage-recordings-bottom-right-line" from="base_vertical_line">
-            <area>1257,432,2,250</area>
+            <area>1256,433,2,248</area>
         </shape>
 
         <shape name="manage-recordings-bottom-seperator-first-line" from="base_line">
