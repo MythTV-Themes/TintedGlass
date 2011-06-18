@@ -409,11 +409,11 @@
         </shape>
 
         <shape name="clock-left-line" from="title-left-line">
-            <area>1050,386,2,84</area>
+            <area>1050,388,2,84</area>
         </shape>
 
         <shape name="clock-right-line" from="title-left-line">
-            <area>1206,386,2,84</area>
+            <area>1206,388,2,84</area>
         </shape>
 
         <shape name="preview-first-line" from="title-first-line">
