@@ -2652,19 +2652,19 @@
         </shape>
 
         <shape name="schedule-editor-top-line" from="base_line">
-            <area>21,37,544,2</area>
+            <area>22,38,542,2</area>
         </shape>
 
         <shape name="schedule-editor-bottom-line" from="base_line">
-            <area>21,355,544,2</area>
+            <area>22,354,542,2</area>
         </shape>
 
         <shape name="schedule-editor-left-line" from="base_vertical_line">
-            <area>21,39,2,316</area>
+            <area>22,40,2,314</area>
         </shape>
 
         <shape name="schedule-editor-right-line" from="base_vertical_line">
-            <area>563,39,2,316</area>
+            <area>562,40,2,314</area>
         </shape>
 
         <shape name="schedule-editor-options-backdrop" from="base_backdrop">
@@ -2672,19 +2672,19 @@
         </shape>
 
         <shape name="schedule-editor-options-top-line" from="base_line">
-            <area>575,37,684,2</area>
+            <area>576,38,682,2</area>
         </shape>
 
         <shape name="schedule-editor-options-bottom-line" from="base_line">
-            <area>575,355,684,2</area>
+            <area>576,354,682,2</area>
         </shape>
 
         <shape name="schedule-editor-options-left-line" from="base_vertical_line">
-            <area>575,39,2,316</area>
+            <area>576,40,2,314</area>
         </shape>
 
         <shape name="schedule-editor-options-right-line" from="base_vertical_line">
-            <area>1257,39,2,316</area>
+            <area>1256,40,2,314</area>
         </shape>
 
         <shape name="schedule-editor-bottom-backdrop" from="base_backdrop">
@@ -2692,19 +2692,19 @@
         </shape>
 
         <shape name="schedule-editor-description-top-line" from="base_line">
-            <area>21,369,1238,2</area>
+            <area>22,370,1236,2</area>
         </shape>
 
         <shape name="schedule-editor-description-bottom-line" from="base_line">
-            <area>21,682,1238,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="schedule-editor-description-left-line" from="base_vertical_line">
-            <area>21,371,2,311</area>
+            <area>22,372,2,309</area>
         </shape>
 
         <shape name="schedule-editor-description-right-line" from="base_vertical_line">
-            <area>1257,371,2,311</area>
+            <area>1256,372,2,309</area>
         </shape>
 
         <shape name="schedule-editor-description-seperator-first-line" from="base_line">
@@ -2759,12 +2759,12 @@
         </button>
 
         <textarea name="title" from="basetextarea">
-            <area>44,375,919,30</area>
+            <area>44,376,919,30</area>
             <font>basemediumlargeryellow</font>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>973,379,264,24</area>
+            <area>973,380,264,24</area>
             <font>basesmallyellow</font>
             <align>right,vcenter</align>
         </textarea>
@@ -2903,27 +2903,27 @@
         </shape>
 
         <shape name="schedule-filter-editor-top-line" from="base_line">
-            <area>361,37,558,2</area>
+            <area>362,38,556,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-highlight-top-line" from="base_line">
-            <area>380,76,520,2</area>
+            <area>380,75,520,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-highlight-bottom-line" from="base_line">
-            <area>380,314,520,2</area>
+            <area>380,313,520,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-bottom-line" from="base_line">
-            <area>361,355,558,2</area>
+            <area>362,354,556,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-left-line" from="base_vertical_line">
-            <area>361,39,2,316</area>
+            <area>362,40,2,314</area>
         </shape>
 
         <shape name="schedule-filter-editor-right-line" from="base_vertical_line">
-            <area>917,39,2,316</area>
+            <area>916,40,2,314</area>
         </shape>
 
 	<textarea name="Window_label" from="basetextarea">
@@ -2934,7 +2934,7 @@
         </textarea>
 
 	<buttonlist name="filters" from="base_list">
-	    <area>370,81,540,232</area>
+	    <area>370,80,540,232</area>
 	    <statetype name="buttonitem">
 		<state name="active">
 		    <area>0,0,540,40</area>
@@ -2973,7 +2973,7 @@
 	</buttonlist>
 
         <button name="back" from="base_button">
-            <position>565,318</position>
+            <position>565,317</position>
             <value>Back</value>
         </button>
 
