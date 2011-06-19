@@ -74,15 +74,15 @@
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
-            <area>20,441,806,246</area>
+            <area>20,441,800,246</area>
         </shape>
 
         <shape name="description-top-line" from="base_line">
-            <area>22,443,802,2</area>
+            <area>22,443,796,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_line">
-            <area>22,683,802,2</area>
+            <area>22,683,796,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_vertical_line">
@@ -90,35 +90,35 @@
         </shape>
 
         <shape name="description-right-line" from="base_vertical_line">
-            <area>822,445,2,238</area>
+            <area>816,445,2,238</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>40,482,766,2</area>
+            <area>37,482,766,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>40,643,766,2</area>
+            <area>37,643,766,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>838,441,422,246</area>
+            <area>830,441,430,246</area>
         </shape>
 
         <shape name="preview-top-line" from="base_line">
-            <area>839,442,420,2</area>
+            <area>832,443,426,2</area>
         </shape>
 
         <shape name="preview-bottom-line" from="base_line">
-            <area>839,684,420,2</area>
+            <area>832,683,426,2</area>
         </shape>
 
         <shape name="preview-left-line" from="base_vertical_line">
-            <area>839,444,2,240</area>
+            <area>832,445,2,238</area>
         </shape>
 
         <shape name="preview-right-line" from="base_vertical_line">
-            <area>1257,444,2,240</area>
+            <area>1256,445,2,238</area>
         </shape>
 
         <buttonlist name="groups">
@@ -538,20 +538,20 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>40,454,766,24</area>
+            <area>37,445,766,37</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,487,766,151</area>
+            <area>37,487,766,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>86,656</position>
+            <position>83,659</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -563,14 +563,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>20,660,809,20</area>
+            <area>22,665,796,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>843,446,412,236</area>
+            <area>836,447,418,235</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -604,7 +604,7 @@
         <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
-            <value>Watch Recordings</value>
+            <value>Delete Recordings</value>
         </textarea>
 
         <shape name="groupbox" from="base_backdrop">
@@ -625,19 +625,19 @@
         </shape>
 
         <shape name="coverart-top-line" from="base_line">
-            <area>28,80,231,2</area>
+            <area>22,74,242,2</area>
         </shape>
 
         <shape name="coverart-bottom-line" from="base_line">
-            <area>28,421,231,2</area>
+            <area>22,427,242,2</area>
         </shape>
 
         <shape name="coverart-left-line" from="base_vertical_line">
-            <area>28,82,2,339</area>
+            <area>22,76,2,351</area>
         </shape>
 
         <shape name="coverart-right-line" from="base_vertical_line">
-            <area>257,82,2,339</area>
+            <area>262,76,2,351</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
@@ -645,67 +645,67 @@
         </shape>
 
         <shape name="reclist-top-line" from="base_line">
-            <area>285,80,968,2</area>
+            <area>279,74,979,2</area>
         </shape>
 
         <shape name="reclist-bottom-line" from="base_line">
-            <area>285,421,968,2</area>
+            <area>279,427,979,2</area>
         </shape>
 
         <shape name="reclist-left-line" from="base_vertical_line">
-            <area>285,82,2,339</area>
+            <area>279,76,2,351</area>
         </shape>
 
         <shape name="reclist-right-line" from="base_vertical_line">
-            <area>1251,82,2,339</area>
+            <area>1256,76,2,351</area>
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
-            <area>20,441,806,246</area>
+            <area>20,441,800,246</area>
         </shape>
 
         <shape name="description-top-line" from="base_line">
-            <area>28,449,791,2</area>
+            <area>22,443,796,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_line">
-            <area>28,677,791,2</area>
+            <area>22,683,796,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_vertical_line">
-            <area>28,451,2,226</area>
+            <area>22,445,2,238</area>
         </shape>
 
         <shape name="description-right-line" from="base_vertical_line">
-            <area>817,451,2,226</area>
+            <area>816,445,2,238</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>40,482,769,2</area>
+            <area>37,482,766,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>40,643,769,2</area>
+            <area>37,643,766,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>838,441,422,246</area>
+            <area>830,441,430,246</area>
         </shape>
 
         <shape name="preview-top-line" from="base_line">
-            <area>846,449,407,2</area>
+            <area>832,443,426,2</area>
         </shape>
 
         <shape name="preview-bottom-line" from="base_line">
-            <area>846,677,407,2</area>
+            <area>832,683,426,2</area>
         </shape>
 
         <shape name="preview-left-line" from="base_vertical_line">
-            <area>846,451,2,226</area>
+            <area>832,445,2,238</area>
         </shape>
 
         <shape name="preview-right-line" from="base_vertical_line">
-            <area>1251,451,2,226</area>
+            <area>1256,445,2,238</area>
         </shape>
 
         <buttonlist name="groups">
@@ -1112,33 +1112,33 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>949,-9</position>
+                <position>954,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>949,341</position>
+                <position>954,339</position>
             </statetype>
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>30,82,226,339</area>
+            <area>26,78,234,347</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>40,454,769,24</area>
+            <area>37,445,766,37</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,487,769,151</area>
+            <area>37,487,766,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>86,656</position>
+            <position>83,659</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -1150,14 +1150,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>20,660,809,20</area>
+            <area>22,665,796,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>848,451,402,226</area>
+            <area>836,447,418,235</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -1183,27 +1183,31 @@
         </shape>
 
         <shape name="change-view-top-line" from="base_line">
-            <area>458,136,364,2</area>
+            <area>452,130,376,2</area>
         </shape>
 
         <shape name="change-view-bottom-line" from="base_line">
-            <area>458,581,364,2</area>
+            <area>452,587,376,2</area>
         </shape>
 
         <shape name="change-view-left-line" from="base_vertical_line">
-            <area>458,138,2,443</area>
+            <area>452,132,2,455</area>
         </shape>
 
         <shape name="change-view-right-line" from="base_vertical_line">
-            <area>820,138,2,443</area>
+            <area>826,132,2,455</area>
         </shape>
 
         <shape name="change-view-seperator-top-line" from="base_line">
             <area>473,202,334,2</area>
         </shape>
 
+        <shape name="change-view-seperator-bottom-line" from="base_line">
+            <area>473,535,334,2</area>
+        </shape>
+
         <textarea name="title" from="basetextarea">
-            <area>475,152,328,40</area>
+            <area>454,132,372,70</area>
             <align>allcenter</align>
             <font>basesmallyellow</font>
             <value>Change View</value>
@@ -1264,7 +1268,7 @@
         </textarea>
 
         <button name="save" from="base_medium_button">
-            <position>465,533</position>
+            <position>465,542</position>
             <value>Save</value>
         </button>
 
@@ -1278,19 +1282,19 @@
         </shape>
 
         <shape name="password-changer-top-line" from="base_line">
-            <area>358,236,571,2</area>
+            <area>352,230,583,2</area>
         </shape>
 
         <shape name="password-changer-bottom-line" from="base_line">
-            <area>358,488,571,2</area>
+            <area>352,494,583,2</area>
         </shape>
 
         <shape name="password-changer-left-line" from="base_vertical_line">
-            <area>358,238,2,250</area>
+            <area>352,232,2,262</area>
         </shape>
 
         <shape name="password-changer-right-line" from="base_vertical_line">
-            <area>927,238,2,250</area>
+            <area>933,232,2,262</area>
         </shape>
 
         <textarea name="oldlabel" from="basetextarea">
@@ -1389,34 +1393,34 @@
         </shape>
 
         <shape name="icon-help-top-line" from="base_line">
-            <area>298,118,684,2</area>
+            <area>292,112,696,2</area>
         </shape>
 
         <shape name="icon-help-bottom-line" from="base_line">
-            <area>298,600,684,2</area>
+            <area>292,606,696,2</area>
         </shape>
 
         <shape name="icon-help-left-line" from="base_vertical_line">
-            <area>298,120,2,480</area>
+            <area>292,114,2,492</area>
         </shape>
 
         <shape name="icon-help-right-line" from="base_vertical_line">
-            <area>980,120,2,480</area>
+            <area>986,114,2,492</area>
         </shape>
 
         <shape name="icon-help-seperator-first-line" from="base_line">
-            <area>314,152,652,2</area>
+            <area>314,146,652,2</area>
         </shape>
 
         <shape name="icon-help-seperator-second-line" from="base_line">
-            <area>314,570,652,2</area>
+            <area>314,576,652,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>290,120,700,32</area>
+            <area>290,114,700,32</area>
             <value>Status Icon Help</value>
             <font>basesmallyellow</font>
-            <align>center</align>
+            <align>allcenter</align>
         </textarea>
 
         <buttonlist name="iconlist" from="base_list">
@@ -1587,10 +1591,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>20,430</position>
+                <position>20,436</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,430</position>
+                <position>40,436</position>
             </statetype>
         </buttonlist>
     </window>
@@ -1603,19 +1607,19 @@
         </shape>
 
         <shape name="edit-metatdata-top-line" from="base_line">
-            <area>338,173,604,2</area>
+            <area>332,167,616,2</area>
         </shape>
 
         <shape name="edit-metadata-bottom-line" from="base_line">
-            <area>338,545,604,2</area>
+            <area>332,551,616,2</area>
         </shape>
 
         <shape name="edit-metadata-left-line" from="base_vertical_line">
-            <area>338,175,2,370</area>
+            <area>332,169,2,382</area>
         </shape>
 
         <shape name="edit-metadata-right-line" from="base_vertical_line">
-            <area>940,175,2,370</area>
+            <area>946,169,2,382</area>
         </shape>
 
         <shape name="edit-metadata-seperator-top-line" from="base_line">
@@ -1627,7 +1631,7 @@
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>340,175,600,41</area>
+            <area>340,169,600,47</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <value>Edit Recording Metadata</value>
@@ -1665,7 +1669,7 @@
         </textedit>
 
         <button name="ok" from="base_medium_button">
-            <position>465,501</position>
+            <position>465,504</position>
             <value>OK</value>
         </button>
     </window>
