@@ -1046,7 +1046,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="inactivelist" from="base_list_small_width">
+        <buttonlist name="inactivelist" from="base_list">
             <area>215,75,415,374</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1083,7 +1083,7 @@
             <position>650,46</position>
         </textarea>
 
-        <buttonlist name="activelist" from="base_list_small_width">
+        <buttonlist name="activelist" from="base_list">
             <area>650,75,415,374</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1192,7 +1192,7 @@
             <area>163,600,954,2</area>
         </shape>
 
-        <buttonlist name="srclist" from="base_list_small_width">
+        <buttonlist name="srclist" from="base_list">
             <area>150,44,480,418</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1349,7 +1349,7 @@
             <position>465,616</position>
         </button>
 
-        <buttonlist name="results" from="base_list_large_width">
+        <buttonlist name="results" from="base_list">
             <area>330,216,620,290</area>
             <statetype name="buttonitem">
                 <state name="active">

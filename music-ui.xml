@@ -1831,7 +1831,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <buttonlist name="tracks" from="base_list_large_width">
+        <buttonlist name="tracks" from="base_list">
             <area>30,358,1230,300</area>
             <statetype name="buttonitem">
                 <state name="active">

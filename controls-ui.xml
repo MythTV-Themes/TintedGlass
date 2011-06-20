@@ -17,23 +17,23 @@
         </shape>
 
         <shape name="key-grab-popup-top-line" from="base_line">
-            <area>398,218,484,2</area>
+            <area>392,212,496,2</area>
         </shape>
 
         <shape name="key-grab-popup-bottom-line" from="base_line">
-            <area>398,500,484,2</area>
+            <area>392,506,496,2</area>
         </shape>
 
         <shape name="key-grab-popup-left-line" from="base_vertical_line">
-            <area>398,220,2,280</area>
+            <area>392,214,2,292</area>
         </shape>
 
         <shape name="key-grab-popup-right-line" from="base_vertical_line">
-            <area>880,220,2,280</area>
+            <area>886,214,2,292</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>400,220,480,235</area>
+            <area>394,214,492,241</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
@@ -63,59 +63,59 @@
         </shape>
 
         <shape name="edit-keys-contexts-top-line" from="base_line">
-            <area>213,44,419,2</area>
+            <area>207,38,431,2</area>
         </shape>
 
         <shape name="edit-keys-contexts-bottom-line" from="base_line">
-            <area>213,510,419,2</area>
+            <area>207,510,431,2</area>
         </shape>
 
         <shape name="edit-keys-contexts-left-line" from="base_vertical_line">
-            <area>213,46,2,464</area>
+            <area>207,40,2,470</area>
         </shape>
 
         <shape name="edit-keys-contexts-right-line" from="base_vertical_line">
-            <area>630,46,2,464</area>
+            <area>636,40,2,470</area>
         </shape>
 
         <shape name="edit-keys-contexts-seperator-first-line" from="base_line">
-            <area>230,76,385,2</area>
+            <area>230,64,385,2</area>
         </shape>
 
         <shape name="edit-keys-actions-top-line" from="base_line">
-            <area>648,44,419,2</area>
+            <area>642,38,431,2</area>
         </shape>
 
         <shape name="edit-keys-actions-bottom-line" from="base_line">
-            <area>648,510,419,2</area>
+            <area>642,510,431,2</area>
         </shape>
 
         <shape name="edit-keys-actions-left-line" from="base_vertical_line">
-            <area>648,46,2,464</area>
+            <area>642,40,2,470</area>
         </shape>
 
         <shape name="edit-keys-actions-right-line" from="base_vertical_line">
-            <area>1065,46,2,464</area>
+            <area>1071,40,2,470</area>
         </shape>
 
         <shape name="edit-keys-actions-seperator-first-line" from="base_line">
-            <area>665,76,385,2</area>
+            <area>665,64,385,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-top-line" from="base_line">
-            <area>213,520,854,2</area>
+            <area>207,520,866,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-bottom-line" from="base_line">
-            <area>213,675,854,2</area>
+            <area>207,681,866,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-left-line" from="base_vertical_line">
-            <area>213,522,2,153</area>
+            <area>207,522,2,159</area>
         </shape>
 
         <shape name="edit-keys-bottom-right-line" from="base_vertical_line">
-            <area>1065,522,2,153</area>
+            <area>1071,522,2,159</area>
         </shape>
 
         <shape name="edit-keys-bottom-seperator-first-line" from="base_line">
@@ -123,14 +123,14 @@
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>215,46,415,30</area>
+            <area>215,40,415,24</area>
             <font>baseevensmalleryellow</font>
             <value>Contexts</value>
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="leftlist" from="base_list_small_width">
-            <area>215,76,415,438</area>
+        <buttonlist name="leftlist" from="base_list">
+            <area>215,70,415,438</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,415,33</area>
@@ -155,42 +155,42 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>392,-39</position>
+                <position>406,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>392,436</position>
+                <position>406,433</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>650,46,415,30</area>
+            <area>650,40,415,24</area>
             <font>baseevensmalleryellow</font>
             <value>Actions</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="rightlist" from="leftlist">
-            <area>650,76,415,438</area>
+            <area>650,70,415,438</area>
         </buttonlist>
 
         <button name="action_0" from="base_button">
-            <position>273,620</position>
+            <position>273,623</position>
         </button>
 
         <button name="action_1" from="action_0">
-            <position>467,620</position>
+            <position>467,623</position>
         </button>
 
         <button name="action_2" from="action_0">
-            <position>662,620</position>
+            <position>662,623</position>
         </button>
 
         <button name="action_3" from="action_0">
-            <position>856,620</position>
+            <position>856,623</position>
         </button>
 
         <textarea name="description" from="basetextarea">
-            <area>229,522,822,76</area>
+            <area>223,522,834,76</area>
             <font>basesmallblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>

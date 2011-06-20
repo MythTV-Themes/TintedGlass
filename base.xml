@@ -617,7 +617,7 @@
             <state name="selectedinactive" from="active">
                 <shape name="buttonbackground" from="base_button_background_disabled">
                     <area>0,0,100%,100%</area>
-                    <cornerradius>0</cornerradius>
+                    <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext">
                     <font>basesmalllightgrey</font>
@@ -654,40 +654,8 @@
         </statetype>
     </buttonlist>
 
-    <!-- Base definition of a list with a small width -->
-    <buttonlist name="base_list_small_width" from="base_list">
-        <statetype name="buttonitem">
-            <state name="active">
-<!--
-                <shape name="top_line" from="base_list_line">
-                    <area>4%,0,96%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>4%,96%,96%,1</area>
-                </shape>
--->
-            </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- Base definition of a list with a large width -->
-    <buttonlist name="base_list_large_width" from="base_list">
-        <statetype name="buttonitem">
-            <state name="active">
-<!--
-                <shape name="top_line" from="base_list_line">
-                    <area>1%,0,99%,1</area>
-                </shape>
-                <shape name="bottom_line" from="base_list_line">
-                    <area>1%,96%,99%,1</area>
-                </shape>
--->
-            </state>
-        </statetype>
-    </buttonlist>
-
     <!-- Base definition of a list with a medium sized select bar-->
-    <buttonlist name="base_list_medium_selector_large_width" from="base_list_large_width">
+    <buttonlist name="base_list_medium_selector_large_width" from="base_list">
         <statetype name="buttonitem">
             <state name="selectedactive">
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
@@ -709,7 +677,7 @@
     </buttonlist>
 
     <!-- Base definition of a list with a large sized select bar -->
-    <buttonlist name="base_list_large_selector_large_width" from="base_list_large_width">
+    <buttonlist name="base_list_large_selector_large_width" from="base_list">
         <statetype name="buttonitem">
             <state name="selectedactive">
                 <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
@@ -1399,19 +1367,19 @@
         </shape>
 
         <shape name="busy-dialog-first-line" from="base_line">
-            <area>347,296,586,2</area>
+            <area>341,290,598,2</area>
         </shape>
 
         <shape name="busy-dialog-second-line" from="base_line">
-            <area>347,424,586,2</area>
+            <area>341,430,598,2</area>
         </shape>
 
         <shape name="busy-dialog-left-line" from="base_vertical_line">
-            <area>347,298,2,126</area>
+            <area>341,292,2,138</area>
         </shape>
 
         <shape name="busy-dialog-right-line" from="base_vertical_line">
-            <area>931,298,2,126</area>
+            <area>937,292,2,138</area>
         </shape>
 
         <imagetype name="animation">
@@ -1421,7 +1389,7 @@
         </imagetype>
 
         <textarea name="message" from="basetextarea">
-            <area>351,374,578,45</area>
+            <area>345,374,590,51</area>
             <font>basesmalleryellow</font>
             <multiline>true</multiline>
             <align>allcenter</align>
@@ -1436,23 +1404,23 @@
         </shape>
 
         <shape name="progress-dialog-top-line" from="base_line">
-            <area>358,285,571,2</area>
+            <area>352,279,583,2</area>
         </shape>
 
         <shape name="progress-dialog-bottom-line" from="base_line">
-            <area>358,437,571,2</area>
+            <area>352,443,583,2</area>
         </shape>
 
         <shape name="progress-dialog-left-line" from="base_vertical_line">
-            <area>358,287,2,150</area>
+            <area>352,281,2,162</area>
         </shape>
 
         <shape name="progress-dialog-right-line" from="base_vertical_line">
-            <area>927,287,2,150</area>
+            <area>933,281,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>370,297,540,60</area>
+            <area>364,291,552,66</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
@@ -1476,19 +1444,19 @@
         </shape>
 
         <shape name="confirmation-dialog-top-line" from="base_line">
-            <area>358,270,571,2</area>
+            <area>352,264,583,2</area>
         </shape>
 
         <shape name="confirmation-dialog-bottom-line" from="base_line">
-            <area>358,452,571,2</area>
+            <area>352,458,583,2</area>
         </shape>
 
         <shape name="confirmation-dialog-left-line" from="base_vertical_line">
-            <area>358,272,2,180</area>
+            <area>352,266,2,192</area>
         </shape>
 
         <shape name="confirmation-dialog-right-line" from="base_vertical_line">
-            <area>927,272,2,180</area>
+            <area>933,266,2,192</area>
         </shape>
 
         <shape name="confirmation-dialog-seperator-first-line" from="base_line">
@@ -1496,7 +1464,7 @@
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>364,276,559,121</area>
+            <area>358,270,571,127</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <multiline>yes</multiline>
@@ -1504,12 +1472,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>449,410</position>
+            <position>449,413</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>688,410</position>
+            <position>688,413</position>
             <value>OK</value>
         </button>
     </window>
@@ -1522,33 +1490,33 @@
         </shape>
 
         <shape name="text-input-dialog-top-line" from="base_line">
-            <area>358,285,571,2</area>
+            <area>352,279,583,2</area>
         </shape>
 
         <shape name="text-input-dialog-bottom-line" from="base_line">
-            <area>358,437,571,2</area>
+            <area>352,443,583,2</area>
         </shape>
 
         <shape name="text-input-dialog-left-line" from="base_vertical_line">
-            <area>358,287,2,150</area>
+            <area>352,281,2,162</area>
         </shape>
 
         <shape name="text-input-dialog-right-line" from="base_vertical_line">
-            <area>927,287,2,150</area>
+            <area>933,281,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>366,297,555,30</area>
+            <area>360,291,567,36</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <area>500,336,287,32</area>
+            <area>500,339,287,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>568,387</position>
+            <position>568,393</position>
             <value>OK</value>
         </button>
     </window>
@@ -1561,19 +1529,19 @@
         </shape>
 
         <shape name="search-dialog-top-line" from="base_line">
-            <area>388,108,504,2</area>
+            <area>382,102,516,2</area>
         </shape>
 
         <shape name="search-dialog-bottom-line" from="base_line">
-            <area>388,610,504,2</area>
+            <area>382,616,516,2</area>
         </shape>
 
         <shape name="search-dialog-left-line" from="base_vertical_line">
-            <area>388,110,2,500</area>
+            <area>382,104,2,512</area>
         </shape>
 
         <shape name="search-dialog-right-line" from="base_vertical_line">
-            <area>890,110,2,500</area>
+            <area>896,104,2,512</area>
         </shape>
 
         <shape name="search-dialog-seperator-first-line" from="base_line">
@@ -1585,7 +1553,7 @@
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>404,112,472,58</area>
+            <area>398,104,484,66</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
@@ -1621,12 +1589,12 @@
         </buttonlist>
 
         <button name="cancel" from="base_button">
-            <position>457,569</position>
+            <position>457,572</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>674,569</position>
+            <position>674,572</position>
             <value>OK</value>
         </button>
     </window>
@@ -1654,19 +1622,19 @@
         </shape>
 
         <shape name="file-browser-preview-top-line" from="base_line">
-            <area>28,44,599,2</area>
+            <area>22,38,611,2</area>
         </shape>
 
         <shape name="file-browser-preview-bottom-line" from="base_line">
-            <area>28,675,599,2</area>
+            <area>22,681,611,2</area>
         </shape>
 
         <shape name="file-browser-preview-left-line" from="base_vertical_line">
-            <area>28,46,2,629</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="file-browser-preview-right-line" from="base_vertical_line">
-            <area>625,46,2,629</area>
+            <area>631,40,2,641</area>
         </shape>
 
         <shape name="file-browser-preview-image-top-line" from="base_line">
@@ -1690,19 +1658,19 @@
         </shape>
 
         <shape name="file-browser-top-line" from="base_line">
-            <area>653,44,599,2</area>
+            <area>647,38,611,2</area>
         </shape>
 
         <shape name="file-browser-bottom-line" from="base_line">
-            <area>653,675,599,2</area>
+            <area>647,681,611,2</area>
         </shape>
 
         <shape name="file-browser-left-line" from="base_vertical_line">
-            <area>653,46,2,629</area>
+            <area>647,40,2,641</area>
         </shape>
 
         <shape name="file-browser-right-line" from="base_vertical_line">
-            <area>1250,46,2,629</area>
+            <area>1256,40,2,641</area>
         </shape>
 
         <buttonlist name="filelist" from="base_list_large_selector">
@@ -1790,10 +1758,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>578,-8</position>
+                <position>586,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>578,632</position>
+                <position>586,630</position>
             </statetype>
         </buttonlist>
 
@@ -1816,33 +1784,33 @@
         </imagetype>
 
         <button name="back" from="base_button">
-            <position>252,458</position>
+            <position>252,461</position>
             <value>Up Level</value>
         </button>
 
         <button name="home" from="base_button">
-            <position>252,515</position>
+            <position>252,517</position>
             <value>Home</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>252,573</position>
+            <position>252,575</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>252,630</position>
+            <position>252,632</position>
             <value>Ok</value>
         </button>
 
         <textarea name="info_label" from="basetextarea">
-            <area>408,531,221,24</area>
+            <area>408,534,221,24</area>
             <align>allcenter</align>
             <value>File Size:</value>
         </textarea>
 
         <textarea name="info" from="basetextarea">
-            <area>408,561,221,24</area>
+            <area>408,564,221,24</area>
             <font>baseevensmallerblue</font>
             <align>allcenter</align>
         </textarea>

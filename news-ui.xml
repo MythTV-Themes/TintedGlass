@@ -123,7 +123,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="articleslist" from="base_list_large_width">
+        <buttonlist name="articleslist" from="base_list">
             <area>30,84,1220,360</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -353,7 +353,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="category" from="base_list_small_width">
+        <buttonlist name="category" from="base_list">
             <area>30,67,480,610</area>
             <statetype name="buttonitem">
                 <state name="active">

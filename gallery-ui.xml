@@ -26,19 +26,19 @@
         </shape>
 
         <shape name="image-gallery-bottom-top-line" from="base_line">
-            <area>28,504,1224,2</area>
+            <area>22,498,1236,2</area>
         </shape>
 
         <shape name="image-gallery-bottom-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="image-gallery-bottom-left-line" from="base_vertical_line">
-            <area>28,506,2,169</area>
+            <area>22,500,2,181</area>
         </shape>
 
         <shape name="image-gallery-bottom-right-line" from="base_vertical_line">
-            <area>1250,506,2,169</area>
+            <area>1256,500,2,181</area>
         </shape>
 
         <shape name="image-gallery-bottom-seperator-first-line" from="base_line">
@@ -144,21 +144,21 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>30,506,1220,85</area>
+            <area>24,500,1232,91</area>
             <font>basemedium</font>
             <multiline>true</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="help1">
-            <area>0,593,1280,41</area>
+            <area>0,593,1280,44</area>
             <font>basesmallerblue</font>
             <align>allcenter</align>
             <value>Press Select: To View Full Screen.</value>
         </textarea>
 
         <textarea name="help2">
-            <area>0,634,1280,41</area>
+            <area>0,637,1280,44</area>
             <font>basesmallerblue</font>
             <align>allcenter</align>
             <value>Press Menu:  To Activate Gallery Options Menu.</value>

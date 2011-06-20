@@ -14,31 +14,31 @@
         </shape>
 
         <shape name="web-browser-top-line" from="base_line">
-            <area>28,44,1224,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="web-browser-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="web-browser-left-line" from="base_vertical_line">
-            <area>28,46,2,629</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="web-browser-right-line" from="base_vertical_line">
-            <area>1250,46,2,629</area>
+            <area>1256,40,2,641</area>
         </shape>
 
         <shape name="web-browser-seperator-first-line" from="base_line">
-            <area>43,98,1194,2</area>
+            <area>43,92,1194,2</area>
         </shape>
 
         <shape name="web-browser-seperator-second-line" from="base_line">
-            <area>43,651,1194,2</area>
+            <area>43,657,1194,2</area>
         </shape>
 
         <buttonlist name="pagelist" from="base_selector">
-            <area>40,52,583,40</area>
+            <area>34,46,589,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,583,40</area>
@@ -63,20 +63,20 @@
         </buttonlist>
 
         <textarea name="status" from="basetextarea">
-            <area>640,52,600,40</area>
+            <area>640,46,606,40</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
             <multiline>no</multiline>
         </textarea>
 
         <webbrowser name="webbrowser">
-            <area>32,102,1216,547</area>
+            <area>26,96,1228,559</area>
             <zoom>1.2</zoom>
         </webbrowser>
 
         <!-- these are optional -->
         <progressbar name="progressbar" from="baseprogressbar">
-            <position>44,659</position>
+            <position>44,665</position>
             <imagetype name="background">
                 <area>0,0,1192,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -114,22 +114,22 @@
         </shape>
 
         <shape name="bookmark-top-line" from="base_line">
-            <area>28,84,1224,2</area>
+            <area>22,78,1236,2</area>
         </shape>
 
         <shape name="bookmark-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="bookmark-left-line" from="base_vertical_line">
-            <area>28,86,2,589</area>
+            <area>22,80,2,601</area>
         </shape>
 
         <shape name="bookmark-right-line" from="base_vertical_line">
-            <area>1250,86,2,589</area>
+            <area>1256,80,2,601</area>
         </shape>
         <shape name="bookmark-seperator-first-line" from="base_line">
-            <area>42,115,1196,2</area>
+            <area>42,109,1196,2</area>
         </shape>
 
         <buttonlist name="grouplist">
@@ -172,19 +172,19 @@
 
         <textarea name="namelabel" from="basetextarea">
             <font>baseevensmalleryellow</font>
-            <area>30,86,610,29</area>
+            <area>30,80,610,29</area>
             <align>allcenter</align>
             <value>Website Name</value>
         </textarea>
 
         <textarea name="urllabel" from="basetextarea">
             <font>baseevensmalleryellow</font>
-            <area>610,86,610,29</area>
+            <area>610,80,610,29</area>
             <align>allcenter</align>
             <value>Website URL</value>
         </textarea>
 
-        <buttonlist name="bookmarklist" from="base_list_large_width">
+        <buttonlist name="bookmarklist" from="base_list">
             <area>30,115,1220,578</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -218,10 +218,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1190,-8</position>
+                <position>1210,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,562</position>
+                <position>1210,559</position>
             </statetype>
         </buttonlist>
 
@@ -246,35 +246,35 @@
         </shape>
 
         <shape name="web-browser-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="web-browser-bottom-line" from="base_line">
-            <area>223,456,834,2</area>
+            <area>217,456,846,2</area>
         </shape>
 
         <shape name="web-browser-left-line" from="base_vertical_line">
-            <area>223,46,2,410</area>
+            <area>217,40,2,416</area>
         </shape>
 
         <shape name="web-browser-right-line" from="base_vertical_line">
-            <area>1055,46,2,410</area>
+            <area>1061,40,2,416</area>
         </shape>
 
         <shape name="web-browser-bottom-top-line" from="base_line">
-            <area>223,466,834,2</area>
+            <area>217,466,846,2</area>
         </shape>
 
         <shape name="web-browser-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="web-browser-bottom-left-line" from="base_vertical_line">
-            <area>223,468,2,207</area>
+            <area>217,468,2,213</area>
         </shape>
 
         <shape name="web-browser-bottom-right-line" from="base_vertical_line">
-            <area>1055,468,2,207</area>
+            <area>1061,468,2,213</area>
         </shape>
 
         <shape name="configure-web-browser-bottom-seperator-first-line" from="base_line">
@@ -282,33 +282,33 @@
         </shape>
 
         <textarea name="commandlabel" from="basetextarea">
-            <area>240,114,210,30</area>
+            <area>240,111,210,30</area>
             <align>right,vcenter</align>
             <value>Browser Command:</value>
         </textarea>
 
         <textedit name="command" from="base_wide_textedit">
-            <area>460,113,580,32</area>
+            <area>460,110,580,32</area>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
-            <area>240,236,210,30</area>
+            <area>240,233,210,30</area>
             <align>right,vcenter</align>
             <value>Text Size:</value>
         </textarea>
 
         <textedit name="zoom" from="base_wide_textedit">
-            <area>460,235,580,32</area>
+            <area>460,232,580,32</area>
         </textedit>
 
         <textarea name="pluginlabel" from="basetextarea">
-            <area>240,358,210,30</area>
+            <area>240,355,210,30</area>
             <align>right,vcenter</align>
             <value>Enable Plugins:</value>
         </textarea>
 
         <checkbox name="enablepluginscheck" from="basecheckbox">
-            <position>460,358</position>
+            <position>460,355</position>
         </checkbox>
 
         <textarea name="description" from="basetextarea">
@@ -319,12 +319,12 @@
         </textarea>
 
         <button name="cancel" from="base_medium_button">
-            <position>266,625</position>
+            <position>266,628</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_medium_button">
-            <position>660,625</position>
+            <position>660,628</position>
             <value>OK</value>
         </button>
 
@@ -341,35 +341,35 @@
         </shape>
 
         <shape name="bookmark-editor-top-line" from="base_line">
-            <area>240,110,800,2</area>
+            <area>234,104,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-line" from="base_line">
-            <area>240,504,800,2</area>
+            <area>234,504,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-left-line" from="base_vertical_line">
-            <area>240,112,2,392</area>
+            <area>234,106,2,398</area>
         </shape>
 
         <shape name="bookmark-editor-right-line" from="base_vertical_line">
-            <area>1038,112,2,392</area>
+            <area>1044,106,2,398</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-top-line" from="base_line">
-            <area>240,514,800,2</area>
+            <area>234,514,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-bottom-line" from="base_line">
-            <area>240,608,800,2</area>
+            <area>234,614,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-left-line" from="base_vertical_line">
-            <area>240,516,2,92</area>
+            <area>234,516,2,98</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-right-line" from="base_vertical_line">
-            <area>1038,516,2,92</area>
+            <area>1044,516,2,98</area>
         </shape>
 
         <shape name="bookmark-editor-seperator-first-line" from="base_line">
@@ -377,10 +377,9 @@
         </shape>
 
         <textarea name="title">
-            <area>242,112,796,35</area>
+            <area>236,106,808,41</area>
             <align>allcenter</align>
             <font>basesmallyellow</font>
-            <value>Configure Web Browser</value>
         </textarea>
 
         <textarea name="categorylabel" from="basetextarea">
@@ -419,12 +418,12 @@
         </textedit>
 
         <button name="cancel" from="base_medium_button">
-            <position>270,542</position>
+            <position>270,545</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_medium_button">
-            <position>659,542</position>
+            <position>659,545</position>
             <value>OK</value>
         </button>
 

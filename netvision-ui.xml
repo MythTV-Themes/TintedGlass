@@ -135,7 +135,7 @@
             <area>430,54,580,32</area>
         </textedit>
 
-        <buttonlist name="sites" from="base_list_small_width">
+        <buttonlist name="sites" from="base_list">
             <area>30,121,388,254</area>
             <statetype name="buttonitem">
                 <state name="active">

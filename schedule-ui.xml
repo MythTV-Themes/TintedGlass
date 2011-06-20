@@ -2164,7 +2164,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="times" from="base_list_small_width">
+        <buttonlist name="times" from="base_list">
             <area>862,87,388,356</area>    
             <statetype name="buttonitem">
                 <state name="active">

@@ -13,19 +13,19 @@
         </shape>
 
         <shape name="appearance-top-line" from="base_line">
-            <area>328,188,624,2</area>
+            <area>322,182,636,2</area>
         </shape>
 
         <shape name="appearance-bottom-line" from="base_line">
-            <area>328,530,624,2</area>
+            <area>322,536,636,2</area>
         </shape>
 
         <shape name="appearance-left-line" from="base_vertical_line">
-            <area>328,190,2,340</area>
+            <area>322,184,2,352</area>
         </shape>
 
         <shape name="appearance-right-line" from="base_vertical_line">
-            <area>950,190,2,340</area>
+            <area>956,184,2,352</area>
         </shape>
 
         <imagetype name="topleft">
