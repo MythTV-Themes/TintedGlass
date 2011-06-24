@@ -14,19 +14,19 @@
         </shape>
 
         <shape name="welcome-top-line" from="base_line">
-            <area>28,44,1224,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="welcome-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="welcome-left-line" from="base_vertical_line">
-            <area>28,46,2,629</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="welcome-right-line" from="base_vertical_line">
-            <area>1250,46,2,629</area>
+            <area>1256,40,2,641</area>
         </shape>
 
         <!--

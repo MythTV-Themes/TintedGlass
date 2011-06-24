@@ -105,6 +105,7 @@
             <font>mediumblue</font>
             <area>268,134,117,25</area>
             <align>left,vcenter</align>
+            <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
         </textarea>
 
         <textarea name="video">

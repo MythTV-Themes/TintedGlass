@@ -13,47 +13,47 @@
         </shape>
 
         <shape name="system-events-list-top-line" from="base_line">
-            <area>228,44,824,2</area>
+            <area>222,38,836,2</area>
         </shape>
 
         <shape name="system-events-list-bottom-line" from="base_line">
-            <area>228,493,824,2</area>
+            <area>222,493,836,2</area>
         </shape>
 
         <shape name="system-events-list-left-line" from="base_vertical_line">
-            <area>228,46,2,447</area>
+            <area>222,40,2,453</area>
         </shape>
 
         <shape name="system-events-list-right-line" from="base_vertical_line">
-            <area>1050,46,2,447</area>
+            <area>1056,40,2,453</area>
         </shape>
 
         <shape name="system-events-bottom-top-line" from="base_line">
-            <area>228,503,824,2</area>
+            <area>222,503,836,2</area>
         </shape>
 
         <shape name="system-events-bottom-bottom-line" from="base_line">
-            <area>228,675,824,2</area>
+            <area>222,681,836,2</area>
         </shape>
 
         <shape name="system-events-bottom-left-line" from="base_vertical_line">
-            <area>228,505,2,170</area>
+            <area>222,505,2,176</area>
         </shape>
 
         <shape name="system-events-bottom-right-line" from="base_vertical_line">
-            <area>1050,505,2,170</area>
+            <area>1056,505,2,176</area>
         </shape>
 
         <shape name="system-events-bottom-seperator-first-line" from="base_line">
-            <area>243,553,794,2</area>
+            <area>243,555,794,2</area>
         </shape>
 
         <shape name="system-events-bottom-seperator-second-line" from="base_line">
-            <area>243,625,794,2</area>
+            <area>243,627,794,2</area>
         </shape>
 
         <buttonlist name="settings" from="base_list">
-            <area>230,45,820,452</area>
+            <area>230,42,820,452</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,820,34</area>
@@ -78,30 +78,30 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>796,-8</position>
+                <position>810,-3</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>796,450</position>
+                <position>810,445</position>
             </statetype>
         </buttonlist>
 
         <textarea name="label-text" from="basetextarea">
-            <area>244,516,792,24</area>
+            <area>244,505,792,50</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="settingvalue" from="base_wide_textedit">
-            <area>243,574,794,32</area>
+            <area>243,577,794,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">
-            <position>270,631</position>
+            <position>270,635</position>
             <value>Cancel</value>
         </button>
     
         <button name="save" from="base_medium_button">
-            <position>660,631</position>
+            <position>660,635</position>
             <value>Save</value>
         </button>
 
@@ -119,19 +119,19 @@
         </shape>
 
         <shape name="theme-chooser-top-line" from="base_line">
-            <area>28,64,599,2</area>
+            <area>22,38,611,2</area>
         </shape>
 
         <shape name="theme-chooser-bottom-line" from="base_line">
-            <area>28,675,599,2</area>
+            <area>22,681,611,2</area>
         </shape>
 
         <shape name="theme-chooser-left-line" from="base_vertical_line">
-            <area>28,66,2,609</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="theme-chooser-right-line" from="base_vertical_line">
-            <area>625,66,2,609</area>
+            <area>631,40,2,641</area>
         </shape>
 
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">
@@ -139,35 +139,39 @@
         </shape>
 
         <shape name="theme-chooser-preview-top-line" from="base_line">
-            <area>653,64,599,2</area>
+            <area>647,38,611,2</area>
+        </shape>
+
+        <shape name="theme-chooser-seperator-first-line" from="base_line">
+            <area>649,56,607,2</area>
         </shape>
 
         <shape name="theme-chooser-preview-bottom-line" from="base_line">
-            <area>653,401,599,2</area>
+            <area>647,401,611,2</area>
         </shape>
 
         <shape name="theme-chooser-preview-left-line" from="base_vertical_line">
-            <area>653,66,2,335</area>
+            <area>647,40,2,361</area>
         </shape>
 
         <shape name="theme-chooser-preview-right-line" from="base_vertical_line">
-            <area>1250,66,2,335</area>
+            <area>1256,40,2,361</area>
         </shape>
 
         <shape name="theme-chooser-description-top-line" from="base_line">
-            <area>653,411,599,2</area>
+            <area>647,411,611,2</area>
         </shape>
 
         <shape name="theme-chooser-description-bottom-line" from="base_line">
-            <area>653,675,599,2</area>
+            <area>647,681,611,2</area>
         </shape>
 
         <shape name="theme-chooser-description-left-line" from="base_vertical_line">
-            <area>653,413,2,262</area>
+            <area>647,413,2,268</area>
         </shape>
 
         <shape name="theme-chooser-description-right-line" from="base_vertical_line">
-            <area>1250,413,2,262</area>
+            <area>1256,413,2,268</area>
         </shape>
 
         <shape name="theme-chooser-description-seperator-first-line" from="base_line">
@@ -339,15 +343,15 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,614</position>
+                <position>584,-2</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,614</position>
+                <position>584,606</position>
             </statetype>
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>661,46</position>
+            <position>661,43</position>
             <imagetype name="background">
                 <area>0,0,583,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -359,7 +363,7 @@
         </progressbar>
 
         <imagetype name="preview">
-            <area>655,66,595,335</area>
+            <area>651,60,603,340</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>

@@ -14,39 +14,39 @@
         </shape>
 
         <shape name="weather-base-top-line" from="base_line">
-            <area>28,44,1224,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="weather-base-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="weather-base-left-line" from="base_vertical_line">
-            <area>28,46,2,629</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="weather-base-right-line" from="base_vertical_line">
-            <area>1250,46,2,629</area>
+            <area>1256,40,2,641</area>
         </shape>
 
         <shape name="weather-base-seperator-first-line" from="base_line">
-            <area>43,86,1194,2</area>
+            <area>43,83,1194,2</area>
         </shape>
 
         <textarea name="header" from="basetextarea">
-            <area>44,46,1192,40</area>
+            <area>44,40,1192,43</area>
             <font>baselargeyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="pause_text" from="basetextarea">
-            <area>1038,88,195,40</area>
+            <area>1038,85,195,43</area>
             <font>basesmallred</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="update_text" from="basetextarea">
-            <area>44,635,496,40</area>
+            <area>44,635,496,46</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
@@ -89,7 +89,7 @@
         </shape>
 
         <textarea name="cclocation" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -178,7 +178,7 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -189,7 +189,7 @@
         <area>0,0,1280,720</area>
 
         <textarea name="3dlocation" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -328,7 +328,7 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -339,7 +339,7 @@
         <area>0,0,1280,720</area>
 
         <textarea name="6dlocation" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -567,7 +567,7 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -586,7 +586,7 @@
         </shape>
 
         <textarea name="smdesc" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -597,7 +597,7 @@
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -616,7 +616,7 @@
         </shape>
 
         <textarea name="amdesc" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -627,7 +627,7 @@
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -654,7 +654,7 @@
         </shape>
 
         <textarea name="swlocation" from="basetextarea">
-            <area>233,88,816,40</area>
+            <area>233,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -666,7 +666,7 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -677,7 +677,7 @@
         <area>0,0,1280,720</area>
 
         <textarea name="18hrlocation" from="basetextarea">
-            <area>232,88,816,40</area>
+            <area>232,85,816,43</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
@@ -905,7 +905,7 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,40</area>
+            <area>540,635,696,46</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
@@ -924,19 +924,19 @@
         </shape>
 
         <shape name="global-settings-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="global-settings-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="global-settings-left-line" from="base_vertical_line">
-            <area>223,46,2,629</area>
+            <area>217,40,2,641</area>
         </shape>
 
         <shape name="global-settings-right-line" from="base_vertical_line">
-            <area>1055,46,2,629</area>
+            <area>1061,40,2,641</area>
         </shape>
 
         <shape name="global-settings-seperator-first-line" from="base_line">
@@ -944,27 +944,27 @@
         </shape>
 
         <textarea name="backgroundlbl" from="basetextarea">
-            <area>408,162,352,60</area>
+            <area>408,159,352,60</area>
             <align>right,vcenter</align>
             <value>Retrieve data in the background:</value>
         </textarea>
 
         <checkbox name="backgroundcheck" from="basecheckbox">
-            <position>770,175</position>
+            <position>770,172</position>
         </checkbox>
 
         <textarea name="timeout_text" from="basetextarea">
-            <area>420,354,340,60</area>
+            <area>420,351,340,60</area>
             <align>right,vcenter</align>
             <value>Seconds to display each page:</value>
         </textarea>
 
         <spinbox name="timeout_spinbox" from="base_spinbox">
-            <position>770,365</position>
+            <position>770,362</position>
         </spinbox>
 
         <button name="finishbutton" from="base_medium_button">
-            <position>465,590</position>
+            <position>465,593</position>
         </button>
 
     </window>
@@ -981,59 +981,59 @@
         </shape>
 
         <shape name="screen-setup-inactive-top-line" from="base_line">
-            <area>213,44,419,2</area>
+            <area>207,38,431,2</area>
         </shape>
 
         <shape name="screen-setup-inactive-bottom-line" from="base_line">
-            <area>213,447,419,2</area>
+            <area>207,447,431,2</area>
         </shape>
 
         <shape name="screen-setup-inactive-left-line" from="base_vertical_line">
-            <area>213,46,2,401</area>
+            <area>207,40,2,407</area>
         </shape>
 
         <shape name="screen-setup-inactive-right-line" from="base_vertical_line">
-            <area>630,46,2,401</area>
+            <area>636,40,2,407</area>
         </shape>
 
         <shape name="screen-setup-inactive-seperator-first-line" from="base_line">
-            <area>230,76,385,2</area>
+            <area>230,70,385,2</area>
         </shape>
 
         <shape name="screen-setup-active-top-line" from="base_line">
-            <area>648,44,419,2</area>
+            <area>642,38,431,2</area>
         </shape>
 
         <shape name="screen-setup-active-bottom-line" from="base_line">
-            <area>648,447,419,2</area>
+            <area>642,447,431,2</area>
         </shape>
 
         <shape name="screen-setup-active-left-line" from="base_vertical_line">
-            <area>648,46,2,401</area>
+            <area>642,40,2,407</area>
         </shape>
 
         <shape name="screen-setup-active-right-line" from="base_vertical_line">
-            <area>1065,46,2,401</area>
+            <area>1071,40,2,407</area>
         </shape>
 
         <shape name="screen-setup-active-seperator-first-line" from="base_line">
-            <area>665,76,385,2</area>
+            <area>665,70,385,2</area>
         </shape>
 
         <shape name="screen-setup-bottom-top-line" from="base_line">
-            <area>213,457,854,2</area>
+            <area>207,457,866,2</area>
         </shape>
 
         <shape name="screen-setup-bottom-bottom-line" from="base_line">
-            <area>213,675,854,2</area>
+            <area>207,681,866,2</area>
         </shape>
 
         <shape name="screen-setup-bottom-left-line" from="base_vertical_line">
-            <area>213,459,2,216</area>
+            <area>207,459,2,222</area>
         </shape>
 
         <shape name="screen-setup-bottom-right-line" from="base_vertical_line">
-            <area>1065,459,2,216</area>
+            <area>1071,459,2,222</area>
         </shape>
 
         <shape name="screen-setup-bottom-seperator-first-line" from="base_line">
@@ -1041,13 +1041,13 @@
         </shape>
 
         <textarea name="inactivehdr" from="basetextarea">
-            <area>215,46,415,30</area>
+            <area>215,40,415,30</area>
             <font>baseevensmalleryellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="inactivelist" from="base_list">
-            <area>215,75,415,374</area>
+            <area>215,72,415,374</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,415,33</area>
@@ -1072,19 +1072,19 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>392,-39</position>
+                <position>406,-4</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>393,374</position>
+                <position>406,369</position>
             </statetype>
         </buttonlist>
 
         <textarea name="activehdr" from="inactivehdr">
-            <position>650,46</position>
+            <position>650,40</position>
         </textarea>
 
         <buttonlist name="activelist" from="base_list">
-            <area>650,75,415,374</area>
+            <area>650,72,415,374</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,415,33</area>
@@ -1109,10 +1109,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>392,-39</position>
+                <position>406,-4</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>392,374</position>
+                <position>406,369</position>
             </statetype>
         </buttonlist>
 
@@ -1124,7 +1124,7 @@
         </textarea>
 
         <button name="finishbutton" from="base_medium_button">
-            <position>465,623</position>
+            <position>465,626</position>
         </button>
 
     </window>
@@ -1141,51 +1141,51 @@
         </shape>
 
         <shape name="weather-source-top-line" from="base_line">
-            <area>148,44,484,2</area>
+            <area>142,38,496,2</area>
         </shape>
 
         <shape name="weather-source-bottom-line" from="base_line">
-            <area>148,457,484,2</area>
+            <area>142,457,496,2</area>
         </shape>
 
         <shape name="weather-source-left-line" from="base_vertical_line">
-            <area>148,46,2,411</area>
+            <area>142,40,2,417</area>
         </shape>
 
         <shape name="weather-source-right-line" from="base_vertical_line">
-            <area>630,46,2,411</area>
+            <area>636,40,2,417</area>
         </shape>
 
         <shape name="weather-data-top-line" from="base_line">
-            <area>648,44,484,2</area>
+            <area>642,38,496,2</area>
         </shape>
 
         <shape name="weather-data-bottom-line" from="base_line">
-            <area>648,457,484,2</area>
+            <area>642,457,496,2</area>
         </shape>
 
         <shape name="weather-data-left-line" from="base_vertical_line">
-            <area>648,46,2,411</area>
+            <area>642,40,2,417</area>
         </shape>
 
         <shape name="weather-data-right-line" from="base_vertical_line">
-            <area>1130,46,2,411</area>
+            <area>1136,40,2,417</area>
         </shape>
 
         <shape name="weather-source-bottom-top-line" from="base_line">
-            <area>148,468,984,2</area>
+            <area>142,468,996,2</area>
         </shape>
 
         <shape name="weather-source-bottom-bottom-line" from="base_line">
-            <area>148,675,984,2</area>
+            <area>142,681,996,2</area>
         </shape>
 
         <shape name="weather-source-bottom-left-line" from="base_vertical_line">
-            <area>148,470,2,205</area>
+            <area>142,470,2,211</area>
         </shape>
 
         <shape name="weather-source-bottom-right-line" from="base_vertical_line">
-            <area>1130,470,2,205</area>
+            <area>1136,470,2,211</area>
         </shape>
 
         <shape name="weather-source-bottom-seperator-first-line" from="base_line">
@@ -1218,33 +1218,33 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>456,-8</position>
+                <position>470,-4</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>456,415</position>
+                <position>470,406</position>
             </statetype>
         </buttonlist>
 
         <textarea name="updatetxt" from="basetextarea">
-            <area>684,160,310,40</area>
+            <area>684,157,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
         <textarea name="retrievetxt" from="basetextarea">
-            <area>684,314,310,40</area>
+            <area>684,311,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Source Update Timeout (seconds):</value>
         </textarea>
 
         <spinbox name="update_spinbox" from="base_spinbox">
-            <position>1004,160</position>
+            <position>1004,157</position>
         </spinbox>
 
         <spinbox name="retrieve_spinbox" from="base_spinbox">
-            <position>1004,314</position>
+            <position>1004,311</position>
         </spinbox>
 
         <textarea name="srcinfo" from="basetextarea">
@@ -1255,7 +1255,7 @@
         </textarea>
 
         <button name="finishbutton" from="base_medium_button">
-            <position>465,619</position>
+            <position>465,622</position>
         </button>
 
     </window>
@@ -1272,19 +1272,19 @@
         </shape>
 
         <shape name="weather-search-top-line" from="base_line">
-            <area>328,44,624,2</area>
+            <area>322,38,636,2</area>
         </shape>
 
         <shape name="weather-search-bottom-line" from="base_line">
-            <area>328,206,624,2</area>
+            <area>322,200,636,2</area>
         </shape>
 
         <shape name="weather-search-left-line" from="base_vertical_line">
-            <area>328,46,2,160</area>
+            <area>322,40,2,160</area>
         </shape>
 
         <shape name="weather-search-right-line" from="base_vertical_line">
-            <area>950,46,2,160</area>
+            <area>956,40,2,160</area>
         </shape>
 
         <shape name="weather-search-seperator-first-line" from="base_line">
@@ -1292,43 +1292,43 @@
         </shape>
 
         <shape name="weather-search-middle-top-line" from="base_line">
-            <area>328,216,624,2</area>
+            <area>322,210,636,2</area>
         </shape>
 
         <shape name="weather-search-middle-bottom-line" from="base_line">
-            <area>328,504,624,2</area>
+            <area>322,510,636,2</area>
         </shape>
 
         <shape name="weather-search-middle-left-line" from="base_vertical_line">
-            <area>328,218,2,288</area>
+            <area>322,212,2,298</area>
         </shape>
 
         <shape name="weather-search-middle-right-line" from="base_vertical_line">
-            <area>950,218,2,288</area>
+            <area>956,212,2,298</area>
         </shape>
 
         <shape name="weather-search-bottom-top-line" from="base_line">
-            <area>328,514,624,2</area>
+            <area>322,520,636,2</area>
         </shape>
 
         <shape name="weather-search-bottom-bottom-line" from="base_line">
-            <area>328,675,624,2</area>
+            <area>322,681,636,2</area>
         </shape>
 
         <shape name="weather-search-bottom-left-line" from="base_vertical_line">
-            <area>328,516,2,159</area>
+            <area>322,522,2,159</area>
         </shape>
 
         <shape name="weather-search-bottom-right-line" from="base_vertical_line">
-            <area>950,516,2,159</area>
+            <area>956,522,2,159</area>
         </shape>
 
         <shape name="weather-search-bottom-seperator-first-line" from="base_line">
-            <area>343,595,594,2</area>
+            <area>343,601,594,2</area>
         </shape>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>330,46,620,79</area>
+            <area>330,40,620,85</area>
             <font>basesmallerblue</font>
             <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported. Hit the right or down arrow to continue. </value>
             <multiline>yes</multiline>
@@ -1336,17 +1336,17 @@
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>394,128,180,78</area>
+            <area>394,125,180,78</area>
             <value>Enter Location:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="loc-edit" from="base_textedit">
-            <area>584,151,287,32</area>
+            <area>584,148,287,32</area>
         </textedit>
 
         <button name="searchbtn" from="base_medium_button">
-            <position>465,616</position>
+            <position>465,622</position>
         </button>
 
         <buttonlist name="results" from="base_list">
@@ -1372,21 +1372,21 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>602,-8</position>
+                <position>611,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>602,290</position>
+                <position>611,287</position>
             </statetype>
         </buttonlist>
 
         <textarea name="numresults" from="basetextarea">
-            <area>330,516,620,39</area>
+            <area>330,522,620,39</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="source" from="basetextarea">
-            <area>330,555,620,40</area>
+            <area>330,561,620,40</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>

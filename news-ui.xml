@@ -208,35 +208,35 @@
         </shape>
 
         <shape name="news-edit-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,864,2</area>
         </shape>
 
         <shape name="news-edit-bottom-line" from="base_line">
-            <area>223,538,834,2</area>
+            <area>217,538,846,2</area>
         </shape>
 
         <shape name="news-edit-left-line" from="base_vertical_line">
-            <area>223,46,2,492</area>
+            <area>217,40,2,498</area>
         </shape>
 
         <shape name="news-edit-right-line" from="base_vertical_line">
-            <area>1055,46,2,492</area>
+            <area>1061,40,2,498</area>
         </shape>
 
         <shape name="news-edit-bottom-top-line" from="base_line">
-            <area>223,546,834,2</area>
+            <area>217,546,846,2</area>
         </shape>
 
         <shape name="news-edit-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="news-edit-bottom-left-line" from="base_vertical_line">
-            <area>223,548,2,127</area>
+            <area>217,548,2,133</area>
         </shape>
 
         <shape name="news-edit-bottom-right-line" from="base_vertical_line">
-            <area>1055,548,2,127</area>
+            <area>1061,548,2,133</area>
         </shape>
 
         <shape name="news-edit-bottom-seperator-first-line" from="base_line">
@@ -244,48 +244,48 @@
         </shape>
 
         <textarea name="namelabel" from="basetextarea">
-            <area>295,128,100,30</area>
+            <area>295,125,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="name" from="base_wide_textedit">
-            <area>405,129,580,32</area>
+            <area>405,126,580,32</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>295,229,100,30</area>
+            <area>295,226,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <area>405,229,580,32</area>
+            <area>405,226,580,32</area>
         </textedit>
 
         <textarea name="iconlabel" from="basetextarea">
-            <area>295,329,100,30</area>
+            <area>295,326,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="icon" from="base_wide_textedit">
-            <area>405,329,580,32</area>
+            <area>405,326,580,32</area>
         </textedit>
 
         <textarea name="podcastlabel" from="basetextarea">
-            <area>295,425,100,30</area>
+            <area>295,422,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <checkbox name="podcast_check" from="basecheckbox">
-            <position>405,425</position>
+            <position>405,422</position>
         </checkbox>
 
         <button name="ok" from="base_medium_button">
-            <position>272,624</position>
+            <position>272,627</position>
             <value>OK</value>
         </button>
 
         <button name="cancel" from="base_medium_button">
-            <position>657,624</position>
+            <position>657,627</position>
             <value>Cancel</value>
         </button>
 
@@ -303,23 +303,23 @@
         </shape>
 
         <shape name="news-config-categories-top-line" from="base_line">
-            <area>28,44,484,2</area>
+            <area>22,38,496,2</area>
         </shape>
 
         <shape name="news-config-categories-bottom-line" from="base_line">
-            <area>28,675,484,2</area>
+            <area>22,681,496,2</area>
         </shape>
 
         <shape name="news-config-categories-left-line" from="base_vertical_line">
-            <area>28,46,2,629</area>
+            <area>22,40,2,641</area>
         </shape>
 
         <shape name="news-config-categories-right-line" from="base_vertical_line">
-            <area>510,46,2,629</area>
+            <area>516,40,2,641</area>
         </shape>
 
         <shape name="news-config-categories-seperator-first-line" from="base_line">
-            <area>48,68,444,2</area>
+            <area>48,62,444,2</area>
         </shape>
 
         <shape name="news-config-feeds-backdrop" from="base_backdrop">
@@ -327,27 +327,27 @@
         </shape>
 
         <shape name="news-config-feeds-top-line" from="base_line">
-            <area>538,44,714,2</area>
+            <area>532,38,726,2</area>
         </shape>
 
         <shape name="news-config-feeds-bottom-line" from="base_line">
-            <area>538,675,714,2</area>
+            <area>532,681,726,2</area>
         </shape>
 
         <shape name="news-config-feeds-left-line" from="base_vertical_line">
-            <area>538,46,2,629</area>
+            <area>532,40,2,641</area>
         </shape>
 
         <shape name="news-config-feeds-right-line" from="base_vertical_line">
-            <area>1250,46,2,629</area>
+            <area>1256,40,2,641</area>
         </shape>
 
         <shape name="news-config-feeds-seperator-first-line" from="base_line">
-            <area>553,68,684,2</area>
+            <area>553,62,684,2</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>30,46,480,21</area>
+            <area>30,40,480,22</area>
             <font>baseextrasmallyellow</font>
             <value>Categories</value>
             <align>allcenter</align>
@@ -379,15 +379,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>457,-30</position>
+                <position>469,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>457,610</position>
+                <position>469,608</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="basetextarea">
-            <area>540,46,710,21</area>
+            <area>540,40,710,22</area>
             <font>baseextrasmallyellow</font>
             <value>News Feeds</value>
             <align>allcenter</align>
@@ -425,10 +425,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>684,-30</position>
+                <position>700,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>684,610</position>
+                <position>700,608</position>
             </statetype>
         </buttonlist>
 

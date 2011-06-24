@@ -11,27 +11,27 @@
         </shape>
 
         <shape name="moviesel-top-line" from="base_line">
-            <area>328,44,624,2</area>
+            <area>322,38,636,2</area>
         </shape>
 
         <shape name="moviesel-bottom-line" from="base_line">
-            <area>328,675,624,2</area>
+            <area>322,681,636,2</area>
         </shape>
         
         <shape name="moviesel-left-line" from="base_vertical_line">
-            <area>328,46,2,629</area>
+            <area>322,40,2,641</area>
         </shape>
 
         <shape name="moviesel-right-line" from="base_vertical_line">
-            <area>950,46,2,629</area>
+            <area>956,40,2,641</area>
         </shape>
 
         <shape name="moviesel-seperator-first-line" from="base_line">
-            <area>341,81,598,2</area>
+            <area>341,75,598,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>323,46,634,35</area>
+            <area>323,40,634,35</area>
             <font>basesmalleryellow</font>
             <align>allcenter</align>
             <value>Movie Selector</value>
@@ -112,10 +112,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,596</position>
+                <position>610,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,596</position>
+                <position>610,594</position>
             </statetype>
         </buttonlist>
     </window>
@@ -128,27 +128,27 @@
         </shape>
 
         <shape name="artworksel-top-line" from="base_line">
-            <area>340,44,600,2</area>
+            <area>334,38,612,2</area>
         </shape>
 
         <shape name="artworksel-bottom-line" from="base_line">
-            <area>340,675,600,2</area>
+            <area>334,681,612,2</area>
         </shape>
 
         <shape name="moviesel-left-line" from="base_vertical_line">
-            <area>340,46,2,629</area>
+            <area>334,40,2,641</area>
         </shape>
 
         <shape name="moviesel-right-line" from="base_vertical_line">
-            <area>938,46,2,629</area>
+            <area>944,40,2,641</area>
         </shape>
 
         <shape name="artworksel-seperator-first-line" from="base_line">
-            <area>350,87,580,2</area>
+            <area>350,81,580,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>342,46,596,41</area>
+            <area>342,40,596,41</area>
             <value>Online Artwork Selector</value>
             <font>basesmalleryellow</font>
             <align>allcenter</align>
@@ -200,10 +200,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,590</position>
+                <position>586,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,590</position>
+                <position>586,588</position>
             </statetype>
         </buttonlist>
     </window>
@@ -218,19 +218,19 @@
         </shape>
 
         <shape name="cast-popup-top-line" from="base_line">
-            <area>366,110,547,2</area>
+            <area>360,104,559,2</area>
         </shape>
 
         <shape name="cast-popup-bottom-line" from="base_line">
-            <area>366,608,547,2</area>
+            <area>360,614,559,2</area>
         </shape>
 
         <shape name="cast-popup-left-line" from="base_vertical_line">
-            <area>366,112,2,496</area>
+            <area>360,106,2,508</area>
         </shape>
 
         <shape name="cast-popup-right-line" from="base_vertical_line">
-            <area>911,112,2,496</area>
+            <area>917,106,2,508</area>
         </shape>
 
         <shape name="cast-popup-seperator-first-line" from="base_line">
@@ -242,7 +242,7 @@
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>368,112,543,42</area>
+            <area>368,106,543,48</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
             <value>Cast Members</value>
@@ -275,7 +275,7 @@
         </buttonlist>
 
         <button name="ok" from="base_wide_button">
-            <area>378,560,523,40</area>
+            <area>378,563,523,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
@@ -314,19 +314,19 @@
         </shape>
 
         <shape name="full-plot-top-line" from="base_line">
-            <area>366,110,547,2</area>
+            <area>360,104,559,2</area>
         </shape>
 
         <shape name="full-plot-bottom-line" from="base_line">
-            <area>366,608,547,2</area>
+            <area>360,614,559,2</area>
         </shape>
 
         <shape name="full-plot-left-line" from="base_vertical_line">
-            <area>366,112,2,496</area>
+            <area>360,106,2,508</area>
         </shape>
 
         <shape name="full-plot-right-line" from="base_vertical_line">
-            <area>911,112,2,496</area>
+            <area>917,106,2,508</area>
         </shape>
 
         <shape name="full-plot-seperator-first-line" from="base_line">
@@ -338,7 +338,7 @@
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>382,112,515,35</area>
+            <area>382,106,515,41</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
             <value>Full Plot</value>
@@ -351,7 +351,7 @@
         </textarea>
 
         <button name="ok" from="base_wide_button">
-            <area>381,560,517,40</area>
+            <area>381,563,517,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
@@ -404,19 +404,19 @@
         </shape>
 
         <shape name="video-top-line" from="base_line">
-            <area>28,44,1224,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="video-bottom-line" from="base_line">
-            <area>28,384,1224,2</area>
+            <area>22,390,1236,2</area>
         </shape>
 
         <shape name="video-left-line" from="base_vertical_line">
-            <area>28,46,2,338</area>
+            <area>22,40,2,350</area>
         </shape>
 
         <shape name="video-right-line" from="base_vertical_line">
-            <area>1250,46,2,338</area>
+            <area>1256,40,2,350</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">
@@ -424,47 +424,47 @@
         </shape>
 
         <shape name="video-bottom-top-line" from="base_line">
-            <area>28,412,1040,2</area>
+            <area>22,406,1043,2</area>
         </shape>
 
         <shape name="video-bottom-bottom-line" from="base_line">
-            <area>28,675,1040,2</area>
+            <area>22,681,1043,2</area>
         </shape>
 
         <shape name="video-bottom-left-line" from="base_vertical_line">
-            <area>28,414,2,261</area>
+            <area>22,408,2,273</area>
         </shape>
 
         <shape name="video-bottom-right-line" from="base_vertical_line">
-            <area>1066,414,2,261</area>
+            <area>1063,408,2,273</area>
         </shape>
 
         <shape name="video-bottom-seperator-first-line" from="base_line">
-            <area>43,454,1010,2</area>
+            <area>40,454,1007,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-second-line" from="base_line">
-            <area>43,591,1010,2</area>
+            <area>40,591,1007,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-third-line" from="base_line">
-            <area>43,633,1010,2</area>
+            <area>40,633,1007,2</area>
         </shape>
 
         <shape name="video-coverart-top-line" from="base_line">
-            <area>1074,412,178,2</area>
+            <area>1071,406,187,2</area>
         </shape>
 
         <shape name="video-coverart-bottom-line" from="base_line">
-            <area>1074,675,178,2</area>
+            <area>1071,681,187,2</area>
         </shape>
 
         <shape name="video-coverart-left-line" from="base_vertical_line">
-            <area>1074,414,2,261</area>
+            <area>1071,408,2,273</area>
         </shape>
 
         <shape name="video-coverart-right-line" from="base_vertical_line">
-            <area>1250,414,2,261</area>
+            <area>1256,408,2,273</area>
         </shape>
 
         <buttonlist name="videos" from="base_list_large_selector_large_width">
@@ -750,21 +750,21 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1198,-8</position>
+                <position>1210,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1198,341</position>
+                <position>1210,339</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,414,1008,40</area>
+            <area>41,414,1005,40</area>
             <font>basemediumlargeryellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,461,1008,128</area>
+            <area>41,461,1005,128</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <cutdown>yes</cutdown>
@@ -772,33 +772,33 @@
         </textarea>
 
         <textarea name="fillbl" from="basetextarea">
-            <area>44,593,112,40</area>
+            <area>41,593,112,40</area>
             <font>basesmall</font>
             <value>Filename:</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="filename" from="basetextarea">
-            <area>175,593,833,40</area>
+            <area>172,593,833,40</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="cvflbl" from="basetextarea">
-            <area>44,635,112,40</area>
+            <area>41,635,112,40</area>
             <font>basesmall</font>
             <value>Cover File:</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="coverfile" from="basetextarea">
-            <area>175,635,833,40</area>
+            <area>172,635,833,40</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <imagetype name="coverart">
-            <area>1076,414,174,261</area>
+            <area>1075,410,179,269</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
@@ -852,19 +852,19 @@
         </shape>
 
         <shape name="video-browse-bottom-top-line" from="base_line">
-            <area>28,409,1224,2</area>
+            <area>22,403,1236,2</area>
         </shape>
 
         <shape name="video-browse-bottom-bottom-line" from="base_line">
-            <area>28,673,1224,2</area>
+            <area>22,679,1236,2</area>
         </shape>
 
         <shape name="video-browse-bottom-left-line" from="base_vertical_line">
-            <area>28,411,2,262</area>
+            <area>22,405,2,274</area>
         </shape>
 
         <shape name="video-browse-bottom-right-line" from="base_vertical_line">
-            <area>1250,411,2,262</area>
+            <area>1256,405,2,274</area>
         </shape>
 
         <shape name="video-browse-bottom-seperator-first-line" from="base_line">
@@ -1286,19 +1286,19 @@
         </shape>
 
         <shape name="video-gallery-bottom-top-line" from="base_line">
-            <area>28,410,1224,2</area>
+            <area>22,404,1236,2</area>
         </shape>
 
         <shape name="video-gallery-bottom-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="video-gallery-bottom-left-line" from="base_vertical_line">
-            <area>28,412,2,263</area>
+            <area>22,406,2,275</area>
         </shape>
 
         <shape name="video-gallery-bottom-right-line" from="base_vertical_line">
-            <area>1250,412,2,263</area>
+            <area>1256,406,2,275</area>
         </shape>
 
         <shape name="video-gallery-bottom-seperator-first-line" from="base_line">
