@@ -1696,19 +1696,19 @@
         </shape>
 
         <shape name="video-tree-top-line" from="base_line">
-            <area>28,44,597,2</area>
+            <area>22,38,609,2</area>
         </shape>
 
         <shape name="video-tree-bottom-line" from="base_line">
-            <area>28,350,597,2</area>
+            <area>22,356,609,2</area>
         </shape>
 
         <shape name="video-tree-left-line" from="base_vertical_line">
-            <area>28,46,2,304</area>
+            <area>22,40,2,316</area>
         </shape>
 
         <shape name="video-tree-right-line" from="base_vertical_line">
-            <area>623,46,2,304</area>
+            <area>629,40,2,316</area>
         </shape>
 
         <shape name="video-tree-files-backdrop" from="base_backdrop">
@@ -1716,19 +1716,19 @@
         </shape>
 
         <shape name="video-tree-files-top-line" from="base_line">
-            <area>655,44,597,2</area>
+            <area>649,38,609,2</area>
         </shape>
 
         <shape name="video-tree-files-bottom-line" from="base_line">
-            <area>655,350,597,2</area>
+            <area>649,356,609,2</area>
         </shape>
 
         <shape name="video-tree-files-left-line" from="base_vertical_line">
-            <area>655,46,2,304</area>
+            <area>649,40,2,316</area>
         </shape>
 
         <shape name="video-tree-files-right-line" from="base_vertical_line">
-            <area>1250,46,2,304</area>
+            <area>1256,40,2,316</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">
@@ -1736,47 +1736,47 @@
         </shape>
 
         <shape name="video-bottom-top-line" from="base_line">
-            <area>28,387,1023,2</area>
+            <area>22,381,1027,2</area>
         </shape>
 
         <shape name="video-bottom-bottom-line" from="base_line">
-            <area>28,675,1023,2</area>
+            <area>22,681,1027,2</area>
         </shape>
 
         <shape name="video-bottom-left-line" from="base_vertical_line">
-            <area>28,389,2,286</area>
+            <area>22,383,2,298</area>
         </shape>
 
         <shape name="video-bottom-right-line" from="base_vertical_line">
-            <area>1049,389,2,286</area>
+            <area>1047,383,2,298</area>
         </shape>
 
         <shape name="video-bottom-seperator-first-line" from="base_line">
-            <area>43,429,993,2</area>
+            <area>39,423,993,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-second-line" from="base_line">
-            <area>43,471,993,2</area>
+            <area>39,465,993,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-third-line" from="base_line">
-            <area>43,633,993,2</area>
+            <area>39,639,993,2</area>
         </shape>
 
         <shape name="video-coverart-top-line" from="base_line">
-            <area>1057,387,195,2</area>
+            <area>1054,381,204,2</area>
         </shape>
 
         <shape name="video-coverart-bottom-line" from="base_line">
-            <area>1057,675,195,2</area>
+            <area>1054,681,204,2</area>
         </shape>
 
         <shape name="video-coverart-left-line" from="base_vertical_line">
-            <area>1057,389,2,286</area>
+            <area>1054,383,2,298</area>
         </shape>
 
         <shape name="video-coverart-right-line" from="base_vertical_line">
-            <area>1250,389,2,286</area>
+            <area>1256,383,2,298</area>
         </shape>
 
         <buttontree name="videos">
@@ -1810,10 +1810,10 @@
                     </state>
                 </statetype>
                 <statetype name="upscrollarrow">
-                    <position>569,-8</position>
+                    <position>583,-5</position>
                 </statetype>
                 <statetype name="downscrollarrow">
-                    <position>569,308</position>
+                    <position>583,305</position>
                 </statetype>
             </buttonlist>
         </buttontree>
@@ -1825,14 +1825,14 @@
         </textarea>
         
         <textarea name="title" from="basetextarea">
-            <area>44,389,952,42</area>
+            <area>40,383,952,42</area>
             <cutdown>yes</cutdown>
             <font>basemediumlargeryellow</font>
             <align>vcenter</align>
         </textarea>
 
         <statetype name="videolevel">
-            <area>1006,395,30,30</area>
+            <area>1002,389,30,30</area>
             <state name="None">
                 <imagetype name="icon">
                     <area>0,0,30,30</area>
@@ -1901,20 +1901,20 @@
         </statetype>
         
         <textarea name="dirlbl" from="basetextarea">
-            <area>44,431,132,42</area>
+            <area>40,425,132,42</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Directed By:</value>
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>191,431,432,42</area>
+            <area>187,425,432,42</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="userratinglabel" from="basetextarea">
-            <area>633,431,126,42</area>
+            <area>629,425,126,42</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>UserRating:</value>
@@ -1923,7 +1923,7 @@
         <statetype name="userratingstate">
             <state name="0">
                 <textarea name="0">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1932,7 +1932,7 @@
             </state>
             <state name="1">
                 <textarea name="1">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1941,7 +1941,7 @@
             </state>
             <state name="2">
                 <textarea name="2">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1950,7 +1950,7 @@
             </state>
             <state name="3">
                 <textarea name="3">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1959,7 +1959,7 @@
             </state>
             <state name="4">
                 <textarea name="4">
-                    <area>769,431,108,42</area>
+                    <area>765,431,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1968,7 +1968,7 @@
             </state>
             <state name="5">
                 <textarea name="5">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1977,7 +1977,7 @@
             </state>
             <state name="6">
                 <textarea name="6">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1986,7 +1986,7 @@
             </state>
             <state name="7">
                 <textarea name="7">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1995,7 +1995,7 @@
             </state>
             <state name="8">
                 <textarea name="8">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -2004,7 +2004,7 @@
             </state>
             <state name="9">
                 <textarea name="9">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -2013,7 +2013,7 @@
             </state>
             <state name="10">
                 <textarea name="10">
-                    <area>769,431,108,42</area>
+                    <area>765,425,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -2023,20 +2023,20 @@
         </statetype>
         
         <textarea name="yrlbl" from="basetextarea">
-            <area>887,431,60,42</area>
+            <area>883,425,60,42</area>
             <font>basesmall</font>
             <value>Year:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>957,431,78,42</area>
+            <area>953,425,78,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,479,991,162</area>
+            <area>40,468,991,172</area>
             <font>basesmall</font>
             <align>justify</align>
             <multiline>yes</multiline>
@@ -2045,73 +2045,73 @@
         </textarea>
 
         <textarea name="lenlbl" from="basetextarea">
-            <area>44,635,68,42</area>
+            <area>40,641,68,42</area>
             <font>baseextrasmall</font>
             <value>Runtime:</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>122,635,102,42</area>
+            <area>118,641,102,42</area>
             <font>baseextrasmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="ratlbl" from="basetextarea">
-            <area>280,635,50,42</area>
+            <area>276,641,50,42</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Rated:</value>
         </textarea>
 
         <textarea name="rating" from="basetextarea">
-            <area>340,635,70,42</area>
+            <area>336,641,70,42</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="seasonlbl" from="basetextarea">
-            <area>469,635,60,42</area>
+            <area>465,641,60,42</area>
             <font>baseextrasmall</font>
             <value>Season:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="season" from="basetextarea">
-            <area>539,635,92,42</area>
+            <area>535,641,92,42</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="episodelbl" from="basetextarea">
-            <area>669,635,64,42</area>
+            <area>665,641,64,42</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <textarea name="episode" from="basetextarea">
-            <area>743,635,92,42</area>
+            <area>739,641,92,42</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="inetlbl" from="basetextarea">
-            <area>873,635,60,42</area>
+            <area>869,641,60,42</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Video#:</value>
         </textarea>
 
         <textarea name="inetref" from="basetextarea">
-            <area>943,635,92,42</area>
+            <area>939,641,92,42</area>
             <font>baseextrasmallblue</font>
             <cutdown>no</cutdown>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="coverart">
-            <area>1059,389,191,286</area>
+            <area>1058,385,196,294</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
@@ -2148,35 +2148,35 @@
         </shape>
 
         <shape name="file-extensions-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="file-extensions-bottom-line" from="base_line">
-            <area>223,514,834,2</area>
+            <area>217,514,846,2</area>
         </shape>
 
         <shape name="file-extensions-left-line" from="base_vertical_line">
-            <area>223,46,2,468</area>
+            <area>217,40,2,474</area>
         </shape>
 
         <shape name="file-extensions-right-line" from="base_vertical_line">
-            <area>1055,46,2,468</area>
+            <area>1061,40,2,474</area>
         </shape>
 
         <shape name="file-extensions-bottom-top-line" from="base_line">
-            <area>223,524,834,2</area>
+            <area>217,524,846,2</area>
         </shape>
 
         <shape name="file-extensions-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="file-extensions-bottom-left-line" from="base_vertical_line">
-            <area>223,526,2,149</area>
+            <area>217,526,2,155</area>
         </shape>
 
         <shape name="file-extensions-bottom-right-line" from="base_vertical_line">
-            <area>1055,526,2,149</area>
+            <area>1061,526,2,155</area>
         </shape>
 
         <shape name="file-extensions-bottom-seperator-first-line" from="base_line">
@@ -2184,13 +2184,13 @@
         </shape>
 
         <textarea name="extension_text" from="basetextarea">
-            <area>245,110,185,40</area>
+            <area>245,107,185,40</area>
             <value>Extension:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <buttonlist name="extension_select" from="base_selector">
-            <area>435,110,580,40</area>
+            <area>435,107,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -2215,47 +2215,47 @@
         </buttonlist>
 
         <textarea name="command_text" from="basetextarea">
-            <area>238,219,192,40</area>
+            <area>238,216,192,40</area>
             <value>Player Command:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <textedit name="command" from="base_wide_textedit">
-            <area>435,223,580,32</area>
+            <area>435,220,580,32</area>
         </textedit>
         
         <textarea name="default_text" from="basetextarea">
-            <area>560,327,280,40</area>
+            <area>560,324,280,40</area>
             <value>Use default player</value>
             <align>vcenter</align>
         </textarea>
 
         <checkbox name="default_check" from="basecheckbox">
-            <position>520,328</position>
+            <position>520,325</position>
         </checkbox>
         
         <textarea name="ignore_text" from="basetextarea">
-            <area>560,420,100,40</area>
+            <area>560,417,100,40</area>
             <value>Ignore:</value>
             <align>vcenter</align>
         </textarea>
 
         <checkbox name="ignore_check" from="basecheckbox">
-            <position>520,420</position>
+            <position>520,417</position>
         </checkbox>
         
         <button name="done_button" from="base_button">
-            <position>320,621</position>
+            <position>320,624</position>
             <value>Done</value>
         </button>
         
         <button name="new_button" from="base_button">
-            <position>565,621</position>
+            <position>565,624</position>
             <value>New</value>
         </button>
         
         <button name="delete_button" from="base_button">
-            <position>810,621</position>
+            <position>810,624</position>
             <value>Delete</value>
         </button>
 
@@ -2288,35 +2288,35 @@
         </shape>
 
         <shape name="video-metadata-top-line" from="base_line">
-            <area>28,44,1057,2</area>
+            <area>22,38,1058,2</area>
         </shape>
 
         <shape name="video-metadata-bottom-line" from="base_line">
-            <area>28,282,1057,2</area>
+            <area>22,288,1058,2</area>
         </shape>
 
         <shape name="video-metadata-left-line" from="base_vertical_line">
-            <area>28,46,2,236</area>
+            <area>22,40,2,248</area>
         </shape>
 
         <shape name="video-metadata-right-line" from="base_vertical_line">
-            <area>1083,46,2,236</area>
+            <area>1078,40,2,248</area>
         </shape>
 
         <shape name="video-metadata-coverart-top-line" from="base_line">
-            <area>1091,44,162,2</area>
+            <area>1087,38,171,2</area>
         </shape>
 
         <shape name="video-metadata-coverart-bottom-line" from="base_line">
-            <area>1091,282,162,2</area>
+            <area>1087,288,171,2</area>
         </shape>
 
         <shape name="video-metadata-coverart-left-line" from="base_vertical_line">
-            <area>1091,46,2,236</area>
+            <area>1087,40,2,248</area>
         </shape>
 
         <shape name="video-metadata-coverart-right-line" from="base_vertical_line">
-            <area>1250,46,2,236</area>
+            <area>1256,40,2,248</area>
         </shape>
 
         <shape name="video-bottom-metadata-backdrop" from="base_backdrop">
@@ -2324,19 +2324,19 @@
         </shape>
 
         <shape name="video-metadata-bottom-top-line" from="base_line">
-            <area>28,312,1224,2</area>
+            <area>22,306,1236,2</area>
         </shape>
 
         <shape name="video-metadata-bottom-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="video-metadata-bottom-left-line" from="base_vertical_line">
-            <area>28,314,2,361</area>
+            <area>22,308,2,373</area>
         </shape>
 
         <shape name="video-metadata-bottom-right-line" from="base_vertical_line">
-            <area>1250,314,2,361</area>
+            <area>1256,308,2,373</area>
         </shape>
 
         <shape name="video--metadata-bottom-seperator-first-line" from="base_vertical_line">
@@ -2348,65 +2348,89 @@
         </shape>
 
         <imagetype name="coverart">
-            <area>1093,46,157,236</area>
+            <area>1091,42,163,244</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
-
-        <!-- Labels  -->
         
         <textarea name="title_text" from="basetextarea">
-            <area>40,53,124,30</area>
+            <area>40,54,124,30</area>
             <value>Title:</value>
             <align>right,top</align>
         </textarea>
         
+        <textedit name="title_edit" from="base_textedit">
+            <area>177,53,366,32</area>
+        </textedit>
+
         <textarea name="subtitle_text" from="basetextarea">
-            <area>40,85,124,30</area>
+            <area>40,91,124,30</area>
             <value>Subtitle:</value>
             <align>right,top</align>
         </textarea>
 
+        <textedit name="subtitle_edit" from="base_textedit">
+            <area>177,90,366,32</area>
+        </textedit>
+
         <textarea name="director_text" from="basetextarea">
-            <area>40,117,124,30</area>
+            <area>40,128,124,30</area>
             <value>Director:</value>
             <align>right,top</align>
         </textarea>
 
+        <textedit name="director_edit" from="base_textedit">
+            <area>177,127,366,32</area>
+        </textedit>
+
         <textarea name="tagline_text" from="basetextarea">
-            <area>40,149,124,30</area>
+            <area>40,165,124,30</area>
             <value>Tagline:</value>
             <align>right,top</align>
         </textarea>
 
-        <textarea name="description_text" from="basetextarea">
-            <area>34,181,130,30</area>
-            <value>Description:</value>
-            <align>right,top</align>
-        </textarea>
+        <textedit name="tagline_edit" from="base_wide_textedit">
+            <area>177,164,885,32</area>
+        </textedit>
 
         <textarea name="homepage_text_label" from="basetextarea">
-            <area>40,213,124,30</area>
+            <area>40,203,124,30</area>
             <value>Homepage:</value>
             <align>right,top</align>
         </textarea>
 
+        <textedit name="homepage_edit" from="base_wide_textedit">
+            <area>177,202,885,32</area>
+        </textedit>
+
         <textarea name="player_text" from="basetextarea">
-            <area>40,245,124,30</area>
+            <area>40,244,124,30</area>
             <align>right,top</align>
             <value>Player:</value>
         </textarea>
 
+        <textedit name="player_edit" from="base_wide_textedit">
+            <area>177,243,885,32</area>
+        </textedit>
+
         <textarea name="rating_text" from="basetextarea">
-            <area>556,53,124,30</area>
+            <area>556,54,124,30</area>
             <value>Rating:</value>
             <align>right,top</align>
         </textarea>
 
+        <textedit name="rating_edit" from="base_textedit">
+            <area>696,53,366,32</area>
+        </textedit>
+
         <textarea name="inetref_text" from="basetextarea">
-            <area>556,85,124,30</area>
+            <area>556,91,124,30</area>
             <value>TMDB:</value>
             <align>right,top</align>
         </textarea>
+
+        <textedit name="inetref_edit" from="base_textedit">
+            <area>696,90,366,32</area>
+        </textedit>
 
         <textarea name="season_text" from="basetextarea">
             <area>48,334,132,40</area>
@@ -2414,29 +2438,49 @@
             <align>right,vcenter</align>
         </textarea>
         
+        <spinbox name="season" from="base_spinbox">
+            <position>188,334</position>
+        </spinbox>
+
         <textarea name="episode_text" from="basetextarea">
             <area>48,374,132,40</area>
             <value>Episode:</value>
             <align>right,vcenter</align>
         </textarea>
         
+        <spinbox name="episode" from="base_spinbox">
+            <position>188,374</position>
+        </spinbox>
+
         <textarea name="year_text" from="basetextarea">
             <area>48,414,132,40</area>
             <align>right,vcenter</align>
             <value>Year:</value>
         </textarea>
         
+        <spinbox name="year_spin" from="base_spinbox">
+            <position>188,414</position>
+        </spinbox>
+
         <textarea name="userrating_text" from="basetextarea">
             <area>48,454,132,40</area>
             <align>right,vcenter</align>
             <value>User Rating:</value>
         </textarea>
         
+        <spinbox name="userrating_spin" from="base_spinbox">
+            <position>188,454</position>
+        </spinbox>
+
         <textarea name="length_text" from="basetextarea">
             <area>48,494,132,40</area>
             <align>right,vcenter</align>
             <value>Length:</value>
         </textarea>
+
+        <spinbox name="length_spin" from="base_spinbox">
+            <position>188,494</position>
+        </spinbox>
         
         <textarea name="parent_text" from="basetextarea">
             <area>48,534,132,40</area>
@@ -2444,118 +2488,6 @@
             <value>Parental Lvl:</value>
         </textarea>
         
-        <textarea name="category_text" from="basetextarea">
-            <area>48,574,132,40</area>
-            <align>right,vcenter</align>
-            <value>Category:</value>
-        </textarea>
-
-        <textarea name="child_text" from="basetextarea">
-            <area>48,614,132,40</area>
-            <align>right,vcenter</align>
-            <value>Next File:</value>
-        </textarea>
-
-        <textarea name="coverart_text_label" from="basetextarea">
-            <area>452,334,130,40</area>
-            <value>Cover Art:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="banner_text_label" from="basetextarea">
-            <area>452,381,130,40</area>
-            <value>Banner:</value>
-            <align>right,vcenter</align>
-        </textarea>
-        
-        <textarea name="browse_text" from="basetextarea">
-            <area>452,428,130,40</area>
-            <value>Browseable:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="fanart_text_label" from="basetextarea">
-            <area>452,475,130,40</area>
-            <value>Fanart:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="screenshot_text_label" from="basetextarea">
-            <area>452,522,130,40</area>
-            <value>Screenshot:</value>
-            <align>right,vcenter</align>
-        </textarea>
-        
-        <textarea name="trailer_text_label" from="basetextarea">
-            <area>452,569,130,40</area>
-            <value>Trailer:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="watched_text" from="basetextarea">
-            <area>452,616,130,40</area>
-            <value>Watched:</value>
-            <align>right,vcenter</align>
-        </textarea>
-        
-        <!-- Widgets -->
-
-        <textedit name="title_edit" from="base_textedit">
-            <area>177,52,366,32</area>
-        </textedit>
-        
-        <textedit name="subtitle_edit" from="base_textedit">
-            <area>177,84,366,32</area>
-        </textedit>
-        
-        <textedit name="director_edit" from="base_textedit">
-            <area>177,116,366,32</area>
-        </textedit>
-
-        <textedit name="tagline_edit" from="base_wide_textedit">
-            <area>177,148,885,32</area>
-        </textedit>
-
-        <textedit name="description_edit" from="base_wide_textedit">
-            <area>177,180,885,32</area>
-        </textedit>
-
-        <textedit name="homepage_edit" from="base_wide_textedit">
-            <area>177,212,885,32</area>
-        </textedit>
-
-        <textedit name="player_edit" from="base_wide_textedit">
-            <area>177,244,885,32</area>
-        </textedit>
-
-        <textedit name="rating_edit" from="base_textedit">
-            <area>696,52,366,32</area>
-        </textedit>
-
-        <textedit name="inetref_edit" from="base_textedit">
-            <area>696,84,366,32</area>
-        </textedit>
-
-        <spinbox name="season" from="base_spinbox">
-            <position>188,334</position>
-        </spinbox>
-        
-        <spinbox name="episode" from="base_spinbox">
-            <position>188,374</position>
-        </spinbox>
-        
-        <spinbox name="year_spin" from="base_spinbox">
-            <position>188,414</position>
-        </spinbox>
-
-        <spinbox name="userrating_spin" from="base_spinbox">
-            <position>188,454</position>
-        </spinbox>
-
-        <spinbox name="length_spin" from="base_spinbox">
-            <position>188,494</position>
-        </spinbox>
-
         <buttonlist name="level_select" from="base_selector">
             <area>188,534,200,40</area>
             <statetype name="buttonitem">
@@ -2580,30 +2512,54 @@
                 <position>205,21</position>
             </statetype>
         </buttonlist>
-        
+
+        <textarea name="category_text" from="basetextarea">
+            <area>48,574,132,40</area>
+            <align>right,vcenter</align>
+            <value>Category:</value>
+        </textarea>
+
         <buttonlist name="category_select" from="level_select">
             <area>188,574,200,40</area>
         </buttonlist>
-        
+
+        <textarea name="child_text" from="basetextarea">
+            <area>48,614,132,40</area>
+            <align>right,vcenter</align>
+            <value>Next File:</value>
+        </textarea>
+
         <buttonlist name="child_select" from="level_select">
             <area>188,614,200,40</area>
         </buttonlist>
 
+        <textarea name="coverart_text_label" from="basetextarea">
+            <area>452,334,130,40</area>
+            <value>Cover Art:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
         <button name="coverart_button" from="basesearchbutton">
             <area>596,339,32,32</area>
         </button>
-        
+
         <textarea name="coverart_text" from="basetextarea">
             <area>638,334,414,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
         </textarea>
-        
+
         <button name="net_coverart_button" from="base_button">
             <position>1084,337</position>
             <value>Find OnNet</value>
         </button>
+
+        <textarea name="banner_text_label" from="basetextarea">
+            <area>452,381,130,40</area>
+            <value>Banner:</value>
+            <align>right,vcenter</align>
+        </textarea>
 
         <button name="banner_button" from="basesearchbutton">
             <area>596,386,32,32</area>
@@ -2620,11 +2576,23 @@
             <position>1084,384</position>
             <value>Find OnNet</value>
         </button>
+        
+        <textarea name="browse_text" from="basetextarea">
+            <area>452,428,130,40</area>
+            <value>Browseable:</value>
+            <align>right,vcenter</align>
+        </textarea>
 
         <checkbox name="browse_check" from="basecheckbox">
             <position>594,431</position>
         </checkbox>
-        
+
+        <textarea name="fanart_text_label" from="basetextarea">
+            <area>452,475,130,40</area>
+            <value>Fanart:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
         <button name="fanart_button" from="basesearchbutton">
             <area>596,479,32,32</area>
         </button>
@@ -2641,6 +2609,12 @@
             <value>Find OnNet</value>
         </button>
 
+        <textarea name="screenshot_text_label" from="basetextarea">
+            <area>452,522,130,40</area>
+            <value>Screenshot:</value>
+            <align>right,vcenter</align>
+        </textarea>
+        
         <button name="screenshot_button" from="basesearchbutton">
             <area>596,527,32,32</area>
         </button>
@@ -2657,6 +2631,12 @@
             <value>Find OnNet</value>
         </button>
 
+        <textarea name="trailer_text_label" from="basetextarea">
+            <area>452,569,130,40</area>
+            <value>Trailer:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
         <button name="trailer_button" from="basesearchbutton">
             <area>596,574,32,32</area>
         </button>
@@ -2666,6 +2646,12 @@
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
+        </textarea>
+
+        <textarea name="watched_text" from="basetextarea">
+            <area>452,616,130,40</area>
+            <value>Watched:</value>
+            <align>right,vcenter</align>
         </textarea>
 
         <checkbox name="watched_check" from="basecheckbox">
@@ -2691,19 +2677,19 @@
         </shape>
 
         <shape name="filter-top-line" from="base_line">
-            <area>248,58,784,2</area>
+            <area>242,52,796,2</area>
         </shape>
 
         <shape name="filter-bottom-line" from="base_line">
-            <area>248,660,784,2</area>
+            <area>242,666,796,2</area>
         </shape>
 
         <shape name="filter-left-line" from="base_vertical_line">
-            <area>248,60,2,600</area>
+            <area>242,54,2,612</area>
         </shape>
 
         <shape name="filter-right-line" from="base_vertical_line">
-            <area>1030,60,2,600</area>
+            <area>1036,54,2,612</area>
         </shape>
 
         <shape name="filter-seperator-first-line" from="base_line">
@@ -2715,7 +2701,7 @@
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>250,60,780,40</area>
+            <area>250,54,780,46</area>
             <font>basemediumlargerdarkyellow</font>
             <value>Filter Display</value>
             <align>allcenter</align>
@@ -2871,12 +2857,12 @@
         </textarea>
         
         <button name="done_button" from="base_button">
-            <position>665,614</position>
+            <position>665,617</position>
             <value>Done</value>
         </button>
         
         <button name="save_button" from="base_button">
-            <position>465,614</position>
+            <position>465,617</position>
             <value>Save</value>
         </button>
         
@@ -2892,75 +2878,75 @@
         </shape>
 
         <shape name="video-item-detail-popup-top-line" from="base_line">
-            <area>223,110,559,2</area>
+            <area>217,104,569,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-bottom-line" from="base_line">
-            <area>223,506,559,2</area>
+            <area>217,506,569,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-left-line" from="base_vertical_line">
-            <area>223,112,2,394</area>
+            <area>217,106,2,400</area>
         </shape>
 
         <shape name="video-item-detail-popup-right-line" from="base_vertical_line">
-            <area>780,112,2,394</area>
+            <area>784,106,2,400</area>
         </shape>
 
         <shape name="video-item-detail-popup-seperator-first-line" from="base_line">
-            <area>238,147,529,2</area>
+            <area>237,147,529,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-seperator-second-line" from="base_line">
-            <area>238,374,529,2</area>
+            <area>237,374,529,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-seperator-third-line" from="base_line">
-            <area>238,422,529,2</area>
+            <area>237,422,529,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-seperator-fourth-line" from="base_line">
-            <area>238,455,529,2</area>
+            <area>237,455,529,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-seperator-fifth-line" from="base_line">
-            <area>238,480,529,2</area>
+            <area>237,480,529,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-coverart-top-line" from="base_line">
-            <area>788,110,267,2</area>
+            <area>791,104,272,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-coverart-bottom-line" from="base_line">
-            <area>788,506,267,2</area>
+            <area>791,506,272,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-coverart-left-line" from="base_vertical_line">
-            <area>788,112,2,394</area>
+            <area>791,106,2,400</area>
         </shape>
 
         <shape name="video-item-detail-popup-coverart-right-line" from="base_vertical_line">
-            <area>1053,112,2,394</area>
+            <area>1061,106,2,400</area>
         </shape>
 
         <shape name="video-item-detail-popup-bottom-top-line" from="base_line">
-            <area>223,514,834,2</area>
+            <area>217,514,846,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-bottom-bottom-line" from="base_line">
-            <area>223,608,834,2</area>
+            <area>217,614,846,2</area>
         </shape>
 
         <shape name="video-item-detail-popup-bottom-left-line" from="base_vertical_line">
-            <area>223,516,2,92</area>
+            <area>217,516,2,98</area>
         </shape>
 
         <shape name="video-item-detail-popup-bottom-right-line" from="base_vertical_line">
-            <area>1055,516,2,92</area>
+            <area>1061,516,2,98</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>225,112,555,35</area>
+            <area>224,112,555,35</area>
             <multiline>no</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
@@ -2968,88 +2954,88 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>239,156,527,214</area>
+            <area>238,156,527,214</area>
             <multiline>yes</multiline>
             <font>basesmaller</font>
         </textarea>
 
         <textarea name="cast" from="basetextarea">
-            <area>239,377,527,48</area>
+            <area>238,377,527,48</area>
             <multiline>yes</multiline>
             <font>basesmaller</font>
         </textarea>
 
         <textarea name="dirlbl" from="basetextarea">
-            <area>239,427,112,24</area>
+            <area>238,427,112,24</area>
             <font>basesmaller</font>
             <value>Directed by:</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>361,428,405,24</area>
+            <area>360,428,405,24</area>
             <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
         
         <textarea name="yearlbl" from="basetextarea">
-            <area>239,456,46,24</area>
+            <area>238,456,46,24</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>295,458,80,24</area>
+            <area>294,458,80,24</area>
             <font>basesmallerblue</font>
         </textarea>
 
         <textarea name="lengthlbl" from="basetextarea">
-            <area>558,456,84,24</area>
+            <area>557,456,84,24</area>
             <font>basesmaller</font>
             <align>right,vcenter</align>
             <value>Runtime:</value>
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>652,457,114,24</area>
+            <area>651,457,114,24</area>
             <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
 
        <textarea name="seasonlbl" from="basetextarea">
-            <area>304,484,90,20</area>
+            <area>303,484,90,20</area>
             <font>baseextrasmall</font>
             <value>Season:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="season" from="basetextarea">
-            <area>404,484,110,20</area>
+            <area>403,484,110,20</area>
             <font>baseextrasmallblue</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="episodelbl" from="basetextarea">
-            <area>547,484,94,20</area>
+            <area>546,484,94,20</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <textarea name="episode" from="basetextarea">
-            <area>651,484,110,20</area>
+            <area>650,484,110,20</area>
             <font>baseextrasmallblue</font>
             <align>vcenter</align>
         </textarea>
 
         <imagetype name="coverart">
-            <area>790,112,263,394</area>
+            <area>795,108,264,396</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <button name="done_button" from="base_wide_button">
-            <area>240,542,390,40</area>
+            <area>240,545,390,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
@@ -3077,7 +3063,7 @@
         </button>
         
         <button name="play_button" from="base_wide_button">
-            <area>650,542,390,40</area>
+            <area>650,545,390,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
@@ -3125,89 +3111,89 @@
         </shape>
 
         <shape name="player-settings-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="player-settings-bottom-line" from="base_line">
-            <area>223,540,834,2</area>
+            <area>217,540,846,2</area>
         </shape>
 
         <shape name="player-settings-left-line" from="base_vertical_line">
-            <area>223,46,2,494</area>
+            <area>217,40,2,500</area>
         </shape>
 
         <shape name="player-settings-right-line" from="base_vertical_line">
-            <area>1055,46,2,494</area>
+            <area>1061,40,2,500</area>
         </shape>
 
         <shape name="player-settings-bottom-top-line" from="base_line">
-            <area>223,548,834,2</area>
+            <area>217,548,846,2</area>
         </shape>
 
         <shape name="player-settings-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="player-settings-bottom-left-line" from="base_vertical_line">
-            <area>223,550,2,125</area>
+            <area>217,550,2,131</area>
         </shape>
 
         <shape name="player-settings-bottom-right-line" from="base_vertical_line">
-            <area>1055,550,2,125</area>
+            <area>1061,550,2,131</area>
         </shape>
 
         <shape name="player-settings-bottom-seperator-first-line" from="base_line">
-            <area>238,611,804,2</area>
+            <area>238,613,804,2</area>
         </shape>
 
         <textarea name="default_text" from="basetextarea">
-            <area>242,74,190,30</area>
+            <area>242,71,190,30</area>
             <align>right</align>
             <value>Default Player:</value>
         </textarea>
 
         <textedit name="defaultplayer" from="base_wide_textedit">
-            <area>442,72,580,32</area>
+            <area>442,69,580,32</area>
         </textedit>
 
         <textarea name="dvd_text" from="basetextarea">
-            <area>242,144,190,30</area>
+            <area>242,141,190,30</area>
             <align>right</align>
             <value>DVD Player:</value>
         </textarea>
 
         <textedit name="dvdplayer" from="base_wide_textedit">
-            <area>442,142,580,32</area>
+            <area>442,139,580,32</area>
         </textedit>
 
         <textarea name="dvddrive_text" from="basetextarea">
-            <area>242,214,190,30</area>
+            <area>242,211,190,30</area>
             <align>right</align>
             <value>DVD Drive:</value>
         </textarea>
 
         <textedit name="dvddrive" from="base_wide_textedit">
-            <area>442,212,580,32</area>
+            <area>442,209,580,32</area>
         </textedit>
 
         <textarea name="bluraymount_text" from="basetextarea">
-            <area>242,284,190,30</area>
+            <area>242,281,190,30</area>
             <align>right</align>
             <value>Blu-ray Mount:</value>
         </textarea>
 
         <textedit name="bluraymount" from="base_wide_textedit">
-            <area>442,282,580,32</area>
+            <area>442,279,580,32</area>
         </textedit>
 
         <textarea name="blureg_text" from="basetextarea">
-            <area>242,354,190,30</area>
+            <area>242,351,190,30</area>
             <align>right</align>
             <value>Blu-ray Region:</value>
         </textarea>
 
         <buttonlist name="blurayregionlist" from="base_selector">
-            <area>442,353,580,30</area>
+            <area>442,350,580,30</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,30</area>
@@ -3232,39 +3218,39 @@
         </buttonlist>
 
         <checkbox name="altcheck" from="basecheckbox">
-            <position>750,420</position>
+            <position>750,417</position>
         </checkbox>
 
         <textarea name="altcheck_text" from="basetextarea">
-            <area>475,424,265,30</area>
+            <area>475,421,265,30</area>
             <align>right</align>
             <value>Enable Alternate Player:</value>
         </textarea>
 
         <textarea name="alt_text" from="basetextarea">
-            <area>242,484,190,30</area>
+            <area>242,481,190,30</area>
             <align>right</align>
             <value>Alternate Player:</value>
         </textarea>
 
         <textedit name="altplayer" from="base_wide_textedit">
-            <area>442,482,580,32</area>
+            <area>442,479,580,32</area>
         </textedit>
 
         <textarea name="helptext" from="basetextarea">
-            <area>239,550,802,61</area>
+            <area>239,551,802,61</area>
             <font>basesmallerblue</font>
             <multiline>true</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="ok" from="base_medium_button">
-            <position>273,624</position>
+            <position>273,628</position>
             <value>OK</value>
         </button>
 
         <button name="cancel" from="base_medium_button">
-            <position>657,624</position>
+            <position>657,628</position>
             <value>Cancel</value>
         </button>
 
@@ -3293,105 +3279,105 @@
         </shape>
 
         <shape name="metadata-settings-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="metadata-settings-bottom-line" from="base_line">
-            <area>223,512,834,2</area>
+            <area>217,512,846,2</area>
         </shape>
 
         <shape name="metadata-settings-left-line" from="base_vertical_line">
-            <area>223,46,2,466</area>
+            <area>217,40,2,472</area>
         </shape>
 
         <shape name="metadata-settings-right-line" from="base_vertical_line">
-            <area>1055,46,2,466</area>
+            <area>1061,40,2,472</area>
         </shape>
 
         <shape name="metadata-settings-bottom-top-line" from="base_line">
-            <area>223,520,834,2</area>
+            <area>217,520,846,2</area>
         </shape>
 
         <shape name="metadata-settings-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="metadata-settings-bottom-left-line" from="base_vertical_line">
-            <area>223,522,2,153</area>
+            <area>217,522,2,159</area>
         </shape>
 
         <shape name="metadata-settings-bottom-right-line" from="base_vertical_line">
-            <area>1055,522,2,153</area>
+            <area>1061,522,2,159</area>
         </shape>
 
         <shape name="metadata-settings-bottom-seperator-first-line" from="base_line">
-            <area>238,598,804,2</area>
+            <area>238,600,804,2</area>
         </shape>
         
         <textarea name="autometacheck_text" from="basetextarea">
-            <area>430,84,500,40</area>
+            <area>430,81,500,40</area>
             <value>Perform metadata update after video scan</value>
             <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="autometaupdatecheck" from="basecheckbox">
-            <position>390,86</position>
+            <position>390,83</position>
         </checkbox>
 
         <textarea name="trailercheck_text" from="basetextarea">
-            <area>430,174,400,40</area>
+            <area>430,171,400,40</area>
             <value>Enable Random Trailer Playback</value>
             <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="randomtrailercheck" from="basecheckbox">
-            <position>390,176</position>
+            <position>390,173</position>
         </checkbox>
 
         <textarea name="trailerplay_text" from="basetextarea">
-            <area>245,262,175,40</area>
+            <area>245,259,175,40</area>
             <value>Trailers to Play:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <spinbox name="trailernum" from="base_wide_spinbox">
-            <position>425,263</position>
+            <position>425,260</position>
         </spinbox>
 
         <textarea name="unknownfilecheck_text" from="basetextarea">
-            <area>430,350,400,40</area>
+            <area>430,347,400,40</area>
             <value>Display unknown file types</value>
             <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="unknownfilecheck" from="basecheckbox">
-            <position>390,352</position>
+            <position>390,349</position>
         </checkbox>
 
         <textarea name="treeloadsmetacheck_text" from="basetextarea">
-            <area>430,438,400,40</area>
+            <area>430,435,400,40</area>
             <value>Enable metadata in file browse mode</value>
             <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="treeloadsmetacheck" from="basecheckbox">
-            <position>390,440</position>
+            <position>390,437</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
-            <area>239,522,802,76</area>
+            <area>239,523,802,76</area>
             <font>basesmallerblue</font>
             <multiline>true</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="ok" from="base_medium_button">
-            <position>273,618</position>
+            <position>273,622</position>
             <value>OK</value>
         </button>
 
         <button name="cancel" from="base_medium_button">
-            <position>657,618</position>
+            <position>657,622</position>
             <value>Cancel</value>
         </button>
 

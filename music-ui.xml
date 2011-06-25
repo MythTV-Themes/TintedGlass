@@ -53,8 +53,8 @@
             </image>
 
             <listtreearea name="musictree" draworder="0">
-                <area>15,49,1210,420</area>
-                <listsize>0,0,390,420</listsize>
+                <area>9,49,1222,420</area>
+                <listsize>0,0,394,420</listsize>
                 <leveloffset>20</leveloffset>
                 <gradient type="unselected" start="#343440" end="#343440" alpha="255">
                 </gradient>
@@ -75,37 +75,37 @@
 
             <textarea name="line1" draworder="1" align="center">
                 <font>info</font>
-                <area>10,10,915,58</area>
+                <area>7,10,915,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="line2" draworder="1" align="center">
                 <font>infoblue</font>
-                <area>10,68,915,57</area>
+                <area>7,68,915,57</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="line3" draworder="1" align="center">
                 <font>info</font>
-                <area>10,125,915,58</area>
+                <area>7,125,915,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="line4" draworder="1" align="center">
                 <font>info</font>
-                <area>927,10,303,58</area>
+                <area>930,10,303,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="line5" draworder="1" align="center">
                 <font>infoblue</font>
-                <area>927,68,303,57</area>
+                <area>930,68,303,57</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="line6" draworder="1" align="center">
                 <font>info</font>
-                <area>927,125,303,58</area>
+                <area>930,125,303,58</area>
                 <cutdown>yes</cutdown>
             </textarea>
         </container>
@@ -202,7 +202,7 @@
 
             <image name="mm_blackhole_border" draworder="0" fleximage="no">
                 <filename>mythmusic/mm_blackhole_border.png</filename>
-                <position>57,380</position>
+                <position>54,380</position>
                 <staticsize>214,162</staticsize>
             </image>
 
@@ -248,19 +248,19 @@
                      NB: bins number 1 to # of bins inclusive
                      not 0 to #-1 -->
                 <bin number="1">
-                    <area>22,54,317,250</area>
+                    <area>17,31,321,308</area>
                     <fcnfont name="active" function="active"></fcnfont>
                     <fcnfont name="inactive" function="inactive"></fcnfont>
                     <fcnfont name="selected" function="selected"></fcnfont>
                 </bin>
                 <bin number="2">
-                    <area>353,36,268,296</area>
+                    <area>353,31,268,308</area>
                     <fcnfont name="active" function="active"></fcnfont>
                     <fcnfont name="selected" function="selected"></fcnfont>
                     <fcnfont name="inactive" function="inactive"></fcnfont>
                 </bin>
                 <bin number="3">
-                    <area>636,36,605,296</area>
+                    <area>635,31,612,308</area>
                     <fcnfont name="active" function="active"></fcnfont>
                     <fcnfont name="selected" function="selected"></fcnfont>
                     <fcnfont name="inactive" function="inactive"></fcnfont>
@@ -297,7 +297,7 @@
             <area>0,340,1280,210</area>
 
             <blackhole name="visual_blackhole">
-                <area>60,44,208,156</area>
+                <area>57,44,208,156</area>
             </blackhole>
 
             <textarea name="title_text" draworder="1">
@@ -333,18 +333,18 @@
 
             <textarea name="current_visualization_text" draworder="1" align="center">
                 <font>currenttitle</font>
-                <area>978,24,272,64</area>
+                <area>981,24,272,64</area>
                 <cutdown>yes</cutdown>
             </textarea>
 
             <textarea name="info_text" draworder="1" align="center">
                 <font>infotext</font>
-                <area>978,88,272,65</area>
+                <area>981,88,272,65</area>
             </textarea>
 
             <textarea name="time_text" draworder="1" align="center">
                 <font>timetext</font>
-                <area>978,153,272,64</area>
+                <area>981,153,272,64</area>
             </textarea>
 
         </container>
@@ -352,7 +352,7 @@
         <!-- On screen volume display -->
 
         <container name="volumedisplay">
-            <area>940,380,40,160</area>
+            <area>943,380,40,160</area>
             <statusbar name="volume_status" draworder="-1" whitespace="5">
                 <container fleximage="no">mythmusic/mm_volume_background.png</container>
                 <fill>mythmusic/mm_volume_tick.png</fill>

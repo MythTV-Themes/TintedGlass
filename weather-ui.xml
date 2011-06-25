@@ -172,7 +172,7 @@
         </imagetype>
 
         <textarea name="observation_time" from="basetextarea">
-            <area>45,635,595,40</area>
+            <area>45,635,595,46</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
