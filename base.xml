@@ -392,7 +392,7 @@
     <shape name="base_select_bar_active">
         <type>roundbox</type>
         <fill color="#000000" alpha="0" />
-        <line color="#666666" alpha="150" width="1" />
+        <line color="#555555" alpha="170" width="1" />
         <cornerradius>90</cornerradius>
     </shape>
 
