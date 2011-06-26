@@ -25,7 +25,7 @@
         <name>Harley Peters</name>
 
         <!-- Your Email Address -->
-        <email>harley@thepetersclan.com</email>
+        <email>harley@biterror.net</email>
     </author>
 
     <!-- The Versioning Info (Required) -->
@@ -35,7 +35,7 @@
         <major>1</major>
 
         <!-- Minor version changes are backwards compatible -->
-        <minor>28</minor>
+        <minor>29</minor>
     </version>
 
     <!-- Theme Details (Required) -->
