@@ -948,35 +948,35 @@
         </shape>
 
         <shape name="import-cover-art-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="import-cover-art-bottom-line" from="base_line">
-            <area>223,168,834,2</area>
+            <area>217,168,846,2</area>
         </shape>
 
         <shape name="import-cover-art-left-line" from="base_vertical_line">
-            <area>223,46,2,122</area>
+            <area>217,40,2,128</area>
         </shape>
 
         <shape name="import-cover-art-right-line" from="base_vertical_line">
-            <area>1055,46,2,122</area>
+            <area>1061,40,2,128</area>
         </shape>
 
         <shape name="import-cover-art-middle-top-line" from="base_line">
-            <area>223,178,834,2</area>
+            <area>217,178,846,2</area>
         </shape>
 
         <shape name="import-cover-art-middle-bottom-line" from="base_line">
-            <area>223,541,834,2</area>
+            <area>217,541,846,2</area>
         </shape>
 
         <shape name="import-cover-art-middle-left-line" from="base_vertical_line">
-            <area>223,180,2,361</area>
+            <area>217,180,2,361</area>
         </shape>
 
         <shape name="import-cover-art-middle-right-line" from="base_vertical_line">
-            <area>1055,180,2,361</area>
+            <area>1061,180,2,361</area>
         </shape>
 
         <shape name="import-cover-art-middle-vertical-seperator-first-line" from="base_vertical_line">
@@ -984,41 +984,41 @@
         </shape>
 
         <shape name="import-cover-art-bottom-top-line" from="base_line">
-            <area>223,551,834,2</area>
+            <area>217,551,846,2</area>
         </shape>
 
         <shape name="import-cover-art-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="import-cover-art-bottom-left-line" from="base_vertical_line">
-            <area>223,553,2,122</area>
+            <area>217,553,2,128</area>
         </shape>
 
         <shape name="import-cover-art-bottom-right-line" from="base_vertical_line">
-            <area>1055,553,2,122</area>
+            <area>1061,553,2,128</area>
         </shape>
 
         <shape name="import-cover-art-bottom-seperator-first-line" from="base_line">
-            <area>238,613,804,2</area>
+            <area>233,616,816,2</area>
         </shape>
 
         <textarea name="file_label" from="basetextarea">
-            <area>239,46,44,122</area>
+            <area>233,40,44,128</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>File:</value>
         </textarea>
 
         <textarea name="file" from="basetextarea">
-            <area>293,46,748,122</area>
+            <area>287,40,760,128</area>
             <font>basesmallblue</font>
             <multiline>true</multiline>
             <align>left,vcenter</align>
         </textarea>
 
         <button name="prev">
-            <area>290,189,60,60</area>
+            <area>287,189,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1040,13 +1040,13 @@
         </button>
 
         <textarea name="position" from="basetextarea">
-            <area>350,189,237,60</area>
+            <area>347,189,237,60</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <button name="next">
-            <area>587,189,60,60</area>
+            <area>584,189,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1068,26 +1068,26 @@
         </button>
 
         <textarea name="status" from="basetextarea">
-            <area>233,300,471,30</area>
+            <area>230,300,471,30</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>Already in database</value>
         </textarea>
 
         <button name="copy" from="base_button">
-            <position>393,370</position>
+            <position>390,370</position>
             <value>Copy</value>
         </button>
 
         <textarea name="title" from="basetextarea">
-            <area>290,480,130,40</area>
+            <area>287,480,130,40</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Image Type:</value>
         </textarea>
 
         <buttonlist name="type" from="base_selector">
-            <area>430,480,200,40</area>
+            <area>427,480,200,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,200,40</area>
@@ -1112,25 +1112,25 @@
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>735,210,300,300</area>
+            <area>738,210,300,300</area>
             <filename>mm_trans_background.png</filename>
         </imagetype>
 
         <textarea name="destination_label" from="basetextarea">
-            <area>239,553,130,60</area>
+            <area>233,553,130,63</area>
             <align>left,vcenter</align>
             <value>Destination:</value>
         </textarea>
 
         <textarea name="destination" from="basetextarea">
-            <area>379,553,662,60</area>
+            <area>373,553,674,63</area>
             <font>basesmallblue</font>
             <multiline>true</multiline>
             <align>left,vcenter</align>
         </textarea>
 
         <button name="exit" from="base_button">
-            <position>565,628</position>
+            <position>565,632</position>
             <value>Done</value>
         </button>
 
@@ -1152,35 +1152,35 @@
         </shape>
 
         <shape name="import-files-top-top-line" from="base_line">
-            <area>223,44,834,2</area>
+            <area>217,38,846,2</area>
         </shape>
 
         <shape name="import-files-top-bottom-line" from="base_line">
-            <area>223,158,834,2</area>
+            <area>217,158,846,2</area>
         </shape>
 
         <shape name="import-files-top-left-line" from="base_vertical_line">
-            <area>223,46,2,112</area>
+            <area>217,40,2,118</area>
         </shape>
 
         <shape name="import-files-top-right-line" from="base_vertical_line">
-            <area>1055,46,2,112</area>
+            <area>1061,40,2,118</area>
         </shape>
 
         <shape name="import-files-middle-top-line" from="base_line">
-            <area>223,168,834,2</area>
+            <area>217,168,846,2</area>
         </shape>
 
         <shape name="import-files-middle-bottom-line" from="base_line">
-            <area>223,551,834,2</area>
+            <area>217,551,846,2</area>
         </shape>
 
         <shape name="import-files-middle-left-line" from="base_vertical_line">
-            <area>223,170,2,381</area>
+            <area>217,170,2,381</area>
         </shape>
 
         <shape name="import-files-middle-right-line" from="base_vertical_line">
-            <area>1055,170,2,381</area>
+            <area>1061,170,2,381</area>
         </shape>
 
         <shape name="import-files-middle-seperator-first-line" from="base_line">
@@ -1188,36 +1188,36 @@
         </shape>
 
         <shape name="import-files-bottom-top-line" from="base_line">
-            <area>223,561,834,2</area>
+            <area>217,561,846,2</area>
         </shape>
 
         <shape name="import-files-bottom-bottom-line" from="base_line">
-            <area>223,675,834,2</area>
+            <area>217,681,846,2</area>
         </shape>
 
         <shape name="import-files-bottom-left-line" from="base_vertical_line">
-            <area>223,563,2,112</area>
+            <area>217,563,2,118</area>
         </shape>
 
         <shape name="import-files-bottom-right-line" from="base_vertical_line">
-            <area>1055,563,2,112</area>
+            <area>1061,563,2,118</area>
         </shape>
 
         <textarea name="location_label" from="basetextarea">
-            <area>280,63,170,30</area>
+            <area>280,60,170,30</area>
             <value>Location:</value>
         </textarea>
 
         <textedit name="location" from="base_wide_textedit">
-            <area>380,61,580,32</area>
+            <area>380,58,580,32</area>
         </textedit>
 
         <button name="directoryfinder" from="basesearchbutton">
-            <position>968,62</position>
+            <position>968,59</position>
         </button>
 
         <button name="scan" from="base_button">
-            <position>566,109</position>
+            <position>566,106</position>
             <value>Search</value>
         </button>
 
@@ -1317,17 +1317,17 @@
         </button>
 
         <button name="play" from="base_button">
-            <position>265,576</position>
+            <position>265,579</position>
             <value>Play</value>
         </button>
 
         <button name="add" from="base_button">
-            <position>265,626</position>
+            <position>265,629</position>
             <value>Add</value>
         </button>
 
         <button name="prev">
-            <area>460,566,60,60</area>
+            <area>460,569,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1349,7 +1349,7 @@
         </button>
 
         <button name="next">
-            <area>756,566,60,60</area>
+            <area>756,569,60,60</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -1371,22 +1371,22 @@
         </button>
 
         <textarea name="position" from="basetextarea">
-            <area>490,581,300,30</area>
+            <area>490,584,300,30</area>
             <align>hcenter</align>
         </textarea>
 
         <textarea name="status" from="position">
-            <position>490,631</position>
+            <position>490,634</position>
             <value>Already in database</value>
         </textarea>
 
         <button name="nextnew" from="base_button">
-            <position>864,576</position>
+            <position>864,579</position>
             <value>Next New</value>
         </button>
 
         <button name="addallnew" from="base_button">
-            <position>864,626</position>
+            <position>864,629</position>
             <value>Add New</value>
         </button>
 
@@ -1401,15 +1401,15 @@
         </shape>
 
         <shape name="mini-player-top-line" from="base_line">
-            <area>422,602,436,2</area>
+            <area>420,600,440,2</area>
         </shape>
 
         <shape name="mini-player-left-line" from="base_vertical_line">
-            <area>422,604,2,117</area>
+            <area>420,602,2,119</area>
         </shape>
 
         <shape name="mini-player-right-line" from="base_vertical_line">
-            <area>856,604,2,117</area>
+            <area>858,602,2,119</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1464,19 +1464,19 @@
         </shape>
 
         <shape name="volume-popup-top-line" from="base_line">
-            <area>358,285,571,2</area>
+            <area>352,279,583,2</area>
         </shape>
 
         <shape name="volume-popup-bottom-line" from="base_line">
-            <area>358,437,571,2</area>
+            <area>352,443,583,2</area>
         </shape>
 
         <shape name="volume-popup-left-line" from="base_vertical_line">
-            <area>358,287,2,150</area>
+            <area>352,281,2,162</area>
         </shape>
 
         <shape name="volume-popup-right-line" from="base_vertical_line">
-            <area>927,287,2,150</area>
+            <area>933,281,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
@@ -1520,19 +1520,19 @@
         </shape>
 
         <shape name="track-detail-popup-top-line" from="base_line">
-            <area>68,68,1144,2</area>
+            <area>62,62,1156,2</area>
         </shape>
 
         <shape name="track-detail-popup-bottom-line" from="base_line">
-            <area>68,650,1144,2</area>
+            <area>62,656,1156,2</area>
         </shape>
 
         <shape name="track-detail-popup-left-line" from="base_vertical_line">
-            <area>68,70,2,580</area>
+            <area>62,64,2,592</area>
         </shape>
 
         <shape name="track-detail-popup-right-line" from="base_vertical_line">
-            <area>1210,70,2,580</area>
+            <area>1216,64,2,592</area>
         </shape>
 
         <shape name="track-detail-popup-vertical-seperator-first-line" from="base_vertical_line">
@@ -1540,7 +1540,7 @@
         </shape>
 
         <imagetype name="coverart">
-            <area>84,210,300,300</area>
+            <area>82,210,300,300</area>
             <filename>mythmusic/mm_nothumb.png</filename>
             <preserveaspect>true</preserveaspect>
         </imagetype>
@@ -1553,7 +1553,7 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>560,96,642,35</area>
+            <area>560,96,648,35</area>
             <font>basemediumblue</font>
         </textarea>
 
@@ -1563,7 +1563,7 @@
         </textarea>
 
         <textarea name="artist" from="title">
-            <area>560,146,642,35</area>
+            <area>560,146,648,35</area>
         </textarea>
 
         <textarea name="albumlbl" from="titlelbl">
@@ -1572,7 +1572,7 @@
         </textarea>
 
         <textarea name="album" from="title">
-            <area>560,196,642,35</area>
+            <area>560,196,648,35</area>
         </textarea>
 
         <textarea name="genrelbl" from="titlelbl">
@@ -1581,7 +1581,7 @@
         </textarea>
 
         <textarea name="genre" from="title">
-            <area>560,296,642,35</area>
+            <area>560,296,648,35</area>
         </textarea>
 
         <textarea name="tracknumlbl" from="titlelbl">
@@ -1627,7 +1627,7 @@
         </textarea>
 
         <textarea name="lastplayed" from="title">
-            <area>560,446,642,35</area>
+            <area>560,446,648,35</area>
             <value>Last Value</value>
         </textarea>
 
@@ -1637,7 +1637,7 @@
         </textarea>
 
         <textarea name="playcount" from="title">
-            <area>560,496,642,35</area>
+            <area>560,496,648,35</area>
             <template>%playcount% times</template>
         </textarea>
 
@@ -1647,7 +1647,7 @@
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>560,551,642,90</area>
+            <area>560,551,648,90</area>
             <multiline>yes</multiline>
         </textarea>
 
@@ -1664,19 +1664,19 @@
         </shape>
 
         <shape name="import-cd-top-line" from="base_line">
-            <area>28,44,1224,2</area>
+            <area>22,38,1236,2</area>
         </shape>
 
         <shape name="import-cd-bottom-line" from="base_line">
-            <area>28,283,1224,2</area>
+            <area>22,289,1236,2</area>
         </shape>
 
         <shape name="import-cd-left-line" from="base_vertical_line">
-            <area>28,46,2,237</area>
+            <area>22,40,2,249</area>
         </shape>
 
         <shape name="import-cd-right-line" from="base_vertical_line">
-            <area>1250,46,2,237</area>
+            <area>1256,40,2,249</area>
         </shape>
 
         <shape name="import-cd-bottom-backdrop" from="base_backdrop">
@@ -1684,27 +1684,27 @@
         </shape>
 
         <shape name="import-cd-bottom-top-line" from="base_line">
-            <area>28,311,1224,2</area>
+            <area>22,305,1236,2</area>
         </shape>
 
         <shape name="import-cd-bottom-bottom-line" from="base_line">
-            <area>28,675,1224,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="import-cd-bottom-left-line" from="base_vertical_line">
-            <area>28,313,2,362</area>
+            <area>22,307,2,374</area>
         </shape>
 
         <shape name="import-cd-bottom-right-line" from="base_vertical_line">
-            <area>1250,313,2,362</area>
+            <area>1256,307,2,374</area>
         </shape>
 
         <shape name="import-cd-bottom-seperator-first-line" from="base_line">
-            <area>43,358,1194,2</area>
+            <area>43,352,1194,2</area>
         </shape>
 
         <shape name="import-cd-bottom-seperator-second-line" from="base_line">
-            <area>43,628,1194,2</area>
+            <area>43,634,1194,2</area>
         </shape>
 
         <button name="scan" from="base_button">
@@ -1809,24 +1809,24 @@
         </button>
 
         <textarea name="track_label" from="basetextarea">
-            <area>38,313,75,45</area>
+            <area>38,307,75,45</area>
             <font>basesmallyellow</font>
             <value>Track</value>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title_label" from="track_label">
-            <area>139,313,643,45</area>
+            <area>139,307,643,45</area>
             <value>Title</value>
         </textarea>
 
         <textarea name="list_artist_label" from="track_label">
-            <area>802,313,358,45</area>
+            <area>802,307,358,45</area>
             <value>Artist</value>
         </textarea>
 
         <textarea name="length_label" from="track_label">
-            <area>1172,313,74,45</area>
+            <area>1172,307,74,45</area>
             <value>Length</value>
             <align>right,vcenter</align>
         </textarea>
@@ -1889,7 +1889,7 @@
         </buttonlist>
 
         <button name="rip" from="base_button">
-            <position>565,635</position>
+            <position>565,641</position>
             <value>Rip CD</value>
         </button>
 
@@ -1905,19 +1905,19 @@
         </shape>
 
         <shape name="cd-rip-top-line" from="base_line">
-            <area>248,188,784,2</area>
+            <area>242,182,796,2</area>
         </shape>
 
         <shape name="cd-rip-bottom-line" from="base_line">
-            <area>248,530,784,2</area>
+            <area>242,536,796,2</area>
         </shape>
 
         <shape name="cd-rip-left-line" from="base_vertical_line">
-            <area>248,190,2,340</area>
+            <area>242,184,2,352</area>
         </shape>
 
         <shape name="cd-rip-right-line" from="base_vertical_line">
-            <area>1030,190,2,340</area>
+            <area>1036,184,2,352</area>
         </shape>
 
         <textarea name="overall_label" from="basetextarea">
