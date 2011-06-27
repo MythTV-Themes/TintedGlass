@@ -3,7 +3,7 @@ str BackgroundColor=#1a1a1a
 # Color of lines, text, etc
 str ForegroundColor=1a1a1a
 # Pixmap to use for the background
-str BackgroundPixmap=images/backgrounds/background.png
+str BackgroundPixmap=images/backgrounds/qt-background.png
 str Font=DejaVu Sans
 
 # Forground for dialogs
