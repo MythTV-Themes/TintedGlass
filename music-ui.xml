@@ -1881,10 +1881,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1190,-8</position>
+                <position>1209,-6</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,272</position>
+                <position>1209,271</position>
             </statetype>
         </buttonlist>
 
