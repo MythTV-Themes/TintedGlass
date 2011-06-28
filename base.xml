@@ -405,7 +405,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#666666" alpha="170" width="1" />
+        <line color="#ffffff" alpha="255" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
 
@@ -418,7 +418,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#666666" alpha="170" width="1" />
+        <line color="#ffffff" alpha="255" width="2" />
         <cornerradius>10</cornerradius>
     </shape>
 
@@ -431,7 +431,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#666666" alpha="170" width="1" />
+        <line color="#ffffff" alpha="255" width="2" />
         <cornerradius>12</cornerradius>
     </shape>
 
