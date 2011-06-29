@@ -149,6 +149,18 @@
         <color>#a1a1a1</color>
     </fontdef>
 
+    <fontdef name="baseextrasmallverylightgrey" from="baseextrasmall">
+        <color>#e6e6e6</color>
+    </fontdef>
+
+    <fontdef name="basesmallerverylightgrey" from="basesmaller">
+        <color>#e6e6e6</color>
+    </fontdef>
+
+    <fontdef name="basesmallverylightgrey" from="basesmall">
+        <color>#e6e6e6</color>
+    </fontdef>
+
     <fontdef name="baseextrasmallorange" from="baseextrasmall">
         <color>#d97616</color>
     </fontdef>
@@ -255,7 +267,7 @@
 
     <!-- Base definition of a text font state extra small -->
     <textarea name="base_text_font_state_extrasmall" from="basetextarea">
-        <font>baseextrasmall</font>
+        <font>baseextrasmallverylightgrey</font>
         <font state="disabled">baseextrasmallpurple</font>
         <font state="error">baseextrasmallred</font>
         <font state="warning">baseextrasmallyellow</font>
@@ -267,7 +279,7 @@
 
     <!-- Base definition of a text font state smaller -->
     <textarea name="base_text_font_state_smaller" from="basetextarea">
-        <font>basesmaller</font>
+        <font>basesmallerverylightgrey</font>
         <font state="disabled">basesmallerpurple</font>
         <font state="error">basesmallerred</font>
         <font state="warning">basesmalleryellow</font>
@@ -279,7 +291,7 @@
 
     <!-- Base definition of a text font state small -->
     <textarea name="base_text_font_state_small" from="basetextarea">
-        <font>basesmall</font>
+        <font>basesmallverylightgrey</font>
         <font state="disabled">basesmallpurple</font>
         <font state="error">basesmallred</font>
         <font state="warning">basesmallyellow</font>
@@ -405,7 +417,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#ffffff" alpha="255" width="2" />
+        <line color="#a1a1a1" alpha="255" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
 
@@ -418,7 +430,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#ffffff" alpha="255" width="2" />
+        <line color="#a1a1a1" alpha="255" width="2" />
         <cornerradius>10</cornerradius>
     </shape>
 
@@ -431,7 +443,7 @@
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>
         </fill>
-        <line color="#ffffff" alpha="255" width="2" />
+        <line color="#a1a1a1" alpha="255" width="2" />
         <cornerradius>12</cornerradius>
     </shape>
 

@@ -834,28 +834,28 @@
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
                                 </fill>
-                                <line color="#a3a3d9" alpha="255" width="2" />
+                                <line color="#a3a3d9" alpha="200" width="2" />
                                 <cornerradius>12</cornerradius>
                             </shape>
                         </state>
                         <state name="error" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#d93636" alpha="255" width="2" />
+                                <line color="#d93636" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="warning" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="255" width="2" />
+                                <line color="#d9d900" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="255" width="2" />
+                                <line color="#3a9aff" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="running" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#80d400" alpha="255" width="2" />
+                                <line color="#80d400" alpha="200" width="2" />
                             </shape>
                         </state>
                     </statetype>
@@ -2382,28 +2382,28 @@
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
                                 </fill>
-                                <line color="#a3a3d9" alpha="255" width="2" />
+                                <line color="#a3a3d9" alpha="200" width="2" />
                                 <cornerradius>10</cornerradius>
                             </shape>
                         </state>
                         <state name="error" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#d93636" alpha="255" width="2" />
+                                <line color="#d93636" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="warning" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="255" width="2" />
+                                <line color="#d9d900" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="255" width="2" />
+                                <line color="#3a9aff" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="running" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#80d400" alpha="255" width="2" />
+                                <line color="#80d400" alpha="200" width="2" />
                             </shape>
                         </state>
                     </statetype>
