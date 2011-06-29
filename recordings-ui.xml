@@ -791,15 +791,15 @@
                     <area>0,0,963,36</area>
                     <textarea name="titlesubtitle" from="buttontext">
                         <area>8,5,759,24</area>
-                        <font state="normal">basesmall</font>
-                    </textarea>
+                        <font state="normal">basesmallverylightgrey</font> 
+                   </textarea>
                     <textarea name="shortdate" from="titlesubtitle">
                         <area>785,6,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="filesize_str" from="base_text_font_state_extrasmall">
                         <area>883,9,72,18</area>
-                        <font state="normal">baseextrasmall</font>
+                        <font state="normal">baseextrasmallverylightgrey</font>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
@@ -807,6 +807,43 @@
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive">
                     <area>0,0,963,70</area>
+                    <statetype name="status">
+                        <state name="disabled">
+                            <shape name="buttonbackground">
+                                <area>0,0,963,70</area>
+                                <type>roundbox</type>
+                                <fill style="gradient">
+                                    <gradient direction="vertical" alpha="180">
+                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="55" color="#0a0a0e" alpha="180" />
+                                        <stop position="100" color="#0a0a0e" alpha="180" />
+                                    </gradient>
+                                </fill>
+                                <line color="#a3a3d9" alpha="200" width="2" />
+                                <cornerradius>12</cornerradius>
+                            </shape>
+                        </state>
+                        <state name="error" from="disabled">
+                            <shape name="buttonbackground">
+                                <line color="#d93636" alpha="200" width="2" />
+                            </shape>
+                        </state>
+                        <state name="warning" from="disabled">
+                            <shape name="buttonbackground">
+                                <line color="#d9d900" alpha="200" width="2" />
+                            </shape>
+                        </state>
+                        <state name="normal" from="disabled">
+                            <shape name="buttonbackground">
+                                <line color="#a1a1a1" alpha="255" width="2" />
+                            </shape>
+                        </state>
+                        <state name="running" from="disabled">
+                            <shape name="buttonbackground">
+                                <line color="#80d400" alpha="200" width="2" />
+                            </shape>
+                        </state>
+                    </statetype>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>8,2,759,24</area>
                         <font state="normal">basesmall</font>
