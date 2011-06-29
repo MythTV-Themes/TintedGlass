@@ -1169,6 +1169,7 @@
                     <area>0,0,1220,34</area>
                     <textarea name="rectype" from="buttontext">
                         <area>8,5,14,24</area>
+                        <font>basesmalllightgrey</font>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
@@ -1189,6 +1190,10 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                        <area>0,0,1220,46</area>
+                        <line color="#808080" alpha="255" width="2" />
+                    </shape>
                     <statetype name="status">
                         <state name="disabled">
                             <shape name="buttonbackground">
@@ -1228,6 +1233,7 @@
                     </statetype>
                     <textarea name="title" from="buttontext">
                         <area>8,1,616,24</area>
+                        <font>basesmalllightgrey</font>
                     </textarea>
                     <textarea name="callsign" from="title">
                         <area>644,1,162,24</area>
@@ -1247,6 +1253,7 @@
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
                         <area>8,25,354,20</area>
+                        <font>baseextrasmalllightgrey</font>
                     </textarea>
                     <textarea name="category" from="rectypestatus">
                         <area>382,25,252,20</area>
@@ -2504,6 +2511,7 @@
                     <area>0,0,1220,34</area>
                     <textarea name="rectype" from="buttontext">
                         <area>8,5,14,24</area>
+                        <font>basesmalllightgrey</font>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectype">
@@ -2525,6 +2533,10 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                        <area>0,0,1220,46</area>
+                        <line color="#808080" alpha="255" width="2" />
+                    </shape>
                     <statetype name="status">
                         <state name="disabled">
                             <shape name="buttonbackground">
@@ -2564,6 +2576,7 @@
                     </statetype>
                     <textarea name="title" from="buttontext">
                         <area>8,1,615,24</area>
+                        <font>basesmalllightgrey</font>
                     </textarea>
                     <textarea name="callsign" from="title">
                         <area>643,1,409,24</area>
@@ -2577,6 +2590,7 @@
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
                         <area>8,25,350,20</area>
+                        <font>baseextrasmalllightgrey</font>
                     </textarea>
                     <textarea name="category" from="rectypestatus">
                         <area>378,25,252,20</area>

@@ -133,6 +133,10 @@
         <color>#4f4f4f</color>
     </fontdef>
 
+    <fontdef name="baseextrasmalllightgrey" from="baseextrasmall">
+        <color>#808080</color>
+    </fontdef>
+
     <fontdef name="basesmallerlightgrey" from="basesmaller">
         <color>#a1a1a1</color>
     </fontdef>
