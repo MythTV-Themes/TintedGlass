@@ -2319,7 +2319,7 @@
                                     </gradient>
                                 </fill>
                                 <line color="#a3a3d9" alpha="200" width="2" />
-                                <cornerradius>10</cornerradius>
+                                <cornerradius>15</cornerradius>
                             </shape>
                         </state>
                         <state name="error" from="disabled">
