@@ -211,7 +211,7 @@
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#a1a1a1" alpha="255" width="2" />
+                                <line color="#3a9aff" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="running" from="disabled">
@@ -835,7 +835,7 @@
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#a1a1a1" alpha="255" width="2" />
+                                <line color="#3a9aff" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="running" from="disabled">
