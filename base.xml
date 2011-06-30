@@ -878,13 +878,10 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#CCCCCC" alpha="150" />
-                    <line color="#CCCCCC" alpha="150" width="2" />
+                    <fill color="#000000" alpha="255" />
+                    <line color="#3a9aff" alpha="200" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
-                <textarea name="buttontext">
-                    <font>basesmallblack</font>
-                </textarea>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -999,13 +996,10 @@
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
-                    <fill color="#CCCCCC" alpha="150" />
-                    <line color="#CCCCCC" alpha="150" width="2" />
+                    <fill color="#000000" alpha="255" />
+                    <line color="#3a9aff" alpha="200" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
-                <textarea name="buttontext">
-                    <font>basesmallblack</font>
-                </textarea>
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
@@ -1124,7 +1118,7 @@
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
                     <fill color="#000000" alpha="255" />
-                    <line color="#FFFFFF" alpha="110" width="2" />
+                    <line color="#3a9aff" alpha="200" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
