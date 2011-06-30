@@ -118,8 +118,8 @@
                     <shape name="buttonbackground" from="base_select_bar_active">
                         <area>0,0,100%,100%</area>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>8,2,1204,31</area>
+                    <textarea name="buttontext" from="base_text_font_state_small">
+                        <area>15,-1,1190,31</area>
 			<font state="normal">basesmallverylightgrey</font>
                     </textarea>
                 </state>
@@ -138,7 +138,7 @@
                                     </gradient>
                                 </fill>
                                 <line color="#a3a3d9" alpha="200" width="2" />
-                                <cornerradius>10</cornerradius>
+                                <cornerradius>15</cornerradius>
                             </shape>
                         </state>
                         <state name="error" from="disabled">
@@ -162,8 +162,8 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="buttontext">
-                        <area>8,2,1204,31</area>
+                    <textarea name="buttontext" from="base_text_font_state_small">
+                        <area>15,-1,1190,31</area>
 			<font state="normal">basesmall</font>
                     </textarea>
                 </state>
