@@ -1021,7 +1021,7 @@
             <align>allcenter</align>
         </clock>
 
-        <textarea name="description2">
+        <textarea name="description">
             <font>small</font>
             <area>234,564,966,110</area>
             <align>left,top</align>
