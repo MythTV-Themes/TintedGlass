@@ -284,7 +284,7 @@
                     <textarea name="buttontext">
                         <area>10,5,503,30</area>
                         <align>allcenter</align>
-                        <font>basesmallblack</font>
+                        <font>basesmall</font>
                         <value>OK</value>
                     </textarea>
                 </state>
@@ -292,12 +292,6 @@
                     <shape name="background" from="base_button_background_selected">
                         <area>0,0,523,40</area>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>10,5,503,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>OK</value>
-                    </textarea>
                 </state>
             </statetype>
         </button>
@@ -360,7 +354,7 @@
                     <textarea name="buttontext">
                         <area>10,5,497,30</area>
                         <align>allcenter</align>
-                        <font>basesmallblack</font>
+                        <font>basesmall</font>
                         <value>OK</value>
                     </textarea>
                 </state>
@@ -368,12 +362,6 @@
                     <shape name="background" from="base_button_background_selected">
                         <area>0,0,517,40</area>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>10,5,497,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>OK</value>
-                    </textarea>
                 </state>
             </statetype>
         </button>
@@ -3044,7 +3032,7 @@
                     <textarea name="buttontext">
                         <area>10,5,370,30</area>
                         <align>allcenter</align>
-                        <font>basesmallblack</font>
+                        <font>basesmall</font>
                         <value>Done</value>
                     </textarea>
                 </state>
@@ -3052,12 +3040,6 @@
                     <shape name="background" from="base_button_background_selected">
                         <area>0,0,390,40</area>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>10,5,370,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>Done</value>
-                    </textarea>
                 </state>
             </statetype>
         </button>
@@ -3072,7 +3054,7 @@
                     <textarea name="buttontext">
                         <area>10,5,370,30</area>
                         <align>allcenter</align>
-                        <font>basesmallblack</font>
+                        <font>basesmall</font>
                         <value>Play</value>
                     </textarea>
                 </state>
@@ -3080,12 +3062,6 @@
                     <shape name="background" from="base_button_background_selected">
                         <area>0,0,390,40</area>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>10,5,370,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>Play</value>
-                    </textarea>
                 </state>
             </statetype>
         </button>

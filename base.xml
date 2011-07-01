@@ -467,8 +467,14 @@
 
     <!-- Base definition of a active button background -->
     <shape name="base_button_background_active" from="base_button_background_selected">
+        <fill color="#333333" alpha="175" />
+        <line color="#454545" alpha="180" width="2" />
+    </shape>
+
+    <!-- Base definition of a active button list background -->
+    <shape name="base_button_list_background_active" from="base_button_background_selected">
         <fill color="#CCCCCC" alpha="150" />
-        <line color="#CCCCCC" alpha="150" width="2" /> 
+        <line color="#CCCCCC" alpha="150" width="2" />
     </shape>
 
     <!-- Base definition of a disabled button background -->
@@ -503,7 +509,7 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <shape name="buttonbackground" from="base_button_background_active">
+                <shape name="buttonbackground" from="base_button_list_background_active">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext">
@@ -716,7 +722,7 @@
                 <textarea name="text">
                     <area>7%,1,93%,100%</area>
                     <align>allcenter</align>
-                    <font>basemediumblack</font>
+                    <font>basemedium</font>
                     <font state="selected">basemedium</font>
                     <font state="disabled">basemediumdarkgrey</font>
                 </textarea>
