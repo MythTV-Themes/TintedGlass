@@ -55,16 +55,29 @@
             <area>1206,48,2,120</area>
         </shape>
 
-        <textarea name="file">
+        <textarea name="cpuload">
             <font>medium</font>
             <area>83,59,180,25</area>
+            <align>right,vcenter</align>
+            <value>CPUs :</value>
+        </textarea>
+
+        <textarea name="load">
+            <font>mediumblue</font>
+            <area>268,59,117,25</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="file">
+            <font>medium</font>
+            <area>390,59,100,25</area>
             <align>right,vcenter</align>
             <value>Filename :</value>
         </textarea>
 
         <textarea name="filename">
             <font>mediumblue</font>
-            <area>268,59,926,25</area>
+            <area>495,59,699,25</area>
             <align>left,vcenter</align>
         </textarea>
 
