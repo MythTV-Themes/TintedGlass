@@ -174,19 +174,19 @@
     </fontdef>
 
     <fontdef name="baseextrasmallpurple" from="baseextrasmall">
-        <color>#a3a3d9</color>
+        <color>#9898d9</color>
     </fontdef>
 
     <fontdef name="basesmallerpurple" from="basesmaller">
-        <color>#a3a3d9</color>
+        <color>#9898d9</color>
     </fontdef>
 
     <fontdef name="basesmallpurple" from="basesmall">
-        <color>#a3a3d9</color>
+        <color>#9898d9</color>
     </fontdef>
 
     <fontdef name="basemediumpurple" from="basemedium">
-        <color>#a3a3d9</color>
+        <color>#9898d9</color>
     </fontdef>
 
     <fontdef name="basesupersmallred" from="basesupersmall">
