@@ -57,185 +57,185 @@
 
         <textarea name="cpuload">
             <font>medium</font>
-            <area>83,59,180,25</area>
+            <area>80,59,162,25</area>
             <align>right,vcenter</align>
             <value>CPUs :</value>
         </textarea>
 
         <textarea name="load">
             <font>mediumblue</font>
-            <area>268,59,117,25</area>
+            <area>247,59,210,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="file">
             <font>medium</font>
-            <area>390,59,100,25</area>
+            <area>450,59,60,25</area>
             <align>right,vcenter</align>
-            <value>Filename :</value>
+            <value>File :</value>
         </textarea>
 
         <textarea name="filename">
             <font>mediumblue</font>
-            <area>495,59,699,25</area>
+            <area>515,59,679,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="storage">
             <font>medium</font>
-            <area>83,84,180,25</area>
+            <area>80,84,162,25</area>
             <align>right,vcenter</align>
             <value>Storage to Buffer :</value>
         </textarea>
 
         <textarea name="storagerate">
             <font>mediumblue</font>
-            <area>268,84,117,25</area>
+            <area>247,84,117,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="decoder">
             <font>medium</font>
-            <area>83,109,180,25</area>
+            <area>80,109,162,25</area>
             <align>right,vcenter</align>
             <value>Buffer to Decoder :</value>
         </textarea>
 
         <textarea name="decoderrate">
             <font>mediumblue</font>
-            <area>268,109,117,25</area>
+            <area>247,109,117,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="buffer">
             <font>medium</font>
-            <area>83,134,180,25</area>
+            <area>80,134,162,25</area>
             <align>right,vcenter</align>
             <value>Available Buffer :</value>
         </textarea>
 
         <textarea name="bufferavail">
             <font>mediumblue</font>
-            <area>268,134,117,25</area>
+            <area>247,134,117,25</area>
             <align>left,vcenter</align>
             <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
         </textarea>
 
         <textarea name="video">
             <font>medium</font>
-            <area>390,84,100,25</area>
+            <area>410,84,100,25</area>
             <align>right,vcenter</align>
             <value>Video :</value>
         </textarea>
 
         <textarea name="videowidth">
             <font>mediumblue</font>
-            <area>495,84,250,25</area>
+            <area>515,84,250,25</area>
             <align>left,vcenter</align>
             <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
         </textarea>
 
         <textarea name="vidcodec">
             <font>medium</font>
-            <area>390,109,100,25</area>
+            <area>410,109,100,25</area>
             <align>right,vcenter</align>
             <value>Codec :</value>
         </textarea>
 
         <textarea name="videocodec">
             <font>mediumblue</font>
-            <area>495,109,150,25</area>
+            <area>515,109,150,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="viddec">
             <font>medium</font>
-            <area>390,134,100,25</area>
+            <area>410,134,100,25</area>
             <align>right,vcenter</align>
             <value>Decoder :</value>
         </textarea>
 
         <textarea name="videodecoder">
             <font>mediumblue</font>
-            <area>495,134,150,25</area>
+            <area>515,134,150,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="sync">
             <font>medium</font>
-            <area>700,84,150,25</area>
+            <area>720,84,150,25</area>
             <align>right,vcenter</align>
             <value>A/V Sync :</value>
         </textarea>
 
         <textarea name="avsync">
             <font>mediumblue</font>
-            <area>855,84,100,25</area>
+            <area>875,84,100,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="fps">
             <font>medium</font>
-            <area>650,109,200,25</area>
+            <area>670,109,200,25</area>
             <align>right,vcenter</align>
             <value>FPS :</value>
         </textarea>
 
         <textarea name="framerate">
             <font>mediumblue</font>
-            <area>855,109,100,25</area>
+            <area>875,109,100,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="frames">
             <font>medium</font>
-            <area>650,134,200,25</area>
+            <area>670,134,200,25</area>
             <align>right,vcenter</align>
             <value>Frames decoded/free :</value>
         </textarea>
 
         <textarea name="videoframes">
             <font>mediumblue</font>
-            <area>855,134,100,25</area>
+            <area>875,134,100,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="audio">
             <font>medium</font>
-            <area>960,84,130,25</area>
+            <area>988,84,130,25</area>
             <align>right,vcenter</align>
             <value>Audio :</value>
         </textarea>
 
         <textarea name="audiocodec">
             <font>mediumblue</font>
-            <area>1095,84,100,25</area>
+            <area>1123,84,77,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="channels">
             <font>medium</font>
-            <area>960,109,130,25</area>
+            <area>988,109,130,25</area>
             <align>right,vcenter</align>
             <value>Channels :</value>
         </textarea>
 
         <textarea name="audiochannels">
             <font>mediumblue</font>
-            <area>1095,109,100,25</area>
+            <area>1123,109,77,25</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="audiorate">
             <font>medium</font>
-            <area>960,134,130,25</area>
+            <area>988,134,130,25</area>
             <align>right,vcenter</align>
             <value>Sample rate :</value>
         </textarea>
 
         <textarea name="samplerate">
             <font>mediumblue</font>
-            <area>1095,134,100,25</area>
+            <area>1123,134,77,25</area>
             <align>left,vcenter</align>
         </textarea>
 
