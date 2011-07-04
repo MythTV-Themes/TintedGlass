@@ -865,7 +865,7 @@
         <layout>horizontal</layout>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,98%,100%</area>
+                <area>0,0,100%,100%</area>
                 <shape name="buttonbackground">
                     <area>0,0,100%,100%</area>
                     <type>roundbox</type>
