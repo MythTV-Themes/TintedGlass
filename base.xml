@@ -1888,7 +1888,7 @@
             <area>323,40,634,35</area>
             <font>basesmalleryellow</font>
             <align>allcenter</align>
-            <value>Movie Selector</value>
+            <value>Metadata Results</value>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
@@ -1970,6 +1970,94 @@
             </statetype>
             <statetype name="downscrollarrow">
                 <position>610,594</position>
+            </statetype>
+        </buttonlist>
+    </window>
+
+    <window name="MythArtworkResults">
+        <area>-1,-1,1280,720</area>
+
+        <shape name="artwork-backdrop" from="base_popup_backdrop">
+            <area>332,36,616,649</area>
+        </shape>
+
+        <shape name="artwork-top-line" from="base_line">
+            <area>334,38,612,2</area>
+        </shape>
+
+        <shape name="artwork-bottom-line" from="base_line">
+            <area>334,681,612,2</area>
+        </shape>
+
+        <shape name="artwork-left-line" from="base_vertical_line">
+            <area>334,40,2,641</area>
+        </shape>
+
+        <shape name="artwork-right-line" from="base_vertical_line">
+            <area>944,40,2,641</area>
+        </shape>
+
+        <shape name="artwork-seperator-first-line" from="base_line">
+            <area>350,81,580,2</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>342,40,596,41</area>
+            <value>Artwork Results</value>
+            <font>basesmalleryellow</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="results" from="base_list_large_selector">
+            <area>342,87,596,600</area>
+            <layout>vertical</layout>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,596,100</area>
+                    <shape name="bottom_line" from="base_list_line">
+                        <area>2%,98%,98%,1</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>8,5,156,88</area>
+                        <alpha>200</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>174,0,414,56</area>
+                        <align>left,vcenter</align>
+                        <font>basemediumlarger</font>
+                    </textarea>
+                    <textarea name="url">
+                        <area>174,64,414,20</area>
+                        <align>left,vcenter</align>
+                        <font>baseextrasmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,596,100</area>
+                    <imagetype name="buttonimage">
+                        <area>8,5,156,88</area>
+                        <alpha>255</alpha>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>174,0,414,56</area>
+                        <align>left,vcenter</align>
+                        <font>basemediumlarger</font>
+                    </textarea>
+                    <textarea name="url">
+                        <area>174,64,414,20</area>
+                        <align>left,vcenter</align>
+                        <font>baseextrasmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>586,-5</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>586,588</position>
             </statetype>
         </buttonlist>
     </window>
