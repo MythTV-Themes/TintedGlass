@@ -759,49 +759,6 @@
         </statetype>
     </button>
 
-    <!-- Base definition of a wide button list style -->
-    <button name="base_button_list_style">
-        <position>0,0</position>
-        <statetype name="buttonstate">
-            <area>0,0,526,40</area>
-            <state name="active">
-                <area>0,0,100%,100%</area>
-                <shape name="background" from="base_select_bar_active">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="text">
-                    <area>6%,0,94%,100%</area>
-                    <align>vcenter</align>
-                    <font>basesmall</font>
-                    <font state="selected">basesmall</font>
-                    <font state="disabled">basesmalldarkgrey</font>
-                </textarea>
-            </state>
-            <state name="selected">
-                <area>0,0,100%,100%</area>
-                <shape name="background" from="base_select_bar_selectedactive_small">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="text">
-                    <area>6%,0,94%,100%</area>
-                    <align>vcenter</align>
-                    <font>basesmall</font>
-                    <font state="selected">basesmall</font>
-                    <font state="disabled">basesmalldarkgrey</font>
-                </textarea>
-            </state>
-            <state name="disabled" from="active" />
-            <state name="pushed" from="active" />
-        </statetype>
-    </button>
-
-    <!-- Base definition of a wider button list style-->
-    <button name="base_wide_button_list_style" from="base_button_list_style">
-        <statetype name="buttonstate">
-            <area>0,0,666,40</area>
-        </statetype>
-    </button>
-
     <!-- Base definition of a search button -->
     <button name="basesearchbutton">
         <area>0,0,32,32</area>
@@ -924,60 +881,6 @@
         <area>0,0,580,40</area>
     </spinbox>
 
-    <!-- Base definition of a spinbox list style -->
-    <spinbox name="base_spinbox_list_style">
-        <area>0,0,666,40</area>
-        <layout>horizontal</layout>
-        <wrapstyle>items</wrapstyle>
-        <statetype name="buttonitem">
-            <state name="active">
-                <area>0,0,100%,40</area>
-                <shape name="buttonbackground" from="base_select_bar_active">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="buttontext">
-                    <area>6%,0,94%,40</area>
-                    <font>basesmall</font>
-                    <cutdown>yes</cutdown>
-                    <align>left,vcenter</align>
-                </textarea>
-                <imagetype name="leftarrow">
-                    <position>10,10</position>
-                    <filename>images/lists_left_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-                <imagetype name="rightarrow">
-                    <position>646,10</position>
-                    <filename>images/lists_right_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state name="selectedactive">
-                <area>0,0,100%,40</area>
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                    <area>0,0,100%,40</area>
-                </shape>
-                <textarea name="buttontext">
-                    <area>6%,0,94%,40</area>
-                    <font>basesmall</font>
-                    <cutdown>yes</cutdown>
-                    <align>left,vcenter</align>
-                </textarea>
-                <imagetype name="leftarrow">
-                    <position>10,10</position>
-                    <filename>images/lists_left_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-                <imagetype name="rightarrow">
-                    <position>646,10</position>
-                    <filename>images/lists_right_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state name="selectedinactive" from="active" />
-        </statetype>
-    </spinbox>
-
     <!-- Base definition of a list in 'selector' configuration -->
     <buttonlist name="base_selector">
         <layout>horizontal</layout>
@@ -1032,74 +935,6 @@
                     <filename>images/lb-ltarrow-sel.png</filename>
                 </imagetype>
             </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- Base definition of a selector in list style -->
-    <buttonlist name="base_selector_list_style">
-        <area>0,0,526,40</area>
-        <layout>horizontal</layout>
-        <spacing>3</spacing>
-        <wrapstyle>items</wrapstyle>
-        <buttonarea>0,0,100%,100%</buttonarea>
-        <statetype name="buttonitem">
-            <area>0,0,100%,100%</area>
-            <state name="active">
-                <area>0,0,100%,100%</area>
-                <shape name="buttonbackground" from="base_select_bar_active">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="buttontext" from="base_text_font_state_small">
-                    <area>6%,0,94%,100%</area>
-                </textarea>
-                <imagetype name="leftarrow">
-                    <position>10,10</position>
-                    <filename>images/lists_left_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-                <imagetype name="rightarrow">
-                    <position>506,10</position>
-                    <filename>images/lists_right_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state name="selectedactive">
-                <area>0,0,100%,100%</area>
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="buttontext" from="base_text_font_state_small">
-                    <area>6%,0,94%,100%</area>
-                </textarea>
-                <imagetype name="leftarrow">
-                    <position>10,10</position>
-                    <filename>images/lists_left_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-                <imagetype name="rightarrow">
-                    <position>506,10</position>
-                    <filename>images/lists_right_arrow.png</filename>
-                    <alpha>200</alpha>
-                </imagetype>
-            </state>
-            <state name="selectedinactive" from="active" />
-        </statetype>
-    </buttonlist>
-
-    <buttonlist name="base_wide_selector_list_style" from="base_selector_list_style">
-        <area>0,0,666,40</area>
-        <statetype name="buttonitem">
-            <state name="active">
-                <imagetype name="rightarrow">
-                    <position>646,10</position>
-                </imagetype>
-            </state>
-            <state name="selectedactive">
-                <imagetype name="rightarrow">
-                    <position>646,10</position>
-                </imagetype>
-            </state>
-            <state name="selectedinactive" from="active" />
         </statetype>
     </buttonlist>
 
