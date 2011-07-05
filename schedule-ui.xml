@@ -2949,6 +2949,10 @@
             <area>734,206,506,2</area>
         </shape>
 
+        <shape name="schedule-editor-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
+        </shape>
+
         <buttonlist name="rules" from="base_selector">
             <area>90,68,546,40</area>
             <statetype name="buttonitem">
@@ -3016,39 +3020,39 @@
 
         <textarea name="title" from="basetextarea">
             <area>735,40,504,40</area>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>735,82,504,40</area>
-            <font>basesmall</font>
+            <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="channel" from="basetextarea">
             <area>735,124,504,40</area>
-            <font>basesmallblue</font>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>735,166,252,40</area>
-            <font>basesmallyellow</font>
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>987,166,252,40</area>
-            <font>basesmallyellow</font>
-            <align>right,vcenter</align>
-        </textarea>
-
         <textarea name="description" from="basetextarea">
-            <area>735,215,504,460</area>
+            <area>735,258,504,412</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
@@ -3117,6 +3121,10 @@
 
         <shape name="schedule-options-editor-description-seperator-fourth-line" from="base_line">
             <area>734,206,506,2</area>
+        </shape>
+
+        <shape name="schedule-options-editor-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
         </shape>
 
         <spinbox name="priority" from="base_wide_spinbox">
@@ -3238,39 +3246,39 @@
 
         <textarea name="title" from="basetextarea">
             <area>735,40,504,40</area>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>735,82,504,40</area>
-            <font>basesmall</font>
+            <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="channel" from="basetextarea">
             <area>735,124,504,40</area>
-            <font>basesmallblue</font>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>735,166,252,40</area>
-            <font>basesmallyellow</font>
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>987,166,252,40</area>
-            <font>basesmallyellow</font>
-            <align>right,vcenter</align>
-        </textarea>
-
         <textarea name="description" from="basetextarea">
-            <area>735,215,504,460</area>
+            <area>735,258,504,412</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
@@ -3341,6 +3349,10 @@
             <area>734,206,506,2</area>
         </shape>
 
+        <shape name="schedule-filter-editor-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
+        </shape>
+
 	<buttonlist name="filters" from="base_list">
 	    <area>73,85,580,468</area>
             <spacing>45</spacing>
@@ -3391,39 +3403,39 @@
 
         <textarea name="title" from="basetextarea">
             <area>735,40,504,40</area>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>735,82,504,40</area>
-            <font>basesmall</font>
+            <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="channel" from="basetextarea">
             <area>735,124,504,40</area>
-            <font>basesmallblue</font>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>735,166,252,40</area>
-            <font>basesmallyellow</font>
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>987,166,252,40</area>
-            <font>basesmallyellow</font>
-            <align>right,vcenter</align>
-        </textarea>
-
         <textarea name="description" from="basetextarea">
-            <area>735,215,504,460</area>
+            <area>735,258,504,412</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
@@ -3492,6 +3504,10 @@
 
         <shape name="storage-options-editor-description-seperator-fourth-line" from="base_line">
             <area>734,206,506,2</area>
+        </shape>
+
+        <shape name="storage-options-editor-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
         </shape>
 
         <buttonlist name="recprofile" from="base_selector">
@@ -3642,39 +3658,39 @@
 
         <textarea name="title" from="basetextarea">
             <area>735,40,504,40</area>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>735,82,504,40</area>
-            <font>basesmall</font>
+            <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="channel" from="basetextarea">
             <area>735,124,504,40</area>
-            <font>basesmallblue</font>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>735,166,252,40</area>
-            <font>basesmallyellow</font>
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>987,166,252,40</area>
-            <font>basesmallyellow</font>
-            <align>right,vcenter</align>
-        </textarea>
-
         <textarea name="description" from="basetextarea">
-            <area>735,215,504,460</area>
+            <area>735,258,504,412</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
@@ -3745,28 +3761,42 @@
             <area>734,206,506,2</area>
         </shape>
 
+        <shape name="postproc-editor-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
+        </shape>
+
+        <checkbox name="metadatalookup" from="basecheckbox">
+            <position>161,71</position>
+        </checkbox>
+
+        <textarea name="metadatalookuplabel" from="basetextarea">
+            <area>214,68,458,40</area>
+            <align>left,vcenter</align>
+            <value>Automatically Look Up Metadata</value>
+        </textarea>
+
         <checkbox name="autocommflag" from="basecheckbox">
-            <position>161,76</position>
+            <position>161,139</position>
         </checkbox>
 
         <textarea name="autocommflaglabel" from="basetextarea">
-            <area>74,74,628,40</area>
-            <align>allcenter</align>
+            <area>214,136,458,40</area>
+            <align>left,vcenter</align>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
         <checkbox name="autotranscode" from="basecheckbox">
-            <position>200,152</position>
+            <position>161,207</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
-            <area>74,150,628,40</area>
-            <align>allcenter</align>
+            <area>214,204,458,40</area>
+            <align>left,vcenter</align>
             <value>Transcode new recordings</value>
         </textarea>
 
         <buttonlist name="transcodeprofile" from="base_selector">
-            <area>73,226,580,40</area>
+            <area>73,272,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3791,85 +3821,237 @@
         </buttonlist>
 
         <checkbox name="userjob1" from="basecheckbox">
-            <position>252,304</position>
+            <position>252,343</position>
         </checkbox>
 
         <textarea name="userjob1label" from="basetextarea">
-            <area>74,302,628,40</area>
+            <area>74,340,628,40</area>
             <align>allcenter</align>
             <value>Run User Job #1</value>
         </textarea>
 
         <checkbox name="userjob2" from="basecheckbox">
-            <position>252,380</position>
+            <position>252,411</position>
         </checkbox>
 
         <textarea name="userjob2label" from="basetextarea">
-            <area>74,378,628,40</area>
+            <area>74,408,628,40</area>
             <align>allcenter</align>
             <value>Run User job #2</value>
         </textarea>
 
         <checkbox name="userjob3" from="basecheckbox">
-            <position>252,456</position>
+            <position>252,479</position>
         </checkbox>
 
         <textarea name="userjob3label" from="basetextarea">
-            <area>74,454,628,40</area>
+            <area>74,476,628,40</area>
             <align>allcenter</align>
             <value>Run User Job #3</value>
         </textarea>
 
         <checkbox name="userjob4" from="basecheckbox">
-            <position>252,532</position>
+            <position>252,547</position>
         </checkbox>
 
         <textarea name="userjob4label" from="basetextarea">
-            <area>74,530,628,40</area>
+            <area>74,544,628,40</area>
             <align>allcenter</align>
             <value>Run User Job #4</value>
         </textarea>
 
         <button name="back" from="base_medium_button">
-            <position>188,606</position>
+            <position>188,612</position>
             <value>Back</value>
         </button>
 
         <textarea name="title" from="basetextarea">
             <area>735,40,504,40</area>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
             <area>735,82,504,40</area>
-            <font>basesmall</font>
+            <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="channel" from="basetextarea">
             <area>735,124,504,40</area>
-            <font>basesmallblue</font>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>735,166,252,40</area>
-            <font>basesmallyellow</font>
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
             <cutdown>no</cutdown>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>987,166,252,40</area>
-            <font>basesmallyellow</font>
+        <textarea name="description" from="basetextarea">
+            <area>735,258,504,412</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
+        </textarea>
+
+    </window>
+
+    <window name="metadataoptions">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Metadata Options</value>
+        </textarea>
+
+        <shape name="metadata-options-backdrop" from="base_backdrop">
+            <area>20,36,686,648</area>
+        </shape>
+
+        <shape name="metadata-options-top-line" from="base_line">
+            <area>22,38,682,2</area>
+        </shape>
+
+        <shape name="metadata-options-bottom-line" from="base_line">
+            <area>22,680,682,2</area>
+        </shape>
+
+        <shape name="metadata-options-left-line" from="base_vertical_line">
+            <area>22,40,2,640</area>
+        </shape>
+
+        <shape name="metadata-options-right-line" from="base_vertical_line">
+            <area>702,40,2,640</area>
+        </shape>
+
+        <shape name="metadata-options-description-backdrop" from="base_backdrop">
+            <area>712,36,548,648</area>
+        </shape>
+
+        <shape name="metadata-options-description-top-line" from="base_line">
+            <area>714,38,544,2</area>
+        </shape>
+
+        <shape name="metadata-options-descripttion-bottom-line" from="base_line">
+            <area>714,680,544,2</area>
+        </shape>
+
+        <shape name="metadata-options-description-left-line" from="base_vertical_line">
+            <area>714,40,2,640</area>
+        </shape>
+
+        <shape name="metadata-options-description-right-line" from="base_vertical_line">
+            <area>1256,40,2,640</area>
+        </shape>
+
+        <shape name="metadata-options-description-seperator-first-line" from="base_line">
+            <area>734,80,506,2</area>
+        </shape>
+
+        <shape name="metadata-options-description-seperator-second-line" from="base_line">
+            <area>734,122,506,2</area>
+        </shape>
+
+        <shape name="metadata-options-description-seperator-third-line" from="base_line">
+            <area>734,164,506,2</area>
+        </shape>
+
+        <shape name="metadata-options-description-seperator-fourth-line" from="base_line">
+            <area>734,206,506,2</area>
+        </shape>
+
+        <shape name="metadata-options-description-seperator-fifth-line" from="base_line">
+            <area>734,248,506,2</area>
+        </shape>
+
+        <textarea name="inet" from="basetextarea">
+            <area>112,109,180,40</area>
+            <font>basesmall</font>
             <align>right,vcenter</align>
+            <value>TMDB/TVDB #:</value>
+        </textarea>
+
+        <textedit name="inetref_edit" from="base_textedit">
+            <area>312,114,287,32</area>
+        </textedit>
+
+        <textarea name="seas" from="basetextarea">
+            <area>24,219,319,40</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Season:</value>
+        </textarea>
+
+        <spinbox name="season_spinbox" from="base_spinbox">
+            <position>359,221</position>
+        </spinbox>
+
+        <textarea name="ep" from="basetextarea">
+            <area>24,334,319,40</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Episode:</value>
+        </textarea>
+
+        <spinbox name="episode_spinbox" from="base_spinbox">
+            <position>359,336</position>
+        </spinbox>
+
+        <button name="query_button" from="base_medium_button">
+            <position>188,451</position>
+            <value>Perform Query</value>
+        </button>
+
+        <button name="back" from="base_medium_button">
+            <position>188,566</position>
+            <value>Back</value>
+        </button>
+
+        <textarea name="title" from="basetextarea">
+            <area>735,40,504,40</area>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="subtitle" from="basetextarea">
+            <area>735,82,504,40</area>
+            <font>basesmaller</font>
+            <align>left,vcenter</align>
+            <value>%|"SUBTITLE|"%</value>
+        </textarea>
+
+        <textarea name="channel" from="basetextarea">
+            <area>735,124,504,40</area>
+            <font>basesmallyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="timedate" from="basetextarea">
+            <area>735,166,504,40</area>
+            <font>basesmaller</font>
+            <cutdown>no</cutdown>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="rectypestatus" from="basetextarea">
+            <area>735,208,504,40</area>
+            <font>basesmallerblue</font>
+            <cutdown>no</cutdown>
+            <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>735,215,504,460</area>
+            <area>735,258,504,412</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
