@@ -405,6 +405,28 @@
                                 <value>COMFLAGGED</value>
                             </textarea>
                         </state>
+                        <state name="running">
+                           <area>0,0,100%,100%</area>
+                            <textarea name="commflagging" from="basetextarea">
+                                <area>407,26,92,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>left,vcenter</align>
+                                <value>COMFLAGGING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="queued">
+                           <area>0,0,100%,100%</area>
+                            <textarea name="commflagging" from="basetextarea">
+                                <area>407,26,92,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>left,vcenter</align>
+                                <value>CFLAGQUEUED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
                     </statetype>
                     <statetype name="bookmark">
                         <state name="no">
@@ -503,17 +525,6 @@
                         </state>
                     </statetype>
                     <statetype name="jobstate">
-                        <state name="commflagging">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="commflagging" from="basetextarea">
-                                <area>804,26,92,20</area>
-                                <font>basesupersmallred</font>
-                                <cutdown>no</cutdown>
-                                <align>left,vcenter</align>
-                                <value>COMFLAGGING</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
                         <state name="recording">
                             <area>0,0,100%,100%</area>
                             <textarea name="recording" from="basetextarea">
@@ -1029,6 +1040,28 @@
                                 <value>COMFLAGGED</value>
                             </textarea>
                         </state>
+                        <state name="running">
+                           <area>0,0,100%,100%</area>
+                            <textarea name="commflagging" from="basetextarea">
+                                <area>407,26,92,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>left,vcenter</align>
+                                <value>COMFLAGGING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="queued">
+                           <area>0,0,100%,100%</area>
+                            <textarea name="commflagging" from="basetextarea">
+                                <area>407,26,92,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>left,vcenter</align>
+                                <value>CFLAGQUEUED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
                     </statetype>
                     <statetype name="bookmark">
                         <state name="no">
@@ -1127,17 +1160,6 @@
                         </state>
                     </statetype>
                     <statetype name="jobstate">
-                        <state name="commflagging">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="commflagging" from="basetextarea">
-                                <area>804,26,92,20</area>
-                                <font>basesupersmallred</font>
-                                <cutdown>no</cutdown>
-                                <align>left,vcenter</align>
-                                <value>COMFLAGGING</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
                         <state name="recording">
                             <area>0,0,100%,100%</area>
                             <textarea name="recording" from="basetextarea">
