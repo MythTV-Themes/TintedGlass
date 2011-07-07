@@ -569,7 +569,7 @@
                         <area>580,46,50,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
-                        <align>allcenter</align>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
                         <area>630,46,325,20</area>
@@ -1206,8 +1206,14 @@
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
+                    <textarea name="00x00" from="base_text_font_state_extrasmall">
+                        <area>580,46,50,20</area>
+                        <font state="normal">baseextrasmall</font>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>595,46,360,20</area>
+                        <area>630,46,325,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
                     </textarea>
