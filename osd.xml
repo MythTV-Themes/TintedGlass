@@ -860,7 +860,7 @@
             <font>supersmallblue</font>
             <area>263,645,925,27</area>
             <align>allcenter</align>
-            <template>Season/Episode: %00x00%               ProgramID: %PROGRAMID%               SeriesID: %SERIESID%</template>
+            <template>Season/Episode: %s00e00%               ProgramID: %PROGRAMID%               SeriesID: %SERIESID%</template>
         </textarea>
 
     </window>
