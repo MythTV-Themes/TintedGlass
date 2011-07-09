@@ -3975,45 +3975,75 @@
         </shape>
 
         <textarea name="inet" from="basetextarea">
-            <area>112,109,180,40</area>
+            <area>112,62,180,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>TMDB/TVDB #:</value>
         </textarea>
 
         <textedit name="inetref_edit" from="base_textedit">
-            <area>312,114,287,32</area>
+            <area>312,65,287,32</area>
         </textedit>
 
         <textarea name="seas" from="basetextarea">
-            <area>24,219,319,40</area>
+            <area>24,119,160,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season_spinbox" from="base_spinbox">
-            <position>359,221</position>
+            <position>204,119</position>
         </spinbox>
 
         <textarea name="ep" from="basetextarea">
-            <area>24,334,319,40</area>
+            <area>358,119,160,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode_spinbox" from="base_spinbox">
-            <position>359,336</position>
+            <position>538,119</position>
         </spinbox>
 
         <button name="query_button" from="base_medium_button">
-            <position>188,451</position>
+            <position>188,181</position>
             <value>Perform Query</value>
         </button>
 
+        <button name="online_coverart_button" from="base_medium_button">
+            <position>188,258</position>
+            <value>Find Coverart Online</value>
+        </button>
+
+        <button name="local_coverart_button" from="base_medium_button">
+            <position>188,314</position>
+            <value>Select Local Coverart</value>
+        </button>
+
+        <button name="online_fanart_button" from="base_medium_button">
+            <position>188,370</position>
+            <value>Find Fanart Online</value>
+        </button>
+
+        <button name="local_fanart_button" from="base_medium_button">
+            <position>188,426</position>
+            <value>Select Local Fanart</value>
+        </button>
+
+        <button name="online_banner_button" from="base_medium_button">
+            <position>188,482</position>
+            <value>Find Banners Online</value>
+        </button>
+
+        <button name="local_banner_button" from="base_medium_button">
+            <position>188,538</position>
+            <value>Select Local Banner</value>
+        </button>
+
         <button name="back" from="base_medium_button">
-            <position>188,566</position>
+            <position>188,615</position>
             <value>Back</value>
         </button>
 
