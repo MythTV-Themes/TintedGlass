@@ -1711,73 +1711,106 @@
         <area>-1,-1,1280,720</area>
 
         <shape name="edit-metadata-backdrop" from="base_popup_backdrop">
-            <area>330,165,620,390</area>
+            <area>330,60,620,600</area>
         </shape>
 
         <shape name="edit-metatdata-top-line" from="base_line">
-            <area>332,167,616,2</area>
+            <area>332,62,616,2</area>
         </shape>
 
         <shape name="edit-metadata-bottom-line" from="base_line">
-            <area>332,551,616,2</area>
+            <area>332,656,616,2</area>
         </shape>
 
         <shape name="edit-metadata-left-line" from="base_vertical_line">
-            <area>332,169,2,382</area>
+            <area>332,64,2,592</area>
         </shape>
 
         <shape name="edit-metadata-right-line" from="base_vertical_line">
-            <area>946,169,2,382</area>
+            <area>946,64,2,592</area>
         </shape>
 
         <shape name="edit-metadata-seperator-top-line" from="base_line">
-            <area>353,216,574,2</area>
+            <area>353,112,574,2</area>
         </shape>
 
         <shape name="edit-metadata-seperator-bottom-line" from="base_line">
-            <area>353,495,574,2</area>
+            <area>353,602,574,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>340,169,600,47</area>
+            <area>340,64,600,48</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <value>Edit Recording Metadata</value>
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>364,233,300,30</area>
+            <area>354,120,300,30</area>
             <font>basmesmall</font>
             <align>left,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <area>350,263,580,32</area>
+            <area>350,154,580,32</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
-            <area>364,322,300,30</area>
+            <area>354,192,300,30</area>
             <align>left,vcenter</align>
             <value>Subtitle:</value>
         </textarea>
 
         <textedit name="subtitle" from="base_wide_textedit">
-            <area>350,352,580,32</area>
+            <area>350,226,580,32</area>
         </textedit>
 
         <textarea name="descriptionlabel" from="basetextarea">
-            <area>364,408,300,30</area>
+            <area>354,264,300,30</area>
             <align>left,vcenter</align>
             <value>Description:</value>
         </textarea>
 
         <textedit name="description" from="base_wide_textedit">
-            <area>350,438,580,32</area>
+            <area>350,298,580,32</area>
         </textedit>
 
+        <textarea name="inetreflabel" from="basetextarea">
+            <area>444,366,86,40</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Inetref:</value>
+        </textarea>
+
+        <textedit name="inetref" from="base_textedit">
+            <area>549,370,287,32</area>
+        </textedit>
+
+        <textarea name="seaslabel" from="basetextarea">
+            <area>334,442,296,40</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Season:</value>
+        </textarea>
+
+        <spinbox name="season" from="base_spinbox">
+            <position>650,442</position>
+        </spinbox>
+
+        <textarea name="eplabel" from="basetextarea">
+            <area>334,522,296,40</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Episode:</value>
+        </textarea>
+
+        <spinbox name="episode" from="base_spinbox">
+            <position>650,522</position>
+        </spinbox>
+
         <button name="ok" from="base_medium_button">
-            <position>465,504</position>
+            <position>465,610</position>
             <value>OK</value>
         </button>
     </window>
