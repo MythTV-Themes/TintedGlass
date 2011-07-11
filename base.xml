@@ -1672,24 +1672,39 @@
     </window>
 
     <window name="videowindow">
+        <area>-1,-1,1280,720</area>
 
-        <shape name="background">
-            <area>0,0,1280,720</area>
-            <type>box</type>
-            <fill color="#000000" alpha="255" />
+        <shape name="videowindow-backdrop" from="base_popup_backdrop">
+            <area>350,277,587,170</area>
         </shape>
 
-        <shape name="videowindow-backdrop" from="base_backdrop">
-            <area>290,44,700,60</area>
-            <cornerradius>90</cornerradius>
+        <shape name="videowindow-top-line" from="base_line">
+            <area>352,279,583,2</area>
         </shape>
 
-        <textarea name="progresstext" from="basetextarea">
-            <area>310,44,660,60</area>
-            <font>basemediumlarger</font>
-            <value>Playback starting ...</value>
-            <align>allcenter</align>
+        <shape name="videowindow-bottom-line" from="base_line">
+            <area>352,443,583,2</area>
+        </shape>
+
+        <shape name="videowindow-left-line" from="base_vertical_line">
+            <area>352,281,2,162</area>
+        </shape>
+
+        <shape name="videowindow-right-line" from="base_vertical_line">
+            <area>933,281,2,162</area>
+        </shape>
+
+        <textarea name="message" from="basetextarea">
+            <area>364,281,552,92</area>
+            <font>basesmalldarkyellow</font>
+            <align>hcenter,bottom</align>
+            <value>Please Wait...</value>
         </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <position>375,403</position>
+        </progressbar>
+
     </window>
 
     <window name="MythMetadataResults">
