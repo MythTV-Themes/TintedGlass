@@ -3910,6 +3910,17 @@
     <window name="metadataoptions">
         <area>0,0,1280,720</area>
 
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background.png</filename>
+        </imagetype>
+
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+        </imagetype>
+
+        <group name="heading-backdrop" from="base_heading_group" />
+
         <textarea name="heading" from="base_heading">
             <value>Metadata Options</value>
         </textarea>
@@ -3934,44 +3945,44 @@
             <area>702,40,2,640</area>
         </shape>
 
-        <shape name="metadata-options-description-backdrop" from="base_backdrop">
+        <shape name="metadata-options-artwork-backdrop" from="base_backdrop">
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="metadata-options-description-top-line" from="base_line">
+        <shape name="metadata-options-artwork-top-line" from="base_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="metadata-options-descripttion-bottom-line" from="base_line">
+        <shape name="metadata-options-artwork-bottom-line" from="base_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="metadata-options-description-left-line" from="base_vertical_line">
+        <shape name="metadata-options-artwork-left-line" from="base_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="metadata-options-description-right-line" from="base_vertical_line">
+        <shape name="metadata-options-artwork-right-line" from="base_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
-        <shape name="metadata-options-description-seperator-first-line" from="base_line">
+        <shape name="metadata-options-artwork-seperator-first-line" from="base_line">
             <area>734,80,506,2</area>
         </shape>
 
-        <shape name="metadata-options-description-seperator-second-line" from="base_line">
-            <area>734,122,506,2</area>
+        <shape name="metadata-options-artwork-seperator-second-line" from="base_line">
+            <area>716,122,540,2</area>
         </shape>
 
-        <shape name="metadata-options-description-seperator-third-line" from="base_line">
-            <area>734,164,506,2</area>
+        <shape name="metadata-options-coverart-left-line" from="base_vertical_line">
+            <area>833,124,2,451</area>
         </shape>
 
-        <shape name="metadata-options-description-seperator-fourth-line" from="base_line">
-            <area>734,206,506,2</area>
+        <shape name="metadata-options-coverart-right-line" from="base_vertical_line">
+            <area>1137,124,2,451</area>
         </shape>
 
-        <shape name="metadata-options-description-seperator-fifth-line" from="base_line">
-            <area>734,248,506,2</area>
+        <shape name="metadata-options-banner-top-line" from="base_line">
+            <area>716,575,540,2</area>
         </shape>
 
         <textarea name="inet" from="basetextarea">
@@ -4060,32 +4071,40 @@
             <value>%|"SUBTITLE|"%</value>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
-            <area>735,124,504,40</area>
-            <font>basesmallyellow</font>
-            <align>left,vcenter</align>
-        </textarea>
+        <shape name="coverart-backdrop" from="base_backdrop">
+            <area>835,124,302,451</area>
+        </shape>
 
-        <textarea name="timedate" from="basetextarea">
-            <area>735,166,504,40</area>
-            <font>basesmaller</font>
-            <cutdown>no</cutdown>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="rectypestatus" from="basetextarea">
-            <area>735,208,504,40</area>
-            <font>basesmallerblue</font>
-            <cutdown>no</cutdown>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>735,258,504,412</area>
+        <textarea name="coverart_text" from="basetextarea">
+            <area>971,124,20,451</area>
+            <font>baselargered</font>
             <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
+            <align>allcenter</align>
+            <value>N o\n\nC o v e r\n\nA r t !</value>
         </textarea>
+
+        <imagetype name="coverart">
+            <area>837,126,298,447</area>
+        </imagetype>
+
+        <shape name="banner-backdrop" from="base_backdrop">
+            <area>716,577,540,103</area>
+        </shape>
+
+        <textarea name="banner_text" from="basetextarea">
+            <area>718,579,536,99</area>
+            <font>baselargered</font>
+            <align>allcenter</align>
+            <value>No Banner!</value>
+        </textarea>
+
+        <imagetype name="banner">
+            <area>718,579,536,99</area>
+        </imagetype>
+
+        <group name="clock-backdrop" from="base_clock_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
 
