@@ -168,16 +168,7 @@
     <window name="manager">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Manage View</value>
@@ -594,25 +585,14 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
     
     <window name="browser">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-        
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Browse View</value>
@@ -1028,25 +1008,14 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
         
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
     
     <window name="gallery">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-        
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video Gallery View</value>
@@ -1451,25 +1420,14 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
         
     </window>
     
     <window name="tree">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Video List View</value>
@@ -1907,9 +1865,7 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
     
@@ -2052,16 +2008,7 @@
     <window name="edit_metadata">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Metadata Editor</value>
@@ -2447,9 +2394,7 @@
             <value>Done</value>
         </button>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
     
@@ -2867,11 +2812,6 @@
     <window name="playersettings">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
         <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
@@ -3026,19 +2966,10 @@
             <value>Cancel</value>
         </button>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
-
     </window>
 
     <window name="metadatasettings">
         <area>0,0,1280,720</area>
-
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
 
         <group name="heading-backdrop" from="base_heading_group" />
 
@@ -3152,10 +3083,6 @@
             <position>657,622</position>
             <value>Cancel</value>
         </button>
-
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
 
     </window>
     

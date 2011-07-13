@@ -929,9 +929,7 @@
             <value>Done</value>
         </button>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
 
@@ -1134,9 +1132,7 @@
             <value>Done</value>
         </button>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
 

@@ -365,6 +365,19 @@
         </shape>
     </group>
 
+    <!-- Base definition of a fanart group -->
+    <group name="base_fanart_group">
+        <area>0,0,1280,720</area>
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background.png</filename>
+        </imagetype>
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+        </imagetype>
+        <group name="heading-backdrop" from="base_heading_group" />
+    </group>
+
     <!-- Base definition of a clock  group -->
     <group name="base_clock_group">
         <shape name="base_clock_backdrop">
@@ -381,16 +394,14 @@
         <shape name="clock-right-line" from="base_vertical_line">
             <area>777,698,2,22</area>
         </shape>
+        <clock name="base_clock">
+            <area>529,698,219,22</area>
+            <font>baseextrasmall</font>
+            <template>%DATE%, %TIME%</template>
+            <align>allcenter</align>
+            <alpha>255</alpha>
+        </clock>
     </group>
-
-    <!-- Base definition of a clock -->
-    <clock name="base_clock">
-        <area>529,698,219,22</area>
-        <font>baseextrasmall</font>
-        <template>%DATE%, %TIME%</template>
-        <align>allcenter</align>
-        <alpha>255</alpha>
-    </clock>
 
     <!-- Base definition of a base backdrop -->
     <shape name="base_backdrop">
@@ -1067,9 +1078,8 @@
 
         <group name="heading-backdrop" from="base_heading_group" />
 
-        <group name="clock-backdrop" from="base_clock_group" />
+        <group name="clock-group" from="base_clock_group" />
 
-        <clock name="clock" from="base_clock" />
     </window>
 
     <!-- Popup Dialogue Box -->
@@ -1453,16 +1463,7 @@
     <window name="MythFileBrowser">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>FileBrowser</value>
@@ -1666,9 +1667,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
+        <group name="clock-group" from="base_clock_group" />
 
-        <clock name="clock" from="base_clock" />
     </window>
 
     <window name="videowindow">

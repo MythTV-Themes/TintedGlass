@@ -5,16 +5,7 @@
     <window name="watchrecordings">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Watch Recordings</value>
@@ -636,9 +627,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
 
@@ -646,16 +635,7 @@
     <window name="deleterecordings">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Delete Recordings</value>
@@ -1277,9 +1257,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
    

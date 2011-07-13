@@ -3910,16 +3910,7 @@
     <window name="metadataoptions">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
+        <group name="fanart-group" from="base_fanart_group" />
 
         <textarea name="heading" from="base_heading">
             <value>Metadata Options</value>
@@ -4102,9 +4093,7 @@
             <area>718,579,536,99</area>
         </imagetype>
 
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
+        <group name="clock-group" from="base_clock_group" />
 
     </window>
 
