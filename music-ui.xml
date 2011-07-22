@@ -737,9 +737,10 @@
         </shape>
 
         <textarea name="notfoundtext" from="basetextarea">
-            <area>450,40,570,510</area>
+            <area>609,40,502,502</area>
+            <font>baselargered</font>
             <align>allcenter</align>
-            <value>No Album Art Found</value>
+            <value>No Album Art Found!</value>
         </textarea>
 
         <buttonlist name="coverartlist" from="base_list_large_selector">
