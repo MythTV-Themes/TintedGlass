@@ -666,23 +666,74 @@
 
     <window name="editalbumart">
 
-        <textarea name="title" from="basetextarea">
-            <area>15,5,800,50</area>
-            <font>baselarge</font>
-            <value>Album Art</value>
+        <group name="heading-backdrop" from="base_heading_group" />
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit Album Art</value>
         </textarea>
 
-        <!-- Labels -->
-
-        <shape name="bgimage1">
-            <area>200,40,210,600</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="60" />
-            <cornerradius>3</cornerradius>
+        <shape name="coverartlist-backdrop" from="base_backdrop">
+            <area>165,36,420,510</area>
         </shape>
 
-        <shape name="bgimage2" from="bgimage1">
-            <area>450,40,570,510</area>
+        <shape name="coverartlist-top-line" from="base_line">
+            <area>167,38,416,2</area>
+        </shape>
+
+        <shape name="coverartlist-bottom-line" from="base_line">
+            <area>167,542,416,2</area>
+        </shape>
+
+        <shape name="coverartlist-left-line" from="base_vertical_line">
+            <area>167,40,2,502</area>
+        </shape>
+
+        <shape name="coverartlist-right-line" from="base_vertical_line">
+            <area>581,40,2,502</area>
+        </shape>
+
+        <shape name="coverart-backdrop" from="base_backdrop">
+            <area>605,36,510,510</area>
+        </shape>
+
+        <shape name="coverart-top-line" from="base_line">
+            <area>607,38,506,2</area>
+        </shape>
+
+        <shape name="coverart-bottom-line" from="base_line">
+            <area>607,542,506,2</area>
+        </shape>
+
+        <shape name="coverart-left-line" from="base_vertical_line">
+            <area>607,40,2,502</area>
+        </shape>
+
+        <shape name="coverart-right-line" from="base_vertical_line">
+            <area>1111,40,2,502</area>
+        </shape>
+
+        <shape name="filename-backdrop" from="base_backdrop">
+            <area>165,556,950,128</area>
+        </shape>
+
+        <shape name="filename-top-line" from="base_line">
+            <area>167,558,946,2</area>
+        </shape>
+
+        <shape name="filename-bottom-line" from="base_line">
+            <area>167,680,946,2</area>
+        </shape>
+
+        <shape name="filename-left-line" from="base_vertical_line">
+            <area>167,560,2,120</area>
+        </shape>
+
+        <shape name="filename-right-line" from="base_vertical_line">
+            <area>1111,560,2,120</area>
+        </shape>
+
+        <shape name="filename-seperator-first-line" from="base_line">
+            <area>187,630,906,2</area>
         </shape>
 
         <textarea name="notfoundtext" from="basetextarea">
@@ -691,133 +742,113 @@
             <value>No Album Art Found</value>
         </textarea>
 
-        <imagetype name="coverartimage">
-            <area>470,60,530,470</area>
-        </imagetype>
-
-        <shape name="bgimage3" from="bgimage1">
-            <area>450,570,570,70</area>
-        </shape>
-
-        <textarea name="label1"  from="basetextarea">
-            <area>470,575,170,30</area>
-            <align>right</align>
-            <value>Filename:</value>
-        </textarea>
-
-        <textarea name="label2" from="basetextarea">
-            <area>470,605,170,30</area>
-            <align>right</align>
-            <value>Type:</value>
-        </textarea>
-
-        <textarea name="imagefilenametext" from="basetextarea">
-            <area>645,575,340,30</area>
-            <value></value>
-        </textarea>
-
-        <textarea name="imagetypetext" from="basetextarea">
-            <area>645,605,340,30</area>
-            <value></value>
-        </textarea>
-
-        <buttonlist name="coverartlist">
-            <area>215,55,180,610</area>
-            <buttonarea>0,0,170,555</buttonarea>
-            <layout>grid</layout>
-            <spacing>5</spacing>
+        <buttonlist name="coverartlist" from="base_list_large_selector">
+            <area>175,47,400,492</area>
             <statetype name="buttonitem">
-                <area>0,0,175,180</area>
                 <state name="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,175,180</area>
-                        <type>roundbox</type>
-                        <cornerradius>3</cornerradius>
-                        <fill style="gradient">
-                            <gradient start="#e8e262" end="#fe9735" alpha="50"/>
-                        </fill>
+                    <area>0,0,400,164</area>
+                    <shape name="buttonbackground" from="base_select_bar_active">
+                        <area>0,0,100%,100%</area>
+                        <cornerradius>12</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>5,5,165,140</area>
+                        <area>15,5,154,154</area>
                         <preserveaspect>no</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>5,150,170,30</area>
+                        <area>179,5,206,154</area>
+                        <multiline>yes</multiline>
                         <align>allcenter</align>
-                        <multiline>no</multiline>
                     </textarea>
                     <statetype name="locationstate">
-                        <area>135,110,30,30</area>
+                        <area>135,125,30,30</area>
                         <state name="file">
                             <imagetype name="locationimage">
                                 <area>0,0,30,30</area>
-                                <filename>mm_folder.png</filename>
+                                <filename>mythmusic/mm_folder.png</filename>
                             </imagetype>
                         </state>
                         <state name="tag" from="file">
                             <imagetype name="locationimage">
-                                <filename>mm_music_tag.png</filename>
+                                <filename>mythmusic/mm_music_tag.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,175,180</area>
-                        <type>roundbox</type>
-                        <cornerradius>3</cornerradius>
-                        <fill style="gradient">
-                            <gradient start="#e8e262" end="#fe9735" alpha="255" />
-                        </fill>
-                    </shape>
+                <state name="selectedactive">
+                    <area>0,0,400,164</area>
+                    <imagetype name="buttonimage">
+                        <area>15,5,154,154</area>
+                        <preserveaspect>no</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>179,5,206,154</area>
+                        <multiline>yes</multiline>
+                        <align>allcenter</align>
+                    </textarea>
+                    <statetype name="locationstate">
+                        <area>135,125,30,30</area>
+                        <state name="file">
+                            <imagetype name="locationimage">
+                                <area>0,0,30,30</area>
+                                <filename>mythmusic/mm_folder.png</filename>
+                            </imagetype>
+                        </state>
+                        <state name="tag" from="file">
+                            <imagetype name="locationimage">
+                                <filename>mythmusic/mm_music_tag.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
                 </state>
-                <state name="selectedinactive" from="active" >
-                    <shape name="buttonbackground">
-                        <area>0,0,175,180</area>
-                        <type>roundbox</type>
-                        <cornerradius>3</cornerradius>
-                        <fill style="gradient">
-                            <gradient start="#e8e262" end="#fe9735" alpha="150" />
-                        </fill>
-                    </shape>
-                </state>
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>110,560</position>
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename>lb-uparrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename>lb-uparrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>390,-7</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>150,560</position>
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename>lb-dnarrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename>lb-dnarrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>390,487</position>
             </statetype>
         </buttonlist>
 
-        <!-- Push buttons -->
-        <button name="metadatabutton" from="basebutton">
-            <position>100,660</position>
+        <imagetype name="coverartimage">
+            <area>611,42,498,498</area>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <textarea name="label1"  from="basetextarea">
+            <area>180,560,110,35</area>
+            <align>right,vcenter</align>
+            <value>Filename:</value>
+        </textarea>
+
+        <textarea name="imagefilenametext" from="basetextarea">
+            <area>300,560,793,35</area>
+            <font>basesmallblue</font>
+            <align>left,vcenter</align>
+            <value></value>
+        </textarea>
+
+        <textarea name="label2" from="basetextarea">
+            <area>180,595,110,35</area>
+            <align>right,vcenter</align>
+            <value>Type:</value>
+        </textarea>
+
+        <textarea name="imagetypetext" from="basetextarea">
+            <area>300,595,793,35</area>
+            <font>basesmallblue</font>
+            <align>left,vcenter</align>
+            <value></value>
+        </textarea>
+
+        <button name="metadatabutton" from="base_medium_button">
+            <position>250,636</position>
             <value>Metadata</value>
         </button>
 
-        <button name="donebutton" from="basebutton">
-            <position>1000,660</position>
+        <button name="donebutton" from="base_medium_button">
+            <position>680,636</position>
             <value>Done</value>
         </button>
 
