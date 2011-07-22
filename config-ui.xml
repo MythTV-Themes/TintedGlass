@@ -364,14 +364,14 @@
         </shape>
 
         <textarea name="moviegrabber_text" from="basetextarea">
-            <area>237,98,298,24</area>
+            <area>237,72,298,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Movie Metadata Source:</value>
         </textarea>
 
         <buttonlist name="moviegrabber" from="base_selector">
-            <area>545,92,482,40</area>
+            <area>545,72,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -396,14 +396,14 @@
         </buttonlist>
 
         <textarea name="tvgrabber_text" from="basetextarea">
-            <area>237,183,298,24</area>
+            <area>237,142,298,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Television Metadata Source:</value>
         </textarea>
 
         <buttonlist name="tvgrabber" from="base_selector">
-            <area>545,177,482,40</area>
+            <area>545,142,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -428,14 +428,14 @@
         </buttonlist>
 
         <textarea name="gamegrabber_text" from="basetextarea">
-            <area>237,268,298,24</area>
+            <area>237,212,298,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Game Metadata Source:</value>
         </textarea>
 
         <buttonlist name="gamegrabber" from="base_selector">
-            <area>545,262,482,40</area>
+            <area>545,212,482,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,482,40</area>
@@ -458,6 +458,16 @@
                 <position>486,21</position>
             </statetype>
         </buttonlist>
+
+        <textarea name="dailyupdates_text" from="basetextarea"> 	
+            <area>237,282,298,40</area>
+            <align>right,vcenter</align>	
+            <value>Perform daily updates:</value>
+        </textarea>
+
+        <checkbox name="dailyupdates" from="basecheckbox">
+            <position>546,286</position>
+        </checkbox>
 
         <textarea name="helptext" from="basetextarea">
             <area>231,372,818,227</area>
