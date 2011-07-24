@@ -801,10 +801,10 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,0,190,34</area>
                         <align>left,vcenter</align>
-                        <template>%STARTDATE%   %STARTTIME%</template>
+                        <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
                         <area>196,0,200,34</area>
@@ -860,10 +860,10 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,32</area>
                         <align>left,vcenter</align>
-                        <template>%STARTDATE%   %STARTTIME%</template>
+                        <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
                         <area>196,1,200,32</area>
@@ -1913,9 +1913,9 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,5,168,24</area>
-                         <template>%STARTDATE%   %STARTTIME%</template>
+                         <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
                         <area>196,5,190,24</area>
@@ -1969,9 +1969,9 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
-                         <template>%STARTDATE%   %STARTTIME%</template>
+                         <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
                         <area>196,1,200,24</area>
@@ -4161,9 +4161,9 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area> 
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,5,190,24</area>
-                         <template>%STARTDATE%   %STARTTIME%</template>
+                         <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
                         <area>216,5,170,24</area>
@@ -4218,9 +4218,9 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="startdate" from="base_text_font_state_small">
+                    <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
-                         <template>%STARTDATE%   %STARTTIME%</template>
+                         <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>216,1,920,24</area>

@@ -160,7 +160,7 @@
                         <area>8,5,759,24</area>
                         <font state="normal">basesmallverylightgrey</font> 
                    </textarea>
-                    <textarea name="startdate" from="titlesubtitle">
+                    <textarea name="shortstartdate" from="titlesubtitle">
                         <area>785,6,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -216,7 +216,7 @@
                         <font state="normal">basesmall</font>
                         <align>vcenter</align>
                     </textarea>
-                    <textarea name="startdate" from="titlesubtitle">
+                    <textarea name="shortstartdate" from="titlesubtitle">
                         <area>785,3,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -790,7 +790,7 @@
                         <area>8,5,759,24</area>
                         <font state="normal">basesmallverylightgrey</font> 
                    </textarea>
-                    <textarea name="startdate" from="titlesubtitle">
+                    <textarea name="shortstartdate" from="titlesubtitle">
                         <area>785,6,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -846,7 +846,7 @@
                         <font state="normal">basesmall</font>
                         <align>vcenter</align>
                     </textarea>
-                    <textarea name="startdate" from="titlesubtitle">
+                    <textarea name="shortstartdate" from="titlesubtitle">
                         <area>785,3,80,24</area>
                         <align>right,vcenter</align>
                     </textarea>
