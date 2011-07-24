@@ -93,14 +93,14 @@
             <area>43,555,1194,2</area>
         </shape>
 
-        <textarea name="datetext" from="basetextarea">
+        <textarea name="longdatetext" from="basetextarea">
             <area>23,43,215,20</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="channelgroup" from="basetextarea">
-            <area>23,62,215,16</area>
+            <area>23,64,215,16</area>
             <align>allcenter</align>
             <font>baseextrasmallpurple</font>
         </textarea>
@@ -375,8 +375,8 @@
             <area>42,492,698,2</area>
         </shape>
 
-        <textarea name="datetext" from="basetextarea">
-            <area>30,43,208,22</area>
+        <textarea name="longdatetext" from="basetextarea">
+            <area>30,42,208,22</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
@@ -801,20 +801,21 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,0,190,34</area>
                         <align>left,vcenter</align>
+                        <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
+                    <textarea name="channel" from="base_text_font_state_small">
                         <area>196,0,200,34</area>
                         <cutdown>no</cutdown>
                         <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="title" from="shortstarttimedate">
+                    <textarea name="title" from="base_text_font_state_small">
                         <area>406,0,756,34</area>
                         <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="card" from="shortstarttimedate">
+                    <textarea name="card" from="base_text_font_state_small">
                         <area>1182,0,30,34</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -859,20 +860,21 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,1,190,32</area>
                         <align>left,vcenter</align>
+                        <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
+                    <textarea name="channel" from="base_text_font_state_small">
                         <area>196,1,200,32</area>
                         <align>left,vcenter</align>
                         <cutdown>no</cutdown>
                     </textarea>
-                    <textarea name="title" from="shortstarttimedate">
+                    <textarea name="title" from="base_text_font_state_small">
                         <area>406,1,756,32</area>
                         <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="card" from="shortstarttimedate">
+                    <textarea name="card" from="base_text_font_state_small">
                         <area>1182,1,30,32</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -1201,7 +1203,7 @@
                                 <type>roundbox</type>
                                 <fill style="gradient">
                                     <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="0" color="#999999" />
                                         <stop position="55" color="#0a0a0e" alpha="180" />
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
@@ -1911,17 +1913,18 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,5,168,24</area>
+                         <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
+                    <textarea name="channel" from="base_text_font_state_small">
                         <area>196,5,190,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
-                    <textarea name="title" from="shortstarttimedate">
+                    <textarea name="title" from="base_text_font_state_small">
                         <area>406,5,756,24</area>
                     </textarea>
-                    <textarea name="card" from="shortstarttimedate">
+                    <textarea name="card" from="base_text_font_state_small">
                         <area>1182,5,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -1936,7 +1939,7 @@
                                 <type>roundbox</type>
                                 <fill style="gradient">
                                     <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="0" color="#999999" />
                                         <stop position="55" color="#0a0a0e" alpha="180" />
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
@@ -1966,17 +1969,18 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="shortstarttimedate" from="base_text_font_state_small">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
+                         <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
+                    <textarea name="channel" from="base_text_font_state_small">
                         <area>196,1,200,24</area>
                         <cutdown>no</cutdown>
                     </textarea>
-                    <textarea name="title" from="shortstarttimedate">
+                    <textarea name="title" from="base_text_font_state_small">
                         <area>406,1,756,24</area>
                     </textarea>
-                    <textarea name="card" from="shortstarttimedate">
+                    <textarea name="card" from="base_text_font_state_small">
                         <area>1182,1,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
@@ -2313,7 +2317,7 @@
                                 <type>roundbox</type>
                                 <fill style="gradient">
                                     <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="0" color="#999999" />
                                         <stop position="55" color="#0a0a0e" alpha="180" />
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
@@ -2544,7 +2548,7 @@
                                 <type>roundbox</type>
                                 <fill style="gradient">
                                     <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="0" color="#999999" />
                                         <stop position="55" color="#0a0a0e" alpha="180" />
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
@@ -4157,19 +4161,20 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area> 
-                    <textarea name="shortstarttimedate" from="buttontext">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,5,190,24</area>
+                         <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
+                    <textarea name="channel" from="base_text_font_state_small">
                         <area>216,5,170,24</area>
                     </textarea>
-                    <textarea name="titlesubtitle" from="shortstarttimedate">
+                    <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>404,5,732,24</area>
                     </textarea>
-                    <textarea name="statusbefore" from="shortstarttimedate">
+                    <textarea name="statusbefore" from="base_text_font_state_small">
                         <area>1154,5,20,24</area>
                     </textarea>
-                    <textarea name="statusafter" from="shortstarttimedate">
+                    <textarea name="statusafter" from="base_text_font_state_small">
                         <area>1192,5,20,24</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -4183,7 +4188,7 @@
                                 <type>roundbox</type>
                                 <fill style="gradient">
                                     <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#aaaaaa" />
+                                        <stop position="0" color="#999999" />
                                         <stop position="55" color="#0a0a0e" alpha="180" />
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
@@ -4213,16 +4218,17 @@
                             </shape>
                         </state>
                     </statetype>
-                    <textarea name="shortstarttimedate" from="buttontext">
+                    <textarea name="startdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
+                         <template>%STARTDATE%   %STARTTIME%</template>
                     </textarea>
-                    <textarea name="titlesubtitle" from="shortstarttimedate">
+                    <textarea name="titlesubtitle" from="base_text_font_state_small">
                         <area>216,1,920,24</area>
                     </textarea>
-                    <textarea name="statusbefore" from="shortstarttimedate">
+                    <textarea name="statusbefore" from="base_text_font_state_small">
                         <area>1154,1,20,24</area>
                     </textarea>
-                    <textarea name="statusafter" from="shortstarttimedate">
+                    <textarea name="statusafter" from="base_text_font_state_small">
                         <area>1192,1,20,24</area>
                         <align>right,vcenter</align>
                     </textarea>
