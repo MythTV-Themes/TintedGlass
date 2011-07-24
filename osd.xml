@@ -830,11 +830,14 @@
             <alpha>225</alpha>
         </imagetype>
 
+<!-- Commit 6216029d2 makes this show up in both recordings and video. --> 
+<!-- Since I only want it in video and there is no way to control it. I have no choice but to disable it. -->
+<!--
         <imagetype name="coverart">
             <area>76,484,158,186</area>
             <alpha>225</alpha>
         </imagetype>
-
+-->
         <textarea name="callsign">
             <font>large</font>
             <area>74,628,162,46</area>
