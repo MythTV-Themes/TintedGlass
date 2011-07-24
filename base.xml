@@ -138,11 +138,11 @@
     </fontdef>
 
     <fontdef name="basesmallerlightgrey" from="basesmaller">
-        <color>#a1a1a1</color>
+        <color>#808080</color>
     </fontdef>
 
     <fontdef name="basesomewhatsmallerlightgrey" from="basesomewhatsmaller">
-        <color>#a1a1a1</color>
+        <color>#808080</color>
     </fontdef>
 
     <fontdef name="basesmalllightgrey" from="basesmall">
@@ -150,7 +150,7 @@
     </fontdef>
 
     <fontdef name="basemediumlightgrey" from="basemedium">
-        <color>#a1a1a1</color>
+        <color>#808080</color>
     </fontdef>
 
     <fontdef name="baseextrasmallverylightgrey" from="baseextrasmall">
@@ -272,7 +272,7 @@
     <!-- Base definition of a text font state extra small -->
     <textarea name="base_text_font_state_extrasmall" from="basetextarea">
         <font>baseextrasmallverylightgrey</font>
-        <font state="disabled">baseextrasmallpurple</font>
+        <font state="disabled">baseextrasmalllightgrey</font>
         <font state="error">baseextrasmallred</font>
         <font state="warning">baseextrasmallyellow</font>
         <font state="normal">baseextrasmallverylightgrey</font>
@@ -284,7 +284,7 @@
     <!-- Base definition of a text font state smaller -->
     <textarea name="base_text_font_state_smaller" from="basetextarea">
         <font>basesmallerverylightgrey</font>
-        <font state="disabled">basesmallerpurple</font>
+        <font state="disabled">basesmallerlightgrey</font>
         <font state="error">basesmallerred</font>
         <font state="warning">basesmalleryellow</font>
         <font state="normal">basesmallerverylightgrey</font>
@@ -296,7 +296,7 @@
     <!-- Base definition of a text font state small -->
     <textarea name="base_text_font_state_small" from="basetextarea">
         <font>basesmallverylightgrey</font>
-        <font state="disabled">basesmallpurple</font>
+        <font state="disabled">basesmalllightgrey</font>
         <font state="error">basesmallred</font>
         <font state="warning">basesmallyellow</font>
         <font state="normal">basesmallverylightgrey</font>
@@ -453,7 +453,7 @@
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="180">
-                <stop position="0" color="#aaaaaa" />
+                <stop position="0" color="#999999" />
                 <stop position="45" color="#0a0a0e" alpha="180" />
                 <stop position="100" color="#0a0a0e" alpha="180" />
             </gradient>

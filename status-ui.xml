@@ -137,7 +137,7 @@
                                         <stop position="100" color="#0a0a0e" alpha="180" />
                                     </gradient>
                                 </fill>
-                                <line color="#a3a3d9" alpha="200" width="2" />
+                                <line color="#808080" alpha="255" width="2" />
                                 <cornerradius>15</cornerradius>
                             </shape>
                         </state>
