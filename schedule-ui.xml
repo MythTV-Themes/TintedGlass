@@ -94,13 +94,13 @@
         </shape>
 
         <textarea name="longdatetext" from="basetextarea">
-            <area>23,43,215,20</area>
+            <area>23,42,215,22</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="channelgroup" from="basetextarea">
-            <area>23,64,215,16</area>
+            <area>23,65,215,16</area>
             <align>allcenter</align>
             <font>baseextrasmallpurple</font>
         </textarea>
@@ -118,7 +118,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
-            <textoffset>6,4</textoffset>
+            <textoffset>6,5</textoffset>
             <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
@@ -191,8 +191,17 @@
                         <mask>images/masks/channelicon_mask.png</mask>
                         <alpha>200</alpha>
                     </imagetype>
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>76,0,132,61</area>
+                    <textarea name="channelnumber" from="basetextarea">
+                        <area>76,0,132,30</area>
+                        <font>basesmall</font>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="callsign" from="basetextarea">
+                        <area>76,31,132,30</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -400,7 +409,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
-            <textoffset>6,4</textoffset>
+            <textoffset>6,5</textoffset>
             <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
@@ -473,8 +482,17 @@
                         <mask>images/masks/channelicon_mask.png</mask>
                         <alpha>200</alpha>
                     </imagetype>
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>76,0,132,61</area>
+                    <textarea name="channelnumber" from="basetextarea">
+                        <area>76,0,132,30</area>
+                        <font>basesmall</font>
+                        <font state="favourite">basesmallyellow</font>
+                        <font state="unavailable">basesmallblue</font>
+                        <font state="favunavailable">basesmallpurple</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="callsign" from="basetextarea">
+                        <area>76,31,132,30</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
