@@ -1187,23 +1187,23 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="rectype" from="buttontext">
+                    <textarea name="rectypechar" from="buttontext">
                         <area>8,5,14,24</area>
                         <font>basesmalllightgrey</font>
                         <cutdown>no</cutdown>
                     </textarea>
-                    <textarea name="title" from="rectype">
+                    <textarea name="title" from="rectypechar">
                         <area>50,5,574,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
-                    <textarea name="callsign" from="rectype">
+                    <textarea name="callsign" from="rectypechar">
                         <area>644,5,124,24</area>
                     </textarea>
-                    <textarea name="progpriority" from="rectype">
+                    <textarea name="progpriority" from="rectypechar">
                         <area>926,5,40,24</area>
                         <align>right,vcenter</align>
                     </textarea>
-                    <textarea name="finalpriority" from="rectype">
+                    <textarea name="finalpriority" from="rectypechar">
                         <area>1178,5,34,24</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -2531,24 +2531,24 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1220,34</area>
-                    <textarea name="rectype" from="buttontext">
+                    <textarea name="rectypechar" from="buttontext">
                         <area>8,5,14,24</area>
                         <font>basesmalllightgrey</font>
                         <cutdown>no</cutdown>
                     </textarea>
-                    <textarea name="title" from="rectype">
+                    <textarea name="title" from="rectypechar">
                         <area>50,5,574,24</area>
                         <cutdown>yes</cutdown>
                     </textarea>
-                    <textarea name="callsign" from="rectype">
+                    <textarea name="callsign" from="rectypechar">
                         <area>644,5,124,24</area>
                     </textarea>
-                    <textarea name="lastrecorded" from="rectype">
+                    <textarea name="lastrecorded" from="rectypechar">
                         <area>780,5,300,24</area>
                         <cutdown>yes</cutdown>
                         <align>right</align>
                     </textarea>
-                    <textarea name="finalpriority" from="rectype">
+                    <textarea name="finalpriority" from="rectypechar">
                         <area>1178,5,34,24</area>
                         <align>right,vcenter</align>
                     </textarea>
