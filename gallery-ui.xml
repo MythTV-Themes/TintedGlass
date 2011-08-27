@@ -166,4 +166,147 @@
 
     </window>
 
+    <window name="filter">
+
+        <textarea name="heading" from="base_heading">
+            <value>Filter/Sort Images</value>
+        </textarea>
+
+        <shape name="filter-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
+        </shape>
+
+        <shape name="filter-top-line" from="base_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="filter-bottom-line" from="base_line">
+            <area>217,540,846,2</area>
+        </shape>
+
+        <shape name="filter-left-line" from="base_vertical_line">
+            <area>217,40,2,500</area>
+        </shape>
+
+        <shape name="filter-right-line" from="base_vertical_line">
+            <area>1061,40,2,500</area>
+        </shape>
+
+        <shape name="filter-bottom-top-line" from="base_line">
+            <area>217,548,846,2</area>
+        </shape>
+
+        <shape name="filter-bottom-bottom-line" from="base_line">
+            <area>217,681,846,2</area>
+        </shape>
+
+        <shape name="filter-bottom-left-line" from="base_vertical_line">
+            <area>217,550,2,131</area>
+        </shape>
+
+        <shape name="filter-bottom-right-line" from="base_vertical_line">
+            <area>1061,550,2,131</area>
+        </shape>
+
+        <shape name="filter-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
+        </shape>
+
+        <textarea name="filter_text" from="basetextarea">
+            <area>242,109,190,32</area>
+            <align>right,vcenter</align>
+            <value>Directory filter:</value>
+        </textarea>
+
+        <textedit name="dirfilter_text" from="base_wide_textedit">
+            <area>442,109,580,32</area>
+        </textedit>
+
+        <textarea name="type_filter" from="basetextarea">
+            <area>242,211,190,40</area>
+            <align>right,vcenter</align>
+            <value>Type filter:</value>
+        </textarea>
+
+        <buttonlist name="typefilter_select" from="base_selector">
+            <area>442,211,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="sort_text" from="basetextarea">
+            <area>242,321,190,40</area>
+            <align>right,vcenter</align>
+            <value>Sort by :</value>
+        </textarea>
+
+        <buttonlist name="sort_select" from="base_selector">
+            <area>442,321,580,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,580,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,550,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>584,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>584,21</position>
+            </statetype>
+        </buttonlist>
+
+        <button name="check_button" from="base_medium_button">
+            <position>465,431</position>
+            <value>Check Filter</value>
+        </button>
+
+        <textarea name="numimages_text" from="basetextarea">
+            <area>239,551,802,61</area>
+            <font>basesmallerblue</font>
+            <multiline>true</multiline>
+            <align>allcenter</align>
+            <value>NumImages_Text</value>
+        </textarea>
+
+        <button name="save_button" from="base_medium_button">
+            <position>273,628</position>
+            <value>Save as default</value>
+        </button>
+
+        <button name="done_button" from="base_medium_button">
+            <position>657,628</position>
+            <value>Done</value>
+        </button>
+
+    </window>
+
 </mythuitheme>
