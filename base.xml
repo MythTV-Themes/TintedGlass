@@ -1070,6 +1070,7 @@
 
     <!-- Base definition of a background -->
     <window name="backgroundwindow">
+        <area>0,0,1280,720</area>
 
         <imagetype name="background">
             <area>0,0,1280,720</area>
