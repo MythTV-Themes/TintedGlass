@@ -94,8 +94,8 @@
         </shape>
 
         <textarea name="longdatetext" from="basetextarea">
-            <area>23,42,215,22</area>
-            <font>basesmall</font>
+            <area>23,40,215,22</area>
+            <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
@@ -192,7 +192,7 @@
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="channelnumber" from="basetextarea">
-                        <area>76,0,132,30</area>
+                        <area>76,3,132,28</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -201,7 +201,7 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="callsign" from="basetextarea">
-                        <area>76,31,132,30</area>
+                        <area>76,31,132,28</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -385,8 +385,8 @@
         </shape>
 
         <textarea name="longdatetext" from="basetextarea">
-            <area>30,42,208,22</area>
-            <font>basesmall</font>
+            <area>30,40,208,22</area>
+            <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
@@ -483,7 +483,7 @@
                         <alpha>200</alpha>
                     </imagetype>
                     <textarea name="channelnumber" from="basetextarea">
-                        <area>76,0,132,30</area>
+                        <area>76,3,132,28</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -492,7 +492,7 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="callsign" from="basetextarea">
-                        <area>76,31,132,30</area>
+                        <area>76,31,132,28</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
