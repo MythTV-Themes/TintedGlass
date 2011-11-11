@@ -104,7 +104,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="log">
+        <buttonlist name="log" from="base_list_state">
             <area>30,84,1220,328</area>
             <layout>vertical</layout>
             <spacing>-2</spacing>
@@ -125,43 +125,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,31</area>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,31</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>15</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="buttontext" from="base_text_font_state_small">
                         <area>15,-1,1190,31</area>
 			<font state="normal">basesmall</font>

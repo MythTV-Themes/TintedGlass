@@ -813,7 +813,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="schedules" from="base_list_large_selector_large_width">
+        <buttonlist name="schedules" from="base_list_state_large_selector">
             <area>30,86,1220,322</area>
             <align>bottom</align>
             <statetype name="buttonitem">
@@ -841,43 +841,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,66</area>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,66</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="45" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>12</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,32</area>
                         <align>left,vcenter</align>
@@ -1035,7 +998,7 @@
             <area>1256,433,2,248</area>
         </shape>
 
-        <buttonlist name="channels" from="base_list_medium_selector_large_width">
+        <buttonlist name="channels" from="base_list_medium_selector">
             <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1182,7 +1145,7 @@
             <area>43,633,1194,2</area>
         </shape>
 
-        <buttonlist name="programs" from="base_list_medium_selector_large_width">
+        <buttonlist name="programs" from="base_list_state_medium_selector">
             <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1210,47 +1173,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
-                        <area>0,0,1220,46</area>
-                        <line color="#808080" alpha="255" width="2" />
-                    </shape>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,46</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>10</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="title" from="buttontext">
                         <area>8,1,616,24</area>
                         <font>basesmalllightgrey</font>
@@ -1926,7 +1848,7 @@
             <area>43,633,1194,2</area>
         </shape>
 
-        <buttonlist name="proglist" from="base_list_medium_selector_large_width">
+        <buttonlist name="proglist" from="base_list_state_medium_selector">
             <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1950,43 +1872,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,46</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>10</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
                          <template>%SHORTSTARTDATE%   %STARTTIME%</template>
@@ -2304,7 +2189,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="times">
+        <buttonlist name="times" from="base_list_state">
             <area>862,87,388,356</area>
             <layout>vertical</layout>
             <spacing>-2</spacing>
@@ -2325,46 +2210,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,388,34</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                        <area>0,0,100%,100%</area>
-                    </shape>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,388,34</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>15</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="buttontext" from="base_text_font_state_small">
                         <area>8,0,372,34</area>
                         <align>allcenter</align>
@@ -2526,7 +2371,7 @@
             <value>There are no Recordings Scheduled...</value>
         </textarea>
 
-        <buttonlist name="programs" from="base_list_medium_selector_large_width">
+        <buttonlist name="programs" from="base_list_state_medium_selector">
             <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -2555,47 +2400,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
-                        <area>0,0,1220,46</area>
-                        <line color="#808080" alpha="255" width="2" />
-                    </shape>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,46</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>10</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="title" from="buttontext">
                         <area>8,1,615,24</area>
                         <font>basesmalllightgrey</font>
@@ -4174,7 +3978,7 @@
             <area>43,633,1194,2</area>
         </shape>
 
-        <buttonlist name="conflictlist" from="base_list_medium_selector_large_width">
+        <buttonlist name="conflictlist" from="base_list_state_medium_selector">
             <area>30,45,1220,368</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -4199,43 +4003,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,46</area>
-                    <statetype name="status">
-                        <state name="disabled">
-                            <shape name="buttonbackground">
-                                <area>0,0,1220,46</area>
-                                <type>roundbox</type>
-                                <fill style="gradient">
-                                    <gradient direction="vertical" alpha="180">
-                                        <stop position="0" color="#999999" />
-                                        <stop position="55" color="#0a0a0e" alpha="180" />
-                                        <stop position="100" color="#0a0a0e" alpha="180" />
-                                    </gradient>
-                                </fill>
-                                <line color="#808080" alpha="255" width="2" />
-                                <cornerradius>10</cornerradius>
-                            </shape>
-                        </state>
-                        <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#3a9aff" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                        <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
-                        </state>
-                    </statetype>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
                          <template>%SHORTSTARTDATE%   %STARTTIME%</template>

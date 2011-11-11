@@ -76,7 +76,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="icons" from="base_list_medium_selector_large_width">
+        <buttonlist name="icons" from="base_list_medium_selector">
             <area>246,195,784,496</area>
             <spacing>-2</spacing>
             <statetype name="buttonitem">
