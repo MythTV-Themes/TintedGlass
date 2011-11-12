@@ -869,7 +869,7 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>922,33,294,32</area>
+                        <area>918,33,294,32</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
