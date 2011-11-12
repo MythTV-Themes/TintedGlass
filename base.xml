@@ -1169,11 +1169,11 @@
             <state name="inactive" from="active" />
         </statetype>
         <imagetype name="cursor">
-            <area>0,0,4,100%</area>
+            <area>0,0,4,32</area>
             <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
-            <area>5%,0,95%,100%</area>
+            <area>15,0,94%,100%</area>
             <font>basesmall</font>
             <align>vcenter</align>
         </textarea>
@@ -1183,7 +1183,7 @@
     <textedit name="base_wide_textedit" from="base_textedit">
         <area>0,0,580,32</area>
         <textarea name="text">
-            <area>2%,0,98%,100%</area>
+            <area>15,0,97%,100%</area>
         </textarea>
     </textedit>
 

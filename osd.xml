@@ -1146,7 +1146,7 @@
                 <state name="inactive" from="active" />
             </statetype>
             <imagetype name="cursor">
-                <area>0,0,3,100%</area>
+                <area>0,0,3,55</area>
                 <filename>images/osd/cursor.png</filename>
             </imagetype>
             <textarea name="text">
