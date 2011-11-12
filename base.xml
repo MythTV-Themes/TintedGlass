@@ -434,7 +434,7 @@
             </gradient>
         </fill>
         <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>15</cornerradius>
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_medium">
@@ -448,7 +448,7 @@
             </gradient>
         </fill>
         <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>10</cornerradius>
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_large">
@@ -462,7 +462,7 @@
             </gradient>
         </fill>
         <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>12</cornerradius>
+        <cornerradius>5</cornerradius>
     </shape>
 
     <!-- Base definition of a selected button background -->
