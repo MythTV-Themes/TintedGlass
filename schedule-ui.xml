@@ -111,7 +111,7 @@
             <channels>6</channels>
             <timeslots>5</timeslots>
             <solidcolor>#003256</solidcolor>
-            <selector type="roundbox" linecolor="#3a9aff" />
+            <selector type="roundbox" linecolor="#d6d6d6" />
             <showcategories>yes</showcategories>
             <categoryalpha>130</categoryalpha>
             <recordingcolor>#00aa00</recordingcolor>
@@ -402,7 +402,7 @@
             <channels>5</channels>
             <timeslots>5</timeslots>
             <solidcolor>#003256</solidcolor>
-            <selector type="roundbox" linecolor="#3a9aff" />
+            <selector type="roundbox" linecolor="#d6d6d6" />
             <showcategories>yes</showcategories>
             <categoryalpha>130</categoryalpha>
             <recordingcolor>#00aa00</recordingcolor>
