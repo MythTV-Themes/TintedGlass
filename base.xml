@@ -426,39 +426,42 @@
     <shape name="base_select_bar_selectedactive_small">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="180">
-                <stop position="0" color="#aaaaaa" />
-                <stop position="55" color="#0a0a0e" alpha="180" />
-                <stop position="100" color="#0a0a0e" alpha="180" />
+            <gradient direction="vertical" alpha="255">
+                <stop position="0" color="#0a0a0e" />
+                <stop position="5" color="#555555" alpha="255" />
+                <stop position="66" color="#0a0a0e" alpha="255" />
+                <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
-        <line color="#c6c6c6" alpha="200" width="2" />
+        <line color="#d6d6d6" alpha="200" width="2" />
         <cornerradius>15</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_medium">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="180">
-                <stop position="0" color="#aaaaaa" />
-                <stop position="55" color="#0a0a0e" alpha="180" />
-                <stop position="100" color="#0a0a0e" alpha="180" />
+            <gradient direction="vertical" alpha="255">
+                <stop position="0" color="#0a0a0e" />
+                <stop position="4" color="#555555" alpha="255" />
+                <stop position="55" color="#0a0a0e" alpha="255" />
+                <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
-        <line color="#c6c6c6" alpha="200" width="2" />
+        <line color="#d6d6d6" alpha="200" width="2" />
         <cornerradius>10</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_large">
         <type>roundbox</type>
         <fill style="gradient">
-            <gradient direction="vertical" alpha="180">
-                <stop position="0" color="#999999" />
-                <stop position="45" color="#0a0a0e" alpha="180" />
-                <stop position="100" color="#0a0a0e" alpha="180" />
+            <gradient direction="vertical" alpha="255">
+                <stop position="0" color="#0a0a0e" />
+                <stop position="3" color="#555555" alpha="255" />
+                <stop position="45" color="#0a0a0e" alpha="255" />
+                <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
-        <line color="#c6c6c6" alpha="200" width="2" />
+        <line color="#d6d6d6" alpha="200" width="2" />
         <cornerradius>12</cornerradius>
     </shape>
 
@@ -748,7 +751,7 @@
                             <area>0,0,100%,100%</area>
                             <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
                                 <area>0,0,100%,100%</area>
-                                <line color="#808080" alpha="255" width="2" />
+                                <line color="#808080" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="error" from="disabled">
@@ -763,7 +766,7 @@
                         </state>
                         <state name="normal" from="disabled">
                             <shape name="buttonbackground">
-                                <line color="#c6c6c6" alpha="200" width="2" />
+                                <line color="#d6d6d6" alpha="200" width="2" />
                             </shape>
                         </state>
                         <state name="running" from="disabled">
@@ -844,7 +847,7 @@
                         <area>0,0,100%,100%</area>
                         <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
                             <area>0,0,100%,100%</area>
-                            <line color="#808080" alpha="255" width="2" />
+                            <line color="#808080" alpha="200" width="2" />
                         </shape>
                     </state>
                     <state name="error" from="disabled">
@@ -859,7 +862,7 @@
                     </state>
                     <state name="normal" from="disabled">
                         <shape name="buttonbackground">
-                            <line color="#c6c6c6" alpha="200" width="2" />
+                            <line color="#d6d6d6" alpha="200" width="2" />
                         </shape>
                     </state>
                     <state name="running" from="disabled">
@@ -881,7 +884,7 @@
                         <area>0,0,100%,100%</area>
                         <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
                             <area>0,0,100%,100%</area>
-                            <line color="#808080" alpha="255" width="2" />
+                            <line color="#808080" alpha="200" width="2" />
                         </shape>
                     </state>
                     <state name="error" from="disabled">
@@ -896,7 +899,7 @@
                     </state>
                     <state name="normal" from="disabled">
                         <shape name="buttonbackground">
-                            <line color="#c6c6c6" alpha="200" width="2" />
+                            <line color="#d6d6d6" alpha="200" width="2" />
                         </shape>
                     </state>
                     <state name="running" from="disabled">
