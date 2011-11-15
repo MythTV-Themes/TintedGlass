@@ -1412,11 +1412,9 @@
                     </shape>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background">
+                    <shape name="background" from="base_button_background_selected">
                         <area>0,0,1120,150</area>
                         <type>roundbox</type>
-                        <fill color="#000000" alpha="255" />
-                        <line color="#3a9aff" alpha="200" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>
@@ -2629,11 +2627,8 @@
                     </shape>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background">
+                    <shape name="background"from="base_button_background_selected">
                         <area>0,0,1080,150</area>
-                        <type>roundbox</type>
-                        <fill color="#000000" alpha="255" />
-                        <line color="#3a9aff" alpha="200" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>
@@ -2669,11 +2664,8 @@
                     </shape>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background">
+                    <shape name="background" from="base_button_background_selected">
                         <area>0,0,880,85</area>
-                        <type>roundbox</type>
-                        <fill color="#000000" alpha="255" />
-                        <line color="#3a9aff" alpha="200" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>

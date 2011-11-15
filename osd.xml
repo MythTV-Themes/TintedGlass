@@ -1138,7 +1138,14 @@
                     <shape name="background">
                         <area>0,0,403,55</area>
                         <type>roundbox</type>
-                        <fill color="#000000" alpha="255" />
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="255">
+                                <stop position="0" color="#1d1d21" />
+                                <stop position="50" color="#313136" alpha="255" />
+                                <stop position="51" color="#0a0a0e" alpha="255" />
+                                <stop position="100" color="#0a0a0e" alpha="255" />
+                            </gradient>
+                        </fill>
                         <line color="#3a9aff" alpha="200" width="2" />
                         <cornerradius>90</cornerradius>
                     </shape>
@@ -1218,8 +1225,9 @@
                         <type>roundbox</type>
                         <fill style="gradient">
                             <gradient direction="vertical" alpha="255">
-                                <stop position="0" color="#666666" />
-                                <stop position="55" color="#0a0a0e" alpha="255" />
+                                <stop position="0" color="#1d1d21" />
+                                <stop position="50" color="#313136" alpha="255" />
+                                <stop position="51" color="#0a0a0e" alpha="255" />
                                 <stop position="100" color="#0a0a0e" alpha="255" />
                             </gradient>
                         </fill>
@@ -1420,8 +1428,9 @@
                         <type>roundbox</type>
                         <fill style="gradient">
                             <gradient direction="vertical" alpha="255">
-                                <stop position="0" color="#666666" />
-                                <stop position="55" color="#0a0a0e" alpha="255" />
+                                <stop position="0" color="#1d1d21" />
+                                <stop position="50" color="#313136" alpha="255" />
+                                <stop position="51" color="#0a0a0e" alpha="255" />
                                 <stop position="100" color="#0a0a0e" alpha="255" />
                             </gradient>
                         </fill>

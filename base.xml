@@ -427,9 +427,9 @@
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#0a0a0e" />
-                <stop position="5" color="#555555" alpha="255" />
-                <stop position="66" color="#0a0a0e" alpha="255" />
+                <stop position="0" color="#1d1d21" />
+                <stop position="50" color="#313136" alpha="255" />
+                <stop position="51" color="#0a0a0e" alpha="255" />
                 <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
@@ -441,9 +441,9 @@
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#0a0a0e" />
-                <stop position="4" color="#555555" alpha="255" />
-                <stop position="55" color="#0a0a0e" alpha="255" />
+                <stop position="0" color="#1d1d21" />
+                <stop position="50" color="#313136" alpha="255" />
+                <stop position="51" color="#0a0a0e" alpha="255" />
                 <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
@@ -455,9 +455,9 @@
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#0a0a0e" />
-                <stop position="3" color="#555555" alpha="255" />
-                <stop position="45" color="#0a0a0e" alpha="255" />
+                <stop position="0" color="#1d1d21" />
+                <stop position="50" color="#313136" alpha="255" />
+                <stop position="51" color="#0a0a0e" alpha="255" />
                 <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
@@ -470,9 +470,10 @@
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#666666" />
-                <stop position="66" color="#0a0a0e" />
-                <stop position="100" color="#0a0a0e" />
+                <stop position="0" color="#1d1d21" />
+                <stop position="50" color="#313136" alpha="255" />
+                <stop position="51" color="#0a0a0e" alpha="255" />
+                <stop position="100" color="#0a0a0e" alpha="255" />
             </gradient>
         </fill>
         <line color="#3a9aff" alpha="200" width="2" />
@@ -1041,12 +1042,8 @@
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
-                <shape name="buttonbackground">
+                <shape name="buttonbackground" from="base_button_background_selected">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#000000" alpha="255" />
-                    <line color="#3a9aff" alpha="200" width="2" />
-                    <cornerradius>90</cornerradius>
                 </shape>
             </state>
             <state name="selectedinactive" from="active" />
@@ -1105,12 +1102,8 @@
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
-                <shape name="buttonbackground">
+                <shape name="buttonbackground" from="base_button_background_selected">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#000000" alpha="255" />
-                    <line color="#3a9aff" alpha="200" width="2" />
-                    <cornerradius>90</cornerradius>
                 </shape>
             </state>
             <state name="selectedinactive" from="active" />
@@ -1158,12 +1151,8 @@
             </state>
             <state name="selected" from="active">
                <area>0,0,100%,100%</area>
-               <shape name="background">
+               <shape name="background" from="base_button_background_selected">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#000000" alpha="255" />
-                    <line color="#3a9aff" alpha="200" width="2" />
-                    <cornerradius>90</cornerradius>
                 </shape>
             </state>
             <state name="inactive" from="active" />
