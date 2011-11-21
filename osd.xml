@@ -375,15 +375,103 @@
             <color>#3a9ade</color>
         </fontdef>
 
-        <shape name="background">
+        <shape name="backdrop">
             <area>70,384,1140,292</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>8</cornerradius>
         </shape>
 
-        <shape name="title-first-line">
+        <shape name="title-backdrop-line">
+            <area>71,385,974,90</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="title-highlight-top-line">
             <area>72,386,972,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="title-highlight-bottom-line" from="title-highlight-top-line">
+            <area>72,472,972,2</area>
+        </shape>
+
+        <shape name="title-highlight-left-line">
+            <area>72,388,2,84</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="title-highlight-right-line" from="title-highlight-left-line">
+            <area>1042,388,2,84</area>
+        </shape>
+
+        <shape name="clock-backdrop-line" from="title-backdrop-line">
+            <area>1049,385,160,90</area>
+        </shape>
+
+        <shape name="clock-highlight-top-line" from="title-highlight-top-line">
+            <area>1050,386,158,2</area>
+        </shape>
+
+        <shape name="clock-highlight-bottom-line" from="title-highlight-top-line">
+            <area>1050,472,158,2</area>
+        </shape>
+
+        <shape name="clock-highlight-left-line" from="title-highlight-left-line">
+            <area>1050,388,2,84</area>
+        </shape>
+
+        <shape name="clock-highlight-right-line" from="title-highlight-left-line">
+            <area>1206,388,2,84</area>
+        </shape>
+
+        <shape name="preview-backdrop-line" from="title-backdrop-line">
+            <area>71,479,168,196</area>
+        </shape>
+
+        <shape name="preview-highlight-top-line" from="title-highlight-top-line">
+            <area>72,480,166,2</area>
+        </shape>
+
+        <shape name="preview-highlight-bottom-line" from="title-highlight-bottom-line">
+            <area>72,672,166,2</area>
+        </shape>
+
+        <shape name="preview-highlight-left-line" from="title-highlight-left-line">
+            <area>72,482,2,190</area>
+        </shape>
+
+        <shape name="preview-highlight-right-line" from="title-highlight-left-line">
+            <area>236,482,2,190</area>
+        </shape>
+
+        <shape name="description-backdrop-line" from="title-backdrop-line">
+            <area>243,479,966,196</area>
+        </shape>
+
+        <shape name="description-highlight-top-line" from="title-highlight-top-line">
+            <area>244,480,964,2</area>
+        </shape>
+
+        <shape name="description-first-line">
+            <area>262,510,928,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="45">
@@ -394,79 +482,19 @@
             </fill>
         </shape>
 
-        <shape name="title-second-line" from="title-first-line">
-            <area>72,472,972,2</area>
-        </shape>
-
-        <shape name="title-left-line">
-            <area>72,388,2,84</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient direction="vertical" alpha="100">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="160" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="title-right-line" from="title-left-line">
-            <area>1042,388,2,84</area>
-        </shape>
-
-        <shape name="clock-first-line" from="title-first-line">
-            <area>1050,386,158,2</area>
-        </shape>
-
-        <shape name="clock-second-line" from="title-first-line">
-            <area>1050,472,158,2</area>
-        </shape>
-
-        <shape name="clock-left-line" from="title-left-line">
-            <area>1050,388,2,84</area>
-        </shape>
-
-        <shape name="clock-right-line" from="title-left-line">
-            <area>1206,388,2,84</area>
-        </shape>
-
-        <shape name="preview-first-line" from="title-first-line">
-            <area>72,480,166,2</area>
-        </shape>
-
-        <shape name="preview-second-line" from="title-first-line">
-            <area>72,672,166,2</area>
-        </shape>
-
-        <shape name="preview-left-line" from="title-left-line">
-            <area>72,482,2,190</area>
-        </shape>
-
-        <shape name="preview-right-line" from="title-left-line">
-            <area>236,482,2,190</area>
-        </shape>
-
-        <shape name="description-first-line" from="title-first-line">
-            <area>244,480,964,2</area>
-        </shape>
-
-        <shape name="description-second-line" from="title-first-line">
-            <area>262,510,928,2</area>
-        </shape>
-
-        <shape name="description-third-line" from="title-first-line">
+        <shape name="description-second-line" from="description-first-line">
             <area>262,643,928,2</area>
         </shape>
 
-        <shape name="description-fourth-line" from="title-first-line">
+        <shape name="description-highlight-bottom-line" from="title-highlight-top-line">
             <area>244,672,964,2</area>
         </shape>
 
-        <shape name="description-left-line" from="title-left-line">
+        <shape name="description-highlight-left-line" from="title-highlight-left-line">
             <area>244,482,2,190</area>
         </shape> 
 
-        <shape name="description-right-line" from="title-left-line">
+        <shape name="description-highlight-right-line" from="title-highlight-left-line">
             <area>1206,482,2,190</area>
         </shape>
 

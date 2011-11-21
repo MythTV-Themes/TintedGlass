@@ -731,39 +731,47 @@
             <area>20,78,1240,339</area>
         </shape>
 
-        <shape name="upcoming-list-top-line" from="base_line">
-            <area>22,80,1236,2</area>
+        <shape name="upcoming-backdrop-line" from="base_backdrop_line">
+            <area>21,79,1238,337</area>
         </shape>
 
-        <shape name="upcoming-list-bottom-line" from="base_line">
-            <area>22,413,1236,2</area>
+        <shape name="upcoming-list-top-line" from="base_highlight_line">
+            <area>30,80,1220,2</area>
         </shape>
 
-        <shape name="upcoming-list-left-line" from="base_vertical_line">
-            <area>22,82,2,331</area>
+        <shape name="upcoming-list-bottom-line" from="base_highlight_line">
+            <area>30,413,1220,2</area>
         </shape>
 
-        <shape name="upcoming-list-right-line" from="base_vertical_line">
-            <area>1256,82,2,331</area>
+        <shape name="upcoming-list-left-line" from="base_highlight_vertical_line">
+            <area>22,90,2,315</area>
+        </shape>
+
+        <shape name="upcoming-list-right-line" from="base_highlight_vertical_line">
+            <area>1256,90,2,315</area>
         </shape>
 
         <shape name="upcoming-bottom-backdrop" from="base_backdrop">
             <area>20,427,1240,258</area>
         </shape>
 
-        <shape name="upcoming-bottom-top-line" from="base_line">
+        <shape name="upcoming-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,428,1238,256</area>
+        </shape>
+
+        <shape name="upcoming-bottom-top-line" from="base_highlight_line">
             <area>22,429,1236,2</area>
         </shape>
 
-        <shape name="upcoming-bottom-bottom-line" from="base_line">
+        <shape name="upcoming-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="upcoming-bottom-left-line" from="base_vertical_line">
+        <shape name="upcoming-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,431,2,250</area>
         </shape>
 
-        <shape name="upcoming-bottom-right-line" from="base_vertical_line">
+        <shape name="upcoming-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,431,2,250</area>
         </shape>
 
