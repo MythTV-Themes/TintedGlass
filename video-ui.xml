@@ -13,19 +13,23 @@
             <area>358,102,563,516</area>
         </shape>
 
-        <shape name="cast-popup-top-line" from="base_line">
+        <shape name="cast-popup-backdrop-line" from="base_backdrop_line">
+            <area>359,103,561,514</area>
+        </shape>
+
+        <shape name="cast-popup-top-line" from="base_highlight_line">
             <area>360,104,559,2</area>
         </shape>
 
-        <shape name="cast-popup-bottom-line" from="base_line">
+        <shape name="cast-popup-bottom-line" from="base_highlight_line">
             <area>360,614,559,2</area>
         </shape>
 
-        <shape name="cast-popup-left-line" from="base_vertical_line">
+        <shape name="cast-popup-left-line" from="base_highlight_vertical_line">
             <area>360,106,2,508</area>
         </shape>
 
-        <shape name="cast-popup-right-line" from="base_vertical_line">
+        <shape name="cast-popup-right-line" from="base_highlight_vertical_line">
             <area>917,106,2,508</area>
         </shape>
 
@@ -103,19 +107,23 @@
             <area>358,102,563,516</area>
         </shape>
 
-        <shape name="full-plot-top-line" from="base_line">
+        <shape name="full-plot-backdrop-line" from="base_backdrop_line">
+            <area>359,103,561,514</area>
+        </shape>
+
+        <shape name="full-plot-top-line" from="base_highlight_line">
             <area>360,104,559,2</area>
         </shape>
 
-        <shape name="full-plot-bottom-line" from="base_line">
+        <shape name="full-plot-bottom-line" from="base_highlight_line">
             <area>360,614,559,2</area>
         </shape>
 
-        <shape name="full-plot-left-line" from="base_vertical_line">
+        <shape name="full-plot-left-line" from="base_highlight_vertical_line">
             <area>360,106,2,508</area>
         </shape>
 
-        <shape name="full-plot-right-line" from="base_vertical_line">
+        <shape name="full-plot-right-line" from="base_highlight_vertical_line">
             <area>917,106,2,508</area>
         </shape>
 
@@ -178,19 +186,23 @@
             <area>20,36,1240,358</area>
         </shape>
 
-        <shape name="video-top-line" from="base_line">
+        <shape name="video-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,356</area>
+        </shape>
+
+        <shape name="video-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="video-bottom-line" from="base_line">
+        <shape name="video-bottom-line" from="base_highlight_line">
             <area>22,390,1236,2</area>
         </shape>
 
-        <shape name="video-left-line" from="base_vertical_line">
+        <shape name="video-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,350</area>
         </shape>
 
-        <shape name="video-right-line" from="base_vertical_line">
+        <shape name="video-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,350</area>
         </shape>
 
@@ -198,19 +210,23 @@
             <area>20,404,1240,281</area>
         </shape>
 
-        <shape name="video-bottom-top-line" from="base_line">
+        <shape name="video-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,405,1045,279</area>
+        </shape>
+
+        <shape name="video-bottom-top-line" from="base_highlight_line">
             <area>22,406,1043,2</area>
         </shape>
 
-        <shape name="video-bottom-bottom-line" from="base_line">
+        <shape name="video-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1043,2</area>
         </shape>
 
-        <shape name="video-bottom-left-line" from="base_vertical_line">
+        <shape name="video-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,408,2,273</area>
         </shape>
 
-        <shape name="video-bottom-right-line" from="base_vertical_line">
+        <shape name="video-bottom-right-line" from="base_highlight_vertical_line">
             <area>1063,408,2,273</area>
         </shape>
 
@@ -226,19 +242,23 @@
             <area>40,633,1007,2</area>
         </shape>
 
-        <shape name="video-coverart-top-line" from="base_line">
+        <shape name="video-coverart-backdrop-line" from="base_backdrop_line">
+            <area>1070,405,189,279</area>
+        </shape>
+
+        <shape name="video-coverart-top-line" from="base_highlight_line">
             <area>1071,406,187,2</area>
         </shape>
 
-        <shape name="video-coverart-bottom-line" from="base_line">
+        <shape name="video-coverart-bottom-line" from="base_highlight_line">
             <area>1071,681,187,2</area>
         </shape>
 
-        <shape name="video-coverart-left-line" from="base_vertical_line">
+        <shape name="video-coverart-left-line" from="base_highlight_vertical_line">
             <area>1071,408,2,273</area>
         </shape>
 
-        <shape name="video-coverart-right-line" from="base_vertical_line">
+        <shape name="video-coverart-right-line" from="base_highlight_vertical_line">
             <area>1256,408,2,273</area>
         </shape>
 
@@ -615,19 +635,23 @@
             <area>20,401,1240,282</area>
         </shape>
 
-        <shape name="video-browse-bottom-top-line" from="base_line">
+        <shape name="video-browse-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,402,1238,280</area>
+        </shape>
+
+        <shape name="video-browse-bottom-top-line" from="base_highlight_line">
             <area>22,403,1236,2</area>
         </shape>
 
-        <shape name="video-browse-bottom-bottom-line" from="base_line">
+        <shape name="video-browse-bottom-bottom-line" from="base_highlight_line">
             <area>22,679,1236,2</area>
         </shape>
 
-        <shape name="video-browse-bottom-left-line" from="base_vertical_line">
+        <shape name="video-browse-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,405,2,274</area>
         </shape>
 
-        <shape name="video-browse-bottom-right-line" from="base_vertical_line">
+        <shape name="video-browse-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,405,2,274</area>
         </shape>
 
@@ -1038,19 +1062,23 @@
             <area>20,402,1240,283</area>
         </shape>
 
-        <shape name="video-gallery-bottom-top-line" from="base_line">
+        <shape name="video-gallery-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,403,1238,281</area>
+        </shape>
+
+        <shape name="video-gallery-bottom-top-line" from="base_highlight_line">
             <area>22,404,1236,2</area>
         </shape>
 
-        <shape name="video-gallery-bottom-bottom-line" from="base_line">
+        <shape name="video-gallery-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="video-gallery-bottom-left-line" from="base_vertical_line">
+        <shape name="video-gallery-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,406,2,275</area>
         </shape>
 
-        <shape name="video-gallery-bottom-right-line" from="base_vertical_line">
+        <shape name="video-gallery-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,406,2,275</area>
         </shape>
 
@@ -1437,19 +1465,23 @@
             <area>20,36,613,324</area>
         </shape>
 
-        <shape name="video-tree-top-line" from="base_line">
+        <shape name="video-tree-directory-backdrop-line" from="base_backdrop_line">
+            <area>21,37,611,322</area>
+        </shape>
+
+        <shape name="video-tree-top-line" from="base_highlight_line">
             <area>22,38,609,2</area>
         </shape>
 
-        <shape name="video-tree-bottom-line" from="base_line">
+        <shape name="video-tree-bottom-line" from="base_highlight_line">
             <area>22,356,609,2</area>
         </shape>
 
-        <shape name="video-tree-left-line" from="base_vertical_line">
+        <shape name="video-tree-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,316</area>
         </shape>
 
-        <shape name="video-tree-right-line" from="base_vertical_line">
+        <shape name="video-tree-right-line" from="base_highlight_vertical_line">
             <area>629,40,2,316</area>
         </shape>
 
@@ -1457,19 +1489,23 @@
             <area>647,36,613,324</area>
         </shape>
 
-        <shape name="video-tree-files-top-line" from="base_line">
+        <shape name="video-tree-files-backdrop-line" from="base_backdrop_line">
+            <area>648,37,611,322</area>
+        </shape>
+
+        <shape name="video-tree-files-top-line" from="base_highlight_line">
             <area>649,38,609,2</area>
         </shape>
 
-        <shape name="video-tree-files-bottom-line" from="base_line">
+        <shape name="video-tree-files-bottom-line" from="base_highlight_line">
             <area>649,356,609,2</area>
         </shape>
 
-        <shape name="video-tree-files-left-line" from="base_vertical_line">
+        <shape name="video-tree-files-left-line" from="base_highlight_vertical_line">
             <area>649,40,2,316</area>
         </shape>
 
-        <shape name="video-tree-files-right-line" from="base_vertical_line">
+        <shape name="video-tree-files-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,316</area>
         </shape>
 
@@ -1477,19 +1513,23 @@
             <area>20,379,1240,306</area>
         </shape>
 
-        <shape name="video-bottom-top-line" from="base_line">
+        <shape name="video-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,380,1029,304</area>
+        </shape>
+
+        <shape name="video-bottom-top-line" from="base_highlight_line">
             <area>22,381,1027,2</area>
         </shape>
 
-        <shape name="video-bottom-bottom-line" from="base_line">
+        <shape name="video-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1027,2</area>
         </shape>
 
-        <shape name="video-bottom-left-line" from="base_vertical_line">
+        <shape name="video-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,383,2,298</area>
         </shape>
 
-        <shape name="video-bottom-right-line" from="base_vertical_line">
+        <shape name="video-bottom-right-line" from="base_highlight_vertical_line">
             <area>1047,383,2,298</area>
         </shape>
 
@@ -1505,19 +1545,23 @@
             <area>39,639,993,2</area>
         </shape>
 
-        <shape name="video-coverart-top-line" from="base_line">
+        <shape name="video-coverart-backdrop-line" from="base_backdrop_line">
+            <area>1053,380,206,304</area>
+        </shape>
+
+        <shape name="video-coverart-top-line" from="base_highlight_line">
             <area>1054,381,204,2</area>
         </shape>
 
-        <shape name="video-coverart-bottom-line" from="base_line">
+        <shape name="video-coverart-bottom-line" from="base_highlight_line">
             <area>1054,681,204,2</area>
         </shape>
 
-        <shape name="video-coverart-left-line" from="base_vertical_line">
+        <shape name="video-coverart-left-line" from="base_highlight_vertical_line">
             <area>1054,383,2,298</area>
         </shape>
 
-        <shape name="video-coverart-right-line" from="base_vertical_line">
+        <shape name="video-coverart-right-line" from="base_highlight_vertical_line">
             <area>1256,383,2,298</area>
         </shape>
 
@@ -1872,13 +1916,6 @@
     <window name="file_associations">
         <area>0,0,1280,720</area>
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
-
         <textarea name="heading" from="base_heading">
             <value>Add File Extensions</value>
         </textarea>
@@ -1887,35 +1924,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="file-extensions-top-line" from="base_line">
+        <shape name="file-extensions-top-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,480</area>
+        </shape>
+
+        <shape name="file-extensions-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="file-extensions-bottom-line" from="base_line">
+        <shape name="file-extensions-bottom-line" from="base_highlight_line">
             <area>217,514,846,2</area>
         </shape>
 
-        <shape name="file-extensions-left-line" from="base_vertical_line">
+        <shape name="file-extensions-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,474</area>
         </shape>
 
-        <shape name="file-extensions-right-line" from="base_vertical_line">
+        <shape name="file-extensions-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,474</area>
         </shape>
 
-        <shape name="file-extensions-bottom-top-line" from="base_line">
+        <shape name="file-extensions-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,523,848,161</area>
+        </shape>
+
+        <shape name="file-extensions-bottom-top-line" from="base_highlight_line">
             <area>217,524,846,2</area>
         </shape>
 
-        <shape name="file-extensions-bottom-bottom-line" from="base_line">
+        <shape name="file-extensions-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="file-extensions-bottom-left-line" from="base_vertical_line">
+        <shape name="file-extensions-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,526,2,155</area>
         </shape>
 
-        <shape name="file-extensions-bottom-right-line" from="base_vertical_line">
+        <shape name="file-extensions-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,526,2,155</area>
         </shape>
 
@@ -1998,10 +2043,6 @@
             <position>810,624</position>
             <value>Delete</value>
         </button>
-
-        <group name="clock-backdrop" from="base_clock_group" />
-
-        <clock name="clock" from="base_clock" />
         
     </window>
     
@@ -2018,35 +2059,43 @@
             <area>20,36,1240,256</area>
         </shape>
 
-        <shape name="video-metadata-top-line" from="base_line">
+        <shape name="video-metadata-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1060,254</area>
+        </shape>
+
+        <shape name="video-metadata-top-line" from="base_highlight_line">
             <area>22,38,1058,2</area>
         </shape>
 
-        <shape name="video-metadata-bottom-line" from="base_line">
+        <shape name="video-metadata-bottom-line" from="base_highlight_line">
             <area>22,288,1058,2</area>
         </shape>
 
-        <shape name="video-metadata-left-line" from="base_vertical_line">
+        <shape name="video-metadata-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,248</area>
         </shape>
 
-        <shape name="video-metadata-right-line" from="base_vertical_line">
+        <shape name="video-metadata-right-line" from="base_highlight_vertical_line">
             <area>1078,40,2,248</area>
         </shape>
 
-        <shape name="video-metadata-coverart-top-line" from="base_line">
+        <shape name="video-metadata-coverart-backdrop-line" from="base_backdrop_line">
+            <area>1086,37,173,254</area>
+        </shape>
+
+        <shape name="video-metadata-coverart-top-line" from="base_highlight_line">
             <area>1087,38,171,2</area>
         </shape>
 
-        <shape name="video-metadata-coverart-bottom-line" from="base_line">
+        <shape name="video-metadata-coverart-bottom-line" from="base_highlight_line">
             <area>1087,288,171,2</area>
         </shape>
 
-        <shape name="video-metadata-coverart-left-line" from="base_vertical_line">
+        <shape name="video-metadata-coverart-left-line" from="base_highlight_vertical_line">
             <area>1087,40,2,248</area>
         </shape>
 
-        <shape name="video-metadata-coverart-right-line" from="base_vertical_line">
+        <shape name="video-metadata-coverart-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,248</area>
         </shape>
 
@@ -2054,19 +2103,23 @@
             <area>20,304,1240,381</area>
         </shape>
 
-        <shape name="video-metadata-bottom-top-line" from="base_line">
+        <shape name="video-bottom-metadata-backdrop-line" from="base_backdrop_line">
+            <area>21,305,1238,379</area>
+        </shape>
+
+        <shape name="video-metadata-bottom-top-line" from="base_highlight_line">
             <area>22,306,1236,2</area>
         </shape>
 
-        <shape name="video-metadata-bottom-bottom-line" from="base_line">
+        <shape name="video-metadata-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="video-metadata-bottom-left-line" from="base_vertical_line">
+        <shape name="video-metadata-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,308,2,373</area>
         </shape>
 
-        <shape name="video-metadata-bottom-right-line" from="base_vertical_line">
+        <shape name="video-metadata-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,308,2,373</area>
         </shape>
 
@@ -2405,19 +2458,23 @@
             <area>240,50,800,620</area>
         </shape>
 
-        <shape name="filter-top-line" from="base_line">
+        <shape name="filter-backdrop-line" from="base_backdrop_line">
+            <area>241,51,798,618</area>
+        </shape>
+
+        <shape name="filter-top-line" from="base_highlight_line">
             <area>242,52,796,2</area>
         </shape>
 
-        <shape name="filter-bottom-line" from="base_line">
+        <shape name="filter-bottom-line" from="base_highlight_line">
             <area>242,666,796,2</area>
         </shape>
 
-        <shape name="filter-left-line" from="base_vertical_line">
+        <shape name="filter-left-line" from="base_highlight_vertical_line">
             <area>242,54,2,612</area>
         </shape>
 
-        <shape name="filter-right-line" from="base_vertical_line">
+        <shape name="filter-right-line" from="base_highlight_vertical_line">
             <area>1036,54,2,612</area>
         </shape>
 
@@ -2606,19 +2663,23 @@
             <area>215,102,850,516</area>
         </shape>
 
-        <shape name="video-item-detail-popup-top-line" from="base_line">
+        <shape name="video-item-detail-popup-backdrop-line" from="base_backdrop_line">
+            <area>216,103,571,406</area>
+        </shape>
+
+        <shape name="video-item-detail-popup-top-line" from="base_highlight_line">
             <area>217,104,569,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-bottom-line" from="base_line">
+        <shape name="video-item-detail-popup-bottom-line" from="base_highlight_line">
             <area>217,506,569,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-left-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-left-line" from="base_highlight_vertical_line">
             <area>217,106,2,400</area>
         </shape>
 
-        <shape name="video-item-detail-popup-right-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-right-line" from="base_highlight_vertical_line">
             <area>784,106,2,400</area>
         </shape>
 
@@ -2642,35 +2703,43 @@
             <area>237,480,529,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-coverart-top-line" from="base_line">
+        <shape name="video-item-detail-popup-coverart-backdrop-line" from="base_backdrop_line">
+            <area>790,103,274,406</area>
+        </shape>
+
+        <shape name="video-item-detail-popup-coverart-top-line" from="base_highlight_line">
             <area>791,104,272,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-coverart-bottom-line" from="base_line">
+        <shape name="video-item-detail-popup-coverart-bottom-line" from="base_highlight_line">
             <area>791,506,272,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-coverart-left-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-coverart-left-line" from="base_highlight_vertical_line">
             <area>791,106,2,400</area>
         </shape>
 
-        <shape name="video-item-detail-popup-coverart-right-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-coverart-right-line" from="base_highlight_vertical_line">
             <area>1061,106,2,400</area>
         </shape>
 
-        <shape name="video-item-detail-popup-bottom-top-line" from="base_line">
+        <shape name="video-item-detail-popup-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,513,848,104</area>
+        </shape>
+
+        <shape name="video-item-detail-popup-bottom-top-line" from="base_highlight_line">
             <area>217,514,846,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-bottom-bottom-line" from="base_line">
+        <shape name="video-item-detail-popup-bottom-bottom-line" from="base_highlight_line">
             <area>217,614,846,2</area>
         </shape>
 
-        <shape name="video-item-detail-popup-bottom-left-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,516,2,98</area>
         </shape>
 
-        <shape name="video-item-detail-popup-bottom-right-line" from="base_vertical_line">
+        <shape name="video-item-detail-popup-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,516,2,98</area>
         </shape>
 
@@ -2812,8 +2881,6 @@
     <window name="playersettings">
         <area>0,0,1280,720</area>
 
-        <group name="heading-backdrop" from="base_heading_group" />
-
         <textarea name="heading" from="base_heading">
             <value>Player Settings</value>
         </textarea>
@@ -2822,35 +2889,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="player-settings-top-line" from="base_line">
+        <shape name="player-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,506</area>
+        </shape>
+
+        <shape name="player-settings-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="player-settings-bottom-line" from="base_line">
+        <shape name="player-settings-bottom-line" from="base_highlight_line">
             <area>217,540,846,2</area>
         </shape>
 
-        <shape name="player-settings-left-line" from="base_vertical_line">
+        <shape name="player-settings-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,500</area>
         </shape>
 
-        <shape name="player-settings-right-line" from="base_vertical_line">
+        <shape name="player-settings-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,500</area>
         </shape>
 
-        <shape name="player-settings-bottom-top-line" from="base_line">
+        <shape name="player-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,547,848,137</area>
+        </shape>
+
+        <shape name="player-settings-bottom-top-line" from="base_highlight_line">
             <area>217,548,846,2</area>
         </shape>
 
-        <shape name="player-settings-bottom-bottom-line" from="base_line">
+        <shape name="player-settings-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="player-settings-bottom-left-line" from="base_vertical_line">
+        <shape name="player-settings-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,550,2,131</area>
         </shape>
 
-        <shape name="player-settings-bottom-right-line" from="base_vertical_line">
+        <shape name="player-settings-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,550,2,131</area>
         </shape>
 
@@ -2971,8 +3046,6 @@
     <window name="metadatasettings">
         <area>0,0,1280,720</area>
 
-        <group name="heading-backdrop" from="base_heading_group" />
-
         <textarea name="heading" from="base_heading">
             <value>Video Metadata Settings</value>
         </textarea>
@@ -2981,35 +3054,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="metadata-settings-top-line" from="base_line">
+        <shape name="metadata-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,478</area>
+        </shape>
+
+        <shape name="metadata-settings-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-line" from="base_line">
+        <shape name="metadata-settings-bottom-line" from="base_highlight_line">
             <area>217,512,846,2</area>
         </shape>
 
-        <shape name="metadata-settings-left-line" from="base_vertical_line">
+        <shape name="metadata-settings-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,472</area>
         </shape>
 
-        <shape name="metadata-settings-right-line" from="base_vertical_line">
+        <shape name="metadata-settings-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,472</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-top-line" from="base_line">
+        <shape name="metadata-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,519,848,165</area>
+        </shape>
+
+        <shape name="metadata-settings-bottom-top-line" from="base_highlight_line">
             <area>217,520,846,2</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-bottom-line" from="base_line">
+        <shape name="metadata-settings-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-left-line" from="base_vertical_line">
+        <shape name="metadata-settings-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,522,2,159</area>
         </shape>
 
-        <shape name="metadata-settings-bottom-right-line" from="base_vertical_line">
+        <shape name="metadata-settings-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,522,2,159</area>
         </shape>
 

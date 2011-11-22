@@ -13,19 +13,27 @@
             <area>20,36,1240,417</area>
         </shape>
 
+        <shape name="guide-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,415</area>
+        </shape>
+
         <shape name="guide-bottom-backdrop" from="base_backdrop">
             <area>20,463,1240,222</area>
         </shape>
 
-        <shape name="time-top-line" from="base_line">
+        <shape name="guide-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,464,1238,220</area>
+        </shape>
+
+        <shape name="time-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="channel-left-end-separator" from="base_vertical_line">
+        <shape name="channel-left-end-separator" from="base_highlight_vertical_line">
             <area>22,40,2,41</area>
         </shape>
 
-        <shape name="time-right-end-separator" from="base_vertical_line">
+        <shape name="time-right-end-separator" from="base_highlight_vertical_line">
             <area>1256,40,2,41</area>
         </shape>
 
@@ -33,11 +41,11 @@
             <area>22,81,1236,2</area>
         </shape>
 
-        <shape name="guide-grid-bottom-line" from="base_line">
+        <shape name="guide-grid-bottom-line" from="base_highlight_line">
             <area>22,449,1236,2</area>
         </shape>
 
-        <shape name="guide-grid-left-line" from="base_vertical_line">
+        <shape name="guide-grid-left-line" from="base_highlight_vertical_line">
             <area>22,83,2,366</area>
         </shape>
 
@@ -45,7 +53,7 @@
             <area>238,83,2,366</area>
         </shape>
 
-        <shape name="guide-grid-right-line" from="base_vertical_line">
+        <shape name="guide-grid-right-line" from="base_highlight_vertical_line">
             <area>1256,83,2,366</area>
         </shape>
 
@@ -69,19 +77,19 @@
             <area>39,387,184,2</area>
         </shape>
 
-        <shape name="guide-description-top-line" from="base_line">
+        <shape name="guide-description-top-line" from="base_highlight_line">
             <area>22,465,1236,2</area>
         </shape>
 
-        <shape name="guide-description-bottom-line" from="base_line">
+        <shape name="guide-description-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="guide-description-left-line" from="base_vertical_line">
+        <shape name="guide-description-left-line" from="base_highlight_vertical_line">
             <area>22,467,2,214</area>
         </shape>
 
-        <shape name="guide-description-right-line" from="base_vertical_line">
+        <shape name="guide-description-right-line" from="base_highlight_vertical_line">
             <area>1256,467,2,214</area>
         </shape>
 
@@ -284,15 +292,19 @@
             <area>20,36,1240,357</area>
         </shape>
 
-        <shape name="time-top-line" from="base_line">
+        <shape name="guide-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,355</area>
+        </shape>
+
+        <shape name="time-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="channel-left-end-separator" from="base_vertical_line">
+        <shape name="channel-left-end-separator" from="base_highlight_vertical_line">
             <area>22,40,2,42</area>
         </shape>
 
-        <shape name="time-right-end-separator" from="base_vertical_line">
+        <shape name="time-right-end-separator" from="base_highlight_vertical_line">
             <area>1256,40,2,42</area>
         </shape>
 
@@ -300,11 +312,11 @@
             <area>22,82,1236,2</area>
         </shape>
 
-        <shape name="guide-grid-bottom-line" from="base_line">
+        <shape name="guide-grid-bottom-line" from="base_highlight_line">
             <area>22,389,1236,2</area>
         </shape>
 
-        <shape name="guide-grid-left-line" from="base_vertical_line">
+        <shape name="guide-grid-left-line" from="base_highlight_vertical_line">
             <area>22,84,2,305</area>
         </shape>
 
@@ -312,7 +324,7 @@
             <area>238,84,2,305</area>
         </shape>
 
-        <shape name="guide-grid-right-line" from="base_vertical_line">
+        <shape name="guide-grid-right-line" from="base_highlight_vertical_line">
             <area>1256,84,2,305</area>
         </shape>
 
@@ -340,39 +352,47 @@
             <area>768,403,492,282</area>
         </shape>
 
-        <shape name="guide-video-first-line" from="base_line">
+        <shape name="guide-video-backdrop-line" from="base_backdrop_line">
+            <area>769,404,490,280</area>
+        </shape>
+
+        <shape name="guide-video-top-line" from="base_highlight_line">
             <area>770,405,488,2</area>
         </shape>
 
-        <shape name="guide-video-second-line" from="base_line">
+        <shape name="guide-video-bottom-line" from="base_highlight_line">
             <area>770,681,488,2</area>
         </shape>
 
-        <shape name="guide-video-left-line" from="base_vertical_line">
+        <shape name="guide-video-left-line" from="base_highlight_vertical_line">
             <area>770,407,2,274</area>
         </shape>
 
-        <shape name="guide-video-right-line" from="base_vertical_line">
+        <shape name="guide-video-right-line" from="base_highlight_vertical_line">
             <area>1256,407,2,274</area>
         </shape>
 
-        <shape name="guide-bottom-backdrop" from="base_backdrop">
+        <shape name="guide-description-backdrop" from="base_backdrop">
             <area>20,403,742,282</area>
         </shape>
 
-        <shape name="guide-description-top-line" from="base_line">
+        <shape name="guide-description-backdrop-line" from="base_backdrop_line">
+            <area>21,404,740,280</area>
+        </shape>
+
+        <shape name="guide-description-top-line" from="base_highlight_line">
             <area>22,405,738,2</area>
         </shape>
 
-        <shape name="guide-description-bottom-line" from="base_line">
+        <shape name="guide-description-bottom-line" from="base_highlight_line">
             <area>22,681,738,2</area>
         </shape>
 
-        <shape name="guide-description-left-line" from="base_vertical_line">
+        <shape name="guide-description-left-line" from="base_highlight_vertical_line">
             <area>22,407,2,274</area>
         </shape>
 
-        <shape name="guide-description-right-line" from="base_vertical_line">
+        <shape name="guide-description-right-line" from="base_highlight_vertical_line">
             <area>758,407,2,274</area>
         </shape>
 
@@ -573,39 +593,47 @@
             <area>190,36,900,648</area>
         </shape>
 
-        <shape name="manual-schedule-selector-top-line" from="base_line">
+        <shape name="manual-schedule-top-backdrop-line" from="base_backdrop_line">
+            <area>191,37,898,323</area>
+        </shape>
+
+        <shape name="manual-schedule-selector-top-line" from="base_highlight_line">
             <area>192,38,896,2</area>
         </shape>
 
-        <shape name="manual-schedule-selector-bottom-line" from="base_line">
+        <shape name="manual-schedule-selector-bottom-line" from="base_highlight_line">
             <area>192,357,896,2</area>
         </shape>
 
-        <shape name="manual-schedule-selector-left-line" from="base_vertical_line">
+        <shape name="manual-schedule-selector-left-line" from="base_highlight_vertical_line">
             <area>192,40,2,317</area>
         </shape>
 
-        <shape name="manual-schedule-selector-right-line" from="base_vertical_line">
+        <shape name="manual-schedule-selector-right-line" from="base_highlight_vertical_line">
             <area>1086,40,2,317</area>
         </shape>
 
-        <shape name="manual-schedule-spinbox-top-line" from="base_line">
+        <shape name="manual-schedule-spinbox-backdrop-line" from="base_backdrop_line">
+            <area>191,364,898,319</area>
+        </shape>
+
+        <shape name="manual-schedule-spinbox-top-line" from="base_highlight_line">
             <area>192,365,896,2</area>
         </shape>
 
-        <shape name="manual-schedlue-spinbox-bottom-line" from="base_line">
+        <shape name="manual-schedlue-spinbox-bottom-line" from="base_highlight_line">
             <area>192,680,896,2</area>
         </shape>
 
-        <shape name="manual-schedule-spinbox-left-line" from="base_vertical_line">
+        <shape name="manual-schedule-spinbox-left-line" from="base_highlight_vertical_line">
             <area>192,367,2,313</area>
         </shape>
 
-        <shape name="manual-schedule-spinbox-right-line" from="base_vertical_line">
+        <shape name="manual-schedule-spinbox-right-line" from="base_highlight_vertical_line">
             <area>1086,367,2,313</area>
         </shape>
 
-        <shape name="manual-schedule-buttons-top-line" from="base_line">
+        <shape name="manual-schedule-buttons-top-line" from="base_highlight_line">
             <area>213,604,854,2</area>
         </shape>
 
@@ -946,19 +974,23 @@
             <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="channel-record-priorities-top-line" from="base_line">
+        <shape name="channel-record-priorities-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,381</area>
+        </shape>
+
+        <shape name="channel-record-priorities-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-line" from="base_line">
+        <shape name="channel-record-priorities-bottom-line" from="base_highlight_line">
             <area>22,415,1236,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-left-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,375</area>
         </shape>
 
-        <shape name="channel-record-priorities-right-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,375</area>
         </shape>
 
@@ -966,19 +998,23 @@
             <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-top-line" from="base_line">
+        <shape name="channel-record-priorites-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,430,896,254</area>
+        </shape>
+
+        <shape name="channel-record-priorities-bottom-top-line" from="base_highlight_line">
             <area>22,431,894,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-bottom-line" from="base_line">
+        <shape name="channel-record-priorities-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,894,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-left-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,433,2,248</area>
         </shape>
 
-        <shape name="channel-record-priorities-bottom-right-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-bottom-right-line" from="base_highlight_vertical_line">
             <area>914,433,2,248</area>
         </shape>
 
@@ -990,19 +1026,23 @@
             <area>43,633,852,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-icon-top-line" from="base_line">
+        <shape name="channel-record-priorites-icon-backdrop-line" from="base_backdrop_line">
+            <area>921,430,338,254</area>
+        </shape>
+
+        <shape name="channel-record-priorities-icon-top-line" from="base_highlight_line">
             <area>922,431,336,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-icon-bottom-line" from="base_line">
+        <shape name="channel-record-priorities-icon-bottom-line" from="base_highlight_line">
             <area>922,681,336,2</area>
         </shape>
 
-        <shape name="channel-record-priorities-icon-left-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-icon-left-line" from="base_highlight_vertical_line">
             <area>922,433,2,248</area>
         </shape>
 
-        <shape name="channel-record-priorities-icon-right-line" from="base_vertical_line">
+        <shape name="channel-record-priorities-icon-right-line" from="base_highlight_vertical_line">
             <area>1256,433,2,248</area>
         </shape>
 
@@ -1109,19 +1149,23 @@
             <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="program-record-priority-list-top-line" from="base_line">
+        <shape name="program-record-priority-list-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,381</area>
+        </shape>
+
+        <shape name="program-record-priority-list-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="program-record-priority-list-bottom-line" from="base_line">
+        <shape name="program-record-priority-list-bottom-line" from="base_highlight_line">
             <area>22,415,1236,2</area>
         </shape>
 
-        <shape name="program-record-priority-list-left-line" from="base_vertical_line">
+        <shape name="program-record-priority-list-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,375</area>
         </shape>
 
-        <shape name="program-record-priority-list-right-line" from="base_vertical_line">
+        <shape name="program-record-priority-list-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,375</area>
         </shape>
 
@@ -1129,19 +1173,23 @@
             <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="program-record-priority-bottom-top-line" from="base_line">
+        <shape name="program-record-priority-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,430,1238,254</area>
+        </shape>
+
+        <shape name="program-record-priority-bottom-top-line" from="base_highlight_line">
             <area>22,431,1236,2</area>
         </shape>
 
-        <shape name="program-record-priority-bottom-bottom-line" from="base_line">
+        <shape name="program-record-priority-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="program-record-priority-bottom-left-line" from="base_vertical_line">
+        <shape name="program-record-priority-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,433,2,248</area>
         </shape>
 
-        <shape name="program-record-priority-bottom-right-line" from="base_vertical_line">
+        <shape name="program-record-priority-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,433,2,248</area>
         </shape>
 
@@ -1281,19 +1329,23 @@
             <area>20,36,1240,516</area>
         </shape>
 
-        <shape name="custom-priority-rules-top-line" from="base_line">
+        <shape name="custom-priority-rules-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,514</area>
+        </shape>
+
+        <shape name="custom-priority-rules-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-line" from="base_line">
+        <shape name="custom-priority-rules-bottom-line" from="base_highlight_line">
             <area>22,548,1236,2</area>
         </shape>
 
-        <shape name="custom-priority-rules-left-line" from="base_vertical_line">
+        <shape name="custom-priority-rules-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,508</area>
         </shape>
 
-        <shape name="custom-priority-rules-right-line" from="base_vertical_line">
+        <shape name="custom-priority-rules-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,508</area>
         </shape>
 
@@ -1301,19 +1353,23 @@
             <area>20,564,1240,121</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-top-line" from="base_line">
+        <shape name="custom-priority-rules-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,565,1238,119</area>
+        </shape>
+
+        <shape name="custom-priority-rules-bottom-top-line" from="base_highlight_line">
             <area>22,566,1236,2</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-bottom-line" from="base_line">
+        <shape name="custom-priority-rules-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-left-line" from="base_vertical_line">
+        <shape name="custom-priority-rules-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,568,2,113</area>
         </shape>
 
-        <shape name="custom-priority-rules-bottom-right-line" from="base_vertical_line">
+        <shape name="custom-priority-rules-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,568,2,113</area>
         </shape>
 
@@ -1468,19 +1524,23 @@
             <area>390,110,500,500</area>
         </shape>
 
-        <shape name="phrase-popup-top-line" from="base_line">
+        <shape name="phrase-popup-backdrop-line" from="base_backdrop_line">
+            <area>391,111,498,498</area>
+        </shape>
+
+        <shape name="phrase-popup-top-line" from="base_highlight_line">
             <area>392,112,496,2</area>
         </shape>
 
-        <shape name="phrase-popup-bottom-line" from="base_line">
+        <shape name="phrase-popup-bottom-line" from="base_highlight_line">
             <area>392,606,496,2</area>
         </shape>
 
-        <shape name="phrase-popup-left-line" from="base_vertical_line">
+        <shape name="phrase-popup-left-line" from="base_highlight_vertical_line">
             <area>392,114,2,492</area>
         </shape>
 
-        <shape name="phrase-popup-right-line" from="base_vertical_line">
+        <shape name="phrase-popup-right-line" from="base_highlight_vertical_line">
             <area>886,114,2,492</area>
         </shape>
 
@@ -1552,19 +1612,23 @@
             <area>350,278,580,165</area>
         </shape>
 
-        <shape name="time-popup-top-line" from="base_line">
+        <shape name="time-popup-backdrop-line" from="base_backdrop_line">
+            <area>351,279,578,163</area>
+        </shape>
+
+        <shape name="time-popup-top-line" from="base_highlight_line">
             <area>352,280,576,2</area>
         </shape>
 
-        <shape name="time-popup-bottom-line" from="base_line">
+        <shape name="time-popup-bottom-line" from="base_highlight_line">
             <area>352,439,576,2</area>
         </shape>
 
-        <shape name="time-popup-left-line" from="base_vertical_line">
+        <shape name="time-popup-left-line" from="base_highlight_vertical_line">
             <area>352,282,2,157</area>
         </shape>
 
-        <shape name="time-popup-right-line" from="base_vertical_line">
+        <shape name="time-popup-right-line" from="base_highlight_vertical_line">
             <area>926,282,2,157</area>
         </shape>
 
@@ -1618,19 +1682,23 @@
             <area>390,110,500,500</area>
         </shape>
 
-        <shape name="power-search-top-line" from="base_line">
+        <shape name="power-search-backdrop-line" from="base_backdrop_line">
+            <area>391,111,498,498</area>
+        </shape>
+
+        <shape name="power-search-top-line" from="base_highlight_line">
             <area>392,112,496,2</area>
         </shape>
 
-        <shape name="power-search-bottom-line" from="base_line">
+        <shape name="power-search-bottom-line" from="base_highlight_line">
             <area>392,606,496,2</area>
         </shape>
 
-        <shape name="power-search-left-line" from="base_vertical_line">
+        <shape name="power-search-left-line" from="base_highlight_vertical_line">
             <area>392,114,2,492</area>
         </shape>
 
-        <shape name="power-search-right-line" from="base_vertical_line">
+        <shape name="power-search-right-line" from="base_highlight_vertical_line">
             <area>886,114,2,492</area>
         </shape>
 
@@ -1698,19 +1766,23 @@
             <area>390,85,500,550</area>
         </shape>
 
-        <shape name="edit-power-search-top-line" from="base_line">
+        <shape name="edit-power-search-backdrop-line" from="base_backdrop_line">
+            <area>391,86,498,548</area>
+        </shape>
+
+        <shape name="edit-power-search-top-line" from="base_highlight_line">
             <area>392,87,496,2</area>
         </shape>
 
-        <shape name="edit-power-search-bottom-line" from="base_line">
+        <shape name="edit-power-search-bottom-line" from="base_highlight_line">
             <area>392,631,496,2</area>
         </shape>
 
-        <shape name="edit-power-search-left-line" from="base_vertical_line">
+        <shape name="edit-power-search-left-line" from="base_highlight_vertical_line">
             <area>392,89,2,542</area>
         </shape>
 
-        <shape name="edit-power-search-right-line" from="base_vertical_line">
+        <shape name="edit-power-search-right-line" from="base_highlight_vertical_line">
             <area>886,89,2,542</area>
         </shape>
 
@@ -1810,19 +1882,23 @@
             <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="previously-recorded-list-top-line" from="base_line">
+        <shape name="previously-recorded-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,381</area>
+        </shape>
+
+        <shape name="previously-recorded-list-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="previously-recorded-list-bottom-line" from="base_line">
+        <shape name="previously-recorded-list-bottom-line" from="base_highlight_line">
             <area>22,415,1236,2</area>
         </shape>
 
-        <shape name="previously-recorded-list-left-line" from="base_vertical_line">
+        <shape name="previously-recorded-list-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,375</area>
         </shape>
 
-        <shape name="previously-recorded-list-right-line" from="base_vertical_line">
+        <shape name="previously-recorded-list-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,375</area>
         </shape>
 
@@ -1830,19 +1906,23 @@
             <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="previously-recorded-bottom-top-line" from="base_line">
+        <shape name="previously-recorded-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,430,1238,254</area>
+        </shape>
+
+        <shape name="previously-recorded-bottom-top-line" from="base_highlight_line">
             <area>22,431,1236,2</area>
         </shape>
 
-        <shape name="previously-recorded-bottom-bottom-line" from="base_line">
+        <shape name="previously-recorded-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="previously-recorded-bottom-left-line" from="base_vertical_line">
+        <shape name="previously-recorded-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,433,2,248</area>
         </shape>
 
-        <shape name="previously-recorded-bottom-right-line" from="base_vertical_line">
+        <shape name="previously-recorded-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,433,2,248</area>
         </shape>
 
@@ -1955,19 +2035,23 @@
             <area>20,36,1240,649</area>
         </shape>
 
-        <shape name="program-details-top-line" from="base_line">
+        <shape name="program-details-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,647</area>
+        </shape>
+
+        <shape name="program-details-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="program-details-bottom-line" from="base_line">
+        <shape name="program-details-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="program-details-left-line" from="base_vertical_line">
+        <shape name="program-details-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="program-details-right-line" from="base_vertical_line">
+        <shape name="program-details-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 
@@ -1986,19 +2070,23 @@
             <area>135,26,1010,52</area>
         </shape>
 
-        <shape name="search-popup-top-line" from="base_line">
+        <shape name="search-popup-backdrop-line" from="base_backdrop_line">
+            <area>136,27,1008,50</area>
+        </shape>
+
+        <shape name="search-popup-top-line" from="base_highlight_line">
             <area>137,28,1006,2</area>
         </shape>
 
-        <shape name="search-popup-bottom-line" from="base_line">
+        <shape name="search-popup-bottom-line" from="base_highlight_line">
             <area>137,74,1006,2</area>
         </shape>
 
-        <shape name="search-popup-left-line" from="base_vertical_line">
+        <shape name="search-popup-left-line" from="base_highlight_vertical_line">
             <area>137,30,2,44</area>
         </shape>
 
-        <shape name="search-popup-right-line" from="base_vertical_line">
+        <shape name="search-popup-right-line" from="base_highlight_vertical_line">
             <area>1141,30,2,44</area>
         </shape>
 
@@ -2044,19 +2132,23 @@
             <area>20,78,822,371</area>
         </shape>
 
-        <shape name="program-find-shows-top-line" from="base_line">
+        <shape name="program-find-shows-backdrop-line" from="base_backdrop_line">
+            <area>21,79,820,369</area>
+        </shape>
+
+        <shape name="program-find-shows-top-line" from="base_highlight_line">
             <area>22,80,818,2</area>
         </shape>
 
-        <shape name="program-find-shows-bottom-line" from="base_line">
+        <shape name="program-find-shows-bottom-line" from="base_highlight_line">
             <area>22,445,818,2</area>
         </shape>
 
-        <shape name="program-find-shows-left-line" from="base_vertical_line">
+        <shape name="program-find-shows-left-line" from="base_highlight_vertical_line">
             <area>22,82,2,363</area>
         </shape>
 
-        <shape name="program-find-shows-right-line" from="base_vertical_line">
+        <shape name="program-find-shows-right-line" from="base_highlight_vertical_line">
             <area>838,82,2,363</area>
         </shape>
 
@@ -2064,19 +2156,23 @@
             <area>852,78,408,371</area>
         </shape>
 
-        <shape name="program-find-times-top-line" from="base_line">
+        <shape name="program-find-times-backdrop-line" from="base_backdrop_line">
+            <area>853,79,406,369</area>
+        </shape>
+
+        <shape name="program-find-times-top-line" from="base_highlight_line">
             <area>854,80,404,2</area>
         </shape>
 
-        <shape name="program-find-times-bottom-line" from="base_line">
+        <shape name="program-find-times-bottom-line" from="base_highlight_line">
             <area>854,445,404,2</area>
         </shape>
 
-        <shape name="program-find-times-left-line" from="base_vertical_line">
+        <shape name="program-find-times-left-line" from="base_highlight_vertical_line">
             <area>854,82,2,363</area>
         </shape>
 
-        <shape name="program-find-times-right-line" from="base_vertical_line">
+        <shape name="program-find-times-right-line" from="base_highlight_vertical_line">
             <area>1256,82,2,363</area>
         </shape>
 
@@ -2084,19 +2180,23 @@
             <area>20,459,822,226</area>
         </shape>
 
-        <shape name="program-find-bottom-top-line" from="base_line">
+        <shape name="program-find-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,460,820,224</area>
+        </shape>
+
+        <shape name="program-find-bottom-top-line" from="base_highlight_line">
             <area>22,461,818,2</area>
         </shape>
 
-        <shape name="program-find-bottom-bottom-line" from="base_line">
+        <shape name="program-find-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,818,2</area>
         </shape>
 
-        <shape name="program-find-bottom-left-line" from="base_vertical_line">
+        <shape name="program-find-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,463,2,218</area>
         </shape>
 
-        <shape name="program-find-bottom-right-line" from="base_vertical_line">
+        <shape name="program-find-bottom-right-line" from="base_highlight_vertical_line">
             <area>838,463,2,218</area>
         </shape>
 
@@ -2108,19 +2208,23 @@
             <area>852,459,408,226</area>
         </shape>
 
-        <shape name="program-find-bottom-right-top-line" from="base_line">
+        <shape name="program-find-bottom-right-backdrop-line" from="base_backdrop_line">
+            <area>853,460,406,224</area>
+        </shape>
+
+        <shape name="program-find-bottom-right-top-line" from="base_highlight_line">
             <area>854,461,404,2</area>
         </shape>
 
-        <shape name="program-find-bottom-right-bottom-line" from="base_line">
+        <shape name="program-find-bottom-right-bottom-line" from="base_highlight_line">
             <area>854,681,404,2</area>
         </shape>
 
-        <shape name="program-find-bottom-right-left-line" from="base_vertical_line">
+        <shape name="program-find-bottom-right-left-line" from="base_highlight_vertical_line">
             <area>854,463,2,218</area>
         </shape>
 
-        <shape name="program-find-bottom-right-right-line" from="base_vertical_line">
+        <shape name="program-find-bottom-right-right-line" from="base_highlight_vertical_line">
             <area>1256,463,2,218</area>
         </shape>
 
@@ -2326,19 +2430,23 @@
             <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="manage-recordings-list-top-line" from="base_line">
+        <shape name="manage-recordings-list-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,381</area>
+        </shape>
+
+        <shape name="manage-recordings-list-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-list-bottom-line" from="base_line">
+        <shape name="manage-recordings-list-bottom-line" from="base_highlight_line">
             <area>22,415,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-list-left-line" from="base_vertical_line">
+        <shape name="manage-recordings-list-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,375</area>
         </shape>
 
-        <shape name="manage-recordings-list-right-line" from="base_vertical_line">
+        <shape name="manage-recordings-list-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,375</area>
         </shape>
 
@@ -2346,19 +2454,23 @@
             <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-top-line" from="base_line">
+        <shape name="manage-recordings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,430,1238,254</area>
+        </shape>
+
+        <shape name="manage-recordings-bottom-top-line" from="base_highlight_line">
             <area>22,431,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-bottom-line" from="base_line">
+        <shape name="manage-recordings-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-left-line" from="base_vertical_line">
+        <shape name="manage-recordings-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,433,2,248</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-right-line" from="base_vertical_line">
+        <shape name="manage-recordings-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,433,2,248</area>
         </shape>
 
@@ -2502,19 +2614,23 @@
             <area>20,36,1240,516</area>
         </shape>
 
-        <shape name="custom-record-rules-top-line" from="base_line">
+        <shape name="custom-record-rules-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,514</area>
+        </shape>
+
+        <shape name="custom-record-rules-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-line" from="base_line">
+        <shape name="custom-record-rules-bottom-line" from="base_highlight_line">
             <area>22,548,1236,2</area>
         </shape>
 
-        <shape name="custom-record-rules-left-line" from="base_vertical_line">
+        <shape name="custom-record-rules-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,508</area>
         </shape>
 
-        <shape name="custom-record-rules-right-line" from="base_vertical_line">
+        <shape name="custom-record-rules-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,508</area>
         </shape>
 
@@ -2522,19 +2638,23 @@
             <area>20,564,1240,121</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-top-line" from="base_line">
+        <shape name="custom-record-rules-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,565,1238,119</area>
+        </shape>
+
+        <shape name="custom-record-rules-bottom-top-line" from="base_highlight_line">
             <area>22,566,1236,2</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-bottom-line" from="base_line">
+        <shape name="custom-record-rules-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-left-line" from="base_vertical_line">
+        <shape name="custom-record-rules-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,568,2,113</area>
         </shape>
 
-        <shape name="custom-record-rules-bottom-right-line" from="base_vertical_line">
+        <shape name="custom-record-rules-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,568,2,113</area>
         </shape>
 
@@ -2723,19 +2843,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="schedule-editor-top-line" from="base_line">
+        <shape name="schedule-editor-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="schedule-editor-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="schedule-editor-bottom-line" from="base_line">
+        <shape name="schedule-editor-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="schedule-editor-left-line" from="base_vertical_line">
+        <shape name="schedule-editor-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="schedule-editor-right-line" from="base_vertical_line">
+        <shape name="schedule-editor-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -2743,19 +2867,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="schedule-editor-description-top-line" from="base_line">
+        <shape name="schedule-editor-description-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="schedule-editor-description-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="schedule-editor-descripttion-bottom-line" from="base_line">
+        <shape name="schedule-editor-descripttion-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="schedule-editor-description-left-line" from="base_vertical_line">
+        <shape name="schedule-editor-description-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="schedule-editor-description-right-line" from="base_vertical_line">
+        <shape name="schedule-editor-description-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -2897,19 +3025,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="schedule-options-editor-top-line" from="base_line">
+        <shape name="schedule-options-editor-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="schedule-options-editor-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="schedule-options-editor-bottom-line" from="base_line">
+        <shape name="schedule-options-editor-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="schedule-options-editor-left-line" from="base_vertical_line">
+        <shape name="schedule-options-editor-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="schedule-options-editor-right-line" from="base_vertical_line">
+        <shape name="schedule-options-editor-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -2917,19 +3049,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="schedule-options-editor-description-top-line" from="base_line">
+        <shape name="schedule-options-editor-description-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="schedule-options-editor-description-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="schedule-options-editor-descripttion-bottom-line" from="base_line">
+        <shape name="schedule-options-editor-descripttion-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="schedule-options-editor-description-left-line" from="base_vertical_line">
+        <shape name="schedule-options-editor-description-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="schedule-options-editor-description-right-line" from="base_vertical_line">
+        <shape name="schedule-options-editor-description-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -3123,19 +3259,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="schedule-filter-editor-top-line" from="base_line">
+        <shape name="schedule-filter-editor-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-bottom-line" from="base_line">
+        <shape name="schedule-filter-editor-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-left-line" from="base_vertical_line">
+        <shape name="schedule-filter-editor-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="schedule-filter-editor-right-line" from="base_vertical_line">
+        <shape name="schedule-filter-editor-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -3143,19 +3283,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-top-line" from="base_line">
+        <shape name="schedule-filter-editor-description-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="schedule-filter-editor-description-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-descripttion-bottom-line" from="base_line">
+        <shape name="schedule-filter-editor-descripttion-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-left-line" from="base_vertical_line">
+        <shape name="schedule-filter-editor-description-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-right-line" from="base_vertical_line">
+        <shape name="schedule-filter-editor-description-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -3280,19 +3424,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="storage-options-editor-top-line" from="base_line">
+        <shape name="storage-options-editor-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="storage-options-editor-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="storage-options-editor-bottom-line" from="base_line">
+        <shape name="storage-options-editor-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="storage-options-editor-left-line" from="base_vertical_line">
+        <shape name="storage-options-editor-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="storage-options-editor-right-line" from="base_vertical_line">
+        <shape name="storage-options-editor-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -3300,19 +3448,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="storage-options-editor-description-top-line" from="base_line">
+        <shape name="storage-options-editor-description-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="storage-options-editor-description-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="storage-options-editor-descripttion-bottom-line" from="base_line">
+        <shape name="storage-options-editor-descripttion-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="storage-options-editor-description-left-line" from="base_vertical_line">
+        <shape name="storage-options-editor-description-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="storage-options-editor-description-right-line" from="base_vertical_line">
+        <shape name="storage-options-editor-description-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -3535,19 +3687,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="postproc-editor-top-line" from="base_line">
+        <shape name="postproc-editor-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="postproc-editor-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="postproc-editor-bottom-line" from="base_line">
+        <shape name="postproc-editor-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="postproc-editor-left-line" from="base_vertical_line">
+        <shape name="postproc-editor-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="postproc-editor-right-line" from="base_vertical_line">
+        <shape name="postproc-editor-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -3555,19 +3711,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="postproc-editor-description-top-line" from="base_line">
+        <shape name="postproc-editor-description-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="postproc-editor-description-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="postproc-editor-descripttion-bottom-line" from="base_line">
+        <shape name="postproc-editor-descripttion-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="postproc-editor-description-left-line" from="base_vertical_line">
+        <shape name="postproc-editor-description-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="postproc-editor-description-right-line" from="base_vertical_line">
+        <shape name="postproc-editor-description-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -3746,19 +3906,23 @@
             <area>20,36,686,648</area>
         </shape>
 
-        <shape name="metadata-options-top-line" from="base_line">
+        <shape name="metadata-options-backdrop-line" from="base_backdrop_line">
+            <area>21,37,684,646</area>
+        </shape>
+
+        <shape name="metadata-options-top-line" from="base_highlight_line">
             <area>22,38,682,2</area>
         </shape>
 
-        <shape name="metadata-options-bottom-line" from="base_line">
+        <shape name="metadata-options-bottom-line" from="base_highlight_line">
             <area>22,680,682,2</area>
         </shape>
 
-        <shape name="metadata-options-left-line" from="base_vertical_line">
+        <shape name="metadata-options-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,640</area>
         </shape>
 
-        <shape name="metadata-options-right-line" from="base_vertical_line">
+        <shape name="metadata-options-right-line" from="base_highlight_vertical_line">
             <area>702,40,2,640</area>
         </shape>
 
@@ -3766,19 +3930,23 @@
             <area>712,36,548,648</area>
         </shape>
 
-        <shape name="metadata-options-artwork-top-line" from="base_line">
+        <shape name="metadata-options-artwork-backdrop-line" from="base_backdrop_line">
+            <area>713,37,546,646</area>
+        </shape>
+
+        <shape name="metadata-options-artwork-top-line" from="base_highlight_line">
             <area>714,38,544,2</area>
         </shape>
 
-        <shape name="metadata-options-artwork-bottom-line" from="base_line">
+        <shape name="metadata-options-artwork-bottom-line" from="base_highlight_line">
             <area>714,680,544,2</area>
         </shape>
 
-        <shape name="metadata-options-artwork-left-line" from="base_vertical_line">
+        <shape name="metadata-options-artwork-left-line" from="base_highlight_vertical_line">
             <area>714,40,2,640</area>
         </shape>
 
-        <shape name="metadata-options-artwork-right-line" from="base_vertical_line">
+        <shape name="metadata-options-artwork-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,640</area>
         </shape>
 
@@ -3934,19 +4102,23 @@
             <area>20,36,1240,383</area>
         </shape>
 
-        <shape name="preview-schedule-list-top-line" from="base_line">
+        <shape name="preview-schedule-priority-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,381</area>
+        </shape>
+
+        <shape name="preview-schedule-list-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="preview-schedule-list-bottom-line" from="base_line">
+        <shape name="preview-schedule-list-bottom-line" from="base_highlight_line">
             <area>22,415,1236,2</area>
         </shape>
 
-        <shape name="preview-schedule-list-left-line" from="base_vertical_line">
+        <shape name="preview-schedule-list-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,375</area>
         </shape>
 
-        <shape name="preview-schedule-list-right-line" from="base_vertical_line">
+        <shape name="preview-schedule-list-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,375</area>
         </shape>
 
@@ -3954,19 +4126,23 @@
             <area>20,429,1240,256</area>
         </shape>
 
-        <shape name="preview-schedule-bottom-top-line" from="base_line">
+        <shape name="preview-schedule-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,430,1238,254</area>
+        </shape>
+
+        <shape name="preview-schedule-bottom-top-line" from="base_highlight_line">
             <area>22,431,1236,2</area>
         </shape>
 
-        <shape name="preview-schedule-bottom-bottom-line" from="base_line">
+        <shape name="preview-schedule-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="preview-schedule-bottom-left-line" from="base_vertical_line">
+        <shape name="preview-schedule-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,433,2,248</area>
         </shape>
 
-        <shape name="preview-schedule-bottom-right-line" from="base_vertical_line">
+        <shape name="preview-schedule-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,433,2,248</area>
         </shape>
 

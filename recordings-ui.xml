@@ -637,19 +637,23 @@
             <area>20,72,246,359</area>
         </shape>
 
-        <shape name="coverart-top-line" from="base_line">
+        <shape name="coverart-backdrop-line" from="base_backdrop_line">
+            <area>21,73,244,357</area>
+        </shape>
+
+        <shape name="coverart-top-line" from="base_highlight_line">
             <area>22,74,242,2</area>
         </shape>
 
-        <shape name="coverart-bottom-line" from="base_line">
+        <shape name="coverart-bottom-line" from="base_highlight_line">
             <area>22,427,242,2</area>
         </shape>
 
-        <shape name="coverart-left-line" from="base_vertical_line">
+        <shape name="coverart-left-line" from="base_highlight_vertical_line">
             <area>22,76,2,351</area>
         </shape>
 
-        <shape name="coverart-right-line" from="base_vertical_line">
+        <shape name="coverart-right-line" from="base_highlight_vertical_line">
             <area>262,76,2,351</area>
         </shape>
 
@@ -657,19 +661,23 @@
             <area>277,72,983,359</area>
         </shape>
 
-        <shape name="reclist-top-line" from="base_line">
+        <shape name="reclist-backdrop-line" from="base_backdrop_line">
+            <area>278,73,981,357</area>
+        </shape>
+
+        <shape name="reclist-top-line" from="base_highlight_line">
             <area>279,74,979,2</area>
         </shape>
 
-        <shape name="reclist-bottom-line" from="base_line">
+        <shape name="reclist-bottom-line" from="base_highlight_line">
             <area>279,427,979,2</area>
         </shape>
 
-        <shape name="reclist-left-line" from="base_vertical_line">
+        <shape name="reclist-left-line" from="base_highlight_vertical_line">
             <area>279,76,2,351</area>
         </shape>
 
-        <shape name="reclist-right-line" from="base_vertical_line">
+        <shape name="reclist-right-line" from="base_highlight_vertical_line">
             <area>1256,76,2,351</area>
         </shape>
 
@@ -677,19 +685,23 @@
             <area>20,441,800,246</area>
         </shape>
 
-        <shape name="description-top-line" from="base_line">
+        <shape name="description-backdrop-line" from="base_backdrop_line">
+            <area>21,442,798,244</area>
+        </shape>
+
+        <shape name="description-top-line" from="base_highlight_line">
             <area>22,443,796,2</area>
         </shape>
 
-        <shape name="description-bottom-line" from="base_line">
+        <shape name="description-bottom-line" from="base_highlight_line">
             <area>22,683,796,2</area>
         </shape>
 
-        <shape name="description-left-line" from="base_vertical_line">
+        <shape name="description-left-line" from="base_highlight_vertical_line">
             <area>22,445,2,238</area>
         </shape>
 
-        <shape name="description-right-line" from="base_vertical_line">
+        <shape name="description-right-line" from="base_highlight_vertical_line">
             <area>816,445,2,238</area>
         </shape>
 
@@ -705,19 +717,23 @@
             <area>830,441,430,246</area>
         </shape>
 
-        <shape name="preview-top-line" from="base_line">
+        <shape name="preview-backdrop-line" from="base_backdrop_line" >
+            <area>831,442,428,244</area>
+        </shape>
+
+        <shape name="preview-top-line" from="base_highlight_line">
             <area>832,443,426,2</area>
         </shape>
 
-        <shape name="preview-bottom-line" from="base_line">
+        <shape name="preview-bottom-line" from="base_highlight_line">
             <area>832,683,426,2</area>
         </shape>
 
-        <shape name="preview-left-line" from="base_vertical_line">
+        <shape name="preview-left-line" from="base_highlight_vertical_line">
             <area>832,445,2,238</area>
         </shape>
 
-        <shape name="preview-right-line" from="base_vertical_line">
+        <shape name="preview-right-line" from="base_highlight_vertical_line">
             <area>1256,445,2,238</area>
         </shape>
 
@@ -1210,19 +1226,23 @@
             <area>450,128,380,463</area>
         </shape>
 
-        <shape name="change-view-top-line" from="base_line">
+        <shape name="change-view-backdrop-line" from="base_backdrop_line">
+            <area>451,129,378,461</area>
+        </shape>
+
+        <shape name="change-view-top-line" from="base_highlight_line">
             <area>452,130,376,2</area>
         </shape>
 
-        <shape name="change-view-bottom-line" from="base_line">
+        <shape name="change-view-bottom-line" from="base_highlight_line">
             <area>452,587,376,2</area>
         </shape>
 
-        <shape name="change-view-left-line" from="base_vertical_line">
+        <shape name="change-view-left-line" from="base_highlight_vertical_line">
             <area>452,132,2,455</area>
         </shape>
 
-        <shape name="change-view-right-line" from="base_vertical_line">
+        <shape name="change-view-right-line" from="base_highlight_vertical_line">
             <area>826,132,2,455</area>
         </shape>
 
@@ -1309,19 +1329,23 @@
             <area>350,228,587,270</area>
         </shape>
 
-        <shape name="password-changer-top-line" from="base_line">
+        <shape name="password-changer-backdrop-line" from="base_backdrop_line">
+            <area>351,229,585,268</area>
+        </shape>
+
+        <shape name="password-changer-top-line" from="base_highlight_line">
             <area>352,230,583,2</area>
         </shape>
 
-        <shape name="password-changer-bottom-line" from="base_line">
+        <shape name="password-changer-bottom-line" from="base_highlight_line">
             <area>352,494,583,2</area>
         </shape>
 
-        <shape name="password-changer-left-line" from="base_vertical_line">
+        <shape name="password-changer-left-line" from="base_highlight_vertical_line">
             <area>352,232,2,262</area>
         </shape>
 
-        <shape name="password-changer-right-line" from="base_vertical_line">
+        <shape name="password-changer-right-line" from="base_highlight_vertical_line">
             <area>933,232,2,262</area>
         </shape>
 
@@ -1359,19 +1383,23 @@
             <area>450,128,380,463</area>
         </shape>
 
-        <shape name="group-selector-top-line" from="base_line">
+        <shape name="group-selector-backdrop-line" from="base_backdrop_line">
+            <area>451,129,378,461</area>
+        </shape>
+
+        <shape name="group-selector-top-line" from="base_highlight_line">
             <area>452,130,376,2</area>
         </shape>
 
-        <shape name="group-selector-bottom-line" from="base_line">
+        <shape name="group-selector-bottom-line" from="base_highlight_line">
             <area>452,587,376,2</area>
         </shape>
 
-        <shape name="group-selector-left-line" from="base_vertical_line">
+        <shape name="group-selector-left-line" from="base_highlight_vertical_line">
             <area>452,132,2,455</area>
         </shape>
 
-        <shape name="group-selector-right-line" from="base_vertical_line">
+        <shape name="group-selector-right-line" from="base_highlight_vertical_line">
             <area>826,132,2,455</area>
         </shape>
 
@@ -1420,19 +1448,23 @@
             <area>290,110,700,500</area>
         </shape>
 
-        <shape name="icon-help-top-line" from="base_line">
+        <shape name="icon-help-backdrop-line" from="base_backdrop_line">
+            <area>291,111,698,498</area>
+        </shape>
+
+        <shape name="icon-help-top-line" from="base_highlight_line">
             <area>292,112,696,2</area>
         </shape>
 
-        <shape name="icon-help-bottom-line" from="base_line">
+        <shape name="icon-help-bottom-line" from="base_highlight_line">
             <area>292,606,696,2</area>
         </shape>
 
-        <shape name="icon-help-left-line" from="base_vertical_line">
+        <shape name="icon-help-left-line" from="base_highlight_vertical_line">
             <area>292,114,2,492</area>
         </shape>
 
-        <shape name="icon-help-right-line" from="base_vertical_line">
+        <shape name="icon-help-right-line" from="base_highlight_vertical_line">
             <area>986,114,2,492</area>
         </shape>
 
@@ -1634,19 +1666,23 @@
             <area>330,60,620,600</area>
         </shape>
 
-        <shape name="edit-metatdata-top-line" from="base_line">
+        <shape name="edit-metadata-backdrop-line" from="base_backdrop_line">
+            <area>331,61,618,598</area>
+        </shape>
+
+        <shape name="edit-metatdata-top-line" from="base_highlight_line">
             <area>332,62,616,2</area>
         </shape>
 
-        <shape name="edit-metadata-bottom-line" from="base_line">
+        <shape name="edit-metadata-bottom-line" from="base_highlight_line">
             <area>332,656,616,2</area>
         </shape>
 
-        <shape name="edit-metadata-left-line" from="base_vertical_line">
+        <shape name="edit-metadata-left-line" from="base_highlight_vertical_line">
             <area>332,64,2,592</area>
         </shape>
 
-        <shape name="edit-metadata-right-line" from="base_vertical_line">
+        <shape name="edit-metadata-right-line" from="base_highlight_vertical_line">
             <area>946,64,2,592</area>
         </shape>
 

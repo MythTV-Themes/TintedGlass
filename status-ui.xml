@@ -26,19 +26,23 @@
             <area>20,76,1240,337</area>
         </shape>
 
-        <shape name="status-list-top-line" from="base_line">
+        <shape name="status-backdrop-line" from="base_backdrop_line">
+            <area>21,77,1238,335</area>
+        </shape>
+
+        <shape name="status-list-top-line" from="base_highlight_line">
             <area>22,78,1236,2</area>
         </shape>
 
-        <shape name="status-list-bottom-line" from="base_line">
+        <shape name="status-list-bottom-line" from="base_highlight_line">
             <area>22,409,1236,2</area>
         </shape>
 
-        <shape name="status-list-left-line" from="base_vertical_line">
+        <shape name="status-list-left-line" from="base_highlight_vertical_line">
             <area>22,80,2,329</area>
         </shape>
 
-        <shape name="status-list-right-line" from="base_vertical_line">
+        <shape name="status-list-right-line" from="base_highlight_vertical_line">
             <area>1256,80,2,329</area>
         </shape>
 
@@ -46,19 +50,23 @@
             <area>20,423,1240,262</area>
         </shape>
 
-        <shape name="status-bottom-top-line" from="base_line">
+        <shape name="status-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,424,1238,260</area>
+        </shape>
+
+        <shape name="status-bottom-top-line" from="base_highlight_line">
             <area>22,425,1236,2</area>
         </shape>
 
-        <shape name="status-bottom-bottom-line" from="base_line">
+        <shape name="status-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="status-bottom-left-line" from="base_vertical_line">
+        <shape name="status-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,427,2,256</area>
         </shape>
 
-        <shape name="status-bottom-right-line" from="base_vertical_line">
+        <shape name="status-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,427,2,256</area>
         </shape>
 

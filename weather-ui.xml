@@ -13,19 +13,23 @@
             <area>20,36,1240,649</area>
         </shape>
 
-        <shape name="weather-base-top-line" from="base_line">
+        <shape name="weather-base-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,647</area>
+        </shape>
+
+        <shape name="weather-base-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="weather-base-bottom-line" from="base_line">
+        <shape name="weather-base-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="weather-base-left-line" from="base_vertical_line">
+        <shape name="weather-base-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="weather-base-right-line" from="base_vertical_line">
+        <shape name="weather-base-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 
@@ -56,35 +60,43 @@
     <window name="Current Conditions">
         <area>0,0,1280,720</area>
 
-        <shape name="current-conditions-left-top-line" from="base_line">
+        <shape name="current-conditions-left-backdrop-line" from="base_backdrop_line">
+            <area>42,127,789,509</area>
+        </shape>
+
+        <shape name="current-conditions-left-top-line" from="base_highlight_line">
             <area>43,128,787,2</area>
         </shape>
 
-        <shape name="current-conditions-left-bottom-line" from="base_line">
+        <shape name="current-conditions-left-bottom-line" from="base_highlight_line">
             <area>43,633,787,2</area>
         </shape>
 
-        <shape name="current-conditions-left-left-line" from="base_vertical_line">
+        <shape name="current-conditions-left-left-line" from="base_highlight_vertical_line">
             <area>43,130,2,503</area>
         </shape>
 
-        <shape name="current-conditions-left-right-line" from="base_vertical_line">
+        <shape name="current-conditions-left-right-line" from="base_highlight_vertical_line">
             <area>828,130,2,503</area>
         </shape>
 
-        <shape name="current-conditions-right-top-line" from="base_line">
+        <shape name="current-conditions-right-backdrop-line" from="base_backdrop_line">
+            <area>844,127,394,509</area>
+        </shape>
+
+        <shape name="current-conditions-right-top-line" from="base_highlight_line">
             <area>845,128,392,2</area>
         </shape>
 
-        <shape name="current-conditions-right-bottom-line" from="base_line">
+        <shape name="current-conditions-right-bottom-line" from="base_highlight_line">
             <area>845,633,392,2</area>
         </shape>
 
-        <shape name="current-conditions-right-left-line" from="base_vertical_line">
+        <shape name="current-conditions-right-left-line" from="base_highlight_vertical_line">
             <area>845,130,2,503</area>
         </shape>
 
-        <shape name="current-conditions-right-right-line" from="base_vertical_line">
+        <shape name="current-conditions-right-right-line" from="base_highlight_vertical_line">
             <area>1235,130,2,503</area>
         </shape>
 
@@ -194,51 +206,63 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="day0-top-line" from="base_line">
+        <shape name="day0-backdrop-line" from="base_backdrop_line">
+            <area>42,127,392,509</area>
+        </shape>
+
+        <shape name="day0-top-line" from="base_highlight_line">
             <area>43,128,390,2</area>
         </shape>
 
-        <shape name="day0-bottom-line" from="base_line">
+        <shape name="day0-bottom-line" from="base_highlight_line">
             <area>43,633,390,2</area>
         </shape>
 
-        <shape name="day0-left-line" from="base_vertical_line">
+        <shape name="day0-left-line" from="base_highlight_vertical_line">
             <area>43,130,2,503</area>
         </shape>
 
-        <shape name="day0-right-line" from="base_vertical_line">
+        <shape name="day0-right-line" from="base_highlight_vertical_line">
             <area>431,130,2,503</area>
         </shape>
 
-        <shape name="day1-top-line" from="base_line">
+        <shape name="day1-backdrop-line" from="base_backdrop_line">
+            <area>444,127,392,509</area>
+        </shape>
+
+        <shape name="day1-top-line" from="base_highlight_line">
             <area>445,128,390,2</area>
         </shape>
 
-        <shape name="day1-bottom-line" from="base_line">
+        <shape name="day1-bottom-line" from="base_highlight_line">
             <area>445,633,390,2</area>
         </shape>
 
-        <shape name="day1-left-line" from="base_vertical_line">
+        <shape name="day1-left-line" from="base_highlight_vertical_line">
             <area>445,130,2,503</area>
         </shape>
 
-        <shape name="day1-right-line" from="base_vertical_line">
+        <shape name="day1-right-line" from="base_highlight_vertical_line">
             <area>833,130,2,503</area>
         </shape>
 
-        <shape name="day2-top-line" from="base_line">
+        <shape name="day2-backdrop-line" from="base_backdrop_line">
+            <area>846,127,392,509</area>
+        </shape>
+
+        <shape name="day2-top-line" from="base_highlight_line">
             <area>847,128,390,2</area>
         </shape>
 
-        <shape name="day2-bottom-line" from="base_line">
+        <shape name="day2-bottom-line" from="base_highlight_line">
             <area>847,633,390,2</area>
         </shape>
 
-        <shape name="day2-left-line" from="base_vertical_line">
+        <shape name="day2-left-line" from="base_highlight_vertical_line">
             <area>847,130,2,503</area>
         </shape>
 
-        <shape name="day2-right-line" from="base_vertical_line">
+        <shape name="day2-right-line" from="base_highlight_vertical_line">
             <area>1235,130,2,503</area>
         </shape>
 
@@ -344,99 +368,123 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="day0-top-line" from="base_line">
+        <shape name="day0-backdrop-line" from="base_backdrop_line">
+            <area>42,127,392,248</area>
+        </shape>
+
+        <shape name="day0-top-line" from="base_highlight_line">
             <area>43,128,390,2</area>
         </shape>
 
-        <shape name="day0-bottom-line" from="base_line">
+        <shape name="day0-bottom-line" from="base_highlight_line">
             <area>43,372,390,2</area>
         </shape>
 
-        <shape name="day0-left-line" from="base_vertical_line">
+        <shape name="day0-left-line" from="base_highlight_vertical_line">
             <area>43,130,2,242</area>
         </shape>
 
-        <shape name="day0-right-line" from="base_vertical_line">
+        <shape name="day0-right-line" from="base_highlight_vertical_line">
             <area>431,130,2,242</area>
         </shape>
 
-        <shape name="day1-top-line" from="base_line">
+        <shape name="day1-backdrop-line" from="base_backdrop_line">
+            <area>444,127,392,248</area>
+        </shape>
+
+        <shape name="day1-top-line" from="base_highlight_line">
             <area>445,128,390,2</area>
         </shape>
 
-        <shape name="day1-bottom-line" from="base_line">
+        <shape name="day1-bottom-line" from="base_highlight_line">
             <area>445,372,390,2</area>
         </shape>
 
-        <shape name="day1-left-line" from="base_vertical_line">
+        <shape name="day1-left-line" from="base_highlight_vertical_line">
             <area>445,130,2,242</area>
         </shape>
 
-        <shape name="day1-right-line" from="base_vertical_line">
+        <shape name="day1-right-line" from="base_highlight_vertical_line">
             <area>833,130,2,242</area>
         </shape>
 
-        <shape name="day2-top-line" from="base_line">
+        <shape name="day2-backdrop-line" from="base_backdrop_line">
+            <area>846,127,392,248</area>
+        </shape>
+
+        <shape name="day2-top-line" from="base_highlight_line">
             <area>847,128,390,2</area>
         </shape>
 
-        <shape name="day2-bottom-line" from="base_line">
+        <shape name="day2-bottom-line" from="base_highlight_line">
             <area>847,372,390,2</area>
         </shape>
 
-        <shape name="day2-left-line" from="base_vertical_line">
+        <shape name="day2-left-line" from="base_highlight_vertical_line">
             <area>847,130,2,242</area>
         </shape>
 
-        <shape name="day2-right-line" from="base_vertical_line">
+        <shape name="day2-right-line" from="base_highlight_vertical_line">
             <area>1235,130,2,242</area>
         </shape>
 
-        <shape name="day3-top-line" from="base_line">
+        <shape name="day3-backdrop-line" from="base_backdrop_line">
+            <area>42,388,392,248</area>
+        </shape>
+
+        <shape name="day3-top-line" from="base_highlight_line">
             <area>43,389,390,2</area>
         </shape>
 
-        <shape name="day3-bottom-line" from="base_line">
+        <shape name="day3-bottom-line" from="base_highlight_line">
             <area>43,633,390,2</area>
         </shape>
 
-        <shape name="day3-left-line" from="base_vertical_line">
+        <shape name="day3-left-line" from="base_highlight_vertical_line">
             <area>43,391,2,242</area>
         </shape>
 
-        <shape name="day3-right-line" from="base_vertical_line">
+        <shape name="day3-right-line" from="base_highlight_vertical_line">
             <area>431,391,2,242</area>
         </shape>
 
-        <shape name="day4-top-line" from="base_line">
+        <shape name="day4-backdrop-line" from="base_backdrop_line">
+            <area>444,388,392,248</area>
+        </shape>
+
+        <shape name="day4-top-line" from="base_highlight_line">
             <area>445,389,390,2</area>
         </shape>
 
-        <shape name="day4-bottom-line" from="base_line">
+        <shape name="day4-bottom-line" from="base_highlight_line">
             <area>445,633,390,2</area>
         </shape>
 
-        <shape name="day4-left-line" from="base_vertical_line">
+        <shape name="day4-left-line" from="base_highlight_vertical_line">
             <area>445,391,2,242</area>
         </shape>
 
-        <shape name="day4-right-line" from="base_vertical_line">
+        <shape name="day4-right-line" from="base_highlight_vertical_line">
             <area>833,391,2,242</area>
         </shape>
 
-        <shape name="day5-top-line" from="base_line">
+        <shape name="day5-backdrop-line" from="base_backdrop_line">
+            <area>846,388,392,248</area>
+        </shape>
+
+        <shape name="day5-top-line" from="base_highlight_line">
             <area>847,389,390,2</area>
         </shape>
 
-        <shape name="day5-bottom-line" from="base_line">
+        <shape name="day5-bottom-line" from="base_highlight_line">
             <area>847,633,390,2</area>
         </shape>
 
-        <shape name="day5-left-line" from="base_vertical_line">
+        <shape name="day5-left-line" from="base_highlight_vertical_line">
             <area>847,391,2,242</area>
         </shape>
 
-        <shape name="day5-right-line" from="base_vertical_line">
+        <shape name="day5-right-line" from="base_highlight_vertical_line">
             <area>1235,391,2,242</area>
         </shape>
 
@@ -637,19 +685,23 @@
     <window name="Severe Weather Alerts">
         <area>0,0,1280,720</area>
 
-        <shape name="weather-alert-top-line" from="base_line">
+        <shape name="weather-alert-backdrop-line" from="base_backdrop_line">
+            <area>42,127,1196,509</area>
+        </shape>
+
+        <shape name="weather-alert-top-line" from="base_highlight_line">
             <area>43,128,1194,2</area>
         </shape>
 
-        <shape name="weather-alert-bottom-line" from="base_line">
+        <shape name="weather-alert-bottom-line" from="base_highlight_line">
             <area>43,633,1194,2</area>
         </shape>
 
-        <shape name="weather-alert-left-line" from="base_vertical_line">
+        <shape name="weather-alert-left-line" from="base_highlight_vertical_line">
             <area>43,130,2,503</area>
         </shape>
 
-        <shape name="weather-alert-right-line" from="base_vertical_line">
+        <shape name="weather-alert-right-line" from="base_highlight_vertical_line">
             <area>1235,130,2,503</area>
         </shape>
 
@@ -682,99 +734,123 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="time0-top-line" from="base_line">
+        <shape name="time0-backdrop-line" from="base_backdrop_line">
+            <area>42,127,392,248</area>
+        </shape>
+
+        <shape name="time0-top-line" from="base_highlight_line">
             <area>43,128,390,2</area>
         </shape>
 
-        <shape name="time0-bottom-line" from="base_line">
+        <shape name="time0-bottom-line" from="base_highlight_line">
             <area>43,372,390,2</area>
         </shape>
 
-        <shape name="time0-left-line" from="base_vertical_line">
+        <shape name="time0-left-line" from="base_highlight_vertical_line">
             <area>43,130,2,242</area>
         </shape>
 
-        <shape name="time0-right-line" from="base_vertical_line">
+        <shape name="time0-right-line" from="base_highlight_vertical_line">
             <area>431,130,2,242</area>
         </shape>
 
-        <shape name="time1-top-line" from="base_line">
+        <shape name="time1-backdrop-line" from="base_backdrop_line">
+            <area>444,127,392,248</area>
+        </shape>
+
+        <shape name="time1-top-line" from="base_highlight_line">
             <area>445,128,390,2</area>
         </shape>
 
-        <shape name="time1-bottom-line" from="base_line">
+        <shape name="time1-bottom-line" from="base_highlight_line">
             <area>445,372,390,2</area>
         </shape>
 
-        <shape name="time1-left-line" from="base_vertical_line">
+        <shape name="time1-left-line" from="base_highlight_vertical_line">
             <area>445,130,2,242</area>
         </shape>
 
-        <shape name="time1-right-line" from="base_vertical_line">
+        <shape name="time1-right-line" from="base_highlight_vertical_line">
             <area>833,130,2,242</area>
         </shape>
 
-        <shape name="time2-top-line" from="base_line">
+        <shape name="time2-backdrop-line" from="base_backdrop_line">
+            <area>846,127,392,248</area>
+        </shape>
+
+        <shape name="time2-top-line" from="base_highlight_line">
             <area>847,128,390,2</area>
         </shape>
 
-        <shape name="time2-bottom-line" from="base_line">
+        <shape name="time2-bottom-line" from="base_highlight_line">
             <area>847,372,390,2</area>
         </shape>
 
-        <shape name="time2-left-line" from="base_vertical_line">
+        <shape name="time2-left-line" from="base_highlight_vertical_line">
             <area>847,130,2,242</area>
         </shape>
 
-        <shape name="time2-right-line" from="base_vertical_line">
+        <shape name="time2-right-line" from="base_highlight_vertical_line">
             <area>1235,130,2,242</area>
         </shape>
 
-        <shape name="time3-top-line" from="base_line">
+        <shape name="time3-backdrop-line" from="base_backdrop_line">
+            <area>42,388,392,248</area>
+        </shape>
+
+        <shape name="time3-top-line" from="base_highlight_line">
             <area>43,389,390,2</area>
         </shape>
 
-        <shape name="time3-bottom-line" from="base_line">
+        <shape name="time3-bottom-line" from="base_highlight_line">
             <area>43,633,390,2</area>
         </shape>
 
-        <shape name="time3-left-line" from="base_vertical_line">
+        <shape name="time3-left-line" from="base_highlight_vertical_line">
             <area>43,391,2,242</area>
         </shape>
 
-        <shape name="time3-right-line" from="base_vertical_line">
+        <shape name="time3-right-line" from="base_highlight_vertical_line">
             <area>431,391,2,242</area>
         </shape>
 
-        <shape name="time4-top-line" from="base_line">
+        <shape name="time4-backdrop-line" from="base_backdrop_line">
+            <area>444,388,392,248</area>
+        </shape>
+
+        <shape name="time4-top-line" from="base_highlight_line">
             <area>445,389,390,2</area>
         </shape>
 
-        <shape name="time4-bottom-line" from="base_line">
+        <shape name="time4-bottom-line" from="base_highlight_line">
             <area>445,633,390,2</area>
         </shape>
 
-        <shape name="time4-left-line" from="base_vertical_line">
+        <shape name="time4-left-line" from="base_highlight_vertical_line">
             <area>445,391,2,242</area>
         </shape>
 
-        <shape name="time4-right-line" from="base_vertical_line">
+        <shape name="time4-right-line" from="base_highlight_vertical_line">
             <area>833,391,2,242</area>
         </shape>
 
-        <shape name="time5-top-line" from="base_line">
+        <shape name="time5-backdrop-line" from="base_backdrop_line">
+            <area>846,388,392,248</area>
+        </shape>
+
+        <shape name="time5-top-line" from="base_highlight_line">
             <area>847,389,390,2</area>
         </shape>
 
-        <shape name="time5-bottom-line" from="base_line">
+        <shape name="time5-bottom-line" from="base_highlight_line">
             <area>847,633,390,2</area>
         </shape>
 
-        <shape name="time5-left-line" from="base_vertical_line">
+        <shape name="time5-left-line" from="base_highlight_vertical_line">
             <area>847,391,2,242</area>
         </shape>
 
-        <shape name="time5-right-line" from="base_vertical_line">
+        <shape name="time5-right-line" from="base_highlight_vertical_line">
             <area>1235,391,2,242</area>
         </shape>
 
@@ -923,19 +999,23 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="global-settings-top-line" from="base_line">
+        <shape name="global-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,647</area>
+        </shape>
+
+        <shape name="global-settings-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="global-settings-bottom-line" from="base_line">
+        <shape name="global-settings-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="global-settings-left-line" from="base_vertical_line">
+        <shape name="global-settings-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,641</area>
         </shape>
 
-        <shape name="global-settings-right-line" from="base_vertical_line">
+        <shape name="global-settings-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,641</area>
         </shape>
 
@@ -980,19 +1060,23 @@
             <area>205,36,870,649</area>
         </shape>
 
-        <shape name="screen-setup-inactive-top-line" from="base_line">
+        <shape name="screen-setup-inactive-backdrop-line" from="base_backdrop_line">
+            <area>206,37,433,413</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-top-line" from="base_highlight_line">
             <area>207,38,431,2</area>
         </shape>
 
-        <shape name="screen-setup-inactive-bottom-line" from="base_line">
+        <shape name="screen-setup-inactive-bottom-line" from="base_highlight_line">
             <area>207,447,431,2</area>
         </shape>
 
-        <shape name="screen-setup-inactive-left-line" from="base_vertical_line">
+        <shape name="screen-setup-inactive-left-line" from="base_highlight_vertical_line">
             <area>207,40,2,407</area>
         </shape>
 
-        <shape name="screen-setup-inactive-right-line" from="base_vertical_line">
+        <shape name="screen-setup-inactive-right-line" from="base_highlight_vertical_line">
             <area>636,40,2,407</area>
         </shape>
 
@@ -1000,19 +1084,23 @@
             <area>230,70,385,2</area>
         </shape>
 
-        <shape name="screen-setup-active-top-line" from="base_line">
+        <shape name="screen-setup-active-backdrop-line" from="base_backdrop_line">
+            <area>641,37,433,413</area>
+        </shape>
+
+        <shape name="screen-setup-active-top-line" from="base_highlight_line">
             <area>642,38,431,2</area>
         </shape>
 
-        <shape name="screen-setup-active-bottom-line" from="base_line">
+        <shape name="screen-setup-active-bottom-line" from="base_highlight_line">
             <area>642,447,431,2</area>
         </shape>
 
-        <shape name="screen-setup-active-left-line" from="base_vertical_line">
+        <shape name="screen-setup-active-left-line" from="base_highlight_vertical_line">
             <area>642,40,2,407</area>
         </shape>
 
-        <shape name="screen-setup-active-right-line" from="base_vertical_line">
+        <shape name="screen-setup-active-right-line" from="base_highlight_vertical_line">
             <area>1071,40,2,407</area>
         </shape>
 
@@ -1020,19 +1108,23 @@
             <area>665,70,385,2</area>
         </shape>
 
-        <shape name="screen-setup-bottom-top-line" from="base_line">
+        <shape name="screen-setup-bottom-backdrop-line" from="base_backdrop_line">
+            <area>206,456,868,228</area>
+        </shape>
+
+        <shape name="screen-setup-bottom-top-line" from="base_highlight_line">
             <area>207,457,866,2</area>
         </shape>
 
-        <shape name="screen-setup-bottom-bottom-line" from="base_line">
+        <shape name="screen-setup-bottom-bottom-line" from="base_highlight_line">
             <area>207,681,866,2</area>
         </shape>
 
-        <shape name="screen-setup-bottom-left-line" from="base_vertical_line">
+        <shape name="screen-setup-bottom-left-line" from="base_highlight_vertical_line">
             <area>207,459,2,222</area>
         </shape>
 
-        <shape name="screen-setup-bottom-right-line" from="base_vertical_line">
+        <shape name="screen-setup-bottom-right-line" from="base_highlight_vertical_line">
             <area>1071,459,2,222</area>
         </shape>
 
@@ -1140,51 +1232,63 @@
             <area>140,36,1000,649</area>
         </shape>
 
-        <shape name="weather-source-top-line" from="base_line">
+        <shape name="weather-source-backdrop-line" from="base_backdrop_line">
+            <area>141,37,498,423</area>
+        </shape>
+
+        <shape name="weather-source-top-line" from="base_highlight_line">
             <area>142,38,496,2</area>
         </shape>
 
-        <shape name="weather-source-bottom-line" from="base_line">
+        <shape name="weather-source-bottom-line" from="base_highlight_line">
             <area>142,457,496,2</area>
         </shape>
 
-        <shape name="weather-source-left-line" from="base_vertical_line">
+        <shape name="weather-source-left-line" from="base_highlight_vertical_line">
             <area>142,40,2,417</area>
         </shape>
 
-        <shape name="weather-source-right-line" from="base_vertical_line">
+        <shape name="weather-source-right-line" from="base_highlight_vertical_line">
             <area>636,40,2,417</area>
         </shape>
 
-        <shape name="weather-data-top-line" from="base_line">
+        <shape name="weather-data-backdrop-line" from="base_backdrop_line">
+            <area>641,37,498,423</area>
+        </shape>
+
+        <shape name="weather-data-top-line" from="base_highlight_line">
             <area>642,38,496,2</area>
         </shape>
 
-        <shape name="weather-data-bottom-line" from="base_line">
+        <shape name="weather-data-bottom-line" from="base_highlight_line">
             <area>642,457,496,2</area>
         </shape>
 
-        <shape name="weather-data-left-line" from="base_vertical_line">
+        <shape name="weather-data-left-line" from="base_highlight_vertical_line">
             <area>642,40,2,417</area>
         </shape>
 
-        <shape name="weather-data-right-line" from="base_vertical_line">
+        <shape name="weather-data-right-line" from="base_highlight_vertical_line">
             <area>1136,40,2,417</area>
         </shape>
 
-        <shape name="weather-source-bottom-top-line" from="base_line">
+        <shape name="weather-source-bottom-backdrop-line" from="base_backdrop_line">
+            <area>141,467,998,217</area>
+        </shape>
+
+        <shape name="weather-source-bottom-top-line" from="base_highlight_line">
             <area>142,468,996,2</area>
         </shape>
 
-        <shape name="weather-source-bottom-bottom-line" from="base_line">
+        <shape name="weather-source-bottom-bottom-line" from="base_highlight_line">
             <area>142,681,996,2</area>
         </shape>
 
-        <shape name="weather-source-bottom-left-line" from="base_vertical_line">
+        <shape name="weather-source-bottom-left-line" from="base_highlight_vertical_line">
             <area>142,470,2,211</area>
         </shape>
 
-        <shape name="weather-source-bottom-right-line" from="base_vertical_line">
+        <shape name="weather-source-bottom-right-line" from="base_highlight_vertical_line">
             <area>1136,470,2,211</area>
         </shape>
 
@@ -1271,19 +1375,23 @@
             <area>320,36,640,649</area>
         </shape>
 
-        <shape name="weather-search-top-line" from="base_line">
+        <shape name="weather-search-top-backdrop-line" from="base_backdrop_line">
+            <area>321,37,638,166</area>
+        </shape>
+
+        <shape name="weather-search-top-line" from="base_highlight_line">
             <area>322,38,636,2</area>
         </shape>
 
-        <shape name="weather-search-bottom-line" from="base_line">
+        <shape name="weather-search-bottom-line" from="base_highlight_line">
             <area>322,200,636,2</area>
         </shape>
 
-        <shape name="weather-search-left-line" from="base_vertical_line">
+        <shape name="weather-search-left-line" from="base_highlight_vertical_line">
             <area>322,40,2,160</area>
         </shape>
 
-        <shape name="weather-search-right-line" from="base_vertical_line">
+        <shape name="weather-search-right-line" from="base_highlight_vertical_line">
             <area>956,40,2,160</area>
         </shape>
 
@@ -1291,35 +1399,43 @@
             <area>343,125,594,2</area>
         </shape>
 
-        <shape name="weather-search-middle-top-line" from="base_line">
+        <shape name="weather-search-middle-backdrop-line" from="base_backdrop_line">
+            <area>321,209,638,304</area>
+        </shape>
+
+        <shape name="weather-search-middle-top-line" from="base_highlight_line">
             <area>322,210,636,2</area>
         </shape>
 
-        <shape name="weather-search-middle-bottom-line" from="base_line">
+        <shape name="weather-search-middle-bottom-line" from="base_highlight_line">
             <area>322,510,636,2</area>
         </shape>
 
-        <shape name="weather-search-middle-left-line" from="base_vertical_line">
+        <shape name="weather-search-middle-left-line" from="base_highlight_vertical_line">
             <area>322,212,2,298</area>
         </shape>
 
-        <shape name="weather-search-middle-right-line" from="base_vertical_line">
+        <shape name="weather-search-middle-right-line" from="base_highlight_vertical_line">
             <area>956,212,2,298</area>
         </shape>
 
-        <shape name="weather-search-bottom-top-line" from="base_line">
+        <shape name="weather-search-bottom-backdrop-line" from="base_backdrop_line">
+            <area>321,519,638,165</area>
+        </shape>
+
+        <shape name="weather-search-bottom-top-line" from="base_highlight_line">
             <area>322,520,636,2</area>
         </shape>
 
-        <shape name="weather-search-bottom-bottom-line" from="base_line">
+        <shape name="weather-search-bottom-bottom-line" from="base_highlight_line">
             <area>322,681,636,2</area>
         </shape>
 
-        <shape name="weather-search-bottom-left-line" from="base_vertical_line">
+        <shape name="weather-search-bottom-left-line" from="base_highlight_vertical_line">
             <area>322,522,2,159</area>
         </shape>
 
-        <shape name="weather-search-bottom-right-line" from="base_vertical_line">
+        <shape name="weather-search-bottom-right-line" from="base_highlight_vertical_line">
             <area>956,522,2,159</area>
         </shape>
 

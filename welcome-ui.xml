@@ -13,19 +13,23 @@
             <area>20,36,1240,649</area>
         </shape>
 
-        <shape name="welcome-top-line" from="base_line">
+        <shape name="welcome-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,647</area>
+        </shape>
+
+        <shape name="welcome-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="welcome-bottom-line" from="base_line">
+        <shape name="welcome-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="welcome-left-line" from="base_vertical_line">
+        <shape name="welcome-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="welcome-right-line" from="base_vertical_line">
+        <shape name="welcome-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 

@@ -367,63 +367,6 @@
         <value>Heading</value>
     </textarea>
 
-    <!-- Base definition of a heading group -->
-    <group name="base_heading_group">
-        <area>0,0,1280,720</area>
-        <shape name="base_heading_backdrop">
-            <area>500,-1,280,26</area>
-            <type>box</type>
-            <fill color="#000000" alpha="140" />
-        </shape>
-        <shape name="heading-left-line" from="base_vertical_line">
-            <area>501,0,2,22</area>
-        </shape>
-        <shape name="heading-right-line" from="base_vertical_line">
-            <area>777,0,2,22</area>
-        </shape>
-        <shape name="heading-bottom-line" from="base_line">
-            <area>501,22,278,2</area>
-        </shape>
-    </group>
-
-    <!-- Base definition of a fanart group -->
-    <group name="base_fanart_group">
-        <area>0,0,1280,720</area>
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background.png</filename>
-        </imagetype>
-        <imagetype name="fanart">
-            <area>0,0,1280,720</area>
-        </imagetype>
-        <group name="heading-backdrop" from="base_heading_group" />
-    </group>
-
-    <!-- Base definition of a clock  group -->
-    <group name="base_clock_group">
-        <shape name="base_clock_backdrop">
-            <area>500,695,280,26</area>
-            <type>box</type>
-            <fill color="#000000" alpha="140" />
-        </shape>
-        <shape name="clock-top-line" from="base_line">
-            <area>501,696,278,2</area>
-        </shape>
-        <shape name="clock-left-line" from="base_vertical_line">
-            <area>501,698,2,22</area>
-        </shape>
-        <shape name="clock-right-line" from="base_vertical_line">
-            <area>777,698,2,22</area>
-        </shape>
-        <clock name="base_clock">
-            <area>529,698,219,22</area>
-            <font>baseextrasmall</font>
-            <template>%DATE%, %TIME%</template>
-            <align>allcenter</align>
-            <alpha>255</alpha>
-        </clock>
-    </group>
-
     <!-- Base definition of a base backdrop -->
     <shape name="base_backdrop">
         <area>102,368,1076,300</area>
@@ -444,6 +387,65 @@
     <shape name="base_popup_backdrop" from="base_backdrop">
         <fill color="#0a0a0e" alpha="255" />
     </shape>
+
+    <!-- Base definition of a heading group -->
+    <group name="base_heading_group">
+        <area>0,0,1280,720</area>
+        <shape name="base_heading_backdrop" from="base_backdrop">
+            <area>500,-7,280,32</area>
+        </shape>
+        <shape name="base_heading_backdrop_line" from="base_backdrop_line">
+            <area>500,-7,280,32</area>
+        </shape>
+        <shape name="heading-left-line" from="base_highlight_vertical_line">
+            <area>501,0,2,22</area>
+        </shape>
+        <shape name="heading-right-line" from="base_highlight_vertical_line">
+            <area>777,0,2,22</area>
+        </shape>
+        <shape name="heading-bottom-line" from="base_highlight_line">
+            <area>501,22,278,2</area>
+        </shape>
+    </group>
+
+    <!-- Base definition of a fanart group -->
+    <group name="base_fanart_group">
+        <area>0,0,1280,720</area>
+        <imagetype name="background">
+            <area>0,0,1280,720</area>
+            <filename>images/backgrounds/background.png</filename>
+        </imagetype>
+        <imagetype name="fanart">
+            <area>0,0,1280,720</area>
+        </imagetype>
+        <group name="heading-backdrop" from="base_heading_group" />
+    </group>
+
+    <!-- Base definition of a clock  group -->
+    <group name="base_clock_group">
+        <shape name="base_clock_backdrop" from="base_backdrop">
+            <area>500,695,280,32</area>
+        </shape>
+        <shape name="base_clock_backdrop-line" from="base_backdrop_line">
+            <area>500,695,280,32</area>
+        </shape>
+        <shape name="clock-top-line" from="base_highlight_line">
+            <area>501,696,278,2</area>
+        </shape>
+        <shape name="clock-left-line" from="base_highlight_vertical_line">
+            <area>501,698,2,22</area>
+        </shape>
+        <shape name="clock-right-line" from="base_highlight_vertical_line">
+            <area>777,698,2,22</area>
+        </shape>
+        <clock name="base_clock">
+            <area>529,698,219,22</area>
+            <font>baseextrasmall</font>
+            <template>%DATE%, %TIME%</template>
+            <align>allcenter</align>
+            <alpha>255</alpha>
+        </clock>
+    </group>
 
     <shape name="base_select_bar_active">
         <type>roundbox</type>
@@ -1373,19 +1375,23 @@
             <area>236,102,815,516</area>
         </shape>
 
-        <shape name="large-dialogbox-top-line" from="base_line">
+        <shape name="large-dialogbox-backdrop-line" from="base_backdrop_line">
+            <area>237,103,813,514</area>
+        </shape>
+
+        <shape name="large-dialogbox-top-line" from="base_highlight_line">
             <area>238,104,811,2</area>
         </shape>
 
-        <shape name="large-dialogbox-bottom-line" from="base_line">
+        <shape name="large-dialogbox-bottom-line" from="base_highlight_line">
             <area>238,614,811,2</area>
         </shape>
 
-        <shape name="large-dialogbox-left-line" from="base_vertical_line">
+        <shape name="large-dialogbox-left-line" from="base_highlight_vertical_line">
             <area>238,106,2,508</area>
         </shape>
 
-        <shape name="large-dialogbox-right-line" from="base_vertical_line">
+        <shape name="large-dialogbox-right-line" from="base_highlight_vertical_line">
             <area>1047,106,2,508</area>
         </shape>
 
@@ -1442,19 +1448,23 @@
             <area>339,288,602,144</area>
         </shape>
 
-        <shape name="busy-dialog-first-line" from="base_line">
+        <shape name="boxshape-line" from="base_backdrop_line">
+            <area>340,289,600,142</area>
+        </shape>
+
+        <shape name="busy-dialog-top-line" from="base_highlight_line">
             <area>341,290,598,2</area>
         </shape>
 
-        <shape name="busy-dialog-second-line" from="base_line">
+        <shape name="busy-dialog-bottom-line" from="base_highlight_line">
             <area>341,430,598,2</area>
         </shape>
 
-        <shape name="busy-dialog-left-line" from="base_vertical_line">
+        <shape name="busy-dialog-left-line" from="base_highlight_vertical_line">
             <area>341,292,2,138</area>
         </shape>
 
-        <shape name="busy-dialog-right-line" from="base_vertical_line">
+        <shape name="busy-dialog-right-line" from="base_highlight_vertical_line">
             <area>937,292,2,138</area>
         </shape>
 
@@ -1479,19 +1489,23 @@
             <area>350,277,587,170</area>
         </shape>
 
-        <shape name="progress-dialog-top-line" from="base_line">
+        <shape name="boxshape-line" from="base_backdrop_line">
+            <area>351,278,585,168</area>
+        </shape>
+
+        <shape name="progress-dialog-top-line" from="base_highlight_line">
             <area>352,279,583,2</area>
         </shape>
 
-        <shape name="progress-dialog-bottom-line" from="base_line">
+        <shape name="progress-dialog-bottom-line" from="base_highlight_line">
             <area>352,443,583,2</area>
         </shape>
 
-        <shape name="progress-dialog-left-line" from="base_vertical_line">
+        <shape name="progress-dialog-left-line" from="base_highlight_vertical_line">
             <area>352,281,2,162</area>
         </shape>
 
-        <shape name="progress-dialog-right-line" from="base_vertical_line">
+        <shape name="progress-dialog-right-line" from="base_highlight_vertical_line">
             <area>933,281,2,162</area>
         </shape>
 
@@ -1519,19 +1533,23 @@
             <area>350,262,587,200</area>
         </shape>
 
-        <shape name="confirmation-dialog-top-line" from="base_line">
+        <shape name="boxshape-line" from="base_backdrop_line">
+            <area>351,263,585,198</area>
+        </shape>
+
+        <shape name="confirmation-dialog-top-line" from="base_highlight_line">
             <area>352,264,583,2</area>
         </shape>
 
-        <shape name="confirmation-dialog-bottom-line" from="base_line">
+        <shape name="confirmation-dialog-bottom-line" from="base_highlight_line">
             <area>352,458,583,2</area>
         </shape>
 
-        <shape name="confirmation-dialog-left-line" from="base_vertical_line">
+        <shape name="confirmation-dialog-left-line" from="base_highlight_vertical_line">
             <area>352,266,2,192</area>
         </shape>
 
-        <shape name="confirmation-dialog-right-line" from="base_vertical_line">
+        <shape name="confirmation-dialog-right-line" from="base_highlight_vertical_line">
             <area>933,266,2,192</area>
         </shape>
 
@@ -1565,19 +1583,23 @@
             <area>350,277,587,170</area>
         </shape>
 
-        <shape name="text-input-dialog-top-line" from="base_line">
+        <shape name="text-input-backdrop-line" from="base_backdrop_line">
+            <area>351,278,585,168</area>
+        </shape>
+
+        <shape name="text-input-dialog-top-line" from="base_highlight_line">
             <area>352,279,583,2</area>
         </shape>
 
-        <shape name="text-input-dialog-bottom-line" from="base_line">
+        <shape name="text-input-dialog-bottom-line" from="base_highlight_line">
             <area>352,443,583,2</area>
         </shape>
 
-        <shape name="text-input-dialog-left-line" from="base_vertical_line">
+        <shape name="text-input-dialog-left-line" from="base_highlight_vertical_line">
             <area>352,281,2,162</area>
         </shape>
 
-        <shape name="text-input-dialog-right-line" from="base_vertical_line">
+        <shape name="text-input-dialog-right-line" from="base_highlight_vertical_line">
             <area>933,281,2,162</area>
         </shape>
 
@@ -1604,19 +1626,23 @@
             <area>380,100,520,520</area>
         </shape>
 
-        <shape name="search-dialog-top-line" from="base_line">
+        <shape name="boxshape-line" from="base_backdrop_line">
+            <area>381,101,518,518</area>
+        </shape>
+
+        <shape name="search-dialog-top-line" from="base_highlight_line">
             <area>382,102,516,2</area>
         </shape>
 
-        <shape name="search-dialog-bottom-line" from="base_line">
+        <shape name="search-dialog-bottom-line" from="base_highlight_line">
             <area>382,616,516,2</area>
         </shape>
 
-        <shape name="search-dialog-left-line" from="base_vertical_line">
+        <shape name="search-dialog-left-line" from="base_highlight_vertical_line">
             <area>382,104,2,512</area>
         </shape>
 
-        <shape name="search-dialog-right-line" from="base_vertical_line">
+        <shape name="search-dialog-right-line" from="base_highlight_vertical_line">
             <area>896,104,2,512</area>
         </shape>
 
@@ -1688,55 +1714,67 @@
             <area>20,36,615,649</area>
         </shape>
 
-        <shape name="file-browser-preview-top-line" from="base_line">
+        <shape name="file-browser-preview-backdrop-line" from="base_backdrop_line">
+            <area>21,37,613,647</area>
+        </shape>
+
+        <shape name="file-browser-preview-top-line" from="base_highlight_line">
             <area>22,38,611,2</area>
         </shape>
 
-        <shape name="file-browser-preview-bottom-line" from="base_line">
+        <shape name="file-browser-preview-bottom-line" from="base_highlight_line">
             <area>22,681,611,2</area>
         </shape>
 
-        <shape name="file-browser-preview-left-line" from="base_vertical_line">
+        <shape name="file-browser-preview-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="file-browser-preview-right-line" from="base_vertical_line">
+        <shape name="file-browser-preview-right-line" from="base_highlight_vertical_line">
             <area>631,40,2,641</area>
         </shape>
 
-        <shape name="file-browser-preview-image-top-line" from="base_line">
+        <shape name="file-browser-preview-image-line" from="base_backdrop_line">
+            <area>41,123,571,324</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-top-line" from="base_highlight_line">
             <area>42,124,569,2</area>
         </shape>
 
-        <shape name="file-browser-preview-image-bottom-line" from="base_line">
+        <shape name="file-browser-preview-image-bottom-line" from="base_highlight_line">
             <area>42,444,569,2</area>
         </shape>
 
-        <shape name="file-browser-preview-image-left-line" from="base_vertical_line">
+        <shape name="file-browser-preview-image-left-line" from="base_highlight_vertical_line">
             <area>42,126,2,318</area>
         </shape>
 
-        <shape name="file-browser-preview-image-right-line" from="base_vertical_line">
+        <shape name="file-browser-preview-image-right-line" from="base_highlight_vertical_line">
             <area>609,126,2,318</area>
         </shape>
 
-        <shape name="file-browser-edge-backdrop" from="base_backdrop">
+        <shape name="file-browser-backdrop" from="base_backdrop">
             <area>645,36,615,649</area>
         </shape>
 
-        <shape name="file-browser-top-line" from="base_line">
+        <shape name="file-browser-backdrop-line" from="base_backdrop_line">
+            <area>646,37,613,647</area>
+        </shape>
+
+        <shape name="file-browser-top-line" from="base_highlight_line">
             <area>647,38,611,2</area>
         </shape>
 
-        <shape name="file-browser-bottom-line" from="base_line">
+        <shape name="file-browser-bottom-line" from="base_highlight_line">
             <area>647,681,611,2</area>
         </shape>
 
-        <shape name="file-browser-left-line" from="base_vertical_line">
+        <shape name="file-browser-left-line" from="base_highlight_vertical_line">
             <area>647,40,2,641</area>
         </shape>
 
-        <shape name="file-browser-right-line" from="base_vertical_line">
+        <shape name="file-browser-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 
@@ -1893,19 +1931,23 @@
             <area>350,277,587,170</area>
         </shape>
 
-        <shape name="videowindow-top-line" from="base_line">
+        <shape name="videowindow-backdrop-line" from="base_backdrop_line">
+            <area>351,278,585,168</area>
+        </shape>
+
+        <shape name="videowindow-top-line" from="base_highlight_line">
             <area>352,279,583,2</area>
         </shape>
 
-        <shape name="videowindow-bottom-line" from="base_line">
+        <shape name="videowindow-bottom-line" from="base_highlight_line">
             <area>352,443,583,2</area>
         </shape>
 
-        <shape name="videowindow-left-line" from="base_vertical_line">
+        <shape name="videowindow-left-line" from="base_highlight_vertical_line">
             <area>352,281,2,162</area>
         </shape>
 
-        <shape name="videowindow-right-line" from="base_vertical_line">
+        <shape name="videowindow-right-line" from="base_highlight_vertical_line">
             <area>933,281,2,162</area>
         </shape>
 
@@ -1929,19 +1971,23 @@
             <area>320,36,640,649</area>
         </shape>
 
-        <shape name="metadata-results-top-line" from="base_line">
+        <shape name="metadata-results-backdrop-line" from="base_backdrop_line">
+            <area>321,37,638,647</area>
+        </shape>
+
+        <shape name="metadata-results-top-line" from="base_highlight_line">
             <area>322,38,636,2</area>
         </shape>
 
-        <shape name="metadata-results-bottom-line" from="base_line">
+        <shape name="metadata-results-bottom-line" from="base_highlight_line">
             <area>322,681,636,2</area>
         </shape>
         
-        <shape name="metadata-results-left-line" from="base_vertical_line">
+        <shape name="metadata-results-left-line" from="base_highlight_vertical_line">
             <area>322,40,2,641</area>
         </shape>
 
-        <shape name="metadata-results-right-line" from="base_vertical_line">
+        <shape name="metadata-results-right-line" from="base_highlight_vertical_line">
             <area>956,40,2,641</area>
         </shape>
 
@@ -2046,19 +2092,23 @@
             <area>332,36,616,649</area>
         </shape>
 
-        <shape name="artwork-top-line" from="base_line">
+        <shape name="artwork-backdrop-line" from="base_backdrop_line">
+            <area>333,37,614,647</area>
+        </shape>
+
+        <shape name="artwork-top-line" from="base_highlight_line">
             <area>334,38,612,2</area>
         </shape>
 
-        <shape name="artwork-bottom-line" from="base_line">
+        <shape name="artwork-bottom-line" from="base_highlight_line">
             <area>334,681,612,2</area>
         </shape>
 
-        <shape name="artwork-left-line" from="base_vertical_line">
+        <shape name="artwork-left-line" from="base_highlight_vertical_line">
             <area>334,40,2,641</area>
         </shape>
 
-        <shape name="artwork-right-line" from="base_vertical_line">
+        <shape name="artwork-right-line" from="base_highlight_vertical_line">
             <area>944,40,2,641</area>
         </shape>
 

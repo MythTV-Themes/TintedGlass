@@ -26,19 +26,23 @@
             <area>20,76,1240,370</area>
         </shape>
 
-        <shape name="news-feeds-top-line" from="base_line">
+        <shape name="news-feeds-backdrop-line" from="base_backdrop_line">
+            <area>21,77,1238,368</area>
+        </shape>
+
+        <shape name="news-feeds-top-line" from="base_highlight_line">
             <area>22,78,1236,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-line" from="base_line">
+        <shape name="news-feeds-bottom-line" from="base_highlight_line">
             <area>22,442,1236,2</area>
         </shape>
 
-        <shape name="news-feeds-left-line" from="base_vertical_line">
+        <shape name="news-feeds-left-line" from="base_highlight_vertical_line">
             <area>22,80,2,362</area>
         </shape>
 
-        <shape name="news-feeds-right-line" from="base_vertical_line">
+        <shape name="news-feeds-right-line" from="base_highlight_vertical_line">
             <area>1256,80,2,362</area>
         </shape>
 
@@ -46,19 +50,23 @@
             <area>20,456,1240,229</area>
         </shape>
 
-        <shape name="news-feeds-bottom-top-line" from="base_line">
+        <shape name="news-feeds-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,457,935,227</area>
+        </shape>
+
+        <shape name="news-feeds-bottom-top-line" from="base_highlight_line">
             <area>22,458,933,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-bottom-line" from="base_line">
+        <shape name="news-feeds-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,933,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-left-line" from="base_vertical_line">
+        <shape name="news-feeds-bottom-left-line" from="base_highlight_vertical_line">
             <area>21,460,2,221</area>
         </shape>
 
-        <shape name="news-feeds-bottom-right-line" from="base_vertical_line">
+        <shape name="news-feeds-bottom-right-line" from="base_highlight_vertical_line">
             <area>953,460,2,221</area>
         </shape>
 
@@ -70,19 +78,23 @@
             <area>37,635,903,2</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-top-line" from="base_line">
+        <shape name="news-feeds-thumbnail-backdrop-line" from="base_backdrop_line">
+            <area>960,457,299,227</area>
+        </shape>
+
+        <shape name="news-feeds-thumbnail-top-line" from="base_highlight_line">
             <area>961,458,297,2</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-bottom-line" from="base_line">
+        <shape name="news-feeds-thumbnail-bottom-line" from="base_highlight_line">
             <area>961,681,297,2</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-left-line" from="base_vertical_line">
+        <shape name="news-feeds-thumbnail-left-line" from="base_highlight_vertical_line">
             <area>961,460,2,221</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-right-line" from="base_vertical_line">
+        <shape name="news-feeds-thumbnail-right-line" from="base_highlight_vertical_line">
             <area>1256,460,2,221</area>
         </shape>
 
@@ -207,35 +219,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="news-edit-top-line" from="base_line">
-            <area>217,38,864,2</area>
+        <shape name="news-edit-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,504</area>
         </shape>
 
-        <shape name="news-edit-bottom-line" from="base_line">
+        <shape name="news-edit-top-line" from="base_highlight_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="news-edit-bottom-line" from="base_highlight_line">
             <area>217,538,846,2</area>
         </shape>
 
-        <shape name="news-edit-left-line" from="base_vertical_line">
+        <shape name="news-edit-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,498</area>
         </shape>
 
-        <shape name="news-edit-right-line" from="base_vertical_line">
+        <shape name="news-edit-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,498</area>
         </shape>
 
-        <shape name="news-edit-bottom-top-line" from="base_line">
+        <shape name="news-edit-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,545,848,139</area>
+        </shape>
+
+        <shape name="news-edit-bottom-top-line" from="base_highlight_line">
             <area>217,546,846,2</area>
         </shape>
 
-        <shape name="news-edit-bottom-bottom-line" from="base_line">
+        <shape name="news-edit-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="news-edit-bottom-left-line" from="base_vertical_line">
+        <shape name="news-edit-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,548,2,133</area>
         </shape>
 
-        <shape name="news-edit-bottom-right-line" from="base_vertical_line">
+        <shape name="news-edit-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,548,2,133</area>
         </shape>
 
@@ -302,19 +322,23 @@
             <area>20,36,500,649</area>
         </shape>
 
-        <shape name="news-config-categories-top-line" from="base_line">
+        <shape name="news-config-categories-backdrop-line" from="base_backdrop_line">
+            <area>21,37,498,647</area>
+        </shape>
+
+        <shape name="news-config-categories-top-line" from="base_highlight_line">
             <area>22,38,496,2</area>
         </shape>
 
-        <shape name="news-config-categories-bottom-line" from="base_line">
+        <shape name="news-config-categories-bottom-line" from="base_highlight_line">
             <area>22,681,496,2</area>
         </shape>
 
-        <shape name="news-config-categories-left-line" from="base_vertical_line">
+        <shape name="news-config-categories-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="news-config-categories-right-line" from="base_vertical_line">
+        <shape name="news-config-categories-right-line" from="base_highlight_vertical_line">
             <area>516,40,2,641</area>
         </shape>
 
@@ -326,19 +350,23 @@
             <area>530,36,730,649</area>
         </shape>
 
-        <shape name="news-config-feeds-top-line" from="base_line">
+        <shape name="news-config-feeds-backdrop-line" from="base_backdrop_line">
+            <area>531,37,728,647</area>
+        </shape>
+
+        <shape name="news-config-feeds-top-line" from="base_highlight_line">
             <area>532,38,726,2</area>
         </shape>
 
-        <shape name="news-config-feeds-bottom-line" from="base_line">
+        <shape name="news-config-feeds-bottom-line" from="base_highlight_line">
             <area>532,681,726,2</area>
         </shape>
 
-        <shape name="news-config-feeds-left-line" from="base_vertical_line">
+        <shape name="news-config-feeds-left-line" from="base_highlight_vertical_line">
             <area>532,40,2,641</area>
         </shape>
 
-        <shape name="news-config-feeds-right-line" from="base_vertical_line">
+        <shape name="news-config-feeds-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 
