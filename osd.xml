@@ -16,18 +16,26 @@
             <color>#3a9ade</color>
         </fontdef>
 
-        <shape name="background">
+        <shape name="osd-debug-backdrop">
             <area>70,44,1140,128</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <shape name="osd-debug-backdrop-line">
+            <area>71,45,1138,126</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
         </shape>
 
         <shape name="top-line">
             <area>72,46,1136,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="45">
+                <gradient direction="horizontal" alpha="0">
                     <stop position="0" color="#ffffff" />
                     <stop position="50" color="#ffffff" alpha="120" />
                     <stop position="100" color="#ffffff" />
@@ -43,9 +51,9 @@
             <area>72,48,2,120</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="vertical" alpha="100">
+                <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="160" />
+                    <stop position="50" color="#ffffff" alpha="180" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
@@ -249,7 +257,7 @@
             <color>#e6e6e6</color>
         </fontdef>
 
-        <shape name="background">
+        <shape name="osd-message-backdrop">
             <area>290,44,700,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
@@ -295,7 +303,7 @@
             <pixelsize>21</pixelsize>
         </fontdef>
 
-        <shape name="background">
+        <shape name="osd-status-backdrop">
             <area>70,610,1140,66</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
@@ -375,7 +383,7 @@
             <color>#3a9ade</color>
         </fontdef>
 
-        <shape name="backdrop">
+        <shape name="program-info-backdrop">
             <area>70,384,1140,292</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
@@ -920,18 +928,26 @@
             <color>#3a9ade</color>
         </fontdef>
 
-        <shape name="background">
+        <shape name="browse-info-backdrop">
             <area>70,480,1140,196</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>8</cornerradius>
         </shape>
 
-        <shape name="channel-first-line">
+        <shape name="channel-backdrop-line">
+            <area>71,481,150,194</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="channel-top-line">
             <area>72,482,148,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="45">
+                <gradient direction="horizontal" alpha="0">
                     <stop position="0" color="#ffffff" />
                     <stop position="50" color="#ffffff" alpha="120" />
                     <stop position="100" color="#ffffff" />
@@ -939,7 +955,7 @@
             </fill>
         </shape>
 
-        <shape name="channel-second-line" from="channel-first-line">
+        <shape name="channel-bottom-line" from="channel-top-line">
             <area>72,672,148,2</area>
         </shape>
 
@@ -947,9 +963,9 @@
             <area>72,484,2,188</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="vertical" alpha="100">
+                <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="160" />
+                    <stop position="50" color="#ffffff" alpha="180" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
@@ -959,11 +975,19 @@
             <area>218,484,2,188</area>
         </shape>
 
-        <shape name="title-first-line" from="channel-first-line">
+        <shape name="title-backdrop-line">
+            <area>225,481,820,68</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="title-top-line" from="channel-top-line">
             <area>226,482,818,2</area>
         </shape>
 
-        <shape name="title-second-line" from="channel-first-line">
+        <shape name="title-bottom-line" from="channel-top-line">
             <area>226,546,818,2</area>
         </shape>
 
@@ -975,11 +999,19 @@
             <area>1042,484,2,62</area>
         </shape>
 
-        <shape name="clock-first-line" from="channel-first-line">
+        <shape name="clock-backdrop-line">
+            <area>1049,481,160,68</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="clock-top-line" from="channel-top-line">
             <area>1050,482,158,2</area>
         </shape>
 
-        <shape name="clock-second-line" from="channel-first-line">
+        <shape name="clock-bottom-line" from="channel-top-line">
             <area>1050,546,158,2</area>
         </shape>
 
@@ -991,11 +1023,19 @@
             <area>1206,484,2,62</area>
         </shape>
 
-        <shape name="description-first-line" from="channel-first-line">
+        <shape name="description-backdrop-line">
+            <area>225,553,984,122</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="description-top-line" from="channel-top-line">
             <area>226,554,982,2</area>
         </shape>
 
-        <shape name="description-second-line" from="channel-first-line">
+        <shape name="description-bottom-line" from="channel-top-line">
             <area>226,672,982,2</area>
         </shape>
 
@@ -1082,18 +1122,26 @@
             <pixelsize>24</pixelsize>
         </fontdef>
 
-        <shape name="background">
+        <shape name="channel-editor-backdrop">
             <area>340,110,600,500</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>8</cornerradius>
         </shape>
 
-        <shape name="channel-editor-first-line">
+        <shape name="channel-editor-backdrop-line">
+            <area>341,111,598,498</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="channel-editor-top-line">
             <area>342,112,596,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="45">
+                <gradient direction="horizontal" alpha="0">
                     <stop position="0" color="#ffffff" />
                     <stop position="50" color="#ffffff" alpha="120" />
                     <stop position="100" color="#ffffff" />
@@ -1101,7 +1149,7 @@
             </fill>
         </shape>
 
-        <shape name="channel-editor-second-line" from="channel-editor-first-line">
+        <shape name="channel-editor-bottom-line" from="channel-editor-top-line">
             <area>342,606,596,2</area>
         </shape>
 
@@ -1109,9 +1157,9 @@
             <area>342,114,2,492</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="vertical" alpha="100">
+                <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="160" />
+                    <stop position="50" color="#ffffff" alpha="180" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
@@ -1283,7 +1331,7 @@
             <pixelsize>21</pixelsize>
         </fontdef>
 
-        <shape name="background">
+        <shape name="osd-program-editor-backdrop">
             <area>70,610,1140,66</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
@@ -1370,18 +1418,26 @@
             <color>#808080</color>
         </fontdef>
 
-        <shape name="background">
+        <shape name="mythpopupbox-backdrop">
             <area>339,116,602,488</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>8</cornerradius>
         </shape>
 
-        <shape name="mythpopup-box-first-line">
+        <shape name="mythpopupbox-backdrop-line">
+            <area>340,117,600,486</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="mythpopup-box-top-line">
             <area>341,118,598,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="45">
+                <gradient direction="horizontal" alpha="0">
                     <stop position="0" color="#ffffff" />
                     <stop position="50" color="#ffffff" alpha="120" />
                     <stop position="100" color="#ffffff" />
@@ -1389,7 +1445,7 @@
             </fill>
         </shape>
 
-        <shape name="mythpopup-box-second-line" from="mythpopup-box-first-line">
+        <shape name="mythpopup-box-bottom-line" from="mythpopup-box-top-line">
             <area>341,600,598,2</area>
         </shape>
 
@@ -1397,9 +1453,9 @@
             <area>341,120,2,480</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="vertical" alpha="100">
+                <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="160" />
+                    <stop position="50" color="#ffffff" alpha="180" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>

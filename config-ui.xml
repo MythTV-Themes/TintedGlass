@@ -13,35 +13,43 @@
             <area>236,36,804,649</area>
         </shape>
 
-        <shape name="icon-import-top-line" from="base_line">
+        <shape name="icon-import-backdrop-line" from="base_backdrop_line">
+            <area>237,37,802,110</area>
+        </shape>
+
+        <shape name="icon-import-top-line" from="base_highlight_line">
             <area>238,38,800,2</area>
         </shape>
 
-        <shape name="icon-import-bottom-line" from="base_line">
+        <shape name="icon-import-bottom-line" from="base_highlight_line">
             <area>238,144,800,2</area>
         </shape>
 
-        <shape name="icon-import-left-line" from="base_vertical_line">
+        <shape name="icon-import-left-line" from="base_highlight_vertical_line">
             <area>238,40,2,104</area>
         </shape>
 
-        <shape name="icon-import-right-line" from="base_vertical_line">
+        <shape name="icon-import-right-line" from="base_highlight_vertical_line">
             <area>1036,40,2,104</area>
         </shape>
 
-        <shape name="icon-import-bottom-top-line" from="base_line">
+        <shape name="icon-import-bottom-backdrop-line" from="base_backdrop_line">
+            <area>237,153,802,531</area>
+        </shape>
+
+        <shape name="icon-import-bottom-top-line" from="base_highlight_line">
             <area>238,154,800,2</area>
         </shape>
 
-        <shape name="icon-import-bottom-bottom-line" from="base_line">
+        <shape name="icon-import-bottom-bottom-line" from="base_highlight_line">
             <area>238,681,800,2</area>
         </shape>
 
-        <shape name="icon-import-bottom-left-line" from="base_vertical_line">
+        <shape name="icon-import-bottom-left-line" from="base_highlight_vertical_line">
             <area>238,156,2,527</area>
         </shape>
 
-        <shape name="icon-import-bottom-right-line" from="base_vertical_line">
+        <shape name="icon-import-bottom-right-line" from="base_highlight_vertical_line">
             <area>1036,156,2,527</area>
         </shape>
 
@@ -135,19 +143,23 @@
             <area>20,36,1240,393</area>
         </shape>
 
-        <shape name="edit-channels-top-line" from="base_line">
+        <shape name="edit-channels-top-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,391</area>
+        </shape>
+
+        <shape name="edit-channels-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="edit-channels-bottom-line" from="base_line">
+        <shape name="edit-channels-bottom-line" from="base_highlight_line">
             <area>22,425,1236,2</area>
         </shape>
 
-        <shape name="edit-channels-left-line" from="base_vertical_line">
+        <shape name="edit-channels-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,384</area>
         </shape>
 
-        <shape name="edit-channels-right-line" from="base_vertical_line">
+        <shape name="edit-channels-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,384</area>
         </shape>
 
@@ -155,19 +167,23 @@
             <area>20,439,1240,246</area>
         </shape>
 
-        <shape name="edit-channels-bottom-top-line" from="base_line">
+        <shape name="edit-channels-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,440,1238,244</area>
+        </shape>
+
+        <shape name="edit-channels-bottom-top-line" from="base_highlight_line">
             <area>22,441,1236,2</area>
         </shape>
 
-        <shape name="edit-channels-bottom-bottom-line" from="base_line">
+        <shape name="edit-channels-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="edit-channels-bottom-left-line" from="base_vertical_line">
+        <shape name="edit-channels-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,443,2,238</area>
         </shape>
 
-        <shape name="edit-channels-bottom-right-line" from="base_vertical_line">
+        <shape name="edit-channels-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,443,2,238</area>
         </shape>
 
@@ -327,35 +343,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="grabbersettings-top-line" from="base_line">
+        <shape name="grabbersettings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,320</area>
+        </shape>
+
+        <shape name="grabbersettings-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="grabbersettings-bottom-line" from="base_line">
+        <shape name="grabbersettings-bottom-line" from="base_highlight_line">
             <area>217,354,846,2</area>
         </shape>
 
-        <shape name="grabbersettings-left-line" from="base_vertical_line">
+        <shape name="grabbersettings-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,314</area>
         </shape>
 
-        <shape name="grabbersettings-right-line" from="base_vertical_line">
+        <shape name="grabbersettings-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,314</area>
         </shape>
 
-        <shape name="helptext-top-line" from="base_line">
+        <shape name="helptext-backdrop-line" from="base_backdrop_line">
+            <area>216,363,848,321</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_highlight_line">
             <area>217,364,846,2</area>
         </shape>
 
-        <shape name="helptext-bottom-line" from="base_line">
+        <shape name="helptext-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="helptext-left-line" from="base_vertical_line">
+        <shape name="helptext-left-line" from="base_highlight_vertical_line">
             <area>217,366,2,315</area>
         </shape>
 
-        <shape name="helptext-right-line" from="base_vertical_line">
+        <shape name="helptext-right-line" from="base_highlight_vertical_line">
             <area>1061,366,2,315</area>
         </shape>
 
@@ -499,35 +523,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="generalwizard-top-line" from="base_line">
+        <shape name="generalwizard-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,320</area>
+        </shape>
+
+        <shape name="generalwizard-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="generalwizard-bottom-line" from="base_line">
+        <shape name="generalwizard-bottom-line" from="base_highlight_line">
             <area>217,354,846,2</area>
         </shape>
 
-        <shape name="generalwizard-left-line" from="base_vertical_line">
+        <shape name="generalwizard-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,314</area>
         </shape>
 
-        <shape name="generalwizard-right-line" from="base_vertical_line">
+        <shape name="generalwizard-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,314</area>
         </shape>
 
-        <shape name="helptext-top-line" from="base_line">
+        <shape name="helptext-backdrop-line" from="base_backdrop_line">
+            <area>216,363,848,321</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_highlight_line">
             <area>217,364,846,2</area>
         </shape>
 
-        <shape name="helptext-bottom-line" from="base_line">
+        <shape name="helptext-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="helptext-left-line" from="base_vertical_line">
+        <shape name="helptext-left-line" from="base_highlight_vertical_line">
             <area>217,366,2,315</area>
         </shape>
 
-        <shape name="helptext-right-line" from="base_vertical_line">
+        <shape name="helptext-right-line" from="base_highlight_vertical_line">
             <area>1061,366,2,315</area>
         </shape>
 
@@ -580,19 +612,23 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="audiowizard-top-line" from="base_line">
+        <shape name="audiowizard-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,404</area>
+        </shape>
+
+        <shape name="audiowizard-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="audiowizard-bottom-line" from="base_line">
+        <shape name="audiowizard-bottom-line" from="base_highlight_line">
             <area>217,438,846,2</area>
         </shape>
 
-        <shape name="audiowizard-left-line" from="base_vertical_line">
+        <shape name="audiowizard-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,398</area>
         </shape>
 
-        <shape name="audiowizard-right-line" from="base_vertical_line">
+        <shape name="audiowizard-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,398</area>
         </shape>
 
@@ -604,19 +640,23 @@
             <area>238,372,804,2</area>
         </shape>
 
-        <shape name="helptext-top-line" from="base_line">
+        <shape name="helptext-backdrop-line" from="base_backdrop_line">
+            <area>216,447,848,237</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_highlight_line">
             <area>217,448,846,2</area>
         </shape>
 
-        <shape name="helptext-bottom-line" from="base_line">
+        <shape name="helptext-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="helptext-left-line" from="base_vertical_line">
+        <shape name="helptext-left-line" from="base_highlight_vertical_line">
             <area>217,450,2,231</area>
         </shape>
 
-        <shape name="helptext-right-line" from="base_vertical_line">
+        <shape name="helptext-right-line" from="base_highlight_vertical_line">
             <area>1061,450,2,231</area>
         </shape>
 
@@ -777,19 +817,23 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="videowizard-top-line" from="base_line">
+        <shape name="videowizard-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,320</area>
+        </shape>
+
+        <shape name="videowizard-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="videowizard-bottom-line" from="base_line">
+        <shape name="videowizard-bottom-line" from="base_highlight_line">
             <area>217,354,846,2</area>
         </shape>
 
-        <shape name="videowizard-left-line" from="base_vertical_line">
+        <shape name="videowizard-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,314</area>
         </shape>
 
-        <shape name="videowizard-right-line" from="base_vertical_line">
+        <shape name="videowizard-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,314</area>
         </shape>
 
@@ -797,19 +841,23 @@
             <area>238,184,804,2</area>
         </shape>
 
-        <shape name="helptext-top-line" from="base_line">
+        <shape name="helptext-backdrop-line" from="base_backdrop_line">
+            <area>216,363,848,321</area>
+        </shape>
+
+        <shape name="helptext-top-line" from="base_highlight_line">
             <area>217,364,846,2</area>
         </shape>
 
-        <shape name="helptext-bottom-line" from="base_line">
+        <shape name="helptext-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="helptext-left-line" from="base_vertical_line">
+        <shape name="helptext-left-line" from="base_highlight_vertical_line">
             <area>217,366,2,315</area>
         </shape>
 
-        <shape name="helptext-right-line" from="base_vertical_line">
+        <shape name="helptext-right-line" from="base_highlight_vertical_line">
             <area>1061,366,2,315</area>
         </shape>
 

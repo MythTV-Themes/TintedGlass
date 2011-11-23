@@ -12,19 +12,23 @@
             <area>236,36,804,68</area>
         </shape>
 
-        <shape name="netvision-search-top-line" from="base_line">
+        <shape name="netvision-search-term-backdrop-line" from="base_backdrop_line">
+            <area>237,37,802,66</area>
+        </shape>
+
+        <shape name="netvision-search-top-line" from="base_highlight_line">
             <area>238,38,800,2</area>
         </shape>
 
-        <shape name="netvision-search-bottom-line" from="base_line">
+        <shape name="netvision-search-bottom-line" from="base_highlight_line">
             <area>238,100,800,2</area>
         </shape>
 
-        <shape name="netvision-search-left-line" from="base_vertical_line">
+        <shape name="netvision-search-left-line" from="base_highlight_vertical_line">
             <area>238,40,2,60</area>
         </shape>
 
-        <shape name="netvision-search-right-line" from="base_vertical_line">
+        <shape name="netvision-search-right-line" from="base_highlight_vertical_line">
             <area>1036,40,2,60</area>
         </shape>
 
@@ -32,19 +36,23 @@
             <area>20,114,408,269</area>
         </shape>
 
-        <shape name="netvision-search-sites-top-line" from="base_line">
+        <shape name="netvision-search-sites-backdrop-line" from="base_backdrop_line">
+            <area>21,115,406,267</area>
+        </shape>
+
+        <shape name="netvision-search-sites-top-line" from="base_highlight_line">
             <area>22,116,404,2</area>
         </shape>
 
-        <shape name="netvision-search-sites-bottom-line" from="base_line">
+        <shape name="netvision-search-sites-bottom-line" from="base_highlight_line">
             <area>22,379,404,2</area>
         </shape>
 
-        <shape name="netvision-search-sites-left-line" from="base_vertical_line">
+        <shape name="netvision-search-sites-left-line" from="base_highlight_vertical_line">
             <area>22,118,2,261</area>
         </shape>
 
-        <shape name="netvision-search-sites-right-line" from="base_vertical_line">
+        <shape name="netvision-search-sites-right-line" from="base_highlight_vertical_line">
             <area>424,118,2,261</area>
         </shape>
 
@@ -52,19 +60,23 @@
             <area>438,114,822,269</area>
         </shape>
 
-        <shape name="netvision-search-list-top-line" from="base_line">
+        <shape name="netvision-search-list-backdrop-line" from="base_backdrop_line">
+            <area>439,115,820,267</area>
+        </shape>
+
+        <shape name="netvision-search-list-top-line" from="base_highlight_line">
             <area>440,116,818,2</area>
         </shape>
 
-        <shape name="netvision-search-list-bottom-line" from="base_line">
+        <shape name="netvision-search-list-bottom-line" from="base_highlight_line">
             <area>440,379,818,2</area>
         </shape>
 
-        <shape name="netvision-search-list-left-line" from="base_vertical_line">
+        <shape name="netvision-search-list-left-line" from="base_highlight_vertical_line">
             <area>440,118,2,261</area>
         </shape>
 
-        <shape name="netvision-search-list-right-line" from="base_vertical_line">
+        <shape name="netvision-search-list-right-line" from="base_highlight_vertical_line">
             <area>1256,118,2,261</area>
         </shape>
 
@@ -72,19 +84,23 @@
             <area>20,393,1240,292</area>
         </shape>
 
-        <shape name="netvision-search-bottom-top-line" from="base_line">
+        <shape name="netvision-search-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,394,1238,90</area>
+        </shape>
+
+        <shape name="netvision-search-bottom-top-line" from="base_highlight_line">
             <area>22,395,1236,2</area>
         </shape>
 
-        <shape name="netvision-search-bottom-bottom-line" from="base_line">
+        <shape name="netvision-search-bottom-bottom-line" from="base_highlight_line">
             <area>22,481,1236,2</area>
         </shape>
 
-        <shape name="netvision-search-bottom-left-line" from="base_vertical_line">
+        <shape name="netvision-search-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,397,2,84</area>
         </shape>
 
-        <shape name="netvision-search-bottom-right-line" from="base_vertical_line">
+        <shape name="netvision-search-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,397,2,84</area>
         </shape>
 
@@ -92,35 +108,43 @@
             <area>43,441,1194,2</area>
         </shape>
 
-        <shape name="netvision-search-description-top-line" from="base_line">
+        <shape name="netvision-search-description-backdrop-line" from="base_backdrop_line">
+            <area>21,488,976,196</area>
+        </shape>
+
+        <shape name="netvision-search-description-top-line" from="base_highlight_line">
             <area>22,489,974,2</area>
         </shape>
 
-        <shape name="netvision-search-description-bottom-line" from="base_line">
+        <shape name="netvision-search-description-bottom-line" from="base_highlight_line">
             <area>22,681,974,2</area>
         </shape>
 
-        <shape name="netvision-search-description-left-line" from="base_vertical_line">
+        <shape name="netvision-search-description-left-line" from="base_highlight_vertical_line">
             <area>22,491,2,190</area>
         </shape>
 
-        <shape name="netvision-search-description-right-line" from="base_vertical_line">
+        <shape name="netvision-search-description-right-line" from="base_highlight_vertical_line">
             <area>994,491,2,190</area>
         </shape>
 
-        <shape name="netvision-search-preview-top-line" from="base_line">
+        <shape name="netvision-search-preview-backdrop-line" from="base_backdrop_line">
+            <area>1001,488,258,196</area>
+        </shape>
+
+        <shape name="netvision-search-preview-top-line" from="base_highlight_line">
             <area>1002,489,256,2</area>
         </shape>
 
-        <shape name="netvision-search-preview-bottom-line" from="base_line">
+        <shape name="netvision-search-preview-bottom-line" from="base_highlight_line">
             <area>1002,681,256,2</area>
         </shape>
 
-        <shape name="netvision-search-preview-left-line" from="base_vertical_line">
+        <shape name="netvision-search-preview-left-line" from="base_highlight_vertical_line">
             <area>1002,491,2,190</area>
         </shape>
 
-        <shape name="netvision-search-preview-right-line" from="base_vertical_line">
+        <shape name="netvision-search-preview-right-line" from="base_highlight_vertical_line">
             <area>1256,491,2,190</area>
         </shape>
 
@@ -264,19 +288,23 @@
             <area>275,36,730,649</area>
         </shape>
 
-        <shape name="manage-sites-top-line" from="base_line">
+        <shape name="manage-sites-backdrop-line" from="base_backdrop_line">
+            <area>276,37,728,647</area>
+        </shape>
+
+        <shape name="manage-sites-top-line" from="base_highlight_line">
             <area>277,38,726,2</area>
         </shape>
 
-        <shape name="manage-sites-bottom-line" from="base_line">
+        <shape name="manage-sites-bottom-line" from="base_highlight_line">
             <area>277,681,726,2</area>
         </shape>
 
-        <shape name="manage-sites-left-line" from="base_vertical_line">
+        <shape name="manage-sites-left-line" from="base_highlight_vertical_line">
             <area>277,40,2,641</area>
         </shape>
 
-        <shape name="manage-sites-right-line" from="base_vertical_line">
+        <shape name="manage-sites-right-line" from="base_highlight_vertical_line">
             <area>1001,40,2,641</area>
         </shape>
 
@@ -336,19 +364,23 @@
             <area>215,36,850,431</area>
         </shape>
 
-        <shape name="manage-rss-top-line" from="base_line">
+        <shape name="manage-rss-subscriptions-top-backdrop-lin" from="base_backdrop_line">
+            <area>216,37,848,429</area>
+        </shape>
+
+        <shape name="manage-rss-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="manage-rss-bottom-line" from="base_line">
+        <shape name="manage-rss-bottom-line" from="base_highlight_line">
             <area>217,463,846,2</area>
         </shape>
 
-        <shape name="manage-rss-left-line" from="base_vertical_line">
+        <shape name="manage-rss-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,423</area>
         </shape>
 
-        <shape name="manage-rss-right-line" from="base_vertical_line">
+        <shape name="manage-rss-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,423</area>
         </shape>
 
@@ -360,19 +392,23 @@
             <area>20,477,1240,208</area>
         </shape>
 
-        <shape name="manage-rss-bottom-top-line" from="base_line">
+        <shape name="manage-rss-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,478,963,206</area>
+        </shape>
+
+        <shape name="manage-rss-bottom-top-line" from="base_highlight_line">
             <area>22,479,961,2</area>
         </shape>
 
-        <shape name="manage-rss-bottom-bottom-line" from="base_line">
+        <shape name="manage-rss-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,961,2</area>
         </shape>
 
-        <shape name="manage-rss-bottom-left-line" from="base_vertical_line">
+        <shape name="manage-rss-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,481,2,200</area>
         </shape>
 
-        <shape name="manage-rss-bottom-right-line" from="base_vertical_line">
+        <shape name="manage-rss-bottom-right-line" from="base_highlight_vertical_line">
             <area>981,481,2,200</area>
         </shape>
 
@@ -384,19 +420,23 @@
             <area>37,553,931,2</area>
         </shape>
 
-        <shape name="netvision-list-preview-top-line" from="base_line">
+        <shape name="netvision-list-preview-backdrop-line" from="base_backdrop_line">
+            <area>988,478,271,206</area>
+        </shape>
+
+        <shape name="netvision-list-preview-top-line" from="base_highlight_line">
             <area>989,479,269,2</area>
         </shape>
 
-        <shape name="netvision-list-preview-bottom-line" from="base_line">
+        <shape name="netvision-list-preview-bottom-line" from="base_highlight_line">
             <area>989,681,269,2</area>
         </shape>
 
-        <shape name="netvision-list-preview-left-line" from="base_vertical_line">
+        <shape name="netvision-list-preview-left-line" from="base_highlight_vertical_line">
             <area>989,481,2,200</area>
         </shape>
 
-        <shape name="netvision-list-preview-right-line" from="base_vertical_line">
+        <shape name="netvision-list-preview-right-line" from="base_highlight_vertical_line">
             <area>1256,481,2,200</area>
         </shape>
 
@@ -499,35 +539,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="edit-rss-top-line" from="base_line">
+        <shape name="edit-rss-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,507</area>
+        </shape>
+
+        <shape name="edit-rss-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="edit-rss-bottom-line" from="base_line">
+        <shape name="edit-rss-bottom-line" from="base_highlight_line">
             <area>217,541,846,2</area>
         </shape>
 
-        <shape name="edit-rss-left-line" from="base_vertical_line">
+        <shape name="edit-rss-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,501</area>
         </shape>
 
-        <shape name="edit-rss-right-line" from="base_vertical_line">
+        <shape name="edit-rss-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,501</area>
         </shape>
 
-        <shape name="edit-rss-bottom-top-line" from="base_line">
+        <shape name="edit-rss-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,550,848,134</area>
+        </shape>
+
+        <shape name="edit-rss-bottom-top-line" from="base_highlight_line">
             <area>217,551,846,2</area>
         </shape>
 
-        <shape name="edit-rss-bottom-bottom-line" from="base_line">
+        <shape name="edit-rss-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="edit-rss-bottom-left-line" from="base_vertical_line">
+        <shape name="edit-rss-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,553,2,128</area>
         </shape>
 
-        <shape name="edit-rss-bottom-right-line" from="base_vertical_line">
+        <shape name="edit-rss-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,553,2,128</area>
         </shape>
 
@@ -616,19 +664,23 @@
             <area>20,36,613,306</area>
         </shape>
 
-        <shape name="netvision-list-sites-top-line" from="base_line">
+        <shape name="netvision-list-sites-backdrop-line" from="base_backdrop_line">
+            <area>21,37,611,304</area>
+        </shape>
+
+        <shape name="netvision-list-sites-top-line" from="base_highlight_line">
             <area>22,38,609,2</area>
         </shape>
 
-        <shape name="netvision-list-sites-bottom-line" from="base_line">
+        <shape name="netvision-list-sites-bottom-line" from="base_highlight_line">
             <area>22,338,609,2</area>
         </shape>
 
-        <shape name="netvision-list-sites-left-line" from="base_vertical_line">
+        <shape name="netvision-list-sites-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,298</area>
         </shape>
 
-        <shape name="netvision-list-sites-right-line" from="base_vertical_line">
+        <shape name="netvision-list-sites-right-line" from="base_highlight_vertical_line">
             <area>629,40,2,298</area>
         </shape>
 
@@ -636,19 +688,23 @@
             <area>647,36,613,306</area>
         </shape>
 
-        <shape name="netvision-list-videos-top-line" from="base_line">
+        <shape name="netvision-list-videos-backdrop-line" from="base_backdrop_line">
+            <area>648,37,611,304</area>
+        </shape>
+
+        <shape name="netvision-list-videos-top-line" from="base_highlight_line">
             <area>649,38,609,2</area>
         </shape>
 
-        <shape name="netvision-list-videos-bottom-line" from="base_line">
+        <shape name="netvision-list-videos-bottom-line" from="base_highlight_line">
             <area>649,338,609,2</area>
         </shape>
 
-        <shape name="netvision-list-videos-left-line" from="base_vertical_line">
+        <shape name="netvision-list-videos-left-line" from="base_highlight_vertical_line">
             <area>649,40,2,298</area>
         </shape>
 
-        <shape name="netvision-list-videos-right-line" from="base_vertical_line">
+        <shape name="netvision-list-videos-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,298</area>
         </shape>
 
@@ -656,19 +712,23 @@
             <area>20,352,1240,333</area>
         </shape>
 
-        <shape name="netvision-list-bottom-top-line" from="base_line">
+        <shape name="netvision-list-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,353,1238,127</area>
+        </shape>
+
+        <shape name="netvision-list-bottom-top-line" from="base_highlight_line">
             <area>22,354,1236,2</area>
         </shape>
 
-        <shape name="netvision-list-bottom-bottom-line" from="base_line">
+        <shape name="netvision-list-bottom-bottom-line" from="base_highlight_line">
             <area>22,477,1236,2</area>
         </shape>
 
-        <shape name="netvision-list-bottom-left-line" from="base_vertical_line">
+        <shape name="netvision-list-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,356,2,121</area>
         </shape>
 
-        <shape name="netvision-list-bottom-right-line" from="base_vertical_line">
+        <shape name="netvision-list-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,356,2,121</area>
         </shape>
 
@@ -680,35 +740,43 @@
             <area>43,436,1194,2</area>
         </shape>
 
-        <shape name="netvision-list-description-top-line" from="base_line">
+        <shape name="netvision-list-description-backdrop-line" from="base_backdrop_line">
+            <area>21,484,971,200</area>
+        </shape>
+
+        <shape name="netvision-list-description-top-line" from="base_highlight_line">
             <area>22,485,969,2</area>
         </shape>
 
-        <shape name="netvision-list-description-bottom-line" from="base_line">
+        <shape name="netvision-list-description-bottom-line" from="base_highlight_line">
             <area>22,681,969,2</area>
         </shape>
 
-        <shape name="netvision-list-description-left-line" from="base_vertical_line">
+        <shape name="netvision-list-description-left-line" from="base_highlight_vertical_line">
             <area>22,487,2,194</area>
         </shape>
 
-        <shape name="netvision-list-description-right-line" from="base_vertical_line">
+        <shape name="netvision-list-description-right-line" from="base_highlight_vertical_line">
             <area>989,487,2,194</area>
         </shape>
 
-        <shape name="netvision-list-preview-top-line" from="base_line">
+        <shape name="netvision-list-preview-backdrop-line" from="base_backdrop_line">
+            <area>996,484,263,200</area>
+        </shape>
+
+        <shape name="netvision-list-preview-top-line" from="base_highlight_line">
             <area>997,485,261,2</area>
         </shape>
 
-        <shape name="netvision-list-preview-bottom-line" from="base_line">
+        <shape name="netvision-list-preview-bottom-line" from="base_highlight_line">
             <area>997,681,261,2</area>
         </shape>
 
-        <shape name="netvision-list-preview-left-line" from="base_vertical_line">
+        <shape name="netvision-list-preview-left-line" from="base_highlight_vertical_line">
             <area>997,487,2,194</area>
         </shape>
 
-        <shape name="netvision-list-preview-right-line" from="base_vertical_line">
+        <shape name="netvision-list-preview-right-line" from="base_highlight_vertical_line">
             <area>1256,487,2,194</area>
         </shape>
 
@@ -869,19 +937,23 @@
             <area>20,362,1240,323</area>
         </shape>
 
-        <shape name="netvision-browse-bottom-top-line" from="base_line">
+        <shape name="netvision-browse-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,363,1238,321</area>
+        </shape>
+
+        <shape name="netvision-browse-bottom-top-line" from="base_highlight_line">
             <area>22,364,1236,2</area>
         </shape>
 
-        <shape name="netvision-browse-bottom-bottom-line" from="base_line">
+        <shape name="netvision-browse-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="netvision-browse-bottom-left-line" from="base_vertical_line">
+        <shape name="netvision-browse-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,366,2,315</area>
         </shape>
 
-        <shape name="netvision-browse-bottom-right-line" from="base_vertical_line">
+        <shape name="netvision-browse-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,366,2,315</area>
         </shape>
 
@@ -1099,19 +1171,23 @@
             <area>20,363,1240,322</area>
         </shape>
 
-        <shape name="netvision-gallery-bottom-top-line" from="base_line">
+        <shape name="netvision-gallery-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,364,1238,320</area>
+        </shape>
+
+        <shape name="netvision-gallery-bottom-top-line" from="base_highlight_line">
             <area>22,365,1236,2</area>
         </shape>
 
-        <shape name="netvision-gallery-bottom-bottom-line" from="base_line">
+        <shape name="netvision-gallery-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="netvision-gallery-bottom-left-line" from="base_vertical_line">
+        <shape name="netvision-gallery-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,367,2,314</area>
         </shape>
 
-        <shape name="netvision-gallery-bottom-right-line" from="base_vertical_line">
+        <shape name="netvision-gallery-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,367,2,314</area>
         </shape>
 

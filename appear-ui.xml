@@ -12,19 +12,23 @@
             <area>320,180,640,360</area>
         </shape>
 
-        <shape name="appearance-top-line" from="base_line">
+        <shape name="appearance-wizard-backdrop-line" from="base_backdrop_line">
+            <area>321,181,638,358</area>
+        </shape>
+
+        <shape name="appearance-top-line" from="base_highlight_line">
             <area>322,182,636,2</area>
         </shape>
 
-        <shape name="appearance-bottom-line" from="base_line">
+        <shape name="appearance-bottom-line" from="base_highlight_line">
             <area>322,536,636,2</area>
         </shape>
 
-        <shape name="appearance-left-line" from="base_vertical_line">
+        <shape name="appearance-left-line" from="base_highlight_vertical_line">
             <area>322,184,2,352</area>
         </shape>
 
-        <shape name="appearance-right-line" from="base_vertical_line">
+        <shape name="appearance-right-line" from="base_highlight_vertical_line">
             <area>956,184,2,352</area>
         </shape>
 

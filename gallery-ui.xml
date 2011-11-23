@@ -25,19 +25,23 @@
             <area>20,496,1240,189</area>
         </shape>
 
-        <shape name="image-gallery-bottom-top-line" from="base_line">
+        <shape name="image-gallery-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,497,1238,187</area>
+        </shape>
+
+        <shape name="image-gallery-bottom-top-line" from="base_highlight_line">
             <area>22,498,1236,2</area>
         </shape>
 
-        <shape name="image-gallery-bottom-bottom-line" from="base_line">
+        <shape name="image-gallery-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="image-gallery-bottom-left-line" from="base_vertical_line">
+        <shape name="image-gallery-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,500,2,181</area>
         </shape>
 
-        <shape name="image-gallery-bottom-right-line" from="base_vertical_line">
+        <shape name="image-gallery-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,500,2,181</area>
         </shape>
 
@@ -176,35 +180,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="filter-top-line" from="base_line">
+        <shape name="filter-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,506</area>
+        </shape>
+
+        <shape name="filter-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="filter-bottom-line" from="base_line">
+        <shape name="filter-bottom-line" from="base_highlight_line">
             <area>217,540,846,2</area>
         </shape>
 
-        <shape name="filter-left-line" from="base_vertical_line">
+        <shape name="filter-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,500</area>
         </shape>
 
-        <shape name="filter-right-line" from="base_vertical_line">
+        <shape name="filter-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,500</area>
         </shape>
 
-        <shape name="filter-bottom-top-line" from="base_line">
+        <shape name="filter-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,547,848,137</area>
+        </shape>
+
+        <shape name="filter-bottom-top-line" from="base_highlight_line">
             <area>217,548,846,2</area>
         </shape>
 
-        <shape name="filter-bottom-bottom-line" from="base_line">
+        <shape name="filter-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="filter-bottom-left-line" from="base_vertical_line">
+        <shape name="filter-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,550,2,131</area>
         </shape>
 
-        <shape name="filter-bottom-right-line" from="base_vertical_line">
+        <shape name="filter-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,550,2,131</area>
         </shape>
 

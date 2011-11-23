@@ -9,23 +9,27 @@
             <value>Myth Web Browser</value>
         </textarea>
 
-        <shape name="web_browser_backdrop" from="base_backdrop">
+        <shape name="web-browser-backdrop" from="base_backdrop">
             <area>20,36,1240,649</area>
         </shape>
 
-        <shape name="web-browser-top-line" from="base_line">
+        <shape name="web-browser-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,647</area>
+        </shape>
+
+        <shape name="web-browser-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="web-browser-bottom-line" from="base_line">
+        <shape name="web-browser-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="web-browser-left-line" from="base_vertical_line">
+        <shape name="web-browser-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,641</area>
         </shape>
 
-        <shape name="web-browser-right-line" from="base_vertical_line">
+        <shape name="web-browser-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,641</area>
         </shape>
 
@@ -113,19 +117,23 @@
             <area>20,76,1240,609</area>
         </shape>
 
-        <shape name="bookmark-top-line" from="base_line">
+        <shape name="bookmark-backdrop-line" from="base_backdrop_line">
+            <area>21,77,1238,607</area>
+        </shape>
+
+        <shape name="bookmark-top-line" from="base_highlight_line">
             <area>22,78,1236,2</area>
         </shape>
 
-        <shape name="bookmark-bottom-line" from="base_line">
+        <shape name="bookmark-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="bookmark-left-line" from="base_vertical_line">
+        <shape name="bookmark-left-line" from="base_highlight_vertical_line">
             <area>22,80,2,601</area>
         </shape>
 
-        <shape name="bookmark-right-line" from="base_vertical_line">
+        <shape name="bookmark-right-line" from="base_highlight_vertical_line">
             <area>1256,80,2,601</area>
         </shape>
         <shape name="bookmark-seperator-first-line" from="base_line">
@@ -245,35 +253,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="web-browser-top-line" from="base_line">
+        <shape name="configure-web-browser-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,422</area>
+        </shape>
+
+        <shape name="web-browser-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="web-browser-bottom-line" from="base_line">
+        <shape name="web-browser-bottom-line" from="base_highlight_line">
             <area>217,456,846,2</area>
         </shape>
 
-        <shape name="web-browser-left-line" from="base_vertical_line">
+        <shape name="web-browser-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,416</area>
         </shape>
 
-        <shape name="web-browser-right-line" from="base_vertical_line">
+        <shape name="web-browser-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,416</area>
         </shape>
 
-        <shape name="web-browser-bottom-top-line" from="base_line">
+        <shape name="web-browser-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,465,848,219</area>
+        </shape>
+
+        <shape name="web-browser-bottom-top-line" from="base_highlight_line">
             <area>217,466,846,2</area>
         </shape>
 
-        <shape name="web-browser-bottom-bottom-line" from="base_line">
+        <shape name="web-browser-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="web-browser-bottom-left-line" from="base_vertical_line">
+        <shape name="web-browser-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,468,2,213</area>
         </shape>
 
-        <shape name="web-browser-bottom-right-line" from="base_vertical_line">
+        <shape name="web-browser-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,468,2,213</area>
         </shape>
 
@@ -340,35 +356,43 @@
             <area>232,102,816,516</area>
         </shape>
 
-        <shape name="bookmark-editor-top-line" from="base_line">
+        <shape name="bookmark-editor-backdrop-line" from="base_backdrop_line">
+            <area>233,103,814,404</area>
+        </shape>
+
+        <shape name="bookmark-editor-top-line" from="base_highlight_line">
             <area>234,104,812,2</area>
         </shape>
 
-        <shape name="bookmark-editor-bottom-line" from="base_line">
+        <shape name="bookmark-editor-bottom-line" from="base_highlight_line">
             <area>234,504,812,2</area>
         </shape>
 
-        <shape name="bookmark-editor-left-line" from="base_vertical_line">
+        <shape name="bookmark-editor-left-line" from="base_highlight_vertical_line">
             <area>234,106,2,398</area>
         </shape>
 
-        <shape name="bookmark-editor-right-line" from="base_vertical_line">
+        <shape name="bookmark-editor-right-line" from="base_highlight_vertical_line">
             <area>1044,106,2,398</area>
         </shape>
 
-        <shape name="bookmark-editor-bottom-top-line" from="base_line">
+        <shape name="bookmark-editor-bottom-backdrop-line" from="base_backdrop_line">
+            <area>233,513,814,104</area>
+        </shape>
+
+        <shape name="bookmark-editor-bottom-top-line" from="base_highlight_line">
             <area>234,514,812,2</area>
         </shape>
 
-        <shape name="bookmark-editor-bottom-bottom-line" from="base_line">
+        <shape name="bookmark-editor-bottom-bottom-line" from="base_highlight_line">
             <area>234,614,812,2</area>
         </shape>
 
-        <shape name="bookmark-editor-bottom-left-line" from="base_vertical_line">
+        <shape name="bookmark-editor-bottom-left-line" from="base_highlight_vertical_line">
             <area>234,516,2,98</area>
         </shape>
 
-        <shape name="bookmark-editor-bottom-right-line" from="base_vertical_line">
+        <shape name="bookmark-editor-bottom-right-line" from="base_highlight_vertical_line">
             <area>1044,516,2,98</area>
         </shape>
 
