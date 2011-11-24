@@ -265,6 +265,7 @@
 
         <imagetype name="preview">
             <area>1006,493,248,186</area>
+            <mask>images/masks/netsearch_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -524,6 +525,7 @@
 
         <imagetype name="preview">
             <area>993,483,261,196</area>
+            <mask>images/masks/rss_editor_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -901,6 +903,7 @@
 
         <imagetype name="preview">
             <area>1001,489,253,190</area>
+            <mask>images/masks/netvision_tree_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

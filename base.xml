@@ -1885,6 +1885,7 @@
         <imagetype name="preview">
             <area>44,126,565,318</area>
             <filename />
+            <mask>images/masks/myth_file_browser_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

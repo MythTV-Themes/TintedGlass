@@ -181,6 +181,7 @@
 
         <imagetype name="thumbnail">
             <area>965,462,289,217</area>
+            <mask>images/masks/news_thumbnail_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

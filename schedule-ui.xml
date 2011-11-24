@@ -578,6 +578,7 @@
 
         <imagetype name="video">
             <area>774,409,480,270</area>
+            <mask>images/masks/program_guide_video_mask.png</mask>
         </imagetype>
 
     </window>
@@ -1132,8 +1133,8 @@
 
         <imagetype name="icon">
             <area>926,435,328,246</area>
+            <mask>images/masks/channel_rec_priority_mask.png</mask>
             <preserveaspect>false</preserveaspect>
-            <alpha>200</alpha>
         </imagetype>
 
     </window>
@@ -4085,6 +4086,7 @@
 
         <imagetype name="banner">
             <area>718,579,536,99</area>
+            <mask>images/masks/metadata_options_banner_mask.png</mask>
         </imagetype>
 
         <group name="clock-group" from="base_clock_group" />

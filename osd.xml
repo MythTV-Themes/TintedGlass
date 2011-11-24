@@ -261,7 +261,47 @@
             <area>290,44,700,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>90</cornerradius>
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <shape name="osd-message-backdrop-line">
+            <area>291,45,698,58</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="top-line">
+            <area>292,46,696,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="bottom-line" from="top-line">
+            <area>292,100,696,2</area>
+        </shape>
+
+        <shape name="left-line">
+            <area>292,48,2,52</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="right-line" from="left-line">
+            <area>986,48,2,52</area>
         </shape>
 
         <textarea name="message_text">
@@ -280,11 +320,51 @@
             <pixelsize>32</pixelsize>
         </fontdef>
 
-        <shape name="background">
+        <shape name="osd-input-backdrop">
             <area>70,44,180,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>90</cornerradius>
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <shape name="osd-input-backdrop-line">
+            <area>71,45,178,58</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="top-line">
+            <area>72,46,176,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="bottom-line" from="top-line">
+            <area>72,100,176,2</area>
+        </shape>
+
+        <shape name="left-line">
+            <area>72,48,2,52</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="right-line" from="left-line">
+            <area>246,48,2,52</area>
         </shape>
 
         <textarea name="osd_number_entry">
@@ -307,24 +387,64 @@
             <area>70,610,1140,66</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>90</cornerradius>
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <shape name="osd-status-backdrop-line">
+            <area>71,611,1138,64</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="top-line">
+            <area>72,612,1136,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="bottom-line" from="top-line">
+            <area>72,672,1136,2</area>
+        </shape>
+
+        <shape name="left-line">
+            <area>72,614,2,58</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="right-line" from="left-line">
+            <area>1206,614,2,58</area>
         </shape>
 
         <textarea name="title">
-            <area>104,610,600,24</area>
+            <area>104,612,600,24</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description">
-            <area>90,653,1100,24</area>
+            <area>90,651,1100,24</area>
             <font>small</font>
             <align>allcenter</align>
             <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
 
         <clock name="clock">
-            <area>876,610,300,24</area>
+            <area>876,612,300,24</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,vcenter</align>
@@ -478,7 +598,7 @@
             <area>244,480,964,2</area>
         </shape>
 
-        <shape name="description-first-line">
+        <shape name="description-seperator-first-line">
             <area>262,510,928,2</area>
             <type>box</type>
             <fill style="gradient">
@@ -490,7 +610,7 @@
             </fill>
         </shape>
 
-        <shape name="description-second-line" from="description-first-line">
+        <shape name="description-seperator-second-line" from="description-seperator-first-line">
             <area>262,643,928,2</area>
         </shape>
 
@@ -1169,11 +1289,19 @@
             <area>936,114,2,492</area>
         </shape>
 
-        <shape name="title-message-seperator-line" from="channel-editor-first-line">
+        <shape name="title-message-seperator-line">
             <area>363,286,554,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="45">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
         </shape>
 
-        <shape name="text-edit-buttons-seperator-line" from="channel-editor-first-line">
+        <shape name="text-edit-buttons-seperator-line" from="title-message-seperator-line">
             <area>363,546,554,2</area>
         </shape>
 
@@ -1335,32 +1463,72 @@
             <area>70,610,1140,66</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>90</cornerradius>
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <shape name="osd-program-editor-backdrop-line">
+            <area>71,611,1138,64</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#ffffff" alpha="45" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="top-line">
+            <area>72,612,1136,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="bottom-line" from="top-line">
+            <area>72,672,1136,2</area>
+        </shape>
+
+        <shape name="left-line">
+            <area>72,614,2,58</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="right-line" from="left-line">
+            <area>1206,614,2,58</area>
         </shape>
 
         <textarea name="title">
-            <area>104,610,600,24</area>
+            <area>104,612,600,24</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="seekamount" from="title">
-            <area>876,610,300,24</area>
+            <area>876,612,300,24</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="timedisplay" from="title">
-            <area>90,653,1100,24</area>
+            <area>90,651,1100,24</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="cutindicator" from="title">
-            <area>104,653,300,24</area>
+            <area>104,651,300,24</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="framedisplay" from="title">
-            <area>876,653,300,24</area>
+            <area>876,651,300,24</area>
             <align>right,vcenter</align>
         </textarea>
 
@@ -1465,8 +1633,16 @@
             <area>937,120,2,480</area>
         </shape>
 
-        <shape name="message-area-seperator-line" from="mythpopup-box-first-line">
+        <shape name="message-area-seperator-line">
             <area>362,328,556,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="45">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
         </shape>
 
         <textarea name="messagearea">

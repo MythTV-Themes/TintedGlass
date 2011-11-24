@@ -594,6 +594,7 @@
 
         <imagetype name="coverart">
             <area>1075,410,179,269</area>
+            <mask>images/masks/manager_coverart_mask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
@@ -1898,6 +1899,7 @@
 
         <imagetype name="coverart">
             <area>1058,385,196,294</area>
+            <mask>images/masks/tree_coverart_mask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
@@ -2133,6 +2135,7 @@
 
         <imagetype name="coverart">
             <area>1091,42,163,244</area>
+            <mask>images/masks/edit_metadata_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
         
@@ -2829,6 +2832,7 @@
 
         <imagetype name="coverart">
             <area>795,108,264,396</area>
+            <mask>images/masks/item_detail_popup_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 

@@ -558,6 +558,7 @@
 
         <imagetype name="coverart">
             <area>26,78,234,347</area>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
@@ -595,6 +596,7 @@
 
         <imagetype name="preview">
             <area>836,447,418,235</area>
+            <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
@@ -1167,6 +1169,7 @@
 
         <imagetype name="coverart">
             <area>26,78,234,347</area>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
@@ -1204,6 +1207,7 @@
 
         <imagetype name="preview">
             <area>836,447,418,235</area>
+            <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
