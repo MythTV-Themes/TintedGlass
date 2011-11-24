@@ -37,7 +37,7 @@
             <area>20,0,1240,504</area>
 
             <image name="heading-backdrop" draworder="0" fleximage="no">
-                <position>488,-1</position>
+                <position>480,-7</position>
                 <filename>mythmusic/mm_heading_backdrop.png</filename>
             </image>
 
@@ -186,7 +186,7 @@
             </image>
 
             <image name="heading-backdrop" draworder="0" fleximage="no">
-                <position>500,-1</position>
+                <position>500,-7</position>
                 <filename>mythmusic/mm_heading_backdrop.png</filename>
             </image>
 
@@ -463,19 +463,23 @@
             <area>190,36,900,648</area>
         </shape>
 
-        <shape name="edit-metadata-top-line" from="base_line">
+        <shape name="edit-metadata-backdrop-line" from="base_backdrop_line">
+            <area>191,37,898,646</area>
+        </shape>
+
+        <shape name="edit-metadata-top-line" from="base_highlight_line">
             <area>192,38,896,2</area>
         </shape>
 
-        <shape name="edit-metadata-bottom-line" from="base_line">
+        <shape name="edit-metadata-bottom-line" from="base_highlight_line">
             <area>192,680,896,2</area>
         </shape>
 
-        <shape name="edit-metadata-left-line" from="base_vertical_line">
+        <shape name="edit-metadata-left-line" from="base_highlight_vertical_line">
             <area>192,40,2,640</area>
         </shape>
 
-        <shape name="edit-metadata-right-line" from="base_vertical_line">
+        <shape name="edit-metadata-right-line" from="base_highlight_vertical_line">
             <area>1086,40,2,640</area>
         </shape>
 
@@ -676,19 +680,23 @@
             <area>165,36,420,510</area>
         </shape>
 
-        <shape name="coverartlist-top-line" from="base_line">
+        <shape name="coverartlist-backdrop-line" from="base_backdrop_line">
+            <area>166,37,418,508</area>
+        </shape>
+
+        <shape name="coverartlist-top-line" from="base_highlight_line">
             <area>167,38,416,2</area>
         </shape>
 
-        <shape name="coverartlist-bottom-line" from="base_line">
+        <shape name="coverartlist-bottom-line" from="base_highlight_line">
             <area>167,542,416,2</area>
         </shape>
 
-        <shape name="coverartlist-left-line" from="base_vertical_line">
+        <shape name="coverartlist-left-line" from="base_highlight_vertical_line">
             <area>167,40,2,502</area>
         </shape>
 
-        <shape name="coverartlist-right-line" from="base_vertical_line">
+        <shape name="coverartlist-right-line" from="base_highlight_vertical_line">
             <area>581,40,2,502</area>
         </shape>
 
@@ -696,19 +704,23 @@
             <area>605,36,510,510</area>
         </shape>
 
-        <shape name="coverart-top-line" from="base_line">
+        <shape name="coverart-backdrop-line" from="base_backdrop_line">
+            <area>606,37,508,508</area>
+        </shape>
+
+        <shape name="coverart-top-line" from="base_highlight_line">
             <area>607,38,506,2</area>
         </shape>
 
-        <shape name="coverart-bottom-line" from="base_line">
+        <shape name="coverart-bottom-line" from="base_highlight_line">
             <area>607,542,506,2</area>
         </shape>
 
-        <shape name="coverart-left-line" from="base_vertical_line">
+        <shape name="coverart-left-line" from="base_highlight_vertical_line">
             <area>607,40,2,502</area>
         </shape>
 
-        <shape name="coverart-right-line" from="base_vertical_line">
+        <shape name="coverart-right-line" from="base_highlight_vertical_line">
             <area>1111,40,2,502</area>
         </shape>
 
@@ -716,19 +728,23 @@
             <area>165,556,950,128</area>
         </shape>
 
-        <shape name="filename-top-line" from="base_line">
+        <shape name="filename-backdrop-line" from="base_backdrop_line">
+            <area>166,557,948,126</area>
+        </shape>
+
+        <shape name="filename-top-line" from="base_highlight_line">
             <area>167,558,946,2</area>
         </shape>
 
-        <shape name="filename-bottom-line" from="base_line">
+        <shape name="filename-bottom-line" from="base_highlight_line">
             <area>167,680,946,2</area>
         </shape>
 
-        <shape name="filename-left-line" from="base_vertical_line">
+        <shape name="filename-left-line" from="base_highlight_vertical_line">
             <area>167,560,2,120</area>
         </shape>
 
-        <shape name="filename-right-line" from="base_vertical_line">
+        <shape name="filename-right-line" from="base_highlight_vertical_line">
             <area>1111,560,2,120</area>
         </shape>
 
@@ -954,35 +970,43 @@
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="import-cover-art-top-line" from="base_line">
+        <shape name="import-cover-art-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,134</area>
+        </shape>
+
+        <shape name="import-cover-art-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-bottom-line" from="base_line">
+        <shape name="import-cover-art-bottom-line" from="base_highlight_line">
             <area>217,168,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-left-line" from="base_vertical_line">
+        <shape name="import-cover-art-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,128</area>
         </shape>
 
-        <shape name="import-cover-art-right-line" from="base_vertical_line">
+        <shape name="import-cover-art-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,128</area>
         </shape>
 
-        <shape name="import-cover-art-middle-top-line" from="base_line">
+        <shape name="import-cover-art-middle-backdrop-line" from="base_backdrop_line">
+            <area>216,177,848,367</area>
+        </shape>
+
+        <shape name="import-cover-art-middle-top-line" from="base_highlight_line">
             <area>217,178,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-middle-bottom-line" from="base_line">
+        <shape name="import-cover-art-middle-bottom-line" from="base_highlight_line">
             <area>217,541,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-middle-left-line" from="base_vertical_line">
+        <shape name="import-cover-art-middle-left-line" from="base_highlight_vertical_line">
             <area>217,180,2,361</area>
         </shape>
 
-        <shape name="import-cover-art-middle-right-line" from="base_vertical_line">
+        <shape name="import-cover-art-middle-right-line" from="base_highlight_vertical_line">
             <area>1061,180,2,361</area>
         </shape>
 
@@ -990,19 +1014,23 @@
             <area>712,193,3,331</area>
         </shape>
 
-        <shape name="import-cover-art-bottom-top-line" from="base_line">
+        <shape name="import-cover-art-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,550,848,134</area>
+        </shape>
+
+        <shape name="import-cover-art-bottom-top-line" from="base_highlight_line">
             <area>217,551,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-bottom-bottom-line" from="base_line">
+        <shape name="import-cover-art-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="import-cover-art-bottom-left-line" from="base_vertical_line">
+        <shape name="import-cover-art-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,553,2,128</area>
         </shape>
 
-        <shape name="import-cover-art-bottom-right-line" from="base_vertical_line">
+        <shape name="import-cover-art-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,553,2,128</area>
         </shape>
 
@@ -1152,39 +1180,47 @@
             <value>Import Files</value>
         </textarea>
 
-        <shape name="import-music-backdrop" from="base_backdrop">
+        <shape name="import-files-backdrop" from="base_backdrop">
             <area>215,36,850,649</area>
         </shape>
 
-        <shape name="import-files-top-top-line" from="base_line">
+        <shape name="import-files-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,124</area>
+        </shape>
+
+        <shape name="import-files-top-top-line" from="base_highlight_line">
             <area>217,38,846,2</area>
         </shape>
 
-        <shape name="import-files-top-bottom-line" from="base_line">
+        <shape name="import-files-top-bottom-line" from="base_highlight_line">
             <area>217,158,846,2</area>
         </shape>
 
-        <shape name="import-files-top-left-line" from="base_vertical_line">
+        <shape name="import-files-top-left-line" from="base_highlight_vertical_line">
             <area>217,40,2,118</area>
         </shape>
 
-        <shape name="import-files-top-right-line" from="base_vertical_line">
+        <shape name="import-files-top-right-line" from="base_highlight_vertical_line">
             <area>1061,40,2,118</area>
         </shape>
 
-        <shape name="import-files-middle-top-line" from="base_line">
+        <shape name="import-files-middle-backdrop-line" from="base_backdrop_line">
+            <area>216,167,848,387</area>
+        </shape>
+
+        <shape name="import-files-middle-top-line" from="base_highlight_line">
             <area>217,168,846,2</area>
         </shape>
 
-        <shape name="import-files-middle-bottom-line" from="base_line">
+        <shape name="import-files-middle-bottom-line" from="base_highlight_line">
             <area>217,551,846,2</area>
         </shape>
 
-        <shape name="import-files-middle-left-line" from="base_vertical_line">
+        <shape name="import-files-middle-left-line" from="base_highlight_vertical_line">
             <area>217,170,2,381</area>
         </shape>
 
-        <shape name="import-files-middle-right-line" from="base_vertical_line">
+        <shape name="import-files-middle-right-line" from="base_highlight_vertical_line">
             <area>1061,170,2,381</area>
         </shape>
 
@@ -1192,19 +1228,23 @@
             <area>238,496,804,2</area>
         </shape>
 
-        <shape name="import-files-bottom-top-line" from="base_line">
+        <shape name="import-files-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,560,848,124</area>
+        </shape>
+
+        <shape name="import-files-bottom-top-line" from="base_highlight_line">
             <area>217,561,846,2</area>
         </shape>
 
-        <shape name="import-files-bottom-bottom-line" from="base_line">
+        <shape name="import-files-bottom-bottom-line" from="base_highlight_line">
             <area>217,681,846,2</area>
         </shape>
 
-        <shape name="import-files-bottom-left-line" from="base_vertical_line">
+        <shape name="import-files-bottom-left-line" from="base_highlight_vertical_line">
             <area>217,563,2,118</area>
         </shape>
 
-        <shape name="import-files-bottom-right-line" from="base_vertical_line">
+        <shape name="import-files-bottom-right-line" from="base_highlight_vertical_line">
             <area>1061,563,2,118</area>
         </shape>
 
@@ -1402,18 +1442,22 @@
         <area>0,0,1280,720</area>
 
         <shape name="mini-player-backdrop" from="base_popup_backdrop">
-            <area>418,598,444,123</area>
+            <area>418,598,444,128</area>
         </shape>
 
-        <shape name="mini-player-top-line" from="base_line">
+        <shape name="mini-player-backdrop-line" from="base_backdrop_line">
+            <area>419,599,442,126</area>
+        </shape>
+
+        <shape name="mini-player-top-line" from="base_highlight_line">
             <area>420,600,440,2</area>
         </shape>
 
-        <shape name="mini-player-left-line" from="base_vertical_line">
+        <shape name="mini-player-left-line" from="base_highlight_vertical_line">
             <area>420,602,2,119</area>
         </shape>
 
-        <shape name="mini-player-right-line" from="base_vertical_line">
+        <shape name="mini-player-right-line" from="base_highlight_vertical_line">
             <area>858,602,2,119</area>
         </shape>
 
@@ -1464,23 +1508,27 @@
     <window name="volume_popup">
         <area>-1,-1,1280,720</area>
 
-        <shape name="boxshape" from="base_popup_backdrop">
+        <shape name="volume-backdrop" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
 
-        <shape name="volume-popup-top-line" from="base_line">
+        <shape name="volume-backdrop-line" from="base_backdrop_line">
+            <area>351,278,585,168</area>
+        </shape>
+
+        <shape name="volume-popup-top-line" from="base_highlight_line">
             <area>352,279,583,2</area>
         </shape>
 
-        <shape name="volume-popup-bottom-line" from="base_line">
+        <shape name="volume-popup-bottom-line" from="base_highlight_line">
             <area>352,443,583,2</area>
         </shape>
 
-        <shape name="volume-popup-left-line" from="base_vertical_line">
+        <shape name="volume-popup-left-line" from="base_highlight_vertical_line">
             <area>352,281,2,162</area>
         </shape>
 
-        <shape name="volume-popup-right-line" from="base_vertical_line">
+        <shape name="volume-popup-right-line" from="base_highlight_vertical_line">
             <area>933,281,2,162</area>
         </shape>
 
@@ -1524,19 +1572,23 @@
             <area>60,60,1160,600</area>
         </shape>
 
-        <shape name="track-detail-popup-top-line" from="base_line">
+        <shape name="track-detail-backdrop-line" from="base_backdrop_line">
+            <area>61,61,1158,598</area>
+        </shape>
+
+        <shape name="track-detail-popup-top-line" from="base_highlight_line">
             <area>62,62,1156,2</area>
         </shape>
 
-        <shape name="track-detail-popup-bottom-line" from="base_line">
+        <shape name="track-detail-popup-bottom-line" from="base_highlight_line">
             <area>62,656,1156,2</area>
         </shape>
 
-        <shape name="track-detail-popup-left-line" from="base_vertical_line">
+        <shape name="track-detail-popup-left-line" from="base_highlight_vertical_line">
             <area>62,64,2,592</area>
         </shape>
 
-        <shape name="track-detail-popup-right-line" from="base_vertical_line">
+        <shape name="track-detail-popup-right-line" from="base_highlight_vertical_line">
             <area>1216,64,2,592</area>
         </shape>
 
@@ -1668,19 +1720,23 @@
             <area>20,36,1240,257</area>
         </shape>
 
-        <shape name="import-cd-top-line" from="base_line">
+        <shape name="import-cd-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,255</area>
+        </shape>
+
+        <shape name="import-cd-top-line" from="base_highlight_line">
             <area>22,38,1236,2</area>
         </shape>
 
-        <shape name="import-cd-bottom-line" from="base_line">
+        <shape name="import-cd-bottom-line" from="base_highlight_line">
             <area>22,289,1236,2</area>
         </shape>
 
-        <shape name="import-cd-left-line" from="base_vertical_line">
+        <shape name="import-cd-left-line" from="base_highlight_vertical_line">
             <area>22,40,2,249</area>
         </shape>
 
-        <shape name="import-cd-right-line" from="base_vertical_line">
+        <shape name="import-cd-right-line" from="base_highlight_vertical_line">
             <area>1256,40,2,249</area>
         </shape>
 
@@ -1688,19 +1744,23 @@
             <area>20,303,1240,382</area>
         </shape>
 
-        <shape name="import-cd-bottom-top-line" from="base_line">
+        <shape name="import-cd-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,304,1238,380</area>
+        </shape>
+
+        <shape name="import-cd-bottom-top-line" from="base_highlight_line">
             <area>22,305,1236,2</area>
         </shape>
 
-        <shape name="import-cd-bottom-bottom-line" from="base_line">
+        <shape name="import-cd-bottom-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="import-cd-bottom-left-line" from="base_vertical_line">
+        <shape name="import-cd-bottom-left-line" from="base_highlight_vertical_line">
             <area>22,307,2,374</area>
         </shape>
 
-        <shape name="import-cd-bottom-right-line" from="base_vertical_line">
+        <shape name="import-cd-bottom-right-line" from="base_highlight_vertical_line">
             <area>1256,307,2,374</area>
         </shape>
 
@@ -1909,19 +1969,23 @@
             <area>240,180,800,360</area>
         </shape>
 
-        <shape name="cd-rip-top-line" from="base_line">
+        <shape name="cd-rip-backdrop-line" from="base_backdrop_line">
+            <area>241,181,798,358</area>
+        </shape>
+
+        <shape name="cd-rip-top-line" from="base_highlight_line">
             <area>242,182,796,2</area>
         </shape>
 
-        <shape name="cd-rip-bottom-line" from="base_line">
+        <shape name="cd-rip-bottom-line" from="base_highlight_line">
             <area>242,536,796,2</area>
         </shape>
 
-        <shape name="cd-rip-left-line" from="base_vertical_line">
+        <shape name="cd-rip-left-line" from="base_highlight_vertical_line">
             <area>242,184,2,352</area>
         </shape>
 
-        <shape name="cd-rip-right-line" from="base_vertical_line">
+        <shape name="cd-rip-right-line" from="base_highlight_vertical_line">
             <area>1036,184,2,352</area>
         </shape>
 
