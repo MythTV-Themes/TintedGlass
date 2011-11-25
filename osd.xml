@@ -431,20 +431,20 @@
         </shape>
 
         <textarea name="title">
-            <area>104,612,600,24</area>
+            <area>104,613,600,24</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description">
-            <area>90,651,1100,24</area>
+            <area>90,650,1100,24</area>
             <font>small</font>
             <align>allcenter</align>
             <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
 
         <clock name="clock">
-            <area>876,612,300,24</area>
+            <area>876,613,300,24</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,vcenter</align>
@@ -1507,28 +1507,28 @@
         </shape>
 
         <textarea name="title">
-            <area>104,612,600,24</area>
+            <area>104,613,600,24</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="seekamount" from="title">
-            <area>876,612,300,24</area>
+            <area>876,613,300,24</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="timedisplay" from="title">
-            <area>90,651,1100,24</area>
+            <area>90,650,1100,24</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="cutindicator" from="title">
-            <area>104,651,300,24</area>
+            <area>104,650,300,24</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="framedisplay" from="title">
-            <area>876,651,300,24</area>
+            <area>876,650,300,24</area>
             <align>right,vcenter</align>
         </textarea>
 
