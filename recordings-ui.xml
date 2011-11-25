@@ -73,19 +73,19 @@
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
-            <area>20,441,800,246</area>
+            <area>20,441,802,246</area>
         </shape>
 
         <shape name="description-backdrop-line" from="base_backdrop_line">
-            <area>21,442,798,244</area>
+            <area>21,442,800,244</area>
         </shape>
 
         <shape name="description-top-line" from="base_highlight_line">
-            <area>22,443,796,2</area>
+            <area>22,443,798,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_highlight_line">
-            <area>22,683,796,2</area>
+            <area>22,683,798,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_highlight_vertical_line">
@@ -93,35 +93,35 @@
         </shape>
 
         <shape name="description-right-line" from="base_highlight_vertical_line">
-            <area>816,445,2,238</area>
+            <area>818,445,2,238</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>37,482,766,2</area>
+            <area>37,482,768,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>37,643,766,2</area>
+            <area>37,643,768,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>830,441,430,246</area>
+            <area>832,441,428,246</area>
         </shape>
 
         <shape name="preview-backdrop-line" from="base_backdrop_line" >
-            <area>831,442,428,244</area>
+            <area>833,442,426,244</area>
         </shape>
 
         <shape name="preview-top-line" from="base_highlight_line">
-            <area>832,443,426,2</area>
+            <area>834,443,424,2</area>
         </shape>
 
         <shape name="preview-bottom-line" from="base_highlight_line">
-            <area>832,683,426,2</area>
+            <area>834,683,424,2</area>
         </shape>
 
         <shape name="preview-left-line" from="base_highlight_vertical_line">
-            <area>832,445,2,238</area>
+            <area>834,445,2,238</area>
         </shape>
 
         <shape name="preview-right-line" from="base_highlight_vertical_line">
@@ -563,20 +563,20 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>37,445,766,37</area>
+            <area>37,445,768,37</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>37,487,766,151</area>
+            <area>37,487,768,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>83,659</position>
+            <position>82,659</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -588,14 +588,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>22,665,796,20</area>
+            <area>22,665,798,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>836,447,418,235</area>
+            <area>837,446,418,235</area>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
@@ -684,19 +684,19 @@
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
-            <area>20,441,800,246</area>
+            <area>20,441,802,246</area>
         </shape>
 
         <shape name="description-backdrop-line" from="base_backdrop_line">
-            <area>21,442,798,244</area>
+            <area>21,442,800,244</area>
         </shape>
 
         <shape name="description-top-line" from="base_highlight_line">
-            <area>22,443,796,2</area>
+            <area>22,443,798,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_highlight_line">
-            <area>22,683,796,2</area>
+            <area>22,683,798,2</area>
         </shape>
 
         <shape name="description-left-line" from="base_highlight_vertical_line">
@@ -704,35 +704,35 @@
         </shape>
 
         <shape name="description-right-line" from="base_highlight_vertical_line">
-            <area>816,445,2,238</area>
+            <area>818,445,2,238</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>37,482,766,2</area>
+            <area>37,482,768,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>37,643,766,2</area>
+            <area>37,643,768,2</area>
         </shape>
 
         <shape name="preview-backdrop" from="base_backdrop" >
-            <area>830,441,430,246</area>
+            <area>832,441,428,246</area>
         </shape>
 
         <shape name="preview-backdrop-line" from="base_backdrop_line" >
-            <area>831,442,428,244</area>
+            <area>833,442,426,244</area>
         </shape>
 
         <shape name="preview-top-line" from="base_highlight_line">
-            <area>832,443,426,2</area>
+            <area>834,443,424,2</area>
         </shape>
 
         <shape name="preview-bottom-line" from="base_highlight_line">
-            <area>832,683,426,2</area>
+            <area>834,683,424,2</area>
         </shape>
 
         <shape name="preview-left-line" from="base_highlight_vertical_line">
-            <area>832,445,2,238</area>
+            <area>834,445,2,238</area>
         </shape>
 
         <shape name="preview-right-line" from="base_highlight_vertical_line">
@@ -1174,20 +1174,20 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>37,445,766,37</area>
+            <area>37,445,768,37</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>37,487,766,151</area>
+            <area>37,487,768,151</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>83,659</position>
+            <position>82,659</position>
             <imagetype name="background">
                 <area>0,0,681,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -1199,14 +1199,14 @@
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>22,665,796,20</area>
+            <area>22,665,798,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="preview">
-            <area>836,447,418,235</area>
+            <area>837,446,418,235</area>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
