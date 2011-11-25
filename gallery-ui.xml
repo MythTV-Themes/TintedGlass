@@ -101,18 +101,18 @@
                         <cornerradius>5</cornerradius>
                     </shape>
                     <shape name="buttonbackground-top-highlight-line">
-                        <area>-12,-7,234,4</area>
+                        <area>-3,-7,218,4</area>
                          <type>box</type>
                         <fill style="gradient">
                             <gradient direction="horizontal" alpha="0">
                                 <stop position="0" color="#ffffff" />
-                                <stop position="50" color="#ffffff" alpha="160" />
+                                <stop position="50" color="#ffffff" alpha="180" />
                                 <stop position="100" color="#ffffff" />
                             </gradient>
                         </fill>
                     </shape>
                     <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
-                        <area>-12,165,234,4</area>
+                        <area>-3,165,218,4</area>
                     </shape>
                     <shape name="buttonbackground-left-highlight-line">
                         <area>-11,-7,4,163</area>

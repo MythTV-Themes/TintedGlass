@@ -725,18 +725,18 @@
                         <cornerradius>5</cornerradius>
                     </shape>
                     <shape name="center-cover-frame-top-highlight-line">
-                        <area>-1,-3,212,4</area>
+                        <area>10,-3,190,4</area>
                          <type>box</type>
                         <fill style="gradient">
                             <gradient direction="horizontal" alpha="0">
                                 <stop position="0" color="#ffffff" />
-                                <stop position="50" color="#ffffff" alpha="160" />
+                                <stop position="50" color="#ffffff" alpha="180" />
                                 <stop position="100" color="#ffffff" />
                             </gradient>
                         </fill>
                     </shape>
                     <shape name="center-cover-frame-bottom-highlight-line" from="center-cover-frame-top-highlight-line">
-                        <area>-1,322,212,4</area>
+                        <area>10,322,190,4</area>
                     </shape>
                     <shape name="center-cover-frame-left-highlight-line">
                         <area>-3,1,4,321</area>
@@ -1150,7 +1150,7 @@
                     </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,80,125</area>
-                        <alpha>130</alpha>
+                        <alpha>225</alpha>
                     </imagetype>
                     <statetype name="nodetype">
                         <position>0,50</position>
@@ -1177,11 +1177,47 @@
                 </state>
                 <state name="selectedactive">
                     <area>-40,-40,160,220</area>
-                    <imagetype name="buttonbackground">
+                    <shape name="buttonbackground">
                         <area>0,-8,160,217</area>
-                        <filename>images/mv_video_underlay.png</filename>
-                        <alphapulse min="80" max="255" change="2"/>
-                    </imagetype>
+                        <type>roundbox</type>
+                        <fill color="#101017" alpha="255" />
+                        <cornerradius>8</cornerradius>
+                    </shape>
+                    <shape name="buttonbackground-line">
+                        <area>0,-8,160,217</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#ffffff" alpha="45" width="4" />
+                        <cornerradius>5</cornerradius>
+                    </shape>
+                    <shape name="buttonbackground-top-highlight-line">
+                        <area>12,-6,136,4</area>
+                         <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="180" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
+                        <area>12,203,136,4</area>
+                    </shape>
+                    <shape name="buttonbackground-left-highlight-line">
+                        <area>2,-2,4,205</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient alpha="0" direction="vertical">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="220" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
+                        <area>154,-2,4,205</area>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>10,0,140,200</area>
                         <filename>images/mv_browse_nocover.png</filename>
