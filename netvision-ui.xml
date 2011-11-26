@@ -1306,7 +1306,7 @@
                         <area>4,165,208,4</area>
                     </shape>
                     <shape name="buttonbackground-left-highlight-line">
-                        <area>-8,-1,4,172</area>
+                        <area>-8,-5,4,172</area>
                         <type>box</type>
                         <fill style="gradient">
                             <gradient alpha="0" direction="vertical">
@@ -1317,7 +1317,7 @@
                         </fill>
                     </shape>
                     <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
-                        <area>220,-1,4,172</area>
+                        <area>220,-5,4,172</area>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,216,162</area>
