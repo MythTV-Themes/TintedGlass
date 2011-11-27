@@ -511,7 +511,7 @@
         </shape>
 
         <shape name="title-backdrop-line">
-            <area>65,393,986,90</area>
+            <area>65,393,988,90</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
@@ -519,7 +519,7 @@
         </shape>
 
         <shape name="title-highlight-top-line">
-            <area>66,394,984,2</area>
+            <area>66,394,986,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="0">
@@ -531,7 +531,7 @@
         </shape>
 
         <shape name="title-highlight-bottom-line" from="title-highlight-top-line">
-            <area>66,480,984,2</area>
+            <area>66,480,986,2</area>
         </shape>
 
         <shape name="title-highlight-left-line">
@@ -547,23 +547,23 @@
         </shape>
 
         <shape name="title-highlight-right-line" from="title-highlight-left-line">
-            <area>1048,396,2,84</area>
+            <area>1050,396,2,84</area>
         </shape>
 
         <shape name="clock-backdrop-line" from="title-backdrop-line">
-            <area>1055,393,160,90</area>
+            <area>1057,393,158,90</area>
         </shape>
 
         <shape name="clock-highlight-top-line" from="title-highlight-top-line">
-            <area>1056,394,158,2</area>
+            <area>1058,394,156,2</area>
         </shape>
 
         <shape name="clock-highlight-bottom-line" from="title-highlight-top-line">
-            <area>1056,480,158,2</area>
+            <area>1058,480,156,2</area>
         </shape>
 
         <shape name="clock-highlight-left-line" from="title-highlight-left-line">
-            <area>1056,396,2,84</area>
+            <area>1058,396,2,84</area>
         </shape>
 
         <shape name="clock-highlight-right-line" from="title-highlight-left-line">
@@ -628,12 +628,12 @@
 
         <textarea name="titlesubtitle">
             <font>medium</font>
-            <area>74,397,968,30</area>
+            <area>74,397,970,30</area>
             <align>vcenter</align>
         </textarea>
 
         <clock name="clock">
-            <area>1058,396,154,84</area>
+            <area>1060,396,152,84</area>
             <font>verylarge</font>
             <template>%TIME%</template>
             <align>allcenter</align>
@@ -642,7 +642,7 @@
         <statetype name="tvstate">
             <state name="WatchingLiveTV">
                 <textarea name="WatchingLiveTV">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -651,7 +651,7 @@
             </state>
             <state name="WatchingPreRecorded">
                 <textarea name="WatchingPreRecorded">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -660,7 +660,7 @@
             </state>
             <state name="WatchingVideo">
                 <textarea name="WatchingVideo">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -669,7 +669,7 @@
             </state>
             <state name="WatchingDVD">
                 <textarea name="WatchingDVD">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -678,7 +678,7 @@
             </state>
             <state name="WatchingBD">
                 <textarea name="WatchingBD">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -687,7 +687,7 @@
             </state>
             <state name="WatchingRecording">
                 <textarea name="WatchingRecording">
-                    <area>88,432,188,16</area>
+                    <area>89,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -699,7 +699,7 @@
         <statetype name="audiocodec">
             <state name="PCM_DVD">
                 <textarea name="PCM_DVD">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -708,7 +708,7 @@
             </state>
             <state name="PCM_BLURAY">
                 <textarea name="PCM_BLURAY">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -717,7 +717,7 @@
             </state>
             <state name="AC3">
                 <textarea name="AC3">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -726,7 +726,7 @@
             </state>
             <state name="E-AC3">
                 <textarea name="E-AC3">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -735,7 +735,7 @@
             </state>
             <state name="TRUEHD">
                 <textarea name="TRUEHD">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -744,7 +744,7 @@
             </state>
             <state name="WMAPRO">
                 <textarea name="WMAPRO">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -753,7 +753,7 @@
             </state>
             <state name="DTS">
                 <textarea name="DTS">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -762,7 +762,7 @@
             </state>
             <state name="AAC">
                 <textarea name="AAC">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -771,7 +771,7 @@
             </state>
             <state name="MP2">
                 <textarea name="MP2">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -780,7 +780,7 @@
             </state>
             <state name="MP3">
                 <textarea name="MP3">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -789,7 +789,7 @@
             </state>
             <state name="VORBIS">
                 <textarea name="VORBIS">
-                    <area>276,432,188,16</area>
+                    <area>277,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -801,7 +801,7 @@
         <statetype name="audiochannels">
             <state name="1">
                 <textarea name="1">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -810,7 +810,7 @@
             </state>
             <state name="2">
                 <textarea name="2">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -819,7 +819,7 @@
             </state>
             <state name="5">
                 <textarea name="5">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -828,7 +828,7 @@
             </state>
             <state name="6">
                 <textarea name="6">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -837,7 +837,7 @@
             </state>
             <state name="7">
                 <textarea name="7">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -846,7 +846,7 @@
             </state>
             <state name="8">
                 <textarea name="8">
-                    <area>464,432,188,16</area>
+                    <area>465,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -858,7 +858,7 @@
         <statetype name="videocodec">
             <state name="MPEG-2">
                 <textarea name="MPEG-2">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -867,7 +867,7 @@
             </state>
             <state name="VC-1">
                 <textarea name="VC-1">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -876,7 +876,7 @@
             </state>
             <state name="H.264">
                 <textarea name="H.264">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -885,7 +885,7 @@
             </state>
             <state name="MPEG-4">
                 <textarea name="MPEG-4">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -894,7 +894,7 @@
             </state>
             <state name="RTjpeg">
                 <textarea name="RTjpeg">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -903,7 +903,7 @@
             </state>
             <state name="WMV3">
                 <textarea name="WMV3">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -912,7 +912,7 @@
             </state>
             <state name="H.263">
                 <textarea name="H.263">
-                    <area>652,432,188,16</area>
+                    <area>653,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -924,7 +924,7 @@
         <statetype name="videodescrip">
             <state name="SD">
                 <textarea name="SD">
-                    <area>840,432,188,16</area>
+                    <area>841,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -933,7 +933,7 @@
             </state>
             <state name="HD_720_P">
                 <textarea name="HD_720_P">
-                    <area>840,432,188,16</area>
+                    <area>841,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -942,7 +942,7 @@
             </state>
             <state name="HD_1080_I">
                 <textarea name="HD_1080_I">
-                    <area>840,432,188,16</area>
+                    <area>841,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -951,7 +951,7 @@
             </state>
             <state name="HD_1080_P">
                 <textarea name="HD_1080_P">
-                    <area>840,432,188,16</area>
+                    <area>841,432,188,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -969,7 +969,7 @@
 
         <textarea name="longrepeat">
             <font>mediumsmall</font>
-            <area>569,454,473,20</area>
+            <area>569,454,475,20</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%     Size: %FILESIZE_STR%</template>
         </textarea>
