@@ -1096,7 +1096,7 @@
         </shape>
 
         <shape name="title-backdrop-line">
-            <area>219,489,832,68</area>
+            <area>219,489,834,68</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
@@ -1104,11 +1104,11 @@
         </shape>
 
         <shape name="title-top-line" from="channel-top-line">
-            <area>220,490,830,2</area>
+            <area>220,490,832,2</area>
         </shape>
 
         <shape name="title-bottom-line" from="channel-top-line">
-            <area>220,554,830,2</area>
+            <area>220,554,832,2</area>
         </shape>
 
         <shape name="title-left-line" from="channel-left-line">
@@ -1116,11 +1116,11 @@
         </shape>
 
         <shape name="title-right-line" from="channel-left-line">
-            <area>1048,492,2,62</area>
+            <area>1050,492,2,62</area>
         </shape>
 
         <shape name="clock-backdrop-line">
-            <area>1055,489,160,68</area>
+            <area>1057,489,158,68</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
@@ -1128,15 +1128,15 @@
         </shape>
 
         <shape name="clock-top-line" from="channel-top-line">
-            <area>1056,490,158,2</area>
+            <area>1058,490,156,2</area>
         </shape>
 
         <shape name="clock-bottom-line" from="channel-top-line">
-            <area>1056,554,158,2</area>
+            <area>1058,554,156,2</area>
         </shape>
 
         <shape name="clock-left-line" from="channel-left-line">
-            <area>1056,492,2,62</area>
+            <area>1058,492,2,62</area>
         </shape>
 
         <shape name="clock-right-line" from="channel-left-line">
@@ -1187,7 +1187,7 @@
 
         <textarea name="title">
             <font>medium</font>
-            <area>228,494,814,30</area>
+            <area>228,494,816,30</area>
             <align>left,vcenter</align>
         </textarea>
 
@@ -1200,13 +1200,13 @@
 
         <textarea name="longrepeat">
             <font>smallerblue</font>
-            <area>740,530,302,20</area>
+            <area>740,530,304,20</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>
 
         <clock name="clock">
-            <area>1058,492,154,62</area>
+            <area>1060,492,152,62</area>
             <font>large</font>
             <template>%TIME%</template>
             <align>allcenter</align>
