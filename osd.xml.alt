@@ -17,22 +17,22 @@
         </fontdef>
 
         <shape name="osd-debug-backdrop">
-            <area>64,36,1152,128</area>
+            <area>32,-10,1216,116</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-debug-backdrop-line">
-            <area>65,37,1150,126</area>
+            <area>33,-9,1214,114</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="top-line">
-            <area>66,38,1148,2</area>
+        <shape name="osd-debug-highlight-bottom-line">
+            <area>32,102,1216,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="0">
@@ -43,208 +43,204 @@
             </fill>
         </shape>
 
-        <shape name="bottom-line" from="top-line">
-            <area>66,160,1148,2</area>
-        </shape>
-
-        <shape name="left-line">
-            <area>66,40,2,120</area>
+        <shape name="osd-debug-highlight-left-line">
+            <area>34,0,2,115</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="50" color="#ffffff" alpha="170" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="right-line" from="left-line">
-            <area>1212,40,2,120</area>
+        <shape name="osd-debug-higlight-right-line" from="osd-debug-highlight-left-line">
+            <area>1244,0,2,115</area>
         </shape>
 
         <textarea name="cpuload">
             <font>medium</font>
-            <area>74,51,162,25</area>
-            <align>right,vcenter</align>
+            <area>74,5,162,24</area>
+            <align>right,top</align>
             <value>CPUs :</value>
         </textarea>
 
         <textarea name="load">
             <font>mediumblue</font>
-            <area>241,51,216,25</area>
-            <align>left,vcenter</align>
+            <area>241,5,216,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="file">
             <font>medium</font>
-            <area>450,51,60,25</area>
-            <align>right,vcenter</align>
+            <area>450,5,60,24</area>
+            <align>right,top</align>
             <value>File :</value>
         </textarea>
 
         <textarea name="filename">
             <font>mediumblue</font>
-            <area>515,51,685,25</area>
-            <align>left,vcenter</align>
+            <area>515,5,685,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="storage">
             <font>medium</font>
-            <area>74,76,162,25</area>
-            <align>right,vcenter</align>
+            <area>74,30,162,24</area>
+            <align>right,top</align>
             <value>Storage to Buffer :</value>
         </textarea>
 
         <textarea name="storagerate">
             <font>mediumblue</font>
-            <area>247,76,123,25</area>
-            <align>left,vcenter</align>
+            <area>247,30,123,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="decoder">
             <font>medium</font>
-            <area>74,101,162,25</area>
-            <align>right,vcenter</align>
+            <area>74,55,162,24</area>
+            <align>right,top</align>
             <value>Buffer to Decoder :</value>
         </textarea>
 
         <textarea name="decoderrate">
             <font>mediumblue</font>
-            <area>247,101,123,25</area>
-            <align>left,vcenter</align>
+            <area>247,55,123,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="buffer">
             <font>medium</font>
-            <area>74,126,162,25</area>
-            <align>right,vcenter</align>
+            <area>74,80,162,24</area>
+            <align>right,top</align>
             <value>Available Buffer :</value>
         </textarea>
 
         <textarea name="bufferavail">
             <font>mediumblue</font>
-            <area>247,126,123,25</area>
-            <align>left,vcenter</align>
+            <area>247,80,123,24</area>
+            <align>left,top</align>
             <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
         </textarea>
 
         <textarea name="video">
             <font>medium</font>
-            <area>410,76,100,25</area>
-            <align>right,vcenter</align>
+            <area>410,30,100,24</area>
+            <align>right,top</align>
             <value>Video :</value>
         </textarea>
 
         <textarea name="videowidth">
             <font>mediumblue</font>
-            <area>515,76,250,25</area>
-            <align>left,vcenter</align>
+            <area>515,30,250,24</area>
+            <align>left,top</align>
             <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
         </textarea>
 
         <textarea name="vidcodec">
             <font>medium</font>
-            <area>410,101,100,25</area>
-            <align>right,vcenter</align>
+            <area>410,55,100,24</area>
+            <align>right,top</align>
             <value>Codec :</value>
         </textarea>
 
         <textarea name="videocodec">
             <font>mediumblue</font>
-            <area>515,101,150,25</area>
-            <align>left,vcenter</align>
+            <area>515,55,150,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="viddec">
             <font>medium</font>
-            <area>410,126,100,25</area>
-            <align>right,vcenter</align>
+            <area>410,80,100,24</area>
+            <align>right,top</align>
             <value>Decoder :</value>
         </textarea>
 
         <textarea name="videodecoder">
             <font>mediumblue</font>
-            <area>515,126,150,25</area>
-            <align>left,vcenter</align>
+            <area>515,80,150,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="sync">
             <font>medium</font>
-            <area>720,76,150,25</area>
-            <align>right,vcenter</align>
+            <area>720,30,150,24</area>
+            <align>right,top</align>
             <value>A/V Sync :</value>
         </textarea>
 
         <textarea name="avsync">
             <font>mediumblue</font>
-            <area>875,76,100,25</area>
-            <align>left,vcenter</align>
+            <area>875,30,100,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="fps">
             <font>medium</font>
-            <area>670,101,200,25</area>
-            <align>right,vcenter</align>
+            <area>670,55,200,24</area>
+            <align>right,top</align>
             <value>FPS :</value>
         </textarea>
 
         <textarea name="framerate">
             <font>mediumblue</font>
-            <area>875,101,100,25</area>
-            <align>left,vcenter</align>
+            <area>875,55,100,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="frames">
             <font>medium</font>
-            <area>670,126,200,25</area>
-            <align>right,vcenter</align>
+            <area>670,80,200,24</area>
+            <align>right,top</align>
             <value>Frames decoded/free :</value>
         </textarea>
 
         <textarea name="videoframes">
             <font>mediumblue</font>
-            <area>875,126,100,25</area>
-            <align>left,vcenter</align>
+            <area>875,80,100,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="audio">
             <font>medium</font>
-            <area>994,76,130,25</area>
-            <align>right,vcenter</align>
+            <area>994,30,130,24</area>
+            <align>right,top</align>
             <value>Audio :</value>
         </textarea>
 
         <textarea name="audiocodec">
             <font>mediumblue</font>
-            <area>1129,76,77,25</area>
-            <align>left,vcenter</align>
+            <area>1129,30,77,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="channels">
             <font>medium</font>
-            <area>994,101,130,25</area>
-            <align>right,vcenter</align>
+            <area>994,55,130,24</area>
+            <align>right,top</align>
             <value>Channels :</value>
         </textarea>
 
         <textarea name="audiochannels">
             <font>mediumblue</font>
-            <area>1129,101,77,25</area>
-            <align>left,vcenter</align>
+            <area>1129,55,77,24</area>
+            <align>left,top</align>
         </textarea>
 
         <textarea name="audiorate">
             <font>medium</font>
-            <area>994,126,130,25</area>
-            <align>right,vcenter</align>
+            <area>994,80,130,24</area>
+            <align>right,top</align>
             <value>Sample rate :</value>
         </textarea>
 
         <textarea name="samplerate">
             <font>mediumblue</font>
-            <area>1129,126,77,25</area>
-            <align>left,vcenter</align>
+            <area>1129,80,77,24</area>
+            <align>left,top</align>
         </textarea>
 
     </window>
@@ -253,61 +249,57 @@
         <area>0,0,1280,720</area>
 
         <fontdef name="medium" face="DejaVu Sans">
-            <pixelsize>24</pixelsize>
+            <pixelsize>22</pixelsize>
             <color>#e6e6e6</color>
         </fontdef>
 
         <shape name="osd-message-backdrop">
-            <area>290,36,700,60</area>
+            <area>221,-10,838,45</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-message-backdrop-line">
-            <area>291,37,698,58</area>
+            <area>222,-9,836,43</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="top-line">
-            <area>292,38,696,2</area>
+        <shape name="osd-message-highlight-bottom-line">
+            <area>221,31,838,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="0">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="120" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
+               <gradient direction="horizontal" alpha="0">
+                   <stop position="0" color="#ffffff" />
+                   <stop position="50" color="#ffffff" alpha="120" />
+                   <stop position="100" color="#ffffff" />
+               </gradient>
             </fill>
         </shape>
 
-        <shape name="bottom-line" from="top-line">
-            <area>292,92,696,2</area>
-        </shape>
-
-        <shape name="left-line">
-            <area>292,40,2,52</area>
+        <shape name="osd-message-highlight-left-line">
+            <area>223,0,2,34</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="50" color="#ffffff" alpha="170" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="right-line" from="left-line">
-            <area>986,40,2,52</area>
+        <shape name="osd-message-highlight-right-line" from="osd-message-highlight-left-line">
+            <area>1055,0,2,34</area>
         </shape>
 
         <textarea name="message_text">
             <font>medium</font>
-            <area>310,53,660,26</area>
-            <align>allcenter</align>
+            <area>229,2,822,24</area>
+            <align>hcenter,top</align>
         </textarea>
 
     </window>
@@ -321,22 +313,22 @@
         </fontdef>
 
         <shape name="osd-input-backdrop">
-            <area>64,36,180,60</area>
+            <area>32,-10,180,57</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-input-backdrop-line">
-            <area>65,37,178,58</area>
+            <area>33,-9,178,55</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="top-line">
-            <area>66,38,176,2</area>
+        <shape name="osd-input-highlight-bottom-line">
+            <area>32,43,180,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="0">
@@ -347,30 +339,26 @@
             </fill>
         </shape>
 
-        <shape name="bottom-line" from="top-line">
-            <area>66,92,176,2</area>
-        </shape>
-
-        <shape name="left-line">
-            <area>66,40,2,52</area>
+        <shape name="osd-input-highlight-left-line">
+            <area>34,0,2,46</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="50" color="#ffffff" alpha="170" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="right-line" from="left-line">
-            <area>240,40,2,52</area>
+        <shape name="osd-input-highlight-right-line" from="osd-input-highlight-left-line">
+            <area>208,0,2,46</area>
         </shape>
 
         <textarea name="osd_number_entry">
             <font>large</font>
-            <area>84,49,140,34</area>
-            <align>allcenter</align>
+            <area>52,2,140,34</area>
+            <align>hcenter,top</align>
         </textarea>
 
     </window>
@@ -380,87 +368,59 @@
 
         <fontdef name="small" face="DejaVu Sans">
             <color>#e6e6e6</color>
-            <pixelsize>18</pixelsize>
+            <pixelsize>16</pixelsize>
         </fontdef>
 
         <shape name="osd-status-backdrop">
-            <area>64,624,1152,60</area>
+            <area>0,661,1280,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>8</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
-        <shape name="osd-status-backdrop-line">
-            <area>65,625,1150,58</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="top-line">
-            <area>66,626,1148,2</area>
+        <shape name="osd-status-highlight-top-line">
+            <area>0,663,1280,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="0">
+                <gradient direction="horizontal" alpha="40">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="50" color="#ffffff" alpha="130" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
-        </shape>
-
-        <shape name="bottom-line" from="top-line">
-            <area>66,680,1148,2</area>
-        </shape>
-
-        <shape name="left-line">
-            <area>66,628,2,52</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient direction="vertical" alpha="0">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="right-line" from="left-line">
-            <area>1212,628,2,52</area>
         </shape>
 
         <textarea name="title">
-            <area>104,626,600,24</area>
+            <area>46,667,600,20</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description">
-            <area>90,658,1100,24</area>
+            <area>32,700,1216,20</area>
             <font>small</font>
             <align>allcenter</align>
             <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
 
         <clock name="clock">
-            <area>876,626,300,24</area>
+            <area>934,667,300,20</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,vcenter</align>
         </clock>
 
         <progressbar name="position">
-            <area>90,650,1100,8</area>
+            <area>32,690,1216,8</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
                 <area>0,0,100%,100%</area>
-                <filename>images/osd/progressbar_background.png</filename>
+                <filename>images/osd/progressbar_background_alt.png</filename>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,100%,100%</area>
-                <filename>images/osd/progressbar_fill.png</filename>
+                <filename>images/osd/progressbar_fill_alt.png</filename>
             </imagetype>
         </progressbar>
 
@@ -504,102 +464,42 @@
         </fontdef>
 
         <shape name="program-info-backdrop">
-            <area>64,392,1152,292</area>
+            <area>0,438,1280,283</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>8</cornerradius>
-        </shape>
-
-        <shape name="title-backdrop-line">
-            <area>65,393,988,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="title-highlight-top-line">
-            <area>66,394,986,2</area>
+            <area>0,440,1280,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="0">
+                <gradient direction="horizontal" alpha="40">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="50" color="#ffffff" alpha="130" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
         </shape>
 
         <shape name="title-highlight-bottom-line" from="title-highlight-top-line">
-            <area>66,480,986,2</area>
+            <area>0,527,1280,2</area>
         </shape>
 
-        <shape name="title-highlight-left-line">
-            <area>66,396,2,84</area>
+        <shape name="title-clock-vertical-seperator">
+            <area>1100,447,2,75</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="vertical" alpha="0">
+                <gradient direction="vertical" alpha="75">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
+                    <stop position="50" color="#ffffff" alpha="170" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
         </shape>
 
-        <shape name="title-highlight-right-line" from="title-highlight-left-line">
-            <area>1050,396,2,84</area>
-        </shape>
-
-        <shape name="clock-backdrop-line" from="title-backdrop-line">
-            <area>1057,393,158,90</area>
-        </shape>
-
-        <shape name="clock-highlight-top-line" from="title-highlight-top-line">
-            <area>1058,394,156,2</area>
-        </shape>
-
-        <shape name="clock-highlight-bottom-line" from="title-highlight-top-line">
-            <area>1058,480,156,2</area>
-        </shape>
-
-        <shape name="clock-highlight-left-line" from="title-highlight-left-line">
-            <area>1058,396,2,84</area>
-        </shape>
-
-        <shape name="clock-highlight-right-line" from="title-highlight-left-line">
-            <area>1212,396,2,84</area>
-        </shape>
-
-        <shape name="preview-backdrop-line" from="title-backdrop-line">
-            <area>65,487,168,196</area>
-        </shape>
-
-        <shape name="preview-highlight-top-line" from="title-highlight-top-line">
-            <area>66,488,166,2</area>
-        </shape>
-
-        <shape name="preview-highlight-bottom-line" from="title-highlight-bottom-line">
-            <area>66,680,166,2</area>
-        </shape>
-
-        <shape name="preview-highlight-left-line" from="title-highlight-left-line">
-            <area>66,490,2,190</area>
-        </shape>
-
-        <shape name="preview-highlight-right-line" from="title-highlight-left-line">
-            <area>230,490,2,190</area>
-        </shape>
-
-        <shape name="description-backdrop-line" from="title-backdrop-line">
-            <area>237,487,978,196</area>
-        </shape>
-
-        <shape name="description-highlight-top-line" from="title-highlight-top-line">
-            <area>238,488,976,2</area>
-        </shape>
-
-        <shape name="description-seperator-first-line">
-            <area>256,518,940,2</area>
+        <shape name="description-horizontal-seperator-first-line">
+            <area>264,557,984,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="45">
@@ -610,39 +510,31 @@
             </fill>
         </shape>
 
-        <shape name="description-seperator-second-line" from="description-seperator-first-line">
-            <area>256,651,940,2</area>
+        <shape name="description-horizontal-seperator-second-line" from="description-horizontal-seperator-first-line">
+            <area>264,690,984,2</area>
         </shape>
 
-        <shape name="description-highlight-bottom-line" from="title-highlight-top-line">
-            <area>238,680,976,2</area>
-        </shape>
-
-        <shape name="description-highlight-left-line" from="title-highlight-left-line">
-            <area>238,490,2,190</area>
+        <shape name="preview-description-vertical-seperator" from="title-clock-vertical-seperator">
+            <area>230,534,2,181</area>
         </shape> 
-
-        <shape name="description-highlight-right-line" from="title-highlight-left-line">
-            <area>1212,490,2,190</area>
-        </shape>
 
         <textarea name="titlesubtitle">
             <font>medium</font>
-            <area>74,397,970,30</area>
+            <area>32,444,1062,30</area>
             <align>vcenter</align>
         </textarea>
 
         <clock name="clock">
-            <area>1060,396,152,84</area>
+            <area>1102,443,146,84</area>
             <font>verylarge</font>
             <template>%TIME%</template>
-            <align>allcenter</align>
+            <align>right,vcenter</align>
         </clock>
 
         <statetype name="tvstate">
             <state name="WatchingLiveTV">
                 <textarea name="WatchingLiveTV">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -651,7 +543,7 @@
             </state>
             <state name="WatchingPreRecorded">
                 <textarea name="WatchingPreRecorded">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -660,7 +552,7 @@
             </state>
             <state name="WatchingVideo">
                 <textarea name="WatchingVideo">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -669,7 +561,7 @@
             </state>
             <state name="WatchingDVD">
                 <textarea name="WatchingDVD">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -678,7 +570,7 @@
             </state>
             <state name="WatchingBD">
                 <textarea name="WatchingBD">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -687,7 +579,7 @@
             </state>
             <state name="WatchingRecording">
                 <textarea name="WatchingRecording">
-                    <area>89,432,188,16</area>
+                    <area>48,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -699,7 +591,7 @@
         <statetype name="audiocodec">
             <state name="PCM_DVD">
                 <textarea name="PCM_DVD">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -708,7 +600,7 @@
             </state>
             <state name="PCM_BLURAY">
                 <textarea name="PCM_BLURAY">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -717,7 +609,7 @@
             </state>
             <state name="AC3">
                 <textarea name="AC3">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -726,7 +618,7 @@
             </state>
             <state name="E-AC3">
                 <textarea name="E-AC3">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -735,7 +627,7 @@
             </state>
             <state name="TRUEHD">
                 <textarea name="TRUEHD">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -744,7 +636,7 @@
             </state>
             <state name="WMAPRO">
                 <textarea name="WMAPRO">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -753,7 +645,7 @@
             </state>
             <state name="DTS">
                 <textarea name="DTS">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -762,7 +654,7 @@
             </state>
             <state name="AAC">
                 <textarea name="AAC">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -771,7 +663,7 @@
             </state>
             <state name="MP2">
                 <textarea name="MP2">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -780,7 +672,7 @@
             </state>
             <state name="MP3">
                 <textarea name="MP3">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -789,7 +681,7 @@
             </state>
             <state name="VORBIS">
                 <textarea name="VORBIS">
-                    <area>277,432,188,16</area>
+                    <area>254,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -801,7 +693,7 @@
         <statetype name="audiochannels">
             <state name="1">
                 <textarea name="1">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -810,7 +702,7 @@
             </state>
             <state name="2">
                 <textarea name="2">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -819,7 +711,7 @@
             </state>
             <state name="5">
                 <textarea name="5">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -828,7 +720,7 @@
             </state>
             <state name="6">
                 <textarea name="6">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -837,7 +729,7 @@
             </state>
             <state name="7">
                 <textarea name="7">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -846,7 +738,7 @@
             </state>
             <state name="8">
                 <textarea name="8">
-                    <area>465,432,188,16</area>
+                    <area>460,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -858,7 +750,7 @@
         <statetype name="videocodec">
             <state name="MPEG-2">
                 <textarea name="MPEG-2">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -867,7 +759,7 @@
             </state>
             <state name="VC-1">
                 <textarea name="VC-1">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -876,7 +768,7 @@
             </state>
             <state name="H.264">
                 <textarea name="H.264">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -885,7 +777,7 @@
             </state>
             <state name="MPEG-4">
                 <textarea name="MPEG-4">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -894,7 +786,7 @@
             </state>
             <state name="RTjpeg">
                 <textarea name="RTjpeg">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -903,7 +795,7 @@
             </state>
             <state name="WMV3">
                 <textarea name="WMV3">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -912,7 +804,7 @@
             </state>
             <state name="H.263">
                 <textarea name="H.263">
-                    <area>653,432,188,16</area>
+                    <area>666,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -924,7 +816,7 @@
         <statetype name="videodescrip">
             <state name="SD">
                 <textarea name="SD">
-                    <area>841,432,188,16</area>
+                    <area>872,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -933,7 +825,7 @@
             </state>
             <state name="HD_720_P">
                 <textarea name="HD_720_P">
-                    <area>841,432,188,16</area>
+                    <area>872,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -942,7 +834,7 @@
             </state>
             <state name="HD_1080_I">
                 <textarea name="HD_1080_I">
-                    <area>841,432,188,16</area>
+                    <area>872,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -951,7 +843,7 @@
             </state>
             <state name="HD_1080_P">
                 <textarea name="HD_1080_P">
-                    <area>841,432,188,16</area>
+                    <area>872,479,206,16</area>
                     <font>supersmallblue</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -962,26 +854,26 @@
 
         <textarea name="timedate">
             <font>mediumsmall</font>
-            <area>74,453,481,24</area>
+            <area>32,500,523,24</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>
 
         <textarea name="longrepeat">
             <font>mediumsmall</font>
-            <area>569,454,475,20</area>
+            <area>619,501,475,20</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%     Size: %FILESIZE_STR%</template>
         </textarea>
 
         <textarea name="channum">
             <font>large</font>
-            <area>68,491,162,46</area>
+            <area>32,530,166,46</area>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="iconpath">
-            <area>84,533,130,100</area>
+            <area>50,572,130,100</area>
             <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
@@ -990,26 +882,26 @@
 <!-- Since I only want it in video and there is no way to control it. I have no choice but to disable it. -->
 <!--
         <imagetype name="coverart">
-            <area>70,492,158,186</area>
+            <area>36,513,158,186</area>
             <alpha>225</alpha>
         </imagetype>
 -->
         <textarea name="callsign">
             <font>large</font>
-            <area>68,636,162,46</area>
+            <area>32,675,166,46</area>
             <align>allcenter</align>
         </textarea>
 
 	<textarea name="category">
             <font>supersmallblue</font>
-            <area>257,490,937,28</area>
+            <area>265,529,952,28</area>
             <align>allcenter</align>
             <template>Category: %CATEGORY%               PlayBackGroup: %PLAYGROUP%               RecGroup: %RECGROUP%               StorageGroup: %STORAGEGROUP%</template>
         </textarea>
 
         <textarea name="description">
             <font>small</font>
-            <area>257,523,937,126</area>
+            <area>265,562,952,126</area>
             <align>left,top</align>
             <multiline>yes</multiline>
             <template>%YEARSTARS| %%DESCRIPTION%</template>
@@ -1017,7 +909,7 @@
 
         <textarea name="programid">
             <font>supersmallblue</font>
-            <area>257,653,937,27</area>
+            <area>265,692,952,28</area>
             <align>allcenter</align>
             <template>Season/Episode: %s00e00%               ProgramID: %PROGRAMID%               SeriesID: %SERIESID%</template>
         </textarea>
@@ -1049,25 +941,45 @@
         </fontdef>
 
         <shape name="browse-info-backdrop">
-            <area>64,488,1152,196</area>
+            <area>64,521,1152,200</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>8</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
-        <shape name="channel-backdrop-line">
-            <area>65,489,150,194</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="channel-top-line">
-            <area>66,490,148,2</area>
+        <shape name="browse-info-highlight-top-line">
+            <area>0,523,1280,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="0">
+                <gradient direction="horizontal" alpha="40">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="130" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="channel-description-vertical-seperator">
+            <area>200,530,2,185</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="75">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="170" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
+            </fill>
+        </shape>
+
+        <shape name="title-clock-vertical-seperator" from="channel-description-vertical-seperator">
+            <area>1106,530,2,52</area>
+        </shape>
+
+        <shape name="title-description-horizontal-seperator">
+            <area>209,587,1071,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="45">
                     <stop position="0" color="#ffffff" />
                     <stop position="50" color="#ffffff" alpha="120" />
                     <stop position="100" color="#ffffff" />
@@ -1075,138 +987,46 @@
             </fill>
         </shape>
 
-        <shape name="channel-bottom-line" from="channel-top-line">
-            <area>66,680,148,2</area>
-        </shape>
-
-        <shape name="channel-left-line">
-            <area>66,492,2,188</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient direction="vertical" alpha="0">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="channel-right-line" from="channel-left-line">
-            <area>212,492,2,188</area>
-        </shape>
-
-        <shape name="title-backdrop-line">
-            <area>219,489,834,68</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="title-top-line" from="channel-top-line">
-            <area>220,490,832,2</area>
-        </shape>
-
-        <shape name="title-bottom-line" from="channel-top-line">
-            <area>220,554,832,2</area>
-        </shape>
-
-        <shape name="title-left-line" from="channel-left-line">
-            <area>220,492,2,62</area>
-        </shape>
-
-        <shape name="title-right-line" from="channel-left-line">
-            <area>1050,492,2,62</area>
-        </shape>
-
-        <shape name="clock-backdrop-line">
-            <area>1057,489,158,68</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="clock-top-line" from="channel-top-line">
-            <area>1058,490,156,2</area>
-        </shape>
-
-        <shape name="clock-bottom-line" from="channel-top-line">
-            <area>1058,554,156,2</area>
-        </shape>
-
-        <shape name="clock-left-line" from="channel-left-line">
-            <area>1058,492,2,62</area>
-        </shape>
-
-        <shape name="clock-right-line" from="channel-left-line">
-            <area>1212,492,2,62</area>
-        </shape>
-
-        <shape name="description-backdrop-line">
-            <area>219,561,996,122</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="description-top-line" from="channel-top-line">
-            <area>220,562,994,2</area>
-        </shape>
-
-        <shape name="description-bottom-line" from="channel-top-line">
-            <area>220,680,994,2</area>
-        </shape>
-
-        <shape name="description-left-line" from="channel-left-line">
-            <area>220,564,2,116</area>
-        </shape>
-
-        <shape name="description-right-line" from="channel-left-line">
-            <area>1212,564,2,116</area>
-        </shape>
-
         <textarea name="channum">
             <font>medium</font>
-            <area>68,505,144,28</area>
+            <area>32,525,136,52</area>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="iconpath">
-            <area>80,541,120,90</area>
+            <area>40,577,120,90</area>
             <mask>images/osd/masks/osd_browse_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
 
         <textarea name="callsign">
             <font>medium</font>
-            <area>68,639,144,28</area>
+            <area>32,667,136,53</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title">
             <font>medium</font>
-            <area>228,494,816,30</area>
+            <area>210,527,888,30</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="timedate">
             <font>smallerblue</font>
-            <area>228,530,497,20</area>
+            <area>210,563,515,20</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>
 
         <textarea name="longrepeat">
             <font>smallerblue</font>
-            <area>740,530,304,20</area>
+            <area>740,563,364,20</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>
 
         <clock name="clock">
-            <area>1060,492,152,62</area>
+            <area>1140,525,108,62</area>
             <font>large</font>
             <template>%TIME%</template>
             <align>allcenter</align>
@@ -1214,7 +1034,7 @@
 
         <textarea name="description">
             <font>small</font>
-            <area>228,572,978,110</area>
+            <area>210,594,1038,122</area>
             <align>left,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
@@ -1456,84 +1276,56 @@
 
         <fontdef name="small" face="DejaVu Sans">
             <color>#e6e6e6</color>
-            <pixelsize>18</pixelsize>
+            <pixelsize>16</pixelsize>
         </fontdef>
 
         <shape name="osd-program-editor-backdrop">
-            <area>64,624,1152,60</area>
+            <area>0,661,1280,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>8</cornerradius>
+            <cornerradius>0</cornerradius>
         </shape>
 
-        <shape name="osd-program-editor-backdrop-line">
-            <area>65,625,1150,58</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#ffffff" alpha="45" width="2" />
-            <cornerradius>6</cornerradius>
-        </shape>
-
-        <shape name="top-line">
-            <area>66,626,1148,2</area>
+        <shape name="osd-program-editor-highlight-top-line">
+            <area>0,663,1280,2</area>
             <type>box</type>
             <fill style="gradient">
-                <gradient direction="horizontal" alpha="0">
+                <gradient direction="horizontal" alpha="40">
                     <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="50" color="#ffffff" alpha="130" />
                     <stop position="100" color="#ffffff" />
                 </gradient>
             </fill>
-        </shape>
-
-        <shape name="bottom-line" from="top-line">
-            <area>66,680,1148,2</area>
-        </shape>
-
-        <shape name="left-line">
-            <area>66,628,2,52</area>
-            <type>box</type>
-            <fill style="gradient">
-                <gradient direction="vertical" alpha="0">
-                    <stop position="0" color="#ffffff" />
-                    <stop position="50" color="#ffffff" alpha="180" />
-                    <stop position="100" color="#ffffff" />
-                </gradient>
-            </fill>
-        </shape>
-
-        <shape name="right-line" from="left-line">
-            <area>1212,628,2,52</area>
         </shape>
 
         <textarea name="title">
-            <area>104,626,600,24</area>
+            <area>46,667,600,20</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="seekamount" from="title">
-            <area>876,626,300,24</area>
+            <area>934,667,300,20</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="timedisplay" from="title">
-            <area>90,658,1100,24</area>
+            <area>32,700,1216,20</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="cutindicator" from="title">
-            <area>104,658,300,24</area>
+            <area>46,700,300,20</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="framedisplay" from="title">
-            <area>876,658,300,24</area>
+            <area>934,700,300,20</area>
             <align>right,vcenter</align>
         </textarea>
 
         <editbar name="editbar">
-            <area>90,642,1100,24</area>
+            <area>32,681,1216,24</area>
 
             <shape name="position">
                 <area>0,0,6,100%</area>
@@ -1542,12 +1334,12 @@
 
             <imagetype name="keep">
                 <area>0,8,100%,8</area>
-                <filename>images/osd/keep_fill_blue.png</filename>
+                <filename>images/osd/keep_fill_blue_alt.png</filename>
             </imagetype>
 
             <imagetype name="cut">
                 <area>0,8,100%,8</area>
-                <filename>images/osd/cut_fill_red.png</filename>
+                <filename>images/osd/cut_fill_red_alt.png</filename>
             </imagetype>
                 
             <shape name="cuttoright">
