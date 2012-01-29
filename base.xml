@@ -741,6 +741,12 @@
                     <area>0,0,100%,100%</area>
                 </shape>
             </state>
+            <state name="selectedinactive">
+                <shape name="buttonbackground" from="base_button_background_disabled">
+                    <area>0,0,100%,100%</area>
+                    <cornerradius>5</cornerradius>
+                </shape>
+            </state>
         </statetype>
     </buttonlist>
 

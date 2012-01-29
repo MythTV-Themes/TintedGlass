@@ -1,453 +1,611 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
 <mythuitheme>
 
-    <!-- music selection screen -->
-    <window name="music_select">
-        <font name="active" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>18</size>
-            <bold>no</bold>
-        </font>
+    <window name="playlistview" include="music-base.xml">
 
-        <font name="inactive" face="Trebuchet MS">
-            <color>#9999cc</color>
-            <size>18</size>
-            <bold>no</bold>
-        </font>
+        <textarea name="heading" from="base_heading">
+            <value>Myth Music List View</value>
+        </textarea>
 
-        <font name="info" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-backdrop" from="base_backdrop">
+            <area>20,36,1240,359</area>
+        </shape>
 
-        <font name="infoblue" face="Trebuchet MS">
-            <color>#3a9ade</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,357</area>
+        </shape>
 
-        <font name="baseextrasmall" face="DejaVu Sans">
-            <color>#ffffff</color>
-            <size>10</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-top-line" from="base_highlight_line">
+            <area>21,38,1238,2</area>
+        </shape>
 
-        <container name="musictree">
-            <area>20,0,1240,504</area>
+        <shape name="play-list-bottom-line" from="base_highlight_line">
+            <area>21,391,1238,2</area>
+        </shape>
 
-            <image name="heading-backdrop" draworder="0" fleximage="no">
-                <position>480,-7</position>
-                <filename>mythmusic/mm_heading_backdrop.png</filename>
-            </image>
+        <shape name="play-list-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,351</area>
+        </shape>
 
-            <textarea name="heading" draworder="1" align="center">
-                <area>0,0,1240,22</area>
-                <font>baseextrasmall</font>
-                <value>Edit Playlist</value>
-            </textarea>
+        <shape name="play-list-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,351</area>
+        </shape>
 
-            <image name="selection-top-backdrop" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_selection_backdrop.png</filename>
-                <position>0,36</position>
-            </image>
+        <textarea name="notracks" from="basetextarea">
+            <area>30,40,1220,351</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>You haven't selected any tracks to play</value>
+        </textarea>
 
-            <listtreearea name="musictree" draworder="0">
-                <area>9,49,1222,420</area>
-                <listsize>0,0,394,420</listsize>
-                <leveloffset>20</leveloffset>
-                <gradient type="unselected" start="#343440" end="#343440" alpha="255">
-                </gradient>
-                <gradient type="selected" start="#4d4d4d" end="#0a0a0d" alpha="255">
-                </gradient>
-                <fcnfont name="active" function="active"></fcnfont>
-                <fcnfont name="inactive" function="inactive"></fcnfont>
-            </listtreearea>
-        </container>
+        <!-- current playlist button list -->
+        <buttonlist name="currentplaylist" from="base_list_large_selector">
+            <area>30,45,1220,342</area>
+            <searchposition>-1,351</searchposition>
+            <buttonarea>0,0,1220,342</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1220,36</area>
+                    <imagetype name="buttonimage">
+                        <area>15,1,34,34</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
 
-        <container name="info">
-            <area>20,492,1240,193</area>
+                    <statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing" from="basetextarea">
+                                <area>57,8,90,20</area>
+                                <font>basesupersmallgreen</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PLAYING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="paused">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="paused" from="basetextarea">
+                                <area>57,8,90,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PAUSED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="stopped">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="stopped" from="basetextarea">
+                                <area>57,8,90,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>STOPPED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                    </statetype>
 
-            <image name="background" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_selection_bottom_backdrop.png</filename>
-                <position>0,0</position>
-            </image>
+                    <statetype name="movestate" from="base_moving_tracks_state">
+                        <position>1185,65</position>
+                    </statetype>
 
-            <textarea name="line1" draworder="1" align="center">
-                <font>info</font>
-                <area>7,10,915,58</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+                    <textarea name="title" from="buttontext">
+                        <area>195,6,520,24</area>
+                        <align>left,vcenter</align>
+                    </textarea>
 
-            <textarea name="line2" draworder="1" align="center">
-                <font>infoblue</font>
-                <area>7,68,915,57</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+                    <textarea name="artist" from="buttontext">
+                        <area>745,6,350,24</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="tracknum" from="buttontext">
+                        <area>135,6,52,24</area>
+                        <align>right,vcenter</align>
+                        <template>%1 -</template>
+                    </textarea>
+                    <textarea name="length" from="buttontext">
+                        <area>1085,6,120,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
 
-            <textarea name="line3" draworder="1" align="center">
-                <font>info</font>
-                <area>7,125,915,58</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+                </state>
 
-            <textarea name="line4" draworder="1" align="center">
-                <font>info</font>
-                <area>930,10,303,58</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+                <state name="selectedactive">
+                    <area>0,0,1220,70</area>
+                    <imagetype name="buttonimage">
+                        <area>15,5,60,60</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
+                    <statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallgreen</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PLAYING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="paused">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="paused" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PAUSED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="stopped">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="stopped" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>STOPPED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="title" from="buttontext">
+                        <area>195,2,520,24</area>
+                    </textarea>
+                    <textarea name="artist" from="buttontext">
+                        <area>745,2,350,24</area>
+                    </textarea>
+                    <textarea name="tracknum" from="buttontext">
+                        <area>135,2,52,24</area>
+                        <align>right,vcenter</align>
+                        <template>%1 -</template>
+                    </textarea>
+                    <textarea name="length" from="buttontext">
+                        <area>1085,2,120,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="album" from="base_text_font_state_extrasmall">
+                        <area>195,26,520,20</area>
+                    </textarea>
+                    <textarea name="genre" from="base_text_font_state_extrasmall">
+                        <area>745,26,300,20</area>
+                    </textarea>
+                    <statetype name="ratingstate" from="base_rating_state">
+                        <position>195,45</position>
+                    </statetype>
+                    <textarea name="lastplayed" from="base_text_font_state_extrasmall">
+                        <area>745,47,250,20</area>
+                    </textarea>
+                    <textarea name="playcount" from="base_text_font_state_extrasmall">
+                        <area>985,47,220,20</area>
+                        <align>right,vcenter</align>
+                        <template>Played %1 times</template>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,1220,70</area>
+                    <imagetype name="buttonimage">
+                        <area>15,5,60,60</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
+                    <statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallgreen</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PLAYING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="paused">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="paused" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PAUSED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="stopped">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="stopped" from="basetextarea">
+                                <area>90,26,90,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>STOPPED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="title" from="buttontext">
+                        <area>195,2,520,24</area>
+                    </textarea>
+                    <textarea name="artist" from="buttontext">
+                        <area>745,2,350,24</area>
+                    </textarea>
+                    <textarea name="tracknum" from="buttontext">
+                        <area>135,2,52,24</area>
+                        <align>right,vcenter</align>
+                        <template>%1 -</template>
+                    </textarea>
+                    <textarea name="length" from="buttontext">
+                        <area>1085,2,120,24</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="album" from="base_text_font_state_extrasmall">
+                        <area>195,26,520,20</area>
+                    </textarea>
+                    <textarea name="genre" from="base_text_font_state_extrasmall">
+                        <area>745,26,300,20</area>
+                    </textarea>
+                    <statetype name="ratingstate" from="base_rating_state">
+                        <position>195,45</position>
+                    </statetype>
+                    <textarea name="lastplayed" from="base_text_font_state_extrasmall">
+                        <area>745,47,250,20</area>
+                    </textarea>
+                    <textarea name="playcount" from="base_text_font_state_extrasmall">
+                        <area>985,47,220,20</area>
+                        <align>right,vcenter</align>
+                        <template>Played %1 times</template>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1210,-5</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1210,338</position>
+            </statetype>
+        </buttonlist>
 
-            <textarea name="line5" draworder="1" align="center">
-                <font>infoblue</font>
-                <area>930,68,303,57</area>
-                <cutdown>yes</cutdown>
-            </textarea>
+        <group name="playliststatusgroup" from="base_play_list_status_group">
+            <position>0,405</position>
+        </group>
 
-            <textarea name="line6" draworder="1" align="center">
-                <font>info</font>
-                <area>930,125,303,58</area>
-                <cutdown>yes</cutdown>
-            </textarea>
-        </container>
+        <group name="infopanel" from="base_info_panel">
+            <area>0,445,1280,240</area>
+        </group>
 
     </window>
 
-    <!-- The play music screen  -->
-    <window name="music_play">
+    <window name="playlisteditorview_tree" include="music-base.xml">
 
-        <!-- First, define all the fonts we need on this screen -->
-        <font name="active" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <textarea name="heading" from="base_heading">
+            <value>Myth Music Tree View</value>
+        </textarea>
 
-        <font name="inactive" face="Trebuchet MS">
-            <color>#9999cc</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-backdrop" from="base_backdrop">
+            <area>20,36,1240,221</area>
+        </shape>
 
-        <font name="selected" face="Trebuchet MS">
-            <color>#ffff00</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,219</area>
+        </shape>
 
-        <font name="currenttitle" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>18</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-top-line" from="base_highlight_line">
+            <area>21,38,1238,2</area>
+        </shape>
 
-        <font name="currentartist" face="Trebuchet MS">
-            <color>#3a9ade</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-bottom-line" from="base_highlight_line">
+            <area>21,253,1238,2</area>
+        </shape>
 
-        <font name="currentalbum" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,213</area>
+        </shape>
 
-        <font name="infotext" face="Trebuchet MS">
-            <color>#3a9ade</color>
-            <size>14</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,213</area>
+        </shape>
 
-        <font name="timetext" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <shape name="play-list-editor-tree-view-seperator-first-line" from="base_line">
+            <area>35,80,1210,2</area>
+        </shape>
 
-        <font name="buttons" face="Trebuchet MS">
-            <color>#ffffff</color>
-            <size>16</size>
-            <bold>no</bold>
-        </font>
+        <!-- optional - shows path to current item -->
+        <textarea name="breadcrumbs" from="basetextarea">
+            <area>38,41,930,40</area>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
 
-        <font name="baseextrasmall" face="DejaVu Sans">
-            <color>#ffffff</color>
-            <size>10</size>
-            <bold>no</bold>
-        </font>
+         <!-- optional - shows current position in grid eg '1 of 123' -->
+        <textarea name="position" from="basetextarea">
+            <area>1042,41,200,40</area>
+            <align>right,vcenter</align>
+            <font>basemediumyellow</font>
+        </textarea>
 
-        <!--= The (unchanging) background -->
+        <buttontree name="playlist_tree">
+            <area>30,92,1220,152</area>
+            <numlists>3</numlists>
+            <spacing>10</spacing>
+            <buttonlist name="listtemplate" from="base_list">
+                <buttonarea>0,0,1220,152</buttonarea>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,400,32</area>
+                        <textarea name="buttontext">
+                            <area>8,0,376,32</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>381,7</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>372,6,20,20</area>
+                        </statetype>
+                    </state>
+                    <state name="selectedactive">
+                        <area>0,0,400,32</area>
+                        <textarea name="buttontext">
+                            <area>8,0,376,32</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>381,7</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>372,6,20,20</area>
+                        </statetype>
+                    </state>
+                    <state name="selectedinactive">
+                        <area>0,0,400,32</area>
+                        <textarea name="buttontext">
+                            <area>8,0,376,32</area>
+                            <font>basesmalllightgrey</font>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>381,7</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>372,6,20,20</area>
+                        </statetype>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <position>390,-9</position>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <position>390,152</position>
+                </statetype>
+            </buttonlist>
+        </buttontree>
 
-        <container name="background">
+        <group name="playlistpanel" from="base_play_list_panel">
+            <position>0,267</position>
+        </group>
 
-            <image name="filler" draworder="0" fleximage="no">
-                <filename>images/backgrounds/background.png</filename>
-                <position>0,0</position>
-            </image>
+        <group name="playliststatusgroup" from="base_play_list_status_group">
+            <position>0,405</position>
+        </group>
 
-            <image name="heading-backdrop" draworder="0" fleximage="no">
-                <position>500,-7</position>
-                <filename>mythmusic/mm_heading_backdrop.png</filename>
-            </image>
+        <group name="infopanel" from="base_info_panel">
+            <area>0,445,1280,240</area>
+        </group>
 
-            <image name="top-backdrop" draworder="0" fleximage="no">
-                    <filename>mythmusic/mm_top_backdrop.png</filename>
-                <position>20,36</position>
-            </image>
+    </window>
 
-            <image name="bottom-backdrop" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_bottom_backdrop.png</filename>
-                <position>20,354</position>
-            </image>
+    <window name="playlisteditorview_gallery" include="music-base.xml">
 
-            <image name="mm_blackhole_border" draworder="0" fleximage="no">
-                <filename>mythmusic/mm_blackhole_border.png</filename>
-                <position>54,380</position>
-                <staticsize>214,162</staticsize>
-            </image>
+        <textarea name="heading" from="base_heading">
+            <value>Myth Music Gallery View</value>
+        </textarea>
 
-        </container>
+        <shape name="play-list-editor-gallery-view-backdrop" from="base_backdrop">
+            <area>20,36,1240,221</area>
+        </shape>
 
-        <!-- The view of playlists; tracks at the top -->
-        <container name="musicselector">
+        <shape name="play-list-editor-gallery-view-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,219</area>
+        </shape>
 
-            <area>8,0,1264,346</area> <!-- mm_waiting.png -->
-            <!-- First appearance of a managedtreelist
-                 I'll explain as we go
+        <shape name="play-list-editor-gallery-view-top-line" from="base_highlight_line">
+            <area>21,38,1238,2</area>
+        </shape>
 
-                 bins is how many visible layers of the
-                 tree there are. -->
+        <shape name="play-list-editor-gallery-view-bottom-line" from="base_highlight_line">
+            <area>21,253,1238,2</area>
+        </shape>
 
-            <textarea name="heading" draworder="1" align="center">
-                <area>495,0,274,22</area>
-                <font>baseextrasmall</font>
-                <value>Myth Music</value>
-            </textarea>
+        <shape name="play-list-editor-gallery-view-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,213</area>
+        </shape>
 
-            <managedtreelist name="musictreelist" draworder="1" bins="3">
-                <!-- regular area, but is only used if the user has
-                     ShowWholeTree set to false. -->
-                <area>32,26,1200,296</area>
+        <shape name="play-list-editor-gallery-view-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,213</area>
+        </shape>
 
-                <!--
-                    An image to show the current navigation node
-                    -->
+        <shape name="play-list-editor-gallery-view-seperator-first-line" from="base_line">
+            <area>35,80,1210,2</area>
+        </shape>
 
-                <image function="selectionbar" filename="mythmusic/mm_selectbar.png"></image>
-                <!-- Some arrow images -->
-                <image function="uparrow" filename="mythmusic/mm_up_arrow.png"></image>
-                <image function="downarrow" filename="mythmusic/mm_down_arrow.png"></image>
-                <image function="leftarrow" filename="mythmusic/mm_left_arrow.png"></image>
-                <image function="rightarrow" filename="mythmusic/mm_right_arrow.png"></image>
+        <!-- optional - shows path to current item -->
+        <textarea name="breadcrumbs" from="basetextarea">
+            <area>38,41,930,40</area>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
 
-                <!-- the area of particular bins
-                     you can make them show right to left,
-                     top to bottom, and layer graphics on top
-                     however you like
+         <!-- optional - shows current position in grid eg '1 of 123' -->
+        <textarea name="position" from="basetextarea">
+            <area>1042,41,200,40</area>
+            <align>right,vcenter</align>
+            <font>basemediumyellow</font>
+        </textarea>
 
-                     NB: bins number 1 to # of bins inclusive
-                     not 0 to #-1 -->
-                <bin number="1">
-                    <area>17,31,321,308</area>
-                    <fcnfont name="active" function="active"></fcnfont>
-                    <fcnfont name="inactive" function="inactive"></fcnfont>
-                    <fcnfont name="selected" function="selected"></fcnfont>
-                </bin>
-                <bin number="2">
-                    <area>353,31,268,308</area>
-                    <fcnfont name="active" function="active"></fcnfont>
-                    <fcnfont name="selected" function="selected"></fcnfont>
-                    <fcnfont name="inactive" function="inactive"></fcnfont>
-                </bin>
-                <bin number="3">
-                    <area>635,31,612,308</area>
-                    <fcnfont name="active" function="active"></fcnfont>
-                    <fcnfont name="selected" function="selected"></fcnfont>
-                    <fcnfont name="inactive" function="inactive"></fcnfont>
-                </bin>
-            </managedtreelist>
+        <buttontree name="playlist_tree">
+            <area>30,83,1220,171</area>
+            <numlists>1</numlists>
+            <spacing>0</spacing>
+            <buttonlist name="listtemplate">
+                <area>0,0,1220,171</area>
+                <layout>grid</layout>
+                <spacing>10</spacing>
+                <searchposition>-1,171</searchposition>
+                <buttonarea>0,0,1220,171</buttonarea>
+                <statetype name="buttonitem">
+                    <area>0,0,195,171</area>
+                    <state name="active">
+                        <shape name="buttonbackground" from="base_button_background_disabled">
+                            <area>0,0,195,169</area> 
+                            <fill color="#333333" alpha="0" />
+                            <cornerradius>8</cornerradius>
+                        </shape>
+                        <imagetype name="buttonimage">
+                            <area>42,10,110,110</area>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <position>15,92</position>
+                            <showempty>yes</showempty>
+                            <state type="full">
+                                <imagetype name="marked">
+                                    <filename>mythmusic/playlist_yes.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <textarea name="buttontext" from="basetextarea">
+                            <area>5,120,184,40</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmall</font>
+                            <multiline>yes</multiline>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive">
+                        <shape name="buttonbackground">
+                            <area>0,-1,195,171</area>
+                            <type>roundbox</type>
+                            <fill color="#101017" alpha="255" />
+                            <cornerradius>8</cornerradius>
+                        </shape>
+                        <shape name="buttonbackground-line">
+                            <area>0,-1,195,171</area>
+                            <type>roundbox</type>
+                            <fill color="#000000" alpha="0" />
+                            <line color="#ffffff" alpha="45" width="4" />
+                            <cornerradius>5</cornerradius>
+                        </shape>
+                        <shape name="buttonbackground-top-highlight-line">
+                            <area>0,1,195,4</area>
+                            <type>box</type>
+                            <fill style="gradient">
+                                <gradient direction="horizontal" alpha="0">
+                                    <stop position="0" color="#ffffff" />
+                                    <stop position="50" color="#ffffff" alpha="180" />
+                                    <stop position="100" color="#ffffff" />
+                                </gradient>
+                            </fill>
+                        </shape>
+                        <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
+                            <area>0,164,195,4</area>
+                        </shape>
+                        <shape name="buttonbackground-left-highlight-line">
+                            <area>2,5,4,159</area>
+                            <type>box</type>
+                            <fill style="gradient">
+                                <gradient alpha="0" direction="vertical">
+                                    <stop position="0" color="#ffffff" />
+                                    <stop position="50" color="#ffffff" alpha="220" />
+                                    <stop position="100" color="#ffffff" />
+                                </gradient>
+                            </fill>
+                        </shape>
+                        <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
+                            <area>189,5,4,159</area>
+                        </shape>
+                        <imagetype name="buttonimage">
+                            <area>34,5,127,127</area>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <position>8,102</position>
+                            <showempty>yes</showempty>
+                            <state type="full">
+                                <imagetype name="marked">
+                                    <filename>mythmusic/playlist_yes.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <textarea name="buttontext" from="basetextarea">
+                            <area>7,132,181,30</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmallgreen</font>
+                            <multiline>yes</multiline>
+                        </textarea>
+                    </state>
+                    <state name="selectedinactive">
+                        <shape name="buttonbackground">
+                            <area>0,0,195,150</area>
+                            <type>roundbox</type> 
+                            <cornerradius>3</cornerradius>
+                            <fill style="gradient">
+                                <gradient start="#e8e262" end="#fe9735" alpha="150" />
+                            </fill>
+                        </shape>
+                        <shape name="buttonbackground" from="base_button_background_disabled">
+                            <area>0,-1,195,171</area>
+                            <cornerradius>8</cornerradius>
+                        </shape>
+                        <imagetype name="buttonimage">
+                            <area>34,5,127,127</area>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <position>8,102</position>
+                            <showempty>yes</showempty>
+                            <state type="full">
+                                <imagetype name="marked">
+                                    <filename>mythmusic/playlist_yes.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                       <textarea name="buttontext" from="basetextarea">
+                            <area>7,132,181,30</area>
+                            <align>allcenter</align>
+                            <font>baseextrasmallgreen</font>
+                            <multiline>yes</multiline>
+                        </textarea>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <position>1210,-1</position>
+                    <state type="full">
+                        <imagetype name="upon">
+                            <filename>images/lists_up_arrow.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <position>1210,161</position>
+                    <state type="full">
+                        <imagetype name="dnon">
+                            <filename>images/lists_down_arrow.png</filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+            </buttonlist>
+        </buttontree>
 
-            <!--    An image for when we're waiting for data  -->
-            <image name="mm_waiting" draworder="0" fleximage="no">
-                <context>0</context>
-                <filename>mythmusic/mm_waiting_backdrop.png</filename>
-                <position>12,36</position>
-            </image>
-            <textarea name="waiting_text" draworder="1" align="allcenter">
-                <context>0</context>
-                <font>currenttitle</font>
-                <area>20,36,1200,280</area>
-                <value>Please Wait ...</value>
-            </textarea>
+        <group name="playlistpanel" from="base_play_list_panel">
+            <position>0,267</position>
+        </group>
 
-            <!-- An image for when we're only showing the last bin
-                 (ie. just the active playlist) -->
+        <group name="playliststatusgroup" from="base_play_list_status_group">
+            <position>0,405</position>
+        </group>
 
-            <image name="mm_waiting" draworder="0" fleximage="no">
-                <context>2</context>
-                <filename>mythmusic/mm_waiting_backdrop.png</filename> <!-- 1240x308 -->
-                <position>12,36</position>
-            </image>
-
-        </container>
-
-        <!-- An area to hold info about the playing track -->
-
-        <container name="trackinfo">
-            <area>0,340,1280,210</area>
-
-            <blackhole name="visual_blackhole">
-                <area>57,44,208,156</area>
-            </blackhole>
-
-            <textarea name="title_text" draworder="1">
-                <font>currenttitle</font>
-                <area>316,30,616,34</area>
-                <cutdown>yes</cutdown>
-            </textarea>
-
-            <textarea name="artist_text" draworder="1">
-                <font>currentartist</font>
-                <area>316,70,616,30</area>
-                <cutdown>yes</cutdown>
-            </textarea>
-
-            <textarea name="album_text" draworder="1">
-                <font>currentalbum</font>
-                <area>316,105,616,30</area>
-                <cutdown>yes</cutdown>
-            </textarea>
-
-            <repeatedimage name="ratings_image" draworder="1" fleximage="no">
-                <filename>mythmusic/mm_rating.png</filename>
-                <position>316,140</position>
-                <orientation>LeftToRight</orientation>
-            </repeatedimage>
-
-            <statusbar name="progress_bar" draworder="5" whitespace="5">
-                <container fleximage="no">images/progressbar/progressbar_background.png</container>
-                <fill>images/progressbar/progressbar_fill.png</fill>
-                <position>371,192</position>
-                <orientation>LeftToRight</orientation>
-            </statusbar>
-
-            <textarea name="current_visualization_text" draworder="1" align="center">
-                <font>currenttitle</font>
-                <area>981,24,272,64</area>
-                <cutdown>yes</cutdown>
-            </textarea>
-
-            <textarea name="info_text" draworder="1" align="center">
-                <font>infotext</font>
-                <area>981,88,272,65</area>
-            </textarea>
-
-            <textarea name="time_text" draworder="1" align="center">
-                <font>timetext</font>
-                <area>981,153,272,64</area>
-            </textarea>
-
-        </container>
-
-        <!-- On screen volume display -->
-
-        <container name="volumedisplay">
-            <area>943,380,40,160</area>
-            <statusbar name="volume_status" draworder="-1" whitespace="5">
-                <container fleximage="no">mythmusic/mm_volume_background.png</container>
-                <fill>mythmusic/mm_volume_tick.png</fill>
-                <position>0,0</position>
-                <orientation>BottomToTop</orientation>
-            </statusbar>
-        </container>
-
-        <!-- All the buttons -->
-
-        <container name="musicbuttons">
-            <area>64,568,1152,130</area>
-
-            <textbutton name="shuffle_button" draworder="0">
-                <position>32,0</position>
-                <image function="on" filename="mythmusic/text_button_on.png"></image>
-                <image function="off" filename="mythmusic/text_button_on.png"></image>
-                <image function="pushed" filename="mythmusic/text_button_pushed.png"></image>
-                <font>buttons</font>
-            </textbutton>
-
-            <textbutton name="repeat_button" draworder="0">
-                <position>312,0</position>
-                <image function="on" filename="mythmusic/text_button_on.png"></image>
-                <image function="off" filename="mythmusic/text_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/text_button_pushed.png"></image>
-                <font>buttons</font>
-            </textbutton>
-
-            <textbutton name="pledit_button" draworder="0">
-                <position>592,0</position>
-                <image function="on" filename="mythmusic/text_button_on.png"></image>
-                <image function="off" filename="mythmusic/text_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/text_button_pushed.png"></image>
-                <font>buttons</font>
-            </textbutton>
-
-            <textbutton name="vis_button" draworder="0">
-                <position>872,0</position>
-                <image function="on" filename="mythmusic/text_button_on.png"></image>
-                <image function="off" filename="mythmusic/text_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/text_button_pushed.png"></image>
-                <font>buttons</font>
-            </textbutton>
-
-            <pushbutton name="prev_button" draworder="0">
-                <position>201,60</position>
-                <image function="on" filename="mythmusic/prev_button_on.png"></image>
-                <image function="off" filename="mythmusic/prev_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/prev_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="rew_button" draworder="0">
-                <position>316,60</position>
-                <image function="on" filename="mythmusic/rew_button_on.png"></image>
-                <image function="off" filename="mythmusic/rew_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/rew_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="pause_button" draworder="0">
-                <position>431,60</position>
-                <image function="on" filename="mythmusic/pause_button_on.png"></image>
-                <image function="off" filename="mythmusic/pause_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/pause_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="play_button" draworder="0">
-                <position>546,60</position>
-                <image function="on" filename="mythmusic/play_button_on.png"></image>
-                <image function="off" filename="mythmusic/play_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/play_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="stop_button" draworder="0">
-                <position>661,60</position>
-                <image function="on" filename="mythmusic/stop_button_on.png"></image>
-                <image function="off" filename="mythmusic/stop_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/stop_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="ff_button" draworder="0">
-                <position>776,60</position>
-                <image function="on" filename="mythmusic/ff_button_on.png"></image>
-                <image function="off" filename="mythmusic/ff_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/ff_button_pushed.png"></image>
-            </pushbutton>
-
-            <pushbutton name="next_button" draworder="0">
-                <position>891,60</position>
-                <image function="on" filename="mythmusic/next_button_on.png"></image>
-                <image function="off" filename="mythmusic/next_button_off.png"></image>
-                <image function="pushed" filename="mythmusic/next_button_pushed.png"></image>
-            </pushbutton>
-
-        </container>
+        <group name="infopanel" from="base_info_panel">
+            <area>0,445,1280,240</area>
+        </group>
 
     </window>
 
