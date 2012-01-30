@@ -312,12 +312,10 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,36</area>
-
                     <imagetype name="buttonimage">
                         <area>15,2,32,32</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
-
                     <statetype name="playstate">
                         <state name="playing">
                             <area>0,0,100%,100%</area>
@@ -353,114 +351,22 @@
                             </textarea>
                         </state>
                     </statetype>
-
                     <textarea name="title" from="buttontext">
                         <area>157,0,1048,36</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
-
                 </state>
-                <state name="selectedactive">
-                    <area>0,0,100%,36</area>
-                    <imagetype name="buttonimage">
-                        <area>15,2,32,32</area>
-                        <filename>mythmusic/mm_nothumb.png</filename>
-                    </imagetype>
-                    <statetype name="playstate">
-                        <state name="playing">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="playing" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallgreen</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>PLAYING</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                        <state name="paused">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="paused" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallyellow</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>PAUSED</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                        <state name="stopped">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="stopped" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallred</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>STOPPED</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                    </statetype>
-
-                    <textarea name="title" from="buttontext">
-                        <area>157,0,1048,36</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
-                    </textarea>
-
+                <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                    <area>0,0,100%,100%</area>
+                </shape>
                 </state>
-                <state name="selectedinactive">
-                    <area>0,0,100%,36</area>
-                    <imagetype name="buttonimage">
-                        <area>15,2,32,32</area>
-                        <filename>mythmusic/mm_nothumb.png</filename>
-                    </imagetype>
-                    <statetype name="playstate">
-                        <state name="playing">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="playing" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallgreen</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>PLAYING</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                        <state name="paused">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="paused" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallyellow</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>PAUSED</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                        <state name="stopped">
-                            <area>0,0,100%,100%</area>
-                            <textarea name="stopped" from="basetextarea">
-                                <area>57,8,90,20</area>
-                                <font>basesupersmallred</font>
-                                <cutdown>no</cutdown>
-                                <align>allcenter</align>
-                                <value>STOPPED</value>
-                                <alphapulse min="130" max="255" change="2"/>
-                            </textarea>
-                        </state>
-                    </statetype>
-
-                    <textarea name="title" from="buttontext">
-                        <area>157,0,1048,36</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
-                    </textarea>
-
+                <state name="selectedinactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                    <area>0,0,100%,100%</area>
+                </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

@@ -496,6 +496,20 @@
         <cornerradius>5</cornerradius>
     </shape>
 
+    <shape name="base_select_bar_selectedinactive_small">
+        <type>roundbox</type>
+        <fill color="#333333" alpha="175" />
+        <line color="#454545" alpha="180" width="2" />
+        <cornerradius>90</cornerradius>
+    </shape>
+
+    <shape name="base_select_bar_selectedinactive_large">
+        <type>roundbox</type>
+        <fill color="#333333" alpha="175" />
+        <line color="#454545" alpha="180" width="2" />
+        <cornerradius>5</cornerradius>
+    </shape>
+
     <!-- Base definition of a selected button background -->
     <shape name="base_button_background_selected">
         <type>roundbox</type>
@@ -742,9 +756,8 @@
                 </shape>
             </state>
             <state name="selectedinactive">
-                <shape name="buttonbackground" from="base_button_background_disabled">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
                     <area>0,0,100%,100%</area>
-                    <cornerradius>5</cornerradius>
                 </shape>
             </state>
         </statetype>
