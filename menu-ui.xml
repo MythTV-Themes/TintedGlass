@@ -11,6 +11,10 @@
 
         <group name="heading-backdrop" from="base_heading_group" />
 
+        <textarea name="heading" from="base_heading">
+            <value>Main Menu</value>
+        </textarea>
+
         <shape name="menuscroll-background" from="base_backdrop">
             <area>0,525,1280,70</area>
             <type>box</type>
