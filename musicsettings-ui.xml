@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="generalsettings">
+
+
+        <textarea name="heading" from="base_heading">
+            <value>General Settings</value>
+        </textarea>
+
+        <shape name="general-settings-backdrop" from="base_backdrop">
+            <area>115,36,1050,649</area>
+        </shape>
+
+        <shape name="general-settings-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,506</area>
+        </shape>
+
+        <shape name="general-settings-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="general-settings-bottom-line" from="base_highlight_line">
+            <area>117,540,1046,2</area>
+        </shape>
+
+        <shape name="general-settings-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="general-settings-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="general-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,547,1048,137</area>
+        </shape>
+
+        <shape name="general-settings-bottom-top-line" from="base_highlight_line">
+            <area>117,548,1046,2</area>
+        </shape>
+
+        <shape name="general-settings-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="general-settings-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="general-settings-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="general-settings-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <textarea name="musiclocation_label" from="basetextarea">
+            <area>265,67,260,32</area>
+            <align>right,vcenter</align>
+            <value>Directory to hold music:</value>
+        </textarea>
+
+        <textedit name="musiclocation" from="base_wide_textedit">
+            <area>535,67,480,32</area>
+        </textedit>
+
+        <textarea name="musiccddevice_label" from="basetextarea">
+            <area>265,126,260,32</area>
+            <align>right,vcenter</align>
+            <value>CD device:</value>
+        </textarea>
+
+        <textedit name="musiccddevice" from="base_wide_textedit">
+            <area>535,126,480,32</area>
+        </textedit>
+
+        <textarea name="musicaudiodevice_label" from="basetextarea">
+            <area>265,185,260,32</area>
+            <align>right,vcenter</align>
+            <value>Audio device:</value>
+        </textarea>
+
+        <textedit name="musicaudiodevice" from="base_wide_textedit">
+            <area>535,185,480,32</area>
+        </textedit>
+
+        <textarea name="musicdefaultupmix_label" from="basetextarea">
+            <area>125,244,400,32</area>
+            <align>right,vcenter</align>
+            <value>Convert stereo to 5.1 sound:</value>
+        </textarea>
+
+        <checkbox name="musicdefaultupmix" from="basecheckbox">
+            <position>535,244</position>
+        </checkbox>
+
+        <textarea name="nonid3filenameformat_label" from="basetextarea">
+            <area>265,303,260,32</area>
+            <align>right,vcenter</align>
+            <value>Filename Format:</value>
+        </textarea>
+
+        <textedit name="nonid3filenameformat" from="base_wide_textedit">
+            <area>535,303,480,32</area>
+        </textedit>
+
+        <textarea name="ignoreid3tags_label" from="basetextarea">
+            <area>265,362,260,32</area>
+            <align>right,vcenter</align>
+            <value>Ignore ID3 Tags:</value>
+        </textarea>
+
+        <checkbox name="ignoreid3tags" from="basecheckbox">
+            <position>535,362</position>
+        </checkbox>
+
+        <textarea name="tagencoding_label" from="basetextarea">
+            <area>265,421,260,32</area>
+            <align>right,vcenter</align>
+            <value>Tag Encoding:</value>
+        </textarea>
+
+        <buttonlist name="tagencoding" from="base_selector">
+            <area>535,421,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="allowtagwriting_label" from="basetextarea">
+            <area>125,480,400,32</area>
+            <align>right,vcenter</align>
+            <value>Allow metadata to be written to tags:</value>
+        </textarea>
+
+        <checkbox name="allowtagwriting" from="basecheckbox">
+            <position>535,480</position>
+        </checkbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="base_medium_button">
+            <position>233,632</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="base_medium_button">
+            <position>697,632</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="playersettings">
+
+        <textarea name="heading" from="base_heading">
+            <value>Player Settings</value>
+        </textarea>
+
+        <shape name="player-settings-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
+        </shape>
+
+        <shape name="player-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,506</area>
+        </shape>
+
+        <shape name="player-settings-top-line" from="base_highlight_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="player-settings-bottom-line" from="base_highlight_line">
+            <area>217,540,846,2</area>
+        </shape>
+
+        <shape name="player-settings-left-line" from="base_highlight_vertical_line">
+            <area>217,40,2,500</area>
+        </shape>
+
+        <shape name="player-settings-right-line" from="base_highlight_vertical_line">
+            <area>1061,40,2,500</area>
+        </shape>
+
+        <shape name="player-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,547,848,137</area>
+        </shape>
+
+        <shape name="player-settings-bottom-top-line" from="base_highlight_line">
+            <area>217,548,846,2</area>
+        </shape>
+
+        <shape name="player-settings-bottom-bottom-line" from="base_highlight_line">
+            <area>217,681,846,2</area>
+        </shape>
+
+        <shape name="player-settings-bottom-left-line" from="base_highlight_vertical_line">
+            <area>217,550,2,131</area>
+        </shape>
+
+        <shape name="player-settings-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1061,550,2,131</area>
+        </shape>
+
+        <shape name="player-settings-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
+        </shape>
+
+        <textarea name="resumemode_label" from="basetextarea">
+            <area>265,114,300,32</area>
+            <align>right,vcenter</align>
+            <value>Resume mode:</value>
+        </textarea>
+
+        <buttonlist name="resumemode" from="base_selector">
+            <area>575,114,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="exitaction_label" from="basetextarea">
+            <area>265,220,300,32</area>
+            <align>right,vcenter</align>
+            <value>Action on exit:</value>
+        </textarea>
+
+        <buttonlist name="exitaction" from="resumemode">
+            <area>575,220,300,32</area>
+        </buttonlist>
+
+        <textarea name="autolookupcd_label" from="basetextarea">
+            <area>265,326,300,32</area>
+            <align>right,vcenter</align>
+            <value>Automatically lookup CDs:</value>
+        </textarea>
+
+        <checkbox name="autolookupcd" from="basecheckbox">
+            <position>575,326</position>
+        </checkbox>
+
+        <textarea name="autoplaycd_label" from="basetextarea">
+            <area>265,433,300,32</area>
+            <align>right,vcenter</align>
+            <value>Automatically Play CDs:</value>
+        </textarea>
+
+        <checkbox name="autoplaycd" from="basecheckbox">
+            <position>575,433</position>
+        </checkbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>239,559,802,44</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="base_medium_button">
+            <position>273,628</position>
+            <value>Save</value>
+        </button>
+        <button name="cancel" from="base_medium_button">
+            <position>657,628</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+</mythuitheme>
