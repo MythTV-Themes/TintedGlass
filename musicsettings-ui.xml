@@ -59,73 +59,73 @@
         </shape>
 
         <textarea name="musiclocation_label" from="basetextarea">
-            <area>265,67,260,32</area>
+            <area>129,67,428,32</area>
             <align>right,vcenter</align>
             <value>Directory to hold music:</value>
         </textarea>
 
         <textedit name="musiclocation" from="base_wide_textedit">
-            <area>535,67,480,32</area>
+            <area>567,67,550,32</area>
         </textedit>
 
         <textarea name="musiccddevice_label" from="basetextarea">
-            <area>265,126,260,32</area>
+            <area>129,126,428,32</area>
             <align>right,vcenter</align>
             <value>CD device:</value>
         </textarea>
 
         <textedit name="musiccddevice" from="base_wide_textedit">
-            <area>535,126,480,32</area>
+            <area>567,126,550,32</area>
         </textedit>
 
         <textarea name="musicaudiodevice_label" from="basetextarea">
-            <area>265,185,260,32</area>
+            <area>129,185,428,32</area>
             <align>right,vcenter</align>
             <value>Audio device:</value>
         </textarea>
 
         <textedit name="musicaudiodevice" from="base_wide_textedit">
-            <area>535,185,480,32</area>
+            <area>567,185,550,32</area>
         </textedit>
 
         <textarea name="musicdefaultupmix_label" from="basetextarea">
-            <area>125,244,400,32</area>
+            <area>129,244,429,32</area>
             <align>right,vcenter</align>
             <value>Convert stereo to 5.1 sound:</value>
         </textarea>
 
         <checkbox name="musicdefaultupmix" from="basecheckbox">
-            <position>535,244</position>
+            <position>567,244</position>
         </checkbox>
 
         <textarea name="nonid3filenameformat_label" from="basetextarea">
-            <area>265,303,260,32</area>
+            <area>129,303,428,32</area>
             <align>right,vcenter</align>
             <value>Filename Format:</value>
         </textarea>
 
         <textedit name="nonid3filenameformat" from="base_wide_textedit">
-            <area>535,303,480,32</area>
+            <area>567,303,550,32</area>
         </textedit>
 
         <textarea name="ignoreid3tags_label" from="basetextarea">
-            <area>265,362,260,32</area>
+            <area>129,362,428,32</area>
             <align>right,vcenter</align>
             <value>Ignore ID3 Tags:</value>
         </textarea>
 
         <checkbox name="ignoreid3tags" from="basecheckbox">
-            <position>535,362</position>
+            <position>567,362</position>
         </checkbox>
 
         <textarea name="tagencoding_label" from="basetextarea">
-            <area>265,421,260,32</area>
+            <area>129,421,428,32</area>
             <align>right,vcenter</align>
             <value>Tag Encoding:</value>
         </textarea>
 
         <buttonlist name="tagencoding" from="base_selector">
-            <area>535,421,300,32</area>
+            <area>567,421,300,32</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,32</area>
@@ -150,13 +150,13 @@
         </buttonlist>
 
         <textarea name="allowtagwriting_label" from="basetextarea">
-            <area>125,480,400,32</area>
+            <area>129,480,428,32</area>
             <align>right,vcenter</align>
             <value>Allow metadata to be written to tags:</value>
         </textarea>
 
         <checkbox name="allowtagwriting" from="basecheckbox">
-            <position>535,480</position>
+            <position>567,480</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
@@ -171,6 +171,222 @@
             <position>233,632</position>
             <value>Save</value>
         </button>
+        <button name="cancel" from="base_medium_button">
+            <position>697,632</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="importsettings">
+
+        <textarea name="heading" from="base_heading">
+            <value>Ripper Settings</value>
+        </textarea>
+
+        <shape name="import-settings-backdrop" from="base_backdrop">
+            <area>115,36,1050,649</area>
+        </shape>
+
+        <shape name="import-settings-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,506</area>
+        </shape>
+
+        <shape name="import-settings-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="import-settings-bottom-line" from="base_highlight_line">
+            <area>117,540,1046,2</area>
+        </shape>
+
+        <shape name="import-settings-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="import-settings-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="import-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,547,1048,137</area>
+        </shape>
+
+        <shape name="import-settings-bottom-top-line" from="base_highlight_line">
+            <area>117,548,1046,2</area>
+        </shape>
+
+        <shape name="import-settings-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="import-settings-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="import-settings-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="import-settings-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <textarea name="paranoialevel_label" from="basetextarea">
+            <area>128,67,430,32</area>
+            <align>right,vcenter</align>
+            <value>Paranoia Level:</value>
+        </textarea>
+
+        <buttonlist name="paranoialevel" from="base_selector">
+            <area>568,67,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="filenametemplate_label" from="basetextarea">
+            <area>128,126,430,32</area>
+            <align>right,vcenter</align>
+            <value>File storage location:</value>
+        </textarea>
+
+        <textedit name="filenametemplate" from="base_wide_textedit">
+            <area>568,126,550,32</area>
+        </textedit>
+
+        <textarea name="nowhitespace_label" from="basetextarea">
+            <area>128,185,430,32</area>
+            <align>right,vcenter</align>
+            <value>Replace space with underscore:</value>
+        </textarea>
+
+        <checkbox name="nowhitespace" from="basecheckbox">
+            <position>568,185</position>
+        </checkbox>
+
+        <textarea name="encoding_label" from="basetextarea">
+            <area>128,244,430,32</area>
+            <align>right,vcenter</align>
+            <value>Encoding Type:</value>
+        </textarea>
+
+        <buttonlist name="encodertype" from="base_selector">
+            <area>568,244,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="defaultripquality_label" from="basetextarea">
+            <area>128,303,430,32</area>
+            <align>right,vcenter</align>
+            <value>Default Rip Quality:</value>
+        </textarea>
+
+        <buttonlist name="defaultripquality" from="base_selector">
+            <area>568,303,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="mp3usevbr_label" from="basetextarea">
+            <area>128,362,430,32</area>
+            <align>right,vcenter</align>
+            <value>Use variable bitrates:</value>
+        </textarea>
+
+        <checkbox name="mp3usevbr" from="basecheckbox">
+            <position>568,362</position>
+        </checkbox>
+
+        <textarea name="ejectcd_label" from="basetextarea">
+            <area>128,421,430,32</area>
+            <align>right,vcenter</align>
+            <value>Automatically eject CDs after ripping:</value>
+        </textarea>
+
+        <checkbox name="ejectcd" from="basecheckbox">
+            <position>568,421</position>
+        </checkbox>
+
+        <textarea name="postcdripscript_label" from="basetextarea">
+            <area>128,480,430,32</area>
+            <align>right,vcenter</align>
+            <value>Script Path:</value>
+        </textarea>
+
+        <textedit name="postcdripscript" from="base_wide_textedit">
+            <area>568,480,550,32</area>
+        </textedit>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="base_medium_button">
+            <position>233,632</position>
+            <value>Save</value>
+        </button>
+
         <button name="cancel" from="base_medium_button">
             <position>697,632</position>
             <value>Cancel</value>
@@ -232,13 +448,13 @@
         </shape>
 
         <textarea name="resumemode_label" from="basetextarea">
-            <area>265,114,300,32</area>
+            <area>315,114,300,32</area>
             <align>right,vcenter</align>
             <value>Resume mode:</value>
         </textarea>
 
         <buttonlist name="resumemode" from="base_selector">
-            <area>575,114,300,32</area>
+            <area>625,114,300,32</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,32</area>
@@ -263,33 +479,33 @@
         </buttonlist>
 
         <textarea name="exitaction_label" from="basetextarea">
-            <area>265,220,300,32</area>
+            <area>315,220,300,32</area>
             <align>right,vcenter</align>
             <value>Action on exit:</value>
         </textarea>
 
         <buttonlist name="exitaction" from="resumemode">
-            <area>575,220,300,32</area>
+            <area>625,220,300,32</area>
         </buttonlist>
 
         <textarea name="autolookupcd_label" from="basetextarea">
-            <area>265,326,300,32</area>
+            <area>315,326,300,32</area>
             <align>right,vcenter</align>
             <value>Automatically lookup CDs:</value>
         </textarea>
 
         <checkbox name="autolookupcd" from="basecheckbox">
-            <position>575,326</position>
+            <position>625,326</position>
         </checkbox>
 
         <textarea name="autoplaycd_label" from="basetextarea">
-            <area>265,433,300,32</area>
+            <area>315,433,300,32</area>
             <align>right,vcenter</align>
             <value>Automatically Play CDs:</value>
         </textarea>
 
         <checkbox name="autoplaycd" from="basecheckbox">
-            <position>575,433</position>
+            <position>625,433</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
@@ -304,6 +520,233 @@
             <position>273,628</position>
             <value>Save</value>
         </button>
+        <button name="cancel" from="base_medium_button">
+            <position>657,628</position>
+            <value>Cancel</value>
+        </button>
+    </window>
+
+    <window name="ratingsettings">
+
+        <textarea name="heading" from="base_heading">
+            <value>Rating Settings</value>
+        </textarea>
+
+        <shape name="rating-settings-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
+        </shape>
+
+        <shape name="rating-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,506</area>
+        </shape>
+
+        <shape name="rating-settings-top-line" from="base_highlight_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-line" from="base_highlight_line">
+            <area>217,540,846,2</area>
+        </shape>
+
+        <shape name="rating-settings-left-line" from="base_highlight_vertical_line">
+            <area>217,40,2,500</area>
+        </shape>
+
+        <shape name="rating-settings-right-line" from="base_highlight_vertical_line">
+            <area>1061,40,2,500</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,547,848,137</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-top-line" from="base_highlight_line">
+            <area>217,548,846,2</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-bottom-line" from="base_highlight_line">
+            <area>217,681,846,2</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-left-line" from="base_highlight_vertical_line">
+            <area>217,550,2,131</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1061,550,2,131</area>
+        </shape>
+
+        <shape name="rating-settings-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
+        </shape>
+
+        <textarea name="ratingweight_label" from="basetextarea">
+            <area>219,108,416,40</area>
+            <align>right,vcenter</align>
+            <value>Rating Weight:</value>
+        </textarea>
+
+        <spinbox name="ratingweight" from="base_spinbox">
+            <position>645,108</position>
+        </spinbox>
+
+        <textarea name="playcountweight_label" from="basetextarea">
+            <area>219,216,416,40</area>
+            <align>right,vcenter</align>
+            <value>Play Count Weight:</value>
+        </textarea>
+
+        <spinbox name="playcountweight" from="base_spinbox">
+            <position>645,216</position>
+        </spinbox>
+
+        <textarea name="lastplayweight_label" from="basetextarea">
+            <area>219,324,416,40</area>
+            <align>right,vcenter</align>
+            <value>Last Play Weight:</value>
+        </textarea>
+
+        <spinbox name="lastplayweight" from="base_spinbox">
+            <position>645,324</position>
+        </spinbox>
+
+        <textarea name="randomweight_label" from="basetextarea">
+            <area>219,432,416,40</area>
+            <align>right,vcenter</align>
+            <value>Random Weight:</value>
+        </textarea>
+
+        <spinbox name="randomweight" from="base_spinbox">
+            <position>645,432</position>
+        </spinbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>239,559,802,44</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="base_medium_button">
+            <position>273,628</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="base_medium_button">
+            <position>657,628</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
+    <window name="visualizationsettings">
+
+        <textarea name="heading" from="base_heading">
+            <value>Visualiser Settings</value>
+        </textarea>
+
+        <shape name="visualization-settings-backdrop" from="base_backdrop">
+            <area>215,36,850,649</area>
+        </shape>
+
+        <shape name="visualization-settings-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,506</area>
+        </shape>
+
+        <shape name="visualization-settings-top-line" from="base_highlight_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-line" from="base_highlight_line">
+            <area>217,540,846,2</area>
+        </shape>
+
+        <shape name="visualization-settings-left-line" from="base_highlight_vertical_line">
+            <area>217,40,2,500</area>
+        </shape>
+
+        <shape name="visualization-settings-right-line" from="base_highlight_vertical_line">
+            <area>1061,40,2,500</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-backdrop-line" from="base_backdrop_line">
+            <area>216,547,848,137</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-top-line" from="base_highlight_line">
+            <area>217,548,846,2</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-bottom-line" from="base_highlight_line">
+            <area>217,681,846,2</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-left-line" from="base_highlight_vertical_line">
+            <area>217,550,2,131</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1061,550,2,131</area>
+        </shape>
+
+        <shape name="visualization-settings-bottom-seperator-first-line" from="base_line">
+            <area>238,613,804,2</area>
+        </shape>
+
+        <textarea name="cycleonsongchange_label" from="basetextarea">
+            <area>229,112,490,32</area>
+            <align>right,vcenter</align>
+            <value>Change Visualizer on each song:</value>
+        </textarea>
+
+        <checkbox name="cycleonsongchange" from="basecheckbox">
+            <position>729,112</position>
+        </checkbox>
+
+        <textarea name="randomizeorder_label" from="basetextarea">
+            <area>229,216,490,32</area>
+            <align>right,vcenter</align>
+            <value>Randomize Visualizer order:</value>
+        </textarea>
+
+        <checkbox name="randomizeorder" from="basecheckbox">
+            <position>729,216</position>
+        </checkbox>
+
+        <textarea name="scalewidth_label" from="basetextarea">
+            <area>229,324,490,40</area>
+            <align>right,vcenter</align>
+            <value>Width for Visual Scaling:</value>
+        </textarea>
+
+        <spinbox name="scalewidth" from="base_spinbox">
+            <position>729,324</position>
+        </spinbox>
+
+        <textarea name="scaleheight_label" from="basetextarea">
+            <area>229,432,490,40</area>
+            <align>right,vcenter</align>
+            <value>Height for Visual Scaling:</value>
+        </textarea>
+
+        <spinbox name="scaleheight" from="base_spinbox">
+            <position>729,432</position>
+        </spinbox>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>239,559,802,44</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="save" from="base_medium_button">
+            <position>273,628</position>
+            <value>Save</value>
+        </button>
+
         <button name="cancel" from="base_medium_button">
             <position>657,628</position>
             <value>Cancel</value>
