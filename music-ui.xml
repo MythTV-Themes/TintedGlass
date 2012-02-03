@@ -670,6 +670,96 @@
 
     </window>
 
+    <window name="visualizerview">
+
+        <video name="visualizer">
+            <area>0,0,1280,720,</area>
+        </video>
+
+    </window>
+
+    <!-- used in the visualiser screen to show some track details after a track change -->
+    <window name="trackinfo_popup">
+        <area>-1,0,1280,720</area>
+
+        <shape name="trackinfo-popup-backdrop" from="base_popup_backdrop">
+            <area>140,491,1000,190</area>
+        </shape>
+
+        <shape name="trackinfo-popup-backdrop-line" from="base_backdrop_line">
+            <area>141,492,998,188</area>
+        </shape>
+
+        <shape name="trackinfo-popup-top-line" from="base_highlight_line">
+            <area>141,493,998,2</area>
+        </shape>
+
+        <shape name="trackinfo-popup-bottom-line" from="base_highlight_line">
+            <area>141,677,998,2</area>
+        </shape>
+
+        <shape name="play-list-left-line" from="base_highlight_vertical_line">
+            <area>142,495,2,182</area>
+        </shape>
+
+        <shape name="play-list-right-line" from="base_highlight_vertical_line">
+            <area>1136,495,2,182</area>
+        </shape>
+
+        <imagetype name="mm_blackhole_border">
+            <filename>mm_blackhole_border.png</filename>
+            <area>160,511,148,148</area>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <filename>mm_nothumb.png</filename>
+            <area>162,513,144,144</area>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>320,508,660,30</area>
+            <font>baselargeyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="artist" from="basetextarea">
+            <area>320,545,660,24</area>
+            <font>basemedium</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="album" from="basetextarea">
+            <area>320,575,660,24</area>
+            <font>basemediumblue</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <statetype name="ratingstate" from="baseratingstate">
+            <position>320,606</position>
+        </statetype>
+
+        <textarea name="length_label" from="basetextarea">
+            <area>853,606,185,22</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Length:</value>
+        </textarea>
+
+        <textarea name="length" from="basetextarea">
+            <area>1048,606,72,22</area>
+            <font>basesmallblue</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="nexttitle" from="basetextarea">
+            <area>320,637,660,24</area>
+            <font>basemediumblue</font>
+            <align>left,vcenter</align>
+            <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
+        </textarea>
+
+    </window>
+
     <window name="editmetadata">
 
         <group name="heading-backdrop" from="base_heading_group" />
