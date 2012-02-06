@@ -1595,6 +1595,76 @@
         </button>
     </window>
 
+    <!-- Popup search dialog used to search button lists -->
+    <window name="MythSearchListDialog">
+        <area>-1,-1,640,120</area>
+
+        <shape name="search-list-dialog-backdrop" from="base_popup_backdrop">
+            <area>0,0,640,120</area>
+        </shape>
+
+        <shape name="search-list-dialog-backdrop-line" from="base_backdrop_line">
+            <area>1,1,638,118</area>
+        </shape>
+
+        <shape name="search-list-dialog-top-line" from="base_highlight_line">
+            <area>1,2,638,2</area>
+        </shape>
+
+        <shape name="search-list-dialog-bottom-line" from="base_highlight_line">
+            <area>1,116,638,2</area>
+        </shape>
+
+        <shape name="search-list-dialog-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,112</area>
+        </shape>
+
+        <shape name="search-list-dialog-right-line" from="base_highlight_vertical_line">
+            <area>636,4,2,112</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>10,4,620,40</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>Search List</value>
+        </textarea>
+
+        <textedit name="searchedit" from="base_wide_textedit">
+            <area>30,44,580,32</area>
+        </textedit>
+
+        <button name="prevbutton" from="base_button">
+            <position>84,78</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="nextbutton" from="base_button">
+            <position>405,78</position>
+            <value>Next</value>
+        </button>
+
+        <statetype name="searchstate">
+            <area>265,78,109,35</area>
+            <state name="found">
+                <textarea name="statustext" from="basetextarea">
+                    <area>0,0,109,35</area>
+                    <align>allcenter</align>
+                    <font>basesmallgreen</font>
+                    <value>Found</value>
+                </textarea>
+            </state>
+            <state name="notfound">
+                <textarea name="statustext" from="basetextarea">
+                    <area>0,0,109,35</area>
+                    <align>allcenter</align>
+                    <font>basesmallred</font>
+                    <value>Not Found</value>
+                </textarea>
+            </state>
+        </statetype>
+    </window>
+
     <window name="MythTextInputDialog">
         <area>-1,-1,1280,720</area>
 
