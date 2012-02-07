@@ -978,42 +978,132 @@
 
    <!-- popup to edit a smartplaylist criteria row -->
     <window name="criteriaroweditor">
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,1280,720</area>
 
-        <imagetype name="box">
-            <position>0,0</position>
-            <filename>mythdialogbox-background.png</filename>
-        </imagetype>
+        <shape name="criteria-row-editor-backdrop" from="base_popup_backdrop">
+            <area>390,110,500,500</area>
+        </shape>
+
+        <shape name="criteria-row-editor-backdrop-line" from="base_backdrop_line">
+            <area>391,111,498,498</area>
+        </shape>
+
+        <shape name="criteria-row-editor-top-line" from="base_highlight_line">
+            <area>392,112,496,2</area>
+        </shape>
+
+        <shape name="criteria-row-editor-bottom-line" from="base_highlight_line">
+            <area>392,606,496,2</area>
+        </shape>
+
+        <shape name="criteria-row-editor-left-line" from="base_highlight_vertical_line">
+            <area>392,114,2,492</area>
+        </shape>
+
+        <shape name="criteria-row-editor-right-line" from="base_highlight_vertical_line">
+            <area>886,114,2,492</area>
+        </shape>
+
+        <shape name="criteria-row-editor-seperator-first-line" from="base_line">
+            <area>413,160,454,2</area>
+        </shape>
+
+        <shape name="criteria-row-editor-seperator-second-line" from="base_line">
+            <area>413,545,454,2</area>
+        </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
+            <area>400,114,480,46</area>
+            <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Edit Criteria</value>
         </textarea>
 
-        <buttonlist name="fieldselector" from="basemediumselector">
-            <position>40,60</position>
+        <buttonlist name="fieldselector" from="base_selector">
+            <area>453,207,358,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>363,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>363,21</position>
+            </statetype>
         </buttonlist>
 
-        <buttonlist name="operatorselector" from="basemediumselector">
-            <position>40,130</position>
+        <buttonlist name="operatorselector" from="base_selector">
+            <area>453,291,358,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>363,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>363,21</position>
+            </statetype>
         </buttonlist>
 
-        <textedit name="value1edit" from="basetextedit">
-            <position>40,200</position>
+        <textedit name="value1edit" from="base_textedit">
+            <area>453,375,358,40</area>
         </textedit>
 
-        <buttonlist name="value1selector" from="basemediumselector">
-            <position>40,203</position>
+        <buttonlist name="value1selector" from="base_selector">
+            <area>453,375,358,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>363,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>363,21</position>
+            </statetype>
         </buttonlist>
 
-        <spinbox name="value1spinbox" from="basespinbox">
-            <position>40,203</position>
+        <spinbox name="value1spinbox" from="base_spinbox">
+            <position>453,375</position>
         </spinbox>
 
         <button name="value1button" from="basesearchbutton">
-            <position>435,210</position>
+            <position>837,379</position>
         </button>
 <!--
         <textarea name="andlbl"  from="basetextarea">
@@ -1021,132 +1111,184 @@
             <align>allcenter</align>
             <value>And</value>
         </textarea>
-        -->
-        <textedit name="value2edit" from="basetextedit">
-            <position>40,270</position>
+-->
+        <textedit name="value2edit" from="base_textedit">
+            <area>453,459,358,40</area>
         </textedit>
 
-        <buttonlist name="value2selector" from="basemediumselector">
-            <position>40,273</position>
+        <buttonlist name="value2selector" from="base_selector">
+            <area>453,459,358,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,358,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,338,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>363,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>363,21</position>
+            </statetype>
         </buttonlist>
 
-        <spinbox name="value2spinbox" from="basespinbox">
-            <position>40,273</position>
+        <spinbox name="value2spinbox" from="base_spinbox">
+            <position>453,459</position>
         </spinbox>
 
         <button name="value2button" from="basesearchbutton">
-            <position>435,280</position>
+            <position>837,463</position>
         </button>
 
         <!-- Push buttons -->
-        <button name="cancelbutton" from="basebutton">
-            <position>20,430</position>
+        <button name="cancelbutton" from="base_button">
+            <position>458,559</position>
             <value>Cancel</value>
         </button>
 
-        <button name="savebutton" from="basebutton">
-            <position>320,430</position>
+        <button name="savebutton" from="base_button">
+            <position>676,559</position>
             <value>Save</value>
         </button>
 
     </window>
 
+
     <!-- popup to edit the date in a smartplaylist criteria row -->
     <window name="dateeditordialog">
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,1280,720</area>
 
-        <imagetype name="box">
-            <position>0,0</position>
-            <filename>mythdialogbox-background.png</filename>
-        </imagetype>
+        <shape name="date-editor-dialog-backdrop" from="base_popup_backdrop">
+            <area>390,110,500,500</area>
+        </shape>
+
+        <shape name="date-editor-dialog-backdrop-line" from="base_backdrop_line">
+            <area>391,111,498,498</area>
+        </shape>
+
+        <shape name="date-editor-dialog-top-line" from="base_highlight_line">
+            <area>392,112,496,2</area>
+        </shape>
+
+        <shape name="date-editor-dialog-bottom-line" from="base_highlight_line">
+            <area>392,606,496,2</area>
+        </shape>
+
+        <shape name="date-editor-dialog-left-line" from="base_highlight_vertical_line">
+            <area>392,114,2,492</area>
+        </shape>
+
+        <shape name="date-editor-dialog-right-line" from="base_highlight_vertical_line">
+            <area>886,114,2,492</area>
+        </shape>
+
+        <shape name="date-editor-dialog-seperator-first-line" from="base_line">
+            <area>413,160,454,2</area>
+        </shape>
+
+        <shape name="date-editor-dialog-seperator-second-line" from="base_line">
+            <area>413,545,454,2</area>
+        </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
+            <area>400,114,480,46</area>
+            <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Edit Date</value>
         </textarea>
 
+        <checkbox name="fixeddatecheck" from="basecheckbox">
+            <position>413,186</position>
+        </checkbox>
+
         <textarea name="fixeddatelbl"  from="basetextarea">
-            <area>90,70,170,30</area>
+            <area>455,186,170,32</area>
             <align>left,vcenter</align>
             <value>Fixed Date</value>
         </textarea>
 
-        <checkbox name="fixeddatecheck" from="basecheckbox">
-            <position>50,70</position>
-        </checkbox>
-
-        <textarea name="daylbl"  from="fixeddatelbl">
-            <position>50,125</position>
+        <textarea name="daylbl"  from="basetextarea">
+            <area>413,243,80,30</area>
+            <align>allcenter</align>
             <value>Day</value>
         </textarea>
 
-        <spinbox name="dayspinbox" from="basespinbox">
-            <position>50,153</position>
+        <spinbox name="dayspinbox" from="base_spinbox">
+            <position>413,273</position>
         </spinbox>
 
-        <textarea name="monthlbl"  from="fixeddatelbl">
-            <position>200,125</position>
+        <textarea name="monthlbl"  from="basetextarea">
+            <area>594,243,80,30</area>
+            <align>allcenter</align>
             <value>Month</value>
         </textarea>
 
-        <spinbox name="monthspinbox" from="basespinbox">
-            <position>200,153</position>
+        <spinbox name="monthspinbox" from="base_spinbox">
+            <position>594,273</position>
         </spinbox>
 
-        <textarea name="yearlbl"  from="fixeddatelbl">
-            <position>350,125</position>
+        <textarea name="yearlbl"  from="basetextarea">
+            <area>775,243,80,30</area>
+            <align>allcenter</align>
             <value>Year</value>
         </textarea>
 
-        <spinbox name="yearspinbox" from="basespinbox">
-            <position>350,153</position>
+        <spinbox name="yearspinbox" from="base_spinbox">
+            <position>775,273</position>
         </spinbox>
 
-        <textarea name="nowlbl"  from="fixeddatelbl">
-            <area>90,270,300,30</area>
+        <checkbox name="nowcheck" from="basecheckbox">
+            <position>413,333</position>
+        </checkbox>
+
+        <textarea name="nowlbl"  from="basetextarea">
+            <area>455,333,300,32</area>
+            <align>left,vcenter</align>
             <value>Use Current Date</value>
         </textarea>
 
-        <checkbox name="nowcheck" from="basecheckbox">
-            <position>50,270</position>
-        </checkbox>
-
-        <textarea name="adddayslbl"  from="fixeddatelbl">
-            <area>50,315,240,30</area>
-            <align>right</align>
+        <textarea name="adddayslbl"  from="basetextarea">
+            <area>413,389,92,30</area>
+            <align>allcenter</align>
             <value>+/- Days</value>
         </textarea>
 
-        <spinbox name="adddaysspinbox" from="basespinbox">
-            <position>300,310</position>
+        <spinbox name="adddaysspinbox" from="base_spinbox">
+            <position>413,419</position>
         </spinbox>
 
-        <shape name="matchesbackground">
-            <area>50,380,400,40</area>
+        <shape name="matches-backdrop">
+            <area>413,480,454,40</area>
             <type>roundbox</type>
-            <line color="#000000" alpha="100" width="1" />
-            <fill color="#000000" alpha="50" />
-            <cornerradius>4</cornerradius>
+            <fill color="#333333" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>5</cornerradius>
         </shape>
 
-        <textarea name="statustext">
-            <area>50,380,400,40</area>
-            <font>basesmall_normal</font>
-            <font state="valid">basesmall_running</font>
-            <font state="error">basesmall_error</font>
+        <textarea name="statustext" from="basetextarea">
+            <area>415,482,450,36</area>
+            <font state="valid">basesmallgreen</font>
+            <font state="error">basesmallred</font>
             <align>allcenter</align>
         </textarea>
 
         <!-- Push buttons -->
-        <button name="cancelbutton" from="basebutton">
-            <position>20,430</position>
+        <button name="cancelbutton" from="base_button">
+            <position>458,559</position>
             <value>Cancel</value>
         </button>
 
-        <button name="okbutton" from="basebutton">
-            <position>320,430</position>
+        <button name="okbutton" from="base_button">
+            <position>676,559</position>
             <value>OK</value>
         </button>
 
