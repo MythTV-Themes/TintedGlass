@@ -999,6 +999,13 @@
         </statetype>
     </button>
 
+    <!-- Base definition of a small button -->
+    <button name="base_small_button" from="base_button">
+        <statetype name="buttonstate">
+            <area>0,0,200,40</area>
+        </statetype>
+    </button>
+
     <!-- Base definition of a medium button -->
     <button name="base_medium_button" from="base_button">     
         <statetype name="buttonstate">

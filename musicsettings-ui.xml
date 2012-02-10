@@ -4,7 +4,7 @@
 <mythuitheme>
 
     <window name="generalsettings">
-
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>General Settings</value>
@@ -178,6 +178,7 @@
     </window>
 
     <window name="importsettings">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Ripper Settings</value>
@@ -394,6 +395,7 @@
     </window>
 
     <window name="playersettings">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Player Settings</value>
@@ -527,6 +529,7 @@
     </window>
 
     <window name="ratingsettings">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Rating Settings</value>
@@ -641,6 +644,7 @@
     </window>
 
     <window name="visualizationsettings">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Visualiser Settings</value>

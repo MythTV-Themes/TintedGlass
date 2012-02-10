@@ -4,6 +4,7 @@
 <mythuitheme>
 
     <window name="playlistview" include="music-base.xml">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Current Play List View</value>
@@ -204,6 +205,7 @@
     </window>
 
     <window name="playlisteditorview_tree" include="music-base.xml">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Play List Editor Tree View</value>
@@ -321,6 +323,7 @@
     </window>
 
     <window name="playlisteditorview_gallery" include="music-base.xml">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Play List Editor Gallery View</value>
@@ -525,6 +528,7 @@
     </window>
 
     <window name="searchview">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Search View</value>
@@ -670,8 +674,9 @@
 
     </window>
 
-   <!-- this is the main smartplaylist editor screen -->
-     <window name="smartplaylisteditor">
+    <!-- this is the main smartplaylist editor screen -->
+    <window name="smartplaylisteditor">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Smart Playlist Editor</value>
@@ -976,7 +981,7 @@
 
     </window>
 
-   <!-- popup to edit a smartplaylist criteria row -->
+    <!-- popup to edit a smartplaylist criteria row -->
     <window name="criteriaroweditor">
         <area>-1,-1,1280,720</area>
 
@@ -1296,259 +1301,266 @@
 
     <!-- popup to edit the smartplaylist order by clause-->
     <window name="orderbydialog">
-        <area>-1,-1,470,500</area>
+        <area>-1,-1,1280,720</area>
 
-        <imagetype name="box">
-            <area>0,0,470,500</area>
-            <filename>mythdialogbox-background.png</filename>
-        </imagetype>
+        <shape name="order-by-dialog-backdrop" from="base_popup_backdrop">
+            <area>390,110,500,500</area>
+        </shape>
+
+        <shape name="order-by-dialog-backdrop-line" from="base_backdrop_line">
+            <area>391,111,498,498</area>
+        </shape>
+
+        <shape name="order-by-dialog-top-line" from="base_highlight_line">
+            <area>392,112,496,2</area>
+        </shape>
+
+        <shape name="order-by-dialog-bottom-line" from="base_highlight_line">
+            <area>392,606,496,2</area>
+        </shape>
+
+        <shape name="order-by-dialog-left-line" from="base_highlight_vertical_line">
+            <area>392,114,2,492</area>
+        </shape>
+
+        <shape name="order-by-dialog-right-line" from="base_highlight_vertical_line">
+            <area>886,114,2,492</area>
+        </shape>
+
+        <shape name="order-by-dialog-seperator-first-line" from="base_line">
+            <area>413,160,454,2</area>
+        </shape>
+
+        <shape name="order-by-dialogn-seperator-second-line" from="base_line">
+            <area>413,282,454,2</area>
+        </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>5,5,460,40</area>
-            <font>basemedium</font>
+            <area>400,114,480,46</area>
+            <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Order By Fields</value>
         </textarea>
 
-        <buttonlist name="fieldlist">
-            <area>20,50,420,210</area>
-            <spacing>0</spacing>
-            <layout>vertical</layout>
-            <arrange>stack</arrange>
-            <showarrow>no</showarrow>
-            <buttonarea>0,0,420,150</buttonarea>
+        <buttonlist name="fieldlist" from="base_list">
+            <area>413,164,454,118</area>
+            <buttonarea>0,0,454,118</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,420,46</area>
-
+                    <area>0,0,454,40</area>
                     <statetype name="sortstate">
-                        <position>3,7</position>
+                        <position>10,5</position>
                         <state name="ascending">
                             <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
+                                <filename>mythmusic/mm_ascending.png</filename>
                             </imagetype>
                         </state>
                         <state name="descending">
                             <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
+                                <filename>mythmusic/mm_descending.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
-
                     <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
+                        <area>42,0,392,40</area>
                     </textarea>
-
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,420,46</area>
-                    <shape name="selectbar">
-                        <area>0,0,420,46</area>
-                        <type>roundbox</type>
-                        <line color="#00FF00" alpha="255" width="1" />
-                        <fill color="#43b038" alpha="128" />
-                        <cornerradius>4</cornerradius>
-                    </shape>
+                    <area>0,0,454,40</area>
                     <statetype name="sortstate">
-                        <position>3,7</position>
+                        <position>10,5</position>
                         <state name="ascending">
                             <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
+                                <filename>mythmusic/mm_ascending.png</filename>
                             </imagetype>
                         </state>
                         <state name="descending">
                             <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
+                                <filename>mythmusic/mm_descending.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
+                        <area>42,0,392,40</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="selectedactive">
-                    <shape name="selectbar">
-                        <area>0,0,420,46</area>
-                        <type>roundbox</type>
-                        <line color="#00FF00" alpha="100" width="1" />
-                        <fill color="#43b038" alpha="50" />
-                        <cornerradius>4</cornerradius>
-                    </shape>
+                <state name="selectedinactive">
+                    <area>0,0,454,40</area>
                     <statetype name="sortstate">
-                        <position>3,7</position>
+                        <position>10,5</position>
                         <state name="ascending">
                             <imagetype name="statusimage">
-                                <filename>mm_ascending.png</filename>
+                                <filename>mythmusic/mm_ascending.png</filename>
                             </imagetype>
                         </state>
                         <state name="descending">
                             <imagetype name="statusimage">
-                                <filename>mm_descending.png</filename>
+                                <filename>mythmusic/mm_descending.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="buttontext">
-                        <area>40,0,360,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
+                        <area>42,0,392,40</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>360,145</position>
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename>lb-uparrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename>lb-uparrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>455,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>390,145</position>
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename>lb-dnarrow-reg.png</filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename>lb-dnarrow-sel.png</filename>
-                    </imagetype>
-                </state>
+                <position>455,110</position>
             </statetype>
         </buttonlist>
 
-        <buttonlist name="fieldselector" from="baseselector">
-            <area>20,230,420,44</area>
+        <buttonlist name="fieldselector" from="base_selector">
+            <area>413,315,454,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,454,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,434,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,454,40</area>
+                    <textarea name="buttontext">
+                        <area>10,8,434,24</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>457,2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>457,21</position>
+            </statetype>
         </buttonlist>
 
-
         <!-- Push buttons -->
-        <button name="addbutton" from="basebutton">
-            <area>20,280,200,44</area>
+        <button name="addbutton" from="base_small_button">
+            <position>413,385</position>
             <value>Add</value>
         </button>
 
         <button name="deletebutton" from="addbutton">
-            <position>240,280</position>
+            <position>667,385</position>
             <value>Delete</value>
         </button>
 
         <button name="moveupbutton" from="addbutton">
-            <position>20,330</position>
+            <position>413,435</position>
             <value>Move Up</value>
         </button>
 
         <button name="movedownbutton" from="addbutton">
-            <position>240,330</position>
+            <position>667,435</position>
             <value>Move Down</value>
         </button>
 
         <button name="ascendingbutton" from="addbutton">
-            <position>20,380</position>
+            <position>413,485</position>
             <value>Ascending</value>
         </button>
 
         <button name="descendingbutton" from="addbutton">
-            <position>240,380</position>
+            <position>667,485</position>
             <value>Descending</value>
         </button>
 
         <button name="cancelbutton" from="addbutton">
-            <position>20,430</position>
+            <position>413,535</position>
             <value>Cancel</value>
         </button>
 
         <button name="okbutton" from="addbutton">
-            <position>240,430</position>
+            <position>667,535</position>
             <value>Save</value>
         </button>
 
     </window>
 
-   <!-- shows some information for the currently selected or playing track -->
+    <!-- shows some information for the currently selected or playing track -->
     <window name="smartplresultviewer">
-        <textarea name="title" from="basetextarea">
-            <area>15,5,800,50</area>
-            <font>baselarge</font>
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
             <value>Smart Playlist Result Viewer</value>
         </textarea>
 
-         <!-- optional - shows current position in the list eg '1 of 123' -->
-        <textarea name="position" from="basetextarea">
-            <area>1050,15,200,40</area>
-            <align>right,vcenter</align>
-            <font>basemedium</font>
-        </textarea>
-
-        <shape name="tracklist_background" from="basebackground">
-            <area>15,50,1250,655</area>
-            <fill color="#000000" alpha="50" />
+        <shape name="smart-play-result-viewer-backdrop" from="base_backdrop">
+            <area>20,36,1240,649</area>
         </shape>
 
-        <buttonlist name="tracklist" from="basebuttonlist2">
-            <area>30,60,1220,650</area>
-            <spacing>2</spacing>
-            <layout>vertical</layout>
-            <arrange>stack</arrange>
-            <showarrow>no</showarrow>
-            <buttonarea>0,0,1220,650</buttonarea>
+        <shape name="smart-play-result-viewer-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,647</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-top-line" from="base_highlight_line">
+            <area>22,38,1236,2</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-bottom-line" from="base_highlight_line">
+            <area>22,681,1236,2</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,641</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,641</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-seperator-first-line" from="base_line">
+            <area>35,61,1210,2</area>
+        </shape>
+
+         <!-- optional - shows current position in the list eg '1 of 123' -->
+        <textarea name="position" from="basetextarea">
+            <area>22,40,1238,22</area>
+            <align>allcenter</align>
+            <font>baseevensmalleryellow</font>
+        </textarea>
+
+        <buttonlist name="tracklist" from="base_list">
+            <area>30,67,1220,612</area>
+            <buttonarea>0,0,1220,612</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,46</area>
-
+                    <area>0,0,100%,40</area>
                     <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
-                        <filename>mm_nothumb.png</filename>
+                        <area>15,4,32,32</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
-
-                    <textarea name="title">
-                        <area>50,0,1040,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
+                    <textarea name="title" from="buttontext">
+                        <area>57,0,1038,40</area>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
-
-                    <textarea name="length">
-                        <area>1110,0,100,46</area>
+                    <textarea name="length" from="buttontext">
+                        <area>1105,0,100,40</area>
                         <align>right,vcenter</align>
-                        <font>basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-                    <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
-                        <filename>mm_nothumb.png</filename>
-                    </imagetype>
-                    <shape name="selectbar">
-                        <area>0,0,1220,46</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="selectbar">
-                        <area>0,0,1220,46</area>
-                    </shape>
-                </state>
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1160,620</position>
+                <position>1210,-4</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,620</position>
+                <position>1210,606</position>
             </statetype>
         </buttonlist>
 
     </window>
 
     <window name="visualizerview">
+        <area>0,0,1280,720</area>
 
         <video name="visualizer">
             <area>0,0,1280,720,</area>
@@ -1639,6 +1651,7 @@
     </window>
 
     <window name="editmetadata">
+        <area>0,0,1280,720</area>
 
         <group name="heading-backdrop" from="base_heading_group" />
 
@@ -1856,6 +1869,7 @@
     </window>
 
     <window name="editalbumart">
+        <area>0,0,1280,720</area>
 
         <group name="heading-backdrop" from="base_heading_group" />
 
@@ -2059,6 +2073,7 @@
     </window>
 
     <window name="albumart_browser">
+        <area>0,0,1280,720</area>
 
         <group name="heading-backdrop" from="base_heading_group" />
 
@@ -2146,6 +2161,7 @@
     </window>
 
     <window name="import_coverart">
+        <area>0,0,1280,720</area>
 
         <group name="heading-backdrop" from="base_heading_group" />
 
@@ -2625,7 +2641,6 @@
     </window>
 
     <window name="miniplayer">
-
         <area>0,0,1280,720</area>
 
         <shape name="mini-player-backdrop" from="base_popup_backdrop">
@@ -2898,6 +2913,7 @@
     </window>
 
     <window name="cdripper">
+        <area>0,0,1280,720</area>
 
         <textarea name="heading" from="base_heading">
             <value>Import CD</value>
