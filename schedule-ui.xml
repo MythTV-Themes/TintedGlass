@@ -2064,7 +2064,7 @@
 
     </window>
 
-    <window name="searchpopup" from="MythTextInputDialog">
+    <window name="searchpopup">
         <area>-1,-1,1280,720</area>
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
