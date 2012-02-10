@@ -2092,7 +2092,7 @@
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>170,43,160,18</area>
+            <area>170,43,168,18</area>
             <font>basesmalleryellow</font>
             <align>left,vcenter</align>
             <value>Enter Search Text</value>
