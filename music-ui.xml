@@ -496,17 +496,31 @@
                 </statetype>
                 <statetype name="upscrollarrow">
                     <position>1210,-1</position>
+                    <state type="off">
+                        <imagetype name="upoff">
+                            <filename>images/lists_up_arrow.png</filename>
+                            <alpha>80</alpha>
+                        </imagetype>
+                    </state>
                     <state type="full">
                         <imagetype name="upon">
                             <filename>images/lists_up_arrow.png</filename>
+                            <alpha>200</alpha>
                         </imagetype>
                     </state>
                 </statetype>
                 <statetype name="downscrollarrow">
                     <position>1210,161</position>
+                    <state type="off">
+                        <imagetype name="dnoff">
+                            <filename>images/lists_down_arrow.png</filename>
+                            <alpha>80</alpha>
+                        </imagetype>
+                    </state>
                     <state type="full">
                         <imagetype name="dnon">
                             <filename>images/lists_down_arrow.png</filename>
+                            <alpha>200</alpha>
                         </imagetype>
                     </state>
                 </statetype>
