@@ -1044,25 +1044,9 @@
     </button>
 
     <!-- Base definition of checkbox -->
-    <checkbox name="basecheckbox">
-        <position>2,2</position>
-        <statetype name="background">
-            <state name="active">
-                <position>2,2</position>
-                <imagetype name="background">
-                    <filename>images/unchecked.png</filename>
-                </imagetype>
-            </state>
-            <state name="selected">
-                <position>0,0</position>
-                <imagetype name="background">
-                    <filename>images/checkbox_background_selected_bug-workaround.png</filename>
-                </imagetype>
-            </state>
-            <state name="disabled" />
-        </statetype>
+    <checkbox name="base_checkbox">
+        <area>0,0,30,30</area>
         <statetype name="checkstate">
-            <position>2,2</position>
             <state type="off">
                 <imagetype name="background">
                     <filename>images/unchecked.png</filename>
@@ -1074,6 +1058,15 @@
                     <filename>images/checked.png</filename>
                 </imagetype>
             </state>
+        </statetype>
+        <statetype name="background">
+            <state name="active" />
+            <state name="selected">
+                <imagetype name="background">
+                    <filename>images/checkbox_background_selected.png</filename>
+                </imagetype>
+            </state>
+            <state name="disabled" />
         </statetype>
     </checkbox>
 

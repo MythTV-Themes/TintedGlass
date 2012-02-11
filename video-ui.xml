@@ -2087,8 +2087,8 @@
             <align>vcenter</align>
         </textarea>
 
-        <checkbox name="default_check" from="basecheckbox">
-            <position>520,325</position>
+        <checkbox name="default_check" from="base_checkbox">
+            <position>520,327</position>
         </checkbox>
         
         <textarea name="ignore_text" from="basetextarea">
@@ -2097,8 +2097,8 @@
             <align>vcenter</align>
         </textarea>
 
-        <checkbox name="ignore_check" from="basecheckbox">
-            <position>520,417</position>
+        <checkbox name="ignore_check" from="base_checkbox">
+            <position>520,419</position>
         </checkbox>
         
         <button name="done_button" from="base_button">
@@ -2440,8 +2440,8 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <checkbox name="browse_check" from="basecheckbox">
-            <position>594,431</position>
+        <checkbox name="browse_check" from="base_checkbox">
+            <position>594,433</position>
         </checkbox>
 
         <textarea name="fanart_text_label" from="basetextarea">
@@ -2511,8 +2511,8 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <checkbox name="watched_check" from="basecheckbox">
-            <position>594,619</position>
+        <checkbox name="watched_check" from="base_checkbox">
+            <position>594,621</position>
         </checkbox>
 
         <button name="done_button" from="base_button">
@@ -3078,8 +3078,8 @@
             </statetype>
         </buttonlist>
 
-        <checkbox name="altcheck" from="basecheckbox">
-            <position>750,417</position>
+        <checkbox name="altcheck" from="base_checkbox">
+            <position>750,419</position>
         </checkbox>
 
         <textarea name="altcheck_text" from="basetextarea">
@@ -3178,8 +3178,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <checkbox name="autometaupdatecheck" from="basecheckbox">
-            <position>390,83</position>
+        <checkbox name="autometaupdatecheck" from="base_checkbox">
+            <position>390,85</position>
         </checkbox>
 
         <textarea name="trailercheck_text" from="basetextarea">
@@ -3188,8 +3188,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <checkbox name="randomtrailercheck" from="basecheckbox">
-            <position>390,173</position>
+        <checkbox name="randomtrailercheck" from="base_checkbox">
+            <position>390,175</position>
         </checkbox>
 
         <textarea name="trailerplay_text" from="basetextarea">
@@ -3208,8 +3208,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <checkbox name="unknownfilecheck" from="basecheckbox">
-            <position>390,349</position>
+        <checkbox name="unknownfilecheck" from="base_checkbox">
+            <position>390,351</position>
         </checkbox>
 
         <textarea name="treeloadsmetacheck_text" from="basetextarea">
@@ -3218,8 +3218,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <checkbox name="treeloadsmetacheck" from="basecheckbox">
-            <position>390,437</position>
+        <checkbox name="treeloadsmetacheck" from="base_checkbox">
+            <position>390,439</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">

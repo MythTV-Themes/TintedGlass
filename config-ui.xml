@@ -311,8 +311,8 @@
             <value>Hide Channels without channel number.</value>
         </textarea>
 
-        <checkbox name="nochannum" from="basecheckbox">
-            <position>410,571</position>
+        <checkbox name="nochannum" from="base_checkbox">
+            <position>410,573</position>
         </checkbox>
 
         <button name="scan" from="base_medium_button">
@@ -489,8 +489,8 @@
             <value>Perform daily updates:</value>
         </textarea>
 
-        <checkbox name="dailyupdates" from="basecheckbox">
-            <position>546,286</position>
+        <checkbox name="dailyupdates" from="base_checkbox">
+            <position>546,288</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
@@ -735,8 +735,8 @@
             <value>My speaker supports Dolby Digital</value>
         </textarea>
 
-        <checkbox name="ac3check" from="basecheckbox">
-            <position>431,180</position>
+        <checkbox name="ac3check" from="base_checkbox">
+            <position>431,182</position>
         </checkbox>
 
         <textarea name="dts_text" from="basetextarea">
@@ -746,8 +746,8 @@
             <value>My speaker supports DTS</value>
         </textarea>
 
-        <checkbox name="dtscheck" from="basecheckbox">
-            <position>431,218</position>
+        <checkbox name="dtscheck" from="base_checkbox">
+            <position>431,220</position>
         </checkbox>
 
         <textarea name="eac3_text" from="basetextarea">
@@ -757,8 +757,8 @@
             <value>My speaker supports E-AC-3</value>
         </textarea>
 
-        <checkbox name="eac3check" from="basecheckbox">
-            <position>431,256</position>
+        <checkbox name="eac3check" from="base_checkbox">
+            <position>431,258</position>
         </checkbox>
 
         <textarea name="truehd_text" from="basetextarea">
@@ -768,8 +768,8 @@
             <value>My speaker supports TrueHD</value>
         </textarea>
 
-        <checkbox name="truehdcheck" from="basecheckbox">
-            <position>431,294</position>
+        <checkbox name="truehdcheck" from="base_checkbox">
+            <position>431,296</position>
         </checkbox>
 
         <textarea name="dtshd_text" from="basetextarea">
@@ -779,8 +779,8 @@
             <value>My speaker supports DTS-HD</value>
         </textarea>
 
-        <checkbox name="dtshdcheck" from="basecheckbox">
-            <position>431,332</position>
+        <checkbox name="dtshdcheck" from="base_checkbox">
+            <position>431,334</position>
         </checkbox>
 
         <button name="testspeakers" from="base_medium_button">

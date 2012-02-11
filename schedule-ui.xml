@@ -3191,8 +3191,8 @@
             <value>Schedule Options</value>
         </button>
 
-        <checkbox name="ruleactive" from="basecheckbox">
-            <position>238,545</position>
+        <checkbox name="ruleactive" from="base_checkbox">
+            <position>238,547</position>
         </checkbox>
 
         <textarea name="ruleactivelabel" from="basetextarea">
@@ -3620,8 +3620,8 @@
             </statetype>
         </buttonlist>
 
-        <checkbox name="autoexpire" from="basecheckbox">
-            <position>196,530</position>
+        <checkbox name="autoexpire" from="base_checkbox">
+            <position>196,532</position>
         </checkbox>
 
         <textarea name="autoexpirelabel" from="basetextarea">
@@ -3752,8 +3752,8 @@
             <area>734,248,506,2</area>
         </shape>
 
-        <checkbox name="metadatalookup" from="basecheckbox">
-            <position>161,71</position>
+        <checkbox name="metadatalookup" from="base_checkbox">
+            <position>161,73</position>
         </checkbox>
 
         <textarea name="metadatalookuplabel" from="basetextarea">
@@ -3762,8 +3762,8 @@
             <value>Automatically Look Up Metadata</value>
         </textarea>
 
-        <checkbox name="autocommflag" from="basecheckbox">
-            <position>161,139</position>
+        <checkbox name="autocommflag" from="base_checkbox">
+            <position>161,141</position>
         </checkbox>
 
         <textarea name="autocommflaglabel" from="basetextarea">
@@ -3772,8 +3772,8 @@
             <value>Commercial Flag new recordings</value>
         </textarea>
 
-        <checkbox name="autotranscode" from="basecheckbox">
-            <position>161,207</position>
+        <checkbox name="autotranscode" from="base_checkbox">
+            <position>161,209</position>
         </checkbox>
 
         <textarea name="autotranscodelabel" from="basetextarea">
@@ -3807,8 +3807,8 @@
             </statetype>
         </buttonlist>
 
-        <checkbox name="userjob1" from="basecheckbox">
-            <position>252,343</position>
+        <checkbox name="userjob1" from="base_checkbox">
+            <position>252,345</position>
         </checkbox>
 
         <textarea name="userjob1label" from="basetextarea">
@@ -3817,8 +3817,8 @@
             <value>Run User Job #1</value>
         </textarea>
 
-        <checkbox name="userjob2" from="basecheckbox">
-            <position>252,411</position>
+        <checkbox name="userjob2" from="base_checkbox">
+            <position>252,413</position>
         </checkbox>
 
         <textarea name="userjob2label" from="basetextarea">
@@ -3827,8 +3827,8 @@
             <value>Run User job #2</value>
         </textarea>
 
-        <checkbox name="userjob3" from="basecheckbox">
-            <position>252,479</position>
+        <checkbox name="userjob3" from="base_checkbox">
+            <position>252,481</position>
         </checkbox>
 
         <textarea name="userjob3label" from="basetextarea">
@@ -3837,8 +3837,8 @@
             <value>Run User Job #3</value>
         </textarea>
 
-        <checkbox name="userjob4" from="basecheckbox">
-            <position>252,547</position>
+        <checkbox name="userjob4" from="base_checkbox">
+            <position>252,549</position>
         </checkbox>
 
         <textarea name="userjob4label" from="basetextarea">

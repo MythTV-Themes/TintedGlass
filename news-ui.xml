@@ -296,8 +296,8 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <checkbox name="podcast_check" from="basecheckbox">
-            <position>405,422</position>
+        <checkbox name="podcast_check" from="base_checkbox">
+            <position>405,424</position>
         </checkbox>
 
         <button name="ok" from="base_medium_button">

@@ -1029,8 +1029,8 @@
             <value>Retrieve data in the background:</value>
         </textarea>
 
-        <checkbox name="backgroundcheck" from="basecheckbox">
-            <position>770,172</position>
+        <checkbox name="backgroundcheck" from="base_checkbox">
+            <position>770,174</position>
         </checkbox>
 
         <textarea name="timeout_text" from="basetextarea">

@@ -94,8 +94,8 @@
             <value>Convert stereo to 5.1 sound:</value>
         </textarea>
 
-        <checkbox name="musicdefaultupmix" from="basecheckbox">
-            <position>567,244</position>
+        <checkbox name="musicdefaultupmix" from="base_checkbox">
+            <position>567,246</position>
         </checkbox>
 
         <textarea name="nonid3filenameformat_label" from="basetextarea">
@@ -114,8 +114,8 @@
             <value>Ignore ID3 Tags:</value>
         </textarea>
 
-        <checkbox name="ignoreid3tags" from="basecheckbox">
-            <position>567,362</position>
+        <checkbox name="ignoreid3tags" from="base_checkbox">
+            <position>567,364</position>
         </checkbox>
 
         <textarea name="tagencoding_label" from="basetextarea">
@@ -155,8 +155,8 @@
             <value>Allow metadata to be written to tags:</value>
         </textarea>
 
-        <checkbox name="allowtagwriting" from="basecheckbox">
-            <position>567,480</position>
+        <checkbox name="allowtagwriting" from="base_checkbox">
+            <position>567,482</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
@@ -279,8 +279,8 @@
             <value>Replace space with underscore:</value>
         </textarea>
 
-        <checkbox name="nowhitespace" from="basecheckbox">
-            <position>568,185</position>
+        <checkbox name="nowhitespace" from="base_checkbox">
+            <position>568,187</position>
         </checkbox>
 
         <textarea name="encoding_label" from="basetextarea">
@@ -351,8 +351,8 @@
             <value>Use variable bitrates:</value>
         </textarea>
 
-        <checkbox name="mp3usevbr" from="basecheckbox">
-            <position>568,362</position>
+        <checkbox name="mp3usevbr" from="base_checkbox">
+            <position>568,364</position>
         </checkbox>
 
         <textarea name="ejectcd_label" from="basetextarea">
@@ -361,8 +361,8 @@
             <value>Automatically eject CDs after ripping:</value>
         </textarea>
 
-        <checkbox name="ejectcd" from="basecheckbox">
-            <position>568,421</position>
+        <checkbox name="ejectcd" from="base_checkbox">
+            <position>568,423</position>
         </checkbox>
 
         <textarea name="postcdripscript_label" from="basetextarea">
@@ -496,8 +496,8 @@
             <value>Automatically lookup CDs:</value>
         </textarea>
 
-        <checkbox name="autolookupcd" from="basecheckbox">
-            <position>625,326</position>
+        <checkbox name="autolookupcd" from="base_checkbox">
+            <position>625,328</position>
         </checkbox>
 
         <textarea name="autoplaycd_label" from="basetextarea">
@@ -506,8 +506,8 @@
             <value>Automatically Play CDs:</value>
         </textarea>
 
-        <checkbox name="autoplaycd" from="basecheckbox">
-            <position>625,433</position>
+        <checkbox name="autoplaycd" from="base_checkbox">
+            <position>625,435</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
@@ -704,8 +704,8 @@
             <value>Change Visualizer on each song:</value>
         </textarea>
 
-        <checkbox name="cycleonsongchange" from="basecheckbox">
-            <position>729,112</position>
+        <checkbox name="cycleonsongchange" from="base_checkbox">
+            <position>729,114</position>
         </checkbox>
 
         <textarea name="randomizeorder_label" from="basetextarea">
@@ -714,8 +714,8 @@
             <value>Randomize Visualizer order:</value>
         </textarea>
 
-        <checkbox name="randomizeorder" from="basecheckbox">
-            <position>729,216</position>
+        <checkbox name="randomizeorder" from="base_checkbox">
+            <position>729,218</position>
         </checkbox>
 
         <textarea name="scalewidth_label" from="basetextarea">

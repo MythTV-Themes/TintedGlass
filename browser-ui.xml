@@ -323,8 +323,8 @@
             <value>Enable Plugins:</value>
         </textarea>
 
-        <checkbox name="enablepluginscheck" from="basecheckbox">
-            <position>460,355</position>
+        <checkbox name="enablepluginscheck" from="base_checkbox">
+            <position>460,357</position>
         </checkbox>
 
         <textarea name="description" from="basetextarea">

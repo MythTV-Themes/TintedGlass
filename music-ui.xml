@@ -1225,8 +1225,8 @@
             <value>Edit Date</value>
         </textarea>
 
-        <checkbox name="fixeddatecheck" from="basecheckbox">
-            <position>413,186</position>
+        <checkbox name="fixeddatecheck" from="base_checkbox">
+            <position>413,188</position>
         </checkbox>
 
         <textarea name="fixeddatelbl"  from="basetextarea">
@@ -1265,8 +1265,8 @@
             <position>775,273</position>
         </spinbox>
 
-        <checkbox name="nowcheck" from="basecheckbox">
-            <position>413,333</position>
+        <checkbox name="nowcheck" from="base_checkbox">
+            <position>413,335</position>
         </checkbox>
 
         <textarea name="nowlbl"  from="basetextarea">
@@ -1708,8 +1708,8 @@
             <value>Compilation:</value>
         </textarea>
 
-        <checkbox name="compilationcheck" from="basecheckbox">
-            <position>424,66</position>
+        <checkbox name="compilationcheck" from="base_checkbox">
+            <position>424,68</position>
         </checkbox>
 
         <textarea name="compilation_artist_label" from="compilation_label">
@@ -2499,8 +2499,8 @@
             <value>Compilation:</value>
         </textarea>
 
-        <checkbox name="compilation" from="basecheckbox">
-            <position>413,215</position>
+        <checkbox name="compilation" from="base_checkbox">
+            <position>413,217</position>
         </checkbox>
 
         <textarea name="compilation_artist_label" from="location_label">
@@ -3081,8 +3081,8 @@
             <value>Multi-Artist:</value>
         </textarea>
 
-        <checkbox name="compilation" from="basecheckbox">
-            <position>847,246</position>
+        <checkbox name="compilation" from="base_checkbox">
+            <position>847,248</position>
         </checkbox>
 
         <button name="switch" from="base_medium_button">

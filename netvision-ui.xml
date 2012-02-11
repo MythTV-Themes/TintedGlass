@@ -631,8 +631,8 @@
             <value>Download this feed automatically:</value>
         </textarea>
 
-        <checkbox name="download" from="basecheckbox">
-            <position>800,380</position>
+        <checkbox name="download" from="base_checkbox">
+            <position>800,382</position>
         </checkbox>
 
         <button name="preview_browse" from="base_medium_button">

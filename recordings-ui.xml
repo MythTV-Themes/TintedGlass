@@ -1265,8 +1265,8 @@
             <value>Change View</value>
         </textarea>
 
-        <checkbox name="titles" from="basecheckbox">
-            <position>510,228</position>
+        <checkbox name="titles" from="base_checkbox">
+            <position>510,230</position>
         </checkbox>
 
         <textarea name="titlelabel" from="basetextarea">
@@ -1274,8 +1274,8 @@
             <value>Show Titles</value>
         </textarea>
 
-        <checkbox name="categories" from="basecheckbox">
-            <position>510,278</position>
+        <checkbox name="categories" from="base_checkbox">
+            <position>510,280</position>
         </checkbox>
 
         <textarea name="catlabel" from="titlelabel">
@@ -1283,8 +1283,8 @@
             <value>Show Categories</value>
         </textarea>
 
-        <checkbox name="recgroups" from="basecheckbox">
-            <position>510,328</position>
+        <checkbox name="recgroups" from="base_checkbox">
+            <position>510,330</position>
         </checkbox>
 
         <textarea name="grouplabel" from="titlelabel">
@@ -1292,8 +1292,8 @@
             <value>Show Recording Groups</value>
         </textarea>
 
-        <checkbox name="watchlist" from="basecheckbox">
-            <position>510,378</position>
+        <checkbox name="watchlist" from="base_checkbox">
+            <position>510,380</position>
         </checkbox>
 
         <textarea name="watchlabel" from="titlelabel">
@@ -1301,8 +1301,8 @@
             <value>Show Watch List</value>
         </textarea>
 
-        <checkbox name="searches" from="basecheckbox">
-            <position>510,428</position>
+        <checkbox name="searches" from="base_checkbox">
+            <position>510,430</position>
         </checkbox>
 
         <textarea name="searchlabel" from="titlelabel">
@@ -1310,8 +1310,8 @@
             <value>Show Searches</value>
         </textarea>
 
-        <checkbox name="livetv" from="basecheckbox">
-            <position>510,478</position>
+        <checkbox name="livetv" from="base_checkbox">
+            <position>510,480</position>
         </checkbox>
 
         <textarea name="livelabel" from="titlelabel">
