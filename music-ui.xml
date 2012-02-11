@@ -1527,32 +1527,32 @@
         </shape>
 
         <shape name="smart-play-result-viewer-seperator-first-line" from="base_line">
-            <area>35,61,1210,2</area>
+            <area>35,65,1210,2</area>
         </shape>
 
          <!-- optional - shows current position in the list eg '1 of 123' -->
         <textarea name="position" from="basetextarea">
-            <area>22,40,1238,22</area>
+            <area>22,40,1238,26</area>
             <align>allcenter</align>
-            <font>baseevensmalleryellow</font>
+            <font>basesmallyellow</font>
         </textarea>
 
         <buttonlist name="tracklist" from="base_list">
-            <area>30,67,1220,612</area>
+            <area>30,73,1220,612</area>
             <buttonarea>0,0,1220,612</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,40</area>
+                    <area>0,0,100%,42</area>
                     <imagetype name="buttonimage">
-                        <area>15,4,32,32</area>
+                        <area>15,5,32,32</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="title" from="buttontext">
-                        <area>57,0,1038,40</area>
+                        <area>57,0,1038,42</area>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1105,0,100,40</area>
+                        <area>1105,0,100,42</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
@@ -1564,10 +1564,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-4</position>
+                <position>1210,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,606</position>
+                <position>1210,600</position>
             </statetype>
         </buttonlist>
 
