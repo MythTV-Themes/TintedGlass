@@ -129,27 +129,27 @@
         </shape>
 
         <buttonlist name="groups">
-            <area>0,33,1280,30</area>
+            <area>0,37,1280,24</area>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>horizontal</layout>
-            <buttonarea>0,0,1280,30</buttonarea>
+            <buttonarea>0,0,1280,24</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,255,53</area>
+                    <area>8,0,255,24</area>
                     <textarea name="name" from="basetextarea">
-                        <area>8,0,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>8,0,400,83</area>
+                    <area>8,0,255,24</area>
                     <textarea name="name" from="basetextarea">
-                        <area>0,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
@@ -157,8 +157,8 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="name" from="basetextarea">
-                        <area>8,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                     </textarea>
@@ -740,27 +740,27 @@
         </shape>
 
         <buttonlist name="groups">
-            <area>0,33,1280,30</area>
+            <area>0,37,1280,24</area>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>horizontal</layout>
-            <buttonarea>0,0,1280,30</buttonarea>
+            <buttonarea>0,0,1280,24</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,255,53</area>
+                    <area>8,0,255,24</area>
                     <textarea name="name" from="basetextarea">
-                        <area>8,0,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>8,0,400,83</area>
+                    <area>8,0,255,24</area>
                     <textarea name="name" from="basetextarea">
-                        <area>0,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
@@ -768,8 +768,8 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="name" from="basetextarea">
-                        <area>8,2,240,27</area>
-                        <align>hcenter,bottom</align>
+                        <area>0,0,240,24</area>
+                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
                     </textarea>

@@ -1538,8 +1538,8 @@
         </textarea>
 
         <buttonlist name="tracklist" from="base_list">
-            <area>30,73,1220,612</area>
-            <buttonarea>0,0,1220,612</buttonarea>
+            <area>30,73,1220,604</area>
+            <buttonarea>0,0,1220,604</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,42</area>

@@ -75,26 +75,26 @@
         </shape>
 
        <buttonlist name="category">
-            <area>0,36,1280,30</area>
+            <area>0,38,1280,26</area>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>horizontal</layout>
-            <buttonarea>0,0,1280,30</buttonarea>
+            <buttonarea>0,0,1280,26</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,255,53</area>
+                    <area>8,0,255,26</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,30</area>
+                        <area>0,0,240,26</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallerlightgrey</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>8,0,400,83</area>
+                    <area>8,0,255,26</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,240,30</area>
+                        <area>0,0,240,26</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
@@ -103,7 +103,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,30</area>
+                        <area>0,0,240,26</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
