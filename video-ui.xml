@@ -2210,83 +2210,83 @@
         </imagetype>
         
         <textarea name="title_text" from="basetextarea">
-            <area>40,54,124,30</area>
+            <area>40,48,124,32</area>
             <value>Title:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
         
         <textedit name="title_edit" from="base_textedit">
-            <area>177,53,366,32</area>
+            <area>177,48,366,32</area>
         </textedit>
 
         <textarea name="subtitle_text" from="basetextarea">
-            <area>40,91,124,30</area>
+            <area>40,88,124,32</area>
             <value>Subtitle:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <area>177,90,366,32</area>
+            <area>177,88,366,32</area>
         </textedit>
 
         <textarea name="director_text" from="basetextarea">
-            <area>40,128,124,30</area>
+            <area>40,128,124,32</area>
             <value>Director:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="director_edit" from="base_textedit">
-            <area>177,127,366,32</area>
+            <area>177,128,366,32</area>
         </textedit>
 
         <textarea name="tagline_text" from="basetextarea">
-            <area>40,165,124,30</area>
+            <area>40,168,124,32</area>
             <value>Tagline:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="tagline_edit" from="base_wide_textedit">
-            <area>177,164,885,32</area>
+            <area>177,168,885,32</area>
         </textedit>
 
         <textarea name="homepage_text_label" from="basetextarea">
-            <area>40,203,124,30</area>
+            <area>40,208,124,32</area>
             <value>Homepage:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="homepage_edit" from="base_wide_textedit">
-            <area>177,202,885,32</area>
+            <area>177,208,885,32</area>
         </textedit>
 
         <textarea name="player_text" from="basetextarea">
-            <area>40,244,124,30</area>
-            <align>right,top</align>
+            <area>40,248,124,32</area>
+            <align>right,vcenter</align>
             <value>Player:</value>
         </textarea>
 
         <textedit name="player_edit" from="base_wide_textedit">
-            <area>177,243,885,32</area>
+            <area>177,248,885,32</area>
         </textedit>
 
         <textarea name="rating_text" from="basetextarea">
-            <area>556,54,124,30</area>
+            <area>556,48,124,32</area>
             <value>Rating:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="rating_edit" from="base_textedit">
-            <area>696,53,366,32</area>
+            <area>696,48,366,32</area>
         </textedit>
 
         <textarea name="inetref_text" from="basetextarea">
-            <area>556,91,124,30</area>
+            <area>556,88,124,32</area>
             <value>TMDB:</value>
-            <align>right,top</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textedit name="inetref_edit" from="base_textedit">
-            <area>696,90,366,32</area>
+            <area>696,88,366,32</area>
         </textedit>
 
         <textarea name="season_text" from="basetextarea">
