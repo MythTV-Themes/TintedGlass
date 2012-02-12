@@ -2396,12 +2396,12 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <button name="coverart_button" from="basesearchbutton">
-            <area>596,339,32,32</area>
+        <button name="coverart_button" from="base_searchbutton">
+            <area>594,339,30,30</area>
         </button>
 
         <textarea name="coverart_text" from="basetextarea">
-            <area>638,334,414,40</area>
+            <area>636,334,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
@@ -2418,12 +2418,12 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <button name="banner_button" from="basesearchbutton">
-            <area>596,386,32,32</area>
+        <button name="banner_button" from="base_searchbutton">
+            <area>594,386,30,30</area>
         </button>
 
         <textarea name="banner_text" from="basetextarea">
-            <area>638,381,414,40</area>
+            <area>636,381,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
@@ -2450,12 +2450,12 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <button name="fanart_button" from="basesearchbutton">
-            <area>596,479,32,32</area>
+        <button name="fanart_button" from="base_searchbutton">
+            <area>594,480,30,30</area>
         </button>
         
         <textarea name="fanart_text" from="basetextarea">
-            <area>638,475,414,40</area>
+            <area>636,475,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
@@ -2472,12 +2472,12 @@
             <align>right,vcenter</align>
         </textarea>
         
-        <button name="screenshot_button" from="basesearchbutton">
-            <area>596,527,32,32</area>
+        <button name="screenshot_button" from="base_searchbutton">
+            <area>594,527,30,30</area>
         </button>
 
         <textarea name="screenshot_text" from="basetextarea">
-            <area>638,522,414,40</area>
+            <area>636,522,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
@@ -2494,12 +2494,12 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <button name="trailer_button" from="basesearchbutton">
-            <area>596,574,32,32</area>
+        <button name="trailer_button" from="base_searchbutton">
+            <area>594,574,30,30</area>
         </button>
         
         <textarea name="trailer_text" from="basetextarea">
-            <area>638,569,414,40</area>
+            <area>636,569,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>

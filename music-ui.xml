@@ -807,7 +807,7 @@
             </statetype>
         </buttonlist>
 
-        <button name="categorybutton" from="basesearchbutton">
+        <button name="categorybutton" from="base_searchbutton">
             <position>917,85</position>
         </button>
 
@@ -937,7 +937,7 @@
             </statetype>
         </buttonlist>
 
-        <button name="orderbybutton" from="basesearchbutton">
+        <button name="orderbybutton" from="base_searchbutton">
             <position>917,510</position>
         </button>
 
@@ -1121,8 +1121,8 @@
             <position>453,375</position>
         </spinbox>
 
-        <button name="value1button" from="basesearchbutton">
-            <position>837,379</position>
+        <button name="value1button" from="base_searchbutton">
+            <position>842,380</position>
         </button>
 <!--
         <textarea name="andlbl"  from="basetextarea">
@@ -1164,8 +1164,8 @@
             <position>453,459</position>
         </spinbox>
 
-        <button name="value2button" from="basesearchbutton">
-            <position>837,463</position>
+        <button name="value2button" from="base_searchbutton">
+            <position>842,464</position>
         </button>
 
         <!-- Push buttons -->
@@ -2474,7 +2474,7 @@
             <area>380,58,580,32</area>
         </textedit>
 
-        <button name="directoryfinder" from="basesearchbutton">
+        <button name="directoryfinder" from="base_searchbutton">
             <position>968,59</position>
         </button>
 
@@ -3037,8 +3037,8 @@
             <area>364,136,580,32</area>
         </textedit>
 
-        <button name="searchartist" from="basesearchbutton">
-            <position>957,136</position>
+        <button name="searchartist" from="base_searchbutton">
+            <position>957,137</position>
         </button>
 
         <textarea name="album_label" from="artist_label">
@@ -3050,8 +3050,8 @@
             <area>364,173,580,32</area>
         </textedit>
 
-        <button name="searchalbum" from="basesearchbutton">
-            <position>957,173</position>
+        <button name="searchalbum" from="base_searchbutton">
+            <position>957,174</position>
         </button>
 
         <textarea name="genre_text" from="artist_label">
@@ -3063,8 +3063,8 @@
             <area>364,209,580,32</area>
         </textedit>
 
-        <button name="searchgenre" from="basesearchbutton">
-            <position>957,209</position>
+        <button name="searchgenre" from="base_searchbutton">
+            <position>957,210</position>
         </button>
 
         <textarea name="year_label" from="artist_label">

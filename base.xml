@@ -1025,8 +1025,8 @@
     </button>
 
     <!-- Base definition of a search button -->
-    <button name="basesearchbutton">
-        <area>0,0,32,32</area>
+    <button name="base_searchbutton">
+        <area>0,0,30,30</area>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -1035,7 +1035,7 @@
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>images/checkbox_background_selected.png</filename>
+                    <filename>images/searchbutton_background_selected.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
