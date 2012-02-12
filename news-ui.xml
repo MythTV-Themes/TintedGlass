@@ -112,7 +112,7 @@
                         <area>8,0,405,30</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallerlightgrey</font>
+                        <font>basesmaller</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">

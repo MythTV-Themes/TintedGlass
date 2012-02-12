@@ -154,7 +154,7 @@
                         <area>8,0,240,30</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallerlightgrey</font>
+                        <font>basesmaller</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
