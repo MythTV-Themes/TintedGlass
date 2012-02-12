@@ -411,7 +411,7 @@
         </clock>
 
         <progressbar name="position">
-            <area>32,690,1216,8</area>
+            <area>32,689,1216,8</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
@@ -1329,37 +1329,53 @@
 
             <shape name="position">
                 <area>0,0,6,100%</area>
+                <type>roundbox</type>
                 <fill color="#ffffff" alpha="200" />
+                <cornerradius>3</cornerradius>
             </shape>
 
-            <imagetype name="keep">
-                <area>0,8,100%,8</area>
-                <filename>images/osd/keep_fill_blue_alt.png</filename>
-            </imagetype>
+            <shape name="keep">
+                <area>0,7,100%,10</area>
+                <type>roundbox</type>
+                <fill color="#216893" />
+                <line color="#aaaaaa" width="1" />
+                <cornerradius>90</cornerradius>
+            </shape>
 
-            <imagetype name="cut">
-                <area>0,8,100%,8</area>
-                <filename>images/osd/cut_fill_red_alt.png</filename>
-            </imagetype>
-                
+            <shape name="cut">
+                <area>0,7,100%,10</area>
+                <type>roundbox</type>
+                <fill color="#800500" />
+                <line color="#aaaaaa" width="1" />
+                <cornerradius>90</cornerradius>
+            </shape>
+
             <shape name="cuttoright">
-                <area>0,2,4,20</area>
+                <area>0,0,6,100%</area>
+                <type>roundbox</type>
                 <fill color="#800500" alpha="255" />
+                <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="cuttoleft">
-                <area>0,2,4,20</area>
+                <area>0,0,6,100%</area>
+                <type>roundbox</type>
                 <fill color="#800500" alpha="255" />
+                <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="keeptoright">
-                <area>0,2,4,20</area>
+                <area>0,0,6,100%</area>
+                <type>roundbox</type>
                 <fill color="#216893" alpha="255" />
+                <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="keeptoleft">
-                <area>0,2,4,20</area>
+                <area>0,0,6,100%</area>
+                <type>roundbox</type>
                 <fill color="#216893" alpha="255" />
+                <cornerradius>3</cornerradius>
             </shape>
 
         </editbar>
