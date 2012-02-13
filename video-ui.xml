@@ -606,7 +606,9 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
     
@@ -1067,7 +1069,9 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
         
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
     
@@ -1519,7 +1523,9 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
         
     </window>
     
@@ -1981,7 +1987,9 @@
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Change."</value>
         </textarea>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
     
@@ -2520,7 +2528,9 @@
             <value>Done</value>
         </button>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
     

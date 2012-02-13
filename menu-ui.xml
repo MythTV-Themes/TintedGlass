@@ -4,13 +4,6 @@
 
     <window name="mainmenu">
 
-        <imagetype name="background">
-            <area>0,0,1280,720</area>
-            <filename>images/backgrounds/background_main.png</filename>
-        </imagetype>
-
-        <group name="heading-backdrop" from="base_heading_group" />
-
         <textarea name="heading" from="base_heading">
             <value>Main Menu</value>
         </textarea>
@@ -176,8 +169,6 @@
                 </state>
             </statetype>
         </buttonlist>
-
-        <group name="clock-group" from="base_clock_group" />
 
     </window>
 

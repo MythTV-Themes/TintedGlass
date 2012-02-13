@@ -430,30 +430,32 @@
     </group>
 
     <!-- Base definition of a clock  group -->
-    <group name="base_clock_group">
+    <group name="base_clock_backdrop_group">
         <shape name="base_clock_backdrop" from="base_backdrop">
             <area>500,695,280,32</area>
         </shape>
-        <shape name="base_clock_backdrop-line" from="base_backdrop_line">
+        <shape name="base_clock_backdrop_line" from="base_backdrop_line">
             <area>500,695,280,32</area>
         </shape>
-        <shape name="clock-top-line" from="base_highlight_line">
+        <shape name="base_clock_backdrop_top_line" from="base_highlight_line">
             <area>501,696,278,2</area>
         </shape>
-        <shape name="clock-left-line" from="base_highlight_vertical_line">
+        <shape name="base_clock_backdrop_left_line" from="base_highlight_vertical_line">
             <area>501,698,2,22</area>
         </shape>
-        <shape name="clock-right-line" from="base_highlight_vertical_line">
+        <shape name="clock_right_line" from="base_highlight_vertical_line">
             <area>777,698,2,22</area>
         </shape>
-        <clock name="base_clock">
-            <area>529,698,219,22</area>
-            <font>baseextrasmall</font>
-            <template>%DATE%, %TIME%</template>
-            <align>allcenter</align>
-            <alpha>255</alpha>
-        </clock>
     </group>
+
+    <!-- Base denfinition of a clock -->
+    <clock name="base_clock">
+        <area>529,698,219,22</area>
+        <font>baseextrasmall</font>
+        <template>%DATE%, %TIME%</template>
+        <align>allcenter</align>
+        <alpha>255</alpha>
+    </clock>
 
     <shape name="base_select_bar_active">
         <type>roundbox</type>
@@ -1318,7 +1320,11 @@
 
         <group name="heading-backdrop" from="base_heading_group" />
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+	<clock name="time" from="base_clock">
+            <area>529,698,219,22</area>
+        </clock>
 
     </window>
 
@@ -2089,7 +2095,9 @@
             <align>allcenter</align>
         </textarea>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
 

@@ -4019,7 +4019,9 @@
             <mask>images/masks/metadata_options_banner_mask.png</mask>
         </imagetype>
 
-        <group name="clock-group" from="base_clock_group" />
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
 
     </window>
 
