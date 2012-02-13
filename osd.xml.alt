@@ -372,14 +372,14 @@
         </fontdef>
 
         <shape name="osd-status-backdrop">
-            <area>0,661,1280,60</area>
+            <area>0,660,1280,61</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="osd-status-highlight-top-line">
-            <area>0,663,1280,2</area>
+            <area>0,662,1280,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="40">
@@ -411,7 +411,7 @@
         </clock>
 
         <progressbar name="position">
-            <area>32,689,1216,8</area>
+            <area>32,688,1216,8</area>
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
@@ -1280,14 +1280,14 @@
         </fontdef>
 
         <shape name="osd-program-editor-backdrop">
-            <area>0,661,1280,60</area>
+            <area>0,660,1280,61</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="osd-program-editor-highlight-top-line">
-            <area>0,663,1280,2</area>
+            <area>0,662,1280,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="40">
@@ -1299,38 +1299,38 @@
         </shape>
 
         <textarea name="title">
-            <area>46,667,600,20</area>
+            <area>46,666,600,20</area>
             <font>small</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="seekamount" from="title">
-            <area>934,667,300,20</area>
+            <area>934,666,300,20</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="timedisplay" from="title">
-            <area>32,700,1216,20</area>
+            <area>32,699,1216,20</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="cutindicator" from="title">
-            <area>46,700,300,20</area>
+            <area>46,699,300,20</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="framedisplay" from="title">
-            <area>934,700,300,20</area>
+            <area>934,699,300,20</area>
             <align>right,vcenter</align>
         </textarea>
 
         <editbar name="editbar">
-            <area>32,681,1216,24</area>
+            <area>32,680,1216,24</area>
 
             <shape name="position">
                 <area>0,0,6,100%</area>
                 <type>roundbox</type>
-                <fill color="#ffffff" alpha="200" />
+                <fill color="#FFFFFF" alpha="200" />
                 <cornerradius>3</cornerradius>
             </shape>
 
@@ -1338,7 +1338,7 @@
                 <area>0,7,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#216893" />
-                <line color="#aaaaaa" width="1" />
+                <line color="#CCCCCC" width="1" />
                 <cornerradius>90</cornerradius>
             </shape>
 
@@ -1346,7 +1346,7 @@
                 <area>0,7,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#800500" />
-                <line color="#aaaaaa" width="1" />
+                <line color="#CCCCCC" width="1" />
                 <cornerradius>90</cornerradius>
             </shape>
 

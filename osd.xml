@@ -1538,7 +1538,7 @@
             <shape name="position">
                 <area>0,0,6,100%</area>
                 <type>roundbox</type>
-                <fill color="#ffffff" alpha="200" />
+                <fill color="#FFFFFF" alpha="200" />
                 <cornerradius>3</cornerradius>
             </shape>
 
@@ -1546,7 +1546,7 @@
                 <area>0,7,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#216893" />
-                <line color="#aaaaaa" width="1" />
+                <line color="#CCCCCC" width="1" />
                 <cornerradius>90</cornerradius>
             </shape>
 
@@ -1554,7 +1554,7 @@
                 <area>0,7,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#800500" />
-                <line color="#aaaaaa" width="1" />
+                <line color="#CCCCCC" width="1" />
                 <cornerradius>90</cornerradius>
             </shape>
                 
