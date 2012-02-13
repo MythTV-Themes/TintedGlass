@@ -109,6 +109,10 @@
         <color>#80d400</color>
     </fontdef>
 
+    <fontdef name="baselargegreen" from="baselarge">
+        <color>#80d400</color>
+    </fontdef>
+
     <fontdef name="basesomewhatsmallergrey" from="basesomewhatsmaller">
         <color>#666666</color>
     </fontdef>

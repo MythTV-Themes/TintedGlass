@@ -195,4 +195,91 @@
 
     </window>
 
+    <window name="standbymode">
+        <area>-1,-1,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Standby Mode</value>
+        </textarea>
+
+        <shape name="standbymode-backdrop" from="base_backdrop">
+            <area>320,180,640,360</area>
+        </shape>
+
+        <shape name="standbymode-backdrop-line" from="base_backdrop_line">
+            <area>321,181,638,358</area>
+        </shape>
+
+        <shape name="standbymode-top-line" from="base_highlight_line">
+            <area>322,182,636,2</area>
+        </shape>
+
+        <shape name="standbymode-bottom-line" from="base_highlight_line">
+            <area>322,536,636,2</area>
+        </shape>
+
+        <shape name="standbymode-left-line" from="base_highlight_vertical_line">
+            <area>322,184,2,352</area>
+        </shape>
+
+        <shape name="standbymode-right-line" from="base_highlight_vertical_line">
+            <area>956,184,2,352</area>
+        </shape>
+
+        <textarea name="title">
+            <area>324,184,632,70</area>
+            <font>baselarge</font>
+            <align>allcenter</align>
+            <value>MythTV is in standby mode!</value>
+        </textarea>
+
+        <statetype name="backendstatus">
+            <area>324,244,632,292</area>
+            <state name="idle">
+                <area>0,0,632,292</area>
+                <shape name="icon">
+                    <area>87,10,458,212</area>
+                    <type>roundbox</type>
+                    <fill color="#80d400" />
+                    <cornerradius>5</cornerradius>
+                </shape>
+                <textarea name="status">
+                    <area>0,222,632,70</area>
+                    <font>baselargegreen</font>
+                    <value>Backend is idle!</value>
+                    <align>allcenter</align>
+                    <multiline>true</multiline>
+                </textarea>
+            </state>
+            <state name="recording" from="idle">
+                <shape name="icon">
+                    <fill color="#d93636" />
+                </shape>
+                <textarea name="status">
+                    <font>baselargered</font>
+                    <value>Backend is recording!</value>
+                </textarea>
+            </state>
+            <state name="shuttingdown" from="idle">
+                <shape name="icon">
+                    <fill color="#d9d900" />
+                </shape>
+                <textarea name="status">
+                    <font>baselargeyellow</font>
+                    <value>Shutting Down!</value>
+                </textarea>
+            </state>
+            <state name="offline" from="idle">
+                <shape name="icon">
+                    <fill color="#d93636" />
+                </shape>
+                <textarea name="status">
+                    <font>baselargered</font>
+                    <value>Backend is offline!</value>
+                </textarea>
+            </state>
+        </statetype>
+
+    </window>
+
 </mythuitheme>
