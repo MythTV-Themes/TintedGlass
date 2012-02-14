@@ -2686,7 +2686,7 @@
                     </shape>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background"from="base_button_background_selected">
+                    <shape name="background" from="base_button_background_selected">
                         <area>0,0,1080,150</area>
                         <cornerradius>5</cornerradius>
                     </shape>
