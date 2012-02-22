@@ -1961,37 +1961,37 @@
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>8,10,80,45</area>
+                        <area>20,10,80,45</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>98,0,489,65</area>
+                        <area>110,0,477,65</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>18,12,53,40</area>
+                                <area>30,12,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>18,12,53,40</area>
+                                <area>30,12,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>18,12,53,40</area>
+                            <area>30,12,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>18,12,53,40</area>
+                            <area>30,12,53,40</area>
                             <imagetype name="icon">
                             </imagetype>
                         </state>
@@ -2188,7 +2188,7 @@
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>8,3,59,44</area>
+                        <area>8,4,58,43</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
@@ -2196,17 +2196,17 @@
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>77,0,535,30</area>
+                        <area>76,0,536,30</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>77,28,325,21</area>
+                        <area>76,28,319,21</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>412,29,200,18</area>
+                        <area>405,29,200,18</area>
                         <font>basesupersmallyellow</font>
                         <align>right,bottom</align>
                         <template>Released %1</template>
@@ -2215,19 +2215,19 @@
                 <state name="selectedactive">
                     <area>0,0,620,204</area>
                     <imagetype name="buttonimage">
-                        <area>8,2,133,200</area>
+                        <area>8,6,128,192</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>151,0,461,30</area>
+                        <area>146,0,466,30</area>
                         <font>basesmallyellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>151,32,461,24</area>
+                        <area>146,32,466,24</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
@@ -2238,14 +2238,14 @@
                         <template>Released %1</template>
                     </textarea>
                     <textarea name="userrating">
-                        <area>151,182,251,20</area>
+                        <area>146,182,256,20</area>
                         <multiline>no</multiline>
                         <font>basesupersmallyellow</font>
                         <align>left,vcenter</align>
                         <template>User Rating: %1</template>
                     </textarea>
                     <textarea name="description">
-                        <area>151,62,461,120</area>
+                        <area>146,62,466,120</area>
                         <multiline>yes</multiline>
                         <font>baseevensmaller</font>
                         <align>vcenter,left</align>
@@ -2310,17 +2310,17 @@
                         <area>2%,98%,98%,1</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>8,5,156,88</area>
+                        <area>30,12,134,76</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>174,0,414,56</area>
+                        <area>174,0,392,56</area>
                         <align>left,vcenter</align>
                         <font>basemediumlarger</font>
                     </textarea>
                     <textarea name="url">
-                        <area>174,64,414,20</area>
+                        <area>174,64,392,20</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmall</font>
                     </textarea>
