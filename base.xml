@@ -1490,7 +1490,7 @@
         </shape>
 
         <shape name="busy-dialog-bottom-line" from="base_highlight_line">
-            <area>341,430,598,2</area>
+            <area>341,428,598,2</area>
         </shape>
 
         <shape name="busy-dialog-left-line" from="base_highlight_vertical_line">
