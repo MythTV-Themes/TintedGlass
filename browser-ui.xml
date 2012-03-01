@@ -349,6 +349,20 @@
     <window name="bookmarkeditor">
         <area>-1,-1,816,516</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="bookmark-editor-backdrop" from="base_popup_backdrop">
             <area>0,0,816,516</area>
         </shape>

@@ -1332,6 +1332,20 @@
     <window name="MythPopupBox">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="popup-backdrop" from="base_popup_backdrop">
             <area>440,128,400,463</area>
         </shape>
@@ -1403,6 +1417,20 @@
    <window name="MythDialogBox">
         <!-- Make window behave as a popup -->
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
             <area>236,102,815,516</area>
@@ -1518,6 +1546,20 @@
     <window name="MythProgressDialog">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="boxshape" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
@@ -1561,6 +1603,20 @@
 
     <window name="MythConfirmationDialog">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="boxshape" from="base_popup_backdrop">
             <area>350,262,587,200</area>
@@ -1612,6 +1668,20 @@
     <!-- Popup search dialog used to search button lists -->
     <window name="MythSearchListDialog">
         <area>-1,-1,640,120</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="search-list-dialog-backdrop" from="base_popup_backdrop">
             <area>0,0,640,120</area>
@@ -1682,6 +1752,20 @@
     <window name="MythTextInputDialog">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="text-input-backdrop" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
@@ -1724,6 +1808,20 @@
 
     <window name="MythTimeInputDialog">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="mythtime-input-dialog-backdrop" from="base_popup_backdrop">
             <area>350,278,580,165</area>
@@ -1795,6 +1893,20 @@
 
     <window name="MythSearchDialog">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="boxshape" from="base_popup_backdrop">
             <area>380,100,520,520</area>
@@ -2104,6 +2216,20 @@
     <window name="videowindow">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="videowindow-backdrop" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
@@ -2143,6 +2269,20 @@
 
     <window name="MythMetadataResults">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="metadata-results-backdrop" from="base_popup_backdrop">
             <area>320,36,640,649</area>
@@ -2264,6 +2404,20 @@
 
     <window name="MythArtworkResults">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="artwork-backdrop" from="base_popup_backdrop">
             <area>332,36,616,649</area>

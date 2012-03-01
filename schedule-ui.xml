@@ -1521,6 +1521,20 @@
     <window name="phrasepopup">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
             <area>390,110,500,500</area>
         </shape>
@@ -1609,6 +1623,20 @@
     <window name="powersearchpopup">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="power-search-backdrop" from="base_popup_backdrop">
             <area>390,110,500,500</area>
         </shape>
@@ -1692,6 +1720,20 @@
 
     <window name="editpowersearchpopup">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
             <area>390,85,500,550</area>
@@ -1996,6 +2038,20 @@
 
     <window name="searchpopup">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
             <area>135,26,1010,52</area>

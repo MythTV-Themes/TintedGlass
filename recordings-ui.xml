@@ -1230,6 +1230,20 @@
     <window name="changeview">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="change-view-backdrop" from="base_popup_backdrop">
             <area>450,128,380,463</area>
         </shape>
@@ -1333,6 +1347,20 @@
     <window name="passwordchanger">
         <area>-1,-1,1280,720</area>
 
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
         <shape name="password-changer-backdrop" from="base_popup_backdrop">
             <area>350,228,587,270</area>
         </shape>
@@ -1386,6 +1414,20 @@
 
     <window name="groupselector">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="group-selector-backdrop" from="base_popup_backdrop">
             <area>450,128,380,463</area>
@@ -1451,6 +1493,20 @@
 
     <window name="iconhelp">
         <area>-1,-1,1280,720</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="icon-help-backdrop" from="base_popup_backdrop">
             <area>290,110,700,500</area>
@@ -1669,6 +1725,20 @@
 
     <window name="editmetadata">
         <area>-1,-1,620,600</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="edit-metadata-backdrop" from="base_popup_backdrop">
             <area>0,0,620,600</area>
