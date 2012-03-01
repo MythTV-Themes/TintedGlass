@@ -1668,113 +1668,113 @@
     </window>
 
     <window name="editmetadata">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,620,600</area>
 
         <shape name="edit-metadata-backdrop" from="base_popup_backdrop">
-            <area>330,60,620,600</area>
+            <area>0,0,620,600</area>
         </shape>
 
         <shape name="edit-metadata-backdrop-line" from="base_backdrop_line">
-            <area>331,61,618,598</area>
+            <area>1,1,618,598</area>
         </shape>
 
         <shape name="edit-metatdata-top-line" from="base_highlight_line">
-            <area>332,62,616,2</area>
+            <area>2,2,616,2</area>
         </shape>
 
         <shape name="edit-metadata-bottom-line" from="base_highlight_line">
-            <area>332,656,616,2</area>
+            <area>2,596,616,2</area>
         </shape>
 
         <shape name="edit-metadata-left-line" from="base_highlight_vertical_line">
-            <area>332,64,2,592</area>
+            <area>2,4,2,592</area>
         </shape>
 
         <shape name="edit-metadata-right-line" from="base_highlight_vertical_line">
-            <area>946,64,2,592</area>
+            <area>616,4,2,592</area>
         </shape>
 
         <shape name="edit-metadata-seperator-top-line" from="base_line">
-            <area>353,112,574,2</area>
+            <area>23,52,574,2</area>
         </shape>
 
         <shape name="edit-metadata-seperator-bottom-line" from="base_line">
-            <area>353,602,574,2</area>
+            <area>23,542,574,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>340,64,600,48</area>
+            <area>10,4,600,48</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <value>Edit Recording Metadata</value>
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>354,120,300,30</area>
+            <area>24,60,300,30</area>
             <font>basmesmall</font>
             <align>left,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="title" from="base_wide_textedit">
-            <area>350,154,580,32</area>
+            <area>20,94,580,32</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
-            <area>354,192,300,30</area>
+            <area>24,132,300,30</area>
             <align>left,vcenter</align>
             <value>Subtitle:</value>
         </textarea>
 
         <textedit name="subtitle" from="base_wide_textedit">
-            <area>350,226,580,32</area>
+            <area>20,166,580,32</area>
         </textedit>
 
         <textarea name="descriptionlabel" from="basetextarea">
-            <area>354,264,300,30</area>
+            <area>24,204,300,30</area>
             <align>left,vcenter</align>
             <value>Description:</value>
         </textarea>
 
         <textedit name="description" from="base_wide_textedit">
-            <area>350,298,580,32</area>
+            <area>20,238,580,32</area>
         </textedit>
 
         <textarea name="inetreflabel" from="basetextarea">
-            <area>444,366,86,40</area>
+            <area>114,306,86,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Inetref:</value>
         </textarea>
 
         <textedit name="inetref" from="base_textedit">
-            <area>549,370,287,32</area>
+            <area>219,310,287,32</area>
         </textedit>
 
         <textarea name="seaslabel" from="basetextarea">
-            <area>334,442,296,40</area>
+            <area>4,382,296,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season" from="base_spinbox">
-            <position>650,442</position>
+            <position>320,382</position>
         </spinbox>
 
         <textarea name="eplabel" from="basetextarea">
-            <area>334,522,296,40</area>
+            <area>4,462,296,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode" from="base_spinbox">
-            <position>650,522</position>
+            <position>320,462</position>
         </spinbox>
 
         <button name="ok" from="base_medium_button">
-            <position>465,610</position>
+            <position>135,550</position>
             <value>OK</value>
         </button>
     </window>
