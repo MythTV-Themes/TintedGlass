@@ -347,107 +347,104 @@
     </window>
 
     <window name="bookmarkeditor">
-        <area>0,0,1280,720</area>
-
-        <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,816,516</area>
 
         <shape name="bookmark-editor-backdrop" from="base_popup_backdrop">
-            <area>232,102,816,516</area>
+            <area>0,0,816,516</area>
         </shape>
 
         <shape name="bookmark-editor-backdrop-line" from="base_backdrop_line">
-            <area>233,103,814,404</area>
+            <area>1,1,814,404</area>
         </shape>
 
         <shape name="bookmark-editor-top-line" from="base_highlight_line">
-            <area>234,104,812,2</area>
+            <area>2,2,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-line" from="base_highlight_line">
-            <area>234,504,812,2</area>
+            <area>2,402,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-left-line" from="base_highlight_vertical_line">
-            <area>234,106,2,398</area>
+            <area>2,4,2,398</area>
         </shape>
 
         <shape name="bookmark-editor-right-line" from="base_highlight_vertical_line">
-            <area>1044,106,2,398</area>
+            <area>812,4,2,398</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-backdrop-line" from="base_backdrop_line">
-            <area>233,513,814,104</area>
+            <area>1,411,814,104</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-top-line" from="base_highlight_line">
-            <area>234,514,812,2</area>
+            <area>2,412,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-bottom-line" from="base_highlight_line">
-            <area>234,614,812,2</area>
+            <area>2,512,812,2</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-left-line" from="base_highlight_vertical_line">
-            <area>234,516,2,98</area>
+            <area>2,414,2,98</area>
         </shape>
 
         <shape name="bookmark-editor-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1044,516,2,98</area>
+            <area>812,414,2,98</area>
         </shape>
 
         <shape name="bookmark-editor-seperator-first-line" from="base_line">
-            <area>255,147,770,2</area>
+            <area>23,45,770,2</area>
         </shape>
 
         <textarea name="title">
-            <area>236,106,808,41</area>
+            <area>4,4,808,41</area>
             <align>allcenter</align>
             <font>basesmallyellow</font>
         </textarea>
 
         <textarea name="categorylabel" from="basetextarea">
-            <area>310,210,104,30</area>
+            <area>78,108,104,30</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <textedit name="category" from="base_textedit">
-            <area>424,209,287,32</area>
+            <area>192,107,287,32</area>
         </textedit>
 
         <button name="findcategory" from="base_button">
-            <position>818,209</position>
+            <position>586,107</position>
             <value>Find</value>
         </button>
 
         <textarea name="namelabel" from="basetextarea">
-            <area>282,310,100,30</area>
+            <area>50,208,100,30</area>
             <align>right,vcenter</align>
             <value>Name:</value>
         </textarea>
 
         <textedit name="name" from="base_wide_textedit">
-            <area>392,309,580,32</area>
+            <area>160,207,580,32</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>282,410,100,30</area>
+            <area>50,308,100,30</area>
             <align>right,vcenter</align>
             <value>URL:</value>
         </textarea>
 
         <textedit name="url" from="base_wide_textedit">
-            <area>392,409,580,32</area>
+            <area>160,307,580,32</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">
-            <position>270,545</position>
+            <position>38,443</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_medium_button">
-            <position>659,545</position>
+            <position>427,443</position>
             <value>OK</value>
         </button>
 
