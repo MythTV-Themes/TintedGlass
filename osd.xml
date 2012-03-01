@@ -369,7 +369,7 @@
 
         <textarea name="osd_number_entry">
             <font>large</font>
-            <area>84,49,140,34</area>
+            <area>83,49,142,34</area>
             <align>allcenter</align>
         </textarea>
 
