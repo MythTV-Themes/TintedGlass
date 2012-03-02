@@ -2216,20 +2216,6 @@
     <window name="videowindow">
         <area>-1,-1,1280,720</area>
 
-        <animation trigger="AboutToShow">
-            <section>
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" easingcurve="OutQuart"/>
-            </section>
-        </animation>
-
-        <animation trigger="AboutToHide">
-            <section>
-                <alpha start="255" end="0" easingcurve="InQuart"/>
-                <zoom start="100" end="0" easingcurve="InQuart"/>
-            </section>
-        </animation>
-
         <shape name="videowindow-backdrop" from="base_popup_backdrop">
             <area>350,277,587,170</area>
         </shape>
