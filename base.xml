@@ -1330,7 +1330,7 @@
 
     <!-- Popup Dialogue Box -->
     <window name="MythPopupBox">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,400,463</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1347,42 +1347,42 @@
         </animation>
 
         <shape name="popup-backdrop" from="base_popup_backdrop">
-            <area>440,128,400,463</area>
+            <area>0,0,400,463</area>
         </shape>
 
         <shape name="popup-backdrop-line" from="base_backdrop_line">
-            <area>441,129,398,461</area>
+            <area>1,1,398,461</area>
         </shape>
 
         <shape name="popup-first-line" from="base_highlight_line">
-            <area>442,130,396,2</area>
+            <area>2,2,396,2</area>
         </shape>
 
         <shape name="popup-second-line" from="base_line">
-            <area>463,302,354,2</area>
+            <area>23,174,354,2</area>
         </shape>
 
         <shape name="popup-third-line" from="base_highlight_line">
-            <area>442,587,396,2</area>
+            <area>2,459,396,2</area>
         </shape>
 
         <shape name="popup-left-line" from="base_highlight_vertical_line">
-            <area>442,132,2,455</area>
+            <area>2,4,2,455</area>
         </shape>
 
         <shape name="popup-right-line" from="base_highlight_vertical_line">
-            <area>836,132,2,455</area>
+            <area>396,4,2,455</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>456,138,368,158</area>
+            <area>16,10,368,158</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>455,319,370,264</area>
+            <area>15,191,370,264</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,370,40</area>
