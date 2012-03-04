@@ -1416,7 +1416,7 @@
     <!-- Large Dialogue Box -->
    <window name="MythDialogBox">
         <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,815,516</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1433,42 +1433,42 @@
         </animation>
 
         <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
-            <area>236,102,815,516</area>
+            <area>0,0,815,516</area>
         </shape>
 
         <shape name="large-dialogbox-backdrop-line" from="base_backdrop_line">
-            <area>237,103,813,514</area>
+            <area>1,1,813,514</area>
         </shape>
 
         <shape name="large-dialogbox-top-line" from="base_highlight_line">
-            <area>238,104,811,2</area>
+            <area>2,2,811,2</area>
         </shape>
 
         <shape name="large-dialogbox-bottom-line" from="base_highlight_line">
-            <area>238,614,811,2</area>
+            <area>2,512,811,2</area>
         </shape>
 
         <shape name="large-dialogbox-left-line" from="base_highlight_vertical_line">
-            <area>238,106,2,508</area>
+            <area>2,4,2,508</area>
         </shape>
 
         <shape name="large-dialogbox-right-line" from="base_highlight_vertical_line">
-            <area>1047,106,2,508</area>
+            <area>811,4,2,508</area>
         </shape>
 
         <shape name="large-dialogbox-seperator-first-line" from="base_line">
-            <area>259,400,769,2</area>
+            <area>23,298,769,2</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>251,112,785,282</area>
+            <area>15,10,785,282</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>257,423,772,174</area>
+            <area>21,321,772,174</area>
             <layout>grid</layout>
             <wrapstyle>selection</wrapstyle>
             <drawfrombottom>no</drawfrombottom>
@@ -1503,40 +1503,40 @@
     </window>
 
     <window name="MythBusyDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,602,144</area>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>339,288,602,144</area>
+            <area>0,0,602,144</area>
         </shape>
 
         <shape name="boxshape-line" from="base_backdrop_line">
-            <area>340,289,600,142</area>
+            <area>1,1,600,142</area>
         </shape>
 
         <shape name="busy-dialog-top-line" from="base_highlight_line">
-            <area>341,290,598,2</area>
+            <area>2,2,598,2</area>
         </shape>
 
         <shape name="busy-dialog-bottom-line" from="base_highlight_line">
-            <area>341,428,598,2</area>
+            <area>2,140,598,2</area>
         </shape>
 
         <shape name="busy-dialog-left-line" from="base_highlight_vertical_line">
-            <area>341,292,2,138</area>
+            <area>2,4,2,138</area>
         </shape>
 
         <shape name="busy-dialog-right-line" from="base_highlight_vertical_line">
-            <area>937,292,2,138</area>
+            <area>598,4,2,138</area>
         </shape>
 
         <imagetype name="animation">
-            <position>372,353</position>
+            <position>33,65</position>
             <filepattern low="1" high="60" cycle="reverse">images/busy/busy%1.png</filepattern>
             <delay>14</delay>
         </imagetype>
 
         <textarea name="message" from="basetextarea">
-            <area>345,374,590,51</area>
+            <area>6,86,590,51</area>
             <font>basesmalleryellow</font>
             <multiline>true</multiline>
             <align>allcenter</align>
@@ -1544,7 +1544,7 @@
     </window>
 
     <window name="MythProgressDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,170</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1561,48 +1561,48 @@
         </animation>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>0,0,587,170</area>
         </shape>
 
         <shape name="boxshape-line" from="base_backdrop_line">
-            <area>351,278,585,168</area>
+            <area>1,1,585,168</area>
         </shape>
 
         <shape name="progress-dialog-top-line" from="base_highlight_line">
-            <area>352,279,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="progress-dialog-bottom-line" from="base_highlight_line">
-            <area>352,443,583,2</area>
+            <area>2,166,583,2</area>
         </shape>
 
         <shape name="progress-dialog-left-line" from="base_highlight_vertical_line">
-            <area>352,281,2,162</area>
+            <area>2,4,2,162</area>
         </shape>
 
         <shape name="progress-dialog-right-line" from="base_highlight_vertical_line">
-            <area>933,281,2,162</area>
+            <area>583,4,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>364,291,552,66</area>
+            <area>14,14,552,66</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <progressbar name="progressbar" from="baseprogressbar">
-            <position>375,357</position>
+            <position>25,80</position>
         </progressbar>
 
         <textarea name="progresstext" from="basetextarea">
-            <area>380,407,200,30</area>
+            <area>30,130,200,30</area>
             <align>left,top</align>
             <value>0%</value>
         </textarea>
     </window>
 
     <window name="MythConfirmationDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,200</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1619,35 +1619,35 @@
         </animation>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>350,262,587,200</area>
+            <area>0,0,587,200</area>
         </shape>
 
         <shape name="boxshape-line" from="base_backdrop_line">
-            <area>351,263,585,198</area>
+            <area>1,1,585,198</area>
         </shape>
 
         <shape name="confirmation-dialog-top-line" from="base_highlight_line">
-            <area>352,264,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="confirmation-dialog-bottom-line" from="base_highlight_line">
-            <area>352,458,583,2</area>
+            <area>2,196,583,2</area>
         </shape>
 
         <shape name="confirmation-dialog-left-line" from="base_highlight_vertical_line">
-            <area>352,266,2,192</area>
+            <area>2,4,2,192</area>
         </shape>
 
         <shape name="confirmation-dialog-right-line" from="base_highlight_vertical_line">
-            <area>933,266,2,192</area>
+            <area>583,4,2,192</area>
         </shape>
 
         <shape name="confirmation-dialog-seperator-first-line" from="base_line">
-            <area>373,401,541,2</area>
+            <area>23,139,541,2</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>358,270,571,127</area>
+            <area>8,8,571,127</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <multiline>yes</multiline>
@@ -1655,12 +1655,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>449,413</position>
+            <position>99,151</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>688,413</position>
+            <position>338,151</position>
             <value>OK</value>
         </button>
     </window>
@@ -1750,7 +1750,7 @@
     </window>
 
     <window name="MythTextInputDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,170</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1767,47 +1767,47 @@
         </animation>
 
         <shape name="text-input-backdrop" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>0,0,587,170</area>
         </shape>
 
         <shape name="text-input-backdrop-line" from="base_backdrop_line">
-            <area>351,278,585,168</area>
+            <area>1,1,585,168</area>
         </shape>
 
         <shape name="text-input-dialog-top-line" from="base_highlight_line">
-            <area>352,279,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="text-input-dialog-bottom-line" from="base_highlight_line">
-            <area>352,443,583,2</area>
+            <area>2,166,583,2</area>
         </shape>
 
         <shape name="text-input-dialog-left-line" from="base_highlight_vertical_line">
-            <area>352,281,2,162</area>
+            <area>2,4,2,162</area>
         </shape>
 
         <shape name="text-input-dialog-right-line" from="base_highlight_vertical_line">
-            <area>933,281,2,162</area>
+            <area>583,4,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>360,291,567,36</area>
+            <area>10,14,567,36</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <area>500,339,287,32</area>
+            <area>150,62,287,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>568,393</position>
+            <position>218,116</position>
             <value>OK</value>
         </button>
     </window>
 
     <window name="MythTimeInputDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,580,165</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1824,31 +1824,31 @@
         </animation>
 
         <shape name="mythtime-input-dialog-backdrop" from="base_popup_backdrop">
-            <area>350,278,580,165</area>
+            <area>0,0,580,165</area>
         </shape>
 
         <shape name="mythtime-input-dialog-backdrop-line" from="base_backdrop_line">
-            <area>351,279,578,163</area>
+            <area>1,1,578,163</area>
         </shape>
 
         <shape name="mythtime-input-dialog-top-line" from="base_highlight_line">
-            <area>352,280,576,2</area>
+            <area>2,2,576,2</area>
         </shape>
 
         <shape name="mythtime-input-dialog-bottom-line" from="base_highlight_line">
-            <area>352,439,576,2</area>
+            <area>2,161,576,2</area>
         </shape>
 
         <shape name="mythtime-input-dialog-left-line" from="base_highlight_vertical_line">
-            <area>352,282,2,157</area>
+            <area>2,4,2,157</area>
         </shape>
 
         <shape name="mythtime-input-dialog-right-line" from="base_highlight_vertical_line">
-            <area>926,282,2,157</area>
+            <area>576,4,2,157</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>350,285,580,50</area>
+            <area>0,7,580,50</area>
             <font>basemediumdarkyellow</font>
             <align>allcenter</align>
             <value>Select Time &amp; Date</value>
@@ -1856,7 +1856,7 @@
         </textarea>
 
         <buttonlist name="dates" from="base_selector">
-            <area>390,338,200,40</area>
+            <area>40,60,200,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,200,40</area>
@@ -1881,18 +1881,18 @@
         </buttonlist>
 
         <buttonlist name="times" from="dates">
-            <area>680,338,200,40</area>
+            <area>330,60,200,40</area>
         </buttonlist>
 
         <button name="ok" from="base_button">
-            <position>570,396</position>
+            <position>220,118</position>
             <value>OK</value>
         </button>
 
     </window>
 
     <window name="MythSearchDialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,520,520</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1909,50 +1909,50 @@
         </animation>
 
         <shape name="boxshape" from="base_popup_backdrop">
-            <area>380,100,520,520</area>
+            <area>0,0,520,520</area>
         </shape>
 
         <shape name="boxshape-line" from="base_backdrop_line">
-            <area>381,101,518,518</area>
+            <area>1,1,518,518</area>
         </shape>
 
         <shape name="search-dialog-top-line" from="base_highlight_line">
-            <area>382,102,516,2</area>
+            <area>2,2,516,2</area>
         </shape>
 
         <shape name="search-dialog-bottom-line" from="base_highlight_line">
-            <area>382,616,516,2</area>
+            <area>2,516,516,2</area>
         </shape>
 
         <shape name="search-dialog-left-line" from="base_highlight_vertical_line">
-            <area>382,104,2,512</area>
+            <area>2,4,2,512</area>
         </shape>
 
         <shape name="search-dialog-right-line" from="base_highlight_vertical_line">
-            <area>896,104,2,512</area>
+            <area>516,4,2,512</area>
         </shape>
 
         <shape name="search-dialog-seperator-first-line" from="base_line">
-            <area>403,170,474,2</area>
+            <area>23,70,474,2</area>
         </shape>
 
         <shape name="search-dialog-seperator-second-line" from="base_line">
-            <area>403,560,474,2</area>
+            <area>23,460,474,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>398,104,484,66</area>
+            <area>18,4,484,66</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="input" from="base_textedit">
-            <area>497,183,287,32</area>
+            <area>117,83,287,32</area>
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
-            <area>410,226,460,320</area>
+            <area>30,126,460,320</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,460,40</area>
@@ -1977,12 +1977,12 @@
         </buttonlist>
 
         <button name="cancel" from="base_button">
-            <position>457,572</position>
+            <position>77,472</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>674,572</position>
+            <position>294,472</position>
             <value>OK</value>
         </button>
     </window>
@@ -2214,47 +2214,47 @@
     </window>
 
     <window name="videowindow">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,170</area>
 
         <shape name="videowindow-backdrop" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>0,0,587,170</area>
         </shape>
 
         <shape name="videowindow-backdrop-line" from="base_backdrop_line">
-            <area>351,278,585,168</area>
+            <area>1,1,585,168</area>
         </shape>
 
         <shape name="videowindow-top-line" from="base_highlight_line">
-            <area>352,279,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="videowindow-bottom-line" from="base_highlight_line">
-            <area>352,443,583,2</area>
+            <area>2,166,583,2</area>
         </shape>
 
         <shape name="videowindow-left-line" from="base_highlight_vertical_line">
-            <area>352,281,2,162</area>
+            <area>2,4,2,162</area>
         </shape>
 
         <shape name="videowindow-right-line" from="base_highlight_vertical_line">
-            <area>933,281,2,162</area>
+            <area>583,4,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>364,281,552,92</area>
+            <area>14,4,552,92</area>
             <font>basesmalldarkyellow</font>
             <align>hcenter,bottom</align>
             <value>Please Wait...</value>
         </textarea>
 
         <progressbar name="progress" from="baseprogressbar">
-            <position>375,403</position>
+            <position>25,126</position>
         </progressbar>
 
     </window>
 
     <window name="MythMetadataResults">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,640,649</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -2271,42 +2271,42 @@
         </animation>
 
         <shape name="metadata-results-backdrop" from="base_popup_backdrop">
-            <area>320,36,640,649</area>
+            <area>0,0,640,649</area>
         </shape>
 
         <shape name="metadata-results-backdrop-line" from="base_backdrop_line">
-            <area>321,37,638,647</area>
+            <area>1,1,638,647</area>
         </shape>
 
         <shape name="metadata-results-top-line" from="base_highlight_line">
-            <area>322,38,636,2</area>
+            <area>2,2,636,2</area>
         </shape>
 
         <shape name="metadata-results-bottom-line" from="base_highlight_line">
-            <area>322,681,636,2</area>
+            <area>2,645,636,2</area>
         </shape>
         
         <shape name="metadata-results-left-line" from="base_highlight_vertical_line">
-            <area>322,40,2,641</area>
+            <area>2,4,2,641</area>
         </shape>
 
         <shape name="metadata-results-right-line" from="base_highlight_vertical_line">
-            <area>956,40,2,641</area>
+            <area>636,4,2,641</area>
         </shape>
 
         <shape name="metadata-results-seperator-first-line" from="base_line">
-            <area>341,75,598,2</area>
+            <area>21,39,598,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>323,40,634,35</area>
+            <area>3,4,634,35</area>
             <font>basesmalleryellow</font>
             <align>allcenter</align>
             <value>Metadata Results</value>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>330,81,620,600</area>
+            <area>10,45,620,600</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,620,51</area>
@@ -2389,7 +2389,7 @@
     </window>
 
     <window name="MythArtworkResults">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,616,649</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -2406,42 +2406,42 @@
         </animation>
 
         <shape name="artwork-backdrop" from="base_popup_backdrop">
-            <area>332,36,616,649</area>
+            <area>0,0,616,649</area>
         </shape>
 
         <shape name="artwork-backdrop-line" from="base_backdrop_line">
-            <area>333,37,614,647</area>
+            <area>1,1,614,647</area>
         </shape>
 
         <shape name="artwork-top-line" from="base_highlight_line">
-            <area>334,38,612,2</area>
+            <area>2,2,612,2</area>
         </shape>
 
         <shape name="artwork-bottom-line" from="base_highlight_line">
-            <area>334,681,612,2</area>
+            <area>2,645,612,2</area>
         </shape>
 
         <shape name="artwork-left-line" from="base_highlight_vertical_line">
-            <area>334,40,2,641</area>
+            <area>2,4,2,641</area>
         </shape>
 
         <shape name="artwork-right-line" from="base_highlight_vertical_line">
-            <area>944,40,2,641</area>
+            <area>612,4,2,641</area>
         </shape>
 
         <shape name="artwork-seperator-first-line" from="base_line">
-            <area>350,81,580,2</area>
+            <area>18,45,580,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>342,40,596,41</area>
+            <area>10,4,596,41</area>
             <value>Artwork Results</value>
             <font>basesmalleryellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>342,87,596,600</area>
+            <area>10,51,596,600</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">
                 <state name="active">

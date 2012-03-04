@@ -3,53 +3,53 @@
 <mythuitheme>
 
     <window name="keygrabpopup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,300</area>
+
+        <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
+            <area>0,0,500,300</area>
+        </shape>
+
+        <shape name="key-grab-popup-backdrop-line" from="base_backdrop_line">
+            <area>1,1,498,298</area>
+        </shape>
+
+        <shape name="key-grab-popup-top-line" from="base_highlight_line">
+            <area>2,2,496,2</area>
+        </shape>
+
+        <shape name="key-grab-popup-bottom-line" from="base_highlight_line">
+            <area>2,296,496,2</area>
+        </shape>
+
+        <shape name="key-grab-popup-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,292</area>
+        </shape>
+
+        <shape name="key-grab-popup-right-line" from="base_highlight_vertical_line">
+            <area>496,4,2,292</area>
+        </shape>
 
         <textarea name="heading" from="basetextarea">
-            <area>390,231,500,26</area>
+            <area>0,21,500,26</area>
             <font>basesmallyellow</font>
             <value>Key Grabber</value>
             <align>allcenter</align>
         </textarea>
 
-        <shape name="key-grab-popup-backdrop" from="base_popup_backdrop">
-            <area>390,210,500,300</area>
-        </shape>
-
-        <shape name="key-grab-popup-backdrop-line" from="base_backdrop_line">
-            <area>391,211,498,298</area>
-        </shape>
-
-        <shape name="key-grab-popup-top-line" from="base_highlight_line">
-            <area>392,212,496,2</area>
-        </shape>
-
-        <shape name="key-grab-popup-bottom-line" from="base_highlight_line">
-            <area>392,506,496,2</area>
-        </shape>
-
-        <shape name="key-grab-popup-left-line" from="base_highlight_vertical_line">
-            <area>392,214,2,292</area>
-        </shape>
-
-        <shape name="key-grab-popup-right-line" from="base_highlight_vertical_line">
-            <area>886,214,2,292</area>
-        </shape>
-
         <textarea name="message" from="basetextarea">
-            <area>394,214,492,241</area>
+            <area>4,4,492,241</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>456,455</position>
+            <position>66,245</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>673,455</position>
+            <position>283,245</position>
             <value>OK</value>
         </button>
 

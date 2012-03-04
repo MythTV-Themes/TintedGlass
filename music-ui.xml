@@ -997,7 +997,7 @@
 
     <!-- popup to edit a smartplaylist criteria row -->
     <window name="criteriaroweditor">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1014,46 +1014,46 @@
         </animation>
 
         <shape name="criteria-row-editor-backdrop" from="base_popup_backdrop">
-            <area>390,110,500,500</area>
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="criteria-row-editor-backdrop-line" from="base_backdrop_line">
-            <area>391,111,498,498</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="criteria-row-editor-top-line" from="base_highlight_line">
-            <area>392,112,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="criteria-row-editor-bottom-line" from="base_highlight_line">
-            <area>392,606,496,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="criteria-row-editor-left-line" from="base_highlight_vertical_line">
-            <area>392,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="criteria-row-editor-right-line" from="base_highlight_vertical_line">
-            <area>886,114,2,492</area>
+            <area>496,4,2,492</area>
         </shape>
 
         <shape name="criteria-row-editor-seperator-first-line" from="base_line">
-            <area>413,160,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="criteria-row-editor-seperator-second-line" from="base_line">
-            <area>413,545,454,2</area>
+            <area>23,435,454,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>400,114,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Edit Criteria</value>
         </textarea>
 
         <buttonlist name="fieldselector" from="base_selector">
-            <area>453,207,358,40</area>
+            <area>63,97,358,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,358,40</area>
@@ -1078,7 +1078,7 @@
         </buttonlist>
 
         <buttonlist name="operatorselector" from="base_selector">
-            <area>453,291,358,40</area>
+            <area>63,181,358,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,358,40</area>
@@ -1103,11 +1103,11 @@
         </buttonlist>
 
         <textedit name="value1edit" from="base_textedit">
-            <area>453,375,358,40</area>
+            <area>63,265,358,40</area>
         </textedit>
 
         <buttonlist name="value1selector" from="base_selector">
-            <area>453,375,358,40</area>
+            <area>63,265,358,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,358,40</area>
@@ -1132,11 +1132,11 @@
         </buttonlist>
 
         <spinbox name="value1spinbox" from="base_spinbox">
-            <position>453,375</position>
+            <position>63,265</position>
         </spinbox>
 
         <button name="value1button" from="base_searchbutton">
-            <position>842,380</position>
+            <position>452,270</position>
         </button>
 <!--
         <textarea name="andlbl"  from="basetextarea">
@@ -1146,11 +1146,11 @@
         </textarea>
 -->
         <textedit name="value2edit" from="base_textedit">
-            <area>453,459,358,40</area>
+            <area>63,349,358,40</area>
         </textedit>
 
         <buttonlist name="value2selector" from="base_selector">
-            <area>453,459,358,40</area>
+            <area>63,349,358,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,358,40</area>
@@ -1175,21 +1175,21 @@
         </buttonlist>
 
         <spinbox name="value2spinbox" from="base_spinbox">
-            <position>453,459</position>
+            <position>63,349</position>
         </spinbox>
 
         <button name="value2button" from="base_searchbutton">
-            <position>842,464</position>
+            <position>452,354</position>
         </button>
 
         <!-- Push buttons -->
         <button name="cancelbutton" from="base_button">
-            <position>458,559</position>
+            <position>68,449</position>
             <value>Cancel</value>
         </button>
 
         <button name="savebutton" from="base_button">
-            <position>676,559</position>
+            <position>286,449</position>
             <value>Save</value>
         </button>
 
@@ -1198,7 +1198,7 @@
 
     <!-- popup to edit the date in a smartplaylist criteria row -->
     <window name="dateeditordialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1215,106 +1215,106 @@
         </animation>
 
         <shape name="date-editor-dialog-backdrop" from="base_popup_backdrop">
-            <area>390,110,500,500</area>
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="date-editor-dialog-backdrop-line" from="base_backdrop_line">
-            <area>391,111,498,498</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="date-editor-dialog-top-line" from="base_highlight_line">
-            <area>392,112,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="date-editor-dialog-bottom-line" from="base_highlight_line">
-            <area>392,606,496,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="date-editor-dialog-left-line" from="base_highlight_vertical_line">
-            <area>392,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="date-editor-dialog-right-line" from="base_highlight_vertical_line">
-            <area>886,114,2,492</area>
+            <area>496,4,2,492</area>
         </shape>
 
         <shape name="date-editor-dialog-seperator-first-line" from="base_line">
-            <area>413,160,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="date-editor-dialog-seperator-second-line" from="base_line">
-            <area>413,545,454,2</area>
+            <area>23,435,454,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>400,114,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Edit Date</value>
         </textarea>
 
         <checkbox name="fixeddatecheck" from="base_checkbox">
-            <position>413,188</position>
+            <position>23,78</position>
         </checkbox>
 
         <textarea name="fixeddatelbl"  from="basetextarea">
-            <area>455,186,170,32</area>
+            <area>65,76,170,32</area>
             <align>left,vcenter</align>
             <value>Fixed Date</value>
         </textarea>
 
         <textarea name="daylbl"  from="basetextarea">
-            <area>413,243,80,30</area>
+            <area>23,133,80,30</area>
             <align>allcenter</align>
             <value>Day</value>
         </textarea>
 
         <spinbox name="dayspinbox" from="base_spinbox">
-            <position>413,273</position>
+            <position>23,163</position>
         </spinbox>
 
         <textarea name="monthlbl"  from="basetextarea">
-            <area>594,243,80,30</area>
+            <area>204,133,80,30</area>
             <align>allcenter</align>
             <value>Month</value>
         </textarea>
 
         <spinbox name="monthspinbox" from="base_spinbox">
-            <position>594,273</position>
+            <position>204,163</position>
         </spinbox>
 
         <textarea name="yearlbl"  from="basetextarea">
-            <area>775,243,80,30</area>
+            <area>385,133,80,30</area>
             <align>allcenter</align>
             <value>Year</value>
         </textarea>
 
         <spinbox name="yearspinbox" from="base_spinbox">
-            <position>775,273</position>
+            <position>385,163</position>
         </spinbox>
 
         <checkbox name="nowcheck" from="base_checkbox">
-            <position>413,335</position>
+            <position>23,225</position>
         </checkbox>
 
         <textarea name="nowlbl"  from="basetextarea">
-            <area>455,333,300,32</area>
+            <area>65,223,300,32</area>
             <align>left,vcenter</align>
             <value>Use Current Date</value>
         </textarea>
 
         <textarea name="adddayslbl"  from="basetextarea">
-            <area>413,389,92,30</area>
+            <area>23,279,92,30</area>
             <align>allcenter</align>
             <value>+/- Days</value>
         </textarea>
 
         <spinbox name="adddaysspinbox" from="base_spinbox">
-            <position>413,419</position>
+            <position>23,309</position>
         </spinbox>
 
         <shape name="matches-backdrop">
-            <area>413,480,454,40</area>
+            <area>23,370,454,40</area>
             <type>roundbox</type>
             <fill color="#333333" alpha="175" />
             <line color="#454545" alpha="180" width="2" />
@@ -1322,7 +1322,7 @@
         </shape>
 
         <textarea name="statustext" from="basetextarea">
-            <area>415,482,450,36</area>
+            <area>25,372,450,36</area>
             <font state="valid">basesmallgreen</font>
             <font state="error">basesmallred</font>
             <align>allcenter</align>
@@ -1330,12 +1330,12 @@
 
         <!-- Push buttons -->
         <button name="cancelbutton" from="base_button">
-            <position>458,559</position>
+            <position>68,449</position>
             <value>Cancel</value>
         </button>
 
         <button name="okbutton" from="base_button">
-            <position>676,559</position>
+            <position>286,449</position>
             <value>OK</value>
         </button>
 
@@ -1343,7 +1343,7 @@
 
     <!-- popup to edit the smartplaylist order by clause-->
     <window name="orderbydialog">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1360,46 +1360,46 @@
         </animation>
 
         <shape name="order-by-dialog-backdrop" from="base_popup_backdrop">
-            <area>390,110,500,500</area>
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="order-by-dialog-backdrop-line" from="base_backdrop_line">
-            <area>391,111,498,498</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="order-by-dialog-top-line" from="base_highlight_line">
-            <area>392,112,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="order-by-dialog-bottom-line" from="base_highlight_line">
-            <area>392,606,496,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="order-by-dialog-left-line" from="base_highlight_vertical_line">
-            <area>392,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="order-by-dialog-right-line" from="base_highlight_vertical_line">
-            <area>886,114,2,492</area>
+            <area>496,4,2,492</area>
         </shape>
 
         <shape name="order-by-dialog-seperator-first-line" from="base_line">
-            <area>413,160,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="order-by-dialogn-seperator-second-line" from="base_line">
-            <area>413,282,454,2</area>
+            <area>23,172,454,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>400,114,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Order By Fields</value>
         </textarea>
 
         <buttonlist name="fieldlist" from="base_list">
-            <area>413,164,454,118</area>
+            <area>23,54,454,118</area>
             <buttonarea>0,0,454,118</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1469,7 +1469,7 @@
         </buttonlist>
 
         <buttonlist name="fieldselector" from="base_selector">
-            <area>413,315,454,40</area>
+            <area>23,205,454,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,454,40</area>
@@ -1495,42 +1495,42 @@
 
         <!-- Push buttons -->
         <button name="addbutton" from="base_small_button">
-            <position>413,385</position>
+            <position>23,275</position>
             <value>Add</value>
         </button>
 
         <button name="deletebutton" from="addbutton">
-            <position>667,385</position>
+            <position>277,275</position>
             <value>Delete</value>
         </button>
 
         <button name="moveupbutton" from="addbutton">
-            <position>413,435</position>
+            <position>23,325</position>
             <value>Move Up</value>
         </button>
 
         <button name="movedownbutton" from="addbutton">
-            <position>667,435</position>
+            <position>277,325</position>
             <value>Move Down</value>
         </button>
 
         <button name="ascendingbutton" from="addbutton">
-            <position>413,485</position>
+            <position>23,375</position>
             <value>Ascending</value>
         </button>
 
         <button name="descendingbutton" from="addbutton">
-            <position>667,485</position>
+            <position>277,375</position>
             <value>Descending</value>
         </button>
 
         <button name="cancelbutton" from="addbutton">
-            <position>413,535</position>
+            <position>23,425</position>
             <value>Cancel</value>
         </button>
 
         <button name="okbutton" from="addbutton">
-            <position>667,535</position>
+            <position>277,425</position>
             <value>Save</value>
         </button>
 
@@ -1626,7 +1626,7 @@
 
     <!-- used in the visualiser screen to show some track details after a track change -->
     <window name="trackinfo_popup">
-        <area>-1,0,1280,720</area>
+        <area>-1,491,1000,190</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1643,76 +1643,76 @@
         </animation>
 
         <shape name="trackinfo-popup-backdrop" from="base_popup_backdrop">
-            <area>140,491,1000,190</area>
+            <area>0,0,1000,190</area>
         </shape>
 
         <shape name="trackinfo-popup-backdrop-line" from="base_backdrop_line">
-            <area>141,492,998,188</area>
+            <area>1,1,998,188</area>
         </shape>
 
         <shape name="trackinfo-popup-top-line" from="base_highlight_line">
-            <area>141,493,998,2</area>
+            <area>1,2,998,2</area>
         </shape>
 
         <shape name="trackinfo-popup-bottom-line" from="base_highlight_line">
-            <area>141,677,998,2</area>
+            <area>1,186,998,2</area>
         </shape>
 
         <shape name="play-list-left-line" from="base_highlight_vertical_line">
-            <area>142,495,2,182</area>
+            <area>2,4,2,182</area>
         </shape>
 
         <shape name="play-list-right-line" from="base_highlight_vertical_line">
-            <area>1136,495,2,182</area>
+            <area>996,4,2,182</area>
         </shape>
 
         <imagetype name="mm_blackhole_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>160,511,148,148</area>
+            <area>20,20,148,148</area>
         </imagetype>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
-            <area>162,513,144,144</area>
+            <area>22,22,144,144</area>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>320,508,660,30</area>
+            <area>180,17,660,30</area>
             <font>baselargeyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>320,545,660,24</area>
+            <area>180,54,660,24</area>
             <font>basemedium</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>320,575,660,24</area>
+            <area>180,84,660,24</area>
             <font>basemediumblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <statetype name="ratingstate" from="baseratingstate">
-            <position>320,606</position>
+            <position>180,115</position>
         </statetype>
 
         <textarea name="length_label" from="basetextarea">
-            <area>853,606,185,22</area>
+            <area>673,115,185,22</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Length:</value>
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>1048,606,72,22</area>
+            <area>908,115,72,22</area>
             <font>basesmallblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="nexttitle" from="basetextarea">
-            <area>320,637,660,24</area>
+            <area>180,146,660,24</area>
             <font>basemediumblue</font>
             <align>left,vcenter</align>
             <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
@@ -2715,60 +2715,60 @@
     </window>
 
     <window name="miniplayer">
-        <area>0,0,1280,720</area>
+        <area>-1,598,444,134</area>
 
         <shape name="mini-player-backdrop" from="base_popup_backdrop">
-            <area>418,598,444,134</area>
+            <area>0,0,444,134</area>
         </shape>
 
         <shape name="mini-player-backdrop-line" from="base_backdrop_line">
-            <area>419,599,442,132</area>
+            <area>1,1,442,132</area>
         </shape>
 
         <shape name="mini-player-top-line" from="base_highlight_line">
-            <area>420,600,440,2</area>
+            <area>2,2,440,2</area>
         </shape>
 
         <shape name="mini-player-left-line" from="base_highlight_vertical_line">
-            <area>420,602,2,119</area>
+            <area>2,4,2,119</area>
         </shape>
 
         <shape name="mini-player-right-line" from="base_highlight_vertical_line">
-            <area>858,602,2,119</area>
+            <area>440,4,2,119</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>446,611,387,24</area>
+            <area>28,13,387,24</area>
             <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>446,635,387,22</area>
+            <area>28,37,387,22</area>
             <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>446,657,387,22</area>
+            <area>28,59,387,22</area>
             <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="info" from="basetextarea">
-            <area>446,680,287,18</area>
+            <area>28,82,287,18</area>
             <font>baseextrasmallyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>733,680,100,18</area>
+            <area>315,82,100,18</area>
             <font>baseextrasmallyellow</font>
             <align>right,vcenter</align>
         </textarea>
 
         <progressbar name="progress" from="baseprogressbar">
-            <position>440,702</position>
+            <position>22,104</position>
             <imagetype name="background">
                 <area>0,0,400,10</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
@@ -2782,7 +2782,7 @@
     </window>
 
     <window name="volume_popup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,170</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -2799,38 +2799,38 @@
         </animation>
 
         <shape name="volume-backdrop" from="base_popup_backdrop">
-            <area>350,277,587,170</area>
+            <area>0,0,587,170</area>
         </shape>
 
         <shape name="volume-backdrop-line" from="base_backdrop_line">
-            <area>351,278,585,168</area>
+            <area>1,1,585,168</area>
         </shape>
 
         <shape name="volume-popup-top-line" from="base_highlight_line">
-            <area>352,279,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="volume-popup-bottom-line" from="base_highlight_line">
-            <area>352,443,583,2</area>
+            <area>2,166,583,2</area>
         </shape>
 
         <shape name="volume-popup-left-line" from="base_highlight_vertical_line">
-            <area>352,281,2,162</area>
+            <area>2,4,2,162</area>
         </shape>
 
         <shape name="volume-popup-right-line" from="base_highlight_vertical_line">
-            <area>933,281,2,162</area>
+            <area>583,4,2,162</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>370,297,540,60</area>
+            <area>20,20,540,60</area>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
             <value>Volume</value>
         </textarea>
 
         <statetype name="mutestate">
-            <position>878,407</position>
+            <position>528,130</position>
             <state name="off">
                 <imagetype name="statusimage">
                     <filename>mythmusic/mm_volume.png</filename>
@@ -2844,11 +2844,11 @@
         </statetype>
 
         <progressbar name="volumeprogress" from="baseprogressbar">
-            <position>375,357</position>
+            <position>25,80</position>
         </progressbar>
 
         <textarea name="volume" from="basetextarea">
-            <area>380,407,200,30</area>
+            <area>30,130,200,30</area>
             <align>left,top</align>
             <template>%VOLUMEPERCENT%</template>
         </textarea>
@@ -2856,145 +2856,145 @@
     </window>
 
     <window name="trackdetail_popup">
-        <area>0,0,1280,720</area>
+        <area>-1,-1,1160,600</area>
 
         <shape name="track-detail-backdrop" from="base_popup_backdrop">
-            <area>60,60,1160,600</area>
+            <area>0,0,1160,600</area>
         </shape>
 
         <shape name="track-detail-backdrop-line" from="base_backdrop_line">
-            <area>61,61,1158,598</area>
+            <area>1,1,1158,598</area>
         </shape>
 
         <shape name="track-detail-popup-top-line" from="base_highlight_line">
-            <area>62,62,1156,2</area>
+            <area>2,2,1156,2</area>
         </shape>
 
         <shape name="track-detail-popup-bottom-line" from="base_highlight_line">
-            <area>62,656,1156,2</area>
+            <area>2,596,1156,2</area>
         </shape>
 
         <shape name="track-detail-popup-left-line" from="base_highlight_vertical_line">
-            <area>62,64,2,592</area>
+            <area>2,4,2,592</area>
         </shape>
 
         <shape name="track-detail-popup-right-line" from="base_highlight_vertical_line">
-            <area>1216,64,2,592</area>
+            <area>1156,4,2,592</area>
         </shape>
 
         <shape name="track-detail-popup-vertical-seperator-first-line" from="base_vertical_line">
-            <area>402,83,3,554</area>
+            <area>342,23,3,554</area>
         </shape>
 
         <imagetype name="coverart">
-            <area>82,210,300,300</area>
+            <area>22,150,300,300</area>
             <filename>mythmusic/mm_nothumb.png</filename>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="titlelbl" from="basetextarea">
-            <area>400,96,150,35</area>
+            <area>340,36,150,35</area>
             <font>basemedium</font>
             <value>Title:</value>
             <align>right</align>
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>560,96,648,35</area>
+            <area>500,36,648,35</area>
             <font>basemediumblue</font>
         </textarea>
 
         <textarea name="artistlbl" from="titlelbl">
-            <area>400,146,150,35</area>
+            <area>340,86,150,35</area>
             <value>Artist:</value>
         </textarea>
 
         <textarea name="artist" from="title">
-            <area>560,146,648,35</area>
+            <area>500,86,648,35</area>
         </textarea>
 
         <textarea name="albumlbl" from="titlelbl">
-            <area>400,196,150,35</area>
+            <area>340,136,150,35</area>
             <value>Album:</value>
         </textarea>
 
         <textarea name="album" from="title">
-            <area>560,196,648,35</area>
+            <area>500,136,648,35</area>
         </textarea>
 
         <textarea name="genrelbl" from="titlelbl">
-            <area>400,296,150,35</area>
+            <area>340,236,150,35</area>
             <value>Genre:</value>
         </textarea>
 
         <textarea name="genre" from="title">
-            <area>560,296,648,35</area>
+            <area>500,236,648,35</area>
         </textarea>
 
         <textarea name="tracknumlbl" from="titlelbl">
-            <area>750,246,150,35</area>
+            <area>690,186,150,35</area>
             <value>Track No.:</value>
         </textarea>
 
         <textarea name="tracknum" from="title">
-            <area>920,246,100,35</area>
+            <area>860,186,100,35</area>
         </textarea>
 
         <textarea name="lenlbl" from="titlelbl">
-            <area>400,246,150,35</area>
+            <area>340,186,150,35</area>
             <value>Length:</value>
         </textarea>
 
         <textarea name="length" from="title">
-            <area>560,246,177,35</area>
+            <area>500,186,177,35</area>
         </textarea>
 
         <textarea name="yearlbl" from="titlelbl">
-            <area>400,346,150,35</area>
+            <area>340,286,150,35</area>
             <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="title">
-            <area>560,346,100,35</area>
+            <area>500,286,100,35</area>
         </textarea>
 
         <textarea name="ratinglbl" from="titlelbl">
-            <area>400,396,150,35</area>
+            <area>340,336,150,35</area>
             <align>right,top</align>
             <value>Rating:</value>
         </textarea>
 
         <statetype name="rating_state" from="base_rating_state">
-            <position>560,401</position>
+            <position>500,341</position>
         </statetype>
 
         <textarea name="lastplaylbl" from="titlelbl">
-            <area>340,446,210,35</area>
+            <area>280,386,210,35</area>
             <value>Last Played:</value>
         </textarea>
 
         <textarea name="lastplayed" from="title">
-            <area>560,446,648,35</area>
+            <area>500,386,648,35</area>
             <value>Last Value</value>
         </textarea>
 
         <textarea name="playcountlbl" from="titlelbl">
-            <area>400,496,150,35</area>
+            <area>340,436,150,35</area>
             <value>Played:</value>
         </textarea>
 
         <textarea name="playcount" from="title">
-            <area>560,496,648,35</area>
+            <area>500,436,648,35</area>
             <template>%playcount% times</template>
         </textarea>
 
         <textarea name="filenamelbl" from="titlelbl">
-            <area>400,546,150,35</area>
+            <area>340,486,150,35</area>
             <value>Filename:</value>
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>560,551,648,90</area>
+            <area>500,491,648,90</area>
             <multiline>yes</multiline>
         </textarea>
 
@@ -3252,9 +3252,7 @@
     </window>
 
     <window name="ripstatus">
-
-        <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,800,360</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -3271,75 +3269,75 @@
         </animation>
 
 	<shape name="cd-rip-backdrop" from="base_popup_backdrop">
-            <area>240,180,800,360</area>
+            <area>0,0,800,360</area>
         </shape>
 
         <shape name="cd-rip-backdrop-line" from="base_backdrop_line">
-            <area>241,181,798,358</area>
+            <area>1,1,798,358</area>
         </shape>
 
         <shape name="cd-rip-top-line" from="base_highlight_line">
-            <area>242,182,796,2</area>
+            <area>2,2,796,2</area>
         </shape>
 
         <shape name="cd-rip-bottom-line" from="base_highlight_line">
-            <area>242,536,796,2</area>
+            <area>2,356,796,2</area>
         </shape>
 
         <shape name="cd-rip-left-line" from="base_highlight_vertical_line">
-            <area>242,184,2,352</area>
+            <area>2,4,2,352</area>
         </shape>
 
         <shape name="cd-rip-right-line" from="base_highlight_vertical_line">
-            <area>1036,184,2,352</area>
+            <area>796,4,2,352</area>
         </shape>
 
         <textarea name="overall_label" from="basetextarea">
-            <area>250,200,780,30</area>
+            <area>10,20,780,30</area>
             <font>basesmallyellow</font>
             <align>allcenter</align>
             <value>Overall Progress</value>
         </textarea>
 
         <textarea name="overall" from="basetextarea">
-            <area>250,250,780,30</area>
+            <area>10,70,780,30</area>
             <font>basesmall</font>
             <align>hcenter</align>
         </textarea>
 
         <progressbar name="overall_progress" from="baseprogressbar">
-            <position>372,304</position>
+            <position>132,124</position>
         </progressbar>
 
         <textarea name="overallpct" from="basetextarea">
-            <area>372,320,100,30</area>
+            <area>132,140,100,30</area>
             <font>basesmallyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="status" from="basetextarea">
-            <area>250,342,780,30</area>
+            <area>10,162,780,30</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="track_label" from="overall_label">
-            <area>250,440,780,30</area>
+            <area>10,260,780,30</area>
             <value>Encoding Track</value>
         </textarea>
 
         <textarea name="track" from="basetextarea">
-            <area>250,490,780,30</area>
+            <area>10,310,780,30</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <progressbar name="track_progress" from="baseprogressbar">
-            <position>372,404</position>
+            <position>132,224</position>
         </progressbar>
 
         <textarea name="trackpct" from="basetextarea">
-            <area>372,420,100,30</area>
+            <area>132,240,100,30</area>
             <font>basesmallyellow</font>
             <align>left,vcenter</align>
         </textarea>
@@ -3347,4 +3345,3 @@
     </window>
 
 </mythuitheme>
-

@@ -7,7 +7,7 @@
     <window name="castpopup">
 
         <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,563,516</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -24,46 +24,46 @@
         </animation>
 
         <shape name="cast-popup-backdrop" from="base_popup_backdrop">
-            <area>358,102,563,516</area>
+            <area>0,0,563,516</area>
         </shape>
 
         <shape name="cast-popup-backdrop-line" from="base_backdrop_line">
-            <area>359,103,561,514</area>
+            <area>1,1,561,514</area>
         </shape>
 
         <shape name="cast-popup-top-line" from="base_highlight_line">
-            <area>360,104,559,2</area>
+            <area>2,2,559,2</area>
         </shape>
 
         <shape name="cast-popup-bottom-line" from="base_highlight_line">
-            <area>360,614,559,2</area>
+            <area>2,512,559,2</area>
         </shape>
 
         <shape name="cast-popup-left-line" from="base_highlight_vertical_line">
-            <area>360,106,2,508</area>
+            <area>2,4,2,508</area>
         </shape>
 
         <shape name="cast-popup-right-line" from="base_highlight_vertical_line">
-            <area>917,106,2,508</area>
+            <area>559,4,2,508</area>
         </shape>
 
         <shape name="cast-popup-seperator-first-line" from="base_line">
-            <area>381,154,517,2</area>
+            <area>23,52,517,2</area>
         </shape>
 
         <shape name="cast-popup-seperator-second-line" from="base_line">
-            <area>381,551,517,2</area>
+            <area>23,448,517,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>368,106,543,48</area>
+            <area>10,4,543,48</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
             <value>Cast Members</value>
         </textarea>
 
         <buttonlist name="cast" from="base_button_list">
-            <area>378,184,523,342</area>
+            <area>20,82,523,342</area>
             <buttonarea>0,0,523,342</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -89,7 +89,7 @@
         </buttonlist>
 
         <button name="ok" from="base_wide_button">
-            <area>378,563,523,40</area>
+            <area>20,461,523,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
@@ -113,9 +113,7 @@
     </window>
     
     <window name="descriptionpopup">
-
-        <!-- Make window behave as a popup -->
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,563,516</area>
         
         <animation trigger="AboutToShow">
             <section>
@@ -132,52 +130,52 @@
         </animation>
 
         <shape name="full-plot-backdrop" from="base_popup_backdrop">
-            <area>358,102,563,516</area>
+            <area>0,0,563,516</area>
         </shape>
 
         <shape name="full-plot-backdrop-line" from="base_backdrop_line">
-            <area>359,103,561,514</area>
+            <area>1,1,561,514</area>
         </shape>
 
         <shape name="full-plot-top-line" from="base_highlight_line">
-            <area>360,104,559,2</area>
+            <area>2,2,559,2</area>
         </shape>
 
         <shape name="full-plot-bottom-line" from="base_highlight_line">
-            <area>360,614,559,2</area>
+            <area>2,512,559,2</area>
         </shape>
 
         <shape name="full-plot-left-line" from="base_highlight_vertical_line">
-            <area>360,106,2,508</area>
+            <area>2,4,2,508</area>
         </shape>
 
         <shape name="full-plot-right-line" from="base_highlight_vertical_line">
-            <area>917,106,2,508</area>
+            <area>559,4,2,508</area>
         </shape>
 
         <shape name="full-plot-seperator-first-line" from="base_line">
-            <area>381,147,517,2</area>
+            <area>23,45,517,2</area>
         </shape>
 
         <shape name="full-plot-seperator-second-line" from="base_line">
-            <area>381,550,517,2</area>
+            <area>23,448,517,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>382,106,515,41</area>
+            <area>24,4,515,41</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
             <value>Full Plot</value>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>382,153,515,393</area>
+            <area>24,51,515,393</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
         </textarea>
 
         <button name="ok" from="base_wide_button">
-            <area>381,563,517,40</area>
+            <area>23,461,517,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">

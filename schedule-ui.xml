@@ -1519,7 +1519,7 @@
     </window>
 
     <window name="phrasepopup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1536,46 +1536,46 @@
         </animation>
 
         <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
-            <area>390,110,500,500</area>
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="phrase-popup-backdrop-line" from="base_backdrop_line">
-            <area>391,111,498,498</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="phrase-popup-top-line" from="base_highlight_line">
-            <area>392,112,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="phrase-popup-bottom-line" from="base_highlight_line">
-            <area>392,606,496,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="phrase-popup-left-line" from="base_highlight_vertical_line">
-            <area>392,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="phrase-popup-right-line" from="base_highlight_vertical_line">
-            <area>886,114,2,492</area>
+            <area>496,4,2,492</area>
         </shape>
 
         <shape name="phrase-popup-seperator-first-line" from="base_line">
-            <area>413,160,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="phrase-popup-seperator-second-line" from="base_line">
-            <area>413,546,454,2</area>
+            <area>23,436,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>400,114,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Search Term</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>410,174,460,320</area>
+            <area>20,64,460,320</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,460,40</area>
@@ -1600,28 +1600,28 @@
         </buttonlist>
 
         <textedit name="phrase_edit" from="base_textedit">
-            <area>500,505,287,32</area>
+            <area>110,395,287,32</area>
         </textedit>
 
         <button name="ok_button" from="base_button">
-            <position>405,560</position>
+            <position>15,450</position>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>566,560</position>
+            <position>176,450</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>726,560</position>
+            <position>336,450</position>
             <value>Record</value>
         </button>
 
     </window>
 
     <window name="powersearchpopup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1638,46 +1638,46 @@
         </animation>
 
         <shape name="power-search-backdrop" from="base_popup_backdrop">
-            <area>390,110,500,500</area>
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="power-search-backdrop-line" from="base_backdrop_line">
-            <area>391,111,498,498</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="power-search-top-line" from="base_highlight_line">
-            <area>392,112,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="power-search-bottom-line" from="base_highlight_line">
-            <area>392,606,496,2</area>
+            <area>2,495,496,2</area>
         </shape>
 
         <shape name="power-search-left-line" from="base_highlight_vertical_line">
-            <area>392,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="power-search-right-line" from="base_highlight_vertical_line">
-            <area>886,114,2,492</area>
+            <area>496,4,2,492</area>
         </shape>
 
         <shape name="power-search-seperator-first-line" from="base_line">
-            <area>413,160,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="power-search-seperator-second-line" from="base_line">
-            <area>413,545,454,2</area>
+            <area>23,435,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>400,114,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Select Search</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>410,175,460,360</area>
+            <area>20,65,460,360</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,460,40</area>
@@ -1702,24 +1702,24 @@
         </buttonlist>
 
         <button name="edit_button" from="base_button">
-            <position>405,559</position>
+            <position>15,449</position>
             <value>Edit</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>566,559</position>
+            <position>176,449</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>726,559</position>
+            <position>336,449</position>
             <value>Record</value>
         </button>
 
     </window>
 
     <window name="editpowersearchpopup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,500,550</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1736,76 +1736,76 @@
         </animation>
 
         <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
-            <area>390,85,500,550</area>
+            <area>0,0,500,550</area>
         </shape>
 
         <shape name="edit-power-search-backdrop-line" from="base_backdrop_line">
-            <area>391,86,498,548</area>
+            <area>1,1,498,548</area>
         </shape>
 
         <shape name="edit-power-search-top-line" from="base_highlight_line">
-            <area>392,87,496,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="edit-power-search-bottom-line" from="base_highlight_line">
-            <area>392,631,496,2</area>
+            <area>2,546,496,2</area>
         </shape>
 
         <shape name="edit-power-search-left-line" from="base_highlight_vertical_line">
-            <area>392,89,2,542</area>
+            <area>2,4,2,542</area>
         </shape>
 
         <shape name="edit-power-search-right-line" from="base_highlight_vertical_line">
-            <area>886,89,2,542</area>
+            <area>496,4,2,542</area>
         </shape>
 
         <shape name="edit-power-search-seperator-first-line" from="base_line">
-            <area>413,135,454,2</area>
+            <area>23,50,454,2</area>
         </shape>
 
         <shape name="edit-power-search-seperator-second-line" from="base_line">
-            <area>413,567,454,2</area>
+            <area>23,482,454,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>400,89,480,46</area>
+            <area>10,4,480,46</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Edit Power Search Fields</value>
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>498,145,390,30</area>
+            <area>108,60,390,30</area>
             <font>basesmall</font>
             <value>Optional title phrase:</value>
         </textarea>
 
         <textedit name="title_edit" from="base_textedit">
-            <area>498,174,287,32</area>
+            <area>108,89,287,32</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
-            <area>498,235,390,30</area>
+            <area>108,150,390,30</area>
             <font>basesmall</font>
             <value>Optional subtitle phrase:</value>
         </textarea>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <area>498,264,287,32</area>
+            <area>108,179,287,32</area>
         </textedit>
 
         <textarea name="desclabel" from="basetextarea">
-            <area>498,325,390,30</area>
+            <area>108,240,390,30</area>
             <font>basesmall</font>
             <value>Optional description phrase:</value>
         </textarea>
 
         <textedit name="desc_edit" from="base_textedit">
-            <area>498,354,287,32</area>
+            <area>108,269,287,32</area>
         </textedit>
 
         <buttonlist name="category_list" from="base_selector">
-            <area>430,415,400,40</area>
+            <area>40,330,400,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,400,40</area>
@@ -1830,15 +1830,15 @@
         </buttonlist>
 
         <buttonlist name="genre_list" from="category_list">
-            <area>430,465,400,40</area>
+            <area>40,380,400,40</area>
         </buttonlist>
 
         <buttonlist name="channel_list" from="category_list">
-            <area>430,515,400,40</area>
+            <area>40,430,400,40</area>
         </buttonlist>
 
         <button name="ok_button" from="base_medium_button">
-            <position>465,580</position>
+            <position>75,495</position>
             <value>OK</value>
         </button>
 
@@ -2037,7 +2037,7 @@
     </window>
 
     <window name="searchpopup">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,1010,52</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -2054,42 +2054,42 @@
         </animation>
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
-            <area>135,26,1010,52</area>
+            <area>0,0,1010,52</area>
         </shape>
 
         <shape name="search-popup-backdrop-line" from="base_backdrop_line">
-            <area>136,27,1008,50</area>
+            <area>1,1,1008,50</area>
         </shape>
 
         <shape name="search-popup-top-line" from="base_highlight_line">
-            <area>137,28,1006,2</area>
+            <area>2,2,1006,2</area>
         </shape>
 
         <shape name="search-popup-bottom-line" from="base_highlight_line">
-            <area>137,74,1006,2</area>
+            <area>2,48,1006,2</area>
         </shape>
 
         <shape name="search-popup-left-line" from="base_highlight_vertical_line">
-            <area>137,30,2,44</area>
+            <area>2,4,2,44</area>
         </shape>
 
         <shape name="search-popup-right-line" from="base_highlight_vertical_line">
-            <area>1141,30,2,44</area>
+            <area>1006,4,2,44</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>170,43,168,18</area>
+            <area>35,17,168,18</area>
             <font>basesmalleryellow</font>
             <align>left,vcenter</align>
             <value>Enter Search Text</value>
         </textarea>
 
         <textedit name="input" from="base_wide_textedit">
-            <area>360,36,580,32</area>
+            <area>225,10,580,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>966,35</position>
+            <position>831,9</position>
             <value>Close</value>
         </button>
 

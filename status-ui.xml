@@ -196,45 +196,55 @@
     </window>
 
     <window name="standbymode">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,640,360</area>
 
-        <textarea name="heading" from="base_heading">
-            <value>Standby Mode</value>
-        </textarea>
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
 
         <shape name="standbymode-backdrop" from="base_backdrop">
-            <area>320,180,640,360</area>
+            <area>0,0,640,360</area>
         </shape>
 
         <shape name="standbymode-backdrop-line" from="base_backdrop_line">
-            <area>321,181,638,358</area>
+            <area>1,1,638,358</area>
         </shape>
 
         <shape name="standbymode-top-line" from="base_highlight_line">
-            <area>322,182,636,2</area>
+            <area>2,2,636,2</area>
         </shape>
 
         <shape name="standbymode-bottom-line" from="base_highlight_line">
-            <area>322,536,636,2</area>
+            <area>2,356,636,2</area>
         </shape>
 
         <shape name="standbymode-left-line" from="base_highlight_vertical_line">
-            <area>322,184,2,352</area>
+            <area>2,4,2,352</area>
         </shape>
 
         <shape name="standbymode-right-line" from="base_highlight_vertical_line">
-            <area>956,184,2,352</area>
+            <area>636,4,2,352</area>
         </shape>
 
         <textarea name="title">
-            <area>324,184,632,70</area>
+            <area>4,4,632,70</area>
             <font>baselarge</font>
             <align>allcenter</align>
             <value>MythTV is in standby mode!</value>
         </textarea>
 
         <statetype name="backendstatus">
-            <area>324,244,632,292</area>
+            <area>4,64,632,292</area>
             <state name="idle">
                 <area>0,0,632,292</area>
                 <shape name="icon">

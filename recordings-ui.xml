@@ -1228,7 +1228,7 @@
     </window>
    
     <window name="changeview">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,380,463</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1245,107 +1245,107 @@
         </animation>
 
         <shape name="change-view-backdrop" from="base_popup_backdrop">
-            <area>450,128,380,463</area>
+            <area>0,0,380,463</area>
         </shape>
 
         <shape name="change-view-backdrop-line" from="base_backdrop_line">
-            <area>451,129,378,461</area>
+            <area>1,1,378,461</area>
         </shape>
 
         <shape name="change-view-top-line" from="base_highlight_line">
-            <area>452,130,376,2</area>
+            <area>2,2,376,2</area>
         </shape>
 
         <shape name="change-view-bottom-line" from="base_highlight_line">
-            <area>452,587,376,2</area>
+            <area>2,459,376,2</area>
         </shape>
 
         <shape name="change-view-left-line" from="base_highlight_vertical_line">
-            <area>452,132,2,455</area>
+            <area>2,4,2,455</area>
         </shape>
 
         <shape name="change-view-right-line" from="base_highlight_vertical_line">
-            <area>826,132,2,455</area>
+            <area>376,4,2,455</area>
         </shape>
 
         <shape name="change-view-seperator-top-line" from="base_line">
-            <area>473,202,334,2</area>
+            <area>23,74,334,2</area>
         </shape>
 
         <shape name="change-view-seperator-bottom-line" from="base_line">
-            <area>473,535,334,2</area>
+            <area>23,407,334,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>454,132,372,70</area>
+            <area>4,4,372,70</area>
             <align>allcenter</align>
             <font>basesmallyellow</font>
             <value>Change View</value>
         </textarea>
 
         <checkbox name="titles" from="base_checkbox">
-            <position>510,230</position>
+            <position>60,102</position>
         </checkbox>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>560,233,300,30</area>
+            <area>110,105,300,30</area>
             <value>Show Titles</value>
         </textarea>
 
         <checkbox name="categories" from="base_checkbox">
-            <position>510,280</position>
+            <position>60,152</position>
         </checkbox>
 
         <textarea name="catlabel" from="titlelabel">
-            <position>560,283</position>
+            <position>110,155</position>
             <value>Show Categories</value>
         </textarea>
 
         <checkbox name="recgroups" from="base_checkbox">
-            <position>510,330</position>
+            <position>60,202</position>
         </checkbox>
 
         <textarea name="grouplabel" from="titlelabel">
-            <position>560,333</position>
+            <position>110,205</position>
             <value>Show Recording Groups</value>
         </textarea>
 
         <checkbox name="watchlist" from="base_checkbox">
-            <position>510,380</position>
+            <position>60,252</position>
         </checkbox>
 
         <textarea name="watchlabel" from="titlelabel">
-            <position>560,383</position>
+            <position>110,255</position>
             <value>Show Watch List</value>
         </textarea>
 
         <checkbox name="searches" from="base_checkbox">
-            <position>510,430</position>
+            <position>60,302</position>
         </checkbox>
 
         <textarea name="searchlabel" from="titlelabel">
-            <position>560,433</position>
+            <position>110,305</position>
             <value>Show Searches</value>
         </textarea>
 
         <checkbox name="livetv" from="base_checkbox">
-            <position>510,480</position>
+            <position>60,352</position>
         </checkbox>
 
         <textarea name="livelabel" from="titlelabel">
-            <position>560,483</position>
+            <position>110,355</position>
             <value>Show LiveTV</value>
         </textarea>
 
         <button name="save" from="base_medium_button">
-            <position>465,542</position>
+            <position>15,414</position>
             <value>Save</value>
         </button>
 
     </window>
 
     <window name="passwordchanger">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,587,270</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1362,58 +1362,58 @@
         </animation>
 
         <shape name="password-changer-backdrop" from="base_popup_backdrop">
-            <area>350,228,587,270</area>
+            <area>0,0,587,270</area>
         </shape>
 
         <shape name="password-changer-backdrop-line" from="base_backdrop_line">
-            <area>351,229,585,268</area>
+            <area>1,1,585,268</area>
         </shape>
 
         <shape name="password-changer-top-line" from="base_highlight_line">
-            <area>352,230,583,2</area>
+            <area>2,2,583,2</area>
         </shape>
 
         <shape name="password-changer-bottom-line" from="base_highlight_line">
-            <area>352,494,583,2</area>
+            <area>2,266,583,2</area>
         </shape>
 
         <shape name="password-changer-left-line" from="base_highlight_vertical_line">
-            <area>352,232,2,262</area>
+            <area>2,4,2,262</area>
         </shape>
 
         <shape name="password-changer-right-line" from="base_highlight_vertical_line">
-            <area>933,232,2,262</area>
+            <area>583,4,2,262</area>
         </shape>
 
         <textarea name="oldlabel" from="basetextarea">
-            <area>350,288,230,30</area>
+            <area>0,60,230,30</area>
             <align>right,vcenter</align>
             <value>Old Password:</value>
         </textarea>
 
         <textedit name="oldpassword" from="base_textedit">
-            <area>587,287,287,32</area>
+            <area>237,59,287,32</area>
         </textedit>
 
         <textarea name="newlabel" from="basetextarea">
-            <area>350,388,230,30</area>
+            <area>0,160,230,30</area>
             <align>right,vcenter</align>
             <value>New Password:</value>
         </textarea>
 
         <textedit name="newpassword" from="base_textedit">
-            <area>587,387,287,32</area>
+            <area>237,159,287,32</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>568,442</position>
+            <position>218,214</position>
             <value>OK</value>
         </button>
 
     </window>
 
     <window name="groupselector">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,380,463</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1430,41 +1430,41 @@
         </animation>
 
         <shape name="group-selector-backdrop" from="base_popup_backdrop">
-            <area>450,128,380,463</area>
+            <area>0,0,380,463</area>
         </shape>
 
         <shape name="group-selector-backdrop-line" from="base_backdrop_line">
-            <area>451,129,378,461</area>
+            <area>1,1,378,461</area>
         </shape>
 
         <shape name="group-selector-top-line" from="base_highlight_line">
-            <area>452,130,376,2</area>
+            <area>2,2,376,2</area>
         </shape>
 
         <shape name="group-selector-bottom-line" from="base_highlight_line">
-            <area>452,587,376,2</area>
+            <area>2,459,376,2</area>
         </shape>
 
         <shape name="group-selector-left-line" from="base_highlight_vertical_line">
-            <area>452,132,2,455</area>
+            <area>2,4,2,455</area>
         </shape>
 
         <shape name="group-selector-right-line" from="base_highlight_vertical_line">
-            <area>826,132,2,455</area>
+            <area>376,4,2,455</area>
         </shape>
 
         <shape name="group-selector-seperator-first-line" from="base_line">
-            <area>473,301,334,2</area>
+            <area>23,173,334,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>464,136,352,161</area>
+            <area>14,8,352,161</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
         </textarea>
 
         <buttonlist name="groups" from="base_button_list">
-            <area>466,317,349,264</area>
+            <area>16,189,349,264</area>
             <drawfrombottom>yes</drawfrombottom>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1492,7 +1492,7 @@
     </window>
 
     <window name="iconhelp">
-        <area>-1,-1,1280,720</area>
+        <area>-1,-1,700,500</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1509,46 +1509,46 @@
         </animation>
 
         <shape name="icon-help-backdrop" from="base_popup_backdrop">
-            <area>290,110,700,500</area>
+            <area>0,0,700,500</area>
         </shape>
 
         <shape name="icon-help-backdrop-line" from="base_backdrop_line">
-            <area>291,111,698,498</area>
+            <area>1,1,698,498</area>
         </shape>
 
         <shape name="icon-help-top-line" from="base_highlight_line">
-            <area>292,112,696,2</area>
+            <area>2,2,696,2</area>
         </shape>
 
         <shape name="icon-help-bottom-line" from="base_highlight_line">
-            <area>292,606,696,2</area>
+            <area>2,495,696,2</area>
         </shape>
 
         <shape name="icon-help-left-line" from="base_highlight_vertical_line">
-            <area>292,114,2,492</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="icon-help-right-line" from="base_highlight_vertical_line">
-            <area>986,114,2,492</area>
+            <area>696,4,2,492</area>
         </shape>
 
         <shape name="icon-help-seperator-first-line" from="base_line">
-            <area>314,146,652,2</area>
+            <area>24,36,652,2</area>
         </shape>
 
         <shape name="icon-help-seperator-second-line" from="base_line">
-            <area>314,576,652,2</area>
+            <area>24,466,652,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>290,114,700,32</area>
+            <area>0,4,700,32</area>
             <value>Status Icon Help</value>
             <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="iconlist" from="base_list">
-            <area>300,152,680,422</area>
+            <area>10,42,680,422</area>
             <statetype name="buttonitem">
                 <state name="inactive">
                     <area>0,0,680,40</area>
