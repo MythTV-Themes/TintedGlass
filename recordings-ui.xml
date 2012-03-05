@@ -1521,7 +1521,7 @@
         </shape>
 
         <shape name="icon-help-bottom-line" from="base_highlight_line">
-            <area>2,495,696,2</area>
+            <area>2,496,696,2</area>
         </shape>
 
         <shape name="icon-help-left-line" from="base_highlight_vertical_line">

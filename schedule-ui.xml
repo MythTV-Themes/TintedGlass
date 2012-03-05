@@ -1650,7 +1650,7 @@
         </shape>
 
         <shape name="power-search-bottom-line" from="base_highlight_line">
-            <area>2,495,496,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="power-search-left-line" from="base_highlight_vertical_line">
