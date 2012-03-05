@@ -2037,7 +2037,7 @@
     </window>
 
     <window name="searchpopup">
-        <area>-1,-1,1010,52</area>
+        <area>-1,26,1010,52</area>
 
         <animation trigger="AboutToShow">
             <section>

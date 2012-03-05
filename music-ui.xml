@@ -1258,7 +1258,7 @@
         </checkbox>
 
         <textarea name="fixeddatelbl"  from="basetextarea">
-            <area>65,76,170,32</area>
+            <area>65,78,170,32</area>
             <align>left,vcenter</align>
             <value>Fixed Date</value>
         </textarea>
@@ -1294,11 +1294,11 @@
         </spinbox>
 
         <checkbox name="nowcheck" from="base_checkbox">
-            <position>23,225</position>
+            <position>23,228</position>
         </checkbox>
 
         <textarea name="nowlbl"  from="basetextarea">
-            <area>65,223,300,32</area>
+            <area>65,228,300,32</area>
             <align>left,vcenter</align>
             <value>Use Current Date</value>
         </textarea>
@@ -2994,7 +2994,7 @@
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>500,491,648,90</area>
+            <area>500,486,648,90</area>
             <multiline>yes</multiline>
         </textarea>
 
