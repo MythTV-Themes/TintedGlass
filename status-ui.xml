@@ -196,7 +196,7 @@
     </window>
 
     <window name="standbymode">
-        <area>-1,-1,640,360</area>
+        <area>-1,-1,568,320</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -213,49 +213,49 @@
         </animation>
 
         <shape name="standbymode-backdrop" from="base_backdrop">
-            <area>0,0,640,360</area>
+            <area>0,0,568,320</area>
         </shape>
 
         <shape name="standbymode-backdrop-line" from="base_backdrop_line">
-            <area>1,1,638,358</area>
+            <area>1,1,566,318</area>
         </shape>
 
         <shape name="standbymode-top-line" from="base_highlight_line">
-            <area>2,2,636,2</area>
+            <area>2,2,564,2</area>
         </shape>
 
         <shape name="standbymode-bottom-line" from="base_highlight_line">
-            <area>2,356,636,2</area>
+            <area>2,316,564,2</area>
         </shape>
 
         <shape name="standbymode-left-line" from="base_highlight_vertical_line">
-            <area>2,4,2,352</area>
+            <area>2,4,2,312</area>
         </shape>
 
         <shape name="standbymode-right-line" from="base_highlight_vertical_line">
-            <area>636,4,2,352</area>
+            <area>564,4,2,312</area>
         </shape>
 
         <textarea name="title">
-            <area>4,4,632,70</area>
-            <font>baselarge</font>
+            <area>4,4,552,64</area>
+            <font>basemedium</font>
             <align>allcenter</align>
             <value>MythTV is in standby mode!</value>
         </textarea>
 
         <statetype name="backendstatus">
-            <area>4,64,632,292</area>
+            <area>4,4,560,312</area>
             <state name="idle">
-                <area>0,0,632,292</area>
+                <area>0,0,560,312</area>
                 <shape name="icon">
-                    <area>87,10,458,212</area>
+                    <area>74,64,412,184</area>
                     <type>roundbox</type>
                     <fill color="#80d400" />
                     <cornerradius>5</cornerradius>
                 </shape>
                 <textarea name="status">
-                    <area>0,222,632,70</area>
-                    <font>baselargegreen</font>
+                    <area>4,248,552,64</area>
+                    <font>basemediumgreen</font>
                     <value>Backend is idle!</value>
                     <align>allcenter</align>
                     <multiline>true</multiline>
@@ -266,7 +266,7 @@
                     <fill color="#d93636" />
                 </shape>
                 <textarea name="status">
-                    <font>baselargered</font>
+                    <font>basemediumred</font>
                     <value>Backend is recording!</value>
                 </textarea>
             </state>
@@ -275,7 +275,7 @@
                     <fill color="#d9d900" />
                 </shape>
                 <textarea name="status">
-                    <font>baselargeyellow</font>
+                    <font>basemediumyellow</font>
                     <value>Shutting Down!</value>
                 </textarea>
             </state>
@@ -284,7 +284,7 @@
                     <fill color="#d93636" />
                 </shape>
                 <textarea name="status">
-                    <font>baselargered</font>
+                    <font>basemediumred</font>
                     <value>Backend is offline!</value>
                 </textarea>
             </state>
