@@ -295,6 +295,7 @@
                     <area>0,0,1220,36</area>
                     <!-- Hide unwanted items by setting alpha to zero -->
                     <textarea name="buttontext" from="basetextarea">
+                        <area>0,0,0,24</area>
                         <alpha>0</alpha>
                     </textarea>
                     <statetype name="buttoncheck">
@@ -344,6 +345,7 @@
                     <area>0,0,1220,70</area>
                     <!-- Hide unwanted items by setting alpha to zero -->
                     <textarea name="buttontext" from="basetextarea">
+                        <area>0,0,0,24</area>
                         <alpha>0</alpha>
                     </textarea>
                     <statetype name="buttoncheck">
@@ -1279,7 +1281,7 @@
         </buttonlist>
 
         <textarea name="position" from="basetextarea">
-            <area>0,386,1280,18</area>
+            <area>0,384,1280,22</area>
             <font>baseevensmaller</font>
             <align>allcenter</align>
         </textarea>
@@ -1708,7 +1710,7 @@
         </buttontree>
 
         <textarea name="position" from="basetextarea">
-            <area>20,360,1240,20</area>
+            <area>20,359,1240,22</area>
             <font>basesmaller</font>
             <align>allcenter</align>
         </textarea>

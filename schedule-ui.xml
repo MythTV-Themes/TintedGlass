@@ -696,7 +696,7 @@
         </textarea>
 
         <textarea name="hourlabel" from="basetextarea">
-            <area>539,432,100,24</area>
+            <area>539,430,100,24</area>
             <font>basesmall</font>
             <value>Hour:</value>
             <align>right,vcenter</align>
@@ -707,7 +707,7 @@
         </spinbox>
 
         <textarea name="minutelabel" from="hourlabel">
-            <position>539,494</position>
+            <position>539,492</position>
             <value>Minute:</value>
         </textarea>
 
@@ -716,7 +716,7 @@
         </spinbox>
 
         <textarea name="durationlabel" from="hourlabel">
-            <position>539,556</position>
+            <position>539,554</position>
             <value>Duration:</value>
         </textarea>
 
@@ -835,7 +835,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
                     </textarea>
                 </state>
@@ -844,7 +844,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>
@@ -1951,7 +1951,7 @@
                         <area>8,25,408,20</area>
                     </textarea>
                     <textarea name="subtitle" from="base_text_font_state_smaller">
-                        <area>436,23,466,20</area>
+                        <area>436,22,466,22</area>
                     </textarea>
                     <textarea name="timedate" from="rectypestatus">
                         <area>922,25,290,20</area>
@@ -2078,7 +2078,7 @@
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>35,17,168,18</area>
+            <area>35,15,168,22</area>
             <font>basesmalleryellow</font>
             <align>left,vcenter</align>
             <value>Enter Search Text</value>
@@ -2238,7 +2238,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
                     </textarea>
                 </state>
@@ -2247,7 +2247,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>
@@ -2380,7 +2380,7 @@
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>862,487,388,28</area>
+            <area>862,484,388,34</area>
             <font>baselarge</font>
             <align>allcenter</align>
         </textarea>

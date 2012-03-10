@@ -306,7 +306,7 @@
 
         <textarea name="message_text">
             <font>medium</font>
-            <area>310,53,660,26</area>
+            <area>310,52,660,28</area>
             <align>allcenter</align>
         </textarea>
 
@@ -369,7 +369,7 @@
 
         <textarea name="osd_number_entry">
             <font>large</font>
-            <area>83,49,142,34</area>
+            <area>83,47,142,38</area>
             <align>allcenter</align>
         </textarea>
 
@@ -969,7 +969,7 @@
 
         <textarea name="longrepeat">
             <font>mediumsmall</font>
-            <area>569,454,475,20</area>
+            <area>569,453,475,22</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%     Size: %FILESIZE_STR%</template>
         </textarea>
@@ -1193,7 +1193,7 @@
 
         <textarea name="timedate">
             <font>smallerblue</font>
-            <area>228,530,497,20</area>
+            <area>228,529,497,22</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>

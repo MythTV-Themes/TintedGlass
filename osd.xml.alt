@@ -298,8 +298,8 @@
 
         <textarea name="message_text">
             <font>medium</font>
-            <area>229,2,822,24</area>
-            <align>hcenter,top</align>
+            <area>229,0,822,31</area>
+            <align>allcenter</align>
         </textarea>
 
     </window>
@@ -357,8 +357,8 @@
 
         <textarea name="osd_number_entry">
             <font>large</font>
-            <area>51,2,142,34</area>
-            <align>hcenter,top</align>
+            <area>51,0,142,43</area>
+            <align>allcenter</align>
         </textarea>
 
     </window>
@@ -404,7 +404,7 @@
         </textarea>
 
         <clock name="clock">
-            <area>934,667,300,20</area>
+            <area>934,666,300,22</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,vcenter</align>
@@ -861,7 +861,7 @@
 
         <textarea name="longrepeat">
             <font>mediumsmall</font>
-            <area>619,501,475,20</area>
+            <area>619,500,475,22</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%     Size: %FILESIZE_STR%</template>
         </textarea>
@@ -1013,14 +1013,14 @@
 
         <textarea name="timedate">
             <font>smallerblue</font>
-            <area>210,563,515,20</area>
+            <area>210,562,515,22</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>
 
         <textarea name="longrepeat">
             <font>smallerblue</font>
-            <area>740,563,364,20</area>
+            <area>740,562,364,22</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>

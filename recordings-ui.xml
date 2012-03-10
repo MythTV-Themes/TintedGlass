@@ -151,7 +151,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
                     </textarea>
                 </state>
@@ -160,7 +160,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>
@@ -764,7 +764,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                         <alphapulse min="127" max="255" change="2"/>
                     </textarea>
                 </state>
@@ -773,7 +773,7 @@
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basemediumyellow</font>
+                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>
@@ -1386,7 +1386,7 @@
         </shape>
 
         <textarea name="oldlabel" from="basetextarea">
-            <area>0,60,230,30</area>
+            <area>0,58,230,30</area>
             <align>right,vcenter</align>
             <value>Old Password:</value>
         </textarea>
@@ -1396,7 +1396,7 @@
         </textedit>
 
         <textarea name="newlabel" from="basetextarea">
-            <area>0,160,230,30</area>
+            <area>0,158,230,30</area>
             <align>right,vcenter</align>
             <value>New Password:</value>
         </textarea>
@@ -1829,7 +1829,7 @@
         </textarea>
 
         <spinbox name="season" from="base_spinbox">
-            <position>320,382</position>
+            <position>320,384</position>
         </spinbox>
 
         <textarea name="eplabel" from="basetextarea">
@@ -1840,7 +1840,7 @@
         </textarea>
 
         <spinbox name="episode" from="base_spinbox">
-            <position>320,462</position>
+            <position>320,464</position>
         </spinbox>
 
         <button name="ok" from="base_medium_button">

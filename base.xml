@@ -32,7 +32,7 @@
     </fontdef>
 
     <fontdef name="basesmall" from="basefont">
-        <pixelsize>21</pixelsize>
+        <pixelsize>20</pixelsize>
     </fontdef>
 
     <fontdef name="basemedium" from="basefont">
@@ -1375,10 +1375,10 @@
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>16,10,368,158</area>
+            <area>16,8,368,162</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
-            <align>allcenter</align>
+            <align>allcenter</align>     
         </textarea>
 
         <buttonlist name="list" from="base_button_list">

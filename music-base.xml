@@ -253,10 +253,10 @@
 
     <!-- repeat statetype -->
     <statetype name="baserepeatstate">
-        <area>700,410,188,20</area>
+        <area>700,408,188,22</area>
         <state name="off">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,188,20</area>
+                <area>0,0,188,22</area>
                 <font>basesmaller</font>
                 <value>Repeat Mode: Off</value>
                 <align>right,vcenter</align>
@@ -264,7 +264,7 @@
         </state>
         <state name="track">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,188,20</area>
+                <area>0,0,188,22</area>
                 <font>basesmaller</font>
                 <value>Repeat Mode: Track</value>
                 <align>right,vcenter</align>
@@ -272,7 +272,7 @@
         </state>
         <state name="all">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,188,20</area>
+                <area>0,0,188,22</area>
                 <font>basesmaller</font>
                 <value>Repeat Mode: All</value>
                 <align>right,vcenter</align>
@@ -381,10 +381,10 @@
 
     <!-- shuffle statetype -->
     <statetype name="baseshufflestate">
-        <area>970,410,300,20</area>
+        <area>970,408,300,22</area>
         <state name="off">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,20</area>
+                <area>0,0,300,22</area>
                 <font>basesmaller</font>
                 <value>Shuffle Mode: Off</value>
                 <align>left,vcenter</align>
@@ -392,7 +392,7 @@
         </state>
         <state name="random">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,20</area>
+                <area>0,0,300,22</area>
                 <font>basesmaller</font>
                 <value>Shuffle Mode: Random</value>
                 <align>left,vcenter</align>
@@ -400,7 +400,7 @@
         </state>
         <state name="intelligent">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,20</area>
+                <area>0,0,300,22</area>
                 <font>basesmaller</font>
                 <value>Shuffle Mode: Intelligent</value>
                 <align>left,vcenter</align>
@@ -408,7 +408,7 @@
         </state>
         <state name="album">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,20</area>
+                <area>0,0,300,22</area>
                 <font>basesmaller</font>
                 <value>Shuffle Mode: Album</value>
                 <align>left,vcenter</align>
@@ -416,7 +416,7 @@
         </state>
         <state name="artist">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,20</area>
+                <area>0,0,300,22</area>
                 <font>basesmaller</font>
                 <value>Shuffle Mode: Artist</value>
                 <align>left,vcenter</align>
@@ -452,7 +452,7 @@
         </shape>
 
         <statetype name="shufflestate" from="baseshufflestate">
-            <position>30,5</position>
+            <position>30,4</position>
         </statetype>
 
         <textarea name="playlistposition" from="basetextarea">
@@ -476,7 +476,7 @@
         </statetype>
 
         <statetype name="repeatstate" from="baserepeatstate">
-            <position>1062,5</position>
+            <position>1062,4</position>
         </statetype>
     </group>
 
