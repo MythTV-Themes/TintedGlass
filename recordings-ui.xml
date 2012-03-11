@@ -1353,14 +1353,14 @@
                 <zoom start="0" end="100" easingcurve="OutQuart"/>
             </section>
         </animation>
-
+        <!-- Disappears when virtual keyboard is used
         <animation trigger="AboutToHide">
             <section>
                 <alpha start="255" end="0" easingcurve="InQuart"/>
                 <zoom start="100" end="0" easingcurve="InQuart"/>
             </section>
         </animation>
-
+        -->
         <shape name="password-changer-backdrop" from="base_popup_backdrop">
             <area>0,0,587,270</area>
         </shape>
