@@ -295,7 +295,7 @@
                     <area>0,0,1220,36</area>
                     <!-- Hide unwanted items by setting alpha to zero -->
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,0,24</area>
+                        <area>0,0,30,30</area>
                         <alpha>0</alpha>
                     </textarea>
                     <statetype name="buttoncheck">
@@ -345,7 +345,7 @@
                     <area>0,0,1220,70</area>
                     <!-- Hide unwanted items by setting alpha to zero -->
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,0,24</area>
+                        <area>0,0,30,30</area>
                         <alpha>0</alpha>
                     </textarea>
                     <statetype name="buttoncheck">

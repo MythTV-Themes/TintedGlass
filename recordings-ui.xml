@@ -138,7 +138,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>8,0,255,24</area>
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -147,7 +147,7 @@
                 </state>
                 <state name="selectedactive">
                     <area>8,0,255,24</area>
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -156,7 +156,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -751,7 +751,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>8,0,255,24</area>
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -760,7 +760,7 @@
                 </state>
                 <state name="selectedactive">
                     <area>8,0,255,24</area>
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -769,7 +769,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <textarea name="name" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>0,0,240,24</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
