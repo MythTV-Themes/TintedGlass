@@ -185,9 +185,8 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_button_background_disabled">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                         <area>0,0,100%,100%</area>
-                        <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="buttontext" from="basetextarea">
                         <area>8,0,284,40</area>
