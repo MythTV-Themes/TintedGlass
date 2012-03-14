@@ -1,0 +1,625 @@
+<mythuitheme>
+
+    <window name="keyboard">
+
+        <area>0,0,552,208</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <fontdef name="key" from="basesmall">
+            <size>12</size>
+        </fontdef>
+
+        <shape name="keyboard-backdrop" from="base_popup_backdrop">
+            <area>0,0,552,208</area>
+        </shape>
+
+        <shape name="keyboard-backdrop-line" from="base_backdrop_line">
+            <area>1,1,550,206</area>
+        </shape>
+
+        <shape name="keyboard-top-line" from="base_highlight_line">
+            <area>2,2,548,2</area>
+        </shape>
+
+        <shape name="keyboard-bottom-line" from="base_highlight_line">
+            <area>2,204,550,2</area>
+        </shape>
+
+        <shape name="keyboard-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,200</area>
+        </shape>
+
+        <shape name="keyboard-right-line" from="base_highlight_vertical_line">
+            <area>548,4,2,200</area>
+        </shape>
+
+        <!-- top row -->
+        <button name="key_1">
+            <position>13,13</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,35,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+
+                    <textarea name="text">
+                        <area>0,0,35,35</area>
+                        <align>allcenter</align>
+                        <font>basemedium</font>
+                        <font state="selected">basemedium</font>
+                        <font state="disabled">basemediumgrey</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,35,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,35,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+
+        <button name="key_2" from="key_1">
+            <position>50,13</position>
+        </button>
+        <button name="key_3" from="key_1">
+            <position>87,13</position>
+        </button>
+        <button name="key_4" from="key_1">
+            <position>124,13</position>
+        </button>
+        <button name="key_5" from="key_1">
+            <position>161,13</position>
+        </button>
+        <button name="key_6" from="key_1">
+            <position>198,13</position>
+        </button>
+        <button name="key_7" from="key_1">
+            <position>235,13</position>
+        </button>
+        <button name="key_8" from="key_1">
+            <position>272,13</position>
+        </button>
+        <button name="key_9" from="key_1">
+            <position>309,13</position>
+        </button>
+        <button name="key_0" from="key_1">
+            <position>346,13</position>
+        </button>
+        <button name="key_-" from="key_1">
+            <position>383,13</position>
+        </button>
+        <button name="key_=" from="key_1">
+            <position>420,13</position>
+        </button>
+        <button name="key_#" from="key_1">
+            <position>457,13</position>
+        </button>
+        <button name="key_`" from="key_1">
+            <position>494,13</position>
+        </button>
+
+        <!-- row 2 -->
+        <button name="key_q" from="key_1">
+            <position>24,50</position>
+        </button>
+        <button name="key_w" from="key_1">
+            <position>61,50</position>
+        </button>
+        <button name="key_e" from="key_1">
+            <position>98,50</position>
+        </button>
+        <button name="key_r" from="key_1">
+            <position>135,50</position>
+        </button>
+        <button name="key_t" from="key_1">
+            <position>172,50</position>
+        </button>
+        <button name="key_y" from="key_1">
+            <position>209,50</position>
+        </button>
+        <button name="key_u" from="key_1">
+            <position>246,50</position>
+        </button>
+        <button name="key_i" from="key_1">
+            <position>283,50</position>
+        </button>
+        <button name="key_o" from="key_1">
+            <position>320,50</position>
+        </button>
+        <button name="key_p" from="key_1">
+            <position>357,50</position>
+        </button>
+        <button name="key_[" from="key_1">
+            <position>394,50</position>
+        </button>
+        <button name="key_]" from="key_1">
+            <position>431,50</position>
+        </button>
+
+        <!-- row 3 -->
+        <button name="key_a" from="key_1">
+            <position>36,87</position>
+        </button>
+        <button name="key_s" from="key_1">
+            <position>73,87</position>
+        </button>
+        <button name="key_d" from="key_1">
+            <position>110,87</position>
+        </button>
+        <button name="key_f" from="key_1">
+            <position>147,87</position>
+        </button>
+        <button name="key_g" from="key_1">
+            <position>184,87</position>
+        </button>
+        <button name="key_h" from="key_1">
+            <position>221,87</position>
+        </button>
+        <button name="key_j" from="key_1">
+            <position>258,87</position>
+        </button>
+        <button name="key_k" from="key_1">
+            <position>295,87</position>
+        </button>
+        <button name="key_l" from="key_1">
+            <position>332,87</position>
+        </button>
+        <button name="key_;" from="key_1">
+            <position>369,87</position>
+        </button>
+        <button name="key_'" from="key_1">
+            <position>406,87</position>
+        </button>
+
+        <!-- row 4 -->
+        <button name="key_\" from="key_1">
+            <position>13,124</position>
+        </button>
+        <button name="key_z" from="key_1">
+            <position>50,124</position>
+        </button>
+        <button name="key_x" from="key_1">
+            <position>87,124</position>
+        </button>
+        <button name="key_c" from="key_1">
+            <position>124,124</position>
+        </button>
+        <button name="key_v" from="key_1">
+            <position>161,124</position>
+        </button>
+        <button name="key_b" from="key_1">
+            <position>198,124</position>
+        </button>
+        <button name="key_n" from="key_1">
+            <position>235,124</position>
+        </button>
+        <button name="key_m" from="key_1">
+            <position>272,124</position>
+        </button>
+        <button name="key_," from="key_1">
+            <position>309,124</position>
+        </button>
+        <button name="key_." from="key_1">
+            <position>346,124</position>
+        </button>
+        <button name="key_/" from="key_1">
+            <position>383,124</position>
+        </button>
+
+        <!-- row 5 -->
+        <button name="key_space">
+            <position>173,161</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,103,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,158,35</area>
+                        <align>allcenter</align>
+                        <font>basemedium</font>
+                        <font state="selected">basemedium</font>
+                        <font state="disabled">basemediumgrey</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,103,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,103,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+
+        <!-- special keys -->
+        <button name="key_lshift">
+            <position>13,161</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                    <imagetype name="arrow">
+                        <position>25,5</position>
+                        <filename>keyboard/shiftarrow.png</filename>
+                    </imagetype>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>26,6</position>
+                        <filename>keyboard/shiftarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_lock">
+            <position>93,161</position>
+                <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_moveleft">
+            <position>358,161</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>6,12</position>
+                        <filename>keyboard/leftarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>0,0,53,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>6,12</position>
+                        <filename>keyboard/leftarrow.png</filename>
+                    </imagetype>
+
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_moveright">
+            <position>413,161</position>
+                <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>6,12</position>
+                        <filename>keyboard/rightarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>0,0,53,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,53,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>6,12</position>
+                        <filename>keyboard/rightarrow.png</filename>
+                    </imagetype>
+
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_rshift">
+            <position>468,161</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>22,5</position>
+                        <filename>keyboard/shiftarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>0,0,72,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>24,6</position>
+                        <filename>keyboard/shiftarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_back">
+            <position>468,50</position>
+                    <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,72,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,72,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_comp" from="key_back">
+            <position>420,124</position>
+        </button>
+        <button name="key_del">
+            <position>494,124</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,46,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,47,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,46,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,46,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_done">
+            <position>443,87</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,97,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>23,10</position>
+                        <filename>keyboard/returnarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <area>0,0,97,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,97,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,97,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <imagetype name="arrow">
+                        <position>24,11</position>
+                        <filename>keyboard/returnarrow.png</filename>
+                    </imagetype>
+                    <textarea name="text">
+                        <position>8,8</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+        <button name="key_alt">
+            <position>278,161</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <area>0,0,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <font state="selected">basesmall</font>
+                        <font state="disabled">basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,78,35</area>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <textarea name="text">
+                        <position>1,1</position>
+                    </textarea>
+                </state>
+            </statetype>
+        </button>
+
+    </window>
+
+</mythuitheme>
