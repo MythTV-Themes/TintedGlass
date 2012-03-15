@@ -2419,105 +2419,127 @@
             <value>Manage Recording Rules</value>
         </textarea>
 
+        <shape name="keyinstr-backdrop" from="base_backdrop">
+            <area>0,36,1280,40</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="keyinstr-top-line" from="base_line">
+            <area>0,37,1280,2</area>
+        </shape>
+
+        <shape name="keyinstr-bottom-line" from="base_line">
+            <area>0,73,1280,2</area>
+        </shape>
+
         <shape name="manage-recordings-list-backdrop" from="base_backdrop">
-            <area>20,36,1240,383</area>
+            <area>20,86,1240,439</area>
         </shape>
 
         <shape name="manage-recordings-list-backdrop-line" from="base_backdrop_line">
-            <area>21,37,1238,381</area>
+            <area>21,87,1238,437</area>
         </shape>
 
         <shape name="manage-recordings-list-top-line" from="base_highlight_line">
-            <area>22,38,1236,2</area>
+            <area>22,88,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-list-bottom-line" from="base_highlight_line">
-            <area>22,415,1236,2</area>
+            <area>22,521,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-list-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,375</area>
+            <area>22,90,2,431</area>
         </shape>
 
         <shape name="manage-recordings-list-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,375</area>
+            <area>1256,90,2,431</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-backdrop" from="base_backdrop">
-            <area>20,429,1240,256</area>
+        <shape name="manage-recordings-description-backdrop" from="base_backdrop">
+            <area>20,535,1240,150</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,430,1238,254</area>
+        <shape name="manage-recordings-description-backdrop-line" from="base_backdrop_line">
+            <area>21,536,1238,148</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-top-line" from="base_highlight_line">
-            <area>22,431,1236,2</area>
+        <shape name="manage-recordings-description-top-line" from="base_highlight_line">
+            <area>22,537,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-bottom-line" from="base_highlight_line">
+        <shape name="manage-recordings-description-bottom-line" from="base_highlight_line">
             <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,433,2,248</area>
+        <shape name="manage-recordings-description-left-line" from="base_highlight_vertical_line">
+            <area>22,539,2,142</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1256,433,2,248</area>
+        <shape name="manage-recordings-description-right-line" from="base_highlight_vertical_line">
+            <area>1256,539,2,142</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-seperator-first-line" from="base_line">
-            <area>43,479,1194,2</area>
+        <shape name="manage-recordings-description-seperator-first-line" from="base_line">
+            <area>43,573,1194,2</area>
         </shape>
 
-        <shape name="manage-recordings-bottom-seperator-second-line" from="base_line">
-            <area>43,633,1194,2</area>
-        </shape>
+        <textarea name="keyinstr">
+            <area>0,39,1280,34</area>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+            <value>(1) Title (2) Priority (4) Type</value>
+        </textarea>
 
         <textarea name="norecordings_info" from="basetextarea">
-            <area>30,46,1220,363</area>
+            <area>35,94,1210,423</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>There are no Recordings Scheduled...</value>
         </textarea>
 
         <buttonlist name="programs" from="base_list_state_medium_selector">
-            <area>30,45,1220,368</area>
+            <area>30,101,1220,410</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,34</area>
+                    <area>0,0,1220,36</area>
                     <textarea name="rectypechar" from="buttontext">
-                        <area>8,5,14,24</area>
+                        <area>8,0,14,36</area>
                         <font>basesmalllightgrey</font>
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="rectypechar">
-                        <area>50,5,574,24</area>
+                        <area>50,0,506,36</area>
                         <cutdown>yes</cutdown>
                     </textarea>
                     <textarea name="callsign" from="rectypechar">
-                        <area>644,5,124,24</area>
+                        <area>566,0,140,36</area>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypechar">
-                        <area>780,5,300,24</area>
+                        <area>794,0,300,36</area>
                         <cutdown>yes</cutdown>
-                        <align>right</align>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="finalpriority" from="rectypechar">
-                        <area>1178,5,34,24</area>
+                        <area>1178,0,34,36</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,46</area>
+                    <area>0,0,1220,70</area>
                     <textarea name="title" from="buttontext">
-                        <area>8,1,615,24</area>
+                        <area>8,1,548,24</area>
                         <font>basesmalllightgrey</font>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>643,1,409,24</area>
+                        <area>566,1,140,24</area>
                         <cutdown>no</cutdown>
+                        <align>right,top</align>
+                    </textarea>
+                    <textarea name="channel" from="base_text_font_state_extrasmall">
+                        <area>716,1,346,24</area>
+                        <template> -  %1</template>
                     </textarea>
                     <textarea name="finalpriority" from="title">
                         <area>1072,1,140,24</area>
@@ -2525,73 +2547,63 @@
                         <align>right,vcenter</align>
                         <template>Priority:  %1</template>
                     </textarea>
-                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>8,25,350,20</area>
-                        <font>baseextrasmalllightgrey</font>
-                    </textarea>
-                    <textarea name="category" from="rectypestatus">
-                        <area>378,25,252,20</area>
+                    <textarea name="category" from="base_text_font_state_extrasmall">
+                        <area>8,25,293,20</area>
                         <align>left,vcenter</align>
                         <template>Category: %1</template>
                     </textarea>
-                    <textarea name="channel" from="rectypestatus">
-                        <area>650,25,322,20</area>
+                    <textarea name="recgroup" from="channel">
+                        <area>311,25,294,20</area>
+                        <align>allcenter</align>
+                        <template>Recording Group: %1</template>
+                    </textarea>
+                    <textarea name="recordingprofile" from="channel">
+                        <area>615,25,294,20</area>
+                        <align>allcenter</align>
+                        <template>Recording Profile: %1</template>
+                    </textarea>
+                    <textarea name="storagegroup" from="channel">
+                        <area>919,25,293,20</area>
+                        <align>right,vcenter</align>
+                        <template>Storage Group: %1</template>
+                    </textarea>
+                    <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
+                        <area>8,45,350,20</area>
+                        <font>baseextrasmalllightgrey</font>
+                        <align>left,bottom</align>
+                    </textarea>
+                    <textarea name="scheduleinfo" from="rectypestatus">
+                        <area>368,45,614,20</area>
+                        <font>baseextrasmalllightgrey</font>
+                        <align>left,bottom</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypestatus">
-                        <area>992,25,220,20</area>
-                        <align>right,vcenter</align>
+                        <area>992,45,220,20</area>
+                        <align>right,bottom</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-6</position>
+                <position>1210,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,363</position>
+                <position>1210,410</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,439,1192,34</area>
-            <font>basemediumlargeryellow</font>
+            <area>44,541,1192,32</area>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="recordinggroup" from="basetextarea">
-            <area>164,517,350,30</area>
+        <textarea name="description" from="basetextarea">
+            <area>44,581,1192,92</area>
             <font>basesmall</font>
-            <template>Recording Group: %1</template>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>244,570,350,30</area>
-            <font>basesmall</font>
-            <template>Category: %1</template>
-        </textarea>
-
-        <textarea name="storagegroup" from="basetextarea">
-            <area>860,517,350,30</area>
-            <font>basesmall</font>
-            <template>Storage Group: %1</template>            
-        </textarea>
-
-        <textarea name="recordingprofile" from="basetextarea">
-            <area>836,570,350,30</area>
-            <font>basesmall</font>
-            <template>Recording Profile: %1</template>
-        </textarea>
-
-        <textarea name="scheduleinfo" from="basetextarea">
-            <area>44,649,397,18</area>
-            <font>baseextrasmallblue</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="keyinstr">
-            <area>441,649,398,18</area>
-            <font>baseextrasmallblue</font>
-            <align>allcenter</align>
-            <value>(1) Title (2) Priority (4) Type</value>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+            <template>%DESCRIPTION%</template>
         </textarea>
 
     </window>
