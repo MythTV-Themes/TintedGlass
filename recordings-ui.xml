@@ -610,7 +610,7 @@
             <area>232,457,662,186</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
+            <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
@@ -1268,7 +1268,7 @@
             <area>232,457,662,186</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <value>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</value>
+            <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">

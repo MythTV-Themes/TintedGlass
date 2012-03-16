@@ -270,7 +270,7 @@
             <area>44,558,1190,124</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
-            <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
+            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -573,7 +573,7 @@
         <textarea name="description"  from="basetextarea">
             <area>43,498,696,172</area>
             <multiline>yes</multiline>
-            <value>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</value>
+            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <imagetype name="video">
