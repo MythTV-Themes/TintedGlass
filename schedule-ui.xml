@@ -886,10 +886,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>192,-5</position>
+                <position>191,-5</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>192,416</position>
+                <position>191,416</position>
             </statetype>
         </buttonlist>
 
@@ -963,10 +963,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>976,-9</position>
+                <position>975,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>976,410</position>
+                <position>975,410</position>
             </statetype>
         </buttonlist>
 
