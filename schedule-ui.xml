@@ -1342,7 +1342,7 @@
                     <textarea name="scheduleinfo" from="rectypestatus">
                         <area>368,45,614,20</area>
                         <font>baseextrasmalllightgrey</font>
-                        <align>left,bottom</align>
+                        <align>hcenter,bottom</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypestatus">
                         <area>992,45,220,20</area>
@@ -2651,7 +2651,7 @@
                     <textarea name="scheduleinfo" from="rectypestatus">
                         <area>368,45,614,20</area>
                         <font>baseextrasmalllightgrey</font>
-                        <align>left,bottom</align>
+                        <align>hcenter,bottom</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypestatus">
                         <area>992,45,220,20</area>
