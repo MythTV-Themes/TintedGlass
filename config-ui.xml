@@ -729,58 +729,58 @@
         </buttonlist>
 
         <textarea name="ac3_text" from="basetextarea">
-            <area>491,180,462,32</area>
+            <area>478,180,480,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports Dolby Digital</value>
+            <value>My audio subsystem supports Dolby Digital</value>
         </textarea>
 
         <checkbox name="ac3check" from="base_checkbox">
-            <position>431,182</position>
+            <position>418,182</position>
         </checkbox>
 
         <textarea name="dts_text" from="basetextarea">
-            <area>491,218,462,32</area>
+            <area>478,218,480,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports DTS</value>
+            <value>My audio subsystem supports DTS</value>
         </textarea>
 
         <checkbox name="dtscheck" from="base_checkbox">
-            <position>431,220</position>
+            <position>418,220</position>
         </checkbox>
 
         <textarea name="eac3_text" from="basetextarea">
-            <area>491,256,462,32</area>
+            <area>478,256,480,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports E-AC-3</value>
+            <value>My audio subsystem supports E-AC-3</value>
         </textarea>
 
         <checkbox name="eac3check" from="base_checkbox">
-            <position>431,258</position>
+            <position>418,258</position>
         </checkbox>
 
         <textarea name="truehd_text" from="basetextarea">
-            <area>491,294,462,32</area>
+            <area>478,294,480,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports TrueHD</value>
+            <value>My audio subsystem supports TrueHD</value>
         </textarea>
 
         <checkbox name="truehdcheck" from="base_checkbox">
-            <position>431,296</position>
+            <position>418,296</position>
         </checkbox>
 
         <textarea name="dtshd_text" from="basetextarea">
-            <area>491,332,462,32</area>
+            <area>478,332,480,32</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
-            <value>My speaker supports DTS-HD</value>
+            <value>My audio subsystem supports DTS-HD</value>
         </textarea>
 
         <checkbox name="dtshdcheck" from="base_checkbox">
-            <position>431,334</position>
+            <position>418,334</position>
         </checkbox>
 
         <button name="testspeakers" from="base_medium_button">
