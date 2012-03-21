@@ -126,7 +126,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
-            <textoffset>6,6</textoffset>
+            <textoffset>6,7</textoffset>
             <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
@@ -429,7 +429,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>no</cutdown>
             <multiline>yes</multiline>
-            <textoffset>6,6</textoffset>
+            <textoffset>6,7</textoffset>
             <recordstatus type="SingleRecord" image="images/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="images/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="images/gg-rs-channel.png"></recordstatus>
