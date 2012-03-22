@@ -634,7 +634,7 @@
             <area>1086,367,2,313</area>
         </shape>
 
-        <shape name="manual-schedule-buttons-top-line" from="base_highlight_line">
+        <shape name="manual-schedule-buttons-top-line" from="base_line">
             <area>213,604,854,2</area>
         </shape>
 
