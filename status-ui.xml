@@ -163,7 +163,6 @@
         <textarea name="helptext">
             <area>44,554,1192,120</area>
             <font>basesmall</font>
-            <alpha>0</alpha>
             <multiline>yes</multiline>
             <value>This screen displays the status of various system components</value>
         </textarea>
