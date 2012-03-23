@@ -707,9 +707,8 @@
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_button_background_disabled">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                     <area>0,0,100%,100%</area>
-                    <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext">
                     <font>basesmalllightgrey</font>
@@ -860,9 +859,8 @@
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_button_background_disabled">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                     <area>0,0,100%,100%</area>
-                    <cornerradius>15</cornerradius>
                 </shape>
                 <textarea name="buttontext">
                     <font>basesmalllightgrey</font>
@@ -969,6 +967,11 @@
                          </shape>
                     </state>
                 </statetype>
+            </state>
+            <state name="selectedinactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <area>0,0,100%,100%</area>
+                </shape>
             </state>
         </statetype>
     </buttonlist>
@@ -2152,7 +2155,11 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="active">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>586,-6</position>
