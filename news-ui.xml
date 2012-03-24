@@ -9,199 +9,205 @@
             <value>RSS Newsfeeds</value>
         </textarea>
 
-        <shape name="siteslistbox" from="base_backdrop">
-            <area>0,36,1280,30</area>
+        <shape name="status-backdrop" from="base_backdrop">
+            <area>0,36,1280,40</area>
             <type>box</type>
         </shape>
 
-	<shape name="siteslistbox-top-line" from="base_line">
+        <shape name="status-top-line" from="base_line">
             <area>0,37,1280,2</area>
         </shape>
 
-        <shape name="siteslistbox-bottom-line" from="base_line">
-            <area>0,63,1280,2</area>
+        <shape name="status-bottom-line" from="base_line">
+            <area>0,73,1280,2</area>
         </shape>
 
-        <shape name="news-feeds-backdrop" from="base_backdrop">
-            <area>20,76,1240,370</area>
+        <shape name="news-sites-list-backdrop" from="base_backdrop">
+            <area>20,86,416,400</area>
         </shape>
 
-        <shape name="news-feeds-backdrop-line" from="base_backdrop_line">
-            <area>21,77,1238,368</area>
+        <shape name="news-sites-list-backdrop-line" from="base_backdrop_line">
+            <area>21,87,414,398</area>
         </shape>
 
-        <shape name="news-feeds-top-line" from="base_highlight_line">
-            <area>22,78,1236,2</area>
+        <shape name="news-sites-list-top-line" from="base_highlight_line">
+            <area>22,88,412,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-line" from="base_highlight_line">
-            <area>22,442,1236,2</area>
+        <shape name="news-sites-list-bottom-line" from="base_highlight_line">
+            <area>22,482,412,2</area>
         </shape>
 
-        <shape name="news-feeds-left-line" from="base_highlight_vertical_line">
-            <area>22,80,2,362</area>
+        <shape name="news-sites-list-left-line" from="base_highlight_vertical_line">
+            <area>22,90,2,402</area>
         </shape>
 
-        <shape name="news-feeds-right-line" from="base_highlight_vertical_line">
-            <area>1256,80,2,362</area>
+        <shape name="news-sites-list-right-line" from="base_highlight_vertical_line">
+            <area>432,90,2,402</area>
         </shape>
 
-        <shape name="news-feeds-bottom-backdrop" from="base_backdrop">
-            <area>20,456,1240,229</area>
+        <shape name="news-articles-list-backdrop" from="base_backdrop">
+            <area>446,86,814,400</area>
         </shape>
 
-        <shape name="news-feeds-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,457,935,227</area>
+        <shape name="news-articles-list-backdrop-line" from="base_backdrop_line">
+            <area>447,87,812,398</area>
         </shape>
 
-        <shape name="news-feeds-bottom-top-line" from="base_highlight_line">
-            <area>22,458,933,2</area>
+        <shape name="news-articles-list-top-line" from="base_highlight_line">
+            <area>448,88,810,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-bottom-line" from="base_highlight_line">
-            <area>22,681,933,2</area>
+        <shape name="news-articles-list-bottom-line" from="base_highlight_line">
+            <area>448,482,810,2</area>
         </shape>
 
-        <shape name="news-feeds-bottom-left-line" from="base_highlight_vertical_line">
-            <area>21,460,2,221</area>
+        <shape name="news-articles-list-left-line" from="base_highlight_vertical_line">
+            <area>448,90,2,392</area>
         </shape>
 
-        <shape name="news-feeds-bottom-right-line" from="base_highlight_vertical_line">
-            <area>953,460,2,221</area>
+        <shape name="news-articles-list-right-line" from="base_highlight_vertical_line">
+            <area>1256,90,2,392</area>
         </shape>
 
-        <shape name="news-feeds-bottom-seperator-first-line" from="base_line">
-            <area>37,504,903,2</area>
+        <shape name="news-description-backdrop" from="base_backdrop">
+            <area>20,496,1240,189</area>
         </shape>
 
-        <shape name="news-feeds-bottom-seperator-second-line" from="base_line">
-            <area>37,635,903,2</area>
+        <shape name="news-description-backdrop-line" from="base_backdrop_line">
+            <area>21,497,1238,187</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-backdrop-line" from="base_backdrop_line">
-            <area>960,457,299,227</area>
+        <shape name="news-description-top-line" from="base_highlight_line">
+            <area>22,498,1236,2</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-top-line" from="base_highlight_line">
-            <area>961,458,297,2</area>
+        <shape name="news-description-bottom-line" from="base_highlight_line">
+            <area>22,681,1236,2</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-bottom-line" from="base_highlight_line">
-            <area>961,681,297,2</area>
+        <shape name="news-description-left-line" from="base_highlight_vertical_line">
+            <area>22,500,2,181</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-left-line" from="base_highlight_vertical_line">
-            <area>961,460,2,221</area>
+        <shape name="news-description-right-line" from="base_highlight_vertical_line">
+            <area>1256,500,2,181</area>
         </shape>
 
-        <shape name="news-feeds-thumbnail-right-line" from="base_highlight_vertical_line">
-            <area>1256,460,2,221</area>
+        <shape name="news-description-seperator-first-line" from="base_line">
+            <area>35,534,964,2</area>
         </shape>
 
-        <buttonlist name="siteslist">
-            <area>10,36,1260,30</area>
-            <spacing>0</spacing>
-            <scrollstyle>free</scrollstyle>
-            <wrapstyle>items</wrapstyle>
-            <layout>horizontal</layout>
-            <buttonarea>0,0,1260,30</buttonarea>
+        <shape name="news-description-vertical-seperator-first-line" from="base_vertical_line">
+            <area>1014,505,2,171</area>
+        </shape>
+
+        <buttonlist name="siteslist" from="base_list">
+            <area>28,99,400,378</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,420,30</area>
+                    <area>0,0,400,36</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,405,30</area>
-                        <align>allcenter</align>
-                        <cutdown>yes</cutdown>
+                        <area>8,0,384,36</area>
                         <font>basesmaller</font>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,405,30</area>
-                        <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
-                        <alphapulse min="127" max="255" change="2" />
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active">
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,405,30</area>
                         <align>allcenter</align>
-                        <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
+                <state name="selectedactive">
+                    <area>0,0,400,36</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,384,36</area>
+                        <font>basesmallyellow</font>
+                        <cutdown>yes</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,400,36</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,0,384,36</area>
+                        <font>basesmallyellow</font>
+                        <cutdown>yes</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>388,-7</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>388,375</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="articleslist" from="base_list">
-            <area>30,84,1220,360</area>
+            <area>454,99,798,378</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,34</area>
+                    <area>0,0,798,36</area>
                     <textarea name="buttontext">
-                        <area>8,0,1204,34</area>
+                        <area>8,0,782,36</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,34</area>
+                    <area>0,0,798,36</area>
                     <textarea name="buttontext">
-                        <area>8,0,1204,34</area>
+                        <area>8,0,782,36</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-6</position>
+                <position>786,-7</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,351</position>
+                <position>786,375</position>
             </statetype>
         </buttonlist>
 
+        <imagetype name="ispodcast">
+            <area>200,43,26,26</area>
+            <filename>images/podcast.png</filename>
+        </imagetype>
+
         <textarea name="updated" from="basetextarea">
-            <area>314,640,350,38</area>
-            <font>baseextrasmallblue</font>
+            <area>427,39,426,34</area>
+            <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
+        <imagetype name="download">
+            <area>978,43,26,26</area>
+            <filename>images/need-download.png</filename>
+        </imagetype>
+
+        <imagetype name="enclosures">
+            <area>1129,43,26,26</area>
+            <filename>images/enclosures.png</filename>
+        </imagetype>
+
         <textarea name="title" from="basetextarea">
-            <area>38,463,901,38</area>
+            <area>38,500,964,34</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>38,509,901,124</area>
+            <area>36,539,962,142</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
         </textarea>
 
         <imagetype name="thumbnail">
-            <area>965,462,289,217</area>
+            <area>1018,502,236,177</area>
             <mask>images/masks/news_thumbnail_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
-        <imagetype name="enclosures">
-            <filename>images/enclosures.png</filename>
-            <area>843,646,26,26</area>
-        </imagetype>
-
-        <imagetype name="download">
-            <filename>images/need-download.png</filename>
-            <area>879,646,26,26</area>
-        </imagetype>
-
-        <imagetype name="ispodcast">
-            <filename>images/podcast.png</filename>
-            <area>915,646,26,26</area>
-        </imagetype>
-
         <textarea name="nosites" from="basetextarea">
-            <area>30,86,1220,350</area>
+            <area>454,94,798,384</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <multiline>yes</multiline>

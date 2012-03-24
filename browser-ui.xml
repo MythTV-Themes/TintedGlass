@@ -238,7 +238,7 @@
 
         <textarea name="messagetext" from="basetextarea">
             <font>basemedium</font>
-            <area>30,117,1220,558</area>
+            <area>28,96,1224,579</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
         </textarea>
