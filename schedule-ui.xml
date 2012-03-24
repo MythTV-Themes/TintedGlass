@@ -3063,7 +3063,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
@@ -3297,7 +3296,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
@@ -3462,7 +3460,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
@@ -3725,7 +3722,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
@@ -3942,7 +3938,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
@@ -4134,7 +4129,6 @@
             <area>735,82,504,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
-            <value>%|"SUBTITLE|"%</value>
         </textarea>
 
         <shape name="coverart-backdrop" from="base_backdrop">
