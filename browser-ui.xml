@@ -101,28 +101,28 @@
         </textarea>
 
         <shape name="groupbox" from="base_backdrop">
-            <area>0,35,1280,32</area>
+            <area>0,36,1280,40</area>
             <type>box</type>
         </shape>
 
         <shape name="groupbox-top-line" from="base_line">
-            <area>0,36,1280,2</area>
+            <area>0,37,1280,2</area>
         </shape>
 
         <shape name="groupbox-bottom-line" from="base_line">
-            <area>0,64,1280,2</area>
+            <area>0,73,1280,2</area>
         </shape>
 
         <shape name="bookmark-backdrop" from="base_backdrop">
-            <area>20,76,1240,609</area>
+            <area>20,86,1240,599</area>
         </shape>
 
         <shape name="bookmark-backdrop-line" from="base_backdrop_line">
-            <area>21,77,1238,607</area>
+            <area>21,87,1238,597</area>
         </shape>
 
         <shape name="bookmark-top-line" from="base_highlight_line">
-            <area>22,78,1236,2</area>
+            <area>22,88,1236,2</area>
         </shape>
 
         <shape name="bookmark-bottom-line" from="base_highlight_line">
@@ -130,37 +130,40 @@
         </shape>
 
         <shape name="bookmark-left-line" from="base_highlight_vertical_line">
-            <area>22,80,2,601</area>
+            <area>22,90,2,591</area>
         </shape>
 
         <shape name="bookmark-right-line" from="base_highlight_vertical_line">
-            <area>1256,80,2,601</area>
+            <area>1256,90,2,591</area>
         </shape>
+
         <shape name="bookmark-seperator-first-line" from="base_line">
-            <area>42,109,1196,2</area>
+            <area>42,118,1196,2</area>
         </shape>
 
         <buttonlist name="grouplist">
-            <area>0,36,1280,30</area>
+            <area>0,39,1280,34</area>
             <spacing>0</spacing>
-            <scrollstyle>free</scrollstyle>
+            <scrollstyle>center</scrollstyle>
+            <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
+            <align>allcenter</align>
             <layout>horizontal</layout>
-            <buttonarea>0,0,1280,30</buttonarea>
+            <buttonarea>0,0,1280,34</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,255,53</area>
+                    <area>0,0,256,34</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,30</area>
+                        <area>8,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmaller</font>
+                        <font>basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>8,0,400,83</area>
+                    <area>0,0,256,34</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,240,30</area>
+                        <area>8,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
@@ -169,7 +172,7 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,240,30</area>
+                        <area>8,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
@@ -179,57 +182,57 @@
         </buttonlist>
 
         <textarea name="namelabel" from="basetextarea">
-            <font>baseevensmalleryellow</font>
-            <area>30,80,610,29</area>
+            <font>basesmalleryellow</font>
+            <area>30,90,610,30</area>
             <align>allcenter</align>
             <value>Website Name</value>
         </textarea>
 
         <textarea name="urllabel" from="basetextarea">
-            <font>baseevensmalleryellow</font>
-            <area>610,80,610,29</area>
+            <font>basesmalleryellow</font>
+            <area>610,90,610,30</area>
             <align>allcenter</align>
             <value>Website URL</value>
         </textarea>
 
         <buttonlist name="bookmarklist" from="base_list">
-            <area>30,115,1220,578</area>
+            <area>30,130,1220,558</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,42</area>
+                    <area>0,0,1220,38</area>
                     <statetype name="buttoncheck">
-                        <position>8,11</position>
+                        <position>8,9</position>
                     </statetype>
                     <textarea name="name" from="base_text_font_state_small">
-                        <area>36,0,569,42</area>
+                        <area>36,0,569,38</area>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>615,0,597,42</area>
+                        <area>615,0,597,38</area>
                         <align>vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,42</area>
+                    <area>0,0,1220,38</area>
                     <statetype name="buttoncheck">
-                        <position>8,11</position>
+                        <position>8,9</position>
                     </statetype>
                     <textarea name="name" from="base_text_font_state_small">
-                        <area>36,0,569,42</area>
+                        <area>36,0,569,38</area>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>615,0,597,42</area>
+                        <area>615,0,597,38</area>
                         <align>vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-5</position>
+                <position>1209,-8</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,559</position>
+                <position>1209,542</position>
             </statetype>
         </buttonlist>
 
