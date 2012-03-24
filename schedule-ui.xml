@@ -3884,43 +3884,39 @@
         </buttonlist>
 
         <checkbox name="userjob1" from="base_checkbox">
-            <position>252,345</position>
+            <position>250,345</position>
         </checkbox>
 
-        <textarea name="userjob1label" from="basetextarea">
-            <area>74,340,628,40</area>
-            <align>allcenter</align>
-            <value>Run User Job #1</value>
+        <textarea name="userjob1text" from="basetextarea">
+            <area>298,340,394,40</area>
+            <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="userjob2" from="base_checkbox">
-            <position>252,413</position>
+            <position>250,413</position>
         </checkbox>
 
-        <textarea name="userjob2label" from="basetextarea">
-            <area>74,408,628,40</area>
-            <align>allcenter</align>
-            <value>Run User job #2</value>
+        <textarea name="userjob2text" from="basetextarea">
+            <area>298,408,394,40</area>
+            <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="userjob3" from="base_checkbox">
-            <position>252,481</position>
+            <position>250,481</position>
         </checkbox>
 
-        <textarea name="userjob3label" from="basetextarea">
-            <area>74,476,628,40</area>
-            <align>allcenter</align>
-            <value>Run User Job #3</value>
+        <textarea name="userjob3text" from="basetextarea">
+            <area>298,476,394,40</area>
+            <align>left,vcenter</align>
         </textarea>
 
         <checkbox name="userjob4" from="base_checkbox">
-            <position>252,549</position>
+            <position>250,549</position>
         </checkbox>
 
-        <textarea name="userjob4label" from="basetextarea">
-            <area>74,544,628,40</area>
-            <align>allcenter</align>
-            <value>Run User Job #4</value>
+        <textarea name="userjob4text" from="basetextarea">
+            <area>298,544,394,40</area>
+            <align>left,vcenter</align>
         </textarea>
 
         <button name="back" from="base_medium_button">
