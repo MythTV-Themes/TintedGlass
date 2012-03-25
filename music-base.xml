@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
 <mythuitheme> 
 
     <!-- previous track button -->
@@ -548,11 +548,11 @@
 
         <imagetype name="visualizer_border">
             <filename>mythmusic/mm_blackhole_border.png</filename>
-            <area>1077,11,171,171,</area>
+            <area>1077,11,171,171</area>
         </imagetype>
 
         <video name="visualizer">
-            <area>1080,15,165,164,</area>
+            <area>1080,15,165,164</area>
         </video>
 
         <textarea name="visualizername" from="basetextarea">
