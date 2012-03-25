@@ -373,9 +373,8 @@
 
         <shape name="osd-status-backdrop">
             <area>0,660,1280,61</area>
-            <type>roundbox</type>
+            <type>box</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="osd-status-highlight-top-line">
@@ -465,9 +464,8 @@
 
         <shape name="program-info-backdrop">
             <area>0,438,1280,283</area>
-            <type>roundbox</type>
+            <type>box</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="title-highlight-top-line">
@@ -941,10 +939,9 @@
         </fontdef>
 
         <shape name="browse-info-backdrop">
-            <area>64,521,1152,200</area>
-            <type>roundbox</type>
+            <area>0,521,1280,200</area>
+            <type>box</type>
             <fill color="#000000" alpha="140" />
-            <cornerradius>0</cornerradius>
         </shape>
 
         <shape name="browse-info-highlight-top-line">
