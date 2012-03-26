@@ -226,7 +226,20 @@
                         <align>vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                    <area>0,0,1220,38</area>
+                    <statetype name="buttoncheck">
+                        <position>8,9</position>
+                    </statetype>
+                    <textarea name="name" from="buttontext">
+                        <area>36,0,569,38</area>
+                        <align>vcenter</align>
+                    </textarea>
+                    <textarea name="url" from="name">
+                        <area>615,0,597,38</area>
+                        <align>vcenter</align>
+                    </textarea>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1209,-8</position>

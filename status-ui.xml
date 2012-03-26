@@ -127,22 +127,20 @@
                     <shape name="buttonbackground" from="base_select_bar_active">
                         <area>0,0,100%,100%</area>
                     </shape>
-                    <textarea name="buttontext" from="base_text_font_state_small">
+                    <textarea name="buttontext">
                         <area>15,0,1190,36</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1220,36</area>
-                    <textarea name="buttontext" from="base_text_font_state_small">
+                    <textarea name="buttontext">
                         <area>15,0,1190,36</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
-                        <area>0,0,100%,100%</area>
-                    </shape>
+                <state name="selectedinactive">
+                    <area>0,0,1220,36</area>
                     <textarea name="buttontext">
-                        <font>basesmalllightgrey</font>
+                        <area>15,0,1190,36</area>
                     </textarea>
                 </state>
             </statetype>
