@@ -711,7 +711,7 @@
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext">
-                    <font>basesmalllightgrey</font>
+                    <font>basesmallyellow</font>
                 </textarea>
             </state>
         </statetype>

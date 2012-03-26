@@ -288,7 +288,6 @@
                         <area>0,0,400,32</area>
                         <textarea name="buttontext">
                             <area>8,0,376,32</area>
-                            <font>basesmalllightgrey</font>
                         </textarea>
                         <imagetype name="buttonarrow">
                             <position>381,7</position>

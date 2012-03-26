@@ -306,7 +306,7 @@
             <area>1256,4,2,120</area>
         </shape>
 
-        <buttonlist name="currentplaylist" from="base_list">
+        <buttonlist name="currentplaylist" from="base_list_state">
             <area>30,12,1220,104</area>
             <buttonarea>0,0,1220,104</buttonarea>
             <statetype name="buttonitem">

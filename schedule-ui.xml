@@ -2353,10 +2353,10 @@
                         <position>784,7</position>
                     </imagetype>
                 </state>
-                <state name="selectedinactive" from="active">
+                <state name="selectedinactive">
                     <area>0,0,802,34</area>
                     <textarea name="buttontext">
-                        <font>basesmalllightgrey</font>
+                        <area>8,0,766,34</area>
                     </textarea>
                 </state>
             </statetype>
