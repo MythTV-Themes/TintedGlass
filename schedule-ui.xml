@@ -757,19 +757,19 @@
         </shape>
 
         <shape name="upcoming-groups-backdrop" from="base_backdrop">
-            <area>20,86,224,439</area>
+            <area>20,86,222,439</area>
         </shape>
 
         <shape name="upcoming-groups-backdrop-line" from="base_backdrop_line">
-            <area>21,87,222,437</area>
+            <area>21,87,220,437</area>
         </shape>
 
         <shape name="upcoming-groups-top-line" from="base_highlight_line">
-            <area>22,88,220,2</area>
+            <area>22,88,218,2</area>
         </shape>
 
         <shape name="upcoming-groups-bottom-line" from="base_highlight_line">
-            <area>22,521,220,2</area>
+            <area>22,521,218,2</area>
         </shape>
 
         <shape name="upcoming-groups-left-line" from="base_highlight_vertical_line">
@@ -777,27 +777,27 @@
         </shape>
 
         <shape name="upcoming-groups-right-line" from="base_highlight_vertical_line">
-            <area>240,90,2,431</area>
+            <area>238,90,2,431</area>
         </shape>
 
         <shape name="upcoming-schedules-backdrop" from="base_backdrop">
-            <area>254,86,1006,439</area>
+            <area>252,86,1008,439</area>
         </shape>
 
         <shape name="upcoming-schedules-backdrop-line" from="base_backdrop_line">
-            <area>255,87,1004,437</area>
+            <area>253,87,1006,437</area>
         </shape>
 
         <shape name="upcoming-schedules-top-line" from="base_highlight_line">
-            <area>256,88,1002,2</area>
+            <area>254,88,1004,2</area>
         </shape>
 
         <shape name="upcoming-schedules-bottom-line" from="base_highlight_line">
-            <area>256,521,1002,2</area>
+            <area>254,521,1004,2</area>
         </shape>
 
         <shape name="upcoming-schedules-left-line" from="base_highlight_vertical_line">
-            <area>256,90,2,431</area>
+            <area>254,90,2,431</area>
         </shape>
 
         <shape name="upcoming-schedules-right-line" from="base_highlight_vertical_line">
@@ -853,21 +853,21 @@
         </textarea>
 
         <buttonlist name="groups" from="base_list">
-            <area>33,96,198,420</area>
+            <area>32,107,198,420</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,198,40</area>
+                    <area>0,0,198,38</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,182,40</area>
+                        <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmaller</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,198,40</area>
+                    <area>0,0,198,38</area>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,182,40</area>
+                        <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallyellow</font>
@@ -878,7 +878,7 @@
                         <area>0,0,100%,100%</area>
                     </shape>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>8,0,182,40</area>
+                        <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basesmallyellow</font>
@@ -886,19 +886,19 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>191,-5</position>
+                <position>188,-15</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>191,416</position>
+                <position>188,404</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="schedules" from="base_list_state_large_selector">
-            <area>264,101,986,410</area>
+            <area>262,101,988,410</area>
             <align>bottom</align>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,986,36</area>
+                    <area>0,0,988,36</area>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,0,190,36</area>
                         <align>left,vcenter</align>
@@ -910,17 +910,17 @@
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="title" from="base_text_font_state_small">
-                        <area>406,0,522,36</area>
+                        <area>406,0,524,36</area>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="card" from="base_text_font_state_small">
-                        <area>948,0,30,36</area>
+                        <area>950,0,30,36</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,986,70</area>
+                    <area>0,0,988,70</area>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
                         <align>left,vcenter</align>
@@ -932,11 +932,11 @@
                         <cutdown>no</cutdown>
                     </textarea>
                     <textarea name="title" from="base_text_font_state_small">
-                        <area>406,1,522,24</area>
+                        <area>406,1,524,24</area>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="card" from="base_text_font_state_small">
-                        <area>948,1,30,24</area>
+                        <area>950,1,30,24</area>
                         <cutdown>no</cutdown>
                         <align>right,vcenter</align>
                     </textarea>
@@ -944,7 +944,7 @@
                         <area>8,24,418,22</area>
                     </textarea>
                     <textarea name="subtitle" from="base_text_font_state_smaller">
-                        <area>436,24,542,22</area>
+                        <area>436,24,544,22</area>
                         <template>%YEARSTARS| %%SUBTITLE%</template>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
@@ -952,21 +952,21 @@
                         <align>left,bottom</align>
                     </textarea>
                     <textarea name="longrepeat" from="base_text_font_state_extrasmall">
-                        <area>368,45,306,20</area>
+                        <area>368,45,308,20</area>
                         <align>hcenter,bottom</align>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
-                        <area>684,45,294,20</area>
+                        <area>686,45,294,20</area>
                         <align>right,bottom</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>975,-9</position>
+                <position>977,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>975,410</position>
+                <position>977,410</position>
             </statetype>
         </buttonlist>
 
