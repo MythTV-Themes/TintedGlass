@@ -710,6 +710,10 @@
                 <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                     <area>0,0,100%,100%</area>
                 </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                    <font>basesmall</font>
+                    <font state="normal">basesmall</font>
+                </textarea>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
@@ -859,6 +863,10 @@
                 <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                     <area>0,0,100%,100%</area>
                 </shape>
+                <textarea name="buttontext" from="base_text_font_state_small">
+                    <font>basesmall</font>
+                    <font state="normal">basesmall</font>
+                </textarea>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
