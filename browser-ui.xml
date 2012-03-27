@@ -167,7 +167,9 @@
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <font>basemediumyellow</font>
+                        <!-- cpu usage is very high
                         <alphapulse min="127" max="255" change="2"/>
+                        -->
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">

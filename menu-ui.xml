@@ -161,7 +161,9 @@
                         <area>0,0,232,64</area>
                         <font>basemediumlargerdarkyellow</font>
                         <multiline>yes</multiline>
+                        <!-- cpu usage is very high
                         <alphapulse min="100" max="255" change="2"/>
+                         -->
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
                         <case>upper</case>
