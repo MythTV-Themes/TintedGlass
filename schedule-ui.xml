@@ -960,7 +960,11 @@
                         <align>right,bottom</align>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="active">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+            </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>977,-9</position>
