@@ -1804,10 +1804,20 @@
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                        <area>0,0,100%,100%</area>
-                    </shape>
+                <state name="selectedactive">
+                    <area>0,0,100%,42</area>
+                    <imagetype name="buttonimage">
+                        <area>15,5,32,32</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
+                    <textarea name="title" from="buttontext">
+                        <area>57,0,1038,42</area>
+                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                    </textarea>
+                    <textarea name="length" from="buttontext">
+                        <area>1105,0,100,42</area>
+                        <align>right,vcenter</align>
+                    </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>

@@ -107,28 +107,23 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,398,36</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,382,36</area>
                         <font>basesmaller</font>
-                        <cutdown>yes</cutdown>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,398,36</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,382,36</area>
-                        <font>basesmallyellow</font>
-                        <cutdown>yes</cutdown>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,398,36</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,382,36</area>
-                        <font>basesmallyellow</font>
-                        <cutdown>yes</cutdown>
                         <align>allcenter</align>
                     </textarea>
                 </state>

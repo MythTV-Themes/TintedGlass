@@ -857,7 +857,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,198,38</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
@@ -866,22 +866,20 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,198,38</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
                         <area>0,0,100%,100%</area>
                     </shape>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,182,38</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>

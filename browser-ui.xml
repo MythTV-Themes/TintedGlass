@@ -203,7 +203,7 @@
                     <statetype name="buttoncheck">
                         <position>8,9</position>
                     </statetype>
-                    <textarea name="name" from="base_text_font_state_small">
+                    <textarea name="name" from="buttontext">
                         <area>36,0,569,38</area>
                         <align>vcenter</align>
                     </textarea>
@@ -217,7 +217,7 @@
                     <statetype name="buttoncheck">
                         <position>8,9</position>
                     </statetype>
-                    <textarea name="name" from="base_text_font_state_small">
+                    <textarea name="name" from="buttontext">
                         <area>36,0,569,38</area>
                         <align>vcenter</align>
                     </textarea>

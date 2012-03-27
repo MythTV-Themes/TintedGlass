@@ -168,31 +168,24 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,40</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
-                        <align>allcenter</align>
-                        <cutdown>yes</cutdown>
                         <font>basesmaller</font>
+                        <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,300,40</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
                         <align>allcenter</align>
-                        <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
-                        <area>0,0,100%,100%</area>
-                    </shape>
-                    <textarea name="buttontext" from="basetextarea">
+                <state name="selectedinactive">
+                    <area>0,0,300,40</area>
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
                         <align>allcenter</align>
-                        <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>
@@ -825,32 +818,24 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,40</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
-                        <align>allcenter</align>
-                        <cutdown>yes</cutdown>
                         <font>basesmaller</font>
+                        <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,300,40</area>
-                    <textarea name="buttontext" from="basetextarea">
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
                         <align>allcenter</align>
-                        <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_button_background_disabled">
-                        <area>0,0,100%,100%</area>
-                        <cornerradius>15</cornerradius>
-                    </shape>
-                    <textarea name="buttontext" from="basetextarea">
+                <state name="selectedinactive">
+                    <area>0,0,300,40</area>
+                    <textarea name="buttontext">
                         <area>8,0,284,40</area>
                         <align>allcenter</align>
-                        <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
                     </textarea>
                 </state>
             </statetype>

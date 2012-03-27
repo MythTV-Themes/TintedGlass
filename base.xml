@@ -684,6 +684,8 @@
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
+                    <font>basesmallyellow</font>
+                    <font state="normal">basesmallyellow</font>
                 </textarea>
                 <statetype name="buttoncheck">
                     <state type="off">
