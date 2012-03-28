@@ -2492,12 +2492,12 @@
                     <textarea name="resolution">
                         <area>174,0,414,56</area>
                         <align>left,vcenter</align>
-                        <font>basemediumlarger</font>
+                        <font>basemediumlargeryellow</font>
                     </textarea>
                     <textarea name="url">
                         <area>174,64,414,20</area>
                         <align>left,vcenter</align>
-                        <font>baseextrasmall</font>
+                        <font>baseextrasmallyellow</font>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
