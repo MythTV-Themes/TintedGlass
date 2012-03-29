@@ -567,8 +567,8 @@
 
     <!-- Base definition of a inactve button background list style -->
     <shape name="base_button_background_inactive_list_style" from="base_button_background_selected">
-        <fill color="#404040" alpha="0" />
-        <line color="#404040" alpha="0" width="0" />
+        <fill color="#333333" alpha="175" />
+        <line color="#454545" alpha="180" width="2" />
     </shape>
 
     <!-- Base definition of a button list -->
@@ -616,7 +616,14 @@
                     <font>basesmall</font>
                 </textarea>
             </state>
-            <state name="selectedinactive" from="active" />
+            <state name="selectedinactive" from="active">
+                <shape name="buttonbackground" from="base_button_background_inactive_list_style">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                <textarea name="buttontext">
+                    <font>basesmall</font>
+                </textarea>
+            </state>
         </statetype>
         <statetype name="upscrollarrow">
             <state type="off">
@@ -1401,7 +1408,7 @@
                     </imagetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,369,40</area>
+                    <area>0,0,370,40</area>
                     <textarea name="buttontext">
                         <area>8,0,354,40</area>
                     </textarea>
@@ -1409,7 +1416,15 @@
                         <position>347,11</position>
                     </imagetype>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                    <area>0,0,370,40</area>
+                    <textarea name="buttontext">
+                        <area>8,0,354,40</area>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>347,11</position>
+                    </imagetype>
+                </state>
             </statetype>
         <statetype name="upscrollarrow">
             <position>0,255</position>
@@ -1979,7 +1994,12 @@
                         <area>15,7,430,24</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,310</position>

@@ -1555,7 +1555,12 @@
                         <area>15,7,319,24</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                    <area>0,0,349,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,319,24</area>
+                    </textarea>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,256</position>

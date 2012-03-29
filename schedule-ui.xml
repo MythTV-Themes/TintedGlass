@@ -1649,7 +1649,12 @@
                         <area>15,7,430,24</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>15,7,430,24</area>
+                    </textarea>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,310</position>
@@ -1751,7 +1756,12 @@
                         <area>15,7,430,24</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive">
+                <area>0,0,460,40</area>
+                <textarea name="buttontext">
+                    <area>15,7,430,24</area>
+                </textarea>
+            </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>0,349</position>
