@@ -3403,7 +3403,7 @@
                 <state name="active">
                     <area>0,0,460,40</area>
                     <textarea name="buttontext">
-                        <area>40,0,405,40</area>                     
+                        <area>40,0,380,40</area>                     
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,10</position>
@@ -3412,7 +3412,7 @@
                 <state name="selectedactive">
                     <area>0,0,460,40</area>
                     <textarea name="buttontext">
-                        <area>40,0,405,40</area>
+                        <area>40,0,380,40</area>
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,10</position>
@@ -3421,7 +3421,7 @@
                 <state name="selectedinactive">
                     <area>0,0,460,40</area>
                     <textarea name="buttontext">
-                        <area>40,0,405,40</area>
+                        <area>40,0,380,40</area>
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,10</position>
