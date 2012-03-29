@@ -3342,166 +3342,104 @@
     </window>
 
     <window name="schedulefiltereditor">
-        <area>0,0,1280,720</area>
+        <area>-1,-1,500,500</area>
 
-        <textarea name="heading" from="base_heading">
-            <value>Schedule Filter Editor</value>
-        </textarea>
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
 
-        <shape name="schedule-filter-editor-backdrop" from="base_backdrop">
-            <area>20,36,686,648</area>
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="schedule-filter-editor-backdrop" from="base_popup_backdrop">
+            <area>0,0,500,500</area>
         </shape>
 
         <shape name="schedule-filter-editor-backdrop-line" from="base_backdrop_line">
-            <area>21,37,684,646</area>
+            <area>1,1,498,498</area>
         </shape>
 
         <shape name="schedule-filter-editor-top-line" from="base_highlight_line">
-            <area>22,38,682,2</area>
+            <area>2,2,496,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-bottom-line" from="base_highlight_line">
-            <area>22,680,682,2</area>
+            <area>2,496,496,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,640</area>
+            <area>2,4,2,492</area>
         </shape>
 
         <shape name="schedule-filter-editor-right-line" from="base_highlight_vertical_line">
-            <area>702,40,2,640</area>
+            <area>496,4,2,492</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-backdrop" from="base_backdrop">
-            <area>712,36,548,648</area>
+        <shape name="schedule-filter-editor-seperator-first-line" from="base_line">
+            <area>23,50,454,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-backdrop-line" from="base_backdrop_line">
-            <area>713,37,546,646</area>
+        <shape name="schedule-filter-editor-seperator-second-line" from="base_line">
+            <area>23,435,454,2</area>
         </shape>
 
-        <shape name="schedule-filter-editor-description-top-line" from="base_highlight_line">
-            <area>714,38,544,2</area>
-        </shape>
+        <textarea name="title_text" from="basetextarea">
+            <area>10,4,480,46</area>
+            <font>basemediumlargerdarkyellow</font>
+            <align>allcenter</align>
+            <value>Schedule Filter Editor</value>
+        </textarea>
 
-        <shape name="schedule-filter-editor-descripttion-bottom-line" from="base_highlight_line">
-            <area>714,680,544,2</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-left-line" from="base_highlight_vertical_line">
-            <area>714,40,2,640</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,640</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-seperator-first-line" from="base_line">
-            <area>734,80,506,2</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-seperator-second-line" from="base_line">
-            <area>734,122,506,2</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-seperator-third-line" from="base_line">
-            <area>734,164,506,2</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-seperator-fourth-line" from="base_line">
-            <area>734,206,506,2</area>
-        </shape>
-
-        <shape name="schedule-filter-editor-description-seperator-fifth-line" from="base_line">
-            <area>734,248,506,2</area>
-        </shape>
-
-	<buttonlist name="filters" from="base_list">
-	    <area>73,85,580,468</area>
-            <spacing>45</spacing>
-	    <statetype name="buttonitem">
-		<state name="active">
-		    <area>0,0,580,40</area>
-                    <shape name="background" from="base_button_background_active">
-                        <area>0,0,100%,100%</area>
-                    </shape>
-		    <textarea name="buttontext">
-			<area>36,5,516,30</area>
-		    </textarea>
-		    <statetype name="buttoncheck">
-			<position>8,10</position>
-		    </statetype>
-                    <imagetype name="rightarrow">
-                        <position>560,10</position>
-                        <filename>images/lists_right_arrow.png</filename>
-                    </imagetype>
-		</state>
-		<state name="selectedactive">
-                    <area>0,0,580,40</area>
+        <buttonlist name="filters" from="base_button_list">
+            <area>20,75,460,360</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,460,40</area>
                     <textarea name="buttontext">
-                        <area>36,5,516,30</area>
+                        <area>40,0,405,40</area>                     
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>8,10</position>
+                        <position>15,10</position>
                     </statetype>
-                    <imagetype name="rightarrow">
-                        <position>560,10</position>
-                        <filename>images/lists_right_arrow.png</filename>
-                    </imagetype>
-		</state>
-		<state name="selectedinactive" from="active" />
-	    </statetype>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>40,0,405,40</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>15,10</position>
+                    </statetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,460,40</area>
+                    <textarea name="buttontext">
+                        <area>40,0,405,40</area>
+                    </textarea>
+                    <statetype name="buttoncheck">
+                        <position>15,10</position>
+                    </statetype>
+                </state>
+            </statetype>
             <statetype name="upscrollarrow">
-                <position>576,-14</position>
+                <position>0,343</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>576,472</position>
+                <position>20,343</position>
             </statetype>
-	</buttonlist>
+        </buttonlist>
 
         <button name="back" from="base_medium_button">
-            <position>188,606</position>
+            <position>75,447</position>
             <value>Back</value>
         </button>
-
-        <textarea name="title" from="basetextarea">
-            <area>735,40,504,40</area>
-            <font>basemediumyellow</font>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="subtitle" from="basetextarea">
-            <area>735,82,504,40</area>
-            <font>basesmaller</font>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>735,124,504,40</area>
-            <font>basesmallyellow</font>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>735,166,504,40</area>
-            <font>basesmaller</font>
-            <cutdown>no</cutdown>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="rectypestatus" from="basetextarea">
-            <area>735,208,504,40</area>
-            <font>basesmallerblue</font>
-            <cutdown>no</cutdown>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>735,258,504,412</area>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <template>%LONGREPEAT%%YEARSTARS| %%DESCRIPTION%</template>
-        </textarea>
 
     </window>
 
