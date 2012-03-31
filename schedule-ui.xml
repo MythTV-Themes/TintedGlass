@@ -309,7 +309,7 @@
         </shape>
 
         <shape name="guide-grid-top-line" from="base_line">
-            <area>22,82,1236,2</area>
+            <area>24,82,1232,2</area>
         </shape>
 
         <shape name="guide-grid-bottom-line" from="base_highlight_line">
@@ -342,10 +342,6 @@
 
         <shape name="fourth-channel-separator" from="base_line">
             <area>42,327,178,2</area>
-        </shape>
-
-        <shape name="guide-title-bottom-line" from="base_line">
-            <area>34,514,1212,2</area>
         </shape>
 
         <shape name="guide-video-backdrop" from="base_backdrop">
@@ -566,8 +562,7 @@
         <textarea name="subtitle" from="basetextarea">
             <area>43,461,696,24</area>
             <align>left,vcenter</align>
-            <font>basesmallblue</font> 
-            <value>%|"SUBTITLE|"%</value>
+            <font>basesmallblue</font>
         </textarea>
 
         <textarea name="description"  from="basetextarea">
