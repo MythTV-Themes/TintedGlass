@@ -403,7 +403,7 @@
         </textarea>
 
         <clock name="clock">
-            <area>934,669,300,22</area>
+            <area>934,668,300,24</area>
             <font>small</font>
             <template>%TIME%</template>
             <align>right,vcenter</align>
