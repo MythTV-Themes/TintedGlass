@@ -8,100 +8,108 @@
             <value>Image Gallery</value>
         </textarea>
 
-        <shape name="image-gallery-backdrop" from="base_backdrop">
-            <area>0,36,1280,450</area>
+        <shape name="help-instr-backdrop" from="base_backdrop">
+            <area>0,36,1280,40</area>
             <type>box</type>
         </shape>
 
-        <shape name="image-gallery-top-line" from="base_line">
+        <shape name="help-instr-top-line" from="base_line">
             <area>0,37,1280,2</area>
         </shape>
 
-        <shape name="image-gallery-bottom-line" from="base_line">
-            <area>0,483,1280,2</area>
+        <shape name="help-instr-bottom-line" from="base_line">
+            <area>0,73,1280,2</area>
         </shape>
 
-        <shape name="image-gallery-bottom-backdrop" from="base_backdrop">
-            <area>20,496,1240,189</area>
+        <shape name="breadcrumbs-backdrop" from="base_backdrop">
+            <area>20,665,1240,20</area>
         </shape>
 
-        <shape name="image-gallery-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,497,1238,187</area>
-        </shape>
+        <textarea name="help1">
+            <area>20,39,534,34</area>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+            <value>Press Select: To View Image Full Screen.</value>
+        </textarea>
 
-        <shape name="image-gallery-bottom-top-line" from="base_highlight_line">
-            <area>22,498,1236,2</area>
-        </shape>
+        <textarea name="position">
+            <area>554,39,172,34</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
 
-        <shape name="image-gallery-bottom-bottom-line" from="base_highlight_line">
-            <area>22,681,1236,2</area>
-        </shape>
-
-        <shape name="image-gallery-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,500,2,181</area>
-        </shape>
-
-        <shape name="image-gallery-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1256,500,2,181</area>
-        </shape>
-
-        <shape name="image-gallery-bottom-seperator-first-line" from="base_line">
-            <area>43,591,1194,2</area>
-        </shape>
+        <textarea name="help2">
+            <area>736,39,524,34</area>
+            <font>basesmallblue</font>
+            <align>right,vcenter</align>
+            <value>Press Menu:  To Activate Gallery Options Menu.</value>
+        </textarea>
 
         <buttonlist name="images">
-            <area>35,65,1220,400</area>
+            <area>20,86,1240,600</area>
             <layout>grid</layout>
-            <spacing>8</spacing>
-            <buttonarea>0,0,1220,400</buttonarea>
+            <spacing>2</spacing>
+            <buttonarea>0,0,1240,600</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,166,125</area>
+                    <area>0,0,205,188</area>
+                    <shape name="buttonbackground" from="base_backdrop">
+                        <area>0,0,205,188</area>
+                    </shape>
+                    <shape name="buttonbackground-line" from="base_backdrop_line">
+                        <area>1,1,203,186</area>
+                    </shape>
                     <imagetype name="buttonimage">
-                        <area>0,0,166,125</area>
+                        <area>5,21,195,146</area>
                         <preserveaspect>yes</preserveaspect>
                         <filename>images/image_gallery_no_image.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>0,50</position>
+                        <position>0,0</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>56,10,53,40</area>
+                                <area>76,74,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>56,10,53,40</area>
+                                <area>76,74,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
-                    <textarea name="childcount" from="basetextarea">
-                        <area>60,73,45,20</area>
+                    <textarea name="childcount">
+                        <area>76,77,53,40</area>
                         <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="buttontext">
+                        <area>5,166,185,20</area>
+                        <font>baseextrasmall</font>
+                        <multiline>false</multiline>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>-23,-18,237,180</area>
+                    <area>0,0,209,192</area>
                     <shape name="buttonbackground">
-                        <area>-13,-9,238,180</area>
+                        <area>-2,-2,209,192</area>
                         <type>roundbox</type>
                         <fill color="#101017" alpha="255" />
                         <cornerradius>8</cornerradius>
                     </shape>
                     <shape name="buttonbackground-line">
-                        <area>-13,-9,238,180</area>
+                        <area>-2,-2,209,192</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="0" />
                         <line color="#ffffff" alpha="45" width="4" />
-                        <cornerradius>5</cornerradius>
+                        <cornerradius>4</cornerradius>
                     </shape>
                     <shape name="buttonbackground-top-highlight-line">
-                        <area>-3,-7,218,4</area>
+                        <area>2,0,201,4</area>
                          <type>box</type>
                         <fill style="gradient">
                             <gradient direction="horizontal" alpha="0">
@@ -112,10 +120,10 @@
                         </fill>
                     </shape>
                     <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
-                        <area>-3,165,218,4</area>
+                        <area>2,184,201,4</area>
                     </shape>
                     <shape name="buttonbackground-left-highlight-line">
-                        <area>-11,-1,4,164</area>
+                        <area>0,2,4,184</area>
                         <type>box</type>
                         <fill style="gradient">
                             <gradient alpha="0" direction="vertical">
@@ -126,80 +134,85 @@
                         </fill>
                     </shape>
                     <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
-                        <area>219,-1,4,164</area>
+                        <area>201,2,4,184</area>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>-6,-2,224,166</area>
+                        <area>5,21,195,146</area>
                         <preserveaspect>yes</preserveaspect>
                         <filename>images/image_gallery_no_image.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>0,50</position>
+                        <position>0,0</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>82,38,53,40</area>
+                                <area>76,74,53,40</area>
                                 <filename>images/folderopen.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>82,38,53,40</area>
+                                <area>76,74,53,40</area>
                                 <filename>images/mv_gallery_dir_up_open.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
-                    <textarea name="childcount" from="basetextarea">
-                        <area>88,106,45,20</area>
+                    <textarea name="childcount">
+                        <area>76,82,53,40</area>
                         <font>baseextrasmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="buttontext">
+                        <area>5,166,185,20</area>
+                        <font>baseextrasmallyellow</font>
+                        <multiline>false</multiline>
                         <align>allcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1188,422</position>
+                <position>1188,585</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1208,422</position>
+                <position>1208,585</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
         </buttonlist>
 
         <textarea name="noimages" from="basetextarea">
-            <area>20,36,1240,451</area>
-            <font>basemedium</font>
+            <area>20,76,1240,589</area>
+            <font>basemediumyellow</font>
             <align>allcenter</align>
         </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>24,500,1232,91</area>
-            <font>basemedium</font>
-            <multiline>true</multiline>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="help1">
-            <area>0,593,1280,44</area>
-            <font>basesmallerblue</font>
-            <align>allcenter</align>
-            <value>Press Select: To View Full Screen.</value>
-        </textarea>
-
-        <textarea name="help2">
-            <area>0,637,1280,44</area>
-            <font>basesmallerblue</font>
-            <align>allcenter</align>
-            <value>Press Menu:  To Activate Gallery Options Menu.</value>
+        <textarea name="breadcrumbs">
+            <area>30,665,1148,20</area>
+            <font>baseextrasmall</font>
+            <align>left,vcenter</align>
         </textarea>
 
     </window>
