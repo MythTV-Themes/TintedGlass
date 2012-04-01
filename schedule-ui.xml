@@ -2124,7 +2124,7 @@
     </window>
 
     <window name="searchpopup">
-        <area>-1,26,1010,52</area>
+        <area>-1,30,1010,52</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -2192,7 +2192,7 @@
         </textarea>
 
         <shape name="alphabetbox" from="base_backdrop">
-            <area>0,36,1280,30</area>
+            <area>0,36,1280,40</area>
             <type>box</type>
         </shape>
 
@@ -2201,111 +2201,87 @@
         </shape>
 
         <shape name="alphabetbox-bottom-line" from="base_line">
-            <area>0,63,1280,2</area>
+            <area>0,73,1280,2</area>
         </shape>
 
         <shape name="program-find-shows-backdrop" from="base_backdrop">
-            <area>20,78,822,371</area>
+            <area>20,86,616,440</area>
         </shape>
 
         <shape name="program-find-shows-backdrop-line" from="base_backdrop_line">
-            <area>21,79,820,369</area>
+            <area>21,87,614,438</area>
         </shape>
 
         <shape name="program-find-shows-top-line" from="base_highlight_line">
-            <area>22,80,818,2</area>
+            <area>22,88,616,2</area>
         </shape>
 
         <shape name="program-find-shows-bottom-line" from="base_highlight_line">
-            <area>22,445,818,2</area>
+            <area>22,522,616,2</area>
         </shape>
 
         <shape name="program-find-shows-left-line" from="base_highlight_vertical_line">
-            <area>22,82,2,363</area>
+            <area>22,90,2,432</area>
         </shape>
 
         <shape name="program-find-shows-right-line" from="base_highlight_vertical_line">
-            <area>838,82,2,363</area>
+            <area>632,90,2,432</area>
         </shape>
 
         <shape name="program-find-times-backdrop" from="base_backdrop">
-            <area>852,78,408,371</area>
+            <area>646,86,614,440</area>
         </shape>
 
         <shape name="program-find-times-backdrop-line" from="base_backdrop_line">
-            <area>853,79,406,369</area>
+            <area>647,87,612,438</area>
         </shape>
 
         <shape name="program-find-times-top-line" from="base_highlight_line">
-            <area>854,80,404,2</area>
+            <area>648,88,610,2</area>
         </shape>
 
         <shape name="program-find-times-bottom-line" from="base_highlight_line">
-            <area>854,445,404,2</area>
+            <area>648,522,610,2</area>
         </shape>
 
         <shape name="program-find-times-left-line" from="base_highlight_vertical_line">
-            <area>854,82,2,363</area>
+            <area>648,90,2,432</area>
         </shape>
 
         <shape name="program-find-times-right-line" from="base_highlight_vertical_line">
-            <area>1256,82,2,363</area>
+            <area>1256,90,2,432</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
-            <area>20,459,822,226</area>
+            <area>20,536,1240,149</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,460,820,224</area>
+            <area>21,537,1238,147</area>
         </shape>
 
         <shape name="program-find-bottom-top-line" from="base_highlight_line">
-            <area>22,461,818,2</area>
+            <area>22,538,1236,2</area>
         </shape>
 
         <shape name="program-find-bottom-bottom-line" from="base_highlight_line">
-            <area>22,681,818,2</area>
+            <area>22,681,1236,2</area>
         </shape>
 
         <shape name="program-find-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,463,2,218</area>
+            <area>22,540,2,141</area>
         </shape>
 
         <shape name="program-find-bottom-right-line" from="base_highlight_vertical_line">
-            <area>838,463,2,218</area>
+            <area>1256,540,2,141</area>
         </shape>
 
         <shape name="program-find-bottom-seperator-first-line" from="base_line">
-            <area>43,509,776,2</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-backdrop" from="base_backdrop">
-            <area>852,459,408,226</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-backdrop-line" from="base_backdrop_line">
-            <area>853,460,406,224</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-top-line" from="base_highlight_line">
-            <area>854,461,404,2</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-bottom-line" from="base_highlight_line">
-            <area>854,681,404,2</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-left-line" from="base_highlight_vertical_line">
-            <area>854,463,2,218</area>
-        </shape>
-
-        <shape name="program-find-bottom-right-right-line" from="base_highlight_vertical_line">
-            <area>1256,463,2,218</area>
+            <area>43,572,1194,2</area>
         </shape>
 
         <buttonlist name="alphabet">
-            <area>0,39,1280,24</area>
+            <area>0,39,1280,34</area>
             <spacing>0</spacing>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>
@@ -2313,185 +2289,144 @@
             <buttonarea>0,0,1280,24</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>8,0,255,24</area>
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,240,24</area>
+                    <area>8,0,255,34</area>
+                    <textarea name="buttontext">
+                        <area>0,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmaller</font>
+                        <font>basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>8,0,255,24</area>
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,240,24</area>
+                    <area>8,0,255,34</area>
+                    <textarea name="buttontext">
+                        <area>0,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
+                        <font>basemediumyellow</font>
                         <!-- cpu usage is very high
                         <alphapulse min="127" max="255" change="2"/>
                         -->
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,240,24</area>
+                    <textarea name="buttontext">
+                        <area>0,0,240,34</area>
                         <align>allcenter</align>
                         <cutdown>yes</cutdown>
-                        <font>basesmallyellow</font>
+                        <font>basemediumyellow</font>
                     </textarea>
                 </state>
             </statetype>
         </buttonlist>
 
         <buttonlist name="shows" from="base_list">
-            <area>30,87,802,356</area>
+            <area>30,101,596,412</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,802,34</area>
+                    <area>0,0,596,36</area>
                     <textarea name="buttontext">
-                        <area>8,0,786,34</area>
+                        <area>8,0,580,36</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,802,34</area>
+                    <area>0,0,596,36</area>
                     <textarea name="buttontext">
-                        <area>8,0,766,34</area>
+                        <area>8,0,563,36</area>
                     </textarea>
                     <imagetype name="right_arrow" from="buttonarrow">
-                        <position>784,7</position>
+                        <position>577,9</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,802,34</area>
+                    <area>0,0,596,36</area>
                     <textarea name="buttontext">
-                        <area>8,0,766,34</area>
+                        <area>8,0,580,36</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>792,-6</position>
+                <position>585,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>792,352</position>
+                <position>585,411</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="times" from="base_list_state">
-            <area>862,87,388,356</area>
-            <layout>vertical</layout>
-            <spacing>-2</spacing>
-            <scrollstyle>free</scrollstyle>
-            <arrange>stack</arrange>
-            <wrapstyle>items</wrapstyle>
+            <area>656,101,594,412</area>
             <buttonarea>0,0,100%,100%</buttonarea>    
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,388,34</area>
-                    <shape name="buttonbackground" from="base_select_bar_active">
-                        <area>0,0,100%,100%</area>
-                    </shape>
-                    <textarea name="buttontext" from="base_text_font_state_small">
-                        <area>8,0,372,34</area>
+                    <area>0,0,594,36</area>
+                    <textarea name="buttontext">
+                        <area>8,0,578,36</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,388,34</area>
-                    <textarea name="buttontext" from="base_text_font_state_small">
-                        <area>8,0,372,34</area>
+                    <area>0,0,594,70</area>
+                    <textarea name="buttontext">
+                        <area>8,1,578,24</area>
                         <align>allcenter</align>
                     </textarea>
+                    <textarea name="rectypestatus" from="buttontext">
+                        <area>8,25,370,20</area>
+                        <font>baseextrasmallblue</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="longrepeat" from="buttontext">
+                        <area>378,25,208,20</area>
+                        <font>baseextrasmallred</font>
+                        <align>right,vcenter</align>
+                        <template>%LONGREPEAT%</template>
+                    </textarea>
+                    <textarea name="channel" from="buttontext">
+                        <area>8,45,289,24</area>
+                        <align>left,bottom</align>
+                    </textarea>
+                    <textarea name="lenmins" from="buttontext">
+                        <area>297,45,289,24</area>
+                        <align>right,bottom</align>
+                    </textarea>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_button_background_disabled">
-                        <area>0,0,100%,100%</area>
-                        <cornerradius>15</cornerradius>
-                    </shape>
+                <state name="selectedinactive">
+                    <area>0,0,594,36</area>
                     <textarea name="buttontext">
-                        <font>basesmalllightgrey</font>
+                        <area>8,0,578,36</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>379,-6</position>
-                <state type="off">
-                    <imagetype name="upoff">
-                        <filename>images/lists_up_arrow.png</filename>
-                        <alpha>80</alpha>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upon">
-                        <filename>images/lists_up_arrow.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                </state>
+                <position>583,-9</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>379,352</position>
-                <state type="off">
-                    <imagetype name="dnoff">
-                        <filename>images/lists_down_arrow.png</filename>
-                        <alpha>80</alpha>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnon">
-                        <filename>images/lists_down_arrow.png</filename>
-                        <alpha>200</alpha>
-                    </imagetype>
-                </state>
+                <position>583,411</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,463,774,46</area>
+            <area>44,540,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="help1text" from="basetextarea">
-            <area>44,463,774,46</area>
+            <area>44,540,1192,30</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,519,774,154</area>
+            <area>44,581,1192,100</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="help2text" from="basetextarea">
-            <area>44,519,774,154</area>
+            <area>44,581,1192,100</area>
             <multiline>yes</multiline>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>862,484,388,34</area>
-            <font>baselarge</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="rectypestatus" from="basetextarea">
-            <area>862,538,388,24</area>
-            <font>basesmallblue</font>
-            <align>allcenter</align>
-        </textarea>
-
-        <textarea name="longrepeat" from="basetextarea">
-            <area>862,583,388,24</area>
-            <font>basesmallred</font>
-            <align>allcenter</align>
-            <template>%LONGREPEAT%</template>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>862,632,388,24</area>
-            <font>basesomewhatsmaller</font>
             <align>allcenter</align>
         </textarea>
 
