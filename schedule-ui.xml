@@ -1581,14 +1581,12 @@
             </section>
         </animation>
 
-        <!-- Disappears when virtual keyboard is used
         <animation trigger="AboutToHide">
             <section>
                 <alpha start="255" end="0" easingcurve="InQuart"/>
                 <zoom start="100" end="0" easingcurve="InQuart"/>
             </section>
         </animation>
-        -->
 
         <shape name="phrase-popup-backdrop" from="base_popup_backdrop">
             <area>0,0,500,500</area>
@@ -1793,14 +1791,12 @@
             </section>
         </animation>
 
-        <!-- Disappears when virtual keyboard is used
         <animation trigger="AboutToHide">
             <section>
                 <alpha start="255" end="0" easingcurve="InQuart"/>
                 <zoom start="100" end="0" easingcurve="InQuart"/>
             </section>
         </animation>
-        -->
 
         <shape name="edit-power-search-backdrop" from="base_popup_backdrop">
             <area>0,0,500,550</area>
@@ -2133,14 +2129,12 @@
             </section>
         </animation>
 
-        <!-- Disappears when virtual keyboard is used
         <animation trigger="AboutToHide">
             <section>
                 <alpha start="255" end="0" easingcurve="InQuart"/>
                 <zoom start="100" end="0" easingcurve="InQuart"/>
             </section>
         </animation>
-        -->
 
         <shape name="search-popup-backdrop" from="base_popup_backdrop">
             <area>0,0,1010,52</area>
