@@ -1554,7 +1554,7 @@
         <imagetype name="animation">
             <position>33,65</position>
             <filepattern low="1" high="60" cycle="reverse">images/busy/busy%1.png</filepattern>
-            <delay>14</delay>
+            <delay>300</delay>
         </imagetype>
 
         <textarea name="message" from="basetextarea">
