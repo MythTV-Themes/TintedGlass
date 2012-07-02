@@ -969,7 +969,7 @@
         </shape>
 
         <shape name="title-clock-vertical-seperator" from="channel-description-vertical-seperator">
-            <area>1106,530,2,52</area>
+            <area>1094,530,2,52</area>
         </shape>
 
         <shape name="title-description-horizontal-seperator">
@@ -1004,26 +1004,26 @@
 
         <textarea name="title">
             <font>medium</font>
-            <area>210,527,888,30</area>
+            <area>210,527,876,30</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="timedate">
             <font>smallerblue</font>
-            <area>210,562,515,22</area>
+            <area>210,562,503,22</area>
             <align>vcenter</align>
             <template>%TIMEDATE% : %LENMINS%</template>
         </textarea>
 
         <textarea name="longrepeat">
             <font>smallerblue</font>
-            <area>740,562,364,22</area>
+            <area>728,562,364,22</area>
             <align>right,vcenter</align>
             <template>%LONGREPEAT%</template>
         </textarea>
 
         <clock name="clock">
-            <area>1140,525,108,62</area>
+            <area>1128,525,120,62</area>
             <font>large</font>
             <template>%TIME%</template>
             <align>allcenter</align>
