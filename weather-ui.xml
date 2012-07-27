@@ -50,8 +50,8 @@
         </textarea>
 
         <textarea name="update_text" from="basetextarea">
-            <area>44,635,496,46</area>
-            <font>basesmallblue</font>
+            <area>44,635,416,46</area>
+            <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
 
@@ -184,16 +184,21 @@
         </imagetype>
 
         <textarea name="observation_time" from="basetextarea">
-            <area>45,635,595,46</area>
-            <font>basesmallblue</font>
+            <area>44,635,416,46</area>
+            <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -352,10 +357,15 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -615,10 +625,15 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -645,10 +660,15 @@
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -675,10 +695,15 @@
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -718,10 +743,15 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
@@ -981,10 +1011,15 @@
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>540,635,696,46</area>
-            <font>basesmallblue</font>
+            <area>470,635,766,46</area>
+            <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
+
+        <imagetype name="copyrightlogo">
+            <area>-53,43,328,82</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
     </window>
 
