@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <window name="streamview"  include="music-base.xml">
+
+        <textarea name="heading" from="base_heading">
+            <value>Streaming Radio</value>
+        </textarea>
+
+        <shape name="stream-list-backdrop" from="base_backdrop">
+            <area>20,36,1240,261</area>
+        </shape>
+
+        <shape name="stream-list-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,259</area>
+        </shape>
+
+        <shape name="stream-list-top-line" from="base_highlight_line">
+            <area>21,38,1238,2</area>
+        </shape>
+
+        <shape name="stream-list-bottom-line" from="base_highlight_line">
+            <area>21,293,1238,2</area>
+        </shape>
+
+        <shape name="stream-list-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,253</area>
+        </shape>
+
+        <shape name="stream-list-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,253</area>
+        </shape>
+
+        <textarea name="nostreams" from="basetextarea">
+            <area>22,39,1216,254</area>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+            <value>Press MENU to add some radio streams to play.</value>
+        </textarea>
+
+        <buttonlist name="streamlist" from="base_list">
+            <area>30,46,1220,252</area>
+            <searchposition>-1,311</searchposition>
+            <buttonarea>0,0,1220,252</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,36</area>
+                    <imagetype name="buttonimage">
+                        <area>15,3,30,30</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+                    <statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing" from="basetextarea">
+                                <area>55,8,90,20</area>
+                                <font>basesupersmallgreen</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PLAYING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="paused">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="paused" from="basetextarea">
+                                <area>57,8,90,20</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PAUSED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="stopped">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="stopped" from="basetextarea">
+                                <area>57,8,90,20</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>STOPPED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="station" from="buttontext">
+                        <area>155,0,200,36</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="channel" from="buttontext">
+                        <area>365,0,370,36</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>745,0,460,36</area>
+                        <font>basesmall</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1210,-6</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1210,238</position>
+            </statetype>
+        </buttonlist>
+
+        <group name="played_tracks_list_panel">
+	    <area>0,307,1280,128</area>
+
+            <shape name="played-tracks-list-panel-backdrop" from="base_backdrop">
+                <area>20,0,1240,128</area>
+            </shape>
+
+            <shape name="played-tracks-list-panel-backdrop-line" from="base_backdrop_line">
+                <area>21,1,1238,126</area>
+            </shape>
+
+            <shape name="played-tracks-list-panel-top-line" from="base_highlight_line">
+                <area>21,2,1238,2</area>
+            </shape>
+
+            <shape name="played-tracks-list-panel-bottom-line" from="base_highlight_line">
+                <area>21,124,1238,2</area>
+            </shape>
+
+            <shape name="played-tracks-list-panel-left-line" from="base_highlight_vertical_line">
+                <area>22,4,2,120</area>
+            </shape>
+
+            <shape name="played-tracks-list-panel-right-line" from="base_highlight_vertical_line">
+                <area>1256,4,2,120</area>
+            </shape>
+
+            <buttonlist name="playedtrackslist" from="base_list_state">
+                <area>30,12,1220,104</area>
+                <buttonarea>0,0,1220,104</buttonarea>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,100%,36</area>
+                        <imagetype name="buttonimage">
+                            <area>15,3,30,30</area>
+                            <filename>mythmusic/mm_icecast.png</filename>
+                        </imagetype>
+                        <textarea name="tracknum" from="buttontext">
+                            <area>55,0,50,36</area>
+                            <align>right,vcenter</align>
+                            <font>basesmall</font>
+                            <template>%1 -</template>
+                        </textarea>
+                        <textarea name="title" from="buttontext">
+                            <area>115,0,480,36</area>
+                            <align>left,vcenter</align>
+                            <font>basesmall</font>
+                        </textarea>
+                        <textarea name="artist" from="buttontext">
+                            <area>595,0,480,36</area>
+                            <font>basesmall</font>
+                            <align>left,vcenter</align>
+                        </textarea>
+                        <textarea name="length" from="buttontext">
+                            <area>1085,0,120,36</area>
+                            <align>right,vcenter</align>
+                            <font>basesmall</font>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                            <area>0,0,100%,100%</area>
+                        </shape>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                            <area>0,0,100%,100%</area>
+                        </shape>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <position>1160,185</position>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <position>1190,185</position>
+                </statetype>
+            </buttonlist>
+
+        </group>
+
+        <group name="info_panel">
+            <area>0,445,1280,240</area>
+
+            <shape name="info-panel-backdrop" from="base_backdrop">
+                <area>20,0,1240,240</area>
+            </shape>
+
+            <shape name="info-panel-backdrop-line" from="base_backdrop_line">
+                <area>21,1,1238,238</area>
+            </shape>
+
+            <shape name="info-panel-top-line" from="base_highlight_line">
+                <area>20,2,1238,2</area>
+            </shape>
+
+            <shape name="info-panel-bottom-line" from="base_highlight_line">
+                <area>20,236,1238,2</area>
+            </shape>
+
+            <shape name="info-panel-left-line" from="base_highlight_vertical_line">
+                <area>22,4,2,232</area>
+            </shape>
+
+            <shape name="info-panel-right-line" from="base_highlight_vertical_line">
+                <area>1256,4,2,232</area>
+            </shape>
+
+            <shape name="info-panel-horizontal-seperator-first-line" from="base_line">
+                <area>228,180,824,2</area>
+            </shape>
+
+            <imagetype name="mm_blackhole_border">
+                <filename>mythmusic/mm_blackhole_border.png</filename>
+                <area>32,11,171,171</area>
+            </imagetype>
+
+            <imagetype name="coverart">
+                <filename>mythmusic/mm_nothumb.png</filename>
+                <area>35,15,165,164</area>
+            </imagetype>
+
+            <textarea name="title" from="basetextarea">
+                <area>230,9,900,44</area>
+                <font>baselargeyellow</font>
+            </textarea>
+
+            <textarea name="artist" from="basetextarea">
+                <area>230,57,900,44</area>
+                <font>basemedium</font>
+            </textarea>
+
+            <textarea name="channel" from="basetextarea">
+                <area>230,103,900,44</area>
+                <font>basemediumblue</font>
+                <template>%STATION% - %CHANNEL%</template>
+            </textarea>
+
+            <textarea name="filename" from="basetextarea">
+                <font>basesmall</font>
+                <area>230,149,900,43</area>
+            </textarea>
+
+            <imagetype name="visualizer_border">
+                <filename>mythmusic/mm_blackhole_border.png</filename>
+                <area>1077,11,171,171</area>
+            </imagetype>
+
+            <video name="visualizer">
+                <area>1080,15,165,164</area>
+            </video>
+
+            <textarea name="visualizername" from="basetextarea">
+                <area>1080,182,164,54</area>
+                <font>basesmall</font>
+                <align>allcenter</align>
+            </textarea>
+
+            <button name="prev" from="base_prev_button">
+                <position>584,190</position>
+            </button>
+
+            <button name="play" from="base_play_button">
+                <position>618,190</position>
+            </button>
+
+            <button name="stop" from="base_stop_button">
+                <position>646,190</position>
+            </button>
+
+            <button name="next" from="base_next_button">
+                <position>676,190</position>
+            </button>
+
+            <statetype name="mutestate" from="base_mute_state">
+                <position>30,198</position>
+            </statetype>
+
+            <textarea name="volume" from="base_volume">
+                <position>70,182</position>
+            </textarea>
+
+            <progressbar name="bufferprogress" from="baseprogressbar">
+                <position>372,220</position>
+            </progressbar>
+
+            <textarea name="bufferstatus" from="basetextarea">
+                <area>918,219,185,14</area>
+                <font>basesupersmallyellow</font>
+            </textarea>
+
+        </group>
+
+    </window>
+
+    <window name="editstreammetadata">
+
+        <textarea name="heading" from="base_heading">
+            <value>Add/Edit Music Stream</value>
+        </textarea>
+
+        <textarea name="stationlabel" >
+            <area>164,106,250,50</area>
+            <font>basemedium</font>
+            <align>right,vcenter</align>
+            <value>Station:</value>
+        </textarea>
+        <textedit name="stationedit" from="basetextedit">
+            <position>424,106</position>
+        </textedit>
+
+        <button name="searchbutton" from="basewidebutton">
+            <position>840,108</position>
+            <value>Search for Stream</value>
+        </button>
+
+        <textarea name="channellabel" from="stationlabel">
+            <position>164,166</position>
+            <value>Channel:</value>
+        </textarea>
+        <textedit name="channeledit" from="stationedit">
+            <position>424,166</position>
+        </textedit>
+
+        <textarea name="urllabel" from="stationlabel">
+            <position>164,226</position>
+            <value>URL:</value>
+        </textarea>
+        <textedit name="urledit" from="stationedit">
+            <area>424,226,700,50</area>
+        </textedit>
+
+        <textarea name="logourllabel" from="stationlabel">
+            <position>164,286</position>
+            <value>Logo URL:</value>
+        </textarea>
+        <textedit name="logourledit" from="urledit">
+            <position>424,286</position>
+        </textedit>
+
+        <textarea name="genrelabel" from="stationlabel">
+            <position>164,346</position>
+            <value>Genres:</value>
+        </textarea>
+        <textedit name="genreedit" from="urledit">
+            <position>424,346</position>
+        </textedit>
+
+        <textarea name="formatlabel" from="stationlabel">
+            <position>164,406</position>
+            <value>Metadata Format:</value>
+        </textarea>
+        <textedit name="formatedit" from="stationedit">
+            <position>424,406</position>
+        </textedit>
+
+        <button name="cancelbutton" from="basebutton">
+            <position>100,650</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="savebutton" from="basebutton">
+            <position>1000,650</position>
+            <value>Save</value>
+        </button>
+
+    </window>
+
+    <window name="searchstream">
+
+        <textarea name="heading" from="base_heading">
+            <value>Search for Music Streams</value>
+        </textarea>
+
+        <textarea name="stationlabel" >
+            <area>164,53,250,50</area>
+            <font>basemedium</font>
+            <align>right,vcenter</align>
+            <value>Station:</value>
+        </textarea>
+        <buttonlist name="stationlist" from="basemediumselector">
+            <position>420,56</position>
+        </buttonlist>
+
+        <textarea name="genrelabel" from="stationlabel">
+            <position>164,108</position>
+            <value>Genre:</value>
+        </textarea>
+        <buttonlist name="genrelist" from="basemediumselector">
+            <position>420,111</position>
+        </buttonlist>
+
+        <textarea name="channellabel" from="stationlabel">
+            <position>164,166</position>
+            <value>Channel:</value>
+        </textarea>
+        <textedit name="channeledit" from="basetextedit">
+            <position>420,166</position>
+        </textedit>
+
+        <textarea name="matcheslable" from="stationlabel">
+            <area>820,166,150,50</area>
+            <align>right,vcenter</align>
+            <value>Matches:</value>
+        </textarea>
+
+        <textarea name="matchestext" from="stationlabel">
+            <area>990,166,150,50</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <buttonlist name="streamlist" from="basebuttonlist2">
+            <area>30,225,1220,480</area>
+            <spacing>0</spacing>
+            <layout>vertical</layout>
+            <arrange>stack</arrange>
+            <showarrow>no</showarrow>
+            <searchposition>-1,50</searchposition>
+            <buttonarea>0,0,1220,480</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,46</area>
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+
+                    <statetype name="selectedstate">
+                        <position>1185,10</position>
+                        <state name="off"></state>
+                        <state name="on">
+                            <imagetype name="statusimage">
+                                <filename>playlist_yes.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+
+                    <textarea name="station" from="buttontext">
+                        <area>50,0,600,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <template>%STATION% - %Channel%</template>
+                    </textarea>
+
+                    <textarea name="genre" from="buttontext">
+                        <area>660,0,550,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                    </textarea>
+
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>mm_icecast.png</filename>
+                    </imagetype>
+                    <shape name="selectbar">
+                        <area>0,0,1220,46</area>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,1220,46</area>
+                    </shape>
+                </state>
+            </statetype>
+
+            <statetype name="upscrollarrow">
+                <position>1160,465</position>
+            </statetype>
+
+            <statetype name="downscrollarrow">
+                <position>1190,465</position>
+            </statetype>
+        </buttonlist>
+
+
+    </window>
+
+</mythuitheme>
