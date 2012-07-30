@@ -442,6 +442,12 @@
                                     <filename>mythmusic/mm_compilations.png</filename>
                                 </imagetype>
                             </state>
+                            <state name="directory">
+                                <imagetype name="directory">
+                                    <area>0,0,110,110</area>
+                                    <filename>mythmusic/mm_directory.png</filename>
+                                </imagetype>
+                            </state>
                             <state name="playlists">
                                 <imagetype name="playlists">
                                     <area>0,0,110,110</area>
@@ -566,6 +572,12 @@
                                 <imagetype name="compilations">
                                     <area>0,0,127,127</area>
                                     <filename>mythmusic/mm_compilations.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="directory">
+                                <imagetype name="directory">
+                                    <area>0,0,127,127</area>
+                                    <filename>mythmusic/mm_directory.png</filename>
                                 </imagetype>
                             </state>
                             <state name="playlists">
