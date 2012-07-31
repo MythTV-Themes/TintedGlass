@@ -451,105 +451,170 @@
             <value>Search for Music Streams</value>
         </textarea>
 
+        <shape name="search-stream-backdrop" from="base_backdrop">
+            <area>215,36,850,213</area>
+        </shape>
+
+        <shape name="search-stream-backdrop-line" from="base_backdrop_line">
+            <area>216,37,848,211</area>
+        </shape>
+
+        <shape name="search-stream-top-line" from="base_highlight_line">
+            <area>217,38,846,2</area>
+        </shape>
+
+        <shape name="search-stream-bottom-line" from="base_highlight_line">
+            <area>217,245,846,2</area>
+        </shape>
+
+        <shape name="search-stream-left-line" from="base_highlight_vertical_line">
+            <area>217,40,2,211</area>
+        </shape>
+
+        <shape name="search-stream-right-line" from="base_highlight_vertical_line">
+            <area>1061,40,2,211</area>
+        </shape>
+
+        <shape name="stream-list-backdrop" from="base_backdrop">
+            <area>20,259,1240,426</area>
+        </shape>
+
+        <shape name="stream-list-backdrop-line" from="base_backdrop_line">
+            <area>21,260,1238,424</area>
+        </shape>
+
+        <shape name="stream-list-top-line" from="base_highlight_line">
+            <area>22,261,1236,2</area>
+        </shape>
+
+        <shape name="stream-list-bottom-line" from="base_highlight_line">
+            <area>22,681,1236,2</area>
+        </shape>
+
+        <shape name="stream-list-left-line" from="base_highlight_vertical_line">
+            <area>22,263,2,422</area>
+        </shape>
+
+        <shape name="stream-list-right-line" from="base_highlight_vertical_line">
+            <area>1256,263,2,422</area>
+        </shape>
+
         <textarea name="stationlabel" >
-            <area>164,53,250,50</area>
+            <area>214,61,250,40</area>
             <font>basemedium</font>
             <align>right,vcenter</align>
             <value>Station:</value>
         </textarea>
-        <buttonlist name="stationlist" from="basemediumselector">
-            <position>420,56</position>
+
+        <buttonlist name="stationlist" from="base_selector">
+            <area>470,61,376,40</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,376,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,346,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,376,40</area>
+                    <textarea name="buttontext">
+                        <area>15,0,346,40</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>380,0</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>380,21</position>
+            </statetype>
         </buttonlist>
 
         <textarea name="genrelabel" from="stationlabel">
-            <position>164,108</position>
+            <position>214,122</position>
             <value>Genre:</value>
         </textarea>
-        <buttonlist name="genrelist" from="basemediumselector">
-            <position>420,111</position>
+
+        <buttonlist name="genrelist" from="stationlist">
+            <position>470,122</position>
         </buttonlist>
 
         <textarea name="channellabel" from="stationlabel">
-            <position>164,166</position>
+            <position>214,183</position>
             <value>Channel:</value>
         </textarea>
-        <textedit name="channeledit" from="basetextedit">
-            <position>420,166</position>
+
+        <textedit name="channeledit" from="base_textedit">
+            <area>470,183,376,40</area>
+            <textarea name="text">
+                <area>18,0,95%,100%</area>
+            </textarea>
         </textedit>
 
         <textarea name="matcheslable" from="stationlabel">
-            <area>820,166,150,50</area>
+            <area>820,183,150,40</area>
             <align>right,vcenter</align>
             <value>Matches:</value>
         </textarea>
 
         <textarea name="matchestext" from="stationlabel">
-            <area>990,166,150,50</area>
+            <area>990,183,150,40</area>
             <align>left,vcenter</align>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist2">
-            <area>30,225,1220,480</area>
-            <spacing>0</spacing>
-            <layout>vertical</layout>
-            <arrange>stack</arrange>
-            <showarrow>no</showarrow>
+        <buttonlist name="streamlist" from="base_list">
+            <area>30,273,1220,400</area>
             <searchposition>-1,50</searchposition>
-            <buttonarea>0,0,1220,480</buttonarea>
+            <buttonarea>0,0,1220,400</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,46</area>
                     <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
-                        <filename>mm_icecast.png</filename>
+                        <area>15,5,36,36</area>
+                        <filename>mythmusic/mm_icecast.png</filename>
                     </imagetype>
-
+                    <textarea name="station" from="buttontext">
+                        <area>60,0,580,46</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                        <template>%STATION% - %Channel%</template>
+                    </textarea>
                     <statetype name="selectedstate">
-                        <position>1185,10</position>
+                        <position>646,11</position>
                         <state name="off"></state>
                         <state name="on">
                             <imagetype name="statusimage">
-                                <filename>playlist_yes.png</filename>
+                                <filename>mythmusic/playlist_yes.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
-
-                    <textarea name="station" from="buttontext">
-                        <area>50,0,600,46</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                        <template>%STATION% - %Channel%</template>
-                    </textarea>
-
                     <textarea name="genre" from="buttontext">
-                        <area>660,0,550,46</area>
-                        <align>left,vcenter</align>
+                        <area>669,0,541,46</area>
                         <font>basesmall</font>
+                        <align>left,vcenter</align>
                     </textarea>
-
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
-                        <filename>mm_icecast.png</filename>
+                        <area>15,5,36,36</area>
+                        <filename>mythmusic/mm_icecast.png</filename>
                     </imagetype>
-                    <shape name="selectbar">
-                        <area>0,0,1220,46</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <shape name="selectbar">
-                        <area>0,0,1220,46</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
             </statetype>
-
             <statetype name="upscrollarrow">
-                <position>1160,465</position>
+                <position>1209,-9</position>
             </statetype>
-
             <statetype name="downscrollarrow">
-                <position>1190,465</position>
+                <position>1209,399</position>
             </statetype>
         </buttonlist>
 
