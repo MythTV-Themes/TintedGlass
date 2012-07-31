@@ -321,68 +321,125 @@
             <value>Add/Edit Music Stream</value>
         </textarea>
 
+        <shape name="edit-stream-metadata-backdrop" from="base_backdrop">
+            <area>115,36,1050,649</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,506</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-line" from="base_highlight_line">
+            <area>117,540,1046,2</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,547,1048,137</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-top-line" from="base_highlight_line">
+            <area>117,548,1046,2</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="edit-stream-metadata-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
         <textarea name="stationlabel" >
-            <area>164,106,250,50</area>
+            <area>119,68,214,40</area>
             <font>basemedium</font>
             <align>right,vcenter</align>
             <value>Station:</value>
         </textarea>
-        <textedit name="stationedit" from="basetextedit">
-            <position>424,106</position>
+
+        <textedit name="stationedit" from="base_wide_textedit">
+            <area>343,68,800,40</area>
+            <textarea name="text">
+                <area>20,0,97%,100%</area>
+            </textarea>
         </textedit>
 
-        <button name="searchbutton" from="basewidebutton">
-            <position>840,108</position>
+        <button name="searchbutton" from="base_medium_button">
+            <position>465,136</position>
             <value>Search for Stream</value>
         </button>
 
         <textarea name="channellabel" from="stationlabel">
-            <position>164,166</position>
+            <position>119,204</position>
             <value>Channel:</value>
         </textarea>
+
         <textedit name="channeledit" from="stationedit">
-            <position>424,166</position>
+            <position>343,204</position>
         </textedit>
 
         <textarea name="urllabel" from="stationlabel">
-            <position>164,226</position>
+            <position>119,271</position>
             <value>URL:</value>
         </textarea>
+
         <textedit name="urledit" from="stationedit">
-            <area>424,226,700,50</area>
+            <position>343,271</position>
         </textedit>
 
         <textarea name="logourllabel" from="stationlabel">
-            <position>164,286</position>
+            <position>119,338</position>
             <value>Logo URL:</value>
         </textarea>
+
         <textedit name="logourledit" from="urledit">
-            <position>424,286</position>
+            <position>343,338</position>
         </textedit>
 
         <textarea name="genrelabel" from="stationlabel">
-            <position>164,346</position>
+            <position>119,405</position>
             <value>Genres:</value>
         </textarea>
+
         <textedit name="genreedit" from="urledit">
-            <position>424,346</position>
+            <position>343,405</position>
         </textedit>
 
         <textarea name="formatlabel" from="stationlabel">
-            <position>164,406</position>
+            <position>119,472</position>
             <value>Metadata Format:</value>
         </textarea>
+
         <textedit name="formatedit" from="stationedit">
-            <position>424,406</position>
+            <position>343,472</position>
         </textedit>
 
-        <button name="cancelbutton" from="basebutton">
-            <position>100,650</position>
+        <button name="cancelbutton" from="base_medium_button">
+            <position>233,632</position>
             <value>Cancel</value>
         </button>
 
-        <button name="savebutton" from="basebutton">
-            <position>1000,650</position>
+        <button name="savebutton" from="base_medium_button">
+            <position>697,632</position>
             <value>Save</value>
         </button>
 
