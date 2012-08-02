@@ -2926,68 +2926,125 @@
             <area>734,248,506,2</area>
         </shape>
 
+        <textarea name="template" from="basetextarea">
+            <area>24,67,678,22</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <template>%Using the '|TEMPLATE|' template%</template>
+        </textarea>
+
+        <textarea name="rule_label" from="basetextarea">
+            <area>73,103,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Schedule Rule:</value>
+        </textarea>
+
         <buttonlist name="rules" from="base_selector">
-            <area>90,68,546,40</area>
+            <area>73,121,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,546,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,516,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,546,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,516,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>550,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>550,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
 
-        <button name="schedoptions" from="base_medium_button">
-            <position>188,136</position>
-            <value>Schedule Options</value>
-        </button>
+        <textarea name="recgroup_label" from="basetextarea">
+            <area>73,175,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>Allcenter</align>
+            <value>Record Group:</value>
+        </textarea>
 
-        <button name="storeoptions" from="base_medium_button">
-            <position>188,204</position>
-            <value>Storage Options</value>
-        </button>
+        <buttonlist name="recgroup" from="rules">
+            <position>73,193</position>
+        </buttonlist>
 
-        <button name="postprocessing" from="base_medium_button">
-            <position>188,272</position>
-            <value>Post Processing</value>
-        </button>
+        <textarea name="playgroup_label" from="basetextarea">
+            <area>73,247,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Play Back Group:</value>
+        </textarea>
 
-        <button name="schedinfo" from="base_medium_button">
-            <position>188,340</position>
-            <value>Schedule Info</value>
-        </button>        
+        <buttonlist name="playgroup" from="rules">
+            <position>73,265</position>
+        </buttonlist>
 
-        <button name="preview" from="base_medium_button">
-            <position>188,408</position>
-            <value>Preview</value>
-        </button>
+        <textarea name="startoffset_label" from="basetextarea">
+            <area>73,319,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Start Offset:</value>
+        </textarea>
 
-        <button name="metadata" from="base_medium_button">
-            <position>188,476</position>
-            <value>Metadata Options</value>
-        </button>
+        <spinbox name="startoffset" from="base_wide_spinbox">
+            <position>73,337</position>
+            <template type="negative">Start recording %n minute(s) late</template>
+            <template type="zero">Start recording on time</template>
+            <template type="positive">Start recording %n minute(s) early</template>
+        </spinbox>
 
-        <button name="cancel" from="base_medium_button">
-            <position>188,544</position>
+        <textarea name="endoffset_label" from="basetextarea">
+            <area>73,391,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>End Offset:</value>
+        </textarea>
+
+        <spinbox name="endoffset" from="base_wide_spinbox">
+            <position>73,409</position>
+            <template type="negative">End recording %n minute(s) early</template>
+            <template type="zero">End recording on time</template>
+            <template type="positive">End recording %n minute(s) late</template>
+        </spinbox>
+
+        <textarea name="newrepeat_label" from="basetextarea">
+            <area>73,463,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Repeats:</value>
+        </textarea>
+
+        <buttonlist name="newrepeat" from="rules">
+            <position>73,481</position>
+            <helptext></helptext>
+        </buttonlist>
+
+        <checkbox name="ruleactive" from="base_checkbox">
+            <position>238,553</position>
+        </checkbox>
+
+        <textarea name="ruleactivelabel" from="basetextarea">
+            <area>288,553,300,30</area>
+            <font>basesomewhatsmaller</font>
+            <align>vcenter</align>
+            <value>Recording Rule Active</value>
+        </textarea>
+
+        <button name="cancel" from="base_button">
+            <position>150,615</position>
             <value>Cancel</value>
         </button>
 
-        <button name="save" from="base_medium_button">
-            <position>188,612</position>
+        <button name="save" from="base_button">
+            <position>426,615</position>
             <value>Save</value>
         </button>
 
@@ -3107,15 +3164,29 @@
             <area>734,248,506,2</area>
         </shape>
 
+        <textarea name="priority_label" from="basetextarea">
+            <area>73,59,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Priority:</value>
+        </textarea>
+
         <spinbox name="priority" from="base_wide_spinbox">
-            <position>73,68</position>
+            <position>73,77</position>
             <template type="negative">Reduce priority by %n</template>
             <template type="zero">Normal recording priority</template>
             <template type="positive">Raise priority by %n</template>
         </spinbox>
 
+        <textarea name="input_label" from="basetextarea">
+            <area>73,136,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Input:</value>
+        </textarea>
+
         <buttonlist name="input" from="base_selector">
-            <area>73,136,580,40</area>
+            <area>73,154,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3132,95 +3203,118 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>580,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>580,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
 
+        <textarea name="startoffset_label" from="basetextarea">
+            <area>73,213,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Start Offset:</value>
+        </textarea>
+
         <spinbox name="startoffset" from="base_wide_spinbox">
-            <position>73,204</position>
+            <position>73,231</position>
             <template type="negative">Start recording %n minute(s) late</template>
             <template type="zero">Start recording on time</template>
             <template type="positive">Start recording %n minute(s) early</template>
         </spinbox>
 
+        <textarea name="endoffset_label" from="basetextarea">
+            <area>73,290,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>End Offset:</value>
+        </textarea>
+
         <spinbox name="endoffset" from="base_wide_spinbox">
-            <position>73,272</position>
+            <position>73,308</position>
             <template type="negative">End recording %n minute(s) early</template>
             <template type="zero">End recording on time</template>
             <template type="positive">End recording %n minute(s) late</template>
         </spinbox>
 
+        <textarea name="dupmethod_label" from="basetextarea">
+            <area>73,367,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Duplicate Method:</value>
+        </textarea>
+
         <buttonlist name="dupmethod" from="base_selector">
-            <area>53,340,620,40</area>
+            <area>73,385,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,620,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,590,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,620,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,590,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>620,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>620,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
+
+        <textarea name="dupscope_label" from="basetextarea">
+            <area>73,444,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Duplicate Scope:</value>
+        </textarea>
 
         <buttonlist name="dupscope" from="base_selector">
-            <area>53,408,620,40</area>
+            <area>73,462,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,620,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,590,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,620,40</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,8,590,24</area>
+                        <area>15,8,550,24</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>620,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>620,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
 
-        <button name="filters" from="base_medium_button">
-            <position>188,476</position>
-            <value>Schedule Options</value>
-        </button>
-
         <checkbox name="ruleactive" from="base_checkbox">
-            <position>238,547</position>
+            <position>238,538</position>
         </checkbox>
 
         <textarea name="ruleactivelabel" from="basetextarea">
-            <area>288,544,300,40</area>
+            <area>288,538,300,30</area>
             <font>basesomewhatsmaller</font>
             <align>vcenter</align>
             <value>Recording Rule Active</value>
         </textarea>
 
         <button name="back" from="base_medium_button">
-            <position>188,612</position>
+            <position>188,604</position>
             <value>Back</value>
         </button>
 
@@ -3442,8 +3536,15 @@
             <area>734,248,506,2</area>
         </shape>
 
+        <textarea name="recprofile_label" from="basetextarea">
+            <area>73,59,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Record Profile:</value>
+        </textarea>
+
         <buttonlist name="recprofile" from="base_selector">
-            <area>73,74,580,40</area>
+            <area>73,77,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3460,15 +3561,22 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>580,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>580,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
+
+        <textarea name="recgroup_label" from="basetextarea">
+            <area>73,136,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Record Group:</value>
+        </textarea>
 
         <buttonlist name="recgroup" from="base_selector">
-            <area>73,150,580,40</area>
+            <area>73,154,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3485,15 +3593,22 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>580,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>580,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
+
+        <textarea name="storagegroup_label" from="basetextarea">
+            <area>73,213,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Storage Group:</value>
+        </textarea>
 
         <buttonlist name="storagegroup" from="base_selector">
-            <area>73,226,580,40</area>
+            <area>73,231,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3510,15 +3625,22 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>580,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>580,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
+
+        <textarea name="playgroup_label" from="basetextarea">
+            <area>73,290,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Play Back Group:</value>
+        </textarea>
 
         <buttonlist name="playgroup" from="base_selector">
-            <area>73,302,580,40</area>
+            <area>73,308,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3535,21 +3657,35 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>580,2</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>580,21</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
 
+        <textarea name="maxepisodes_label" from="basetextarea">
+            <area>73,367,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Maximum Number of Episodes to Keep:</value>
+        </textarea>
+
         <spinbox name="maxepisodes" from="base_wide_spinbox">
-            <position>73,378</position>
+            <position>73,385</position>
             <template type="zero">No episode limit</template>
             <template type="positive">Keep at most %n episode(s)</template>
         </spinbox>
 
+        <textarea name="maxnewest_label" from="basetextarea">
+            <area>73,444,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Maximum Number of Newest Episodes:</value>
+        </textarea>
+
         <buttonlist name="maxnewest" from="base_selector">
-            <area>73,454,580,40</area>
+            <area>73,462,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -3574,17 +3710,17 @@
         </buttonlist>
 
         <checkbox name="autoexpire" from="base_checkbox">
-            <position>196,532</position>
+            <position>196,538</position>
         </checkbox>
 
         <textarea name="autoexpirelabel" from="basetextarea">
-            <area>246,530,450,40</area>
+            <area>246,538,450,30</area>
             <align>vcenter</align>
             <value>Allow recordings to expire?</value>
         </textarea>
 
         <button name="back" from="base_medium_button">
-            <position>188,606</position>
+            <position>188,604</position>
             <value>Back</value>
         </button>
 

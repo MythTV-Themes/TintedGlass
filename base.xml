@@ -1153,6 +1153,12 @@
     <!-- Base definition of a wide spinbox -->
     <spinbox name="base_wide_spinbox" from="base_spinbox">
         <area>0,0,580,40</area>
+        <statetype name="downscrollarrow">
+            <position>584,2</position>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>584,21</position>
+        </statetype>
     </spinbox>
 
     <!-- Base definition of a list in 'selector' configuration -->
