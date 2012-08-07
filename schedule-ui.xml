@@ -2927,7 +2927,7 @@
         </shape>
 
         <textarea name="template" from="basetextarea">
-            <area>24,67,678,22</area>
+            <area>24,65,678,24</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <template>%Using the '|TEMPLATE|' template%</template>
