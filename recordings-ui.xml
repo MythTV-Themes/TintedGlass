@@ -567,7 +567,7 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="s00e00" from="base_text_font_state_extrasmall">
-                        <area>507,46,56,20</area>
+                        <area>507,46,60,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
@@ -1217,7 +1217,7 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="s00e00" from="base_text_font_state_extrasmall">
-                        <area>507,46,56,20</area>
+                        <area>507,46,60,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
