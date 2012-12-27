@@ -17,22 +17,22 @@
         </fontdef>
 
         <shape name="osd-debug-backdrop">
-            <area>32,-10,1216,116</area>
+            <area>32,0,1216,107</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-debug-backdrop-line">
-            <area>33,-9,1214,114</area>
+            <area>33,1,1214,105</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="osd-debug-highlight-bottom-line">
-            <area>32,102,1216,2</area>
+        <shape name="osd-debug-highlight-top-line">
+            <area>32,2,1216,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="0">
@@ -43,8 +43,12 @@
             </fill>
         </shape>
 
+        <shape name="osd-debug-highlight-bottom-line" from="osd-debug-highlight-top-line">
+            <area>32,104,1216,2</area>
+        </shape>
+
         <shape name="osd-debug-highlight-left-line">
-            <area>34,0,2,115</area>
+            <area>34,4,2,100</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
@@ -56,190 +60,190 @@
         </shape>
 
         <shape name="osd-debug-higlight-right-line" from="osd-debug-highlight-left-line">
-            <area>1244,0,2,115</area>
+            <area>1244,4,2,100</area>
         </shape>
 
         <textarea name="cpuload">
             <font>medium</font>
-            <area>74,5,162,24</area>
+            <area>74,6,162,24</area>
             <align>right,top</align>
             <value>CPUs :</value>
         </textarea>
 
         <textarea name="load">
             <font>mediumblue</font>
-            <area>241,5,216,24</area>
+            <area>241,6,216,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="file">
             <font>medium</font>
-            <area>450,5,60,24</area>
+            <area>450,6,60,24</area>
             <align>right,top</align>
             <value>File :</value>
         </textarea>
 
         <textarea name="filename">
             <font>mediumblue</font>
-            <area>515,5,685,24</area>
+            <area>515,6,685,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="storage">
             <font>medium</font>
-            <area>74,30,162,24</area>
+            <area>74,31,162,24</area>
             <align>right,top</align>
             <value>Storage to Buffer :</value>
         </textarea>
 
         <textarea name="storagerate">
             <font>mediumblue</font>
-            <area>247,30,123,24</area>
+            <area>247,31,123,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="decoder">
             <font>medium</font>
-            <area>74,55,162,24</area>
+            <area>74,56,162,24</area>
             <align>right,top</align>
             <value>Buffer to Decoder :</value>
         </textarea>
 
         <textarea name="decoderrate">
             <font>mediumblue</font>
-            <area>247,55,123,24</area>
+            <area>247,56,123,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="buffer">
             <font>medium</font>
-            <area>74,80,162,24</area>
+            <area>74,81,162,24</area>
             <align>right,top</align>
             <value>Available Buffer :</value>
         </textarea>
 
         <textarea name="bufferavail">
             <font>mediumblue</font>
-            <area>247,80,123,24</area>
+            <area>247,81,123,24</area>
             <align>left,top</align>
             <template>%BUFFERAVAIL% of %BUFFERSIZE%Mb</template>
         </textarea>
 
         <textarea name="video">
             <font>medium</font>
-            <area>410,30,100,24</area>
+            <area>410,31,100,24</area>
             <align>right,top</align>
             <value>Video :</value>
         </textarea>
 
         <textarea name="videowidth">
             <font>mediumblue</font>
-            <area>515,30,250,24</area>
+            <area>515,31,250,24</area>
             <align>left,top</align>
             <template>%VIDEOWIDTH%x%VIDEOHEIGHT%@%VIDEOFRAMERATE%fps</template>
         </textarea>
 
         <textarea name="vidcodec">
             <font>medium</font>
-            <area>410,55,100,24</area>
+            <area>410,56,100,24</area>
             <align>right,top</align>
             <value>Codec :</value>
         </textarea>
 
         <textarea name="videocodec">
             <font>mediumblue</font>
-            <area>515,55,150,24</area>
+            <area>515,56,150,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="viddec">
             <font>medium</font>
-            <area>410,80,100,24</area>
+            <area>410,81,100,24</area>
             <align>right,top</align>
             <value>Decoder :</value>
         </textarea>
 
         <textarea name="videodecoder">
             <font>mediumblue</font>
-            <area>515,80,150,24</area>
+            <area>515,81,150,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="sync">
             <font>medium</font>
-            <area>720,30,150,24</area>
+            <area>720,31,150,24</area>
             <align>right,top</align>
             <value>A/V Sync :</value>
         </textarea>
 
         <textarea name="avsync">
             <font>mediumblue</font>
-            <area>875,30,100,24</area>
+            <area>875,31,100,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="fps">
             <font>medium</font>
-            <area>670,55,200,24</area>
+            <area>670,56,200,24</area>
             <align>right,top</align>
             <value>FPS :</value>
         </textarea>
 
         <textarea name="framerate">
             <font>mediumblue</font>
-            <area>875,55,100,24</area>
+            <area>875,56,100,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="frames">
             <font>medium</font>
-            <area>670,80,200,24</area>
+            <area>670,81,200,24</area>
             <align>right,top</align>
             <value>Frames decoded/free :</value>
         </textarea>
 
         <textarea name="videoframes">
             <font>mediumblue</font>
-            <area>875,80,100,24</area>
+            <area>875,81,100,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="audio">
             <font>medium</font>
-            <area>994,30,130,24</area>
+            <area>994,31,130,24</area>
             <align>right,top</align>
             <value>Audio :</value>
         </textarea>
 
         <textarea name="audiocodec">
             <font>mediumblue</font>
-            <area>1129,30,77,24</area>
+            <area>1129,31,77,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="channels">
             <font>medium</font>
-            <area>994,55,130,24</area>
+            <area>994,56,130,24</area>
             <align>right,top</align>
             <value>Channels :</value>
         </textarea>
 
         <textarea name="audiochannels">
             <font>mediumblue</font>
-            <area>1129,55,77,24</area>
+            <area>1129,56,77,24</area>
             <align>left,top</align>
         </textarea>
 
         <textarea name="audiorate">
             <font>medium</font>
-            <area>994,80,130,24</area>
+            <area>994,81,130,24</area>
             <align>right,top</align>
             <value>Sample rate :</value>
         </textarea>
 
         <textarea name="samplerate">
             <font>mediumblue</font>
-            <area>1129,80,77,24</area>
+            <area>1129,81,77,24</area>
             <align>left,top</align>
         </textarea>
 
@@ -254,34 +258,38 @@
         </fontdef>
 
         <shape name="osd-message-backdrop">
-            <area>221,-10,838,46</area>
+            <area>221,0,838,37</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-message-backdrop-line">
-            <area>222,-9,836,44</area>
+            <area>222,1,836,35</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="osd-message-highlight-bottom-line">
-            <area>221,32,838,2</area>
+        <shape name="osd-message-highlight-top-line">
+            <area>221,2,838,2</area>
             <type>box</type>
             <fill style="gradient">
-               <gradient direction="horizontal" alpha="0">
-                   <stop position="0" color="#ffffff" />
-                   <stop position="50" color="#ffffff" alpha="120" />
-                   <stop position="100" color="#ffffff" />
-               </gradient>
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#ffffff" />
+                    <stop position="50" color="#ffffff" alpha="120" />
+                    <stop position="100" color="#ffffff" />
+                </gradient>
             </fill>
         </shape>
 
+        <shape name="osd-message-highlight-bottom-line" from="osd-message-highlight-top-line">
+            <area>221,33,838,2</area>
+        </shape>
+
         <shape name="osd-message-highlight-left-line">
-            <area>223,0,2,35</area>
+            <area>223,4,2,29</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
@@ -293,12 +301,12 @@
         </shape>
 
         <shape name="osd-message-highlight-right-line" from="osd-message-highlight-left-line">
-            <area>1055,0,2,35</area>
+            <area>1055,4,2,29</area>
         </shape>
 
         <textarea name="message_text">
             <font>medium</font>
-            <area>229,0,822,32</area>
+            <area>229,3,822,32</area>
             <align>allcenter</align>
         </textarea>
 
@@ -313,22 +321,22 @@
         </fontdef>
 
         <shape name="osd-input-backdrop">
-            <area>32,-10,180,58</area>
+            <area>32,0,180,49</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140" />
             <cornerradius>8</cornerradius>
         </shape>
 
         <shape name="osd-input-backdrop-line">
-            <area>33,-9,178,56</area>
+            <area>33,1,178,47</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#ffffff" alpha="45" width="2" />
             <cornerradius>6</cornerradius>
         </shape>
 
-        <shape name="osd-input-highlight-bottom-line">
-            <area>32,44,180,2</area>
+        <shape name="osd-input-highlight-top-line">
+            <area>32,2,180,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="0">
@@ -339,8 +347,12 @@
             </fill>
         </shape>
 
+        <shape name="osd-input-highlight-bottom-line" from="osd-input-highlight-top-line">
+            <area>32,45,180,2</area>
+        </shape>
+
         <shape name="osd-input-highlight-left-line">
-            <area>34,0,2,47</area>
+            <area>34,4,2,41</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="vertical" alpha="0">
@@ -352,12 +364,12 @@
         </shape>
 
         <shape name="osd-input-highlight-right-line" from="osd-input-highlight-left-line">
-            <area>208,0,2,47</area>
+            <area>208,4,2,41</area>
         </shape>
 
         <textarea name="osd_number_entry">
             <font>large</font>
-            <area>51,0,142,44</area>
+            <area>51,5,142,42</area>
             <align>allcenter</align>
         </textarea>
 
@@ -1325,14 +1337,14 @@
             <area>32,682,1216,24</area>
 
             <shape name="position">
-                <area>0,0,6,100%</area>
+                <area>0,0,7,100%</area>
                 <type>roundbox</type>
                 <fill color="#FFFFFF" alpha="200" />
                 <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="keep">
-                <area>0,7,100%,10</area>
+                <area>0,8,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#216893" />
                 <line color="#CCCCCC" width="1" />
@@ -1340,7 +1352,7 @@
             </shape>
 
             <shape name="cut">
-                <area>0,7,100%,10</area>
+                <area>0,8,100%,10</area>
                 <type>roundbox</type>
                 <fill color="#800500" />
                 <line color="#CCCCCC" width="1" />
@@ -1348,28 +1360,28 @@
             </shape>
 
             <shape name="cuttoright">
-                <area>0,0,6,100%</area>
+                <area>0,0,7,100%</area>
                 <type>roundbox</type>
                 <fill color="#800500" alpha="255" />
                 <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="cuttoleft">
-                <area>0,0,6,100%</area>
+                <area>0,0,7,100%</area>
                 <type>roundbox</type>
                 <fill color="#800500" alpha="255" />
                 <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="keeptoright">
-                <area>0,0,6,100%</area>
+                <area>0,0,7,100%</area>
                 <type>roundbox</type>
                 <fill color="#216893" alpha="255" />
                 <cornerradius>3</cornerradius>
             </shape>
 
             <shape name="keeptoleft">
-                <area>0,0,6,100%</area>
+                <area>0,0,7,100%</area>
                 <type>roundbox</type>
                 <fill color="#216893" alpha="255" />
                 <cornerradius>3</cornerradius>
