@@ -4,11 +4,17 @@
     <window name="appearance">
         <area>0,0,1280,720</area>
 
-        <textarea name="heading" from="base_heading">
-            <value>Appearance Wizard</value>
-        </textarea>
+        <shape name="blackout">
+            <type>box</type>
+            <fill style="solid" color="black"></fill>
+        </shape>
 
-        <shape name="appearance-wizard-backdrop" from="base_backdrop">
+        <imagetype name="preview">
+            <filename>preview.png</filename>
+            <preserveaspect>FALSE</preserveaspect>
+        </imagetype>
+
+        <shape name="appearance-wizard-backdrop" from="base_popup_backdrop">
             <area>320,180,640,360</area>
         </shape>
 
@@ -32,24 +38,25 @@
             <area>956,184,2,352</area>
         </shape>
 
-        <imagetype name="topleft">
-            <position>0,0</position>
-            <filename>images/topleft.png</filename>
-        </imagetype>
+        <shape name="appearance-seperator-first-line" from="base_line">
+            <area>341,230,598,2</area>
+        </shape>
 
-        <imagetype name="bottomright">
-            <position>800,600</position>
-            <filename>images/bottomright.png</filename>
-        </imagetype>
+        <textarea name="title">
+            <font>basesmalldarkyellow</font>
+            <area>340,184,600,46</area>
+            <value>Appearance Wizard</value>
+            <align>allcenter</align>
+        </textarea>
 
-        <textarea name="part1" from="basetextarea">
+        <textarea name="part1">
             <font>basesmall</font>
-            <area>340,192,600,178</area>
-            <value>Move the selected arrow to the corner of the TV screen.  Press SELECT to edit the other arrow.  Press MENU for options and ESC to quit.</value>
+            <area>340,242,600,128</area>
+            <value>Move the selected corner of the preview image to the corner of the TV screen.  Press SELECT to edit the other corner. Press MENU for options and ESC to quit.</value>
             <multiline>yes</multiline>
         </textarea>
 
-        <textarea name="size" from="basetextarea">
+        <textarea name="size">
             <font>basesmall</font>
             <area>340,380,600,30</area>
             <value>1280 x 720</value>
@@ -57,12 +64,10 @@
 
         <textarea name="offsets" from="size">
             <area>340,440,600,30</area>
-            <value>0 x 0</value>
         </textarea>
 
         <textarea name="changeamount" from="size">
             <area>340,500,600,30</area>
-            <value>1 pixel</value>
         </textarea>
 
     </window>
