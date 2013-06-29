@@ -58,104 +58,73 @@
         </shape>
 
         <textarea name="musiclocation_label" from="basetextarea">
-            <area>129,67,428,32</area>
+            <area>129,74,428,32</area>
             <align>right,vcenter</align>
             <value>Directory to hold music:</value>
         </textarea>
 
         <textedit name="musiclocation" from="base_wide_textedit">
-            <area>567,67,550,32</area>
+            <area>567,74,550,32</area>
         </textedit>
 
         <textarea name="musiccddevice_label" from="basetextarea">
-            <area>129,126,428,32</area>
+            <area>129,140,428,32</area>
             <align>right,vcenter</align>
             <value>CD device:</value>
         </textarea>
 
         <textedit name="musiccddevice" from="base_wide_textedit">
-            <area>567,126,550,32</area>
+            <area>567,140,550,32</area>
         </textedit>
 
         <textarea name="musicaudiodevice_label" from="basetextarea">
-            <area>129,185,428,32</area>
+            <area>129,206,428,32</area>
             <align>right,vcenter</align>
             <value>Audio device:</value>
         </textarea>
 
         <textedit name="musicaudiodevice" from="base_wide_textedit">
-            <area>567,185,550,32</area>
+            <area>567,206,550,32</area>
         </textedit>
 
         <textarea name="musicdefaultupmix_label" from="basetextarea">
-            <area>129,244,429,32</area>
+            <area>129,272,429,32</area>
             <align>right,vcenter</align>
             <value>Convert stereo to 5.1 sound:</value>
         </textarea>
 
         <checkbox name="musicdefaultupmix" from="base_checkbox">
-            <position>567,246</position>
+            <position>567,274</position>
         </checkbox>
 
         <textarea name="nonid3filenameformat_label" from="basetextarea">
-            <area>129,303,428,32</area>
+            <area>129,339,428,32</area>
             <align>right,vcenter</align>
             <value>Filename Format:</value>
         </textarea>
 
         <textedit name="nonid3filenameformat" from="base_wide_textedit">
-            <area>567,303,550,32</area>
+            <area>567,339,550,32</area>
         </textedit>
 
         <textarea name="ignoreid3tags_label" from="basetextarea">
-            <area>129,362,428,32</area>
+            <area>129,406,428,32</area>
             <align>right,vcenter</align>
             <value>Ignore ID3 Tags:</value>
         </textarea>
 
         <checkbox name="ignoreid3tags" from="base_checkbox">
-            <position>567,364</position>
+            <position>567,408</position>
         </checkbox>
 
-        <textarea name="tagencoding_label" from="basetextarea">
-            <area>129,421,428,32</area>
-            <align>right,vcenter</align>
-            <value>Tag Encoding:</value>
-        </textarea>
-
-        <buttonlist name="tagencoding" from="base_selector">
-            <area>567,421,300,32</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,300,32</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,32</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,300,32</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,32</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>304,-2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>304,15</position>
-            </statetype>
-        </buttonlist>
-
         <textarea name="allowtagwriting_label" from="basetextarea">
-            <area>129,480,428,32</area>
+            <area>129,473,428,32</area>
             <align>right,vcenter</align>
             <value>Allow metadata to be written to tags:</value>
         </textarea>
 
         <checkbox name="allowtagwriting" from="base_checkbox">
-            <position>567,482</position>
+            <position>567,475</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">
