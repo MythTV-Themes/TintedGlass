@@ -1152,6 +1152,14 @@
             <template>%CHANSTR%   %CALLSIGN%   %CHANNELNAME%</template>
         </textarea>
 
+        <textarea name="nochannels_warning">
+            <area>24,90,1232,431</area>
+            <font>basemedium</font>
+            <value>You haven't defined any channels</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
         <textarea name="helptext2" from="basetextarea">
             <area>44,581,1192,92</area>
             <font>basesmall</font>
