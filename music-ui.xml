@@ -442,6 +442,12 @@
                                     <filename>mythmusic/mm_compilations.png</filename>
                                 </imagetype>
                             </state>
+                            <state name="cd">
+                                <imagetype name="cd">
+                                    <area>0,0,110,110</area>
+                                    <filename>mythmusic/mm_cd.png</filename>
+                                </imagetype>
+                            </state>
                             <state name="directory">
                                 <imagetype name="directory">
                                     <area>0,0,110,110</area>
@@ -574,6 +580,12 @@
                                     <filename>mythmusic/mm_compilations.png</filename>
                                 </imagetype>
                             </state>
+                            <state name="cd">
+                                <imagetype name="cd">
+                                    <area>0,0,127,127</area>
+                                    <filename>mythmusic/mm_cd.png</filename>
+                                </imagetype>
+                            </state>
                             <state name="directory">
                                 <imagetype name="directory">
                                     <area>0,0,127,127</area>
@@ -675,6 +687,20 @@
                                 <imagetype name="compilations">
                                     <area>0,0,127,127</area>
                                     <filename>mythmusic/mm_compilations.png</filename>
+                                    <alpha>200</alpha>
+                                </imagetype>
+                            </state>
+                            <state name="cd">
+                                <imagetype name="cd">
+                                    <area>0,0,127,127</area>
+                                    <filename>mythmusic/mm_cd.png</filename>
+                                    <alpha>200</alpha>
+                                </imagetype>
+                            </state>
+                            <state name="directory">
+                                <imagetype name="directory">
+                                    <area>0,0,127,127</area>
+                                    <filename>mythmusic/mm_directory.png</filename>
                                     <alpha>200</alpha>
                                 </imagetype>
                             </state>
