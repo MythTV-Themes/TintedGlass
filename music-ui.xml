@@ -678,6 +678,13 @@
                                     <alpha>200</alpha>
                                 </imagetype>
                             </state>
+                            <state name="directory">
+                                <imagetype name="directory">
+                                    <area>0,0,127,127</area>
+                                    <filename>mythmusic/mm_directory.png</filename>
+                                    <alpha>200</alpha>
+                                </imagetype>
+                            </state>
                             <state name="playlists">
                                 <imagetype name="playlists">
                                     <area>0,0,127,127</area>
