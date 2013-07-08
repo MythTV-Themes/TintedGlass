@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+
+<mythuitheme>
+
+    <baseres>1280x720</baseres>
+
+    <window name="notification">
+
+        <area>-1,-1,780,180</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="notification-backdrop" from="base_popup_backdrop">
+            <area>0,0,780,180</area>
+        </shape>
+
+        <shape name="notification-backdrop-line" from="base_backdrop_line">
+            <area>1,1,778,178</area>
+        </shape>
+
+        <shape name="notification-top-line" from="base_highlight_line">
+            <area>2,2,776,2</area>
+        </shape>
+
+        <shape name="notification-bottom-line" from="base_highlight_line">
+            <area>1,176,776,2</area>
+        </shape>
+
+        <shape name="notification-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,170</area>
+        </shape>
+
+        <shape name="notification-right-line" from="base_highlight_vertical_line">
+            <area>776,4,2,170</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>14,18,752,35</area>
+            <font>basemediumlargerbold</font>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea">
+            <area>14,53,752,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>14,83,752,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea">
+            <area>14,113,300,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+
+        <textarea name="progress_text" from="basetextarea">
+            <area>370,113,396,30</area>
+            <font>basesomewhatsmaller</font>
+            <align>right</align>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <position>14,148</position>
+            <imagetype name="background">
+                <area>0,0,752,10</area>
+                <filename>images/progressbar/progressbar_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,752,10</area>
+               <filename>images/progressbar/progressbar_fill.png</filename>
+            </imagetype>
+        </progressbar>
+
+    </window>
+
+    <window name="notification-image">
+
+        <area>-1,-1,780,180</area>
+        
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="notification-image-backdrop" from="base_popup_backdrop">
+            <area>0,0,780,180</area>
+        </shape>
+
+        <shape name="notification-image-backdrop-line" from="base_backdrop_line">
+            <area>1,1,778,178</area>
+        </shape>
+
+        <shape name="notification-image-top-line" from="base_highlight_line">
+            <area>2,2,776,2</area>
+        </shape>
+
+        <shape name="notification-image-bottom-line" from="base_highlight_line">
+            <area>1,176,776,2</area>
+        </shape>
+
+        <shape name="notification-image-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,170</area>
+        </shape>
+
+        <shape name="notification-image-right-line" from="base_highlight_vertical_line">
+            <area>776,4,2,170</area>
+        </shape>
+        
+        <imagetype name="image">
+            <filename>damaged.png</filename>
+            <area>18,18,144,144</area>
+        </imagetype>
+        
+        <textarea name="title" from="basetextarea">
+            <area>170,18,598,35</area>
+            <font>basemediumlargerbold</font>
+        </textarea>
+        
+        <textarea name="origin" from="basetextarea">
+            <area>170,53,598,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+        
+        <textarea name="description" from="basetextarea">
+            <area>170,83,598,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+        
+        <textarea name="extra" from="basetextarea">
+            <area>170,113,300,30</area>
+            <font>basesomewhatsmaller</font>
+        </textarea>
+        
+        <textarea name="progress_text" from="basetextarea">
+            <area>370,113,398,30</area>
+            <font>basesomewhatsmaller</font>
+            <align>right</align>
+        </textarea>
+        
+        <progressbar name="progress" from="baseprogressbar">
+            <position>170,148</position>
+            <imagetype name="background">
+                <area>0,0,598,10</area>
+                <filename>images/progressbar/progressbar_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,598,10</area>
+               <filename>images/progressbar/progressbar_fill.png</filename>
+            </imagetype>
+        </progressbar>
+
+    </window>
+
+    <window name="notification-full">
+
+        <area>0,0,1280,720</area>
+
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000"/>
+        </shape>
+
+        <imagetype name="image">
+            <filename>damaged.png</filename>
+            <area>-1,-1,100%,100%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>170,475,-10,45</area>
+            <font>baseextralargebold</font>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea">
+            <area>170,520,-10,35</area>
+            <font>basemediumlargerbold</font>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>170,555,-10,30</area>
+            <font>basemediumshadow</font>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea">
+            <area>170,585,300,30</area>
+            <font>basemediumshadow</font>
+        </textarea>
+
+        <textarea name="progress_text" from="basetextarea">
+            <area>370,585,740,30</area>
+            <font>basemediumshadow</font>
+            <align>right</align>
+        </textarea>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <position>170,620</position>
+            <imagetype name="background">
+                <area>0,0,940,10</area>
+                <filename>images/progressbar/progressbar_background.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,940,10</area>
+               <filename>images/progressbar/progressbar_fill.png</filename>
+            </imagetype>
+        </progressbar>
+
+    </window>
+
+</mythuitheme>
