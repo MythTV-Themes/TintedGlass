@@ -39,8 +39,23 @@
         <pixelsize>22</pixelsize>
     </fontdef>
 
+    <fontdef name="basemediumshadow" from="basefont">
+        <pixelsize>22</pixelsize>
+        <shadowcolor>#000000</shadowcolor>
+        <shadowoffset>2,2</shadowoffset>
+        <shadowalpha>100</shadowalpha>
+    </fontdef>
+
     <fontdef name="basemediumlarger" from="basefont">
         <pixelsize>25</pixelsize>
+    </fontdef>
+
+    <fontdef name="basemediumlargerbold" from="basefont">
+        <pixelsize>25</pixelsize>
+        <shadowcolor>#000000</shadowcolor>
+        <shadowoffset>3,3</shadowoffset>
+        <shadowalpha>100</shadowalpha>
+        <weight>bold</weight>
     </fontdef>
 
     <fontdef name="baselarge" from="basefont">
@@ -49,6 +64,14 @@
 
     <fontdef name="baseextralarge" from="basefont">
         <pixelsize>32</pixelsize>
+    </fontdef>
+
+    <fontdef name="baseextralargebold" from="basefont">
+        <pixelsize>32</pixelsize>
+        <shadowcolor>#000000</shadowcolor>
+        <shadowoffset>3,3</shadowoffset>
+        <shadowalpha>100</shadowalpha>
+        <weight>bold</weight>
     </fontdef>
 
     <!-- Color variations on base fonts -->
