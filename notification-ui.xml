@@ -7,7 +7,7 @@
 
     <window name="notification">
 
-        <area>-1,-1,780,180</area>
+        <area>-1,36,780,180</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -47,27 +47,47 @@
             <area>776,4,2,170</area>
         </shape>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title" from="basetextarea" depends="progress">
             <area>14,18,752,35</area>
             <font>basemediumlargerbold</font>
         </textarea>
 
-        <textarea name="origin" from="basetextarea">
+        <textarea name="title_noprogress" from="basetextarea" depends="!progress">
+            <area>14,11,752,35</area>
+            <font>basemediumlargerbold</font>
+            <template>%TITLE%</template>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea" depends="progress">
             <area>14,53,752,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
+        <textarea name="origin_noprogress" from="basetextarea" depends="!progress">
+            <area>14,46,752,30</area>
+            <font>basesomewhatsmaller</font>
+            <template>%ORIGIN%</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea" depends="progress">
             <area>14,83,752,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
 
-        <textarea name="extra" from="basetextarea">
+        <textarea name="description_noprogress" from="basetextarea" depends="!progress">
+            <area>14,76,752,90</area>
+            <font>basesomewhatsmaller</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea" depends="progress">
             <area>14,113,300,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
 
-        <textarea name="progress_text" from="basetextarea">
+        <textarea name="progress_text" from="basetextarea" depends="progress">
             <area>370,113,396,30</area>
             <font>basesomewhatsmaller</font>
             <align>right</align>
@@ -89,7 +109,7 @@
 
     <window name="notification-image">
 
-        <area>-1,-1,780,180</area>
+        <area>-1,36,780,180</area>
         
         <animation trigger="AboutToShow">
             <section>
@@ -130,31 +150,51 @@
         </shape>
         
         <imagetype name="image">
-            <filename>damaged.png</filename>
+            <filename>images/unknown.png</filename>
             <area>18,18,144,144</area>
         </imagetype>
         
-        <textarea name="title" from="basetextarea">
+        <textarea name="title" from="basetextarea" depends="progress">
             <area>170,18,598,35</area>
             <font>basemediumlargerbold</font>
         </textarea>
         
-        <textarea name="origin" from="basetextarea">
+        <textarea name="title_noprogress" from="basetextarea" depends="!progress">
+            <area>170,11,598,35</area>
+            <font>basemediumlargerbold</font>
+            <template>%TITLE%</template>
+        </textarea>
+
+        <textarea name="origin" from="basetextarea" depends="progress">
             <area>170,53,598,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
         
-        <textarea name="description" from="basetextarea">
+        <textarea name="origin_noprogress" from="basetextarea" depends="!progress">
+            <area>170,46,598,30</area>
+            <font>basesomewhatsmaller</font>
+            <template>%ORIGIN%</template>
+        </textarea>
+
+        <textarea name="description" from="basetextarea" depends="progress">
             <area>170,83,598,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
         
-        <textarea name="extra" from="basetextarea">
+        <textarea name="description_noprogress" from="basetextarea" depends="!progress">
+            <area>170,76,598,90</area>
+            <font>basesomewhatsmaller</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea" depends="progress">
             <area>170,113,300,30</area>
             <font>basesomewhatsmaller</font>
         </textarea>
         
-        <textarea name="progress_text" from="basetextarea">
+        <textarea name="progress_text" from="basetextarea" depends="progress">
             <area>370,113,398,30</area>
             <font>basesomewhatsmaller</font>
             <align>right</align>
@@ -184,32 +224,40 @@
         </shape>
 
         <imagetype name="image">
-            <filename>damaged.png</filename>
+            <filename>images/unknown.png</filename>
             <area>-1,-1,100%,100%</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>170,475,-10,45</area>
+            <area>170,475,940,45</area>
             <font>baseextralargebold</font>
         </textarea>
 
         <textarea name="origin" from="basetextarea">
-            <area>170,520,-10,35</area>
+            <area>170,520,940,35</area>
             <font>basemediumlargerbold</font>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
-            <area>170,555,-10,30</area>
+        <textarea name="description" from="basetextarea" depends="progress">
+            <area>170,555,940,30</area>
             <font>basemediumshadow</font>
         </textarea>
 
-        <textarea name="extra" from="basetextarea">
+        <textarea name="description_noprogress" from="basetextarea" depends="!progress">
+            <area>170,555,940,106</area>
+            <font>basemediumshadow</font>
+            <multiline>yes</multiline>
+            <align>left,top</align>
+            <template>%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="extra" from="basetextarea" depends="progress">
             <area>170,585,300,30</area>
             <font>basemediumshadow</font>
         </textarea>
 
-        <textarea name="progress_text" from="basetextarea">
+        <textarea name="progress_text" from="basetextarea" depends="progress">
             <area>370,585,740,30</area>
             <font>basemediumshadow</font>
             <align>right</align>
