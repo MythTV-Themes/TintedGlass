@@ -550,16 +550,19 @@
                         </state>
                     </statetype>
                     <textarea name="originalairdate" from="base_text_font_state_extrasmall">
-                        <area>8,46,260,20</area>
+                        <area>8,46,210,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>vcenter</align>
-                        <template>Original Airdate: %1</template> 
+                        <template>%ORIGINALAIRDATE% %REPEAT%</template> 
                     </textarea>
-                    <textarea name="repeat" from="base_text_font_state_extrasmall">
-                        <area>282,46,66,20</area>
+
+                    <textarea name="parttotal" from="base_text_font_state_extrasmall" depends="partnumber">
+                        <area>239,46,100,20</area>
                         <font state="normal">baseextrasmall</font>
                         <align>right,vcenter</align>
+                        <template>%Part |PARTNUMBER| of %%PARTTOTAL%</template>
                     </textarea>
+
                     <textarea name="channel" from="base_text_font_state_extrasmall">
                         <area>362,46,132,20</area>
                         <font state="normal">baseextrasmall</font>
@@ -571,6 +574,13 @@
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
+                    </textarea>
+                    <textarea name="syndicatedepisode" from="base_text_font_state_extrasmall" depends="!s00e00">
+                        <area>507,46,60,20</area>
+                        <font state="normal">baseextrasmall</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                        <template>%|[SYNDICATEDEPISODE|]%</template>
                     </textarea>
                     <textarea name="timedate" from="base_text_font_state_extrasmall">
                         <area>571,46,315,20</area>
