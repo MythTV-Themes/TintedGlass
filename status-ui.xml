@@ -116,41 +116,36 @@
         </buttonlist>
 
         <buttonlist name="log" from="base_list_state">
-            <area>30,101,1220,388</area>
+            <area>28,94,1224,388</area>
             <layout>vertical</layout>
-            <spacing>-2</spacing>
+            <spacing>4</spacing>
             <scrollstyle>free</scrollstyle>
             <arrange>stack</arrange>
             <wrapstyle>items</wrapstyle>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,36</area>
+                    <area>0,0,1224,30</area>
                     <shape name="buttonbackground" from="base_select_bar_active">
                         <area>0,0,100%,100%</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>15,0,1190,36</area>
+                        <area>15,0,1194,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,36</area>
+                    <area>0,0,1224,64</area>
                     <textarea name="buttontext">
-                        <area>15,0,1190,36</area>
+                        <area>15,0,1194,64</area>
                     </textarea>
                 </state>
-                <state name="selectedinactive">
-                    <area>0,0,1220,36</area>
-                    <textarea name="buttontext">
-                        <area>15,0,1190,36</area>
-                    </textarea>
-                </state>
+                <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1211,-9</position>
+                <position>1187,377</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1211,376</position>
+                <position>1207,377</position>
             </statetype>
         </buttonlist>
 

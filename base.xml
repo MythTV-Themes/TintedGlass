@@ -482,9 +482,9 @@
 
     <shape name="base_select_bar_active">
         <type>roundbox</type>
-        <fill color="#000000" alpha="0" />
-        <line color="#555555" alpha="170" width="1" />
-        <cornerradius>90</cornerradius>
+        <fill color="#444444" alpha="90" />
+        <line color="#444444" alpha="180" width="0" />
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_small">
@@ -531,15 +531,15 @@
 
     <shape name="base_select_bar_selectedinactive_small">
         <type>roundbox</type>
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
-        <cornerradius>90</cornerradius>
+        <fill color="#222222" alpha="175" />
+        <line color="#666666" alpha="200" width="2" />
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedinactive_large">
         <type>roundbox</type>
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
+        <fill color="#222222" alpha="175" />
+        <line color="#666666" alpha="200" width="2" />
         <cornerradius>5</cornerradius>
     </shape>
 
@@ -679,7 +679,7 @@
     <!-- Base definition of a list with a small sized select bar -->
     <buttonlist name="base_list">
         <layout>vertical</layout>
-        <spacing>-2</spacing>
+        <spacing>4</spacing>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
@@ -743,8 +743,8 @@
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
-                    <font>basesmall</font>
-                    <font state="normal">basesmall</font>
+                    <font>basesmallyellow</font>
+                    <font state="normal">basesmallyellow</font>
                 </textarea>
             </state>
         </statetype>
@@ -808,7 +808,7 @@
     <!-- Base definition of a list with state info and a small sized select bar -->
     <buttonlist name="base_list_state">
         <layout>vertical</layout>
-        <spacing>-2</spacing>
+        <spacing>4</spacing>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>

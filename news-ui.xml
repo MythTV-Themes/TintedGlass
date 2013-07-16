@@ -103,61 +103,61 @@
         </shape>
 
         <buttonlist name="siteslist" from="base_list">
-            <area>28,99,398,378</area>
+            <area>28,94,398,378</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,398,36</area>
+                    <area>0,0,398,30</area>
                     <textarea name="buttontext">
-                        <area>8,0,382,36</area>
+                        <area>8,0,382,30</area>
                         <font>basesmaller</font>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,398,36</area>
+                    <area>0,0,398,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,382,36</area>
+                        <area>8,0,382,64</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,398,36</area>
+                    <area>0,0,398,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,382,36</area>
+                        <area>8,0,382,64</area>
                         <align>allcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>385,-7</position>
+                <position>360,375</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>385,375</position>
+                <position>380,375</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="articleslist" from="base_list">
-            <area>452,99,800,378</area>
+            <area>452,94,800,378</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,800,36</area>
+                    <area>0,0,800,30</area>
                     <textarea name="buttontext">
-                        <area>8,0,784,36</area>
+                        <area>8,0,784,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,800,36</area>
+                    <area>0,0,800,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,784,36</area>
+                        <area>8,0,784,64</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>787,-7</position>
+                <position>762,375</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>787,375</position>
+                <position>782,375</position>
             </statetype>
         </buttonlist>
 
@@ -194,6 +194,13 @@
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
         </textarea>
+
+        <imagetype name="no_thumbnail_image">
+            <area>1018,502,236,177</area>
+            <filename>images/no_news.png</filename>
+            <mask>images/masks/news_thumbnail_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
         <imagetype name="thumbnail">
             <area>1018,502,236,177</area>
