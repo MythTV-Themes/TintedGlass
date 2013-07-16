@@ -23,11 +23,11 @@
         </shape>
 
         <shape name="news-sites-list-backdrop" from="base_backdrop">
-            <area>20,86,414,400</area>
+            <area>20,86,414,386</area>
         </shape>
 
         <shape name="news-sites-list-backdrop-line" from="base_backdrop_line">
-            <area>21,87,412,398</area>
+            <area>21,87,412,384</area>
         </shape>
 
         <shape name="news-sites-list-top-line" from="base_highlight_line">
@@ -35,23 +35,23 @@
         </shape>
 
         <shape name="news-sites-list-bottom-line" from="base_highlight_line">
-            <area>22,482,410,2</area>
+            <area>22,468,410,2</area>
         </shape>
 
         <shape name="news-sites-list-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,402</area>
+            <area>22,90,2,378</area>
         </shape>
 
         <shape name="news-sites-list-right-line" from="base_highlight_vertical_line">
-            <area>430,90,2,402</area>
+            <area>430,90,2,378</area>
         </shape>
 
         <shape name="news-articles-list-backdrop" from="base_backdrop">
-            <area>444,86,816,400</area>
+            <area>444,86,816,386</area>
         </shape>
 
         <shape name="news-articles-list-backdrop-line" from="base_backdrop_line">
-            <area>445,87,814,398</area>
+            <area>445,87,814,384</area>
         </shape>
 
         <shape name="news-articles-list-top-line" from="base_highlight_line">
@@ -59,27 +59,35 @@
         </shape>
 
         <shape name="news-articles-list-bottom-line" from="base_highlight_line">
-            <area>446,482,812,2</area>
+            <area>446,468,812,2</area>
         </shape>
 
         <shape name="news-articles-list-left-line" from="base_highlight_vertical_line">
-            <area>446,90,2,392</area>
+            <area>446,90,2,378</area>
         </shape>
 
         <shape name="news-articles-list-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,392</area>
+            <area>1256,90,2,378</area>
+        </shape>
+
+        <shape name="news-sites-list-arrows-backdrop" from="base_backdrop">
+            <area>381,472,50,10</area>
+        </shape>
+
+        <shape name="news-articles-list-arrows-backdrop" from="base_backdrop">
+            <area>1207,472,50,10</area>
         </shape>
 
         <shape name="news-description-backdrop" from="base_backdrop">
-            <area>20,496,1240,189</area>
+            <area>20,482,1240,203</area>
         </shape>
 
         <shape name="news-description-backdrop-line" from="base_backdrop_line">
-            <area>21,497,1238,187</area>
+            <area>21,483,1238,201</area>
         </shape>
 
         <shape name="news-description-top-line" from="base_highlight_line">
-            <area>22,498,1236,2</area>
+            <area>22,484,1236,2</area>
         </shape>
 
         <shape name="news-description-bottom-line" from="base_highlight_line">
@@ -87,23 +95,27 @@
         </shape>
 
         <shape name="news-description-left-line" from="base_highlight_vertical_line">
-            <area>22,500,2,181</area>
+            <area>22,486,2,195</area>
         </shape>
 
         <shape name="news-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,500,2,181</area>
+            <area>1256,486,2,195</area>
         </shape>
 
         <shape name="news-description-seperator-first-line" from="base_line">
-            <area>35,534,964,2</area>
+            <area>35,520,971,2</area>
         </shape>
 
-        <shape name="news-description-vertical-seperator-first-line" from="base_vertical_line">
-            <area>1014,505,2,171</area>
+        <shape name="thumbnail-border">
+            <area>1021,499,222,169</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
         </shape>
 
         <buttonlist name="siteslist" from="base_list">
-            <area>28,94,398,378</area>
+            <area>28,94,398,372</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,398,30</area>
@@ -129,15 +141,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>360,375</position>
+                <position>360,379</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>380,375</position>
+                <position>380,379</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="articleslist" from="base_list">
-            <area>452,94,800,378</area>
+            <area>452,94,800,372</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,800,30</area>
@@ -154,10 +166,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>762,375</position>
+                <position>762,379</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>782,375</position>
+                <position>782,379</position>
             </statetype>
         </buttonlist>
 
@@ -183,33 +195,33 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>38,500,964,34</area>
+            <area>36,486,969,34</area>
             <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>36,539,962,142</area>
+            <area>36,530,969,140</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
         </textarea>
 
         <imagetype name="no_thumbnail_image">
-            <area>1018,502,236,177</area>
+            <area>1025,503,214,161</area>
             <filename>images/no_news.png</filename>
             <mask>images/masks/news_thumbnail_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <imagetype name="thumbnail">
-            <area>1018,502,236,177</area>
+            <area>1025,503,214,161</area>
             <mask>images/masks/news_thumbnail_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="nosites" from="basetextarea">
-            <area>454,94,798,384</area>
+            <area>450,92,804,374</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <multiline>yes</multiline>

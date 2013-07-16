@@ -25,11 +25,11 @@
         </shape>
 
         <shape name="groups-backdrop" from="base_backdrop">
-            <area>20,85,316,367</area>
+            <area>20,85,316,352</area>
         </shape>
 
         <shape name="groups-backdrop-line" from="base_backdrop_line">
-            <area>21,86,314,365</area>
+            <area>21,86,314,350</area>
         </shape>
 
         <shape name="groups-top-line" from="base_highlight_line">
@@ -37,23 +37,23 @@
         </shape>
 
         <shape name="groups-bottom-line" from="base_highlight_line">
-            <area>22,448,312,2</area>
+            <area>22,433,312,2</area>
         </shape>
 
         <shape name="groups-left-line" from="base_highlight_vertical_line">
-            <area>22,89,2,359</area>
+            <area>22,89,2,344</area>
         </shape>
 
         <shape name="groups-right-line" from="base_highlight_vertical_line">
-            <area>332,89,2,359</area>
+            <area>332,89,2,344</area>
         </shape>
 
         <shape name="reclist-backdrop" from="base_backdrop">
-            <area>346,85,914,367</area>
+            <area>346,85,914,352</area>
         </shape>
 
         <shape name="reclist-backdrop-line" from="base_backdrop_line">
-            <area>347,86,912,365</area>
+            <area>347,86,912,350</area>
         </shape>
 
         <shape name="reclist-top-line" from="base_highlight_line">
@@ -61,27 +61,35 @@
         </shape>
 
         <shape name="reclist-bottom-line" from="base_highlight_line">
-            <area>348,448,910,2</area>
+            <area>348,433,910,2</area>
         </shape>
 
         <shape name="reclist-left-line" from="base_highlight_vertical_line">
-            <area>348,89,2,359</area>
+            <area>348,89,2,344</area>
         </shape>
 
         <shape name="reclist-right-line" from="base_highlight_vertical_line">
-            <area>1256,89,2,359</area>
+            <area>1256,89,2,344</area>
+        </shape>
+
+        <shape name="groups-arrows-backdrop" from="base_backdrop">
+            <area>283,437,50,10</area>
+        </shape>
+
+        <shape name="relist-arrows-backdrop" from="base_backdrop">
+            <area>1207,437,50,10</area>
         </shape>
 
         <shape name="description-backdrop" from="base_backdrop">
-            <area>20,461,1240,224</area>
+            <area>20,447,1240,238</area>
         </shape>
 
         <shape name="description-backdrop-line" from="base_backdrop_line">
-            <area>21,462,1238,222</area>
+            <area>21,448,1238,236</area>
         </shape>
 
         <shape name="description-top-line" from="base_highlight_line">
-            <area>22,463,1236,2</area>
+            <area>22,449,1236,2</area>
         </shape>
 
         <shape name="description-bottom-line" from="base_highlight_line">
@@ -89,23 +97,23 @@
         </shape>
 
         <shape name="description-left-line" from="base_highlight_vertical_line">
-            <area>22,465,2,214</area>
+            <area>22,451,2,230</area>
         </shape>
 
         <shape name="description-right-line" from="base_highlight_vertical_line">
-            <area>1258,465,2,214</area>
+            <area>1256,451,2,230</area>
         </shape>
 
         <shape name="description-seperator-top-line" from="base_line">
-            <area>186,501,705,2</area>
+            <area>188,487,684,2</area>
         </shape>
 
         <shape name="description-seperator-bottom-line" from="base_line">
-            <area>186,643,705,2</area>
+            <area>188,643,684,2</area>
         </shape>
 
         <shape name="coverart-border">
-            <area>37,475,134,195</area>
+            <area>37,464,136,204</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#AAAAAA" alpha="100" width="2" />
@@ -113,7 +121,7 @@
         </shape>
 
         <shape name="preview-border">
-            <area>906,475,339,195</area>
+            <area>887,464,356,204</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="0" />
             <line color="#AAAAAA" alpha="100" width="2" />
@@ -163,7 +171,7 @@
         </buttonlist>
 
         <buttonlist name="groups" from="base_list_large_selector">
-            <area>28,93,300,344</area>
+            <area>28,93,300,338</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,30</area>
@@ -191,15 +199,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>282,342</position>
+                <position>262,345</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>262,342</position>
+                <position>282,345</position>
             </statetype>
         </buttonlist>
         
         <buttonlist name="recordings" from="base_list_state_large_selector">
-            <area>354,93,898,344</area>
+            <area>354,93,898,338</area>
             <align>top</align>
             <statetype name="buttonitem">
                 <state name="active">
@@ -591,61 +599,61 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>880,342</position>
+                <position>860,345</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>860,342</position>
+                <position>880,345</position>
             </statetype>
         </buttonlist>
 
         <imagetype name="coverart">
-            <area>41,479,126,187</area>
+            <area>41,468,128,196</area>
             <filename>images/no_coverart.png</filename>
             <mask>images/masks/watchrecordings_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>187,465,703,36</area>
+            <area>189,451,682,36</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="description" from="basetextarea">
-            <area>187,504,703,140</area>
+        <textarea name="description2" from="basetextarea">
+            <area>189,498,682,140</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
         
         <progressbar name="usedbar" from="baseprogressbar">
-            <position>187,659</position>
+            <position>189,659</position>
             <imagetype name="background">
-                <area>0,0,703,8</area>
+                <area>0,0,682,8</area>
                 <filename>images/progressbar/progressbar_background.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <area>0,0,703,8</area>
+                <area>0,0,682,8</area>
                <filename>images/progressbar/progressbar_fill.png</filename>
             </imagetype>
         </progressbar>
 
         <textarea name="freereport" from="basetextarea">
-            <area>187,665,703,20</area>
+            <area>189,665,682,20</area>
             <font>basesupersmallyellow</font>
             <align>allcenter</align>
             <template>Disk space:  %1</template>
         </textarea>
 
         <imagetype name="no_preview_image">
-            <area>910,479,331,187</area>
+            <area>891,468,348,196</area>
             <filename>images/no_preview.png</filename>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <imagetype name="preview">
-            <area>910,479,331,187</area>
+            <area>891,468,348,196</area>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>

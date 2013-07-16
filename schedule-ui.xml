@@ -752,11 +752,11 @@
         </shape>
 
         <shape name="upcoming-groups-backdrop" from="base_backdrop">
-            <area>20,86,222,439</area>
+            <area>20,86,222,420</area>
         </shape>
 
         <shape name="upcoming-groups-backdrop-line" from="base_backdrop_line">
-            <area>21,87,220,437</area>
+            <area>21,87,220,418</area>
         </shape>
 
         <shape name="upcoming-groups-top-line" from="base_highlight_line">
@@ -764,23 +764,23 @@
         </shape>
 
         <shape name="upcoming-groups-bottom-line" from="base_highlight_line">
-            <area>22,521,218,2</area>
+            <area>22,502,218,2</area>
         </shape>
 
         <shape name="upcoming-groups-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,431</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="upcoming-groups-right-line" from="base_highlight_vertical_line">
-            <area>238,90,2,431</area>
+            <area>238,90,2,412</area>
         </shape>
 
         <shape name="upcoming-schedules-backdrop" from="base_backdrop">
-            <area>252,86,1008,439</area>
+            <area>252,86,1008,420</area>
         </shape>
 
         <shape name="upcoming-schedules-backdrop-line" from="base_backdrop_line">
-            <area>253,87,1006,437</area>
+            <area>253,87,1006,418</area>
         </shape>
 
         <shape name="upcoming-schedules-top-line" from="base_highlight_line">
@@ -788,27 +788,35 @@
         </shape>
 
         <shape name="upcoming-schedules-bottom-line" from="base_highlight_line">
-            <area>254,521,1004,2</area>
+            <area>254,502,1004,2</area>
         </shape>
 
         <shape name="upcoming-schedules-left-line" from="base_highlight_vertical_line">
-            <area>254,90,2,431</area>
+            <area>254,90,2,412</area>
         </shape>
 
         <shape name="upcoming-schedules-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,431</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="upcoming-groups-arrows-backdrop" from="base_backdrop">
+            <area>189,506,50,10</area>
+        </shape>
+
+        <shape name="upcoming-schedules-arrows-backdrop" from="base_backdrop">
+            <area>1207,506,50,10</area>
         </shape>
 
         <shape name="upcoming-description-backdrop" from="base_backdrop">
-            <area>20,535,1240,150</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="upcoming-description-backdrop-line" from="base_backdrop_line">
-            <area>21,536,1238,148</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="upcoming-description-top-line" from="base_highlight_line">
-            <area>22,537,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="upcoming-description-bottom-line" from="base_highlight_line">
@@ -816,15 +824,15 @@
         </shape>
 
         <shape name="upcoming-description-left-line" from="base_highlight_vertical_line">
-            <area>22,539,2,142</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="upcoming-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,539,2,142</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="upcoming-description-seperator-first-line" from="base_line">
-            <area>43,573,1194,2</area>
+            <area>43,554,1194,2</area>
         </shape>
 
         <textarea name="filter" from="basetextarea">
@@ -848,7 +856,7 @@
         </textarea>
 
         <buttonlist name="groups" from="base_list_large_selector">
-            <area>28,94,206,410</area>
+            <area>28,94,206,404</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,206,30</area>
@@ -879,15 +887,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>168,412</position>
+                <position>168,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>188,412</position>
+                <position>188,413</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="schedules" from="base_list_state_large_selector">
-            <area>260,94,992,410</area>
+            <area>260,94,992,404</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,992,30</area>
@@ -955,21 +963,21 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>954,412</position>
+                <position>954,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>974,412</position>
+                <position>974,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,541,1192,32</area>
+            <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,581,1192,92</area>
+            <area>44,561,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -977,7 +985,7 @@
         </textarea>
 
         <textarea name="norecordings_info">
-            <area>258,90,998,430</area>
+            <area>258,90,996,412</area>
             <font>basemedium</font>
             <value>You Haven't Scheduled Any Programs To Be Recorded\n\nTo schedule a recording, exit this screen and\nSelect 'Program Guide' or 'Program Finder'</value>
             <multiline>yes</multiline>
@@ -1722,11 +1730,11 @@
         </shape>
 
         <shape name="previously-recorded-proglist-backdrop" from="base_backdrop">
-            <area>20,86,1240,439</area>
+            <area>20,86,1240,420</area>
         </shape>
 
         <shape name="previously-recorded-proglist-backdrop-line" from="base_backdrop_line">
-            <area>21,87,1238,437</area>
+            <area>21,87,1238,418</area>
         </shape>
 
         <shape name="previously-recorded-proglist-top-line" from="base_highlight_line">
@@ -1738,23 +1746,27 @@
         </shape>
 
         <shape name="previously-recorded-proglist-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,431</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="previously-recorded-proglist-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,431</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="previously-recorded-arrows-backdrop" from="base_backdrop">
+            <area>1207,506,50,10</area>
         </shape>
 
         <shape name="previously-recorded-description-backdrop" from="base_backdrop">
-            <area>20,535,1240,150</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="previously-recorded-description-backdrop-line" from="base_backdrop_line">
-            <area>21,536,1238,148</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="previously-recorded-description-top-line" from="base_highlight_line">
-            <area>22,537,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="previously-recorded-description-bottom-line" from="base_highlight_line">
@@ -1762,15 +1774,15 @@
         </shape>
 
         <shape name="previously-recorded-description-left-line" from="base_highlight_vertical_line">
-            <area>22,539,2,142</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="previously-recorded-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,539,2,142</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="previously-recorded-description-seperator-first-line" from="base_line">
-            <area>43,573,1194,2</area>
+            <area>43,554,1194,2</area>
         </shape>
 
         <textarea name="curview" from="basetextarea">
@@ -1793,7 +1805,7 @@
         </textarea>
 
         <buttonlist name="proglist" from="base_list_state_medium_selector">
-            <area>28,94,1224,410</area>
+            <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1224,30</area>
@@ -1851,21 +1863,21 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1186,411</position>
+                <position>1186,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1206,411</position>
+                <position>1206,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,541,1192,32</area>
+            <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,581,1192,92</area>
+            <area>44,561,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -1993,11 +2005,11 @@
         </shape>
 
         <shape name="program-find-shows-backdrop" from="base_backdrop">
-            <area>20,86,616,440</area>
+            <area>20,86,616,420</area>
         </shape>
 
         <shape name="program-find-shows-backdrop-line" from="base_backdrop_line">
-            <area>21,87,614,438</area>
+            <area>21,87,614,418</area>
         </shape>
 
         <shape name="program-find-shows-top-line" from="base_highlight_line">
@@ -2005,23 +2017,23 @@
         </shape>
 
         <shape name="program-find-shows-bottom-line" from="base_highlight_line">
-            <area>22,522,616,2</area>
+            <area>22,502,616,2</area>
         </shape>
 
         <shape name="program-find-shows-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,432</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="program-find-shows-right-line" from="base_highlight_vertical_line">
-            <area>632,90,2,432</area>
+            <area>632,90,2,412</area>
         </shape>
 
         <shape name="program-find-times-backdrop" from="base_backdrop">
-            <area>646,86,614,440</area>
+            <area>646,86,614,420</area>
         </shape>
 
         <shape name="program-find-times-backdrop-line" from="base_backdrop_line">
-            <area>647,87,612,438</area>
+            <area>647,87,612,418</area>
         </shape>
 
         <shape name="program-find-times-top-line" from="base_highlight_line">
@@ -2029,27 +2041,35 @@
         </shape>
 
         <shape name="program-find-times-bottom-line" from="base_highlight_line">
-            <area>648,522,610,2</area>
+            <area>648,502,610,2</area>
         </shape>
 
         <shape name="program-find-times-left-line" from="base_highlight_vertical_line">
-            <area>648,90,2,432</area>
+            <area>648,90,2,412</area>
         </shape>
 
         <shape name="program-find-times-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,432</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="find-shows-arrows-backdrop" from="base_backdrop">
+            <area>584,506,50,10</area>
+        </shape>
+
+        <shape name="find-times-arrows-backdrop" from="base_backdrop">
+            <area>1207,506,50,10</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
-            <area>20,536,1240,149</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,537,1238,147</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="program-find-bottom-top-line" from="base_highlight_line">
-            <area>22,538,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="program-find-bottom-bottom-line" from="base_highlight_line">
@@ -2057,15 +2077,15 @@
         </shape>
 
         <shape name="program-find-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,540,2,141</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="program-find-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1256,540,2,141</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="program-find-bottom-seperator-first-line" from="base_line">
-            <area>43,572,1194,2</area>
+            <area>43,552,1194,2</area>
         </shape>
 
         <buttonlist name="alphabet">
@@ -2109,7 +2129,7 @@
         </buttonlist>
 
         <buttonlist name="shows" from="base_list">
-            <area>28,94,600,412</area>
+            <area>28,94,600,406</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,600,30</area>
@@ -2134,15 +2154,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>563,411</position>
+                <position>563,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>583,411</position>
+                <position>583,413</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="times" from="base_list_state">
-            <area>654,94,598,412</area>
+            <area>654,94,598,406</area>
             <buttonarea>0,0,100%,100%</buttonarea>    
             <statetype name="buttonitem">
                 <state name="active">
@@ -2186,34 +2206,34 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>561,411</position>
+                <position>560,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>581,411</position>
+                <position>580,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,540,1192,32</area>
+            <area>44,520,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="help1text" from="basetextarea">
-            <area>44,540,1192,30</area>
+            <area>44,520,1192,30</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,581,1192,100</area>
+            <area>44,560,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="help2text" from="basetextarea">
-            <area>44,581,1192,100</area>
+            <area>44,561,1192,120</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
@@ -2241,11 +2261,11 @@
         </shape>
 
         <shape name="manage-recordings-list-backdrop" from="base_backdrop">
-            <area>20,86,1240,439</area>
+            <area>20,86,1240,420</area>
         </shape>
 
         <shape name="manage-recordings-list-backdrop-line" from="base_backdrop_line">
-            <area>21,87,1238,437</area>
+            <area>21,87,1238,418</area>
         </shape>
 
         <shape name="manage-recordings-list-top-line" from="base_highlight_line">
@@ -2253,27 +2273,31 @@
         </shape>
 
         <shape name="manage-recordings-list-bottom-line" from="base_highlight_line">
-            <area>22,521,1236,2</area>
+            <area>22,502,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-list-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,431</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="manage-recordings-list-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,431</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="manage-recordings-arrows-backdrop" from="base_backdrop">
+            <area>1207,506,50,10</area>
         </shape>
 
         <shape name="manage-recordings-description-backdrop" from="base_backdrop">
-            <area>20,535,1240,150</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="manage-recordings-description-backdrop-line" from="base_backdrop_line">
-            <area>21,536,1238,148</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="manage-recordings-description-top-line" from="base_highlight_line">
-            <area>22,537,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="manage-recordings-description-bottom-line" from="base_highlight_line">
@@ -2281,15 +2305,15 @@
         </shape>
 
         <shape name="manage-recordings-description-left-line" from="base_highlight_vertical_line">
-            <area>22,539,2,142</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="manage-recordings-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,539,2,142</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="manage-recordings-description-seperator-first-line" from="base_line">
-            <area>43,573,1194,2</area>
+            <area>43,554,1194,2</area>
         </shape>
 
         <textarea name="keyinstr">
@@ -2307,7 +2331,7 @@
         </textarea>
 
         <buttonlist name="programs" from="base_list_state_large_selector">
-            <area>28,94,1224,410</area>
+            <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1224,30</area>
@@ -2393,21 +2417,21 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1186,411</position>
+                <position>1186,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1206,411</position>
+                <position>1206,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,541,1192,32</area>
+            <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,581,1192,92</area>
+            <area>44,561,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
