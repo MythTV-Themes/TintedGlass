@@ -47,7 +47,7 @@
         </shape>
 
         <shape name="status-list-arrows-backdrop" from="base_backdrop">
-            <area>1207,472,50,10</area>
+            <area>1207,471,50,12</area>
         </shape>
 
         <shape name="status-bottom-backdrop" from="base_backdrop">

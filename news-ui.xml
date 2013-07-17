@@ -71,11 +71,11 @@
         </shape>
 
         <shape name="news-sites-list-arrows-backdrop" from="base_backdrop">
-            <area>381,472,50,10</area>
+            <area>381,471,50,12</area>
         </shape>
 
         <shape name="news-articles-list-arrows-backdrop" from="base_backdrop">
-            <area>1207,472,50,10</area>
+            <area>1207,471,50,12</area>
         </shape>
 
         <shape name="news-description-backdrop" from="base_backdrop">

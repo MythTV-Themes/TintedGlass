@@ -800,11 +800,11 @@
         </shape>
 
         <shape name="upcoming-groups-arrows-backdrop" from="base_backdrop">
-            <area>189,506,50,10</area>
+            <area>189,506,50,11</area>
         </shape>
 
         <shape name="upcoming-schedules-arrows-backdrop" from="base_backdrop">
-            <area>1207,506,50,10</area>
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="upcoming-description-backdrop" from="base_backdrop">
@@ -1754,7 +1754,7 @@
         </shape>
 
         <shape name="previously-recorded-arrows-backdrop" from="base_backdrop">
-            <area>1207,506,50,10</area>
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="previously-recorded-description-backdrop" from="base_backdrop">
@@ -2053,11 +2053,11 @@
         </shape>
 
         <shape name="find-shows-arrows-backdrop" from="base_backdrop">
-            <area>584,506,50,10</area>
+            <area>584,506,50,11</area>
         </shape>
 
         <shape name="find-times-arrows-backdrop" from="base_backdrop">
-            <area>1207,506,50,10</area>
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="program-find-bottom-backdrop" from="base_backdrop">
@@ -2285,7 +2285,7 @@
         </shape>
 
         <shape name="manage-recordings-arrows-backdrop" from="base_backdrop">
-            <area>1207,506,50,10</area>
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="manage-recordings-description-backdrop" from="base_backdrop">
