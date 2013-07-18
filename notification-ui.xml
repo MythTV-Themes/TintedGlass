@@ -148,9 +148,44 @@
         <shape name="notification-image-right-line" from="base_highlight_vertical_line">
             <area>776,4,2,170</area>
         </shape>
+
+        <shape name="image-border">
+            <area>14,14,152,152</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <statetype name="mediastate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="noartwork">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageartwork">
+                    <filename>images/no_artwork.png</filename>
+                    <mask>images/masks/notification_image_mask.png</mask>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="errorstate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="error">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/error.png</filename>
+                    <mask>images/masks/notification_image_mask.png</mask>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+        </statetype>
         
-        <imagetype name="image">
-            <filename>images/unknown.png</filename>
+        <imagetype name="image" depends="!mediastate&amp;!errorstate">
+            <filename>images/error.png</filename>
+            <mask>images/masks/notification_image_mask.png</mask>
             <area>18,18,144,144</area>
         </imagetype>
         
