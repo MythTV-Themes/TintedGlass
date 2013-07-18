@@ -145,8 +145,8 @@
             <area>42,131,1196,2</area>
         </shape>
 
-        <shape name="bookmark-arrows-backdrop" from="base_backdrop">
-            <area>1207,685,50,10</area>
+        <shape name="bookmark-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,684,50,11</area>
         </shape>
 
         <buttonlist name="grouplist">

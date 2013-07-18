@@ -406,6 +406,14 @@
         <cornerradius>8</cornerradius>
     </shape>
 
+    <!-- Base definition of a base arrows backdrop -->
+    <shape name="base_arrows_backdrop">
+        <area>283,436,50,11</area>
+        <type>roundbox</type>
+        <fill color="#000000" alpha="200" />
+        <cornerradius>90</cornerradius>
+    </shape>
+
     <shape name="base_backdrop_line">
         <area>102,368,1076,300</area>
         <type>roundbox</type>

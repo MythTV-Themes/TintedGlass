@@ -72,11 +72,11 @@
             <area>1256,89,2,344</area>
         </shape>
 
-        <shape name="groups-arrows-backdrop" from="base_backdrop">
+        <shape name="groups-arrows-backdrop" from="base_arrows_backdrop">
             <area>283,436,50,11</area>
         </shape>
 
-        <shape name="relist-arrows-backdrop" from="base_backdrop">
+        <shape name="relist-arrows-backdrop" from="base_arrows_backdrop">
             <area>1207,436,50,11</area>
         </shape>
 

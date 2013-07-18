@@ -799,11 +799,11 @@
             <area>1256,90,2,412</area>
         </shape>
 
-        <shape name="upcoming-groups-arrows-backdrop" from="base_backdrop">
+        <shape name="upcoming-groups-arrows-backdrop" from="base_arrows_backdrop">
             <area>189,506,50,11</area>
         </shape>
 
-        <shape name="upcoming-schedules-arrows-backdrop" from="base_backdrop">
+        <shape name="upcoming-schedules-arrows-backdrop" from="base_arrows_backdrop">
             <area>1207,506,50,11</area>
         </shape>
 
@@ -1753,7 +1753,7 @@
             <area>1256,90,2,412</area>
         </shape>
 
-        <shape name="previously-recorded-arrows-backdrop" from="base_backdrop">
+        <shape name="previously-recorded-arrows-backdrop" from="base_arrows_backdrop">
             <area>1207,506,50,11</area>
         </shape>
 
@@ -2052,11 +2052,11 @@
             <area>1256,90,2,412</area>
         </shape>
 
-        <shape name="find-shows-arrows-backdrop" from="base_backdrop">
+        <shape name="find-shows-arrows-backdrop" from="base_arrows_backdrop">
             <area>584,506,50,11</area>
         </shape>
 
-        <shape name="find-times-arrows-backdrop" from="base_backdrop">
+        <shape name="find-times-arrows-backdrop" from="base_arrows_backdrop">
             <area>1207,506,50,11</area>
         </shape>
 
@@ -2284,7 +2284,7 @@
             <area>1256,90,2,412</area>
         </shape>
 
-        <shape name="manage-recordings-arrows-backdrop" from="base_backdrop">
+        <shape name="manage-recordings-arrows-backdrop" from="base_arrows_backdrop">
             <area>1207,506,50,11</area>
         </shape>
 
