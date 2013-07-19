@@ -298,7 +298,7 @@
         </shape>
 
         <buttonlist name="videos" from="base_list_large_selector">
-            <area>28,44,1224,336</area>
+            <area>28,44,1224,338</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1224,30</area>
@@ -343,6 +343,7 @@
                     <textarea name="title" from="basetextarea">
                         <area>88,0,500,30</area>
                         <font>basesmall</font>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="director" from="title">
                         <area>608,0,534,30</area>
@@ -351,7 +352,7 @@
                     <textarea name="year" from="title">
                         <area>1162,0,54,30</area>
                         <cutdown>no</cutdown>
-                        <align>right</align>
+                        <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
@@ -1591,11 +1592,11 @@
         </textarea>
 
         <shape name="video-tree-directory-backdrop" from="base_backdrop">
-            <area>20,36,613,324</area>
+            <area>20,36,613,352</area>
         </shape>
 
         <shape name="video-tree-directory-backdrop-line" from="base_backdrop_line">
-            <area>21,37,611,322</area>
+            <area>21,37,611,350</area>
         </shape>
 
         <shape name="video-tree-top-line" from="base_highlight_line">
@@ -1603,23 +1604,23 @@
         </shape>
 
         <shape name="video-tree-bottom-line" from="base_highlight_line">
-            <area>22,356,609,2</area>
+            <area>22,384,609,2</area>
         </shape>
 
         <shape name="video-tree-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,316</area>
+            <area>22,40,2,384</area>
         </shape>
 
         <shape name="video-tree-right-line" from="base_highlight_vertical_line">
-            <area>629,40,2,316</area>
+            <area>629,40,2,384</area>
         </shape>
 
         <shape name="video-tree-files-backdrop" from="base_backdrop">
-            <area>647,36,613,324</area>
+            <area>647,36,613,352</area>
         </shape>
 
         <shape name="video-tree-files-backdrop-line" from="base_backdrop_line">
-            <area>648,37,611,322</area>
+            <area>648,37,611,350</area>
         </shape>
 
         <shape name="video-tree-files-top-line" from="base_highlight_line">
@@ -1627,126 +1628,144 @@
         </shape>
 
         <shape name="video-tree-files-bottom-line" from="base_highlight_line">
-            <area>649,356,609,2</area>
+            <area>649,384,609,2</area>
         </shape>
 
         <shape name="video-tree-files-left-line" from="base_highlight_vertical_line">
-            <area>649,40,2,316</area>
+            <area>649,40,2,384</area>
         </shape>
 
         <shape name="video-tree-files-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,316</area>
+            <area>1256,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-arrows-backdrop" from="base_arrows_backdrop">
+            <area>580,388,50,11</area>
+        </shape>
+
+        <shape name="video-tree-files-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,388,50,11</area>
         </shape>
 
         <shape name="video-bottom-backdrop" from="base_backdrop">
-            <area>20,379,1240,306</area>
+            <area>20,398,1240,287</area>
         </shape>
 
         <shape name="video-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,380,1029,304</area>
+            <area>21,399,1039,285</area>
         </shape>
 
         <shape name="video-bottom-top-line" from="base_highlight_line">
-            <area>22,381,1027,2</area>
+            <area>22,400,1037,2</area>
         </shape>
 
         <shape name="video-bottom-bottom-line" from="base_highlight_line">
-            <area>22,681,1027,2</area>
+            <area>22,681,1037,2</area>
         </shape>
 
         <shape name="video-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,383,2,298</area>
+            <area>22,402,2,279</area>
         </shape>
 
         <shape name="video-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1047,383,2,298</area>
+            <area>1057,402,2,279</area>
         </shape>
 
         <shape name="video-bottom-seperator-first-line" from="base_line">
-            <area>39,423,993,2</area>
+            <area>39,442,1003,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-second-line" from="base_line">
-            <area>39,465,993,2</area>
+            <area>39,484,1003,2</area>
         </shape>
 
         <shape name="video-bottom-seperator-third-line" from="base_line">
-            <area>39,639,993,2</area>
+            <area>39,639,1003,2</area>
         </shape>
 
         <shape name="video-coverart-backdrop-line" from="base_backdrop_line">
-            <area>1053,380,206,304</area>
+            <area>1066,399,193,285</area>
         </shape>
 
         <shape name="video-coverart-top-line" from="base_highlight_line">
-            <area>1054,381,204,2</area>
+            <area>1054,400,204,2</area>
         </shape>
 
         <shape name="video-coverart-bottom-line" from="base_highlight_line">
-            <area>1054,681,204,2</area>
+            <area>1067,681,191,2</area>
         </shape>
 
         <shape name="video-coverart-left-line" from="base_highlight_vertical_line">
-            <area>1054,383,2,298</area>
+            <area>1067,402,2,279</area>
         </shape>
 
         <shape name="video-coverart-right-line" from="base_highlight_vertical_line">
-            <area>1256,383,2,298</area>
+            <area>1256,402,2,279</area>
         </shape>
 
         <buttontree name="videos">
-            <area>30,44,1220,308</area>
+            <area>28,44,1224,338</area>
             <numlists>2</numlists>
-            <spacing>34</spacing>
+            <spacing>30</spacing>
             <buttonlist name="listtemplate" from="base_list">
-                <buttonarea>0,0,1220,308</buttonarea>
+                <buttonarea>0,0,1224,336</buttonarea>
                 <statetype name="buttonitem">
                     <state name="active">
-                        <area>0,0,593,36</area>
+                        <area>0,0,597,30</area>
                         <textarea name="buttontext">
-                            <area>8,0,577,36</area>
+                            <area>8,0,581,30</area>
+                            <align>left,vcenter</align>
                         </textarea>
                     </state>
                     <state name="selectedactive">
-                        <area>0,0,593,36</area>
+                        <area>0,0,597,64</area>
                         <textarea name="buttontext">
-                            <area>8,0,557,36</area>
+                            <area>8,0,561,64</area>
+                            <align>left,vcenter</align>
                         </textarea>
                         <imagetype name="buttonarrow">
-                            <position>573,8</position>
+                            <position>577,22</position>
                         </imagetype>
                     </state>
                     <state name="selectedinactive">
-                        <area>0,0,593,36</area>
+                        <area>0,0,597,64</area>
                         <textarea name="buttontext">
-                            <area>8,0,577,36</area>
+                            <area>8,0,581,64</area>
+                            <align>left,vcenter</align>
                         </textarea>
                     </state>
                 </statetype>
                 <statetype name="upscrollarrow">
-                    <position>583,-5</position>
+                    <position>558,345</position>
                 </statetype>
                 <statetype name="downscrollarrow">
-                    <position>583,305</position>
+                    <position>578,345</position>
                 </statetype>
             </buttonlist>
         </buttontree>
-
-        <textarea name="position" from="basetextarea">
-            <area>20,359,1240,22</area>
-            <font>basesmaller</font>
-            <align>allcenter</align>
-        </textarea>
         
         <textarea name="title" from="basetextarea">
-            <area>40,383,952,42</area>
+            <area>40,402,553,42</area>
             <cutdown>yes</cutdown>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>vcenter</align>
         </textarea>
 
+        <textarea name="positionlabel" from="basetextarea">
+            <area>603,402,95,42</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+            <value>Position:</value>
+        </textarea>
+
+        <textarea name="position" from="basetextarea">
+            <area>707,404,130,40</area>
+            <font>basesmallerblue</font>
+            <align>left,vcenter</align>
+        </textarea>
+
         <statetype name="videolevel">
-            <area>1002,389,30,30</area>
+            <area>1012,408,30,30</area>
             <state name="None">
                 <imagetype name="icon">
                     <area>0,0,30,30</area>
@@ -1815,20 +1834,20 @@
         </statetype>
         
         <textarea name="dirlbl" from="basetextarea">
-            <area>40,425,132,42</area>
+            <area>40,444,132,42</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Directed By:</value>
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>187,425,432,42</area>
+            <area>187,444,407,42</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="userratinglabel" from="basetextarea">
-            <area>629,425,126,42</area>
+            <area>604,444,124,42</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>UserRating:</value>
@@ -1837,7 +1856,7 @@
         <statetype name="userratingstate">
             <state name="0">
                 <textarea name="0">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1846,7 +1865,7 @@
             </state>
             <state name="1">
                 <textarea name="1">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1855,7 +1874,7 @@
             </state>
             <state name="2">
                 <textarea name="2">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1864,7 +1883,7 @@
             </state>
             <state name="3">
                 <textarea name="3">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1873,7 +1892,7 @@
             </state>
             <state name="4">
                 <textarea name="4">
-                    <area>765,431,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1882,7 +1901,7 @@
             </state>
             <state name="5">
                 <textarea name="5">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1891,7 +1910,7 @@
             </state>
             <state name="6">
                 <textarea name="6">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1900,7 +1919,7 @@
             </state>
             <state name="7">
                 <textarea name="7">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1909,7 +1928,7 @@
             </state>
             <state name="8">
                 <textarea name="8">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1918,7 +1937,7 @@
             </state>
             <state name="9">
                 <textarea name="9">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1927,7 +1946,7 @@
             </state>
             <state name="10">
                 <textarea name="10">
-                    <area>765,425,108,42</area>
+                    <area>738,444,108,42</area>
                     <font>basesmallblue</font>
                     <cutdown>no</cutdown>
                     <align>left,vcenter</align>
@@ -1937,20 +1956,20 @@
         </statetype>
         
         <textarea name="yrlbl" from="basetextarea">
-            <area>883,425,60,42</area>
+            <area>893,444,60,42</area>
             <font>basesmall</font>
             <value>Year:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>953,425,78,42</area>
+            <area>963,444,78,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,468,991,172</area>
+            <area>40,493,1001,140</area>
             <font>basesmall</font>
             <align>justify</align>
             <multiline>yes</multiline>
@@ -1966,7 +1985,7 @@
         </textarea>
 
         <textarea name="length" from="basetextarea">
-            <area>118,641,102,42</area>
+            <area>118,641,104,42</area>
             <font>baseextrasmallblue</font>
             <align>left,vcenter</align>
         </textarea>
@@ -1998,40 +2017,47 @@
         </textarea>
 
         <textarea name="episodelbl" from="basetextarea">
-            <area>665,641,64,42</area>
+            <area>673,641,64,42</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <textarea name="episode" from="basetextarea">
-            <area>739,641,92,42</area>
+            <area>747,641,92,42</area>
             <font>baseextrasmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="inetlbl" from="basetextarea">
-            <area>869,641,60,42</area>
+            <area>879,641,60,42</area>
             <font>baseextrasmall</font>
             <align>right,vcenter</align>
             <value>Video#:</value>
         </textarea>
 
         <textarea name="inetref" from="basetextarea">
-            <area>939,641,92,42</area>
+            <area>949,641,92,42</area>
             <font>baseextrasmallblue</font>
             <cutdown>no</cutdown>
             <align>allcenter</align>
         </textarea>
 
+        <imagetype name="no_coverart">
+            <area>1070,403,185,277</area>
+            <filename>images/no_coverart.png</filename>
+            <mask>images/masks/tree_coverart_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
         <imagetype name="coverart">
-            <area>1058,385,196,294</area>
+            <area>1070,403,185,277</area>
             <mask>images/masks/tree_coverart_mask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
         <textarea name="novideos" from="basetextarea">
-            <area>30,46,593,304</area>
+            <area>26,42,601,340</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
