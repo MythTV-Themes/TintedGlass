@@ -1708,7 +1708,7 @@
             <numlists>2</numlists>
             <spacing>30</spacing>
             <buttonlist name="listtemplate" from="base_list">
-                <buttonarea>0,0,1224,336</buttonarea>
+                <buttonarea>0,0,1224,338</buttonarea>
                 <statetype name="buttonitem">
                     <state name="active">
                         <area>0,0,597,30</area>
