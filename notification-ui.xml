@@ -181,10 +181,26 @@
                     <area>18,18,144,144</area>
                 </imagetype>
             </state>
+            <state name="check">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/check.png</filename>
+                    <mask>images/masks/notification_image_mask.png</mask>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
+            <state name="warning">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/warning.png</filename>
+                    <mask>images/masks/notification_image_mask.png</mask>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
         </statetype>
         
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
-            <filename>images/error.png</filename>
+            <filename>images/no_artwork.png</filename>
             <mask>images/masks/notification_image_mask.png</mask>
             <area>18,18,144,144</area>
         </imagetype>
@@ -258,7 +274,49 @@
             <fill color="#000000"/>
         </shape>
 
-        <imagetype name="image">
+        <statetype name="mediastate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="noartwork">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageartwork">
+                    <filename>images/unknown.png</filename>
+                    <area>-1,-1,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <statetype name="errorstate">
+            <area>0,0,100%,100%</area>
+            <state name="ok"/>
+            <state name="error">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/error_fullscreen.png</filename>
+                    <area>-1,-1,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="check">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/check_fullscreen.png</filename>
+                    <area>-1,-1,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="warning">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imageerror">
+                    <filename>images/warning_fullscreen.png</filename>
+                    <area>-1,-1,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <imagetype name="image" depends="!mediastate&amp;!errorstate">
             <filename>images/unknown.png</filename>
             <area>-1,-1,100%,100%</area>
             <preserveaspect>true</preserveaspect>
