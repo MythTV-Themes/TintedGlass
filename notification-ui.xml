@@ -200,7 +200,7 @@
         </statetype>
         
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
-            <filename>images/no_artwork.png</filename>
+            <filename>images/damaged.png</filename>
             <mask>images/masks/notification_image_mask.png</mask>
             <area>18,18,144,144</area>
         </imagetype>
@@ -280,8 +280,8 @@
             <state name="noartwork">
                 <area>0,0,100%,100%</area>
                 <imagetype name="imageartwork">
-                    <filename>images/unknown.png</filename>
-                    <area>-1,-1,100%,100%</area>
+                    <filename>images/no_artwork_fullscreen.png</filename>
+                    <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
@@ -294,7 +294,7 @@
                 <area>0,0,100%,100%</area>
                 <imagetype name="imageerror">
                     <filename>images/error_fullscreen.png</filename>
-                    <area>-1,-1,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
@@ -302,7 +302,7 @@
                 <area>0,0,100%,100%</area>
                 <imagetype name="imageerror">
                     <filename>images/check_fullscreen.png</filename>
-                    <area>-1,-1,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
@@ -310,15 +310,15 @@
                 <area>0,0,100%,100%</area>
                 <imagetype name="imageerror">
                     <filename>images/warning_fullscreen.png</filename>
-                    <area>-1,-1,100%,100%</area>
+                    <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
             </state>
         </statetype>
 
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
-            <filename>images/unknown.png</filename>
-            <area>-1,-1,100%,100%</area>
+            <filename>images/damaged_fullscreen.png</filename>
+            <area>0,0,100%,100%</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
