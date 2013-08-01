@@ -33,11 +33,11 @@
         </shape>
 
         <shape name="netvision-search-sites-backdrop" from="base_backdrop">
-            <area>20,114,408,269</area>
+            <area>20,114,408,284</area>
         </shape>
 
         <shape name="netvision-search-sites-backdrop-line" from="base_backdrop_line">
-            <area>21,115,406,267</area>
+            <area>21,115,406,282</area>
         </shape>
 
         <shape name="netvision-search-sites-top-line" from="base_highlight_line">
@@ -45,23 +45,23 @@
         </shape>
 
         <shape name="netvision-search-sites-bottom-line" from="base_highlight_line">
-            <area>22,379,404,2</area>
+            <area>22,394,404,2</area>
         </shape>
 
         <shape name="netvision-search-sites-left-line" from="base_highlight_vertical_line">
-            <area>22,118,2,261</area>
+            <area>22,118,2,276</area>
         </shape>
 
         <shape name="netvision-search-sites-right-line" from="base_highlight_vertical_line">
-            <area>424,118,2,261</area>
+            <area>424,118,2,276</area>
         </shape>
 
         <shape name="netvision-search-list-backdrop" from="base_backdrop">
-            <area>438,114,822,269</area>
+            <area>438,114,822,284</area>
         </shape>
 
         <shape name="netvision-search-list-backdrop-line" from="base_backdrop_line">
-            <area>439,115,820,267</area>
+            <area>439,115,820,282</area>
         </shape>
 
         <shape name="netvision-search-list-top-line" from="base_highlight_line">
@@ -69,27 +69,35 @@
         </shape>
 
         <shape name="netvision-search-list-bottom-line" from="base_highlight_line">
-            <area>440,379,818,2</area>
+            <area>440,394,818,2</area>
         </shape>
 
         <shape name="netvision-search-list-left-line" from="base_highlight_vertical_line">
-            <area>440,118,2,261</area>
+            <area>440,118,2,276</area>
         </shape>
 
         <shape name="netvision-search-list-right-line" from="base_highlight_vertical_line">
-            <area>1256,118,2,261</area>
+            <area>1256,118,2,276</area>
+        </shape>
+
+        <shape name="netvision-search-sites-arrows-backdrop" from="base_arrows_backdrop">
+            <area>375,398,50,11</area>
+        </shape>
+
+        <shape name="netvision-search-list-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,398,50,11</area>
         </shape>
 
         <shape name="netvision-search-bottom-backdrop" from="base_backdrop">
-            <area>20,393,1240,292</area>
+            <area>20,408,1240,277</area>
         </shape>
 
         <shape name="netvision-search-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,394,1238,90</area>
+            <area>21,409,1238,75</area>
         </shape>
 
         <shape name="netvision-search-bottom-top-line" from="base_highlight_line">
-            <area>22,395,1236,2</area>
+            <area>22,410,1236,2</area>
         </shape>
 
         <shape name="netvision-search-bottom-bottom-line" from="base_highlight_line">
@@ -97,15 +105,15 @@
         </shape>
 
         <shape name="netvision-search-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,397,2,84</area>
+            <area>22,412,2,69</area>
         </shape>
 
         <shape name="netvision-search-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1256,397,2,84</area>
+            <area>1256,397,2,69</area>
         </shape>
 
         <shape name="netvision-search-bottom-seperator-first-line" from="base_line">
-            <area>43,441,1194,2</area>
+            <area>43,446,1194,2</area>
         </shape>
 
         <shape name="netvision-search-description-backdrop-line" from="base_backdrop_line">
@@ -160,99 +168,101 @@
         </textedit>
 
         <buttonlist name="sites" from="base_list">
-            <area>30,121,388,254</area>
+            <area>28,122,392,270</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,388,38</area>
+                    <area>0,0,392,30</area>
                     <textarea name="buttontext">
-                        <area>8,0,372,38</area>
+                        <area>8,0,376,30</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,388,38</area>
+                    <area>0,0,392,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,372,38</area>
+                        <area>8,0,376,64</area>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,388,38</area>
+                    <area>0,0,392,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,372,38</area>
+                        <area>8,0,376,64</area>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>379,-5</position>
+                <position>354,277</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>379,252</position>
+                <position>374,277</position>
             </statetype>
         </buttonlist>
 
         <buttonlist name="results" from="base_list">
-            <area>448,121,802,254</area>
+            <area>446,122,806,270</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,802,38</area>
+                    <area>0,0,806,30</area>
                     <textarea name="buttontext">
-                        <area>8,0,786,38</area>
+                        <area>8,0,790,30</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,802,38</area>
+                    <area>0,0,806,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,786,38</area>
+                        <area>8,0,790,64</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,802,38</area>
+                    <area>0,0,806,64</area>
                     <textarea name="buttontext">
-                        <area>8,0,786,38</area>
+                        <area>8,0,790,64</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>792,-5</position>
+                <position>768,277</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>792,252</position>
+                <position>788,277</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,400,1192,38</area>
-            <font>basemediumlargeryellow</font>
+            <area>44,412,1192,34</area>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="author-label" from="basetextarea">
-            <area>44,443,82,38</area>
+            <area>44,448,82,33</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Author:</value>
         </textarea>
 
         <textarea name="author" from="basetextarea">
-            <area>136,443,494,38</area>
+            <area>136,448,494,33</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="filsize-label" from="basetextarea">
-            <area>650,443,82,38</area>
+            <area>650,448,82,33</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Size:</value>
         </textarea>
 
         <textarea name="filesize_str" from="basetextarea">
-            <area>747,443,489,38</area>
+            <area>747,448,489,33</area>
             <font>basesmallblue</font>
             <align>left,vcenter</align>
         </textarea>
@@ -263,6 +273,13 @@
             <multiline>yes</multiline>
         </textarea>
 
+        <imagetype name="no_preview">
+            <area>1006,493,248,186</area>
+            <filename>images/no_netsearch_preview.png</filename>
+            <mask>images/masks/netsearch_preview_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
         <imagetype name="preview">
             <area>1006,493,248,186</area>
             <mask>images/masks/netsearch_preview_mask.png</mask>
@@ -270,7 +287,7 @@
         </imagetype>
 
         <textarea name="nosites" from="basetextarea">
-            <area>448,124,802,249</area>
+            <area>446,122,806,268</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
