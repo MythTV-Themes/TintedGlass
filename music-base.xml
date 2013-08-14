@@ -299,11 +299,11 @@
         </shape>
 
         <shape name="play-list-panel-left-line" from="base_highlight_vertical_line">
-            <area>22,4,2,120</area>
+            <area>22,4,2,140</area>
         </shape>
 
         <shape name="play-list-panel-right-line" from="base_highlight_vertical_line">
-            <area>1256,4,2,120</area>
+            <area>1256,4,2,140</area>
         </shape>
 
         <shape name="play-list-panel-arrows-backdrop" from="base_arrows_backdrop">
@@ -532,7 +532,7 @@
     </group>
 
     <group name="base_info_panel">
-        <area>0,445,1280,240</area>
+        <area>0,445,1280,179</area>
 
         <shape name="info-panel-backdrop" from="base_backdrop">
             <area>20,0,1240,179</area>
