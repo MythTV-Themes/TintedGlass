@@ -34,7 +34,7 @@
         </shape>
 
         <shape name="stream-list-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1207,320,50,10</area>
+            <area>1207,319,50,12</area>
         </shape>
 
         <textarea name="nostreams" from="basetextarea">
@@ -150,16 +150,19 @@
                     <textarea name="station" from="buttontext">
                         <area>183,0,200,64</area>
                         <font>basesmall</font>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channel" from="buttontext">
                         <area>393,0,356,64</area>
                         <font>basesmall</font>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="genre" from="buttontext">
                         <area>759,0,450,64</area>
                         <font>basesmall</font>
+                        <multiline>yes</multiline>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
@@ -205,7 +208,7 @@
             </shape>
 
             <shape name="played-tracks-list-panel-arrows-backdrop" from="base_arrows_backdrop">
-                <area>1207,148,50,10</area>
+                <area>1207,148,50,11</area>
             </shape>
 
             <buttonlist name="playedtrackslist" from="base_list_large_selector">
