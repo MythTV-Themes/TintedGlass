@@ -9,11 +9,11 @@
         </textarea>
 
         <shape name="system-events-backdrop" from="base_backdrop">
-            <area>220,36,840,649</area>
+            <area>220,36,840,420</area>
         </shape>
 
         <shape name="system-events-backdrop-line" from="base_backdrop_line">
-            <area>221,37,838,459</area>
+            <area>221,37,838,418</area>
         </shape>
 
         <shape name="system-events-list-top-line" from="base_highlight_line">
@@ -21,23 +21,31 @@
         </shape>
 
         <shape name="system-events-list-bottom-line" from="base_highlight_line">
-            <area>222,493,836,2</area>
+            <area>222,452,836,2</area>
         </shape>
 
         <shape name="system-events-list-left-line" from="base_highlight_vertical_line">
-            <area>222,40,2,453</area>
+            <area>222,40,2,412</area>
         </shape>
 
         <shape name="system-events-list-right-line" from="base_highlight_vertical_line">
-            <area>1056,40,2,453</area>
+            <area>1056,40,2,412</area>
+        </shape>
+
+        <shape name="system-events-list-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1007,456,50,10</area>
+        </shape>
+
+        <shape name="system-events-bottom-backdrop" from="base_backdrop">
+            <area>220,466,840,219</area>
         </shape>
 
         <shape name="system-events-bottom-backdrop-line" from="base_backdrop_line">
-            <area>221,502,838,182</area>
+            <area>221,467,838,217</area>
         </shape>
 
         <shape name="system-events-bottom-top-line" from="base_highlight_line">
-            <area>222,503,836,2</area>
+            <area>222,468,836,2</area>
         </shape>
 
         <shape name="system-events-bottom-bottom-line" from="base_highlight_line">
@@ -45,71 +53,71 @@
         </shape>
 
         <shape name="system-events-bottom-left-line" from="base_highlight_vertical_line">
-            <area>222,505,2,176</area>
+            <area>222,470,2,211</area>
         </shape>
 
         <shape name="system-events-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1056,505,2,176</area>
+            <area>1056,470,2,211</area>
         </shape>
 
         <shape name="system-events-bottom-seperator-first-line" from="base_line">
-            <area>243,555,794,2</area>
+            <area>243,539,794,2</area>
         </shape>
 
         <shape name="system-events-bottom-seperator-second-line" from="base_line">
-            <area>243,627,794,2</area>
+            <area>243,610,794,2</area>
         </shape>
 
         <buttonlist name="settings" from="base_list">
-            <area>230,42,820,452</area>
+            <area>228,44,824,406</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,820,34</area>
+                    <area>0,0,824,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,804,24</area>
+                        <area>8,0,808,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,820,34</area>
+                    <area>0,0,824,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,782,24</area>
+                        <area>8,0,786,64</area>
                     </textarea>
                     <imagetype name="rightarrow" from="buttonarrow">
-                        <position>800,7</position>
+                        <position>804,22</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,820,34</area>
+                    <area>0,0,824,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,804,24</area>
+                        <area>8,0,808,64</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>810,-3</position>
+                <position>786,412</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>810,445</position>
+                <position>806,412</position>
             </statetype>
         </buttonlist>
 
         <textarea name="label-text" from="basetextarea">
-            <area>244,505,792,50</area>
+            <area>244,470,792,69</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textedit name="settingvalue" from="base_wide_textedit">
-            <area>243,577,794,32</area>
+            <area>243,555,794,40</area>
         </textedit>
 
         <button name="cancel" from="base_medium_button">
-            <position>270,635</position>
+            <position>270,626</position>
             <value>Cancel</value>
         </button>
     
         <button name="save" from="base_medium_button">
-            <position>660,635</position>
+            <position>660,626</position>
             <value>Save</value>
         </button>
 
