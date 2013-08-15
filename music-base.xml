@@ -312,6 +312,7 @@
 
         <buttonlist name="currentplaylist" from="base_list_state_large_selector">
             <area>28,8,1224,134</area>
+            <searchposition>-1,84</searchposition>
             <scrollstyle>center</scrollstyle>
             <buttonarea>0,0,1224,134</buttonarea>
             <statetype name="buttonitem">

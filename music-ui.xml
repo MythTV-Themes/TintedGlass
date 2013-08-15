@@ -282,7 +282,7 @@
             <numlists>3</numlists>
             <spacing>10</spacing>
             <buttonlist name="listtemplate" from="base_list">
-                <searchposition>-1,466</searchposition>
+                <searchposition>-1,308</searchposition>
                 <buttonarea>0,0,1224,202</buttonarea>
                 <statetype name="buttonitem">
                     <state name="active">
@@ -415,7 +415,7 @@
                 <area>0,0,100%,100%</area>
                 <layout>grid</layout>
                 <spacing>0</spacing>
-                <searchposition>-1,538</searchposition>
+                <searchposition>-1,380</searchposition>
                 <buttonarea>0,0,100%,100%</buttonarea>
                 <statetype name="buttonitem">
                     <area>0,0,1224,274</area>

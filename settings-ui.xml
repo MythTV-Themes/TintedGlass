@@ -146,6 +146,18 @@
             <area>631,40,2,641</area>
         </shape>
 
+        <shape name="theme-chooser-icon-seperator-line" from="base_line">
+            <area>37,75,581,2</area>
+        </shape>
+
+        <shape name="theme-chooser-icon-status-selectbar" from="base_select_bar_active">
+            <area>28,44,599,27</area>
+        </shape>
+
+        <shape name="theme-chooser-arrows-backdrop" from="base_arrows_backdrop">
+            <area>582,684,50,11</area>
+        </shape>
+
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">
             <area>645,36,615,649</area>
         </shape>
@@ -197,45 +209,45 @@
         <!-- Icon status help -->
 
         <shape name="installed_icon">
-            <area>37,47,8,8</area>
+            <area>38,53,8,8</area>
             <type>ellipse</type>
             <fill color="#00FF00" alpha="200" />
         </shape>
         <textarea name="installed_text">
-            <area>53,43,70,16</area>
+            <area>54,40,70,35</area>
             <align>left,vcenter</align>
             <font>basesupersmall</font>
             <value>Installed</value>
         </textarea>
         <shape name="Downloadable_icon">
-            <area>127,47,8,8</area>
+            <area>128,53,8,8</area>
             <type>ellipse</type>
             <fill color="#FF0000" alpha="200" />
         </shape>
         <textarea name="not_installed_text">
-            <area>143,43,100,16</area>
+            <area>144,40,100,35</area>
             <align>left,vcenter</align>
             <font>basesupersmall</font>
             <value>Downloadable</value>
         </textarea>
         <shape name="update_icon">
-            <area>610,47,8,8</area>
+            <area>609,53,8,8</area>
             <type>ellipse</type>
             <fill color="#00FF00" alpha="200" />
         </shape>
         <textarea name="update_text">
-            <area>532,43,70,16</area>
+            <area>531,40,70,35</area>
             <align>right,vcenter</align>
             <font>basesupersmall</font>
             <value>UpToDate</value>
         </textarea>
         <shape name="update_available_icon">
-            <area>518,47,8,8</area>
+            <area>517,53,8,8</area>
             <type>ellipse</type>
             <fill color="#0000FF" alpha="200" />
         </shape>
         <textarea name="update_available_text">
-            <area>400,43,110,16</area>
+            <area>399,40,110,35</area>
             <align>right,vcenter</align>
             <font>basesupersmall</font>
             <value>UpdateAvailable</value>
@@ -244,13 +256,13 @@
         <!-- End icon status help -->
 
         <buttonlist name="themes" from="base_list_large_selector">
-            <area>30,63,595,614</area>
+            <area>28,81,599,598</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,595,70</area>
+                    <area>0,0,100%,46</area>
                     <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
-                        <area>8,26,16,16</area>
+                        <area>15,15,16,16</area>
                         <state name="local">
                             <shape name="location">
                                 <area>0,0,16,16</area>
@@ -267,16 +279,16 @@
                         </state>
                     </statetype>
                     <imagetype name="buttonimage">
-                        <area>30,6,110,56</area>
+                        <area>46,1,78,44</area>
                         <alpha>160</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>146,6,415,56</area>
+                        <area>139,0,414,46</area>
                     </textarea>
                     <!-- State to indicate whether an installed downloadable theme is up to date or not -->
                     <statetype name="themestatus">
-                        <area>571,26,16,16</area>
+                        <area>568,15,16,16</area>
                         <state name="uptodate">
                             <shape name="status">
                                 <area>0,0,16,16</area>
@@ -294,10 +306,10 @@
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,595,70</area>
+                    <area>0,0,100%,96</area>
                     <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
-                        <area>8,26,16,16</area>
+                        <area>15,40,16,16</area>
                         <state name="local">
                             <shape name="location">
                                 <area>0,0,16,16</area>
@@ -314,16 +326,17 @@
                         </state>
                     </statetype>
                     <imagetype name="buttonimage">
-                        <area>30,6,110,56</area>
+                        <area>46,4,156,88</area>
                         <alpha>255</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>146,6,415,56</area>
+                        <area>217,0,336,96</area>
+                        <multiline>yes</multiline>
                     </textarea>
                     <!-- State to indicate whether an installed downloadable theme is up to date or not -->
                     <statetype name="themestatus">
-                        <area>571,26,16,16</area>
+                        <area>568,40,16,16</area>
                         <state name="uptodate">
                             <shape name="status">
                                 <area>0,0,16,16</area>
@@ -343,10 +356,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>584,-5</position>
+                <position>561,604</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>584,609</position>
+                <position>581,604</position>
             </statetype>
         </buttonlist>
 

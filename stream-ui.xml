@@ -46,7 +46,7 @@
 
         <buttonlist name="streamlist" from="base_list">
             <area>28,44,1224,270</area>
-            <searchposition>-1,311</searchposition>
+            <searchposition>-1,330</searchposition>
             <buttonarea>0,0,1224,270</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -213,6 +213,7 @@
 
             <buttonlist name="playedtrackslist" from="base_list_large_selector">
                 <area>28,8,1224,134</area>
+                <searchposition>-1,488</searchposition>
                 <scrollstyle>center</scrollstyle>
                 <buttonarea>0,0,1224,134</buttonarea>
                 <statetype name="buttonitem">
