@@ -33,7 +33,7 @@
         </shape>
 
         <shape name="system-events-list-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1007,456,50,10</area>
+            <area>1007,456,50,11</area>
         </shape>
 
         <shape name="system-events-bottom-backdrop" from="base_backdrop">
@@ -94,10 +94,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>786,412</position>
+                <position>786,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>806,412</position>
+                <position>806,413</position>
             </statetype>
         </buttonlist>
 
@@ -163,7 +163,7 @@
         </shape>
 
         <shape name="theme-chooser-arrows-backdrop" from="base_arrows_backdrop">
-            <area>582,684,50,11</area>
+            <area>582,685,50,11</area>
         </shape>
 
         <shape name="theme-chooser-preview-backdrop" from="base_backdrop">
@@ -364,10 +364,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>561,604</position>
+                <position>561,605</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>581,604</position>
+                <position>581,605</position>
             </statetype>
         </buttonlist>
 

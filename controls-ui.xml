@@ -109,7 +109,7 @@
         </shape>
 
         <shape name="edit-keys-contexts-arrows-backdrop" from="base_arrows_backdrop">
-            <area>586,496,50,10</area>
+            <area>586,495,50,11</area>
         </shape>
 
         <shape name="edit-keys-actions-backdrop-line" from="base_backdrop_line">
@@ -141,7 +141,7 @@
         </shape>
 
         <shape name="edit-keys-actions-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1021,496,50,10</area>
+            <area>1021,495,50,11</area>
         </shape>
 
         <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
@@ -205,10 +205,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>380,412</position>
+                <position>380,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>400,412</position>
+                <position>400,413</position>
             </statetype>
         </buttonlist>
 
