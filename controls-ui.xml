@@ -77,11 +77,11 @@
         </textarea>
 
         <shape name="edit-keys-backdrop" from="base_backdrop">
-            <area>205,36,870,649</area>
+            <area>205,36,870,460</area>
         </shape>
 
         <shape name="edit-keys-backdrop-line" from="base_backdrop_line">
-            <area>206,37,433,476</area>
+            <area>206,37,433,458</area>
         </shape>
 
         <shape name="edit-keys-contexts-top-line" from="base_highlight_line">
@@ -89,23 +89,31 @@
         </shape>
 
         <shape name="edit-keys-contexts-bottom-line" from="base_highlight_line">
-            <area>207,510,431,2</area>
+            <area>207,492,431,2</area>
         </shape>
 
         <shape name="edit-keys-contexts-left-line" from="base_highlight_vertical_line">
-            <area>207,40,2,470</area>
+            <area>207,40,2,452</area>
         </shape>
 
         <shape name="edit-keys-contexts-right-line" from="base_highlight_vertical_line">
-            <area>636,40,2,470</area>
+            <area>636,40,2,452</area>
         </shape>
 
         <shape name="edit-keys-contexts-seperator-first-line" from="base_line">
-            <area>230,64,385,2</area>
+            <area>230,78,385,2</area>
+        </shape>
+
+        <shape name="edit-keys-leftdesc-selectbar" from="base_select_bar_active">
+            <area>213,44,419,30</area>
+        </shape>
+
+        <shape name="edit-keys-contexts-arrows-backdrop" from="base_arrows_backdrop">
+            <area>586,496,50,10</area>
         </shape>
 
         <shape name="edit-keys-actions-backdrop-line" from="base_backdrop_line">
-            <area>641,37,433,476</area>
+            <area>641,37,433,458</area>
         </shape>
 
         <shape name="edit-keys-actions-top-line" from="base_highlight_line">
@@ -113,27 +121,39 @@
         </shape>
 
         <shape name="edit-keys-actions-bottom-line" from="base_highlight_line">
-            <area>642,510,431,2</area>
+            <area>642,492,431,2</area>
         </shape>
 
         <shape name="edit-keys-actions-left-line" from="base_highlight_vertical_line">
-            <area>642,40,2,470</area>
+            <area>642,40,2,452</area>
         </shape>
 
         <shape name="edit-keys-actions-right-line" from="base_highlight_vertical_line">
-            <area>1071,40,2,470</area>
+            <area>1071,40,2,452</area>
         </shape>
 
         <shape name="edit-keys-actions-seperator-first-line" from="base_line">
-            <area>665,64,385,2</area>
+            <area>665,78,385,2</area>
+        </shape>
+
+        <shape name="edit-keys-rightdesc-selectbar" from="base_select_bar_active">
+            <area>648,44,419,30</area>
+        </shape>
+
+        <shape name="edit-keys-actions-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1021,496,50,10</area>
+        </shape>
+
+        <shape name="edit-keys-bottom-backdrop" from="base_backdrop">
+            <area>205,506,870,179</area>
         </shape>
 
         <shape name="edit-keys-bottom-backdrop-line" from="base_backdrop_line">
-            <area>206,519,868,165</area>
+            <area>206,507,868,177</area>
         </shape>
 
         <shape name="edit-keys-bottom-top-line" from="base_highlight_line">
-            <area>207,520,866,2</area>
+            <area>207,508,866,2</area>
         </shape>
 
         <shape name="edit-keys-bottom-bottom-line" from="base_highlight_line">
@@ -141,90 +161,90 @@
         </shape>
 
         <shape name="edit-keys-bottom-left-line" from="base_highlight_vertical_line">
-            <area>207,522,2,159</area>
+            <area>207,510,2,171</area>
         </shape>
 
         <shape name="edit-keys-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1071,522,2,159</area>
+            <area>1071,510,2,171</area>
         </shape>
 
         <shape name="edit-keys-bottom-seperator-first-line" from="base_line">
-            <area>228,598,824,2</area>
+            <area>228,594,824,2</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>215,40,415,24</area>
-            <font>baseevensmalleryellow</font>
+            <area>209,40,427,38</area>
+            <font>basesmallyellow</font>
             <value>Contexts</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="leftlist" from="base_list">
-            <area>215,70,415,438</area>
+            <area>213,84,419,406</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <imagetype name="buttonarrow">
-                        <position>395,6</position>
+                        <position>399,22</position>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>406,-6</position>
+                <position>380,412</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>406,433</position>
+                <position>400,412</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>650,40,415,24</area>
-            <font>baseevensmalleryellow</font>
+            <area>650,40,415,38</area>
+            <font>basesmallyellow</font>
             <value>Actions</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="rightlist" from="leftlist">
-            <area>650,70,415,438</area>
+            <area>648,84,419,406</area>
         </buttonlist>
 
-        <button name="action_0" from="base_button">
-            <position>273,623</position>
-        </button>
-
-        <button name="action_1" from="action_0">
-            <position>467,623</position>
-        </button>
-
-        <button name="action_2" from="action_0">
-            <position>662,623</position>
-        </button>
-
-        <button name="action_3" from="action_0">
-            <position>856,623</position>
-        </button>
-
         <textarea name="description" from="basetextarea">
-            <area>223,522,834,76</area>
+            <area>229,510,822,84</area>
             <font>basesmallblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
+
+        <button name="action_0" from="base_button">
+            <position>273,621</position>
+        </button>
+
+        <button name="action_1" from="action_0">
+            <position>467,621</position>
+        </button>
+
+        <button name="action_2" from="action_0">
+            <position>662,621</position>
+        </button>
+
+        <button name="action_3" from="action_0">
+            <position>856,621</position>
+        </button>
 
     </window>
 </mythuitheme>
