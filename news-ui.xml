@@ -399,6 +399,10 @@
             <area>1256,40,2,641</area>
         </shape>
 
+        <shape name="news-config-feeds-selectbar" from="base_select_bar_active">
+            <area>538,44,714,15</area>
+        </shape>
+
         <shape name="news-config-feeds-seperator-first-line" from="base_line">
             <area>553,63,684,2</area>
         </shape>

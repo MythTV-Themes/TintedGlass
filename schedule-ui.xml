@@ -1092,6 +1092,7 @@
                     <area>0,0,1224,30</area>
                     <imagetype name="icon">
                         <area>8,2,35,26</area>
+                        <filename>images/channel_record_priority_channel_icon.png</filename>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="chanstr" from="buttontext">
@@ -1127,6 +1128,7 @@
                     <area>0,0,1224,64</area>
                     <imagetype name="icon">
                         <area>8,4,75,56</area>
+                        <filename>images/channel_record_priority_channel_icon.png</filename>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="chanstr" from="buttontext">
