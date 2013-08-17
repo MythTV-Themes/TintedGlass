@@ -1015,11 +1015,11 @@
         </shape>
 
         <shape name="channel-record-priority-channels-backdrop" from="base_backdrop">
-            <area>20,86,1240,439</area>
+            <area>20,86,1240,420</area>
         </shape>
 
         <shape name="channel-record-priority-channels-backdrop-line" from="base_backdrop_line">
-            <area>21,87,1238,437</area>
+            <area>21,87,1238,418</area>
         </shape>
 
         <shape name="channel-record-priority-channels-top-line" from="base_highlight_line">
@@ -1027,27 +1027,31 @@
         </shape>
 
         <shape name="channel-record-priority-channels-bottom-line" from="base_highlight_line">
-            <area>22,521,1236,2</area>
+            <area>22,502,1236,2</area>
         </shape>
 
         <shape name="channel-record-priority-channels-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,431</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="channel-record-priority-channels-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,431</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="channel-record-priority-channels-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="channel-record-priority-description-backdrop" from="base_backdrop">
-            <area>20,535,1240,150</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="channel-record-priority-description-backdrop-line" from="base_backdrop_line">
-            <area>21,536,1238,148</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="channel-record-priority-description-top-line" from="base_highlight_line">
-            <area>22,537,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="channel-record-priority-description-bottom-line" from="base_highlight_line">
@@ -1055,15 +1059,15 @@
         </shape>
 
         <shape name="channel-record-priority-description-left-line" from="base_highlight_vertical_line">
-            <area>22,539,2,142</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="channel-record-priority-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,539,2,142</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="channel-record-priority-description-seperator-first-line" from="base_line">
-            <area>43,573,1194,2</area>
+            <area>43,554,1194,2</area>
         </shape>
 
         <textarea name="helptext">
@@ -1073,98 +1077,106 @@
             <value>(1) Channel (2) Priority</value>
         </textarea>
 
+        <textarea name="nochannels_warning">
+            <area>28,94,1224,404</area>
+            <font>basesmall</font>
+            <value>You haven't defined any channels</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
         <buttonlist name="channels" from="base_list_medium_selector">
-            <area>30,107,1220,400</area>
+            <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,38</area>
-                    <textarea name="chanstr" from="buttontext">
-                        <area>8,0,86,38</area>
-                        <cutdown>no</cutdown>
-                    </textarea>
+                    <area>0,0,1224,30</area>
                     <imagetype name="icon">
-                        <area>124,2,34,34</area>
+                        <area>8,2,35,26</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
+                    <textarea name="chanstr" from="buttontext">
+                        <area>58,0,126,30</area>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
                     <textarea name="callsign" from="chanstr">
-                        <area>188,0,146,38</area>
+                        <area>199,0,146,30</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channelname" from="chanstr">
-                        <area>364,0,358,38</area>
+                        <area>360,0,358,30</area>
                         <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channelsourcename" from="chanstr">
-                        <area>752,0,290,38</area>
+                        <area>733,0,328,30</area>
                         <cutdown>no</cutdown>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="priority_label" from="chanstr">
-                        <area>1072,0,98,38</area>
+                        <area>1076,0,98,30</area>
                         <align>right,vcenter</align>
                         <value>Priority:</value>
                     </textarea>
                     <textarea name="priority" from="chanstr">
-                        <area>1176,0,36,38</area>
+                        <area>1180,0,36,30</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,38</area>
-                    <textarea name="chanstr" from="buttontext">
-                        <area>8,0,86,38</area>
-                        <cutdown>no</cutdown>
-                    </textarea>
+                    <area>0,0,1224,64</area>
                     <imagetype name="icon">
-                        <area>124,2,34,34</area>
+                        <area>8,4,75,56</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
+                    <textarea name="chanstr" from="buttontext">
+                        <area>98,0,86,64</area>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
                     <textarea name="callsign" from="chanstr">
-                        <area>188,0,146,38</area>
+                        <area>199,0,146,64</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channelname" from="chanstr">
-                        <area>364,0,358,38</area>
+                        <area>360,0,358,64</area>
                         <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channelsourcename" from="chanstr">
-                        <area>752,0,290,38</area>
+                        <area>733,0,328,64</area>
                         <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="priority_label" from="chanstr">
-                        <area>1072,0,98,38</area>
+                        <area>1076,0,98,64</area>
                         <align>right,vcenter</align>
                         <value>Priority:</value>
                     </textarea>
                     <textarea name="priority" from="chanstr">
-                        <area>1176,0,36,38</area>
+                        <area>1180,0,36,64</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-15</position>
+                <position>1186,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,404</position>
+                <position>1206,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="chanstr" from="basetextarea">
-            <area>44,541,1192,32</area>
+            <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
-            <template>%CHANSTR%   %CALLSIGN%   %CHANNELNAME%</template>
-        </textarea>
-
-        <textarea name="nochannels_warning">
-            <area>24,90,1232,431</area>
-            <font>basemedium</font>
-            <value>You haven't defined any channels</value>
-            <multiline>yes</multiline>
-            <align>allcenter</align>
+            <template>%CALLSIGN%   %CHANNELNAME%   %CHANSTR%</template>
         </textarea>
 
         <textarea name="helptext2" from="basetextarea">
-            <area>44,581,1192,92</area>
+            <area>44,561,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
@@ -2324,7 +2336,7 @@
         </textarea>
 
         <textarea name="norecordings_info" from="basetextarea">
-            <area>24,90,1232,430</area>
+            <area>28,94,1224,404</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>There are no Recordings Scheduled...</value>
