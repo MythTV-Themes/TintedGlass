@@ -363,8 +363,16 @@
             <area>516,40,2,641</area>
         </shape>
 
+        <shape name="news-config-categories-selectbar" from="base_select_bar_active">
+            <area>28,44,484,15</area>
+        </shape>
+
         <shape name="news-config-categories-seperator-first-line" from="base_line">
-            <area>48,62,444,2</area>
+            <area>48,63,444,2</area>
+        </shape>
+
+        <shape name="news-config-categories-arrows-backdrop" from="base_arrows_backdrop">
+            <area>467,685,50,10</area>
         </shape>
 
         <shape name="news-config-feeds-backdrop" from="base_backdrop">
@@ -392,92 +400,99 @@
         </shape>
 
         <shape name="news-config-feeds-seperator-first-line" from="base_line">
-            <area>553,62,684,2</area>
+            <area>553,63,684,2</area>
+        </shape>
+
+        <shape name="news-config-feeds-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,685,50,10</area>
         </shape>
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>30,40,480,22</area>
+            <area>49,40,442,23</area>
             <font>baseextrasmallyellow</font>
             <value>Categories</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="category" from="base_list">
-            <area>30,67,480,610</area>
+            <area>28,69,484,610</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,442,24</area>
+                        <area>8,0,446,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,442,24</area>
+                        <area>8,0,446,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <position>460,7</position>
+                        <position>464,22</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,442,24</area>
+                        <area>8,0,446,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>469,-6</position>
+                <position>446,616</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>469,608</position>
+                <position>466,616</position>
             </statetype>
         </buttonlist>
 
         <textarea name="rightdesc" from="basetextarea">
-            <area>540,40,710,22</area>
+            <area>554,40,682,23</area>
             <font>baseextrasmallyellow</font>
             <value>News Feeds</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="sites" from="base_list">
-            <area>540,67,710,610</area>
+            <area>538,69,714,610</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,710,34</area>
+                    <area>0,0,714,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,664,24</area>
+                        <area>8,0,668,30</area>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>682,7</position>
+                        <position>686,5</position>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,710,34</area>
+                    <area>0,0,714,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,664,24</area>
+                        <area>8,0,668,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>682,7</position>
+                        <position>686,22</position>
                     </statetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,710,34</area>
+                    <area>0,0,714,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,664,24</area>
+                        <area>8,0,668,64</area>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>682,7</position>
+                        <position>686,22</position>
                     </statetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>700,-6</position>
+                <position>676,616</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>700,608</position>
+                <position>696,616</position>
             </statetype>
         </buttonlist>
 
