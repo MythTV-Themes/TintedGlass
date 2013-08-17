@@ -4016,11 +4016,11 @@
         </shape>
 
         <shape name="preview-schedule-conflictlist-backdrop" from="base_backdrop">
-            <area>20,86,1240,439</area>
+            <area>20,86,1240,420</area>
         </shape>
 
         <shape name="preview-schedule-conflictlist-backdrop-line" from="base_backdrop_line">
-            <area>21,87,1238,437</area>
+            <area>21,87,1238,418</area>
         </shape>
 
         <shape name="preview-schedule-conflictlist-top-line" from="base_highlight_line">
@@ -4028,27 +4028,31 @@
         </shape>
 
         <shape name="preview-schedule-conflictlist-bottom-line" from="base_highlight_line">
-            <area>22,521,1236,2</area>
+            <area>22,502,1236,2</area>
         </shape>
 
         <shape name="preview-schedule-conflictlist-left-line" from="base_highlight_vertical_line">
-            <area>22,90,2,431</area>
+            <area>22,90,2,412</area>
         </shape>
 
         <shape name="preview-schedule-conflictlist-right-line" from="base_highlight_vertical_line">
-            <area>1256,90,2,431</area>
+            <area>1256,90,2,412</area>
+        </shape>
+
+        <shape name="preview-schedule-conflictlist-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,506,50,11</area>
         </shape>
 
         <shape name="preview-schedule-description-backdrop" from="base_backdrop">
-            <area>20,535,1240,150</area>
+            <area>20,516,1240,169</area>
         </shape>
 
         <shape name="preview-schedule-description-backdrop-line" from="base_backdrop_line">
-            <area>21,536,1238,148</area>
+            <area>21,517,1238,167</area>
         </shape>
 
         <shape name="preview-schedule-description-top-line" from="base_highlight_line">
-            <area>22,537,1236,2</area>
+            <area>22,518,1236,2</area>
         </shape>
 
         <shape name="preview-schedule-description-bottom-line" from="base_highlight_line">
@@ -4056,15 +4060,15 @@
         </shape>
 
         <shape name="preview-schedule-description-left-line" from="base_highlight_vertical_line">
-            <area>22,539,2,142</area>
+            <area>22,520,2,161</area>
         </shape>
 
         <shape name="preview-schedule-description-right-line" from="base_highlight_vertical_line">
-            <area>1256,539,2,142</area>
+            <area>1256,520,2,161</area>
         </shape>
 
         <shape name="preview-schedule-description-seperator-first-line" from="base_line">
-            <area>43,573,1194,2</area>
+            <area>43,554,1194,2</area>
         </shape>
 
         <textarea name="titletext">
@@ -4073,31 +4077,38 @@
             <align>allcenter</align>
         </textarea>
 
+        <textarea name="nochanges" from="basetextarea">
+            <area>28,94,1224,404</area>
+            <align>allcenter</align>
+            <value>You Haven't Scheduled Any Programs To Be Recorded</value>
+            <multiline>yes</multiline>
+        </textarea>
+
         <buttonlist name="conflictlist" from="base_list_state_medium_selector">
-            <area>30,101,1220,410</area>
+            <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,36</area> 
+                    <area>0,0,1224,30</area> 
                     <textarea name="shortstartdate" from="base_text_font_state_small">
-                        <area>8,0,190,36</area>
+                        <area>8,0,190,30</area>
                          <template>%SHORTSTARTDATE%   %STARTTIME%</template>
                     </textarea>
                     <textarea name="channel" from="base_text_font_state_small">
-                        <area>216,0,170,36</area>
+                        <area>216,0,170,30</area>
                     </textarea>
                     <textarea name="titlesubtitle" from="base_text_font_state_small">
-                        <area>404,0,740,36</area>
+                        <area>404,0,744,30</area>
                     </textarea>
                     <textarea name="statusbefore" from="base_text_font_state_small">
-                        <area>1154,0,20,36</area>
+                        <area>1158,0,20,30</area>
                     </textarea>
                     <textarea name="statusafter" from="base_text_font_state_small">
-                        <area>1192,0,20,36</area>
+                        <area>1196,0,20,30</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,70</area>
+                    <area>0,0,1224,64</area>
                     <textarea name="shortstartdate" from="base_text_font_state_small">
                         <area>8,1,190,24</area>
                          <template>%SHORTSTARTDATE%   %STARTTIME%</template>
@@ -4106,64 +4117,57 @@
                         <area>216,1,170,24</area>
                     </textarea>
                     <textarea name="title" from="base_text_font_state_small">
-                        <area>404,1,740,24</area>
+                        <area>404,1,744,24</area>
                     </textarea>
                     <textarea name="statusbefore" from="base_text_font_state_small">
-                        <area>1154,1,20,24</area>
+                        <area>1158,1,20,24</area>
                     </textarea>
                     <textarea name="statusafter" from="base_text_font_state_small">
-                        <area>1192,1,20,24</area>
+                        <area>1196,1,20,24</area>
                         <align>right,vcenter</align>
                     </textarea>
-                    <textarea name="lenmins" from="base_text_font_state_smaller">
-                        <area>8,24,416,22</area>
+                    <textarea name="lenmins" from="base_text_font_state_extrasmall">
+                        <area>8,23,416,20</area>
                     </textarea>
-                    <textarea name="subtitle" from="base_text_font_state_smaller">
-                        <area>434,24,778,22</area>
+                    <textarea name="subtitle" from="base_text_font_state_extrasmall">
+                        <area>434,23,782,20</area>
                         <template>%YEARSTARS| %%SUBTITLE%</template>
                     </textarea>
                     <textarea name="programid" from="base_text_font_state_extrasmall">
-                        <area>8,45,250,20</area>
+                        <area>8,40,250,20</area>
                         <align>left,bottom</align>
                     </textarea>
                     <textarea name="longrepeat" from="programid">
-                        <area>268,45,584,20</area>
+                        <area>270,40,584,20</area>
                         <align>hcenter,bottom</align>
                     </textarea>
                     <textarea name="timedate" from="programid">
-                        <area>862,45,350,20</area>
+                        <area>866,40,350,20</area>
                         <align>right,bottom</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-9</position>
+                <position>1186,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,410</position>
+                <position>1206,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>44,541,1192,32</area>
+            <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>44,581,1192,92</area>
+            <area>44,561,1192,118</area>
             <font>basesmall</font>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%YEARSTARS| %%DESCRIPTION%</template>
-        </textarea>
-
-        <textarea name="nochanges" from="basetextarea">
-            <area>24,90,1232,430</area>
-            <align>allcenter</align>
-            <value>You Haven't Scheduled Any Programs To Be Recorded</value>
-            <multiline>yes</multiline>
         </textarea>
 
     </window>
