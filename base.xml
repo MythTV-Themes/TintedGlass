@@ -406,6 +406,14 @@
         <cornerradius>8</cornerradius>
     </shape>
 
+    <!-- Base definition of a base arrows backdrop -->
+    <shape name="base_arrows_backdrop">
+        <area>283,436,50,11</area>
+        <type>roundbox</type>
+        <fill color="#000000" alpha="200" />
+        <cornerradius>90</cornerradius>
+    </shape>
+
     <shape name="base_backdrop_line">
         <area>102,368,1076,300</area>
         <type>roundbox</type>
@@ -482,9 +490,9 @@
 
     <shape name="base_select_bar_active">
         <type>roundbox</type>
-        <fill color="#000000" alpha="0" />
-        <line color="#555555" alpha="170" width="1" />
-        <cornerradius>90</cornerradius>
+        <fill color="#444444" alpha="90" />
+        <line color="#444444" alpha="180" width="0" />
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedactive_small">
@@ -531,15 +539,15 @@
 
     <shape name="base_select_bar_selectedinactive_small">
         <type>roundbox</type>
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
-        <cornerradius>90</cornerradius>
+        <fill color="#222222" alpha="175" />
+        <line color="#666666" alpha="200" width="2" />
+        <cornerradius>5</cornerradius>
     </shape>
 
     <shape name="base_select_bar_selectedinactive_large">
         <type>roundbox</type>
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
+        <fill color="#222222" alpha="175" />
+        <line color="#666666" alpha="200" width="2" />
         <cornerradius>5</cornerradius>
     </shape>
 
@@ -679,7 +687,7 @@
     <!-- Base definition of a list with a small sized select bar -->
     <buttonlist name="base_list">
         <layout>vertical</layout>
-        <spacing>-2</spacing>
+        <spacing>4</spacing>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
@@ -743,8 +751,8 @@
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
-                    <font>basesmall</font>
-                    <font state="normal">basesmall</font>
+                    <font>basesmallyellow</font>
+                    <font state="normal">basesmallyellow</font>
                 </textarea>
             </state>
         </statetype>
@@ -808,7 +816,7 @@
     <!-- Base definition of a list with state info and a small sized select bar -->
     <buttonlist name="base_list_state">
         <layout>vertical</layout>
-        <spacing>-2</spacing>
+        <spacing>4</spacing>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
@@ -2052,217 +2060,248 @@
             <value>FileBrowser</value>
         </textarea>
 
+        <shape name="fullpath-backdrop" from="base_backdrop">
+            <area>0,37,1280,44</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="fullpath-top-line" from="base_line">
+            <area>0,38,1280,2</area>
+        </shape>
+
+        <shape name="fullpath-bottom-line" from="base_line">
+            <area>0,77,1280,2</area>
+        </shape>
+
         <shape name="file-browser-preview-backdrop" from="base_backdrop">
-            <area>20,36,615,649</area>
+            <area>20,92,615,592</area>
         </shape>
 
         <shape name="file-browser-preview-backdrop-line" from="base_backdrop_line">
-            <area>21,37,613,647</area>
+            <area>21,93,613,590</area>
         </shape>
 
         <shape name="file-browser-preview-top-line" from="base_highlight_line">
-            <area>22,38,611,2</area>
+            <area>22,94,611,2</area>
         </shape>
 
         <shape name="file-browser-preview-bottom-line" from="base_highlight_line">
-            <area>22,681,611,2</area>
+            <area>22,680,611,2</area>
         </shape>
 
         <shape name="file-browser-preview-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,641</area>
+            <area>22,96,2,584</area>
         </shape>
 
         <shape name="file-browser-preview-right-line" from="base_highlight_vertical_line">
-            <area>631,40,2,641</area>
+            <area>631,96,2,584</area>
         </shape>
 
         <shape name="file-browser-preview-image-line" from="base_backdrop_line">
-            <area>41,123,571,324</area>
+            <area>42,158,571,324</area>
         </shape>
 
         <shape name="file-browser-preview-image-top-line" from="base_highlight_line">
-            <area>42,124,569,2</area>
+            <area>43,159,569,2</area>
         </shape>
 
         <shape name="file-browser-preview-image-bottom-line" from="base_highlight_line">
-            <area>42,444,569,2</area>
+            <area>43,479,569,2</area>
         </shape>
 
         <shape name="file-browser-preview-image-left-line" from="base_highlight_vertical_line">
-            <area>42,126,2,318</area>
+            <area>43,161,2,318</area>
         </shape>
 
         <shape name="file-browser-preview-image-right-line" from="base_highlight_vertical_line">
-            <area>609,126,2,318</area>
+            <area>610,161,2,318</area>
         </shape>
 
         <shape name="file-browser-backdrop" from="base_backdrop">
-            <area>645,36,615,649</area>
+            <area>645,92,615,592</area>
         </shape>
 
         <shape name="file-browser-backdrop-line" from="base_backdrop_line">
-            <area>646,37,613,647</area>
+            <area>646,93,613,590</area>
         </shape>
 
         <shape name="file-browser-top-line" from="base_highlight_line">
-            <area>647,38,611,2</area>
+            <area>647,94,611,2</area>
         </shape>
 
         <shape name="file-browser-bottom-line" from="base_highlight_line">
-            <area>647,681,611,2</area>
+            <area>647,680,611,2</area>
         </shape>
 
         <shape name="file-browser-left-line" from="base_highlight_vertical_line">
-            <area>647,40,2,641</area>
+            <area>647,96,2,584</area>
         </shape>
 
         <shape name="file-browser-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,641</area>
+            <area>1256,96,2,584</area>
         </shape>
 
+        <shape name="file-browser-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,684,50,10</area>
+        </shape>
+
+        <textarea name="fullpath" from="basetextarea">
+            <area>24,39,1224,37</area>
+            <cutdown>yes</cutdown>
+            <font>basesmallblue</font>
+             <align>allcenter</align>
+            <value>Filename</value>
+        </textarea>
+
         <buttonlist name="filelist" from="base_list_large_selector">
-            <area>655,45,595,632</area>
+            <area>653,100,599,578</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,595,65</area>
-                    <shape name="bottom_line" from="base_list_line">
-                        <area>2%,98%,98%,1</area>
-                    </shape>
+                    <area>0,0,599,54</area>
                     <imagetype name="buttonimage">
-                        <area>20,10,80,45</area>
+                        <area>15,2,89,50</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>110,0,477,65</area>
+                        <area>119,0,465,54</area>
                         <font>basesmaller</font>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>30,12,53,40</area>
-                                <filename>images/folderclosed.png</filename>
+                                <area>21,2,77,50</area>
+                                <filename>images/file_browser_folder.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>30,12,53,40</area>
-                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <area>21,2,77,50</area>
+                                <filename>images/file_browser_up_folder.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>30,12,53,40</area>
                             <imagetype name="icon">
+                                <area>21,2,77,50</area>
+                                <filename>images/file_browser_executable_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>30,12,53,40</area>
                             <imagetype name="icon">
+                                <area>21,2,77,50</area>
+                                <filename>images/file_browser_file_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,595,128</area>
+                    <area>0,0,599,112</area>
                     <imagetype name="buttonimage">
-                        <area>8,16,170,96</area>
+                        <area>15,4,185,104</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>188,6,407,116</area>
-                        <font>basesmalleryellow</font>
-                        <multiline>true</multiline>
+                        <area>215,0,369,112</area>
+                        <font>basesmallyellow</font>
+                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="nodetype">
                         <state name="folder">
                             <imagetype name="icon">
-                                <area>64,44,53,40</area>
-                                <filename>images/folderopen.png</filename>
+                                <area>38,4,138,104</area>
+                                <filename>images/file_browser_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>64,44,53,40</area>
-                                <filename>images/mv_gallery_dir_up.png</filename>
+                                <area>38,4,138,104</area>
+                                <filename>images/file_browser_up_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="executable">
-                            <area>64,44,53,40</area>
                             <imagetype name="icon">
+                                <area>38,4,138,104</area>
+                                <filename>images/file_browser_executable_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="file">
-                            <area>64,44,53,40</area>
                             <imagetype name="icon">
+                                <area>38,4,138,104</area>
+                                <filename>images/file_browser_file_folder.png</filename>
+                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>586,-6</position>
+                <position>561,585</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>586,630</position>
+                <position>581,585</position>
             </statetype>
         </buttonlist>
 
-        <textedit name="location" from="base_textedit">
-            <area>40,54,575,32</area>
+        <textedit name="location" from="base_wide_textedit">
+            <area>40,107,575,40</area>
         </textedit>
 
-        <textarea name="fullpath" from="basetextarea">
-            <area>40,94,575,24</area>
-            <cutdown>yes</cutdown>
-            <font>baseevensmallerblue</font>
-             <align>allcenter</align>
-            <value>Filename</value>
-        </textarea>
+        <imagetype name="no_preview">
+            <area>46,161,563,318</area>
+            <filename>images/file_browser_no_preview.png</filename>
+            <mask>images/masks/file_browser_preview_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
 
         <imagetype name="preview">
-            <area>44,126,565,318</area>
-            <filename />
-            <mask>images/masks/myth_file_browser_preview_mask.png</mask>
+            <area>46,161,563,318</area>
+            <mask>images/masks/file_browser_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <button name="back" from="base_button">
-            <position>252,461</position>
+            <position>252,493</position>
             <value>Up Level</value>
         </button>
 
         <button name="home" from="base_button">
-            <position>252,517</position>
+            <position>252,540</position>
             <value>Home</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>252,575</position>
+            <position>252,587</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>252,632</position>
+            <position>252,634</position>
             <value>Ok</value>
         </button>
 
         <textarea name="info_label" from="basetextarea">
-            <area>408,534,221,24</area>
+            <area>408,554,221,24</area>
             <align>allcenter</align>
             <value>File Size:</value>
         </textarea>
 
         <textarea name="info" from="basetextarea">
-            <area>408,564,221,24</area>
+            <area>408,584,221,24</area>
             <font>baseevensmallerblue</font>
             <align>allcenter</align>
         </textarea>
@@ -2354,102 +2393,113 @@
             <area>1236,4,2,641</area>
         </shape>
 
+        <shape name="metadata-results-selectbar" from="base_select_bar_active">
+            <area>8,8,1224,35</area>
+        </shape>
+
         <shape name="metadata-results-seperator-first-line" from="base_line">
-            <area>21,37,1198,2</area>
+            <area>21,47,1198,2</area>
+        </shape>
+
+        <shape name="metadata-results-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1187,649,50,10</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>3,4,1234,33</area>
-            <font>basesmalleryellow</font>
+            <area>8,4,1224,43</area>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
             <value>Metadata Results</value>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>10,43,1220,600</area>
+            <area>8,53,1224,590</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,51</area>
-                    <shape name="bottom_line" from="base_list_line">
-                        <area>2%,98%,98%,1</area>
-                    </shape>
+                    <area>0,0,1224,56</area>
                     <imagetype name="buttonimage">
-                        <area>8,4,58,43</area>
+                        <area>10,2,35,52</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
+                        <filename>images/no_coverart.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>76,0,1136,30</area>
+                        <area>55,0,1159,30</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>76,28,759,21</area>
+                        <area>55,30,789,22</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>845,29,360,18</area>
+                        <area>854,30,360,20</area>
                         <font>baseevensmalleryellow</font>
                         <align>right,bottom</align>
                         <template>Released %1</template>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,204</area>
+                    <area>0,0,1224,228</area>
                     <imagetype name="buttonimage">
-                        <area>8,6,128,192</area>
+                        <area>10,4,147,220</area>
                         <preserveaspect>true</preserveaspect>
+                        <filename>images/no_coverart.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>146,0,1066,30</area>
+                        <area>167,5,1047,30</area>
                         <font>basesmallyellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>146,32,1066,24</area>
+                        <area>167,36,1047,24</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="description">
-                        <area>146,61,1066,100</area>
+                        <area>167,64,1047,100</area>
                         <multiline>yes</multiline>
                         <font>baseevensmaller</font>
                         <align>vcenter,left</align>
                     </textarea>
                     <textarea name="filename">
-                        <area>146,159,1066,20</area>
+                        <area>167,170,1047,22</area>
                         <multiline>no</multiline>
                         <font>baseevensmalleryellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="userrating">
-                        <area>146,179,556,20</area>
+                        <area>167,199,537,22</area>
                         <multiline>no</multiline>
                         <font>baseevensmalleryellow</font>
                         <align>left,vcenter</align>
                         <template>User Rating: %1</template>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>712,179,500,20</area>
+                        <area>714,199,500,22</area>
                         <font>baseevensmalleryellow</font>
                         <align>right,vcenter</align>
                         <template>Released %1</template>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-5</position>
+                <position>1186,597</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,594</position>
+                <position>1206,597</position>
             </statetype>
         </buttonlist>
     </window>
@@ -2495,67 +2545,82 @@
             <area>612,4,2,641</area>
         </shape>
 
+        <shape name="artwork-selectbar" from="base_select_bar_active">
+            <area>8,8,600,37</area>
+        </shape>
+
         <shape name="artwork-seperator-first-line" from="base_line">
-            <area>18,45,580,2</area>
+            <area>18,49,580,2</area>
+        </shape>
+
+        <shape name="artwork-arrows-backdrop" from="base_arrows_backdrop">
+            <area>563,649,50,10</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>10,4,596,41</area>
+            <area>18,4,580,45</area>
             <value>Artwork Results</value>
-            <font>basesmalleryellow</font>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>10,51,596,600</area>
+            <area>8,55,600,588</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,596,100</area>
-                    <shape name="bottom_line" from="base_list_line">
-                        <area>2%,98%,98%,1</area>
-                    </shape>
+                    <area>0,0,600,114</area>
                     <imagetype name="buttonimage">
-                        <area>30,12,134,76</area>
+                        <area>10,4,189,106</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>174,0,392,56</area>
+                        <area>209,0,381,57</area>
                         <align>left,vcenter</align>
                         <font>basemediumlarger</font>
+                        <value>Resolution Unknown</value>
+                        <template>Resolution %RESOLUTION%</template>
                     </textarea>
                     <textarea name="url">
-                        <area>174,64,392,20</area>
+                        <area>209,57,381,57</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmall</font>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,596,100</area>
+                    <area>0,0,600,114</area>
                     <imagetype name="buttonimage">
-                        <area>8,5,156,88</area>
+                        <area>10,4,189,106</area>
                         <alpha>255</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>174,0,414,56</area>
+                        <area>209,0,381,57</area>
                         <align>left,vcenter</align>
                         <font>basemediumlargeryellow</font>
+                        <value>Resolution Unknown</value>
+                        <template>Resolution %RESOLUTION%</template>
                     </textarea>
                     <textarea name="url">
-                        <area>174,64,414,20</area>
+                        <area>209,57,381,57</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmallyellow</font>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>586,-5</position>
+                <position>562,595</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>586,588</position>
+                <position>582,595</position>
             </statetype>
         </buttonlist>
     </window>

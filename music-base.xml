@@ -283,11 +283,11 @@
     <group name="base_play_list_panel">
 
         <shape name="play-list-panel-backdrop" from="base_backdrop">
-            <area>20,0,1240,128</area>
+            <area>20,0,1240,148</area>
         </shape>
 
         <shape name="play-list-panel-backdrop-line" from="base_backdrop_line">
-            <area>21,1,1238,126</area>
+            <area>21,1,1238,146</area>
         </shape>
 
         <shape name="play-list-panel-top-line" from="base_highlight_line">
@@ -295,32 +295,38 @@
         </shape>
 
         <shape name="play-list-panel-bottom-line" from="base_highlight_line">
-            <area>21,124,1238,2</area>
+            <area>21,144,1238,2</area>
         </shape>
 
         <shape name="play-list-panel-left-line" from="base_highlight_vertical_line">
-            <area>22,4,2,120</area>
+            <area>22,4,2,140</area>
         </shape>
 
         <shape name="play-list-panel-right-line" from="base_highlight_vertical_line">
-            <area>1256,4,2,120</area>
+            <area>1256,4,2,140</area>
         </shape>
 
-        <buttonlist name="currentplaylist" from="base_list_state">
-            <area>30,12,1220,104</area>
-            <buttonarea>0,0,1220,104</buttonarea>
+        <shape name="play-list-panel-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,148,50,12</area>
+        </shape>
+
+        <buttonlist name="currentplaylist" from="base_list_state_large_selector">
+            <area>28,8,1224,134</area>
+            <searchposition>-1,84</searchposition>
+            <scrollstyle>center</scrollstyle>
+            <buttonarea>0,0,1224,134</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,36</area>
+                    <area>0,0,100%,30</area>
                     <imagetype name="buttonimage">
-                        <area>15,2,32,32</area>
+                        <area>15,1,28,28</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <statetype name="playstate">
                         <state name="playing">
                             <area>0,0,100%,100%</area>
                             <textarea name="playing" from="basetextarea">
-                                <area>57,8,90,20</area>
+                                <area>58,0,70,30</area>
                                 <font>basesupersmallgreen</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -331,7 +337,7 @@
                         <state name="paused">
                             <area>0,0,100%,100%</area>
                             <textarea name="paused" from="basetextarea">
-                                <area>57,8,90,20</area>
+                                <area>58,0,70,30</area>
                                 <font>basesupersmallyellow</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -342,7 +348,7 @@
                         <state name="stopped">
                             <area>0,0,100%,100%</area>
                             <textarea name="stopped" from="basetextarea">
-                                <area>57,8,90,20</area>
+                                <area>58,0,70,30</area>
                                 <font>basesupersmallred</font>
                                 <cutdown>no</cutdown>
                                 <align>allcenter</align>
@@ -352,28 +358,74 @@
                         </state>
                     </statetype>
                     <textarea name="title" from="buttontext">
-                        <area>157,0,1048,36</area>
+                        <area>143,0,1066,30</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                    <area>0,0,100%,100%</area>
-                </shape>
+                <state name="selectedactive">
+                    <area>0,0,1224,64</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>15,5,54,54</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
+                    <statetype name="playstate">
+                        <state name="playing">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="playing" from="basetextarea">
+                                <area>79,0,70,64</area>
+                                <font>basesupersmallgreen</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PLAYING</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="paused">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="paused" from="basetextarea">
+                                <area>79,0,70,64</area>
+                                <font>basesupersmallyellow</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>PAUSED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                        <state name="stopped">
+                            <area>0,0,100%,100%</area>
+                            <textarea name="stopped" from="basetextarea">
+                                <area>79,0,70,64</area>
+                                <font>basesupersmallred</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>STOPPED</value>
+                                <alphapulse min="130" max="255" change="2"/>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="title" from="buttontext">
+                        <area>159,0,1050,64</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
+                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                    </textarea>
                 </state>
-                <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                <state name="selectedinactive" from="selectedactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
                     <area>0,0,100%,100%</area>
                 </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1160,185</position>
+                <position>1186,141</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,185</position>
+                <position>1206,141</position>
             </statetype>
         </buttonlist>
 
@@ -481,14 +533,14 @@
     </group>
 
     <group name="base_info_panel">
-        <area>0,445,1280,240</area>
+        <area>0,445,1280,179</area>
 
         <shape name="info-panel-backdrop" from="base_backdrop">
-            <area>20,0,1240,240</area>
+            <area>20,0,1240,179</area>
         </shape>
 
         <shape name="info-panel-backdrop-line" from="base_backdrop_line">
-            <area>21,1,1238,238</area>
+            <area>21,1,1238,177</area>
         </shape>
 
         <shape name="info-panel-top-line" from="base_highlight_line">
@@ -496,92 +548,218 @@
         </shape>
 
         <shape name="info-panel-bottom-line" from="base_highlight_line">
-            <area>20,236,1238,2</area>
+            <area>20,175,1238,2</area>
         </shape>
 
         <shape name="info-panel-left-line" from="base_highlight_vertical_line">
-            <area>22,4,2,232</area>
+            <area>22,4,2,171</area>
         </shape>
 
         <shape name="info-panel-right-line" from="base_highlight_vertical_line">
-            <area>1256,4,2,232</area>
+            <area>1256,4,2,171</area>
         </shape>
 
         <shape name="info-panel-horizontal-seperator-first-line" from="base_line">
-            <area>228,180,824,2</area>
+            <area>170,135,940,2</area>
         </shape>
 
-        <imagetype name="mm_blackhole_border">
-            <filename>mythmusic/mm_blackhole_border.png</filename>
-            <area>32,11,171,171</area>
-        </imagetype>
+        <shape name="mm-blackhole-border">
+            <area>37,17,120,120</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
 
         <imagetype name="coverart">
-            <filename>mythmusic/mm_nothumb.png</filename>
-            <area>35,15,165,164</area>
+            <filename>mythmusic/mm_no_coverart.png</filename>
+            <mask>mythmusic/mm_coverart_mask.png</mask>
+            <area>41,21,112,112</area>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>230,9,900,34</area>
-            <font>baselargeyellow</font>
+            <area>171,18,938,24</area>
+            <font>basesmallyellow</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>230,49,900,34</area>
-            <font>basemedium</font>
+            <area>171,42,938,23</area>
+            <font>baseevensmaller</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>230,83,900,34</area>
-            <font>basemediumblue</font>
+            <area>171,65,938,23</area>
+            <font>baseevensmaller</font>
         </textarea>
 
-        <statetype name="ratingstate" from="baseratingstate">
-            <position>230,119</position>
+        <statetype name="ratingstate" from="base_rating_state">
+            <position>171,88</position>
         </statetype>
 
         <textarea name="nexttitle" from="basetextarea">
-            <font>basesmallblue</font>
-            <area>230,149,840,35</area>
+            <font>basesmallerblue</font>
+            <area>171,111,938,24</area>
             <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
         </textarea>
 
-        <imagetype name="visualizer_border">
-            <filename>mythmusic/mm_blackhole_border.png</filename>
-            <area>1077,11,171,171</area>
-        </imagetype>
+        <shape name="visualizer-border">
+            <area>1123,17,120,120</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
 
         <video name="visualizer">
-            <area>1080,15,165,164</area>
+            <area>1127,21,112,112</area>
         </video>
 
         <textarea name="visualizername" from="basetextarea">
-            <area>1080,182,164,54</area>
-            <font>basesmall</font>
+            <area>1124,138,118,37</area>
+            <font>baseevensmaller</font>
             <align>allcenter</align>
         </textarea>
 
         <group name="musiccontrols" from="base_music_controls">
-            <position>535,190</position>
+            <position>535,140</position>
         </group>
 
         <statetype name="mutestate" from="base_mute_state">
-            <position>30,198</position>
+            <position>44,146</position>
         </statetype>
 
         <textarea name="volume" from="base_volume">
-            <position>70,182</position>
+            <position>94,130</position>
         </textarea>
 
         <progressbar name="progress" from="baseprogressbar">
-            <position>372,220</position>
+            <position>372,162</position>
         </progressbar>
 
         <textarea name="time" from="basetextarea">
-            <area>918,219,185,14</area>
+            <area>918,161,185,14</area>
             <font>basesupersmallyellow</font>
         </textarea>
 
+    </group>
+
+    <group name="base_info_panel_medium">
+        <area>0,578,1280,107</area>
+
+        <shape name="info-panel-medium-backdrop" from="base_backdrop">
+            <area>20,0,1240,107</area>
+        </shape>
+
+        <shape name="info-panel-medium-album-art-backdrop-line" from="base_backdrop_line">
+            <area>21,1,105,105</area>
+        </shape>
+
+        <shape name="info-panel-medium-album-art-top-line" from="base_highlight_line">
+            <area>22,2,103,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-album-art-bottom-line" from="base_highlight_line">
+            <area>22,103,103,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-album-art-left-line" from="base_highlight_vertical_line">
+            <area>22,4,2,99</area>
+        </shape>
+
+        <shape name="info-panel-medium-album-art-right-line" from="base_highlight_vertical_line">
+            <area>123,4,2,99</area>
+        </shape>
+
+        <shape name="info-panel-medium-backdrop-line" from="base_backdrop_line">
+            <area>130,1,1020,105</area>
+        </shape>
+
+        <shape name="info-panel-medium-top-line" from="base_highlight_line">
+            <area>131,2,1018,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-bottom-line" from="base_highlight_line">
+            <area>131,103,1018,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-left-line" from="base_highlight_vertical_line">
+            <area>131,4,2,99</area>
+        </shape>
+
+        <shape name="info-panel-medium-right-line" from="base_highlight_vertical_line">
+            <area>1147,4,2,99</area>
+        </shape>
+
+        <shape name="info-panel-medium-horizontal-seperator-first-line" from="base_line">
+            <area>145,63,989,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-visualizer-backdrop-line" from="base_backdrop_line">
+            <area>1154,1,105,105</area>
+        </shape>
+
+        <shape name="info-panel-medium-visualizer-top-line" from="base_highlight_line">
+            <area>1155,2,103,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-visualizer-bottom-line" from="base_highlight_line">
+            <area>1155,103,103,2</area>
+        </shape>
+
+        <shape name="info-panel-medium-visualizer-left-line" from="base_highlight_vertical_line">
+            <area>1155,4,2,99</area>
+        </shape>
+
+        <shape name="info-panel-medium-visualizer-right-line" from="base_highlight_vertical_line">
+            <area>1256,4,2,99</area>
+        </shape>
+
+        <imagetype name="coverart">
+            <filename>mythmusic/mm_no_coverart.png</filename>
+            <mask>mythmusic/mm_info_panel_medium_coverart_mask.png</mask>
+            <area>25,5,97,97</area>
+        </imagetype>
+
+        <textarea name="title" from="basetextarea">
+            <area>146,7,987,28</area>
+            <font>basesmaller</font>
+            <template>%TITLE% - %ARTIST% - %ALBUM%</template>
+        </textarea>
+
+        <statetype name="ratingstate" from="base_rating_state">
+            <position>146,36</position>
+        </statetype>
+
+        <textarea name="nexttitle" from="basetextarea">
+            <font>basesmallerblue</font>
+            <area>370,36,763,26</area>
+            <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
+        </textarea>
+
+        <statetype name="mutestate" from="base_mute_state">
+            <position>146,73</position>
+        </statetype>
+
+        <textarea name="volume" from="base_volume">
+            <position>190,57</position>
+        </textarea>
+
+        <group name="musiccontrols" from="base_music_controls">
+            <position>535,68</position>
+        </group>
+
+        <progressbar name="progress" from="baseprogressbar">
+            <position>372,90</position>
+        </progressbar>
+
+        <textarea name="time" from="basetextarea">
+            <area>918,89,185,14</area>
+            <font>basesupersmallyellow</font>
+        </textarea>
+
+        <video name="visualizer">
+            <area>1158,5,97,97</area>
+        </video>
     </group>
 
 </mythuitheme>

@@ -137,8 +137,16 @@
             <area>1256,90,2,591</area>
         </shape>
 
+        <shape name="bookmark-label-selectbar" from="base_select_bar_active">
+            <area>28,94,1224,33</area>
+        </shape>
+
         <shape name="bookmark-seperator-first-line" from="base_line">
-            <area>42,118,1196,2</area>
+            <area>42,131,1196,2</area>
+        </shape>
+
+        <shape name="bookmark-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,684,50,11</area>
         </shape>
 
         <buttonlist name="grouplist">
@@ -185,69 +193,57 @@
 
         <textarea name="namelabel" from="basetextarea">
             <font>basesmalleryellow</font>
-            <area>30,90,610,30</area>
+            <area>30,90,610,41</area>
             <align>allcenter</align>
             <value>Website Name</value>
         </textarea>
 
         <textarea name="urllabel" from="basetextarea">
             <font>basesmalleryellow</font>
-            <area>610,90,610,30</area>
+            <area>610,90,610,41</area>
             <align>allcenter</align>
             <value>Website URL</value>
         </textarea>
 
         <buttonlist name="bookmarklist" from="base_list">
-            <area>30,130,1220,558</area>
+            <area>28,137,1224,542</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,38</area>
+                    <area>0,0,1224,30</area>
                     <statetype name="buttoncheck">
-                        <position>8,9</position>
+                        <position>8,5</position>
                     </statetype>
                     <textarea name="name" from="buttontext">
-                        <area>36,0,569,38</area>
+                        <area>36,0,569,30</area>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>615,0,597,38</area>
+                        <area>615,0,801,30</area>
                         <align>vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,38</area>
+                    <area>0,0,1224,64</area>
                     <statetype name="buttoncheck">
-                        <position>8,9</position>
+                        <position>8,22</position>
                     </statetype>
                     <textarea name="name" from="buttontext">
-                        <area>36,0,569,38</area>
+                        <area>36,0,569,64</area>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="url" from="name">
-                        <area>615,0,597,38</area>
+                        <area>615,0,601,64</area>
                         <align>vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedinactive">
-                    <area>0,0,1220,38</area>
-                    <statetype name="buttoncheck">
-                        <position>8,9</position>
-                    </statetype>
-                    <textarea name="name" from="buttontext">
-                        <area>36,0,569,38</area>
-                        <align>vcenter</align>
-                    </textarea>
-                    <textarea name="url" from="name">
-                        <area>615,0,597,38</area>
-                        <align>vcenter</align>
-                    </textarea>
-                </state>
+                <state name="selectedinactive" from="active" />
+                    <area>0,0,1220,64</area>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1209,-8</position>
+                <position>1186,549</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1209,542</position>
+                <position>1206,549</position>
             </statetype>
         </buttonlist>
 
