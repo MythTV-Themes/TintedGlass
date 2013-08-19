@@ -2393,90 +2393,97 @@
             <area>1236,4,2,641</area>
         </shape>
 
+        <shape name="metadata-results-selectbar" from="base_select_bar_active">
+            <area>8,8,1224,35</area>
+        </shape>
+
         <shape name="metadata-results-seperator-first-line" from="base_line">
-            <area>21,37,1198,2</area>
+            <area>21,47,1198,2</area>
+        </shape>
+
+        <shape name="metadata-results-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1187,649,50,10</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>3,4,1234,33</area>
-            <font>basesmalleryellow</font>
+            <area>8,4,1224,43</area>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
             <value>Metadata Results</value>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>10,43,1220,600</area>
+            <area>8,53,1224,590</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,51</area>
-                    <shape name="bottom_line" from="base_list_line">
-                        <area>2%,98%,98%,1</area>
-                    </shape>
+                    <area>0,0,1224,56</area>
                     <imagetype name="buttonimage">
-                        <area>8,4,58,43</area>
+                        <area>10,2,35,52</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
+                        <filename>images/no_coverart.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>76,0,1136,30</area>
+                        <area>55,0,1159,30</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>76,28,759,21</area>
+                        <area>55,30,789,22</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>845,29,360,18</area>
+                        <area>854,30,360,20</area>
                         <font>baseevensmalleryellow</font>
                         <align>right,bottom</align>
                         <template>Released %1</template>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,204</area>
+                    <area>0,0,1224,228</area>
                     <imagetype name="buttonimage">
-                        <area>8,6,128,192</area>
+                        <area>10,4,147,220</area>
                         <preserveaspect>true</preserveaspect>
+                        <filename>images/no_coverart.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>146,0,1066,30</area>
+                        <area>167,5,1047,30</area>
                         <font>basesmallyellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="subtitle">
-                        <area>146,32,1066,24</area>
+                        <area>167,36,1047,24</area>
                         <font>basesmaller</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="description">
-                        <area>146,61,1066,100</area>
+                        <area>167,64,1047,100</area>
                         <multiline>yes</multiline>
                         <font>baseevensmaller</font>
                         <align>vcenter,left</align>
                     </textarea>
                     <textarea name="filename">
-                        <area>146,159,1066,20</area>
+                        <area>167,170,1047,22</area>
                         <multiline>no</multiline>
                         <font>baseevensmalleryellow</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="userrating">
-                        <area>146,179,556,20</area>
+                        <area>167,199,537,22</area>
                         <multiline>no</multiline>
                         <font>baseevensmalleryellow</font>
                         <align>left,vcenter</align>
                         <template>User Rating: %1</template>
                     </textarea>
                     <textarea name="releasedate">
-                        <area>712,179,500,20</area>
+                        <area>714,199,500,22</area>
                         <font>baseevensmalleryellow</font>
                         <align>right,vcenter</align>
                         <template>Released %1</template>
@@ -2485,10 +2492,10 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-5</position>
+                <position>1186,597</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,594</position>
+                <position>1206,597</position>
             </statetype>
         </buttonlist>
     </window>
