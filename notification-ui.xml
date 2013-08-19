@@ -197,6 +197,14 @@
                     <area>18,18,144,144</area>
                 </imagetype>
             </state>
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imagebusy">
+                    <filename>images/busy.png</filename>
+                    <mask>images/masks/notification_image_mask.png</mask>
+                    <area>18,18,144,144</area>
+                </imagetype>
+            </state>
         </statetype>
         
         <imagetype name="image" depends="!mediastate&amp;!errorstate">
@@ -310,6 +318,14 @@
                 <area>0,0,100%,100%</area>
                 <imagetype name="imageerror">
                     <filename>images/warning_fullscreen.png</filename>
+                    <area>0,0,100%,100%</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+            </state>
+            <state name="busy">
+                <area>0,0,100%,100%</area>
+                <imagetype name="imagebusy">
+                    <filename>images/busy_fullscreen.png</filename>
                     <area>0,0,100%,100%</area>
                     <preserveaspect>true</preserveaspect>
                 </imagetype>
