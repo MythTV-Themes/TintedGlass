@@ -2489,7 +2489,11 @@
                         <template>Released %1</template>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1186,597</position>
@@ -2541,67 +2545,82 @@
             <area>612,4,2,641</area>
         </shape>
 
+        <shape name="artwork-selectbar" from="base_select_bar_active">
+            <area>8,8,600,37</area>
+        </shape>
+
         <shape name="artwork-seperator-first-line" from="base_line">
-            <area>18,45,580,2</area>
+            <area>18,49,580,2</area>
+        </shape>
+
+        <shape name="artwork-arrows-backdrop" from="base_arrows_backdrop">
+            <area>563,649,50,10</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>10,4,596,41</area>
+            <area>18,4,580,45</area>
             <value>Artwork Results</value>
-            <font>basesmalleryellow</font>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="results" from="base_list_large_selector">
-            <area>10,51,596,600</area>
+            <area>8,55,600,588</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,596,100</area>
-                    <shape name="bottom_line" from="base_list_line">
-                        <area>2%,98%,98%,1</area>
-                    </shape>
+                    <area>0,0,600,114</area>
                     <imagetype name="buttonimage">
-                        <area>30,12,134,76</area>
+                        <area>10,4,189,106</area>
                         <alpha>200</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>174,0,392,56</area>
+                        <area>209,0,381,57</area>
                         <align>left,vcenter</align>
                         <font>basemediumlarger</font>
+                        <value>Resolution Unknown</value>
+                        <template>Resolution %RESOLUTION%</template>
                     </textarea>
                     <textarea name="url">
-                        <area>174,64,392,20</area>
+                        <area>209,57,381,57</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmall</font>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,596,100</area>
+                    <area>0,0,600,114</area>
                     <imagetype name="buttonimage">
-                        <area>8,5,156,88</area>
+                        <area>10,4,189,106</area>
                         <alpha>255</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>174,0,414,56</area>
+                        <area>209,0,381,57</area>
                         <align>left,vcenter</align>
                         <font>basemediumlargeryellow</font>
+                        <value>Resolution Unknown</value>
+                        <template>Resolution %RESOLUTION%</template>
                     </textarea>
                     <textarea name="url">
-                        <area>174,64,414,20</area>
+                        <area>209,57,381,57</area>
                         <align>left,vcenter</align>
                         <font>baseextrasmallyellow</font>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>586,-5</position>
+                <position>562,595</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>586,588</position>
+                <position>582,595</position>
             </statetype>
         </buttonlist>
     </window>
