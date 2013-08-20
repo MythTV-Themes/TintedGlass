@@ -942,7 +942,7 @@
     </window>
 
     <window name="iconhelp">
-        <area>-1,-1,700,500</area>
+        <area>-1,-1,700,454</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -959,11 +959,11 @@
         </animation>
 
         <shape name="icon-help-backdrop" from="base_popup_backdrop">
-            <area>0,0,700,488</area>
+            <area>0,0,700,454</area>
         </shape>
 
         <shape name="icon-help-backdrop-line" from="base_backdrop_line">
-            <area>1,1,698,486</area>
+            <area>1,1,698,452</area>
         </shape>
 
         <shape name="icon-help-top-line" from="base_highlight_line">
@@ -971,27 +971,31 @@
         </shape>
 
         <shape name="icon-help-bottom-line" from="base_highlight_line">
-            <area>2,484,696,2</area>
+            <area>2,450,696,2</area>
         </shape>
 
         <shape name="icon-help-left-line" from="base_highlight_vertical_line">
-            <area>2,4,2,480</area>
+            <area>2,4,2,446</area>
         </shape>
 
         <shape name="icon-help-right-line" from="base_highlight_vertical_line">
-            <area>696,4,2,480</area>
+            <area>696,4,2,446</area>
+        </shape>
+
+        <shape name="icon-help-selectbar" from="base_select_bar_active">
+            <area>8,8,684,24</area>
         </shape>
 
         <shape name="icon-help-seperator-first-line" from="base_line">
             <area>24,36,652,2</area>
         </shape>
 
-        <shape name="icon-help-seperator-second-line" from="base_line">
-            <area>24,450,652,2</area>
+        <shape name="icon-help-arrows-backdrop" from="base_arrows_backdrop">
+            <area>647,454,50,10</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>0,4,700,32</area>
+            <area>16,4,668,32</area>
             <value>Status Icon Help</value>
             <font>basesmallyellow</font>
             <align>allcenter</align>
@@ -1329,10 +1333,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>631,422</position>
+                <position>646,412</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>651,422</position>
+                <position>666,412</position>
             </statetype>
         </buttonlist>
     </window>
