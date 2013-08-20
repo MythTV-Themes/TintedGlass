@@ -441,7 +441,7 @@
         </shape>
 
         <shape name="manage-sites-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1207,456,50,10</area>
+            <area>1207,456,50,11</area>
         </shape>
 
         <shape name="manage-rss-bottom-backdrop" from="base_backdrop">
