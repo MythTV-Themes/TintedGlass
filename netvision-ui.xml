@@ -328,47 +328,59 @@
             <area>1001,40,2,641</area>
         </shape>
 
+        <shape name="manage-sites-selectbar" from="base_select_bar_active">
+            <area>283,44,714,51</area>
+        </shape>
+
         <shape name="manage-sites-seperator-first-line" from="base_line">
-            <area>298,69,684,2</area>
+            <area>298,99,684,2</area>
+        </shape>
+
+        <shape name="manage-sites-arrows-backdrop" from="base_arrows_backdrop">
+            <area>952,685,50,10</area>
         </shape>
 
         <textarea name="grabbers_label" from="basetextarea">
-            <area>298,46,684,23</area>
-            <font>baseextrasmallyellow</font>
+            <area>291,40,698,59</area>
+            <font>basemediumyellow</font>
             <align>allcenter</align>
             <value>Netvision Site Grabbers</value>
         </textarea>
 
         <buttonlist name="grabbers" from="base_list">
-            <area>285,74,710,610</area>
+            <area>283,105,714,574</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,710,34</area>
+                    <area>0,0,714,32</area>
                     <textarea name="buttontext">
-                        <area>8,0,666,34</area>
+                        <area>8,0,666,32</area>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>682,7</position>
+                        <position>686,6</position>
                     </statetype>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,710,34</area>
+                    <area>0,0,714,68</area>
                     <textarea name="buttontext">
-                        <area>8,0,666,34</area>
+                        <area>8,0,670,68</area>
                         <align>left,vcenter</align>
                     </textarea>
                     <statetype name="buttoncheck">
-                        <position>682,7</position>
+                        <position>686,24</position>
                     </statetype>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>700,-6</position>
+                <position>676,581</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>700,601</position>
+                <position>696,581</position>
             </statetype>
         </buttonlist>
 
@@ -730,11 +742,11 @@
         </shape>
 
         <shape name="netvision-list-sites-arrows-backdrop" from="base_arrows_backdrop">
-            <area>580,320,50,11</area>
+            <area>580,319,50,12</area>
         </shape>
 
         <shape name="netvision-list-videos-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1207,320,50,11</area>
+            <area>1207,319,50,12</area>
         </shape>
 
         <shape name="netvision-list-bottom-backdrop" from="base_backdrop">
