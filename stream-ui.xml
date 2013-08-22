@@ -550,39 +550,47 @@
         </textarea>
 
         <shape name="search-stream-backdrop" from="base_backdrop">
-            <area>215,36,850,213</area>
+            <area>20,36,1240,219</area>
         </shape>
 
         <shape name="search-stream-backdrop-line" from="base_backdrop_line">
-            <area>216,37,848,211</area>
+            <area>21,37,1238,217</area>
         </shape>
 
         <shape name="search-stream-top-line" from="base_highlight_line">
-            <area>217,38,846,2</area>
+            <area>21,38,1238,2</area>
         </shape>
 
         <shape name="search-stream-bottom-line" from="base_highlight_line">
-            <area>217,245,846,2</area>
+            <area>21,251,1238,2</area>
         </shape>
 
         <shape name="search-stream-left-line" from="base_highlight_vertical_line">
-            <area>217,40,2,211</area>
+            <area>22,40,2,211</area>
         </shape>
 
         <shape name="search-stream-right-line" from="base_highlight_vertical_line">
-            <area>1061,40,2,211</area>
+            <area>1256,40,2,211</area>
+        </shape>
+
+        <shape name="stream-search-image-border">
+            <area>37,53,247,185</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
         </shape>
 
         <shape name="stream-list-backdrop" from="base_backdrop">
-            <area>20,259,1240,426</area>
+            <area>20,265,1240,420</area>
         </shape>
 
         <shape name="stream-list-backdrop-line" from="base_backdrop_line">
-            <area>21,260,1238,424</area>
+            <area>21,266,1238,418</area>
         </shape>
 
         <shape name="stream-list-top-line" from="base_highlight_line">
-            <area>22,261,1236,2</area>
+            <area>22,267,1236,2</area>
         </shape>
 
         <shape name="stream-list-bottom-line" from="base_highlight_line">
@@ -590,22 +598,33 @@
         </shape>
 
         <shape name="stream-list-left-line" from="base_highlight_vertical_line">
-            <area>22,263,2,422</area>
+            <area>22,269,2,412</area>
         </shape>
 
         <shape name="stream-list-right-line" from="base_highlight_vertical_line">
-            <area>1256,263,2,422</area>
+            <area>1256,269,2,412</area>
         </shape>
 
+        <shape name="stream-list-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,685,50,10</area>
+        </shape>
+
+        <imagetype name="stream-search-image">
+            <area>41,57,239,177</area>
+            <filename>images/stream_search_image.png</filename>
+            <mask>images/masks/stream_search_image_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
         <textarea name="stationlabel" >
-            <area>214,61,250,40</area>
+            <area>214,64,250,40</area>
             <font>basemedium</font>
             <align>right,vcenter</align>
             <value>Station:</value>
         </textarea>
 
         <buttonlist name="stationlist" from="base_selector">
-            <area>470,61,376,40</area>
+            <area>470,64,376,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,376,40</area>
@@ -630,56 +649,61 @@
         </buttonlist>
 
         <textarea name="genrelabel" from="stationlabel">
-            <position>214,122</position>
+            <position>214,125</position>
             <value>Genre:</value>
         </textarea>
 
         <buttonlist name="genrelist" from="stationlist">
-            <position>470,122</position>
+            <position>470,125</position>
         </buttonlist>
 
         <textarea name="channellabel" from="stationlabel">
-            <position>214,183</position>
+            <position>214,186</position>
             <value>Channel:</value>
         </textarea>
 
         <textedit name="channeledit" from="base_textedit">
-            <area>470,183,376,40</area>
+            <area>470,186,376,40</area>
             <textarea name="text">
                 <area>18,0,95%,100%</area>
             </textarea>
         </textedit>
 
-        <textarea name="matcheslable" from="stationlabel">
-            <area>820,183,150,40</area>
-            <align>right,vcenter</align>
-            <value>Matches:</value>
-        </textarea>
-
-        <textarea name="matchestext" from="stationlabel">
-            <area>990,183,150,40</area>
-            <align>left,vcenter</align>
+        <textarea name="matchestext">
+            <area>871,40,375,211</area>
+            <font>basemediumblue</font>
+            <align>allcenter</align>
+            <template>Matches: %1</template>
         </textarea>
 
         <buttonlist name="streamlist" from="base_list">
-            <area>30,273,1220,400</area>
-            <searchposition>-1,50</searchposition>
-            <buttonarea>0,0,1220,400</buttonarea>
+            <area>28,273,1224,406</area>
+            <searchposition>-1,40</searchposition>
+            <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,46</area>
+                    <area>0,0,100%,30</area>
+                    <imagetype name="no_buttonimage">
+                        <area>15,1,28,28</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
                     <imagetype name="buttonimage">
-                        <area>15,5,36,36</area>
+                        <area>15,1,28,28</area>
                         <filename>mythmusic/mm_icecast.png</filename>
                     </imagetype>
                     <textarea name="station" from="buttontext">
-                        <area>60,0,580,46</area>
+                        <area>58,0,548,30</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                         <template>%STATION% - %Channel%</template>
                     </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>621,0,548,30</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
                     <statetype name="selectedstate">
-                        <position>646,11</position>
+                        <position>1184,2</position>
                         <state name="off"></state>
                         <state name="on">
                             <imagetype name="statusimage">
@@ -687,32 +711,51 @@
                             </imagetype>
                         </state>
                     </statetype>
-                    <textarea name="genre" from="buttontext">
-                        <area>669,0,541,46</area>
-                        <font>basesmall</font>
-                        <align>left,vcenter</align>
-                    </textarea>
                 </state>
-                <state name="selectedactive" from="active">
+                <state name="selectedactive">
+                    <area>0,0,100%,64</area>
+                    <imagetype name="no_buttonimage">
+                        <area>15,4,56,56</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
                     <imagetype name="buttonimage">
-                        <area>15,5,36,36</area>
+                        <area>15,4,56,56</area>
                         <filename>mythmusic/mm_icecast.png</filename>
                     </imagetype>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
-                        <area>0,0,100%,100%</area>
-                    </shape>
+                    <textarea name="station" from="buttontext">
+                        <area>86,0,534,64</area>
+                        <font>basesmall</font>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
+                        <template>%STATION% - %Channel%</template>
+                    </textarea>
+                    <textarea name="genre" from="buttontext">
+                        <area>635,0,534,64</area>
+                        <font>basesmall</font>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <statetype name="selectedstate">
+                        <position>1184,19</position>
+                        <state name="off"></state>
+                        <state name="on">
+                            <imagetype name="statusimage">
+                                <filename>mythmusic/playlist_yes.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>                    
                 </state>
-                <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1209,-9</position>
+                <position>1186,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1209,399</position>
+                <position>1206,413</position>
             </statetype>
         </buttonlist>
 
