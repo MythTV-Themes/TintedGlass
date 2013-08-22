@@ -792,7 +792,7 @@
         </shape>
 
         <shape name="search-view-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1207,298,50,10</area>
+            <area>1207,298,50,11</area>
         </shape>
 
         <buttonlist name="field_list" from="base_selector">
