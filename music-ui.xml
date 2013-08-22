@@ -340,7 +340,7 @@
         </group>
 
         <group name="infopanel" from="base_info_panel">
-            <area>0,506,1280,240</area>
+            <position>0,506</position>
         </group>
 
     </window>
@@ -754,91 +754,105 @@
             <value>Search View</value>
         </textarea>
 
+        <shape name="field-list-backdrop" from="base_backdrop">
+            <area>0,36,1280,36</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="field-list-top-line" from="base_line">
+            <area>0,37,1280,2</area>
+        </shape>
+
+        <shape name="field-list-bottom-line" from="base_line">
+            <area>0,69,1280,2</area>
+        </shape>
+
         <shape name="search-view-backdrop" from="base_backdrop">
-            <area>20,36,1240,221</area>
+            <area>20,82,1240,216</area>
         </shape>
 
         <shape name="search-view-backdrop-line" from="base_backdrop_line">
-            <area>21,37,1238,219</area>
+            <area>21,83,1238,214</area>
         </shape>
 
         <shape name="search-view-top-line" from="base_highlight_line">
-            <area>21,38,1238,2</area>
+            <area>21,84,1238,2</area>
         </shape>
 
         <shape name="search-view-bottom-line" from="base_highlight_line">
-            <area>21,253,1238,2</area>
+            <area>21,294,1238,2</area>
         </shape>
 
         <shape name="search-view-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,213</area>
+            <area>22,86,2,208</area>
         </shape>
 
         <shape name="search-view-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,213</area>
+            <area>1256,86,2,208</area>
         </shape>
 
-        <shape name="search-view-seperator-first-line" from="base_line">
-            <area>35,80,1210,2</area>
+        <shape name="search-view-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,298,50,10</area>
         </shape>
 
         <buttonlist name="field_list" from="base_selector">
-            <area>30,40,280,40</area>
+            <area>39,39,280,30</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,280,40</area>
+                    <area>0,0,280,30</area>
                     <textarea name="buttontext">
-                        <area>15,8,250,24</area>
+                        <area>15,0,250,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,280,40</area>
+                    <area>0,0,280,30</area>
                     <textarea name="buttontext">
-                        <area>15,8,250,24</area>
+                        <area>15,0,250,30</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>284,2</position>
+                <position>281,6</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>284,21</position>
+                <position>-12,6</position>
             </statetype>
         </buttonlist>
 
         <textedit name="criteria_edit" from="base_wide_textedit">
-            <area>350,44,580,32</area>
+            <area>350,39,580,30</area>
         </textedit>
 
         <textarea name="matcheslable" from="basetextarea">
-            <area>970,40,150,40</area>
+            <area>970,39,150,30</area>
             <align>right,vcenter</align>
             <value>Matches:</value>
         </textarea>
 
         <textarea name="matches_text" from="basetextarea">
-            <area>1130,40,120,40</area>
+            <area>1130,39,120,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="tracks_list" from="base_list">
-            <area>30,92,1220,152</area>
-            <searchposition>-1,267</searchposition>
-            <buttonarea>0,0,1220,152</buttonarea>
+            <area>28,90,1224,202</area>
+            <searchposition>-1,308</searchposition>
+            <buttonarea>0,0,1224,202</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,32</area>
-                    <imagetype name="buttonimage">
-                        <area>15,3,26,26</area>
+                    <area>0,0,1224,30</area>
+                    <!-- Use buttonimage2 buttonimage has a hard coded filename to theme default/mm_nothumb.png -->
+                    <imagetype name="buttonimage2">
+                        <area>15,1,28,28</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="title" from="buttontext">
-                        <area>51,0,1124,32</area>
+                        <area>58,0,1116,30</area>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
                     <statetype name="selectedstate">
-                        <position>1185,3</position>
+                        <position>1189,2</position>
                         <state name="off"></state>
                         <state name="on">
                             <imagetype name="statusimage">
@@ -847,23 +861,35 @@
                         </state>
                     </statetype>
                 </state>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                <state name="selectedactive">
+                    <area>0,0,1224,64</area>
+                    <!-- Use buttonimage2 buttonimage has a hard coded filename to theme default/mm_nothumb.png -->
+                    <imagetype name="buttonimage2">
+                        <area>15,4,56,56</area>
+                        <filename>mythmusic/mm_nothumb.png</filename>
+                    </imagetype>
+                    <textarea name="title" from="buttontext">
+                        <area>86,0,1088,64</area>
+                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                    </textarea>
+                    <statetype name="selectedstate">
+                        <position>1189,19</position>
+                        <state name="off"></state>
+                        <state name="on">
+                            <imagetype name="statusimage">
+                                <filename>mythmusic/playlist_yes.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
-                <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_button_background_disabled">
-                    <area>0,0,100%,100%</area>
-                    <cornerradius>15</cornerradius>
-                </shape>
-                    <textarea name="title">
-                        <font>basesmalllightgrey</font>
-                    </textarea>
-                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-9</position>
+                <position>1186,209</position>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>images/lists_up_arrow.png</filename>
@@ -871,7 +897,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,152</position>
+                <position>1206,209</position>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>images/lists_down_arrow.png</filename>
@@ -881,15 +907,15 @@
         </buttonlist>
 
         <group name="playlistpanel" from="base_play_list_panel">
-            <position>0,267</position>
+            <position>0,308</position>
         </group>
 
         <group name="playliststatusgroup" from="base_play_list_status_group">
-            <position>0,405</position>
+            <position>0,466</position>
         </group>
 
         <group name="infopanel" from="base_info_panel">
-            <area>0,445,1280,240</area>
+            <position>0,506</position>
         </group>
 
     </window>
