@@ -3298,12 +3298,35 @@
         </shape>
 
         <shape name="import-cd-bottom-seperator-first-line" from="base_line">
-            <area>43,352,1194,2</area>
+            <area>37,354,1206,2</area>
         </shape>
 
         <shape name="import-cd-bottom-seperator-second-line" from="base_line">
-            <area>43,634,1194,2</area>
+            <area>37,632,1206,2</area>
         </shape>
+
+        <shape name="import-cd-logo-border">
+            <area>37,53,223,223</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <imagetype name="import-cd-logo-image">
+            <area>41,57,215,215</area>
+            <filename>mythmusic/import_cd_logo.png</filename>
+            <mask>mythmusic/import_cd_logo_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
+
+        <textarea name="help_text">
+            <area>1028,53,215,215</area>
+            <font>basesmallblue</font>
+            <multiline>yes</multiline>
+            <value>Set the quality and then edit the artist,album,genre and year if needed. Then select the tracks below to rip.</value>
+            <align>allcenter</align>
+        </textarea>
 
         <button name="scan" from="base_button">
             <position>565,50</position>
@@ -3407,87 +3430,93 @@
         </button>
 
         <textarea name="track_label" from="basetextarea">
-            <area>38,307,75,45</area>
+            <area>56,307,81,47</area>
             <font>basesmallyellow</font>
             <value>Track</value>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="title_label" from="track_label">
-            <area>139,307,643,45</area>
+            <area>137,307,643,47</area>
             <value>Title</value>
         </textarea>
 
         <textarea name="list_artist_label" from="track_label">
-            <area>802,307,358,45</area>
+            <area>800,307,362,47</area>
             <value>Artist</value>
         </textarea>
 
         <textarea name="length_label" from="track_label">
-            <area>1172,307,74,45</area>
+            <area>1174,307,74,47</area>
             <value>Length</value>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="tracks" from="base_list">
-            <area>30,358,1230,300</area>
+            <area>28,360,1224,270</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1220,32</area>
+                    <area>0,0,100%,30</area>
                     <statetype name="buttoncheck">
-                        <area>8,6,20,20</area>
+                        <area>8,5,20,20</area>
                     </statetype>
                     <textarea name="track" from="buttontext">
-                        <area>46,0,45,32</area>
+                        <area>46,0,45,30</area>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>109,0,643,32</area>
-                        <align>vcenter</align>
+                        <area>109,0,643,30</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="artist" from="buttontext">
-                        <area>772,0,358,32</area>
-                        <align>vcenter</align>
+                        <area>772,0,362,30</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1150,0,62,32</area>
+                        <area>1154,0,62,30</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1220,32</area>
+                    <area>0,0,1224,64</area>
                     <statetype name="buttoncheck">
-                        <area>8,6,20,20</area>
+                        <area>8,22,20,20</area>
                     </statetype>
                     <textarea name="track" from="buttontext">
-                        <area>46,0,45,32</area>
+                        <area>46,0,45,64</area>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>109,0,643,32</area>
-                        <align>vcenter</align>
+                        <area>109,0,643,64</area>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="artist" from="buttontext">
-                        <area>772,0,358,32</area>
-                        <align>vcenter</align>
+                        <area>772,0,362,64</area>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1150,0,62,32</area>
+                        <area>1154,0,62,64</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <area>0,0,100%,100%</area>
+                </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1209,-6</position>
+                <position>1186,293</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1209,271</position>
+                <position>1206,293</position>
             </statetype>
         </buttonlist>
 
         <button name="rip" from="base_button">
-            <position>565,641</position>
+            <position>565,640</position>
             <value>Rip CD</value>
         </button>
 
