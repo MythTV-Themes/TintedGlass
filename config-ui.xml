@@ -170,7 +170,7 @@
         </shape>
 
         <shape name="edit-channels-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1207,428,50,10</area>
+            <area>1207,428,50,11</area>
         </shape>
 
         <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
