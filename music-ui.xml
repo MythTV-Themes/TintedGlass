@@ -842,7 +842,6 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1224,30</area>
-                    <!-- Buttonimage has a hard coded filename to theme default/mm_nothumb.png so this doesn't work. -->
                     <imagetype name="buttonimage">
                         <area>15,1,28,28</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
@@ -863,7 +862,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1224,64</area>
-                    <!-- Buttonimage has a hard coded filename to theme default/mm_nothumb.png so this doesn't work. -->
                     <imagetype name="buttonimage">
                         <area>15,4,56,56</area>
                         <filename>mythmusic/mm_nothumb.png</filename>

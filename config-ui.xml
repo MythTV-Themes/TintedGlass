@@ -54,7 +54,11 @@
         </shape>
 
         <shape name="icon-import-bottom-seperator-first-line" from="base_line">
-            <area>253,190,770,2</area>
+            <area>253,195,770,2</area>
+        </shape>
+
+        <shape name="icon-import-bottom-arrows-backdrop" from="base_arrows_backdrop">
+            <area>987,685,50,10</area>
         </shape>
 
         <textarea name="manuallabel" from="basetextarea">
@@ -79,46 +83,48 @@
         </button>
 
         <textarea name="name" from="basetextarea">
-            <area>246,156,784,34</area>
-            <font>baseextrasmallyellow</font>
+            <area>244,156,788,39</area>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="icons" from="base_list_medium_selector">
-            <area>246,195,784,496</area>
-            <spacing>-2</spacing>
+        <buttonlist name="icons" from="base_list_large_selector">
+            <area>244,201,788,478</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,784,62</area>
+                    <area>0,0,788,36</area>
                     <imagetype name="icon">
-                        <area>18,6,80,50</area>
+                        <area>10,1,45,34</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>106,0,660,62</area>
+                        <area>65,0,713,36</area>
                         <align>allcenter</align>
-                        <multiline>yes</multiline>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,784,62</area>
+                    <area>0,0,788,76</area>
                     <imagetype name="icon">
-                        <area>18,6,80,50</area>
+                        <area>10,4,91,68</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>106,0,660,62</area>
+                        <area>111,0,667,76</area>
                         <align>allcenter</align>
                         <multiline>yes</multiline>
                     </textarea>
                 </state>
-                <state name="selectedinactive" from="active" />
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>773,-1</position>
+                <position>750,485</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>773,475</position>
+                <position>770,485</position>
             </statetype>
         </buttonlist>
 
@@ -265,6 +271,7 @@
         <imagetype name="preview">
             <area>41,459,188,141</area>
             <filename>images/channeloverview_icon.png</filename>
+            <mask>images/masks/channeloverview_icon_mask.png</mask>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
