@@ -140,11 +140,11 @@
         </textarea>
 
         <shape name="edit-channels-top-backdrop" from="base_backdrop">
-            <area>20,36,1240,393</area>
+            <area>20,36,1240,392</area>
         </shape>
 
         <shape name="edit-channels-top-backdrop-line" from="base_backdrop_line">
-            <area>21,37,1238,391</area>
+            <area>21,37,1238,390</area>
         </shape>
 
         <shape name="edit-channels-top-line" from="base_highlight_line">
@@ -152,7 +152,7 @@
         </shape>
 
         <shape name="edit-channels-bottom-line" from="base_highlight_line">
-            <area>22,425,1236,2</area>
+            <area>22,424,1236,2</area>
         </shape>
 
         <shape name="edit-channels-left-line" from="base_highlight_vertical_line">
@@ -163,16 +163,20 @@
             <area>1256,40,2,384</area>
         </shape>
 
+        <shape name="edit-channels-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,428,50,10</area>
+        </shape>
+
         <shape name="edit-channels-bottom-backdrop" from="base_backdrop">
-            <area>20,439,1240,246</area>
+            <area>20,438,1240,247</area>
         </shape>
 
         <shape name="edit-channels-bottom-backdrop-line" from="base_backdrop_line">
-            <area>21,440,1238,244</area>
+            <area>21,439,1238,245</area>
         </shape>
 
         <shape name="edit-channels-bottom-top-line" from="base_highlight_line">
-            <area>22,441,1236,2</area>
+            <area>22,440,1236,2</area>
         </shape>
 
         <shape name="edit-channels-bottom-bottom-line" from="base_highlight_line">
@@ -180,95 +184,99 @@
         </shape>
 
         <shape name="edit-channels-bottom-left-line" from="base_highlight_vertical_line">
-            <area>22,443,2,238</area>
+            <area>22,442,2,239</area>
         </shape>
 
         <shape name="edit-channels-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1256,443,2,238</area>
+            <area>1256,442,2,239</area>
         </shape>
 
         <shape name="edit-channels-bottom-seperator-first-line" from="base_line">
             <area>43,617,1194,2</area>
         </shape>
 
-    <buttonlist name="channels" from="base_list">
-        <area>30,45,1220,396</area>
-        <statetype name="buttonitem">
-            <state name="active">
-                <area>0,0,1220,36</area>
-                <textarea name="channum" from="buttontext">
-                    <area>8,0,70,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <imagetype name="icon">
-                    <area>86,6,36,24</area>
-                    <preserveaspect>true</preserveaspect>
-                </imagetype>
-                <textarea name="name" from="channum">
-                    <area>130,0,774,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <textarea name="sourcename" from="channum">
-                    <area>912,0,300,36</area>
-                    <align>right,vcenter</align>
-                </textarea>
-            </state>
-            <state name="selectedactive">
-                <area>0,0,1220,36</area>
-                <textarea name="channum" from="buttontext">
-                    <area>8,0,70,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <imagetype name="icon">
-                    <area>86,6,36,24</area>
-                    <preserveaspect>true</preserveaspect>
-                </imagetype>
-                <textarea name="name" from="channum">
-                    <area>130,0,774,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <textarea name="sourcename" from="channum">
-                    <area>912,0,300,36</area>
-                    <align>right,vcenter</align>
-                </textarea>
-            </state>
-            <state name="selectedinactive">
-                <area>0,0,1220,34</area>
-                <textarea name="channum" from="buttontext">
-                    <area>8,0,70,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <imagetype name="icon">
-                    <area>86,6,36,24</area>
-                    <preserveaspect>true</preserveaspect>
-                </imagetype>
-                <textarea name="name" from="channum">
-                    <area>130,0,774,36</area>
-                    <align>vcenter</align>
-                </textarea>
-                <textarea name="sourcename" from="channum">
-                    <area>912,0,300,36</area>
-                    <align>right,vcenter</align>
-                </textarea>
-            </state>
-        </statetype>
-        <statetype name="upscrollarrow">
-            <position>1210,-6</position>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <position>1210,373</position>
-        </statetype>
-    </buttonlist>
+        <buttonlist name="channels" from="base_list">
+            <area>28,44,1224,378</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1224,34</area>
+                    <textarea name="channum" from="buttontext">
+                        <area>8,0,70,34</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <imagetype name="icon">
+                        <area>88,1,43,32</area>
+                        <filename>images/channeloverview_icon.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="name" from="channum">
+                        <area>141,0,765,34</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="sourcename" from="channum">
+                        <area>916,0,300,34</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1224,72</area>
+                    <textarea name="channum" from="buttontext">
+                        <area>8,0,70,72</area>
+                        <align>vcenter</align>
+                    </textarea>
+                    <imagetype name="icon">
+                        <area>88,4,85,64</area>
+                        <filename>images/channeloverview_icon.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="name" from="channum">
+                        <area>183,0,723,72</area>
+                        <multiline>yes</multiline>
+                        <align>vcenter</align>
+                    </textarea>
+                    <textarea name="sourcename" from="channum">
+                        <area>916,0,300,72</area>
+                        <multiline>yes</multiline>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1186,385</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1206,385</position>
+            </statetype>
+        </buttonlist>
+
+        <shape name="preview-border">
+            <area>37,455,196,149</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <imagetype name="preview">
+            <area>41,459,188,141</area>
+            <filename>images/channeloverview_icon.png</filename>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
 
         <textarea name="sortlabel" from="basetextarea">
-            <area>245,466,160,30</area>
+            <area>245,465,160,30</area>
             <value>Sort Mode:</value>
             <font>basemedium</font>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="sorting" from="base_selector">
-            <area>415,461,580,40</area>
+            <area>415,460,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -293,26 +301,26 @@
         </buttonlist>
 
         <textarea name="sourcelabel" from="sortlabel">
-            <position>245,521</position>
+            <position>245,520</position>
             <value>Video Source:</value>
         </textarea>
 
         <buttonlist name="source" from="sorting">
-            <area>415,516,580,40</area>
+            <area>415,515,580,40</area>
         </buttonlist>
 
         <button name="delete" from="base_button">
-            <position>1030,518</position>
+            <position>1030,517</position>
             <value>Delete</value>
         </button>
 
         <textarea name="nochannumlabel" from="basetextarea">
-            <area>450,576,500,60</area>
+            <area>450,575,500,60</area>
             <value>Hide Channels without channel number.</value>
         </textarea>
 
         <checkbox name="nochannum" from="base_checkbox">
-            <position>410,573</position>
+            <position>410,572</position>
         </checkbox>
 
         <button name="scan" from="base_medium_button">
