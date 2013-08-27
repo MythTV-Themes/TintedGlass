@@ -1216,6 +1216,7 @@
                                 <area>14,30,53,40</area>
                                 <filename>images/folderclosed.png</filename>
                                 <preserveaspect>yes</preserveaspect>
+                                <alpha>220</alpha>
                             </imagetype>
                         </state>
                         <state name="upfolder">
@@ -1223,6 +1224,7 @@
                                 <area>14,30,53,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
+                                <alpha>220</alpha>
                             </imagetype>
                         </state>
                     </statetype>
@@ -1280,12 +1282,13 @@
                         <filename>images/mv_browse_nocover.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>0,50</position>
+                        <position>3,96</position>
                         <state name="subfolder">
                             <imagetype name="icon">
                                 <area>50,60,53,40</area>
                                 <filename>images/folderopen.png</filename>
                                 <preserveaspect>yes</preserveaspect>
+                                <alpha>220</alpha>
                             </imagetype>
                         </state>
                         <state name="upfolder">
@@ -1293,11 +1296,12 @@
                                 <area>50,60,53,40</area>
                                 <filename>images/mv_gallery_dir_up_open.png</filename>
                                 <preserveaspect>yes</preserveaspect>
+                                <alpha>220</alpha>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>54,128,45,20</area>
+                        <area>57,128,45,112</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
