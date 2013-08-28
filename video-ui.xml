@@ -732,11 +732,12 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,183,275</area>
-                    <shape name="browse-nocover">
-                        <area>8,36,166,250</area>
-                        <type>box</type>
-                        <fill color="#FFFFFF" alpha="0" />
-                        <line color="#FFFFFF" alpha="35" width="2" />
+                    <shape name="no_coverart" depends="!coverart">
+                        <area>3,29,177,265</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
                     </shape>
                     <imagetype name="coverart">
                         <area>0,25,183,275</area>                        
@@ -769,7 +770,7 @@
                     <shape name="center-cover-frame">
                         <area>-5,-5,220,333</area>
                         <type>roundbox</type>
-                        <fill color="#101017" alpha="255" />
+                        <fill color="#0e1216" alpha="255" />
                         <cornerradius>8</cornerradius>
                     </shape>
                     <shape name="center-cover-frame-line">
@@ -807,9 +808,15 @@
                     <shape name="center-cover-frame-right-highlight-line" from="center-cover-frame-left-highlight-line">
                         <area>209,1,4,321</area>
                     </shape>
+                    <shape name="no_coverart" depends="!coverart">
+                        <area>8,8,194,307</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="coverart">
                         <area>4,4,202,315</area>
-                        <filename>images/mv_browse_nocover.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
                         <position>83,176</position>
@@ -1194,16 +1201,12 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,80,125</area>
-                    <shape name="gallery-nocover">
-                        <area>0,0,80,125</area>
-                        <type>box</type>
-                        <fill style="gradient">
-                            <gradient direction="vertical" alpha="130">
-                                <stop position="0" color="#FFFFFF" />
-                                <stop position="100" color="#FFFFFF" alpha="75" />
-                            </gradient>
-                        </fill>
-                        <line color="#FFFFFF" alpha="0" width="2" />
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>2,2,76,121</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,80,125</area>
@@ -1239,7 +1242,7 @@
                     <shape name="buttonbackground">
                         <area>0,-8,160,217</area>
                         <type>roundbox</type>
-                        <fill color="#101017" alpha="255" />
+                        <fill color="#0e1216" alpha="255" />
                         <cornerradius>8</cornerradius>
                     </shape>
                     <shape name="buttonbackground-line">
@@ -1277,9 +1280,15 @@
                     <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
                         <area>154,-2,4,205</area>
                     </shape>
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>12,4,136,192</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>10,0,140,200</area>
-                        <filename>images/mv_browse_nocover.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
                         <position>3,96</position>

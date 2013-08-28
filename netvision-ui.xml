@@ -1055,9 +1055,15 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,248,186</area>
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>4,0,240,186</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,248,186</area>
-                        <filename>images/image_gallery_no_image.png</filename>
                         <preserveaspect>yes</preserveaspect>                        
                     </imagetype>
                     <statetype name="nodetype">
@@ -1090,7 +1096,7 @@
                     <shape name="center-cover-frame">
                         <area>0,0,384,288</area>
                         <type>roundbox</type>
-                        <fill color="#101017" alpha="255" />
+                        <fill color="#0e1216" alpha="255" />
                         <cornerradius>8</cornerradius>
                     </shape>
                     <shape name="center-cover-frame-line">
@@ -1128,16 +1134,22 @@
                     <shape name="center-cover-frame-right-highlight-line" from="center-cover-frame-left-highlight-line">
                         <area>378,1,4,321</area>
                     </shape>
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>14,14,356,260</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>8,6,368,276</area>
                         <preserveaspect>yes</preserveaspect>
-                        <filename>images/mv_browse_nocover.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>165,231</position>
+                        <position>159,228</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>0,0,53,40</area>
+                                <area>0,0,66,50</area>
                                 <filename>images/folderopen.png</filename>
                                 <alpha>220</alpha>
                             </imagetype>
@@ -1151,7 +1163,7 @@
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>169,182,45,153</area>
+                        <area>165,249,54,20</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
@@ -1326,10 +1338,16 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,166,125</area>
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>0,0,166,125</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,166,125</area>
                         <preserveaspect>yes</preserveaspect>
-                        <filename>images/image_gallery_no_image.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
                         <position>0,73</position>
@@ -1361,7 +1379,7 @@
                     <shape name="buttonbackground">
                         <area>-10,-9,236,180</area>
                         <type>roundbox</type>
-                        <fill color="#101017" alpha="255" />
+                        <fill color="#0e1216" alpha="255" />
                         <cornerradius>8</cornerradius>
                     </shape>
                     <shape name="buttonbackground-line">
@@ -1399,16 +1417,22 @@
                     <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
                         <area>220,-5,4,172</area>
                     </shape>
+                    <shape name="no_buttonimage" depends="!buttonimage">
+                        <area>4,4,208,154</area>
+                        <type>roundbox</type>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
                     <imagetype name="buttonimage">
                         <area>0,0,216,162</area>
                         <preserveaspect>yes</preserveaspect>
-                        <filename>images/image_gallery_no_image.png</filename>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>0,78</position>
+                        <position>75,112</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>82,38,53,40</area>
+                                <area>0,0,66,50</area>
                                 <filename>images/folderopen.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
@@ -1416,7 +1440,7 @@
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>82,38,53,40</area>
+                                <area>0,0,66,50</area>
                                 <filename>images/mv_gallery_dir_up_open.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
@@ -1424,7 +1448,7 @@
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>88,106,45,75</area>
+                        <area>81,133,54,20</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
