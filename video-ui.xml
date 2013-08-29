@@ -733,7 +733,7 @@
                 <state name="active">
                     <area>0,0,183,275</area>
                     <shape name="no_coverart" depends="!coverart">
-                        <area>3,29,177,265</area>
+                        <area>3,29,177,266</area>
                         <type>roundbox</type>
                         <fill color="#444444" alpha="90" />
                         <line color="#444444" alpha="180" width="0" />
@@ -743,24 +743,22 @@
                         <area>0,25,183,275</area>                        
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>65,172</position>
+                        <position>61,240</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>0,0,53,40</area>
+                                <area>0,0,60,40</area>
                                 <filename>images/folderclosed.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>0,0,53,40</area>
+                                <area>0,0,60,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>69,186,45,20</area>
+                        <area>64,252,54,20</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
@@ -819,22 +817,22 @@
                         <area>4,4,202,315</area>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>83,176</position>
+                        <position>67,246</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>0,0,53,40</area>
+                                <area>0,0,76,50</area>
                                 <filename>images/folderopen.png</filename>
                             </imagetype>
                         </state>
                         <state name="upfolder" from="subfolder">
                             <imagetype name="arrow">
-                                <area>0,0,53,40</area>
+                                <area>0,0,76,50</area>
                                 <filename>images/mv_gallery_dir_up_open.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>87,194,45,20</area>
+                        <area>70,269,70,20</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
@@ -1213,26 +1211,24 @@
                         <alpha>225</alpha>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>0,50</position>
+                        <position>10,76</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>14,30,53,40</area>
+                                <area>0,0,60,40</area>
                                 <filename>images/folderclosed.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>14,30,53,40</area>
+                                <area>0,0,60,40</area>
                                 <filename>images/mv_gallery_dir_up.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>17,93,45,20</area>
+                        <area>13,89,54,20</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
@@ -1291,26 +1287,24 @@
                         <area>10,0,140,200</area>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>3,96</position>
+                        <position>42,135</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>50,60,53,40</area>
+                                <area>0,0,76,50</area>
                                 <filename>images/folderopen.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>50,60,53,40</area>
+                                <area>0,0,76,50</area>
                                 <filename>images/mv_gallery_dir_up_open.png</filename>
-                                <preserveaspect>yes</preserveaspect>
                                 <alpha>220</alpha>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>57,128,45,112</area>
+                        <area>45,114,70,112</area>
                         <font>baseextrasmallyellow</font>
                         <align>allcenter</align>
                     </textarea>
