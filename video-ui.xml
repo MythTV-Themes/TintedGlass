@@ -687,6 +687,14 @@
             <area>0,341,1280,2</area>
         </shape>
 
+        <shape name="video-browse-position-backdrop" from="base_arrows_backdrop">
+            <area>540,369,200,32</area>
+        </shape>
+
+        <shape name="video-browse-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,344,50,22</area>
+        </shape>
+
         <shape name="video-browse-bottom-backdrop" from="base_backdrop">
             <area>20,401,1240,282</area>
         </shape>
@@ -839,25 +847,39 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>22,314</position>
+                <position>1216,305</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_left_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="upon">
-                        <filename>images/lists_left_arrow_large.png</filename>
+                        <filename>images/lists_left_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1240,314</position>
+                <position>1237,305</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_right_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="dnon">
-                        <filename>images/lists_right_arrow_large.png</filename>
+                        <filename>images/lists_right_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
         </buttonlist>
 
         <textarea name="position" from="basetextarea">
-            <area>0,372,1280,30</area>
+            <area>0,369,1280,32</area>
             <align>hcenter,vcenter</align>
             <font>basesmall</font>
         </textarea>
@@ -1155,6 +1177,14 @@
             <area>0,383,1280,2</area>
         </shape>
 
+        <shape name="video-gallery-position-backdrop" from="base_arrows_backdrop">
+            <area>560,386,160,16</area>
+        </shape>
+
+        <shape name="video-gallery-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,386,50,16</area>
+        </shape>
+
         <shape name="video-gallery-bottom-backdrop" from="base_backdrop">
             <area>20,402,1240,283</area>
         </shape>
@@ -1310,10 +1340,40 @@
                     </textarea>
                 </state>
             </statetype>
+            <statetype name="upscrollarrow">
+                <position>1214,302</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1234,302</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
         </buttonlist>
 
         <textarea name="position" from="basetextarea">
-            <area>0,384,1280,22</area>
+            <area>0,386,1280,17</area>
             <font>baseevensmaller</font>
             <align>allcenter</align>
         </textarea>

@@ -1010,6 +1010,10 @@
             <area>0,302,1280,2</area>
         </shape>
 
+        <shape name="netvision-browse-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,304,50,23</area>
+        </shape>
+
         <shape name="netvision-browse-bottom-backdrop" from="base_backdrop">
             <area>20,362,1240,323</area>
         </shape>
@@ -1168,18 +1172,32 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>2,230</position>
+                <position>1196,219</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_left_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="upon">
-                        <filename>images/lists_left_arrow_large.png</filename>
+                        <filename>images/lists_left_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1220,230</position>
+                <position>1217,219</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_right_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="dnon">
-                        <filename>images/lists_right_arrow_large.png</filename>
+                        <filename>images/lists_right_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
@@ -1188,7 +1206,7 @@
         <textarea name="title" from="basetextarea">
             <area>44,366,1192,40</area>
             <cutdown>yes</cutdown>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
@@ -1290,6 +1308,10 @@
 
         <shape name="netvision-gallery-bottom-line" from="base_line">
             <area>0,350,1280,2</area>
+        </shape>
+
+        <shape name="netvision-gallery-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,353,50,11</area>
         </shape>
 
         <shape name="netvision-gallery-bottom-backdrop" from="base_backdrop">
@@ -1449,18 +1471,32 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1166,310</position>
+                <position>1179,289</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="upon">
                         <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1186,310</position>
+                <position>1199,289</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
                 <state type="full">
                     <imagetype name="dnon">
                         <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
                     </imagetype>
                 </state>
             </statetype>
@@ -1469,7 +1505,7 @@
         <textarea name="title" from="basetextarea">
             <area>44,367,1192,40</area>
             <cutdown>yes</cutdown>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
             <align>left,vcenter</align>
         </textarea>
 
