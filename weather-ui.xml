@@ -1092,11 +1092,11 @@
         </textarea>
 
         <shape name="screen-setup-inactive-backdrop" from="base_backdrop">
-            <area>205,36,870,649</area>
+            <area>205,36,870,392</area>
         </shape>
 
         <shape name="screen-setup-inactive-backdrop-line" from="base_backdrop_line">
-            <area>206,37,433,413</area>
+            <area>206,37,433,390</area>
         </shape>
 
         <shape name="screen-setup-inactive-top-line" from="base_highlight_line">
@@ -1104,23 +1104,31 @@
         </shape>
 
         <shape name="screen-setup-inactive-bottom-line" from="base_highlight_line">
-            <area>207,447,431,2</area>
+            <area>207,424,431,2</area>
         </shape>
 
         <shape name="screen-setup-inactive-left-line" from="base_highlight_vertical_line">
-            <area>207,40,2,407</area>
+            <area>207,40,2,384</area>
         </shape>
 
         <shape name="screen-setup-inactive-right-line" from="base_highlight_vertical_line">
-            <area>636,40,2,407</area>
+            <area>636,40,2,384</area>
         </shape>
 
         <shape name="screen-setup-inactive-seperator-first-line" from="base_line">
-            <area>230,70,385,2</area>
+            <area>222,78,401,2</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-selectbar" from="base_select_bar_active">
+            <area>213,44,419,30</area>
+        </shape>
+
+        <shape name="screen-setup-inactive-arrows-backdrop" from="base_arrows_backdrop">
+            <area>586,428,50,10</area>
         </shape>
 
         <shape name="screen-setup-active-backdrop-line" from="base_backdrop_line">
-            <area>641,37,433,413</area>
+            <area>641,37,433,390</area>
         </shape>
 
         <shape name="screen-setup-active-top-line" from="base_highlight_line">
@@ -1128,27 +1136,39 @@
         </shape>
 
         <shape name="screen-setup-active-bottom-line" from="base_highlight_line">
-            <area>642,447,431,2</area>
+            <area>642,424,431,2</area>
         </shape>
 
         <shape name="screen-setup-active-left-line" from="base_highlight_vertical_line">
-            <area>642,40,2,407</area>
+            <area>642,40,2,384</area>
         </shape>
 
         <shape name="screen-setup-active-right-line" from="base_highlight_vertical_line">
-            <area>1071,40,2,407</area>
+            <area>1071,40,2,384</area>
         </shape>
 
         <shape name="screen-setup-active-seperator-first-line" from="base_line">
-            <area>665,70,385,2</area>
+            <area>657,78,401,2</area>
+        </shape>
+
+        <shape name="screen-setup-active-selectbar" from="base_select_bar_active">
+            <area>648,44,419,30</area>
+        </shape>
+
+        <shape name="screen-setup-active-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1021,428,50,10</area>
+        </shape>
+
+        <shape name="screen-setup-bottom-backdrop" from="base_backdrop">
+            <area>205,438,870,247</area>
         </shape>
 
         <shape name="screen-setup-bottom-backdrop-line" from="base_backdrop_line">
-            <area>206,456,868,228</area>
+            <area>206,439,868,245</area>
         </shape>
 
         <shape name="screen-setup-bottom-top-line" from="base_highlight_line">
-            <area>207,457,866,2</area>
+            <area>207,440,866,2</area>
         </shape>
 
         <shape name="screen-setup-bottom-bottom-line" from="base_highlight_line">
@@ -1156,53 +1176,55 @@
         </shape>
 
         <shape name="screen-setup-bottom-left-line" from="base_highlight_vertical_line">
-            <area>207,459,2,222</area>
+            <area>207,442,2,239</area>
         </shape>
 
         <shape name="screen-setup-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1071,459,2,222</area>
+            <area>1071,442,2,239</area>
         </shape>
 
         <shape name="screen-setup-bottom-seperator-first-line" from="base_line">
-            <area>228,608,824,2</area>
+            <area>222,608,849,2</area>
         </shape>
 
         <textarea name="inactivehdr" from="basetextarea">
-            <area>215,40,415,30</area>
-            <font>baseevensmalleryellow</font>
+            <area>215,40,415,38</area>
+            <font>basesmallyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="inactivelist" from="base_list">
-            <area>215,72,415,374</area>
+            <area>213,84,419,338</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,379,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                     <imagetype name="rightarrow" from="buttonarrow">
-                        <position>395,6</position>
+                        <position>399,22</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>406,-4</position>
+                <position>380,345</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>406,369</position>
+                <position>400,345</position>
             </statetype>
         </buttonlist>
 
@@ -1211,40 +1233,42 @@
         </textarea>
 
         <buttonlist name="activelist" from="base_list">
-            <area>650,72,415,374</area>
+            <area>648,84,419,338</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,419,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                    <imagetype name="rightarrow" from="buttonarrow">
-                        <position>395,6</position>
+                        <position>399,22</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,415,33</area>
+                    <area>0,0,419,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,379,24</area>
+                        <area>8,0,383,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>406,-4</position>
+                <position>380,345</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>406,369</position>
+                <position>400,345</position>
             </statetype>
         </buttonlist>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>229,459,822,149</area>
+            <area>223,446,847,158</area>
             <font>basesomewhatsmallerblue</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
