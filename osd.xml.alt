@@ -906,7 +906,7 @@
             <font>supersmallblue</font>
             <area>265,529,952,28</area>
             <align>allcenter</align>
-            <template>Category: %CATEGORY%               PlayBackGroup: %PLAYGROUP%               RecGroup: %RECGROUP%               StorageGroup: %STORAGEGROUP%</template>
+            <template>Category: %CATEGORY%               PlayBackGroup: %PLAYGROUP%               RecGroup: %RECORDINGGROUP%               StorageGroup: %STORAGEGROUP%</template>
         </textarea>
 
         <textarea name="description">
