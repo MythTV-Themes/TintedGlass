@@ -193,6 +193,13 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,214,61</area>
+                    <imagetype name="no_channelicon" depends="!channelicon">
+                        <area>6,7,64,48</area>
+                        <preserveaspect>true</preserveaspect>
+                        <filename>images/no_channel_icon.png</filename>
+                        <mask>images/masks/channelicon_mask.png</mask>
+                        <alpha>200</alpha>
+                    </imagetype>
                     <imagetype name="channelicon">
                         <area>6,7,64,48</area>
                         <preserveaspect>true</preserveaspect>
@@ -246,6 +253,14 @@
                 </state>
             </statetype>
         </buttonlist>
+
+        <imagetype name="no_channelicon" depends="!channelicon">
+            <area>44,475,38,30</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/no_channel_icon.png</filename>
+            <mask>images/masks/channelicon-small-mask.png</mask>
+            <alpha>200</alpha>
+        </imagetype>
 
         <imagetype name="channelicon">
             <area>44,475,38,30</area>
@@ -492,6 +507,13 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,214,61</area>
+                    <imagetype name="no_channelicon" depends="!channelicon">
+                        <area>6,6,64,48</area>
+                        <preserveaspect>true</preserveaspect>
+                        <filename>images/no_channel_icon.png</filename>
+                        <mask>images/masks/channelicon_mask.png</mask>
+                        <alpha>200</alpha>
+                    </imagetype>
                     <imagetype name="channelicon">
                         <area>6,6,64,48</area>
                         <preserveaspect>true</preserveaspect>
@@ -545,6 +567,14 @@
                 </state>
             </statetype>
         </buttonlist>
+
+        <imagetype name="no_channelicon" depends="!channelicon">
+            <area>43,414,38,30</area>
+            <preserveaspect>true</preserveaspect>
+            <filename>images/no_channel_icon.png</filename>
+            <mask>images/masks/channelicon-small-mask.png</mask>
+            <alpha>200</alpha>
+        </imagetype>
 
         <imagetype name="channelicon">
             <area>43,414,38,30</area>
