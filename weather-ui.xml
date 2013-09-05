@@ -9,16 +9,29 @@
             <value>Weather Report</value>
         </textarea>
 
+        <shape name="weather-base-title-backdrop" from="base_backdrop">
+            <area>0,36,1280,40</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="weather-base-title-top-line" from="base_line">
+            <area>0,37,1280,2</area>
+        </shape>
+
+        <shape name="weather-base-title-bottom-line" from="base_line">
+            <area>0,73,1280,2</area>
+        </shape>
+
         <shape name="weather-base-backdrop" from="base_backdrop">
-            <area>20,36,1240,649</area>
+            <area>20,86,1240,599</area>
         </shape>
 
         <shape name="weather-base-backdrop-line" from="base_backdrop_line">
-            <area>21,37,1238,647</area>
+            <area>21,87,1238,597</area>
         </shape>
 
         <shape name="weather-base-top-line" from="base_highlight_line">
-            <area>22,38,1236,2</area>
+            <area>22,88,1236,2</area>
         </shape>
 
         <shape name="weather-base-bottom-line" from="base_highlight_line">
@@ -26,31 +39,27 @@
         </shape>
 
         <shape name="weather-base-left-line" from="base_highlight_vertical_line">
-            <area>22,40,2,641</area>
+            <area>22,90,2,591</area>
         </shape>
 
         <shape name="weather-base-right-line" from="base_highlight_vertical_line">
-            <area>1256,40,2,641</area>
-        </shape>
-
-        <shape name="weather-base-seperator-first-line" from="base_line">
-            <area>43,83,1194,2</area>
+            <area>1256,90,2,591</area>
         </shape>
 
         <textarea name="header" from="basetextarea">
-            <area>44,40,1192,43</area>
-            <font>baselargeyellow</font>
+            <area>44,39,1192,34</area>
+            <font>basemediumyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="pause_text" from="basetextarea">
-            <area>1038,85,195,43</area>
+            <area>1038,90,195,42</area>
             <font>basesmallred</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="update_text" from="basetextarea">
-            <area>44,635,416,46</area>
+            <area>44,639,416,42</area>
             <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
@@ -61,143 +70,144 @@
         <area>0,0,1280,720</area>
 
         <shape name="current-conditions-left-backdrop-line" from="base_backdrop_line">
-            <area>42,127,789,509</area>
+            <area>42,131,789,509</area>
         </shape>
 
         <shape name="current-conditions-left-top-line" from="base_highlight_line">
-            <area>43,128,787,2</area>
+            <area>43,132,787,2</area>
         </shape>
 
         <shape name="current-conditions-left-bottom-line" from="base_highlight_line">
-            <area>43,633,787,2</area>
+            <area>43,637,787,2</area>
         </shape>
 
         <shape name="current-conditions-left-left-line" from="base_highlight_vertical_line">
-            <area>43,130,2,503</area>
+            <area>43,134,2,503</area>
         </shape>
 
         <shape name="current-conditions-left-right-line" from="base_highlight_vertical_line">
-            <area>828,130,2,503</area>
+            <area>828,134,2,503</area>
         </shape>
 
         <shape name="current-conditions-right-backdrop-line" from="base_backdrop_line">
-            <area>844,127,394,509</area>
+            <area>844,131,394,509</area>
         </shape>
 
         <shape name="current-conditions-right-top-line" from="base_highlight_line">
-            <area>845,128,392,2</area>
+            <area>845,132,392,2</area>
         </shape>
 
         <shape name="current-conditions-right-bottom-line" from="base_highlight_line">
-            <area>845,633,392,2</area>
+            <area>845,637,392,2</area>
         </shape>
 
         <shape name="current-conditions-right-left-line" from="base_highlight_vertical_line">
-            <area>845,130,2,503</area>
+            <area>845,134,2,503</area>
         </shape>
 
         <shape name="current-conditions-right-right-line" from="base_highlight_vertical_line">
-            <area>1235,130,2,503</area>
+            <area>1235,134,2,503</area>
         </shape>
 
         <textarea name="cclocation" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="humiditylbl" from="basetextarea">
-            <area>135,228,300,50</area>
+            <area>135,232,300,50</area>
             <font>baselarge</font>
             <value>Humidity:</value>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="relative_humidity" from="basetextarea">
-            <area>425,228,300,50</area>
+            <area>425,232,300,50</area>
             <font>basemedium</font>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="pressurelbl" from="humiditylbl">
-            <area>135,278,300,50</area>
+            <area>135,282,300,50</area>
             <value>Pressure:</value>
         </textarea>
 
         <textarea name="pressure" from="relative_humidity">
-            <area>425,278,300,50</area>
+            <area>425,282,300,50</area>
         </textarea>
 
         <textarea name="windlbl" from="humiditylbl">
-            <area>135,328,300,50</area>
+            <area>135,332,300,50</area>
             <value>Wind(Gust):</value>
         </textarea>
 
         <textarea name="wind_spdgst" from="relative_humidity">
-            <area>425,328,300,50</area>
+            <area>425,332,300,50</area>
         </textarea>
 
         <textarea name="dirlbl" from="humiditylbl">
-            <area>135,378,300,50</area>
+            <area>135,382,300,50</area>
             <value>Wind Direction:</value>
         </textarea>
 
         <textarea name="wind_dir" from="relative_humidity">
-            <area>425,378,300,50</area>
+            <area>425,382,300,50</area>
         </textarea>
 
         <textarea name="visilbl" from="humiditylbl">
-            <area>135,428,300,50</area>
+            <area>135,432,300,50</area>
             <value>Visibility:</value>
         </textarea>
 
         <textarea name="visibility" from="relative_humidity">
-            <area>425,428,300,50</area>
+            <area>425,432,300,50</area>
         </textarea>
 
         <textarea name="apptlbl" from="humiditylbl">
-            <area>135,478,300,50</area>
+            <area>135,482,300,50</area>
             <value>Feels Like:</value>
         </textarea>
 
         <textarea name="appt" from="relative_humidity">
-            <area>425,478,300,50</area>
+            <area>425,482,300,50</area>
         </textarea>
 
         <textarea name="temp" from="basetextarea">
-            <area>855,523,380,100</area>
+            <area>855,527,380,100</area>
             <font>baseextralarge</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="weather" from="basetextarea">
-            <area>850,133,380,100</area>
+            <area>850,137,380,100</area>
             <font>basemedium</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="weather_icon">
-            <area>845,173,380,400</area>
+            <area>851,177,380,400</area>
             <filename>images/unknown.png</filename>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
         <textarea name="observation_time" from="basetextarea">
-            <area>44,635,416,46</area>
+            <area>44,639,416,42</area>
             <font>basesmallerblue</font>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -206,165 +216,166 @@
         <area>0,0,1280,720</area>
 
         <textarea name="3dlocation" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <shape name="day0-backdrop-line" from="base_backdrop_line">
-            <area>42,127,392,509</area>
+            <area>42,131,392,509</area>
         </shape>
 
         <shape name="day0-top-line" from="base_highlight_line">
-            <area>43,128,390,2</area>
+            <area>43,132,390,2</area>
         </shape>
 
         <shape name="day0-bottom-line" from="base_highlight_line">
-            <area>43,633,390,2</area>
+            <area>43,637,390,2</area>
         </shape>
 
         <shape name="day0-left-line" from="base_highlight_vertical_line">
-            <area>43,130,2,503</area>
+            <area>43,134,2,503</area>
         </shape>
 
         <shape name="day0-right-line" from="base_highlight_vertical_line">
-            <area>431,130,2,503</area>
+            <area>431,134,2,503</area>
         </shape>
 
         <shape name="day1-backdrop-line" from="base_backdrop_line">
-            <area>444,127,392,509</area>
+            <area>444,131,392,509</area>
         </shape>
 
         <shape name="day1-top-line" from="base_highlight_line">
-            <area>445,128,390,2</area>
+            <area>445,132,390,2</area>
         </shape>
 
         <shape name="day1-bottom-line" from="base_highlight_line">
-            <area>445,633,390,2</area>
+            <area>445,637,390,2</area>
         </shape>
 
         <shape name="day1-left-line" from="base_highlight_vertical_line">
-            <area>445,130,2,503</area>
+            <area>445,134,2,503</area>
         </shape>
 
         <shape name="day1-right-line" from="base_highlight_vertical_line">
-            <area>833,130,2,503</area>
+            <area>833,134,2,503</area>
         </shape>
 
         <shape name="day2-backdrop-line" from="base_backdrop_line">
-            <area>846,127,392,509</area>
+            <area>846,131,392,509</area>
         </shape>
 
         <shape name="day2-top-line" from="base_highlight_line">
-            <area>847,128,390,2</area>
+            <area>847,132,390,2</area>
         </shape>
 
         <shape name="day2-bottom-line" from="base_highlight_line">
-            <area>847,633,390,2</area>
+            <area>847,637,390,2</area>
         </shape>
 
         <shape name="day2-left-line" from="base_highlight_vertical_line">
-            <area>847,130,2,503</area>
+            <area>847,134,2,503</area>
         </shape>
 
         <shape name="day2-right-line" from="base_highlight_vertical_line">
-            <area>1235,130,2,503</area>
+            <area>1235,134,2,503</area>
         </shape>
 
         <textarea name="date-0">
-            <area>45,130,386,134</area>
+            <area>45,134,386,134</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="icon-0">
-            <area>82,264,312,234</area>
+            <area>82,268,312,234</area>
         </imagetype>
 
         <textarea name="lolbl0" from="basetextarea">
-            <area>43,565,193,67</area>
+            <area>43,569,193,67</area>
             <value>Low</value>
             <font>basesmall</font>
             <align>hcenter,top</align>
         </textarea>
 
         <textarea name="hilbl0" from="lolbl0">
-            <position>43,498</position>
+            <position>43,502</position>
             <align>allcenter</align>
             <value>High</value>
         </textarea>
 
         <textarea name="low-0" from="basetextarea">
-            <area>238,565,193,67</area>
+            <area>238,569,193,67</area>
             <cutdown>no</cutdown>
             <font>basesmall</font>
             <align>hcenter,top</align>
         </textarea>
 
         <textarea name="high-0" from="low-0">
-            <position>238,498</position>
+            <position>238,502</position>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="date-1" from="date-0">
-            <position>447,130</position>
+            <position>447,134</position>
         </textarea>
 
         <imagetype name="icon-1" from="icon-0">
-            <position>484,264</position>
+            <position>484,268</position>
         </imagetype>
 
         <textarea name="lolbl1" from="lolbl0">
-            <position>447,565</position>
+            <position>447,569</position>
         </textarea>
 
         <textarea name="hilbl1" from="hilbl0">
-            <position>447,498</position>
+            <position>447,502</position>
         </textarea>
 
         <textarea name="low-1" from="low-0">
-            <position>640,565</position>
+            <position>640,569</position>
         </textarea>
 
         <textarea name="high-1" from="low-0">
-            <position>640,498</position>
+            <position>640,502</position>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="date-2" from="date-0">
-            <position>849,130</position>
+            <position>849,134</position>
         </textarea>
 
         <imagetype name="icon-2" from="icon-0">
-            <position>886,264</position>
+            <position>886,268</position>
         </imagetype>
 
         <textarea name="lolbl2" from="lolbl0">
-            <position>849,565</position>
+            <position>849,569</position>
         </textarea>
 
         <textarea name="hilbl2" from="hilbl0">
-            <position>849,498</position>
+            <position>849,502</position>
         </textarea>
 
         <textarea name="low-2" from="low-0">
-            <position>1042,565</position>
+            <position>1042,569</position>
         </textarea>
 
         <textarea name="high-2" from="low-0">
-            <position>1042,498</position>
+            <position>1042,502</position>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -373,266 +384,267 @@
         <area>0,0,1280,720</area>
 
         <textarea name="6dlocation" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <shape name="day0-backdrop-line" from="base_backdrop_line">
-            <area>42,127,392,248</area>
+            <area>42,131,392,248</area>
         </shape>
 
         <shape name="day0-top-line" from="base_highlight_line">
-            <area>43,128,390,2</area>
+            <area>43,132,390,2</area>
         </shape>
 
         <shape name="day0-bottom-line" from="base_highlight_line">
-            <area>43,372,390,2</area>
+            <area>43,376,390,2</area>
         </shape>
 
         <shape name="day0-left-line" from="base_highlight_vertical_line">
-            <area>43,130,2,242</area>
+            <area>43,134,2,242</area>
         </shape>
 
         <shape name="day0-right-line" from="base_highlight_vertical_line">
-            <area>431,130,2,242</area>
+            <area>431,134,2,242</area>
         </shape>
 
         <shape name="day1-backdrop-line" from="base_backdrop_line">
-            <area>444,127,392,248</area>
+            <area>444,131,392,248</area>
         </shape>
 
         <shape name="day1-top-line" from="base_highlight_line">
-            <area>445,128,390,2</area>
+            <area>445,132,390,2</area>
         </shape>
 
         <shape name="day1-bottom-line" from="base_highlight_line">
-            <area>445,372,390,2</area>
+            <area>445,376,390,2</area>
         </shape>
 
         <shape name="day1-left-line" from="base_highlight_vertical_line">
-            <area>445,130,2,242</area>
+            <area>445,134,2,242</area>
         </shape>
 
         <shape name="day1-right-line" from="base_highlight_vertical_line">
-            <area>833,130,2,242</area>
+            <area>833,134,2,242</area>
         </shape>
 
         <shape name="day2-backdrop-line" from="base_backdrop_line">
-            <area>846,127,392,248</area>
+            <area>846,131,392,248</area>
         </shape>
 
         <shape name="day2-top-line" from="base_highlight_line">
-            <area>847,128,390,2</area>
+            <area>847,132,390,2</area>
         </shape>
 
         <shape name="day2-bottom-line" from="base_highlight_line">
-            <area>847,372,390,2</area>
+            <area>847,376,390,2</area>
         </shape>
 
         <shape name="day2-left-line" from="base_highlight_vertical_line">
-            <area>847,130,2,242</area>
+            <area>847,134,2,242</area>
         </shape>
 
         <shape name="day2-right-line" from="base_highlight_vertical_line">
-            <area>1235,130,2,242</area>
+            <area>1235,134,2,242</area>
         </shape>
 
         <shape name="day3-backdrop-line" from="base_backdrop_line">
-            <area>42,388,392,248</area>
+            <area>42,392,392,248</area>
         </shape>
 
         <shape name="day3-top-line" from="base_highlight_line">
-            <area>43,389,390,2</area>
+            <area>43,393,390,2</area>
         </shape>
 
         <shape name="day3-bottom-line" from="base_highlight_line">
-            <area>43,633,390,2</area>
+            <area>43,637,390,2</area>
         </shape>
 
         <shape name="day3-left-line" from="base_highlight_vertical_line">
-            <area>43,391,2,242</area>
+            <area>43,395,2,242</area>
         </shape>
 
         <shape name="day3-right-line" from="base_highlight_vertical_line">
-            <area>431,391,2,242</area>
+            <area>431,395,2,242</area>
         </shape>
 
         <shape name="day4-backdrop-line" from="base_backdrop_line">
-            <area>444,388,392,248</area>
+            <area>444,392,392,248</area>
         </shape>
 
         <shape name="day4-top-line" from="base_highlight_line">
-            <area>445,389,390,2</area>
+            <area>445,393,390,2</area>
         </shape>
 
         <shape name="day4-bottom-line" from="base_highlight_line">
-            <area>445,633,390,2</area>
+            <area>445,637,390,2</area>
         </shape>
 
         <shape name="day4-left-line" from="base_highlight_vertical_line">
-            <area>445,391,2,242</area>
+            <area>445,395,2,242</area>
         </shape>
 
         <shape name="day4-right-line" from="base_highlight_vertical_line">
-            <area>833,391,2,242</area>
+            <area>833,395,2,242</area>
         </shape>
 
         <shape name="day5-backdrop-line" from="base_backdrop_line">
-            <area>846,388,392,248</area>
+            <area>846,392,392,248</area>
         </shape>
 
         <shape name="day5-top-line" from="base_highlight_line">
-            <area>847,389,390,2</area>
+            <area>847,393,390,2</area>
         </shape>
 
         <shape name="day5-bottom-line" from="base_highlight_line">
-            <area>847,633,390,2</area>
+            <area>847,637,390,2</area>
         </shape>
 
         <shape name="day5-left-line" from="base_highlight_vertical_line">
-            <area>847,391,2,242</area>
+            <area>847,395,2,242</area>
         </shape>
 
         <shape name="day5-right-line" from="base_highlight_vertical_line">
-            <area>1235,391,2,242</area>
+            <area>1235,395,2,242</area>
         </shape>
 
         <textarea name="date-0" from="basetextarea">
-            <area>43,147,390,26</area>
+            <area>43,151,390,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="date-1" from="date-0">
-            <position>445,147</position>
+            <position>445,151</position>
         </textarea>
         <textarea name="date-2" from="date-0">
-            <position>850,147</position>
+            <position>850,151</position>
         </textarea>
         <textarea name="date-3" from="date-0">
-            <position>43,411</position>
+            <position>43,415</position>
         </textarea>
         <textarea name="date-4" from="date-0">
-            <position>445,411</position>
+            <position>445,415</position>
         </textarea>
         <textarea name="date-5" from="date-0">
-            <position>850,411</position>
+            <position>850,415</position>
         </textarea>
 
         <imagetype name="icon-0">
-            <area>158,190,167,125</area>
+            <area>158,194,167,125</area>
         </imagetype>
         <imagetype name="icon-1" from="icon-0">
-            <position>556,190</position>
+            <position>556,194</position>
         </imagetype>
         <imagetype name="icon-2" from="icon-0">
-            <position>958,190</position>
+            <position>958,194</position>
         </imagetype>
         <imagetype name="icon-3" from="icon-0">
-            <position>158,448</position>
+            <position>158,452</position>
         </imagetype>
         <imagetype name="icon-4" from="icon-0">
-            <position>556,448</position>
+            <position>556,452</position>
         </imagetype>
         <imagetype name="icon-5" from="icon-0">
-            <position>958,448</position>
+            <position>958,452</position>
         </imagetype>
 
         <textarea name="hilbl0" from="basetextarea">
-            <area>77,292,100,26</area>
+            <area>77,296,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>High</value>
         </textarea>
         <textarea name="hilbl1" from="hilbl0">
-            <position>475,292</position>
+            <position>475,296</position>
         </textarea>
         <textarea name="hilbl2" from="hilbl0">
-            <position>877,292</position>
+            <position>877,296</position>
         </textarea>
         <textarea name="hilbl3" from="hilbl0">
-            <position>77,551</position>
+            <position>77,555</position>
         </textarea>
         <textarea name="hilbl4" from="hilbl0">
-            <position>475,551</position>
+            <position>475,555</position>
         </textarea>
         <textarea name="hilbl5" from="hilbl0">
-            <position>877,551</position>
+            <position>877,555</position>
         </textarea>
 
         <textarea name="lolbl0" from="basetextarea">
-            <area>307,292,100,26</area>
+            <area>307,296,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>Low</value>
         </textarea>
         <textarea name="lolbl1" from="lolbl0">
-            <position>705,292</position>
+            <position>705,296</position>
         </textarea>
         <textarea name="lolbl2" from="lolbl0">
-            <position>1107,292</position>
+            <position>1107,296</position>
         </textarea>
         <textarea name="lolbl3" from="lolbl0">
-            <position>307,551</position>
+            <position>307,555</position>
         </textarea>
         <textarea name="lolbl4" from="lolbl0">
-            <position>705,551</position>
+            <position>705,555</position>
         </textarea>
         <textarea name="lolbl5" from="lolbl0">
-            <position>1107,551</position>
+            <position>1107,555</position>
         </textarea>
 
         <textarea name="high-0" from="basetextarea">
-            <area>77,327,100,26</area>
+            <area>77,331,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="high-1" from="high-0">
-            <position>475,327</position>
+            <position>475,331</position>
         </textarea>
         <textarea name="high-2" from="high-0">
-            <position>877,327</position>
+            <position>877,331</position>
         </textarea>
         <textarea name="high-3" from="high-0">
-            <position>77,586</position>
+            <position>77,590</position>
         </textarea>
         <textarea name="high-4" from="high-0">
-            <position>475,586</position>
+            <position>475,590</position>
         </textarea>
         <textarea name="high-5" from="high-0">
-            <position>877,586</position>
+            <position>877,590</position>
         </textarea>
 
         <textarea name="low-0" from="basetextarea">
-            <area>307,327,100,26</area>
+            <area>307,331,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="low-1" from="low-0">
-            <position>705,327</position>
+            <position>705,331</position>
         </textarea>
         <textarea name="low-2" from="low-0">
-            <position>1107,327</position>
+            <position>1107,331</position>
         </textarea>
         <textarea name="low-3" from="low-0">
-            <position>307,586</position>
+            <position>307,590</position>
         </textarea>
         <textarea name="low-4" from="low-0">
-            <position>705,586</position>
+            <position>705,590</position>
         </textarea>
         <textarea name="low-5" from="low-0">
-            <position>1107,586</position>
+            <position>1107,590</position>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -641,33 +653,34 @@
         <area>0,0,1280,720</area>
 
         <shape name="static-map-top-line" from="base_line">
-            <area>43,128,1194,2</area>
+            <area>43,132,1194,2</area>
         </shape>
 
         <shape name="static-map-bottom-line" from="base_line">
-            <area>43,633,1194,2</area>
+            <area>43,637,1194,2</area>
         </shape>
 
         <textarea name="smdesc" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="map">
-            <area>55,142,1170,480</area>
+            <area>55,146,1170,480</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -676,33 +689,34 @@
         <area>0,0,1280,720</area>
 
         <shape name="animated-map-top-line" from="base_line">
-            <area>43,128,1194,2</area>
+            <area>43,132,1194,2</area>
         </shape>
 
         <shape name="animated-map-bottom-line" from="base_line">
-            <area>43,633,1194,2</area>
+            <area>43,637,1194,2</area>
         </shape>
 
         <textarea name="amdesc" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="animatedimage">
-            <area>55,142,1170,480</area>
+            <area>55,146,1170,480</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -711,46 +725,47 @@
         <area>0,0,1280,720</area>
 
         <shape name="weather-alert-backdrop-line" from="base_backdrop_line">
-            <area>42,127,1196,509</area>
+            <area>42,131,1196,509</area>
         </shape>
 
         <shape name="weather-alert-top-line" from="base_highlight_line">
-            <area>43,128,1194,2</area>
+            <area>43,132,1194,2</area>
         </shape>
 
         <shape name="weather-alert-bottom-line" from="base_highlight_line">
-            <area>43,633,1194,2</area>
+            <area>43,637,1194,2</area>
         </shape>
 
         <shape name="weather-alert-left-line" from="base_highlight_vertical_line">
-            <area>43,130,2,503</area>
+            <area>43,134,2,503</area>
         </shape>
 
         <shape name="weather-alert-right-line" from="base_highlight_vertical_line">
-            <area>1235,130,2,503</area>
+            <area>1235,134,2,503</area>
         </shape>
 
         <textarea name="swlocation" from="basetextarea">
-            <area>233,85,816,43</area>
+            <area>233,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="alerts" from="basetextarea">
-            <area>51,136,1178,491</area>
+            <area>51,140,1178,491</area>
             <multiline>yes</multiline>
             <value>Weather Alerts</value>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
@@ -759,266 +774,267 @@
         <area>0,0,1280,720</area>
 
         <textarea name="18hrlocation" from="basetextarea">
-            <area>232,85,816,43</area>
+            <area>232,90,816,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <shape name="time0-backdrop-line" from="base_backdrop_line">
-            <area>42,127,392,248</area>
+            <area>42,131,392,248</area>
         </shape>
 
         <shape name="time0-top-line" from="base_highlight_line">
-            <area>43,128,390,2</area>
+            <area>43,132,390,2</area>
         </shape>
 
         <shape name="time0-bottom-line" from="base_highlight_line">
-            <area>43,372,390,2</area>
+            <area>43,376,390,2</area>
         </shape>
 
         <shape name="time0-left-line" from="base_highlight_vertical_line">
-            <area>43,130,2,242</area>
+            <area>43,134,2,242</area>
         </shape>
 
         <shape name="time0-right-line" from="base_highlight_vertical_line">
-            <area>431,130,2,242</area>
+            <area>431,134,2,242</area>
         </shape>
 
         <shape name="time1-backdrop-line" from="base_backdrop_line">
-            <area>444,127,392,248</area>
+            <area>444,131,392,248</area>
         </shape>
 
         <shape name="time1-top-line" from="base_highlight_line">
-            <area>445,128,390,2</area>
+            <area>445,132,390,2</area>
         </shape>
 
         <shape name="time1-bottom-line" from="base_highlight_line">
-            <area>445,372,390,2</area>
+            <area>445,376,390,2</area>
         </shape>
 
         <shape name="time1-left-line" from="base_highlight_vertical_line">
-            <area>445,130,2,242</area>
+            <area>445,134,2,242</area>
         </shape>
 
         <shape name="time1-right-line" from="base_highlight_vertical_line">
-            <area>833,130,2,242</area>
+            <area>833,134,2,242</area>
         </shape>
 
         <shape name="time2-backdrop-line" from="base_backdrop_line">
-            <area>846,127,392,248</area>
+            <area>846,131,392,248</area>
         </shape>
 
         <shape name="time2-top-line" from="base_highlight_line">
-            <area>847,128,390,2</area>
+            <area>847,132,390,2</area>
         </shape>
 
         <shape name="time2-bottom-line" from="base_highlight_line">
-            <area>847,372,390,2</area>
+            <area>847,376,390,2</area>
         </shape>
 
         <shape name="time2-left-line" from="base_highlight_vertical_line">
-            <area>847,130,2,242</area>
+            <area>847,134,2,242</area>
         </shape>
 
         <shape name="time2-right-line" from="base_highlight_vertical_line">
-            <area>1235,130,2,242</area>
+            <area>1235,134,2,242</area>
         </shape>
 
         <shape name="time3-backdrop-line" from="base_backdrop_line">
-            <area>42,388,392,248</area>
+            <area>42,392,392,248</area>
         </shape>
 
         <shape name="time3-top-line" from="base_highlight_line">
-            <area>43,389,390,2</area>
+            <area>43,393,390,2</area>
         </shape>
 
         <shape name="time3-bottom-line" from="base_highlight_line">
-            <area>43,633,390,2</area>
+            <area>43,637,390,2</area>
         </shape>
 
         <shape name="time3-left-line" from="base_highlight_vertical_line">
-            <area>43,391,2,242</area>
+            <area>43,395,2,242</area>
         </shape>
 
         <shape name="time3-right-line" from="base_highlight_vertical_line">
-            <area>431,391,2,242</area>
+            <area>431,395,2,242</area>
         </shape>
 
         <shape name="time4-backdrop-line" from="base_backdrop_line">
-            <area>444,388,392,248</area>
+            <area>444,392,392,248</area>
         </shape>
 
         <shape name="time4-top-line" from="base_highlight_line">
-            <area>445,389,390,2</area>
+            <area>445,393,390,2</area>
         </shape>
 
         <shape name="time4-bottom-line" from="base_highlight_line">
-            <area>445,633,390,2</area>
+            <area>445,637,390,2</area>
         </shape>
 
         <shape name="time4-left-line" from="base_highlight_vertical_line">
-            <area>445,391,2,242</area>
+            <area>445,395,2,242</area>
         </shape>
 
         <shape name="time4-right-line" from="base_highlight_vertical_line">
-            <area>833,391,2,242</area>
+            <area>833,395,2,242</area>
         </shape>
 
         <shape name="time5-backdrop-line" from="base_backdrop_line">
-            <area>846,388,392,248</area>
+            <area>846,392,392,248</area>
         </shape>
 
         <shape name="time5-top-line" from="base_highlight_line">
-            <area>847,389,390,2</area>
+            <area>847,393,390,2</area>
         </shape>
 
         <shape name="time5-bottom-line" from="base_highlight_line">
-            <area>847,633,390,2</area>
+            <area>847,637,390,2</area>
         </shape>
 
         <shape name="time5-left-line" from="base_highlight_vertical_line">
-            <area>847,391,2,242</area>
+            <area>847,395,2,242</area>
         </shape>
 
         <shape name="time5-right-line" from="base_highlight_vertical_line">
-            <area>1235,391,2,242</area>
+            <area>1235,395,2,242</area>
         </shape>
 
         <textarea name="time-0" from="basetextarea">
-            <area>43,147,390,26</area>
+            <area>43,151,390,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="time-1" from="time-0">
-            <position>445,147</position>
+            <position>445,151</position>
         </textarea>
         <textarea name="time-2" from="time-0">
-            <position>850,147</position>
+            <position>850,151</position>
         </textarea>
         <textarea name="time-3" from="time-0">
-            <position>43,411</position>
+            <position>43,415</position>
         </textarea>
         <textarea name="time-4" from="time-0">
-            <position>445,411</position>
+            <position>445,415</position>
         </textarea>
         <textarea name="time-5" from="time-0">
-            <position>850,411</position>
+            <position>850,415</position>
         </textarea>
 
         <imagetype name="18icon-0">
-            <area>158,190,167,125</area>
+            <area>158,194,167,125</area>
         </imagetype>
         <imagetype name="18icon-1" from="18icon-0">
-            <position>556,190</position>
+            <position>556,194</position>
         </imagetype>
         <imagetype name="18icon-2" from="18icon-0">
-            <position>958,190</position>
+            <position>958,194</position>
         </imagetype>
         <imagetype name="18icon-3" from="18icon-0">
-            <position>158,448</position>
+            <position>158,452</position>
         </imagetype>
         <imagetype name="18icon-4" from="18icon-0">
-            <position>556,448</position>
+            <position>556,452</position>
         </imagetype>
         <imagetype name="18icon-5" from="18icon-0">
-            <position>958,448</position>
+            <position>958,452</position>
         </imagetype>
 
         <textarea name="tmplbl0" from="basetextarea">
-            <area>77,292,100,26</area>
+            <area>77,296,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>Temp</value>
         </textarea>
         <textarea name="tmplbl1" from="tmplbl0">
-            <position>475,292</position>
+            <position>475,296</position>
         </textarea>
         <textarea name="tmplbl2" from="tmplbl0">
-            <position>877,292</position>
+            <position>877,296</position>
         </textarea>
         <textarea name="tmplbl3" from="tmplbl0">
-            <position>77,551</position>
+            <position>77,555</position>
         </textarea>
         <textarea name="tmplbl4" from="tmplbl0">
-            <position>475,551</position>
+            <position>475,555</position>
         </textarea>
         <textarea name="tmplbl5" from="tmplbl0">
-            <position>877,551</position>
+            <position>877,555</position>
         </textarea>
 
         <textarea name="poplbl0" from="basetextarea">
-            <area>307,292,100,26</area>
+            <area>307,296,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
             <value>Precip</value>
         </textarea>
         <textarea name="poplbl1" from="poplbl0">
-            <position>705,292</position>
+            <position>705,296</position>
         </textarea>
         <textarea name="poplbl2" from="poplbl0">
-            <position>1107,292</position>
+            <position>1107,296</position>
         </textarea>
         <textarea name="poplbl3" from="poplbl0">
-            <position>307,551</position>
+            <position>307,555</position>
         </textarea>
         <textarea name="poplbl4" from="poplbl0">
-            <position>705,551</position>
+            <position>705,555</position>
         </textarea>
         <textarea name="poplbl5" from="poplbl0">
-            <position>1107,551</position>
+            <position>1107,555</position>
         </textarea>
 
         <textarea name="temp-0" from="basetextarea">
-            <area>77,327,100,26</area>
+            <area>77,331,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="temp-1" from="temp-0">
-            <position>475,327</position>
+            <position>475,331</position>
         </textarea>
         <textarea name="temp-2" from="temp-0">
-            <position>877,327</position>
+            <position>877,331</position>
         </textarea>
         <textarea name="temp-3" from="temp-0">
-            <position>77,586</position>
+            <position>77,590</position>
         </textarea>
         <textarea name="temp-4" from="temp-0">
-            <position>475,586</position>
+            <position>475,590</position>
         </textarea>
         <textarea name="temp-5" from="temp-0">
-            <position>877,586</position>
+            <position>877,590</position>
         </textarea>
 
         <textarea name="pop-0" from="basetextarea">
-            <area>307,327,100,26</area>
+            <area>307,331,100,26</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         <textarea name="pop-1" from="pop-0">
-            <position>705,327</position>
+            <position>705,331</position>
         </textarea>
         <textarea name="pop-2" from="pop-0">
-            <position>1107,327</position>
+            <position>1107,331</position>
         </textarea>
         <textarea name="pop-3" from="pop-0">
-            <position>307,586</position>
+            <position>307,590</position>
         </textarea>
         <textarea name="pop-4" from="pop-0">
-            <position>705,586</position>
+            <position>705,590</position>
         </textarea>
         <textarea name="pop-5" from="pop-0">
-            <position>1107,586</position>
+            <position>1107,590</position>
         </textarea>
 
         <textarea name="copyright" from="basetextarea">
-            <area>470,635,766,46</area>
+            <area>470,639,766,42</area>
             <font>basesmallerblue</font>
             <align>right,vcenter</align>
         </textarea>
 
         <imagetype name="copyrightlogo">
-            <area>-53,43,328,82</area>
+            <area>2,92,152,38</area>
             <preserveaspect>true</preserveaspect>
+            <alpha>225</alpha>
         </imagetype>
 
     </window>
