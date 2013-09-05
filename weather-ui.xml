@@ -1328,7 +1328,7 @@
         </shape>
 
         <shape name="weather-source-arrows-backdrop" from="base_arrows_backdrop">
-            <area>586,456,50,11</area>
+            <area>586,455,50,12</area>
         </shape>
 
         <shape name="weather-data-backdrop-line" from="base_backdrop_line">
