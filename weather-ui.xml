@@ -1441,11 +1441,11 @@
         </textarea>
 
         <shape name="weather-search-top-backdrop" from="base_backdrop">
-            <area>320,36,640,649</area>
+            <area>320,36,640,173</area>
         </shape>
 
         <shape name="weather-search-top-backdrop-line" from="base_backdrop_line">
-            <area>321,37,638,166</area>
+            <area>321,37,638,171</area>
         </shape>
 
         <shape name="weather-search-top-line" from="base_highlight_line">
@@ -1453,47 +1453,59 @@
         </shape>
 
         <shape name="weather-search-bottom-line" from="base_highlight_line">
-            <area>322,200,636,2</area>
+            <area>322,205,636,2</area>
         </shape>
 
         <shape name="weather-search-left-line" from="base_highlight_vertical_line">
-            <area>322,40,2,160</area>
+            <area>322,40,2,165</area>
         </shape>
 
         <shape name="weather-search-right-line" from="base_highlight_vertical_line">
-            <area>956,40,2,160</area>
+            <area>956,40,2,165</area>
         </shape>
 
         <shape name="weather-search-seperator-first-line" from="base_line">
-            <area>343,125,594,2</area>
+            <area>343,130,594,2</area>
+        </shape>
+
+        <shape name="weather-search-middle-backdrop" from="base_backdrop">
+            <area>320,219,640,284</area>
         </shape>
 
         <shape name="weather-search-middle-backdrop-line" from="base_backdrop_line">
-            <area>321,209,638,304</area>
+            <area>321,220,638,282</area>
         </shape>
 
         <shape name="weather-search-middle-top-line" from="base_highlight_line">
-            <area>322,210,636,2</area>
+            <area>322,221,636,2</area>
         </shape>
 
         <shape name="weather-search-middle-bottom-line" from="base_highlight_line">
-            <area>322,510,636,2</area>
+            <area>322,499,636,2</area>
         </shape>
 
         <shape name="weather-search-middle-left-line" from="base_highlight_vertical_line">
-            <area>322,212,2,298</area>
+            <area>322,223,2,276</area>
         </shape>
 
         <shape name="weather-search-middle-right-line" from="base_highlight_vertical_line">
-            <area>956,212,2,298</area>
+            <area>956,223,2,276</area>
+        </shape>
+
+        <shape name="weather-search-middle-arrows-backdrop" from="base_arrows_backdrop">
+            <area>907,503,50,11</area>
+        </shape>
+
+        <shape name="weather-search-bottom-backdrop" from="base_backdrop">
+            <area>320,513,640,172</area>
         </shape>
 
         <shape name="weather-search-bottom-backdrop-line" from="base_backdrop_line">
-            <area>321,519,638,165</area>
+            <area>321,514,638,170</area>
         </shape>
 
         <shape name="weather-search-bottom-top-line" from="base_highlight_line">
-            <area>322,520,636,2</area>
+            <area>322,515,636,2</area>
         </shape>
 
         <shape name="weather-search-bottom-bottom-line" from="base_highlight_line">
@@ -1501,11 +1513,11 @@
         </shape>
 
         <shape name="weather-search-bottom-left-line" from="base_highlight_vertical_line">
-            <area>322,522,2,159</area>
+            <area>322,517,2,164</area>
         </shape>
 
         <shape name="weather-search-bottom-right-line" from="base_highlight_vertical_line">
-            <area>956,522,2,159</area>
+            <area>956,517,2,164</area>
         </shape>
 
         <shape name="weather-search-bottom-seperator-first-line" from="base_line">
@@ -1513,7 +1525,7 @@
         </shape>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>330,40,620,85</area>
+            <area>330,40,620,90</area>
             <font>basesmallerblue</font>
             <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported. Hit the right or down arrow to continue. </value>
             <multiline>yes</multiline>
@@ -1521,13 +1533,13 @@
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>394,125,180,78</area>
+            <area>394,130,180,78</area>
             <value>Enter Location:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="loc-edit" from="base_textedit">
-            <area>584,148,287,32</area>
+            <area>584,153,287,32</area>
         </textedit>
 
         <button name="searchbtn" from="base_medium_button">
@@ -1535,43 +1547,43 @@
         </button>
 
         <buttonlist name="results" from="base_list">
-            <area>330,216,620,290</area>
+            <area>328,227,624,270</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,620,34</area>
+                    <area>0,0,624,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,604,24</area>
+                        <area>8,0,608,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,620,34</area>
+                    <area>0,0,624,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,604,24</area>
+                        <area>8,0,608,64</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,620,34</area>
+                    <area>0,0,624,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,604,24</area>
+                        <area>8,0,608,64</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>611,-5</position>
+                <position>586,277</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>611,287</position>
+                <position>606,277</position>
             </statetype>
         </buttonlist>
 
         <textarea name="numresults" from="basetextarea">
-            <area>330,522,620,39</area>
+            <area>330,517,620,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="source" from="basetextarea">
-            <area>330,561,620,40</area>
+            <area>330,559,620,42</area>
             <font>basesmallblue</font>
             <align>allcenter</align>
         </textarea>
