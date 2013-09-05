@@ -1288,11 +1288,11 @@
         </textarea>
 
         <shape name="weather-source-backdrop" from="base_backdrop">
-            <area>140,36,1000,649</area>
+            <area>140,36,1000,420</area>
         </shape>
 
         <shape name="weather-source-backdrop-line" from="base_backdrop_line">
-            <area>141,37,498,423</area>
+            <area>141,37,498,418</area>
         </shape>
 
         <shape name="weather-source-top-line" from="base_highlight_line">
@@ -1300,19 +1300,23 @@
         </shape>
 
         <shape name="weather-source-bottom-line" from="base_highlight_line">
-            <area>142,457,496,2</area>
+            <area>142,452,496,2</area>
         </shape>
 
         <shape name="weather-source-left-line" from="base_highlight_vertical_line">
-            <area>142,40,2,417</area>
+            <area>142,40,2,412</area>
         </shape>
 
         <shape name="weather-source-right-line" from="base_highlight_vertical_line">
-            <area>636,40,2,417</area>
+            <area>636,40,2,412</area>
+        </shape>
+
+        <shape name="weather-source-arrows-backdrop" from="base_arrows_backdrop">
+            <area>586,456,50,11</area>
         </shape>
 
         <shape name="weather-data-backdrop-line" from="base_backdrop_line">
-            <area>641,37,498,423</area>
+            <area>641,37,498,418</area>
         </shape>
 
         <shape name="weather-data-top-line" from="base_highlight_line">
@@ -1320,15 +1324,19 @@
         </shape>
 
         <shape name="weather-data-bottom-line" from="base_highlight_line">
-            <area>642,457,496,2</area>
+            <area>642,452,496,2</area>
         </shape>
 
         <shape name="weather-data-left-line" from="base_highlight_vertical_line">
-            <area>642,40,2,417</area>
+            <area>642,40,2,412</area>
         </shape>
 
         <shape name="weather-data-right-line" from="base_highlight_vertical_line">
-            <area>1136,40,2,417</area>
+            <area>1136,40,2,412</area>
+        </shape>
+
+        <shape name="weather-source-bottom-backdrop" from="base_backdrop">
+            <area>140,466,1000,219</area>
         </shape>
 
         <shape name="weather-source-bottom-backdrop-line" from="base_backdrop_line">
@@ -1356,58 +1364,60 @@
         </shape>
 
         <buttonlist name="srclist" from="base_list">
-            <area>150,44,480,418</area>
+            <area>148,44,484,406</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,30</area>
                     <textarea name="buttontext">
-                        <area>8,4,464,24</area>
+                        <area>8,0,468,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,444,24</area>
+                        <area>8,0,448,64</area>
+			<multiline>yes</multiline>
                     </textarea>
                     <imagetype name="rightarrow" from="buttonarrow">
-                        <position>460,7</position>
+                        <position>464,22</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,480,34</area>
+                    <area>0,0,484,64</area>
                     <textarea name="buttontext">
-                        <area>8,4,464,24</area>
+                        <area>8,0,468,64</area>
+                        <multiline>yes</multiline>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>470,-4</position>
+                <position>445,413</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>470,406</position>
+                <position>465,413</position>
             </statetype>
         </buttonlist>
 
         <textarea name="updatetxt" from="basetextarea">
-            <area>684,157,310,40</area>
+            <area>684,154,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
         <textarea name="retrievetxt" from="basetextarea">
-            <area>684,311,310,40</area>
+            <area>684,308,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Source Update Timeout (seconds):</value>
         </textarea>
 
         <spinbox name="update_spinbox" from="base_spinbox">
-            <position>1004,157</position>
+            <position>1004,154</position>
         </spinbox>
 
         <spinbox name="retrieve_spinbox" from="base_spinbox">
-            <position>1004,311</position>
+            <position>1004,308</position>
         </spinbox>
 
         <textarea name="srcinfo" from="basetextarea">
