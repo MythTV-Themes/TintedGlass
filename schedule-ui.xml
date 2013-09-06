@@ -273,7 +273,7 @@
             <area>104,467,1130,46</area>
             <align>left,vcenter</align>
             <font>basemediumyellow</font>
-            <template>%TITLE% (%CATEGORY%)</template>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
@@ -588,7 +588,7 @@
             <area>103,407,635,46</area>
             <align>left,vcenter</align>
             <font>basemediumyellow</font>
-            <template>%TITLE% (%CATEGORY%)</template>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
