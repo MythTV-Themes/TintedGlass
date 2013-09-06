@@ -255,24 +255,25 @@
         </buttonlist>
 
         <imagetype name="no_channelicon" depends="!channelicon">
-            <area>44,475,38,30</area>
-            <preserveaspect>true</preserveaspect>
+            <area>44,471,50,38</area>
+            <preserveaspect>false</preserveaspect>
             <filename>images/no_channel_icon.png</filename>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <imagetype name="channelicon">
-            <area>44,475,38,30</area>
-            <preserveaspect>true</preserveaspect>
+            <area>44,471,50,38</area>
+            <preserveaspect>false</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>102,472,1132,35</area>
+            <area>104,467,1130,46</area>
             <align>left,vcenter</align>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
+            <template>%TITLE% (%CATEGORY%)</template>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
@@ -408,7 +409,7 @@
         </shape>
 
         <shape name="guide-description-seperator-first-line" from="base_line">
-            <area>42,452,698,2</area>
+            <area>42,453,698,2</area>
         </shape>
 
         <shape name="guide-description-seperator-second-line" from="base_line">
@@ -569,28 +570,29 @@
         </buttonlist>
 
         <imagetype name="no_channelicon" depends="!channelicon">
-            <area>43,414,38,30</area>
-            <preserveaspect>true</preserveaspect>
+            <area>43,411,50,38</area>
+            <preserveaspect>false</preserveaspect>
             <filename>images/no_channel_icon.png</filename>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <imagetype name="channelicon">
-            <area>43,414,38,30</area>
-            <preserveaspect>true</preserveaspect>
+            <area>43,411,50,38</area>
+            <preserveaspect>false</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>89,407,649,45</area>
+            <area>103,407,635,46</area>
             <align>left,vcenter</align>
-            <font>basemediumlargeryellow</font>
+            <font>basemediumyellow</font>
+            <template>%TITLE% (%CATEGORY%)</template>
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>43,461,696,24</area>
+            <area>43,455,696,37</area>
             <align>left,vcenter</align>
             <font>basesmallblue</font>
         </textarea>
