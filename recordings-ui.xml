@@ -617,7 +617,7 @@
             <area>189,451,682,36</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
-            <template>%TITLE% - %CATEGORY%</template>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="description2" from="basetextarea">
