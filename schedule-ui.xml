@@ -2265,6 +2265,7 @@
             <area>44,520,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="help1text" from="basetextarea">
@@ -4194,6 +4195,7 @@
             <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
