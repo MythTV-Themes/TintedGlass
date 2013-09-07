@@ -2392,7 +2392,7 @@
                     </textarea>
                     <textarea name="callsign" from="rectypechar">
                         <area>570,0,140,30</area>
-                        <align>right,vcenter</align>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypechar">
                         <area>798,0,300,30</area>
@@ -2411,13 +2411,10 @@
                         <font>basesmalllightgrey</font>
                     </textarea>
                     <textarea name="callsign" from="title">
-                        <area>570,1,140,24</area>
+                        <area>570,1,496,24</area>
                         <cutdown>no</cutdown>
-                        <align>right,top</align>
-                    </textarea>
-                    <textarea name="channel" from="base_text_font_state_extrasmall">
-                        <area>720,1,346,24</area>
-                        <template> -  %1</template>
+                        <align>left,top</align>
+                        <template>%CALLSIGN| -% %CHANNEL%</template>
                     </textarea>
                     <textarea name="finalpriority" from="title">
                         <area>1076,1,140,24</area>
@@ -2425,35 +2422,35 @@
                         <align>right,vcenter</align>
                         <template>Priority:  %1</template>
                     </textarea>
-                    <textarea name="category" from="base_text_font_state_extrasmall">
-                        <area>8,23,293,20</area>
+                    <textarea name="playgroup" from="base_text_font_state_extrasmall">
+                        <area>8,23,294,20</area>
                         <align>left,vcenter</align>
-                        <template>Category: %1</template>
+                        <template>Play Back Group: %1</template>
                     </textarea>
-                    <textarea name="recgroup" from="channel">
-                        <area>312,23,294,20</area>
+                    <textarea name="recordinggroup" from="playgroup">
+                        <area>313,23,294,20</area>
                         <align>allcenter</align>
                         <template>Recording Group: %1</template>
                     </textarea>
-                    <textarea name="recordingprofile" from="channel">
-                        <area>617,23,294,20</area>
+                    <textarea name="recordingprofile" from="playgroup">
+                        <area>618,23,294,20</area>
                         <align>allcenter</align>
                         <template>Recording Profile: %1</template>
                     </textarea>
-                    <textarea name="storagegroup" from="channel">
+                    <textarea name="storagegroup" from="playgroup">
                         <area>923,23,293,20</area>
                         <align>right,vcenter</align>
                         <template>Storage Group: %1</template>
                     </textarea>
                     <textarea name="rectypestatus" from="base_text_font_state_extrasmall">
-                        <area>8,40,350,20</area>
+                        <area>8,40,552,20</area>
                         <font>baseextrasmalllightgrey</font>
                         <align>left,bottom</align>
                     </textarea>
                     <textarea name="scheduleinfo" from="rectypestatus">
-                        <area>370,40,614,20</area>
+                        <area>570,40,416,20</area>
                         <font>baseextrasmalllightgrey</font>
-                        <align>hcenter,bottom</align>
+                        <align>left,bottom</align>
                     </textarea>
                     <textarea name="lastrecorded" from="rectypestatus">
                         <area>996,40,220,20</area>
@@ -2474,6 +2471,7 @@
             <area>44,522,1192,32</area>
             <font>basemediumyellow</font>
             <align>left,vcenter</align>
+            <template>%TITLE% %|(CATEGORY|)%</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
