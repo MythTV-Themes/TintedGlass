@@ -366,7 +366,7 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1224,64</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                     <imagetype name="buttonimage">
@@ -416,7 +416,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                     <area>0,0,100%,100%</area>
                 </shape>
                 </state>

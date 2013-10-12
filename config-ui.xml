@@ -115,7 +115,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
@@ -247,7 +247,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>

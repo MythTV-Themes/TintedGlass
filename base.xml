@@ -495,7 +495,7 @@
         <cornerradius>5</cornerradius>
     </shape>
 
-    <shape name="base_select_bar_selectedactive_small">
+    <shape name="base_select_bar_selectedactive">
         <type>roundbox</type>
         <fill style="gradient">
             <gradient direction="vertical" alpha="255">
@@ -509,42 +509,7 @@
         <cornerradius>5</cornerradius>
     </shape>
 
-    <shape name="base_select_bar_selectedactive_medium">
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#1d1d21" />
-                <stop position="50" color="#313136" alpha="255" />
-                <stop position="51" color="#0a0a0e" alpha="255" />
-                <stop position="100" color="#0a0a0e" alpha="255" />
-            </gradient>
-        </fill>
-        <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>5</cornerradius>
-    </shape>
-
-    <shape name="base_select_bar_selectedactive_large">
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#1d1d21" />
-                <stop position="50" color="#313136" alpha="255" />
-                <stop position="51" color="#0a0a0e" alpha="255" />
-                <stop position="100" color="#0a0a0e" alpha="255" />
-            </gradient>
-        </fill>
-        <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>5</cornerradius>
-    </shape>
-
-    <shape name="base_select_bar_selectedinactive_small">
-        <type>roundbox</type>
-        <fill color="#222222" alpha="175" />
-        <line color="#666666" alpha="200" width="2" />
-        <cornerradius>5</cornerradius>
-    </shape>
-
-    <shape name="base_select_bar_selectedinactive_large">
+    <shape name="base_select_bar_selectedinactive">
         <type>roundbox</type>
         <fill color="#222222" alpha="175" />
         <line color="#666666" alpha="200" width="2" />
@@ -718,7 +683,7 @@
                 </statetype>
             </state>
             <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
@@ -747,7 +712,7 @@
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
@@ -790,7 +755,7 @@
     <buttonlist name="base_list_medium_selector" from="base_list">
         <statetype name="buttonitem">
             <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive">
                     <area>0,0,100%,100%</area>
                 </shape>
             </state>
@@ -801,12 +766,12 @@
     <buttonlist name="base_list_large_selector" from="base_list">
         <statetype name="buttonitem">
             <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                <shape name="buttonbackground" from="base_select_bar_selectedactive">
                     <area>0,0,100%,100%</area>
                 </shape>
             </state>
             <state name="selectedinactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                     <area>0,0,100%,100%</area>
                 </shape>
             </state>
@@ -850,7 +815,7 @@
                     <statetype name="status">
                         <state name="disabled">
                             <area>0,0,100%,100%</area>
-                            <shape name="buttonbackground" from="base_select_bar_selectedactive_small">
+                            <shape name="buttonbackground" from="base_select_bar_selectedactive">
                                 <area>0,0,100%,100%</area>
                                 <line color="#808080" alpha="200" width="2" />
                             </shape>
@@ -900,7 +865,7 @@
                 </imagetype>
             </state>
             <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_small">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                     <area>0,0,100%,100%</area>
                 </shape>
                 <textarea name="buttontext" from="base_text_font_state_small">
@@ -946,7 +911,7 @@
                 <statetype name="status">
                     <state name="disabled">
                         <area>0,0,100%,100%</area>
-                        <shape name="buttonbackground" from="base_select_bar_selectedactive_medium">
+                        <shape name="buttonbackground" from="base_select_bar_selectedactive">
                             <area>0,0,100%,100%</area>
                             <line color="#808080" alpha="200" width="2" />
                         </shape>
@@ -983,7 +948,7 @@
                 <statetype name="status">
                     <state name="disabled">
                         <area>0,0,100%,100%</area>
-                        <shape name="buttonbackground" from="base_select_bar_selectedactive_large">
+                        <shape name="buttonbackground" from="base_select_bar_selectedactive">
                             <area>0,0,100%,100%</area>
                             <line color="#808080" alpha="200" width="2" />
                         </shape>
@@ -1011,7 +976,7 @@
                 </statetype>
             </state>
             <state name="selectedinactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                     <area>0,0,100%,100%</area>
                 </shape>
             </state>
@@ -2244,7 +2209,7 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
@@ -2490,7 +2455,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
@@ -2611,7 +2576,7 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive_large">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
                         <area>0,0,100%,100%</area>
                     </shape>
                 </state>
