@@ -887,7 +887,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="groups" from="base_list_large_selector">
+        <buttonlist name="groups" from="base_list">
             <area>28,94,206,404</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -926,7 +926,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="schedules" from="base_list_state_large_selector">
+        <buttonlist name="schedules" from="base_list_state">
             <area>260,94,992,404</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1118,7 +1118,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="channels" from="base_list_medium_selector">
+        <buttonlist name="channels" from="base_list">
             <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1851,7 +1851,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="proglist" from="base_list_state_medium_selector">
+        <buttonlist name="proglist" from="base_list_state">
             <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -2379,7 +2379,7 @@
             <value>There are no Recordings Scheduled...</value>
         </textarea>
 
-        <buttonlist name="programs" from="base_list_state_large_selector">
+        <buttonlist name="programs" from="base_list">
             <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -4119,7 +4119,7 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <buttonlist name="conflictlist" from="base_list_state_medium_selector">
+        <buttonlist name="conflictlist" from="base_list_state">
             <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">

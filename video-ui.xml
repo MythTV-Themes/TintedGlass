@@ -297,7 +297,7 @@
             <area>1256,402,2,279</area>
         </shape>
 
-        <buttonlist name="videos" from="base_list_large_selector">
+        <buttonlist name="videos" from="base_list">
             <area>28,44,1224,338</area>
             <statetype name="buttonitem">
                 <state name="active">

@@ -751,33 +751,6 @@
         </statetype>
     </buttonlist>
 
-    <!-- Base definition of a list with a medium sized select bar-->
-    <buttonlist name="base_list_medium_selector" from="base_list">
-        <statetype name="buttonitem">
-            <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
-            </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- Base definition of a list with a large sized select bar -->
-    <buttonlist name="base_list_large_selector" from="base_list">
-        <statetype name="buttonitem">
-            <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
-            </state>
-            <state name="selectedinactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
-            </state>
-        </statetype>
-    </buttonlist>
-
     <!-- Base definition of a list with state info and a small sized select bar -->
     <buttonlist name="base_list_state">
         <layout>vertical</layout>
@@ -900,85 +873,6 @@
                     <filename>images/lists_down_arrow.png</filename>
                     <alpha>200</alpha>
                 </imagetype>
-            </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- Base definition of a list with state info and a medium sized select bar-->
-    <buttonlist name="base_list_state_medium_selector" from="base_list_state">
-        <statetype name="buttonitem">
-            <state name="selectedactive">
-                <statetype name="status">
-                    <state name="disabled">
-                        <area>0,0,100%,100%</area>
-                        <shape name="buttonbackground" from="base_select_bar_selectedactive">
-                            <area>0,0,100%,100%</area>
-                            <line color="#808080" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="error" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d93636" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="warning" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d9d900" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="normal" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d6d6d6" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="running" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#80d400" alpha="200" width="2" />
-                         </shape>
-                    </state>
-                </statetype>
-            </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- Base definition of a list with state info and a large sized select bar -->
-    <buttonlist name="base_list_state_large_selector" from="base_list_state">
-        <statetype name="buttonitem">
-            <state name="selectedactive">
-                <statetype name="status">
-                    <state name="disabled">
-                        <area>0,0,100%,100%</area>
-                        <shape name="buttonbackground" from="base_select_bar_selectedactive">
-                            <area>0,0,100%,100%</area>
-                            <line color="#808080" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="error" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d93636" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="warning" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d9d900" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="normal" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#d6d6d6" alpha="200" width="2" />
-                        </shape>
-                    </state>
-                    <state name="running" from="disabled">
-                        <shape name="buttonbackground">
-                            <line color="#80d400" alpha="200" width="2" />
-                         </shape>
-                    </state>
-                </statetype>
-            </state>
-            <state name="selectedinactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
             </state>
         </statetype>
     </buttonlist>
@@ -2118,7 +2012,7 @@
             <value>Filename</value>
         </textarea>
 
-        <buttonlist name="filelist" from="base_list_large_selector">
+        <buttonlist name="filelist" from="base_list">
             <area>653,100,599,578</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -2377,7 +2271,7 @@
             <value>Metadata Results</value>
         </textarea>
 
-        <buttonlist name="results" from="base_list_large_selector">
+        <buttonlist name="results" from="base_list">
             <area>8,53,1224,590</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -2529,7 +2423,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="results" from="base_list_large_selector">
+        <buttonlist name="results" from="base_list">
             <area>8,55,600,588</area>
             <layout>vertical</layout>
             <statetype name="buttonitem">

@@ -170,7 +170,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="groups" from="base_list_large_selector">
+        <buttonlist name="groups" from="base_list">
             <area>28,93,300,338</area>
             <statetype name="buttonitem">
                 <state name="active">
@@ -206,7 +206,7 @@
             </statetype>
         </buttonlist>
         
-        <buttonlist name="recordings" from="base_list_state_large_selector">
+        <buttonlist name="recordings" from="base_list_state">
             <area>354,93,898,338</area>
             <align>top</align>
             <statetype name="buttonitem">
@@ -1002,7 +1002,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="iconlist" from="base_list_large_selector">
+        <buttonlist name="iconlist" from="base_list">
             <area>8,42,684,406</area>
             <statetype name="buttonitem">
                 <state name="inactive">

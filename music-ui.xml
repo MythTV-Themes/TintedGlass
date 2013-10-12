@@ -45,7 +45,7 @@
         </textarea>
 
         <!-- current playlist button list -->
-        <buttonlist name="currentplaylist" from="base_list_large_selector">
+        <buttonlist name="currentplaylist" from="base_list">
             <area>28,44,1224,406</area>
             <searchposition>-1,466</searchposition>
             <buttonarea>0,0,1224,406</buttonarea>
@@ -2270,7 +2270,7 @@
             <value>No Album Art Found!</value>
         </textarea>
 
-        <buttonlist name="coverartlist" from="base_list_large_selector">
+        <buttonlist name="coverartlist" from="base_list">
             <area>175,47,400,492</area>
             <statetype name="buttonitem">
                 <state name="active">

@@ -263,7 +263,7 @@
 
         <!-- End icon status help -->
 
-        <buttonlist name="themes" from="base_list_large_selector">
+        <buttonlist name="themes" from="base_list">
             <area>28,81,599,598</area>
             <statetype name="buttonitem">
                 <state name="active">

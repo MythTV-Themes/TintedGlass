@@ -310,7 +310,7 @@
             <area>1207,148,50,12</area>
         </shape>
 
-        <buttonlist name="currentplaylist" from="base_list_state_large_selector">
+        <buttonlist name="currentplaylist" from="base_list_state">
             <area>28,8,1224,134</area>
             <searchposition>-1,84</searchposition>
             <scrollstyle>center</scrollstyle>

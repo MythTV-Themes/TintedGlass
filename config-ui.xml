@@ -88,7 +88,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <buttonlist name="icons" from="base_list_large_selector">
+        <buttonlist name="icons" from="base_list">
             <area>244,201,788,478</area>
             <statetype name="buttonitem">
                 <state name="active">
