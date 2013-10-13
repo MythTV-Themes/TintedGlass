@@ -2379,7 +2379,7 @@
             <value>There are no Recordings Scheduled...</value>
         </textarea>
 
-        <buttonlist name="programs" from="base_list">
+        <buttonlist name="programs" from="base_list_state">
             <area>28,94,1224,404</area>
             <statetype name="buttonitem">
                 <state name="active">
