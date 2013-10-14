@@ -91,20 +91,22 @@
                             </textarea>
                         </state>
                     </statetype>
-                    <textarea name="tracknum" from="buttontext">
+                    <textarea name="tracknum">
                         <area>133,0,52,30</area>
+                        <font>basesmall</font>
                         <align>right,vcenter</align>
                         <template>%1 -</template>
                     </textarea>
-                    <textarea name="title" from="buttontext">
+                    <textarea name="title">
                         <area>193,0,566,30</area>
+                        <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="artist" from="buttontext">
+                    <textarea name="artist" from="title">
                         <area>774,0,350,30</area>
                         <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="length" from="buttontext">
+                    <textarea name="length" from="title">
                         <area>1139,0,70,30</area>
                         <align>right,vcenter</align>
                     </textarea>
@@ -150,34 +152,38 @@
                             </textarea>
                         </state>
                     </statetype>
-                    <textarea name="tracknum" from="buttontext">
+                    <textarea name="tracknum">
                         <area>159,2,52,24</area>
+                        <font>basesmallyellow</font>
                         <align>right,vcenter</align>
                         <template>%1 -</template>
                     </textarea>
-                    <textarea name="title" from="buttontext">
+                    <textarea name="title">
                         <area>219,2,540,24</area>
+                        <font>basesmallyellow</font>
                     </textarea>
-                    <textarea name="artist" from="buttontext">
+                    <textarea name="artist" from="title">
                         <area>774,2,350,24</area>
                     </textarea>
-                    <textarea name="length" from="buttontext">
+                    <textarea name="length" from="title">
                         <area>1139,2,70,24</area>
                         <align>right,vcenter</align>
                     </textarea>
-                    <textarea name="album" from="base_text_font_state_extrasmall">
+                    <textarea name="album">
                         <area>229,0,540,64</area>
+                        <font>baseextrasmallyellow</font>
+                        <align>left,vcenter</align>
                     </textarea>
-                    <textarea name="genre" from="base_text_font_state_extrasmall">
+                    <textarea name="genre" from="album">
                         <area>784,0,340,64</area>
                     </textarea>
                     <statetype name="ratingstate" from="base_rating_state">
                         <position>219,40</position>
                     </statetype>
-                    <textarea name="lastplayed" from="base_text_font_state_extrasmall">
+                    <textarea name="lastplayed" from="album">
                         <area>774,43,250,20</area>
                     </textarea>
-                    <textarea name="playcount" from="base_text_font_state_extrasmall">
+                    <textarea name="playcount" from="album">
                         <area>1039,43,170,20</area>
                         <align>right,vcenter</align>
                         <template>Played %1 times</template>

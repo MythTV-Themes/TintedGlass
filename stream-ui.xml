@@ -92,17 +92,14 @@
                     </statetype>
                     <textarea name="station" from="buttontext">
                         <area>153,0,200,30</area>
-                        <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channel" from="buttontext">
                         <area>363,0,370,30</area>
-                        <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="genre" from="buttontext">
                         <area>743,0,462,30</area>
-                        <font>basesmall</font>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
@@ -149,20 +146,14 @@
                     </statetype>
                     <textarea name="station" from="buttontext">
                         <area>183,0,200,64</area>
-                        <font>basesmall</font>
-                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="channel" from="buttontext">
                         <area>393,0,356,64</area>
-                        <font>basesmall</font>
-                        <multiline>yes</multiline>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="genre" from="buttontext">
                         <area>759,0,450,64</area>
-                        <font>basesmall</font>
-                        <multiline>yes</multiline>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
@@ -226,23 +217,19 @@
                         <textarea name="tracknum" from="buttontext">
                             <area>53,0,50,30</area>
                             <align>right,vcenter</align>
-                            <font>basesmall</font>
                             <template>%1 -</template>
                         </textarea>
                         <textarea name="title" from="buttontext">
                             <area>113,0,490,30</area>
                             <align>left,vcenter</align>
-                            <font>basesmall</font>
                         </textarea>
                         <textarea name="artist" from="buttontext">
                             <area>613,0,466,30</area>
-                            <font>basesmall</font>
                             <align>left,vcenter</align>
                         </textarea>
                         <textarea name="length" from="buttontext">
                             <area>1089,0,120,30</area>
                             <align>right,vcenter</align>
-                            <font>basesmall</font>
                         </textarea>
                     </state>
                     <state name="selectedactive">
@@ -257,23 +244,19 @@
                         <textarea name="tracknum" from="buttontext">
                             <area>83,0,50,64</area>
                             <align>right,vcenter</align>
-                            <font>basesmall</font>
                             <template>%1 -</template>
                         </textarea>
                         <textarea name="title" from="buttontext">
                             <area>143,0,460,64</area>
                             <align>left,vcenter</align>
-                            <font>basesmall</font>
                         </textarea>
                         <textarea name="artist" from="buttontext">
                             <area>613,0,466,64</area>
-                            <font>basesmall</font>
                             <align>left,vcenter</align>
                         </textarea>
                         <textarea name="length" from="buttontext">
                             <area>1089,0,120,64</area>
                             <align>right,vcenter</align>
-                            <font>basesmall</font>
                         </textarea>
                     </state>
                     <state name="selectedinactive" from="selectedactive">

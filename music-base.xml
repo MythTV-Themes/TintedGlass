@@ -310,7 +310,7 @@
             <area>1207,148,50,12</area>
         </shape>
 
-        <buttonlist name="currentplaylist" from="base_list_state">
+        <buttonlist name="currentplaylist" from="base_list">
             <area>28,8,1224,134</area>
             <searchposition>-1,84</searchposition>
             <scrollstyle>center</scrollstyle>
@@ -366,9 +366,6 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1224,64</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
-                        <area>0,0,100%,100%</area>
-                    </shape>
                     <imagetype name="buttonimage">
                         <area>15,5,54,54</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
@@ -411,7 +408,6 @@
                     <textarea name="title" from="buttontext">
                         <area>159,0,1050,64</area>
                         <align>left,vcenter</align>
-                        <font>basesmall</font>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
                 </state>
