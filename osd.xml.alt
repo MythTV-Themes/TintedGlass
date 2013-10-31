@@ -883,7 +883,7 @@
         </textarea>
 
         <imagetype name="iconpath">
-            <area>51,573,130,98</area>
+            <area>50,573,130,98</area>
             <preserveaspect>true</preserveaspect>
             <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
