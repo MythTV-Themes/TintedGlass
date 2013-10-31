@@ -255,22 +255,22 @@
         </buttonlist>
 
         <imagetype name="no_channelicon" depends="!channelicon">
-            <area>44,471,50,38</area>
-            <preserveaspect>false</preserveaspect>
+            <area>44,470,53,40</area>
+            <preserveaspect>true</preserveaspect>
             <filename>images/no_channel_icon.png</filename>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <imagetype name="channelicon">
-            <area>44,471,50,38</area>
-            <preserveaspect>false</preserveaspect>
+            <area>44,470,53,40</area>
+            <preserveaspect>true</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>104,467,1130,46</area>
+            <area>107,467,1127,46</area>
             <align>left,vcenter</align>
             <font>basemediumyellow</font>
             <template>%TITLE% %|(CATEGORY|)%</template>
@@ -570,22 +570,22 @@
         </buttonlist>
 
         <imagetype name="no_channelicon" depends="!channelicon">
-            <area>43,411,50,38</area>
-            <preserveaspect>false</preserveaspect>
+            <area>43,410,53,40</area>
+            <preserveaspect>true</preserveaspect>
             <filename>images/no_channel_icon.png</filename>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <imagetype name="channelicon">
-            <area>43,411,50,38</area>
-            <preserveaspect>false</preserveaspect>
+            <area>43,410,53,40</area>
+            <preserveaspect>true</preserveaspect>
             <mask>images/masks/channelicon-small-mask.png</mask>
             <alpha>200</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>103,407,635,46</area>
+            <area>106,407,632,46</area>
             <align>left,vcenter</align>
             <font>basemediumyellow</font>
             <template>%TITLE% %|(CATEGORY|)%</template>

@@ -981,7 +981,8 @@
         </textarea>
 
         <imagetype name="iconpath">
-            <area>84,533,130,100</area>
+            <area>84,534,130,98</area>
+            <preserveaspect>true</preserveaspect>
             <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
@@ -1175,6 +1176,7 @@
 
         <imagetype name="iconpath">
             <area>80,541,120,90</area>
+            <preserveaspect>true</preserveaspect>
             <mask>images/osd/masks/osd_browse_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
