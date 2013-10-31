@@ -606,11 +606,27 @@
             </statetype>
         </buttonlist>
 
-        <imagetype name="coverart">
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
             <area>41,468,128,196</area>
             <filename>images/no_coverart.png</filename>
             <mask>images/masks/watchrecordings_coverart_mask.png</mask>
             <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="no_coverart_with_fanart" depends="fanart">
+            <area>41,468,128,196</area>
+            <filename>images/no_coverart_with_fanart.png</filename>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>41,468,128,196</area>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
@@ -646,17 +662,27 @@
             <template>Disk space:  %1</template>
         </textarea>
 
-        <imagetype name="no_preview_image">
+        <imagetype name="no_preview_image_without_fanart" depends="!fanart">
             <area>891,468,348,196</area>
             <filename>images/no_preview.png</filename>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="no_preview_image_with_fanart" depends="fanart">
+            <area>891,468,348,196</area>
+            <filename>images/no_preview_with_fanart.png</filename>
+            <mask>images/masks/watchrecordings_preview_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
         </imagetype>
 
         <imagetype name="preview">
             <area>891,468,348,196</area>
             <mask>images/masks/watchrecordings_preview_mask.png</mask>
             <preserveaspect>true</preserveaspect>
+            <alpha>255</alpha>
         </imagetype>
 
         <textarea name="norecordings">

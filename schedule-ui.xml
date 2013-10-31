@@ -4004,9 +4004,14 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <imagetype name="no_coverart_image">
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
             <area>837,126,298,447</area>
             <filename>images/no_coverart.png</filename>
+        </imagetype>
+
+        <imagetype name="no_coverart_with_fanart" depends="fanart">
+            <area>837,126,298,447</area>
+            <filename>images/no_coverart_with_fanart.png</filename>
         </imagetype>
 
         <imagetype name="coverart">

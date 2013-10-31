@@ -638,9 +638,16 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <imagetype name="no_coverart">
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
             <area>1071,404,183,275</area>
             <filename>images/no_coverart.png</filename>
+            <mask>images/masks/manager_coverart_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="no_coverart_with_fanart" depends="fanart">
+            <area>1071,404,183,275</area>
+            <filename>images/no_coverart_with_fanart.png</filename>
             <mask>images/masks/manager_coverart_mask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
@@ -2110,9 +2117,16 @@
             <align>allcenter</align>
         </textarea>
 
-        <imagetype name="no_coverart">
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
             <area>1070,403,185,277</area>
             <filename>images/no_coverart.png</filename>
+            <mask>images/masks/tree_coverart_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="no_coverart_with_fanart" depends="fanart">
+            <area>1070,403,185,277</area>
+            <filename>images/no_coverart_with_fanart.png</filename>
             <mask>images/masks/tree_coverart_mask.png</mask>
             <preserveaspect>no</preserveaspect>
         </imagetype>
@@ -2354,6 +2368,20 @@
         <shape name="video-metadata-bottom-seperator-second-line" from="base_vertical_line">
             <area>1060,327,3,335</area>
         </shape>
+
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
+            <area>1091,42,163,244</area>
+            <filename>images/no_coverart.png</filename>
+            <mask>images/masks/edit_metadata_coverart_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
+
+        <imagetype name="no_coverart_with_fanart" depends="fanart">
+            <area>1091,42,163,244</area>
+            <filename>images/no_coverart_with_fanart.png</filename>
+            <mask>images/masks/edit_metadata_coverart_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
 
         <imagetype name="coverart">
             <area>1091,42,163,244</area>
