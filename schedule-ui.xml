@@ -4019,9 +4019,14 @@
             <filename>images/no_coverart.png</filename>
         </imagetype>
 
-        <imagetype name="no_banner_image">
+        <imagetype name="no_banner_without_fanart" depends="!fanart">
             <area>718,579,536,99</area>
             <filename>images/no_banner.png</filename>
+        </imagetype>
+
+        <imagetype name="no_banner_with_fanart" depends="fanart">
+            <area>718,579,536,99</area>
+            <filename>images/no_banner_with_fanart.png</filename>
         </imagetype>
 
         <imagetype name="banner">
