@@ -976,12 +976,12 @@
 
         <textarea name="channum">
             <font>large</font>
-            <area>68,491,162,46</area>
+            <area>68,490,162,46</area>
             <align>allcenter</align>
         </textarea>
 
         <imagetype name="iconpath">
-            <area>84,534,130,98</area>
+            <area>84,536,130,98</area>
             <preserveaspect>true</preserveaspect>
             <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
@@ -997,7 +997,7 @@
 -->
         <textarea name="callsign">
             <font>large</font>
-            <area>68,636,162,46</area>
+            <area>68,634,162,46</area>
             <align>allcenter</align>
         </textarea>
 
