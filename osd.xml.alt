@@ -411,7 +411,8 @@
             <area>32,700,1216,20</area>
             <font>small</font>
             <align>allcenter</align>
-            <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+            <template>%DESCRIPTION%
+            %(|REMAININGTIME|)%%(|BEHINDTIME|)%%VALUE%%UNITS%</template>
         </textarea>
 
         <clock name="clock">
@@ -882,6 +883,12 @@
             <align>allcenter</align>
         </textarea>
 
+        <textarea name="callsign">
+            <font>large</font>
+            <area>32,675,166,46</area>
+            <align>allcenter</align>
+        </textarea>
+
         <imagetype name="iconpath">
             <area>50,573,130,98</area>
             <preserveaspect>true</preserveaspect>
@@ -894,15 +901,9 @@
 <!--
         <imagetype name="coverart">
             <area>36,513,158,186</area>
-            <alpha>225</alpha>
+            <alpha>255</alpha>
         </imagetype>
 -->
-        <textarea name="callsign">
-            <font>large</font>
-            <area>32,675,166,46</area>
-            <align>allcenter</align>
-        </textarea>
-
 	<textarea name="category">
             <font>supersmallblue</font>
             <area>265,529,952,28</area>
@@ -1405,6 +1406,10 @@
             <color>#808080</color>
         </fontdef>
 
+        <fontdef name="smallyellow" from="small">
+            <color>#d9d900</color>
+        </fontdef>
+
         <shape name="mythpopupbox-backdrop">
             <area>339,116,602,488</area>
             <type>roundbox</type>
@@ -1466,7 +1471,7 @@
 
         <textarea name="messagearea">
             <area>349,126,582,196</area>
-            <font>small</font>
+            <font>smallyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
