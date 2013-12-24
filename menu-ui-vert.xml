@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.xsd">
+<mythuitheme>
+
+    <window name="mainmenu">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Main Menu</value>
+        </textarea>
+
+        <shape name="menuscroll-background" from="base_backdrop">
+            <area>35,0,310,720</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="menuscroll-left-line" from="base_line">
+            <area>36,0,2,1280</area>
+        </shape>
+
+        <shape name="menuscroll-right-line" from="base_line">
+            <area>342,0,2,1280</area>
+        </shape>
+
+        <buttonlist name="menu">
+            <area>35,62,310,596</area>
+            <layout>vertical</layout>
+            <spacing>4</spacing>
+            <scrollstyle>free</scrollstyle>
+            <wrapstyle>selection</wrapstyle>
+            <arrange>Stack</arrange>
+            <align>vcenter</align>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,310,64</area>
+                    <textarea name="buttontext">
+                        <area>12,0,286,64</area>
+                        <font>basemediumlightgrey</font>
+                        <multiline>yes</multiline>
+                        <align>allcenter</align>
+                        <cutdown>yes</cutdown>
+                        <case>upper</case>
+                    </textarea>
+                </state>
+                <state name="selectedactive"> 
+                    <area>-10,0,330,64</area>
+                    <shape name="background" from="base_select_bar_selectedactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>5,0,320,64</area>
+                        <font>basemediumlargerdarkyellow</font>
+                        <multiline>yes</multiline>
+                        <!-- cpu usage is very high
+                        <alphapulse min="100" max="255" change="2"/>
+                         -->
+                        <align>allcenter</align>
+                        <cutdown>yes</cutdown>
+                        <case>upper</case>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>147,0</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>147,588</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>
