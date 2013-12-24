@@ -431,19 +431,19 @@
     <group name="base_heading_group">
         <area>0,0,1280,720</area>
         <shape name="base_heading_backdrop" from="base_backdrop">
-            <area>500,-7,280,32</area>
+            <area>485,-7,310,32</area>
         </shape>
         <shape name="base_heading_backdrop_line" from="base_backdrop_line">
-            <area>500,-7,280,32</area>
+            <area>485,-7,310,32</area>
         </shape>
         <shape name="heading-left-line" from="base_highlight_vertical_line">
-            <area>501,0,2,22</area>
+            <area>486,0,2,22</area>
         </shape>
         <shape name="heading-right-line" from="base_highlight_vertical_line">
-            <area>777,0,2,22</area>
+            <area>792,0,2,22</area>
         </shape>
         <shape name="heading-bottom-line" from="base_highlight_line">
-            <area>501,22,278,2</area>
+            <area>486,22,308,2</area>
         </shape>
     </group>
 
@@ -463,25 +463,25 @@
     <!-- Base definition of a clock  group -->
     <group name="base_clock_backdrop_group">
         <shape name="base_clock_backdrop" from="base_backdrop">
-            <area>500,695,280,32</area>
+            <area>485,695,310,32</area>
         </shape>
         <shape name="base_clock_backdrop_line" from="base_backdrop_line">
-            <area>500,695,280,32</area>
+            <area>485,695,310,32</area>
         </shape>
         <shape name="base_clock_backdrop_top_line" from="base_highlight_line">
-            <area>501,696,278,2</area>
+            <area>486,696,308,2</area>
         </shape>
         <shape name="base_clock_backdrop_left_line" from="base_highlight_vertical_line">
-            <area>501,698,2,22</area>
+            <area>486,698,2,22</area>
         </shape>
         <shape name="clock_right_line" from="base_highlight_vertical_line">
-            <area>777,698,2,22</area>
+            <area>792,698,2,22</area>
         </shape>
     </group>
 
     <!-- Base denfinition of a clock -->
     <clock name="base_clock">
-        <area>529,698,219,22</area>
+        <area>494,698,292,22</area>
         <font>baseextrasmall</font>
         <template>%DATE%, %TIME%</template>
         <align>allcenter</align>
