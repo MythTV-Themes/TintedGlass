@@ -1235,9 +1235,7 @@
 
         <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
 
-	<clock name="time" from="base_clock">
-            <area>529,698,219,22</area>
-        </clock>
+	<clock name="time" from="base_clock" />
 
     </window>
 
