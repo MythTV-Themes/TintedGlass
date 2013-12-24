@@ -8,7 +8,7 @@
             <value>Main Menu</value>
         </textarea>
 
-        <shape name="menuscroll-background" from="base_backdrop">
+        <shape name="menuscroll-backdrop" from="base_backdrop">
             <area>0,525,1280,70</area>
             <type>box</type>
         </shape>
@@ -31,7 +31,6 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,232,64</area>
-                    <imagetype name="background" />
                     <textarea name="buttontext">
                         <area>0,0,232,64</area>
                         <font>basemediumlightgrey</font>
@@ -44,6 +43,12 @@
                 <state name="selectedactive"> 
                     <area>0,0,232,64</area>
                     <imagetype name="background" />
+                    <shape name="menu-left-line" from="base_highlight_vertical_line">
+                        <area>-10,-2,2,66</area>
+                    </shape>
+                    <shape name="menu-right-line" from="base_highlight_vertical_line">
+                        <area>240,-2,2,66</area>
+                    </shape>
                     <textarea name="buttontext">
                         <area>0,0,232,64</area>
                         <font>basemediumlargerdarkyellow</font>
@@ -55,6 +60,21 @@
                         <cutdown>yes</cutdown>
                         <case>upper</case>
                     </textarea>
+                    <group name="variable-size-text-backdrop-group">
+                        <area>-503,-42,1240,40</area>
+                        <minsize vanish="true">252,40</minsize>
+                        <shape name="text-backdrop" from="base_backdrop">
+                            <area>0,0,-1,-1</area>
+                            <minsize vanish="true">252,40</minsize>
+                        </shape>
+                        <textarea name="description" from="basetextarea">
+                            <area>20,1,-20,-1</area>
+                            <minsize shrink="short" vanish="true">5,5</minsize>
+                            <font>basesmallyellow</font>
+                            <align>allcenter</align>
+                            <multiline>no</multiline>
+                        </textarea>
+                    </group>
                 </state>
             </statetype>
         </buttonlist>
