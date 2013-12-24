@@ -347,6 +347,197 @@
 
     </window>
 
+    <window name="languageselection">
+
+        <textarea name="title" from="base_heading">
+            <value>Language</value>
+        </textarea>
+
+        <textarea name="countrylabel">
+            <font>baselarge</font>
+            <area>40,20,580,40</area>
+            <value>Country</value>
+            <align>allcenter</align>
+        </textarea>
+
+        <shape name="countrybackground" from="base_backdrop">
+            <area>40,65,580,550</area>
+        </shape>
+
+        <shape name="country-top-backdrop-line" from="base_backdrop_line">
+            <area>41,66,578,548</area>
+        </shape>
+
+        <shape name="country-top-line" from="base_highlight_line">
+            <area>42,67,576,2</area>
+        </shape>
+
+        <shape name="country-bottom-line" from="base_highlight_line">
+            <area>42,613,576,2</area>
+        </shape>
+
+        <shape name="country-left-line" from="base_highlight_vertical_line">
+            <area>42,69,2,544</area>
+        </shape>
+
+        <shape name="country-right-line" from="base_highlight_vertical_line">
+            <area>616,69,2,544</area>
+        </shape>
+
+        <shape name="country-arrows-backdrop" from="base_arrows_backdrop">
+            <area>48,615,50,12</area>
+        </shape>
+
+        <buttonlist name="countries" from="base_list">
+            <area>50,78,560,530</area>
+            <scrollstyle>center</scrollstyle>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <shape name="buttonbackground" from="base_select_bar_active">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>5,7,60,40</area>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>70,0,90%,30</area>
+                        <font>basemediumgrey</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="nativecountry" from="basetextarea">
+                        <area>70,30,90%,20</area>
+                        <font>basesmallgrey</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active"/>
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>70,0,90%,30</area>
+                        <font>basemediumyellow</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="nativecountry" from="basetextarea">
+                        <area>70,30,90%,20</area>
+                        <font>basesmall</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="inactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>5,539</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>25,539</position>
+            </statetype>
+            <helptext>Select the country where you reside.</helptext>
+        </buttonlist>
+
+        <textarea name="languagelabel" from="countrylabel">
+            <area>660,20,580,40</area>
+            <value>Language</value>
+        </textarea>
+
+        <shape name="languagebackground" from="base_backdrop">
+            <area>660,65,580,550</area>
+        </shape>
+
+        <shape name="lang-top-backdrop-line" from="base_backdrop_line">
+            <area>661,66,578,548</area>
+        </shape>
+
+        <shape name="lang-top-line" from="base_highlight_line">
+            <area>662,67,576,2</area>
+        </shape>
+
+        <shape name="lang-bottom-line" from="base_highlight_line">
+            <area>662,613,576,2</area>
+        </shape>
+
+        <shape name="lang-left-line" from="base_highlight_vertical_line">
+            <area>662,69,2,544</area>
+        </shape>
+
+        <shape name="lang-right-line" from="base_highlight_vertical_line">
+            <area>1236,69,2,544</area>
+        </shape>
+
+        <shape name="lang-arrows-backdrop" from="base_arrows_backdrop">
+            <area>668,615,50,12</area>
+        </shape>
+
+        <buttonlist name="languages" from="countries">
+            <area>670,78,560,530</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,55</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>10,0,90%,30</area>
+                        <font>basemediumgrey</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="language" from="nativecountry">
+                        <position>10,30</position>
+                    </textarea>
+                </state>
+                <state name="inactive" from="active" />
+                <state name="selectedactive" from="active">
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>10,0,90%,30</area>
+                        <font>basemediumyellow</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="language" from="nativecountry">
+                        <area>10,30,90%,20</area>
+                        <font>basesmall</font>
+                        <cutdown>yes</cutdown>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="inactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+            <helptext>Select your language.</helptext>
+        </buttonlist>
+
+        <textarea name="helptext" from="basetextarea">
+            <area>200,630,880,60</area>
+            <align>center</align>
+        </textarea>
+
+        <button name="save" from="base_button">
+            <position>1090,643</position>
+            <value>Save</value>
+        </button>
+
+        <button name="cancel" from="base_button">
+            <position>40,643</position>
+            <value>Cancel</value>
+        </button>
+
+    </window>
+
     <window name="grabbersettings">
         <area>0,0,1280,720</area>
 
