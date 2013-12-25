@@ -1370,11 +1370,9 @@
             <area>80,380,1120,150</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background">
+                    <shape name="background" from="base_button_background_active">
                         <area>0,0,1120,150</area>
                         <type>roundbox</type>
-                        <fill color="#333333" alpha="175" />
-                        <line color="#454545" alpha="180" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>
@@ -2612,11 +2610,8 @@
             </statetype>
         </buttonlist>
 
-        <shape name="custom-record-rules-clausetext-background">
+        <shape name="custom-record-rules-clausetext-background" from="base_button_background_active">
             <area>50,220,1180,40</area>
-            <type>roundbox</type>
-            <fill color="#333333" alpha="175" />
-            <line color="#454545" alpha="180" width="2" />
             <cornerradius>90</cornerradius>
         </shape>
 
@@ -2630,11 +2625,8 @@
             <area>100,277,1080,150</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background">
+                    <shape name="background" from="base_button_background_active">
                         <area>0,0,1080,150</area>
-                        <type>roundbox</type>
-                        <fill color="#333333" alpha="175" />
-                        <line color="#454545" alpha="180" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>
@@ -2667,11 +2659,8 @@
             <area>300,445,880,85</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background">
+                    <shape name="background" from="base_button_background_active">
                         <area>0,0,880,85</area>
-                        <type>roundbox</type>
-                        <fill color="#333333" alpha="175" />
-                        <line color="#454545" alpha="180" width="2" />
                         <cornerradius>5</cornerradius>
                     </shape>
                 </state>
