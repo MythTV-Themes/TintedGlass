@@ -994,11 +994,8 @@
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,0,100%,100%</area>
-                <shape name="buttonbackground">
+                <shape name="buttonbackground" from="base_button_background_active">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#333333" alpha="175" />
-                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
@@ -1061,11 +1058,8 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <shape name="buttonbackground">
+                <shape name="buttonbackground" from="base_button_background_active">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#333333" alpha="175" />
-                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
@@ -1114,11 +1108,8 @@
            <area>0,0,100%,100%</area>
            <state name="active">
                <area>0,0,100%,100%</area>
-               <shape name="background">
+               <shape name="background" from="base_button_background_active">
                     <area>0,0,100%,100%</area>
-                    <type>roundbox</type>
-                    <fill color="#333333" alpha="175" />
-                    <line color="#454545" alpha="180" width="2" />
                     <cornerradius>90</cornerradius>
                 </shape>
             </state>
