@@ -700,7 +700,7 @@
     </window>
    
     <window name="changeview">
-        <area>-1,-1,380,463</area>
+        <area>-1,-1,602,488</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -717,100 +717,100 @@
         </animation>
 
         <shape name="change-view-backdrop" from="base_popup_backdrop">
-            <area>0,0,380,463</area>
+            <area>0,0,602,488</area>
         </shape>
 
         <shape name="change-view-backdrop-line" from="base_backdrop_line">
-            <area>1,1,378,461</area>
+            <area>1,1,600,486</area>
         </shape>
 
         <shape name="change-view-top-line" from="base_highlight_line">
-            <area>2,2,376,2</area>
+            <area>2,2,596,2</area>
         </shape>
 
         <shape name="change-view-bottom-line" from="base_highlight_line">
-            <area>2,459,376,2</area>
+            <area>2,484,596,2</area>
         </shape>
 
         <shape name="change-view-left-line" from="base_highlight_vertical_line">
-            <area>2,4,2,455</area>
+            <area>2,4,2,480</area>
         </shape>
 
         <shape name="change-view-right-line" from="base_highlight_vertical_line">
-            <area>376,4,2,455</area>
+            <area>598,4,2,480</area>
         </shape>
 
         <shape name="change-view-seperator-top-line" from="base_line">
-            <area>23,74,334,2</area>
+            <area>23,50,556,2</area>
         </shape>
 
         <shape name="change-view-seperator-bottom-line" from="base_line">
-            <area>23,407,334,2</area>
+            <area>23,435,556,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>4,4,372,70</area>
+            <area>10,4,582,46</area>
             <align>allcenter</align>
             <font>basesmallyellow</font>
             <value>Change View</value>
         </textarea>
 
         <checkbox name="titles" from="base_checkbox">
-            <position>60,102</position>
+            <position>150,102</position>
         </checkbox>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>110,105,300,30</area>
+            <area>200,105,300,30</area>
             <value>Show Titles</value>
         </textarea>
 
         <checkbox name="categories" from="base_checkbox">
-            <position>60,152</position>
+            <position>150,152</position>
         </checkbox>
 
         <textarea name="catlabel" from="titlelabel">
-            <position>110,155</position>
+            <position>200,155</position>
             <value>Show Categories</value>
         </textarea>
 
         <checkbox name="recgroups" from="base_checkbox">
-            <position>60,202</position>
+            <position>150,202</position>
         </checkbox>
 
         <textarea name="grouplabel" from="titlelabel">
-            <position>110,205</position>
+            <position>200,205</position>
             <value>Show Recording Groups</value>
         </textarea>
 
         <checkbox name="watchlist" from="base_checkbox">
-            <position>60,252</position>
+            <position>150,252</position>
         </checkbox>
 
         <textarea name="watchlabel" from="titlelabel">
-            <position>110,255</position>
+            <position>200,255</position>
             <value>Show Watch List</value>
         </textarea>
 
         <checkbox name="searches" from="base_checkbox">
-            <position>60,302</position>
+            <position>150,302</position>
         </checkbox>
 
         <textarea name="searchlabel" from="titlelabel">
-            <position>110,305</position>
+            <position>200,305</position>
             <value>Show Searches</value>
         </textarea>
 
         <checkbox name="livetv" from="base_checkbox">
-            <position>60,352</position>
+            <position>150,352</position>
         </checkbox>
 
         <textarea name="livelabel" from="titlelabel">
-            <position>110,355</position>
+            <position>200,355</position>
             <value>Show LiveTV</value>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>15,414</position>
+        <button name="save" from="base_wide_button">
+            <position>60,440</position>
             <value>Save</value>
         </button>
 
@@ -885,7 +885,7 @@
     </window>
 
     <window name="groupselector">
-        <area>-1,-1,380,463</area>
+        <area>-1,-1,602,488</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -902,67 +902,67 @@
         </animation>
 
         <shape name="group-selector-backdrop" from="base_popup_backdrop">
-            <area>0,0,380,463</area>
+            <area>0,0,602,488</area>
         </shape>
 
         <shape name="group-selector-backdrop-line" from="base_backdrop_line">
-            <area>1,1,378,461</area>
+            <area>1,1,600,486</area>
         </shape>
 
         <shape name="group-selector-top-line" from="base_highlight_line">
-            <area>2,2,376,2</area>
+            <area>2,2,596,2</area>
         </shape>
 
         <shape name="group-selector-bottom-line" from="base_highlight_line">
-            <area>2,459,376,2</area>
+            <area>2,484,596,2</area>
         </shape>
 
         <shape name="group-selector-left-line" from="base_highlight_vertical_line">
-            <area>2,4,2,455</area>
+            <area>2,4,2,480</area>
         </shape>
 
         <shape name="group-selector-right-line" from="base_highlight_vertical_line">
-            <area>376,4,2,455</area>
+            <area>598,4,2,480</area>
         </shape>
 
         <shape name="group-selector-seperator-first-line" from="base_line">
-            <area>23,173,334,2</area>
+            <area>23,50,556,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>14,8,352,161</area>
+            <area>10,4,582,46</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
         </textarea>
 
         <buttonlist name="groups" from="base_button_list">
-            <area>16,189,349,264</area>
+            <area>16,70,570,398</area>
             <drawfrombottom>yes</drawfrombottom>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,349,40</area>
+                    <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,7,319,24</area>
+                        <area>8,0,570,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,349,40</area>
+                    <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,7,319,24</area>
+                        <area>8,0,570,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,349,40</area>
                     <textarea name="buttontext">
-                        <area>15,7,319,24</area>
+                        <area>8,0,570,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,256</position>
+                <position>0,400</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,256</position>
+                <position>20,400</position>
             </statetype>
         </buttonlist>
 
