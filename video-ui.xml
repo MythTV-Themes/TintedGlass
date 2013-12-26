@@ -3116,15 +3116,15 @@
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
-        <button name="done_button" from="base_wide_button">
-            <area>25,443,390,40</area>
+        <button name="done_button">
+            <position>25,443</position>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
                         <area>0,0,390,40</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>10,5,370,30</area>
+                        <area>10,0,370,40</area>
                         <align>allcenter</align>
                         <font>basesmall</font>
                         <value>Done</value>
@@ -3132,21 +3132,26 @@
                 </state>
                 <state name="selected" from="active">
                     <shape name="background" from="base_button_background_selected">
-                        <area>0,0,390,40</area>
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
             </statetype>
         </button>
         
-        <button name="play_button" from="base_wide_button">
-            <area>435,443,390,40</area>
+        <button name="play_button">
+            <position>435,443</position>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
                         <area>0,0,390,40</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>10,5,370,30</area>
+                        <area>10,0,370,40</area>
                         <align>allcenter</align>
                         <font>basesmall</font>
                         <value>Play</value>
@@ -3154,7 +3159,12 @@
                 </state>
                 <state name="selected" from="active">
                     <shape name="background" from="base_button_background_selected">
-                        <area>0,0,390,40</area>
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,100%,100%</area>
                     </shape>
                 </state>
             </statetype>
