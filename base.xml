@@ -1863,7 +1863,7 @@
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
-            <area>16,134,570,320</area>
+            <area>16,134,570,288</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
