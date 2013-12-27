@@ -10,12 +10,12 @@
             <type>box</type>
         </shape>
 
-        <shape name="menuscroll-left-line" from="base_line">
-            <area>36,0,2,1280</area>
+        <shape name="menuscroll-left-line" from="base_vertical_line">
+            <area>36,0,2,720</area>
         </shape>
 
-        <shape name="menuscroll-right-line" from="base_line">
-            <area>342,0,2,1280</area>
+        <shape name="menuscroll-right-line" from="base_vertical_line">
+            <area>342,0,2,720</area>
         </shape>
 
         <statetype name="titles">
