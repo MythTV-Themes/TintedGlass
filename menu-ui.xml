@@ -174,7 +174,7 @@
                         <textarea name="description" from="basetextarea">
                             <area>20,1,-20,-1</area>
                             <minsize shrink="short" vanish="true">5,5</minsize>
-                            <font>basesmallyellow</font>
+                            <font>basesmalldarkyellow</font>
                             <align>allcenter</align>
                             <multiline>no</multiline>
                         </textarea>

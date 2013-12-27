@@ -149,7 +149,7 @@
                 <state name="selectedactive"> 
                     <area>-10,0,330,64</area>
                     <shape name="background" from="base_select_bar_selectedactive">
-                        <area>0,0,100%,100%</area>
+                        <area>0,0,330,100%</area>
                     </shape>
                     <textarea name="buttontext">
                         <area>5,0,320,64</area>
@@ -162,6 +162,21 @@
                         <cutdown>yes</cutdown>
                         <case>upper</case>
                     </textarea>
+                    <group name="variable-size-text-backdrop-group">
+                        <area>330,12,925,40</area>
+                        <minsize vanish="true">252,40</minsize>
+                        <shape name="text-backdrop" from="base_backdrop">
+                            <area>0,0,-1,-1</area>
+                            <minsize vanish="true">252,40</minsize>
+                        </shape>
+                        <textarea name="description" from="basetextarea">
+                            <area>20,1,-20,-1</area>
+                            <minsize shrink="short" vanish="true">5,5</minsize>
+                            <font>basesmalldarkyellow</font>
+                            <align>left,vcenter</align>
+                            <multiline>no</multiline>
+                        </textarea>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
