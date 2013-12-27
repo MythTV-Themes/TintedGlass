@@ -16,6 +16,11 @@ I use the alternate osd myself.
 To use just move the default osd to osd.xml.orig and copy the osd.xml.alt to osd.xml.
 Example mv osd.xml osd.xml.orig and cp osd.xml.alt osd.xml.
 
+Alternate vertical main menu.
+There is an alternate main menu using a vertical layout rather than the default horizontal layout.
+To use just backup main-ui.xml. Example cp menu-ui.xml menu-ui.xml.bak.
+Then cp menu-ui-vert.xml to menu-ui.xml.
+
 Color text in lists.
 
 There are two types of lists in the theme.
@@ -44,6 +49,4 @@ grey = not set.
 blue = set to displayed value.
 yellow = in job queue.
 red = commercial flagging, recording or transcoding.
-
-
 

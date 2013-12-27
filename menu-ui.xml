@@ -3,10 +3,7 @@
 <mythuitheme>
 
     <window name="mainmenu">
-
-        <textarea name="heading" from="base_heading">
-            <value>Main Menu</value>
-        </textarea>
+        <area>0,0,1280,720</area>
 
         <shape name="menuscroll-backdrop" from="base_backdrop">
             <area>0,525,1280,70</area>
@@ -20,6 +17,113 @@
         <shape name="menuscroll-bottom-line" from="base_line">
             <area>0,592,1280,2</area>
         </shape>
+
+        <statetype name="titles">
+            <state name="MAIN">
+                <textarea name="heading">
+                    <area>0,0,1280,22</area>
+                    <font>baseextrasmall</font>
+                    <align>allcenter</align>
+                    <value>Main Menu</value>
+                </textarea>
+            </state>
+            <state name="LIBRARY" from="MAIN">
+                <textarea name="heading">
+                    <value>Media Library</value>
+                </textarea>
+            </state>
+            <state name="INFO" from="MAIN">
+                <textarea name="heading">
+                    <value>Information Center</value>
+                </textarea>
+            </state>
+            <state name="MUSIC" from="MAIN">
+                <textarea name="heading">
+                    <value>Music</value>
+                </textarea>
+            </state>
+            <state name="GAME" from="MAIN">
+                <textarea name="heading">
+                    <value>Games</value>
+                </textarea>
+            </state>
+            <state name="MANAGE_RECORDINGS" from="MAIN">
+                <textarea name="heading">
+                    <value>Manage Recordings</value>
+                </textarea>
+            </state>
+            <state name="SCHEDULE" from="MAIN">
+                <textarea name="heading">
+                    <value>Schedule Recordings</value>
+                </textarea>
+            </state>
+            <state name="WORDS" from="MAIN">
+                <textarea name="heading">
+                    <value>Search Words</value>
+                </textarea>
+            </state>
+            <state name="LISTS" from="MAIN">
+                <textarea name="heading">
+                    <value>Search Lists</value>
+                </textarea>
+            </state>
+            <state name="SETUP" from="MAIN">
+                <textarea name="heading">
+                    <value>MythTV Settings</value>
+                </textarea>
+            </state>
+            <state name="UTIL" from="SETUP" />
+            <state name="TVSETUP" from="MAIN">
+                <textarea name="heading">
+                    <value>Video Settings</value>
+                </textarea>
+            </state>
+            <state name="SETUP_TVRECPRIORITIES" from="MAIN">
+                <textarea name="heading">
+                    <value>Recording Priorities</value>
+                </textarea>
+            </state>
+            <state name="MEDIA_SETUP" from="MAIN">
+                <textarea name="heading">
+                    <value>Media Settings</value>
+                </textarea>
+            </state>
+            <state name="MUSIC_SETTINGS" from="MAIN">
+                <textarea name="heading">
+                    <value>Music Settings</value>
+                </textarea>
+            </state>
+            <state name="VIDEO_SETTINGS" from="MAIN">
+                <textarea name="heading">
+                    <value>Video Settings</value>
+                </textarea>
+            </state>
+            <state name="GAME_SETTINGS" from="MAIN">
+                <textarea name="heading">
+                    <value>Game Settings</value>
+                </textarea>
+            </state>
+            <state name="INFO_SETUP" from="MAIN">
+                <textarea name="heading">
+                    <value>Info Center Settings</value>
+                </textarea>
+            </state>
+            <state name="OPTICAL_DISK" from="MAIN">
+                <textarea name="heading">
+                    <value>Optical Disks</value>
+                </textarea>
+            </state>
+            <state name="ARCHIVE" from="MAIN">
+                <textarea name="heading">
+                    <value>Archive Files</value>
+                </textarea>
+            </state>
+            <state name="ARCHIVEUTILS" from="MAIN">
+                <textarea name="heading">
+                    <value>Archive Utilities</value>
+                </textarea>
+            </state>
+        </statetype>
 
         <buttonlist name="menu">
             <area>20,528,1240,64</area>
