@@ -936,7 +936,7 @@
         </textarea>
 
         <buttonlist name="groups" from="base_button_list">
-            <area>16,70,570,398</area>
+            <area>16,68,570,398</area>
             <drawfrombottom>yes</drawfrombottom>
             <statetype name="buttonitem">
                 <state name="active">
@@ -959,10 +959,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,400</position>
+                <position>0,402</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,400</position>
+                <position>20,402</position>
             </statetype>
         </buttonlist>
 
