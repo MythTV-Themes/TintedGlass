@@ -1477,12 +1477,14 @@
         </textarea>
 
         <buttonlist name="list">
-            <area>355,340,570,252</area>
+            <area>355,339,570,252</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
-            <drawfrombottom>yes</drawfrombottom>
             <showarrow>yes</showarrow>
-            <wrapstyle>selection</wrapstyle>
+            <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
+            <drawfrombottom>yes</drawfrombottom>
             <buttonarea>0,0,100%,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1542,7 +1544,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,251</position>
+                <position>0,252</position>
                 <state type="off">
                     <imagetype name="upon">
                         <filename>images/osd/lists_up_arrow.png</filename>
@@ -1556,7 +1558,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,251</position>
+                <position>20,252</position>
                 <state type="off">
                     <imagetype name="dnon">
                         <filename>images/osd/lists_down_arrow.png</filename>
