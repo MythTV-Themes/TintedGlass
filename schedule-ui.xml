@@ -1567,22 +1567,22 @@
         </shape>
 
         <shape name="power-search-seperator-first-line" from="base_line">
-            <area>23,50,556,2</area>
+            <area>23,63,556,2</area>
         </shape>
 
         <shape name="power-search-seperator-second-line" from="base_line">
-            <area>23,436,556,2</area>
+            <area>23,423,556,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>10,4,582,46</area>
+            <area>10,4,582,59</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Select Search</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>16,65,570,360</area>
+            <area>16,81,570,324</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
@@ -1604,25 +1604,25 @@
             </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,360</position>
+                <position>0,329</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,360</position>
+                <position>20,329</position>
             </statetype>
         </buttonlist>
 
         <button name="edit_button" from="base_button">
-            <position>15,444</position>
+            <position>15,437</position>
             <value>Edit</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>226,444</position>
+            <position>226,437</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>437,444</position>
+            <position>437,437</position>
             <value>Record</value>
         </button>
 
