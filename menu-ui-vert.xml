@@ -6,16 +6,16 @@
         <area>0,0,1280,720</area>
 
         <shape name="menuscroll-background" from="base_backdrop">
-            <area>35,0,310,720</area>
+            <area>87,0,310,720</area>
             <type>box</type>
         </shape>
 
         <shape name="menuscroll-left-line" from="base_vertical_line">
-            <area>36,0,2,720</area>
+            <area>88,0,2,720</area>
         </shape>
 
         <shape name="menuscroll-right-line" from="base_vertical_line">
-            <area>342,0,2,720</area>
+            <area>394,0,2,720</area>
         </shape>
 
         <statetype name="titles">
@@ -126,7 +126,7 @@
         </statetype>
 
         <buttonlist name="menu">
-            <area>35,62,310,596</area>
+            <area>87,62,310,596</area>
             <layout>vertical</layout>
             <spacing>4</spacing>
             <scrollstyle>free</scrollstyle>
@@ -163,7 +163,7 @@
                         <case>upper</case>
                     </textarea>
                     <group name="variable-size-text-backdrop-group">
-                        <area>330,12,925,40</area>
+                        <area>330,12,843,40</area>
                         <minsize vanish="true">252,40</minsize>
                         <shape name="text-backdrop" from="base_backdrop">
                             <area>0,0,-1,-1</area>

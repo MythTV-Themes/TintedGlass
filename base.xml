@@ -424,7 +424,7 @@
 
     <!-- Base definition of a base popup backdrop -->
     <shape name="base_popup_backdrop" from="base_backdrop">
-        <fill color="#0a0a0e" alpha="255" />
+        <fill color="#000000" alpha="255" />
     </shape>
 
     <!-- Base definition of a heading group -->
