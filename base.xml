@@ -571,7 +571,9 @@
     <buttonlist name="base_button_list">
         <layout>vertical</layout>
         <spacing>2</spacing>
-        <wrapstyle>selection</wrapstyle>
+        <scrollstyle>free</scrollstyle>
+        <arrange>stack</arrange>
+        <wrapstyle>items</wrapstyle>
         <drawfrombottom>yes</drawfrombottom>
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
@@ -1262,7 +1264,7 @@
         </shape>
 
         <shape name="popup-second-line" from="base_line">
-            <area>23,211,556,2</area>
+            <area>23,210,556,2</area>
         </shape>
 
         <shape name="popup-third-line" from="base_highlight_line">
@@ -1278,7 +1280,7 @@
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>10,8,582,196</area>
+            <area>16,10,570,194</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>     
@@ -1326,8 +1328,7 @@
 
     <!-- Large Dialogue Box -->
    <window name="MythDialogBox">
-        <!-- Make window behave as a popup -->
-        <area>-1,-1,815,516</area>
+        <area>-1,-1,814,488</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1344,71 +1345,67 @@
         </animation>
 
         <shape name="large-dialogbox-backdrop" from="base_popup_backdrop">
-            <area>0,0,815,516</area>
+            <area>0,0,814,488</area>
         </shape>
 
         <shape name="large-dialogbox-backdrop-line" from="base_backdrop_line">
-            <area>1,1,813,514</area>
+            <area>1,1,812,486</area>
         </shape>
 
         <shape name="large-dialogbox-top-line" from="base_highlight_line">
-            <area>2,2,811,2</area>
+            <area>2,2,810,2</area>
         </shape>
 
         <shape name="large-dialogbox-bottom-line" from="base_highlight_line">
-            <area>2,512,811,2</area>
+            <area>2,484,810,2</area>
         </shape>
 
         <shape name="large-dialogbox-left-line" from="base_highlight_vertical_line">
-            <area>2,4,2,508</area>
+            <area>2,4,2,480</area>
         </shape>
 
         <shape name="large-dialogbox-right-line" from="base_highlight_vertical_line">
-            <area>811,4,2,508</area>
+            <area>810,4,2,480</area>
         </shape>
 
         <shape name="large-dialogbox-seperator-first-line" from="base_line">
-            <area>23,298,769,2</area>
+            <area>23,278,768,2</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>15,10,785,282</area>
+            <area>16,10,782,262</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>21,321,772,174</area>
-            <layout>grid</layout>
-            <wrapstyle>selection</wrapstyle>
-            <drawfrombottom>no</drawfrombottom>
-            <spacing>4</spacing>
+            <area>16,293,783,180</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,384,40</area>
+                    <area>0,0,783,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,354,40</area>
+                        <area>15,0,753,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,384,40</area>
+                    <area>0,0,783,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,354,40</area>
+                        <area>15,0,753,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,384,40</area>
+                    <area>0,0,783,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,354,40</area>
+                        <area>15,0,753,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,174</position>
+                <position>0,180</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,174</position>
+                <position>20,180</position>
             </statetype>
         </buttonlist>
     </window>
