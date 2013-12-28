@@ -3258,22 +3258,22 @@
         </shape>
 
         <shape name="schedule-filter-editor-seperator-first-line" from="base_line">
-            <area>23,50,556,2</area>
+            <area>23,62,556,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-seperator-second-line" from="base_line">
-            <area>23,435,556,2</area>
+            <area>23,424,556,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>10,4,582,46</area>
+            <area>10,4,582,58</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Schedule Filter Editor</value>
         </textarea>
 
         <buttonlist name="filters" from="base_button_list">
-            <area>16,64,570,360</area>
+            <area>16,81,570,324</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
@@ -3304,15 +3304,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,359</position>
+                <position>0,329</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,359</position>
+                <position>20,329</position>
             </statetype>
         </buttonlist>
 
         <button name="back" from="base_wide_button">
-            <position>60,440</position>
+            <position>60,435</position>
             <value>Back</value>
         </button>
 
