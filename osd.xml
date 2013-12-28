@@ -1676,7 +1676,7 @@
         </textarea>
 
         <buttonlist name="list">
-            <area>355,339,570,252</area>
+            <area>355,338,570,252</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
             <showarrow>yes</showarrow>
@@ -1743,7 +1743,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,252</position>
+                <position>0,253</position>
                 <state type="off">
                     <imagetype name="upon">
                         <filename>images/osd/lists_up_arrow.png</filename>
@@ -1757,7 +1757,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,252</position>
+                <position>20,253</position>
                 <state type="off">
                     <imagetype name="dnon">
                         <filename>images/osd/lists_down_arrow.png</filename>
