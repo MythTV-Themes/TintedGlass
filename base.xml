@@ -1845,7 +1845,7 @@
         </shape>
 
         <shape name="search-dialog-seperator-second-line" from="base_line">
-            <area>23,436,556,2</area>
+            <area>23,416,556,2</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -1856,11 +1856,11 @@
         </textarea>
 
         <textedit name="input" from="base_wide_textedit">
-            <area>66,88,470,32</area>
+            <area>66,93,470,32</area>
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
-            <area>16,134,570,288</area>
+            <area>16,145,570,252</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
@@ -1882,20 +1882,20 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,290</position>
+                <position>0,257</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,290</position>
+                <position>20,257</position>
             </statetype>
         </buttonlist>
 
-        <button name="cancel" from="base_button">
-            <position>102,444</position>
+        <button name="cancel" from="base_small_button">
+            <position>69,432</position>
             <value>Cancel</value>
         </button>
 
-        <button name="ok" from="base_button">
-            <position>350,444</position>
+        <button name="ok" from="base_small_button">
+            <position>333,432</position>
             <value>OK</value>
         </button>
     </window>
