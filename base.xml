@@ -1380,7 +1380,7 @@
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>16,293,783,180</area>
+            <area>16,291,783,180</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,783,34</area>
@@ -1402,10 +1402,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,180</position>
+                <position>0,182</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,180</position>
+                <position>20,182</position>
             </statetype>
         </buttonlist>
     </window>
