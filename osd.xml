@@ -1657,7 +1657,7 @@
         </shape>
 
         <shape name="message-area-seperator-line">
-            <area>362,328,556,2</area>
+            <area>362,326,556,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="45">
@@ -1669,14 +1669,14 @@
         </shape>
 
         <textarea name="messagearea">
-            <area>349,126,582,196</area>
+            <area>355,126,570,194</area>
             <font>smallyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list">
-            <area>355,338,570,252</area>
+            <area>355,337,570,252</area>
             <layout>vertical</layout>
             <spacing>2</spacing>
             <showarrow>yes</showarrow>
