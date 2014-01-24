@@ -2140,7 +2140,7 @@
 
         <button name="ok" from="base_button">
             <position>252,634</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
         <textarea name="info_label" from="basetextarea">
