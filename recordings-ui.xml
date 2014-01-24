@@ -579,13 +579,13 @@
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="s00e00" from="base_text_font_state_extrasmall">
-                        <area>510,42,60,20</area>
+                        <area>500,42,70,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                     </textarea>
                     <textarea name="syndicatedepisode" from="base_text_font_state_extrasmall" depends="!s00e00">
-                        <area>510,42,60,20</area>
+                        <area>500,42,70,20</area>
                         <font state="normal">baseextrasmall</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
