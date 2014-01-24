@@ -1972,7 +1972,7 @@
         <group name="heading-backdrop" from="base_heading_group" />
 
         <textarea name="heading" from="base_heading">
-            <value>Edit Track  Information</value>
+            <value>Edit Track Information</value>
         </textarea>
 
         <shape name="edit-metadata-backdrop" from="base_backdrop">
