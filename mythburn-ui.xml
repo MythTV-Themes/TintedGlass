@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<!--
+
+MythArchive GUI theme
+
+-->
+<mythuitheme>
+
+    <window name="profilepopup">
+        <area>-1,-1,602,488</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="profile-popup-backdrop" from="base_popup_backdrop">
+            <area>0,0,602,488</area>
+        </shape>
+
+        <shape name="profile-popup-backdrop-line" from="base_backdrop_line">
+            <area>1,1,600,486</area>
+        </shape>
+
+        <shape name="profile-popup-top-line" from="base_highlight_line">
+            <area>2,2,596,2</area>
+        </shape>
+
+        <shape name="profile-popup-bottom-line" from="base_highlight_line">
+            <area>2,484,596,2</area>
+        </shape>
+
+        <shape name="profile-popup-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,480</area>
+        </shape>
+
+        <shape name="profile-popup-right-line" from="base_highlight_vertical_line">
+            <area>598,4,2,480</area>
+        </shape>
+
+        <shape name="profile-popup-seperator-first-line" from="base_line">
+            <area>23,50,556,2</area>
+        </shape>
+
+        <shape name="profile-popup-seperator-second-line" from="base_line">
+            <area>23,436,556,2</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>10,4,582,46</area>
+            <font>basemediumlargerdarkyellow</font>
+            <align>allcenter</align>
+            <value>Encoding Profile</value>
+        </textarea>
+
+        <textarea name="caption_text" from="basetextarea">
+            <area>10,80,582,32</area>
+            <font>basemedium</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <buttonlist name="profile_list" from="base_selector">
+            <area>149,142,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="description_text" from="basetextarea">
+            <area>70,204,462,64</area>
+            <align>allcenter</align>
+            <font>basesmallblue</font>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <textarea name="oldsize_lbl" from="basetextarea">
+            <area>10,298,281,32</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Original Size:</value>
+        </textarea>
+
+        <textarea name="oldsize_text" from="basetextarea">
+            <area>311,298,281,32</area>
+            <font>basesmall</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="newsize_lbl" from="oldsize_lbl">
+            <area>10,360,281,32</area>
+            <value>Encoded Size:</value>
+        </textarea>
+
+       <textarea name="newsize_text" from="oldsize_text">
+            <area>311,360,281,32</area>
+        </textarea>
+
+        <button name="ok_button" from="base_medium_button">
+            <position>126,441</position>
+            <value>OK</value>
+        </button>
+    </window>
+
+    <!--
+        theme selector
+    -->
+
+    <window name="themeselector">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>DVD Menu Theme</value>
+        </textarea>
+
+        <shape name="theme-backdrop" from="base_backdrop">
+            <area>115,36,1050,649</area>
+        </shape>
+
+        <shape name="theme-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,506</area>
+        </shape>
+
+        <shape name="theme-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="theme-bottom-line" from="base_highlight_line">
+            <area>117,540,1046,2</area>
+        </shape>
+
+        <shape name="theme-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="theme-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="theme-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,547,1048,137</area>
+        </shape>
+
+        <shape name="theme-bottom-top-line" from="base_highlight_line">
+            <area>117,548,1046,2</area>
+        </shape>
+
+        <shape name="theme-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="theme-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="theme-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="theme-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <textarea name="themetitle" from="basetextarea">
+            <area>208,67,300,32</area>
+            <align>right,vcenter</align>
+            <value>Theme:</value>
+        </textarea>
+
+        <buttonlist name="theme_selector" from="base_selector">
+            <area>528,67,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <imagetype name="theme_image" >
+            <area>0,0,1,1</area>
+        </imagetype>
+
+        <!--
+            theme preview images
+        -->
+
+        <textarea name="introtitle" from="themetitle">
+            <area>207,205,150,32</area>
+            <value>Intro --></value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="intronone" from="themetitle">
+            <area>377,189,175,64</area>
+            <value>Not available in this theme</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="intro_image">
+            <area>367,140,195,162</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="menutitle" from="introtitle">
+            <area>922,205,150,32</area>
+            <value>&lt;-- Main Menu</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="menunone" from="intronone">
+            <area>727,189,175,64</area>
+            <value>Not Available in this Theme</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="mainmenu_image" from="intro_image">
+            <area>717,140,195,162</area>
+        </imagetype>
+
+        <textarea name="chaptertitle" from="introtitle">
+            <area>177,408,180,32</area>
+            <value>Chapter Menu --></value>
+        </textarea>
+
+        <textarea name="chapternone" from="intronone">
+            <area>377,392,175,64</area>
+            <value>Not Available in this Theme</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="chapter_image" from="intro_image">
+            <area>367,343,195,162</area>
+        </imagetype>
+
+        <textarea name="detailtitle" from="menutitle">
+            <area>922,408,150,32</area>
+            <value>&lt;-- Details</value>
+        </textarea>
+
+        <textarea name="detailnone" from="intronone">
+            <area>727,392,175,64</area>
+            <value>Not Available in this Theme</value>
+            <multiline>yes</multiline>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="details_image" from="intro_image">
+            <area>717,343,195,162</area>
+        </imagetype>
+
+        <!--
+            theme description
+        -->
+
+        <textarea name="themedescription" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>138,631</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="prev_button" from="base_small_button">
+            <position>722,631</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="next_button" from="base_small_button">
+            <position>942,631</position>
+            <value>Next</value>
+        </button>
+
+    </window>
+
+    <!--
+        ******************************************************************
+        The main mythburn screen
+        *******************************************************************
+    -->
+
+    <window name="mythburn">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Archive Items to DVD</value>
+        </textarea>
+
+        <shape name="add-backdrop" from="base_backdrop">
+            <area>115,36,1050,498</area>
+        </shape>
+
+        <shape name="add-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,496</area>
+        </shape>
+
+        <shape name="add-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="add-bottom-line" from="base_highlight_line">
+            <area>117,530,1046,2</area>
+        </shape>
+
+        <shape name="add-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="add-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="add-seperator-first-line" from="base_line">
+            <area>138,116,1004,2</area>
+        </shape>
+
+        <shape name="add-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1112,534,50,11</area>
+        </shape>
+
+        <shape name="add-bottom-backdrop" from="base_backdrop">
+            <area>115,545,1050,140</area>
+        </shape>
+
+        <shape name="add-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,546,1048,138</area>
+        </shape>
+
+        <shape name="add-bottom-top-line" from="base_highlight_line">
+            <area>117,547,1046,2</area>
+        </shape>
+
+        <shape name="add-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="add-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="add-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="add-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <button name="addrecording_button" from="base_small_button">
+            <position>165,58</position>
+            <value>Add Recording</value>
+        </button>
+
+        <button name="addvideo_button" from="base_small_button">
+            <position>540,58</position>
+            <value>Add Video</value>
+        </button>
+
+        <button name="addfile_button" from="base_small_button">
+            <position>915,58</position>
+            <value>Add File</value>
+        </button>
+
+        <buttonlist name="archivelist" from="base_list">
+            <area>123,122,1034,406</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1034,30</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,433,30</area>
+                        <font>basesmall</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="subtitle" from="buttontext">
+                        <area>441,0,393,30</area>
+                        <font>baseextrasmallverylightgrey</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="size" from="basetextarea">
+                        <area>954,0,72,30</area>
+                        <font>baseextrasmallverylightgrey</font>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="profile" from="size">
+                        <area>839,0,110,30</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1034,64</area>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>8,2,811,30</area>
+                        <font>basesmallyellow</font>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="subtitle" from="buttontext">
+                        <area>8,32,613,30</area>
+                        <font>basesmalleryellow</font>
+                    </textarea>
+                    <textarea name="size" from="basetextarea">
+                        <area>954,0,72,30</area>
+                        <font>baseextrasmallverylightgrey</font>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="profile" from="size">
+                        <area>839,0,110,30</area>
+                    </textarea>
+                    <textarea name="date" from="basetextarea">
+                        <area>711,42,315,20</area>
+                        <font>baseextrasmall</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <statetype name="cutliststatus">
+                        <state name="none" />
+                        <state name="using">
+                            <textarea name="cutlist" from="basetextarea">
+                                <area>736,24,80,20</area>
+                                <font>basesupersmallblue</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>CUTLIST</value>
+                            </textarea>
+                        </state>
+                        <state name="notusing">
+                            <textarea name="cutlistoff" from="basetextarea">
+                                <area>736,24,80,20</area>
+                                <font>basesupersmall</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <alpha>80</alpha>
+                                <value>CUTLIST</value>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <statetype name="movestate" />
+                </state>
+               <state name="selectedinactive" from="selectedactive">
+                   <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                       <area>0,0,100%,100%</area>
+                   </shape>
+               </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>997,414</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1017,414</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="nofiles" from="basetextarea">
+            <area>150,169,980,32</area>
+            <align>allcenter</align>
+            <value>Add a recording, video or file to archive.</value>
+        </textarea>
+
+        <progressbar name="size_bar" from="baseprogressbar">
+            <position>372,590</position>
+        </progressbar>
+
+        <textarea name="maxsize" from="basetextarea">
+            <area>798,560,100,30</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="minsize" from="maxsize">
+            <area>383,560,100,30</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="currentsize" from="maxsize">
+            <area>372,560,536,30</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="currentsize_error" from="currentsize">
+            <font>basesmallred</font>
+        </textarea>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>138,631</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="prev_button" from="base_small_button">
+            <position>722,631</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="next_button" from="base_small_button">
+            <position>942,631</position>
+            <value>Finish</value>
+        </button>
+
+    </window>
+
+  <!--
+      *******************************************************************
+      The editmetadata dialog
+      *******************************************************************
+  -->
+
+    <window name="edit_metadata">
+        <area>-1,-1,602,488</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="popup-backdrop" from="base_popup_backdrop">
+            <area>0,0,602,488</area>
+        </shape>
+
+        <shape name="popup-backdrop-line" from="base_backdrop_line">
+            <area>1,1,600,486</area>
+        </shape>
+
+        <shape name="popup-top-line" from="base_highlight_line">
+            <area>2,2,596,2</area>
+        </shape>
+
+        <shape name="popup-bottom-line" from="base_highlight_line">
+            <area>2,484,596,2</area>
+        </shape>
+
+        <shape name="popup-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,480</area>
+        </shape>
+
+        <shape name="popup-right-line" from="base_highlight_vertical_line">
+            <area>598,4,2,480</area>
+        </shape>
+
+        <shape name="popup-seperator-first-line" from="base_line">
+            <area>23,50,556,2</area>
+        </shape>
+
+        <shape name="popup-seperator-second-line" from="base_line">
+            <area>23,436,556,2</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>23,4,556,46</area>
+            <font>basemediumlargerdarkyellow</font>
+            <align>allcenter</align>
+            <value>Edit Details</value>
+        </textarea>
+
+        <textarea name="title_label" from="basetextarea">
+            <area>23,100,120,32</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+            <value>Title:</value>
+        </textarea>
+
+        <textarea name="subtitle_label" from="title_label">
+            <area>23,164,120,32</area>
+            <value>Subtitle:</value>
+        </textarea>
+
+        <textarea name="startdate_label" from="title_label">
+            <area>23,228,120,32</area>
+            <value>Start Date:</value>
+        </textarea>
+
+        <textarea name="starttime_label" from="title_label">
+            <area>23,292,120,32</area>
+            <value>Time:</value>
+        </textarea>
+
+        <textarea name="description_label" from="title_label">
+            <area>23,356,120,32</area>
+            <value>Description:</value>
+        </textarea>
+
+        <textedit name="title_edit" from="base_textedit">
+            <area>160,100,419,32</area>
+        </textedit>
+
+        <textedit name="subtitle_edit" from="base_textedit">
+            <area>160,164,419,32</area>
+        </textedit>
+
+        <textedit name="startdate_edit" from="base_textedit">
+            <area>160,228,419,32</area>
+        </textedit>
+
+        <textedit name="starttime_edit" from="base_textedit">
+            <area>160,292,419,32</area>
+        </textedit>
+
+        <textedit name="description_edit" from="base_textedit">
+            <area>160,356,419,32</area>
+        </textedit>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>63,441</position>
+            <value>Cancel</value>
+        </button>
+        <button name="ok_button" from="base_small_button">
+            <position>325,441</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="thumbfinder">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit Thumbnails</value>
+        </textarea>
+
+        <shape name="thumb-backdrop" from="base_backdrop">
+            <area>115,36,1050,498</area>
+        </shape>
+
+        <shape name="thumb-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,496</area>
+        </shape>
+
+        <shape name="thumb-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="thumb-bottom-line" from="base_highlight_line">
+            <area>117,531,1046,2</area>
+        </shape>
+
+        <shape name="thumb-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="thumb-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="thumb-seperator-first-line" from="base_line">
+            <area>138,279,1004,2</area>
+        </shape>
+
+        <shape name="thumb-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1106,256,45,11</area>
+        </shape>
+
+        <shape name="thumb-bottom-backdrop" from="base_backdrop">
+            <area>115,545,1050,140</area>
+        </shape>
+
+        <shape name="thumb-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,546,1048,138</area>
+        </shape>
+
+        <shape name="thumb-bottom-top-line" from="base_highlight_line">
+            <area>117,547,1046,2</area>
+        </shape>
+
+        <shape name="thumb-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="thumb-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="thumb-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="thumb-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <shape name="position-background-line" from="base_backdrop_line">
+            <area>521,374,621,66</area>
+        </shape>
+
+        <shape name="position-top-line" from="base_highlight_line">
+            <area>522,375,623,2</area>
+        </shape>
+
+        <shape name="position-line" from="base_highlight_line">
+            <area>522,438,623,2</area>
+        </shape>
+
+        <shape name="position-left-line" from="base_highlight_vertical_line">
+            <area>522,377,2,62</area>
+        </shape>
+
+        <shape name="position-right-line" from="base_highlight_vertical_line">
+            <area>1140,377,2,62</area>
+        </shape>
+
+        <buttonlist name="thumblist">
+            <area>124,59,1032,197</area>
+            <layout>grid</layout>
+            <spacing>2</spacing>
+            <buttonarea>0,0,1032,197</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,205,188</area>
+                    <shape name="buttonbackground" from="base_backdrop">
+                        <area>0,0,205,188</area>
+                        <fill color="#333333" alpha="175" />
+                    </shape>
+                    <shape name="buttonbackground-line" from="base_backdrop_line">
+                        <area>1,1,203,186</area>
+                    </shape>
+                    <imagetype name="buttonimage">
+                        <area>5,5,195,146</area>
+                        <!--<area>5,21,195,146</area>-->
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>5,159,195,24</area>
+                        <font>basesmallgrey</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <area>0,0,209,192</area>
+                    <shape name="buttonbackground">
+                        <area>-2,-2,209,192</area>
+                        <type>roundbox</type>
+                        <fill color="#101017" alpha="255" />
+                        <cornerradius>8</cornerradius>
+                    </shape>
+                    <shape name="buttonbackground-line">
+                        <area>-2,-2,209,192</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#ffffff" alpha="45" width="4" />
+                        <cornerradius>4</cornerradius>
+                    </shape>
+                    <shape name="buttonbackground-top-highlight-line">
+                        <area>2,0,201,4</area>
+                         <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="180" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
+                        <area>2,184,201,4</area>
+                    </shape>
+                    <shape name="buttonbackground-left-highlight-line">
+                        <area>0,2,4,184</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient alpha="0" direction="vertical">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="220" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
+                        <area>201,2,4,184</area>
+                    </shape>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>5,159,195,24</area>
+                        <font>basesmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="buttonbackground" from="base_backdrop">
+                        <area>0,0,205,188</area>
+                    </shape>
+                    <textarea name="buttontext" from="basetextarea">
+                        <area>5,159,195,24</area>
+                        <font>basesmallyellow</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>987,200</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1007,200</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+
+        </buttonlist>
+
+        <shape name="buttonbackground">
+            <area>136,300,374,214</area>
+            <type>roundbox</type>
+            <fill color="#101017" alpha="255" />
+            <cornerradius>8</cornerradius>
+        </shape>
+
+        <imagetype name="frameimage">
+            <area>144,306,359,202</area>
+            <filename>images/no_preview.png</filename>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <button name="frame_button">
+            <area>138,302,370,210</area>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <area>0,0,370,210</area>
+                    <shape name="background-line" from="base_backdrop_line">
+                        <area>1,1,368,208</area>
+                    </shape>
+                </state>
+                <state name="selected" from="active">
+                    <area>0,0,374,214</area>
+                    <shape name="buttonbackground-line">
+                        <area>-2,-2,374,214</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="0" />
+                        <line color="#ffffff" alpha="45" width="4" />
+                        <cornerradius>4</cornerradius>
+                    </shape>
+                    <shape name="buttonbackground-top-highlight-line">
+                        <area>2,0,366,4</area>
+                         <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="180" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
+                        <area>2,206,366,4</area>
+                    </shape>
+                    <shape name="buttonbackground-left-highlight-line">
+                        <area>0,2,4,206</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient alpha="0" direction="vertical">
+                                <stop position="0" color="#ffffff" />
+                                <stop position="50" color="#ffffff" alpha="220" />
+                                <stop position="100" color="#ffffff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
+                        <area>366,2,4,206</area>
+                    </shape>
+                </state>
+                <state name="disabled" from="active" />
+                <state name="pushed" from="active">
+                </state>
+            </statetype>
+        </button>
+
+        <textarea name="seekamount" from="basetextarea">
+            <area>531,379,601,24</area>
+            <align>right,vcenter</align>
+            <value>frame</value>
+        </textarea>
+
+        <imagetype name="positionimage">
+            <area>531,403,601,8</area>
+            <filename>images/osd/progressbar_background.png</filename>
+        </imagetype>
+
+        <textarea name="currentpos" from="basetextarea">
+            <area>531,411,601,24</area>
+            <font>basesmall</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="help_text" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+            <value>MENU changes focus. Numbers 0-9 jump to that thumb image.\nWhen the preview image has focus, UP/DOWN changes the seek amount, 
+LEFT/RIGHT jumps forward/backward by the seek amount, and SELECT chooses the current preview image for the selected thumb image.</value>
+        </textarea>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>138,631</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="save_button" from="base_small_button">
+            <position>942,631</position>
+            <value>Save</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

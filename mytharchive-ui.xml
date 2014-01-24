@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<mythuitheme>
+
+    <window name="selectdestination">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Archive Files</value>
+        </textarea>
+
+        <shape name="destination-backdrop" from="base_backdrop">
+            <area>115,36,1050,649</area>
+        </shape>
+
+        <shape name="destination-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,506</area>
+        </shape>
+
+        <shape name="destination-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="destination-bottom-line" from="base_highlight_line">
+            <area>117,540,1046,2</area>
+        </shape>
+
+        <shape name="destination-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="destination-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="destination-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,547,1048,137</area>
+        </shape>
+
+        <shape name="destination-bottom-top-line" from="base_highlight_line">
+            <area>117,548,1046,2</area>
+        </shape>
+
+        <shape name="destination-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="destination-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="destination-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="destination-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <textarea name="destination_label" from="basetextarea">
+            <area>128,67,430,32</area>
+            <align>right,vcenter</align>
+            <value>Destination:</value>
+        </textarea>
+
+        <buttonlist name="destination_selector" from="base_selector">
+            <area>578,67,300,32</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,32</area>
+                    <textarea name="buttontext">
+                        <area>15,0,270,32</area>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>304,-2</position>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>304,15</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="destination_text" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="find_button" from="base_button">
+            <position>408,140</position>
+            <value>File...</value>
+        </button>
+
+        <textedit name="filename_edit" from="base_textedit">
+            <area>578,140,450,35</area>
+        </textedit>
+
+        <textarea name="freespace_label" from="destination_label">
+            <position>128,206</position>
+            <value>Destination Free Space:</value>
+        </textarea>
+
+        <textarea name="freespace_text" from="basetextarea">
+            <area>578,206,200,32</area>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="iso_label" from="destination_label">
+            <position>128,263</position>
+            <value>Create ISO Image:</value>
+        </textarea>
+
+        <checkbox name="makeisoimage_check" from="base_checkbox">
+            <position>578,263</position>
+        </checkbox>
+
+        <textarea name="burntodvdr_text" from="destination_label">
+            <position>128,320</position>
+            <value>Burn to DVD:</value>
+        </textarea>
+
+        <checkbox name="burntodvdr_check" from="base_checkbox">
+            <position>578,320</position>
+        </checkbox>
+
+        <textarea name="erasedvdrw_text" from="destination_label">
+            <position>128,377</position>
+            <value>Overwrite DVD-RW Media:</value>
+        </textarea>
+
+        <checkbox name="erasedvdrw_check" from="base_checkbox">
+            <position>578,377</position>
+        </checkbox>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>138,631</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="prev_button" from="base_small_button">
+            <position>722,631</position>
+            <value>Previous</value>
+        </button>
+
+        <button name="next_button" from="base_small_button">
+            <position>942,631</position>
+            <value>Next</value>
+        </button>
+
+    </window>
+
+    <window name="recording_selector">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Add Recordings</value>
+        </textarea>
+
+        <shape name="groups-backdrop" from="base_backdrop">
+            <area>20,36,316,352</area>
+        </shape>
+
+        <shape name="groups-backdrop-line" from="base_backdrop_line">
+            <area>21,37,314,350</area>
+        </shape>
+
+        <shape name="groups-top-line" from="base_highlight_line">
+            <area>22,38,312,2</area>
+        </shape>
+
+        <shape name="groups-bottom-line" from="base_highlight_line">
+            <area>22,384,312,2</area>
+        </shape>
+
+        <shape name="groups-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,344</area>
+        </shape>
+
+        <shape name="groups-right-line" from="base_highlight_vertical_line">
+            <area>332,40,2,344</area>
+        </shape>
+
+        <shape name="reclist-backdrop" from="base_backdrop">
+            <area>346,36,914,352</area>
+        </shape>
+
+        <shape name="reclist-backdrop-line" from="base_backdrop_line">
+            <area>347,37,912,350</area>
+        </shape>
+
+        <shape name="reclist-top-line" from="base_highlight_line">
+            <area>348,38,910,2</area>
+        </shape>
+
+        <shape name="reclist-bottom-line" from="base_highlight_line">
+            <area>348,384,910,2</area>
+        </shape>
+
+        <shape name="reclist-left-line" from="base_highlight_vertical_line">
+            <area>348,40,2,344</area>
+        </shape>
+
+        <shape name="reclist-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,344</area>
+        </shape>
+
+        <shape name="groups-arrows-backdrop" from="base_arrows_backdrop">
+            <area>283,387,50,11</area>
+        </shape>
+
+        <shape name="relist-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,387,50,11</area>
+        </shape>
+
+        <shape name="description-backdrop" from="base_backdrop">
+            <area>20,398,1240,287</area>
+        </shape>
+
+        <shape name="description-backdrop-line" from="base_backdrop_line">
+            <area>21,399,1238,285</area>
+        </shape>
+
+        <shape name="description-top-line" from="base_highlight_line">
+            <area>22,400,1236,2</area>
+        </shape>
+
+        <shape name="description-bottom-line" from="base_highlight_line">
+            <area>22,681,1236,2</area>
+        </shape>
+
+        <shape name="description-left-line" from="base_highlight_vertical_line">
+            <area>22,402,2,230</area>
+        </shape>
+
+        <shape name="description-right-line" from="base_highlight_vertical_line">
+            <area>1256,402,2,230</area>
+        </shape>
+
+        <shape name="description-seperator-top-line" from="base_line">
+            <area>188,438,684,2</area>
+        </shape>
+
+        <shape name="description-seperator-bottom-line" from="base_line">
+            <area>188,594,684,2</area>
+        </shape>
+
+        <shape name="description-seperator-bottom-line2" from="base_line">
+            <area>37,632,1206,2</area>
+        </shape>
+
+        <shape name="coverart-border">
+            <area>37,415,136,204</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="preview-border">
+            <area>887,415,356,204</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <buttonlist name="category_selector" from="base_list">
+            <area>28,44,300,338</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,300,30</area>
+                    <textarea name="buttontext">
+                        <area>8,0,284,30</area>
+                        <font>basesmaller</font>
+                        <align>allcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,300,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,284,64</area>
+                        <align>allcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,300,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,284,64</area>
+                        <align>allcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>262,345</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>282,345</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="recordinglist">
+            <area>354,44,898,338</area>
+            <layout>vertical</layout>
+            <spacing>4</spacing>
+            <scrollstyle>free</scrollstyle>
+            <arrange>stack</arrange>
+            <wrapstyle>items</wrapstyle>
+            <buttonarea>0,0,100%,100%</buttonarea>
+            <align>top</align>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,898,30</area>
+                    <shape name="buttonbackground" from="base_select_bar_active">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <statetype name="buttoncheck">
+                        <area>8,5,20,20</area>
+                        <state type="off">
+                            <imagetype name="checkoff">
+                                <filename>images/lb-check-empty.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="half">
+                            <imagetype name="checkhalf">
+                                <filename>images/lb-check-half.png</filename>
+                            </imagetype>
+                        </state>
+                        <state type="full">
+                            <imagetype name="checkfull">
+                                <filename>images/lb-check-full.png</filename>
+                            </imagetype>
+                        </state>
+                    </statetype>
+                    <textarea name="titlesubtitle" from="base_text_font_state_small">
+                        <area>36,0,694,30</area>
+                        <font state="normal">basesmallverylightgrey</font>
+                    </textarea>
+                    <textarea name="filesize_str" from="base_text_font_state_extrasmall">
+                        <area>818,0,72,30</area>
+                        <font  state="normal">baseextrasmallverylightgrey</font>
+                        <cutdown>no</cutdown>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active" >
+                    <area>0,0,898,64</area>
+                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                    <statetype name="cutlist">
+                        <state name="no">
+                            <textarea name="cutlistoff" from="basetextarea">
+                                <area>600,24,80,20</area>
+                                <font>basesupersmall</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <alpha>80</alpha>
+                                <value>CUTLIST</value>
+                            </textarea>
+                        </state>
+                        <state name="yes">
+                            <textarea name="cutlist" from="basetextarea">
+                                <area>600,24,80,20</area>
+                                <font>basesupersmallblue</font>
+                                <cutdown>no</cutdown>
+                                <align>allcenter</align>
+                                <value>CUTLIST</value>
+                            </textarea>
+                        </state>
+                    </statetype>
+                    <textarea name="s00e00" from="base_text_font_state_extrasmall">
+                        <area>500,42,70,20</area>
+                        <font state="normal">baseextrasmall</font>
+                        <cutdown>no</cutdown>
+                        <align>allcenter</align>
+                    </textarea>
+                    <textarea name="timedate" from="base_text_font_state_extrasmall">
+                        <area>575,42,315,20</area>
+                        <font state="normal">baseextrasmall</font>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>860,345</position>
+                <state type="off">
+                    <imagetype name="upoff">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="upon">
+                        <filename>images/lists_up_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>880,345</position>
+                <state type="off">
+                    <imagetype name="dnoff">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>80</alpha>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnon">
+                        <filename>images/lists_down_arrow.png</filename>
+                        <alpha>200</alpha>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="progtitle" from="basetextarea">
+            <area>189,402,682,36</area>
+            <font>basemediumyellow</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="progdescription" from="basetextarea">
+            <area>189,449,682,140</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <imagetype name="preview_image">
+            <area>41,419,128,196</area>
+            <filename>images/no_coverart.png</filename>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="no_preview_image_without_fanart">
+            <area>891,419,348,196</area>
+            <filename>images/no_preview.png</filename>
+            <mask>images/masks/watchrecordings_preview_mask.png</mask>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <button name="cancel_button" from="base_button">
+            <position>37,640</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok_button" from="base_button">
+            <position>1093,640</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+
+    <window name="file_selector">
+        <area>0,0,1280,720</area>
+
+        <textarea name="title_text" from="base_heading">
+            <value>Select Files</value>
+        </textarea>
+
+        <shape name="fullpath-backdrop" from="base_backdrop">
+            <area>0,37,1280,44</area>
+            <type>box</type>
+        </shape>
+
+        <shape name="fullpath-top-line" from="base_line">
+            <area>0,38,1280,2</area>
+        </shape>
+
+        <shape name="fullpath-bottom-line" from="base_line">
+            <area>0,77,1280,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-backdrop" from="base_backdrop">
+            <area>20,92,615,592</area>
+        </shape>
+
+        <shape name="file-browser-preview-backdrop-line" from="base_backdrop_line">
+            <area>21,93,613,590</area>
+        </shape>
+
+        <shape name="file-browser-preview-top-line" from="base_highlight_line">
+            <area>22,94,611,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-bottom-line" from="base_highlight_line">
+            <area>22,680,611,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-left-line" from="base_highlight_vertical_line">
+            <area>22,96,2,584</area>
+        </shape>
+
+        <shape name="file-browser-preview-right-line" from="base_highlight_vertical_line">
+            <area>631,96,2,584</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-line" from="base_backdrop_line">
+            <area>42,158,571,324</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-top-line" from="base_highlight_line">
+            <area>43,159,569,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-bottom-line" from="base_highlight_line">
+            <area>43,479,569,2</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-left-line" from="base_highlight_vertical_line">
+            <area>43,161,2,318</area>
+        </shape>
+
+        <shape name="file-browser-preview-image-right-line" from="base_highlight_vertical_line">
+            <area>610,161,2,318</area>
+        </shape>
+
+        <shape name="file-browser-backdrop" from="base_backdrop">
+            <area>645,92,615,592</area>
+        </shape>
+
+        <shape name="file-browser-backdrop-line" from="base_backdrop_line">
+            <area>646,93,613,590</area>
+        </shape>
+
+        <shape name="file-browser-top-line" from="base_highlight_line">
+            <area>647,94,611,2</area>
+        </shape>
+
+        <shape name="file-browser-bottom-line" from="base_highlight_line">
+            <area>647,680,611,2</area>
+        </shape>
+
+        <shape name="file-browser-left-line" from="base_highlight_vertical_line">
+            <area>647,96,2,584</area>
+        </shape>
+
+        <shape name="file-browser-right-line" from="base_highlight_vertical_line">
+            <area>1256,96,2,584</area>
+        </shape>
+
+        <shape name="file-browser-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,684,50,10</area>
+        </shape>
+
+        <buttonlist name="filelist" from="base_list">
+            <area>653,100,599,578</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,599,54</area>
+                    <statetype name="buttoncheck">
+                        <area>4,17,20,20</area>
+                    </statetype>
+                    <imagetype name="buttonimage">
+                        <area>28,2,77,50</area>
+                        <filename>images/file_browser_no_preview.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>115,0,382,54</area>
+                        <font>basesmaller</font>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="size" from="buttontext">
+                        <area>497,0,100,54</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                 </state>
+                <state name="selectedactive">
+                    <area>0,0,599,112</area>
+                    <statetype name="buttoncheck">
+                        <area>10,46,20,20</area>
+                    </statetype>
+                    <imagetype name="buttonimage">
+                        <area>38,4,138,104</area>
+                        <filename>images/file_browser_no_preview.png</filename>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>186,0,307,112</area>
+                        <font>basesmallyellow</font>
+                        <multiline>yes</multiline>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <textarea name="size" from="buttontext">
+                        <area>493,0,100,112</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>561,585</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>581,585</position>
+            </statetype>
+        </buttonlist>
+
+        <textedit name="location_edit" from="base_wide_textedit">
+            <area>40,107,575,40</area>
+        </textedit>
+
+        <imagetype name="no_preview">
+            <area>46,161,563,318</area>
+            <filename>images/file_browser_no_preview.png</filename>
+            <mask>images/masks/file_browser_preview_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="preview">
+            <area>46,161,563,318</area>
+            <mask>images/masks/file_browser_preview_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <button name="back_button" from="base_button">
+            <position>252,493</position>
+            <value>Up Level</value>
+        </button>
+
+        <button name="home_button" from="base_button">
+            <position>252,540</position>
+            <value>Home</value>
+        </button>
+
+        <button name="cancel_button" from="base_button">
+            <position>252,587</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok_button" from="base_button">
+            <position>252,634</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+
+    <window name="video_selector">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Add Videos</value>
+        </textarea>
+
+        <shape name="video-tree-directory-backdrop" from="base_backdrop">
+            <area>20,36,613,352</area>
+        </shape>
+
+        <shape name="video-tree-directory-backdrop-line" from="base_backdrop_line">
+            <area>21,37,611,350</area>
+        </shape>
+
+        <shape name="video-tree-top-line" from="base_highlight_line">
+            <area>22,38,609,2</area>
+        </shape>
+
+        <shape name="video-tree-bottom-line" from="base_highlight_line">
+            <area>22,384,609,2</area>
+        </shape>
+
+        <shape name="video-tree-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-right-line" from="base_highlight_vertical_line">
+            <area>629,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-files-backdrop" from="base_backdrop">
+            <area>647,36,613,352</area>
+        </shape>
+
+        <shape name="video-tree-files-backdrop-line" from="base_backdrop_line">
+            <area>648,37,611,350</area>
+        </shape>
+
+        <shape name="video-tree-files-top-line" from="base_highlight_line">
+            <area>649,38,609,2</area>
+        </shape>
+
+        <shape name="video-tree-files-bottom-line" from="base_highlight_line">
+            <area>649,384,609,2</area>
+        </shape>
+
+        <shape name="video-tree-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-right-line" from="base_highlight_vertical_line">
+            <area>629,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-files-backdrop" from="base_backdrop">
+            <area>647,36,613,352</area>
+        </shape>
+
+        <shape name="video-tree-files-backdrop-line" from="base_backdrop_line">
+            <area>648,37,611,350</area>
+        </shape>
+
+        <shape name="video-tree-files-top-line" from="base_highlight_line">
+            <area>649,38,609,2</area>
+        </shape>
+
+        <shape name="video-tree-files-bottom-line" from="base_highlight_line">
+            <area>649,384,609,2</area>
+        </shape>
+
+        <shape name="video-tree-files-left-line" from="base_highlight_vertical_line">
+            <area>649,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-files-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,384</area>
+        </shape>
+
+        <shape name="video-tree-arrows-backdrop" from="base_arrows_backdrop">
+            <area>580,388,50,11</area>
+        </shape>
+
+        <shape name="video-tree-files-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,388,50,11</area>
+        </shape>
+
+        <shape name="video-bottom-backdrop" from="base_backdrop">
+            <area>20,398,1240,287</area>
+        </shape>
+
+        <shape name="video-bottom-backdrop-line" from="base_backdrop_line">
+            <area>21,399,1039,285</area>
+        </shape>
+
+        <shape name="video-bottom-top-line" from="base_highlight_line">
+            <area>22,400,1037,2</area>
+        </shape>
+
+        <shape name="video-bottom-bottom-line" from="base_highlight_line">
+            <area>22,681,1037,2</area>
+        </shape>
+
+        <shape name="video-bottom-left-line" from="base_highlight_vertical_line">
+            <area>22,402,2,279</area>
+        </shape>
+
+        <shape name="video-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1057,402,2,279</area>
+        </shape>
+
+        <shape name="video-bottom-seperator-first-line" from="base_line">
+            <area>39,442,1003,2</area>
+        </shape>
+
+        <shape name="video-bottom-seperator-second-line" from="base_line">
+            <area>39,484,1003,2</area>
+        </shape>
+
+        <shape name="video-bottom-seperator-third-line" from="base_line">
+            <area>39,639,1003,2</area>
+        </shape>
+
+        <shape name="video-coverart-backdrop-line" from="base_backdrop_line">
+            <area>1066,399,193,285</area>
+        </shape>
+
+        <shape name="video-coverart-top-line" from="base_highlight_line">
+            <area>1054,400,204,2</area>
+        </shape>
+
+        <shape name="video-coverart-bottom-line" from="base_highlight_line">
+            <area>1067,681,191,2</area>
+        </shape>
+
+        <shape name="video-coverart-left-line" from="base_highlight_vertical_line">
+            <area>1067,402,2,279</area>
+        </shape>
+
+        <shape name="video-coverart-right-line" from="base_highlight_vertical_line">
+            <area>1256,402,2,279</area>
+        </shape>
+
+        <buttonlist name="category_selector" from="base_list">
+            <buttonarea>28,44,1224,338</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,597,30</area>
+                    <textarea name="buttontext">
+                        <area>8,0,581,30</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,597,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,561,64</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>577,22</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,597,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,581,64</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>586,389</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>606,389</position>
+            </statetype>
+        </buttonlist>
+
+        <buttonlist name="videolist" from="base_list">
+            <buttonarea>655,44,1224,338</buttonarea>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,597,30</area>
+                    <statetype name="buttoncheck">
+                        <area>8,5,20,20</area>
+                    </statetype>
+                    <textarea name="buttontext">
+                        <area>36,0,581,30</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,597,64</area>
+                    <statetype name="buttoncheck">
+                        <area>8,21,20,20</area>
+                    </statetype>
+                    <textarea name="buttontext">
+                        <area>36,0,561,64</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                    <imagetype name="buttonarrow">
+                        <position>577,22</position>
+                    </imagetype>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,597,64</area>
+                    <statetype name="buttoncheck">
+                        <area>8,21,20,20</area>
+                    </statetype>
+                    <textarea name="buttontext">
+                        <area>36,0,581,64</area>
+                        <align>left,vcenter</align>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>1213,389</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1233,389</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="videotitle" from="basetextarea">
+            <area>40,402,553,42</area>
+            <cutdown>yes</cutdown>
+            <font>basemediumyellow</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="videoplot" from="basetextarea">
+            <area>40,493,1001,140</area>
+            <font>basesmall</font>
+            <align>justify</align>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <textarea name="filesizelbl" from="basetextarea">
+            <area>847,444,60,42</area>
+            <font>basesmall</font>
+            <value>Size:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="filesize" from="basetextarea">
+            <area>912,444,124,42</area>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="cover_background">
+            <area>1070,403,185,277</area>
+            <filename>images/no_coverart.png</filename>
+            <mask>images/masks/tree_coverart_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <imagetype name="cover_image">
+            <area>1070,403,185,277</area>
+            <mask>images/masks/tree_coverart_mask.png</mask>
+            <preserveaspect>no</preserveaspect>
+        </imagetype>
+
+        <textarea name="parentallabel" from="basetextarea">
+            <area>847,411,158,24</area>
+            <font>basesmall</font>
+            <cutdown>no</cutdown>
+            <align>right,vcenter</align>
+            <value>Parental Level:</value>
+        </textarea>
+
+        <textarea name="parentallevel_text" from="basetextarea">
+            <area>1002,411,40,24</area>
+            <font>basesmallblue</font>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="warning_text" from="basetextarea">
+            <area>26,42,601,340</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
+            <value>No videos available</value>
+        </textarea>
+
+        <button name="cancel_button" from="base_button">
+            <position>39,643</position>
+            <value>Cancel</value>
+        </button>
+
+        <button name="ok_button" from="base_button">
+            <position>892,643</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+
+    <window name="logviewer">
+        <area>0,0,1280,720</area>
+
+        <textarea name="heading" from="base_heading">
+            <value>Archive Log Viewer</value>
+        </textarea>
+
+        <shape name="viewer-backdrop" from="base_backdrop">
+            <area>115,36,1050,498</area>
+        </shape>
+
+        <shape name="viewer-backdrop-line" from="base_backdrop_line">
+            <area>116,37,1048,496</area>
+        </shape>
+
+        <shape name="viewer-top-line" from="base_highlight_line">
+            <area>117,38,1046,2</area>
+        </shape>
+
+        <shape name="viewer-bottom-line" from="base_highlight_line">
+            <area>117,531,1046,2</area>
+        </shape>
+
+        <shape name="viewer-left-line" from="base_highlight_vertical_line">
+            <area>117,40,2,500</area>
+        </shape>
+
+        <shape name="viewer-right-line" from="base_highlight_vertical_line">
+            <area>1161,40,2,500</area>
+        </shape>
+
+        <shape name="viewer-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1112,534,50,11</area>
+        </shape>
+
+        <shape name="viewer-bottom-backdrop" from="base_backdrop">
+            <area>115,545,1050,140</area>
+        </shape>
+
+        <shape name="viewer-bottom-backdrop-line" from="base_backdrop_line">
+            <area>116,546,1048,138</area>
+        </shape>
+
+        <shape name="viewer-bottom-top-line" from="base_highlight_line">
+            <area>117,547,1046,2</area>
+        </shape>
+
+        <shape name="viewer-bottom-bottom-line" from="base_highlight_line">
+            <area>117,681,1046,2</area>
+        </shape>
+
+        <shape name="viewer-bottom-left-line" from="base_highlight_vertical_line">
+            <area>117,550,2,131</area>
+        </shape>
+
+        <shape name="viewer-bottom-right-line" from="base_highlight_vertical_line">
+            <area>1161,550,2,131</area>
+        </shape>
+
+        <shape name="viewer-bottom-seperator-first-line" from="base_line">
+            <area>138,620,1004,2</area>
+        </shape>
+
+        <buttonlist name="loglist" from="base_list">
+            <area>123,49,1034,488</area>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,1034,30</area>
+                    <textarea name="buttontext">
+                        <area>8,0,1018,30</area>
+                        <font>basesmaller</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
+                    <area>0,0,1034,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,1018,64</area>
+                        <align>vcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+                <state name="selectedinactive">
+                    <area>0,0,1034,64</area>
+                    <textarea name="buttontext">
+                        <area>8,0,1018,64</area>
+                        <align>vcenter</align>
+                        <multiline>yes</multiline>
+                    </textarea>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>997,487</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1017,487</position>
+            </statetype>
+        </buttonlist>
+
+        <textarea name="logitem_text" from="basetextarea">
+            <area>139,552,1003,66</area>
+            <font>basesmallerblue</font>
+            <cutdown>yes</cutdown>
+            <align>allcenter</align>
+            <multiline>yes</multiline>
+        </textarea>
+
+        <button name="cancel_button" from="base_small_button">
+            <position>138,631</position>
+            <value>Cancel Job</value>
+        </button>
+
+        <button name="update_button" from="base_small_button">
+            <position>540,631</position>
+            <value>Update</value>
+        </button>
+
+        <button name="exit_button" from="base_small_button">
+            <position>942,631</position>
+            <value>Exit</value>
+        </button>
+
+    </window>
+
+</mythuitheme>

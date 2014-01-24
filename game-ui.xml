@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+<mythuitheme>
+
+    <window name="gameui">
+        <area>0,0,1280,720</area>
+
+        <group name="fanart-group" from="base_fanart_group" />
+
+        <textarea name="heading" from="base_heading">
+            <value>Games</value>
+        </textarea>
+
+        <shape name="tree-backdrop" from="base_backdrop">
+            <area>20,36,1240,401</area>
+        </shape>
+
+        <shape name="tree-backdrop-line" from="base_backdrop_line">
+            <area>21,37,1238,399</area>
+        </shape>
+
+        <shape name="tree-top-line" from="base_highlight_line">
+            <area>22,38,1236,2</area>
+        </shape>
+
+        <shape name="tree-bottom-line" from="base_highlight_line">
+            <area>22,433,1236,2</area>
+        </shape>
+
+        <shape name="tree-left-line" from="base_highlight_vertical_line">
+            <area>22,40,2,393</area>
+        </shape>
+
+        <shape name="tree-right-line" from="base_highlight_vertical_line">
+            <area>1256,40,2,393</area>
+        </shape>
+
+        <shape name="tree-arrows-first-list-backdrop" from="base_arrows_backdrop">
+            <area>385,436,50,11</area>
+        </shape>
+
+        <shape name="tree-arrows-second-list-backdrop" from="base_arrows_backdrop">
+            <area>796,436,50,11</area>
+        </shape>
+
+        <shape name="tree-arrows-third-list-backdrop" from="base_arrows_backdrop">
+            <area>1207,436,50,11</area>
+        </shape>
+
+        <shape name="description-backdrop" from="base_backdrop">
+            <area>20,447,1240,238</area>
+        </shape>
+
+        <shape name="description-backdrop-line" from="base_backdrop_line">
+            <area>21,448,1238,236</area>
+        </shape>
+
+        <shape name="description-top-line" from="base_highlight_line">
+            <area>22,449,1236,2</area>
+        </shape>
+
+        <shape name="description-bottom-line" from="base_highlight_line">
+            <area>22,681,1236,2</area>
+        </shape>
+
+        <shape name="description-left-line" from="base_highlight_vertical_line">
+            <area>22,451,2,230</area>
+        </shape>
+
+        <shape name="description-right-line" from="base_highlight_vertical_line">
+            <area>1256,451,2,230</area>
+        </shape>
+
+        <shape name="description-seperator-top-line" from="base_line">
+            <area>188,487,684,2</area>
+        </shape>
+
+        <shape name="description-seperator-bottom-line" from="base_line">
+            <area>188,643,684,2</area>
+        </shape>
+
+        <shape name="coverart-border">
+            <area>37,464,136,204</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <shape name="preview-border">
+            <area>887,464,356,204</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#AAAAAA" alpha="100" width="2" />
+            <cornerradius>6</cornerradius>
+        </shape>
+
+        <buttontree name="gametreelist">
+            <area>28,51,1224,387</area>
+            <numlists>3</numlists>
+            <spacing>10</spacing>
+            <buttonlist name="listtemplate" from="base_list">
+                <searchposition>-1,308</searchposition>
+                <buttonarea>0,0,1224,387</buttonarea>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <area>0,0,402,30</area>
+                        <textarea name="buttontext">
+                            <area>8,0,378,30</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>383,7</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>374,5,20,20</area>
+                        </statetype>
+                    </state>
+                    <state name="selectedactive">
+                        <area>0,0,402,64</area>
+                        <textarea name="buttontext">
+                            <area>8,0,378,64</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>383,22</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>374,22,20,20</area>
+                        </statetype>
+                    </state>
+                    <state name="selectedinactive">
+                        <area>0,0,402,64</area>
+                        <textarea name="buttontext">
+                            <area>8,0,378,64</area>
+                        </textarea>
+                        <imagetype name="buttonarrow">
+                            <position>383,22</position>
+                        </imagetype>
+                        <statetype name="buttoncheck">
+                            <area>374,22,20,20</area>
+                        </statetype>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <position>364,387</position>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <position>384,387</position>
+                </statetype>
+
+            </buttonlist>
+        </buttontree>
+
+        <textarea name="title" from="basetextarea">
+            <area>189,451,682,36</area>
+            <font>basemediumyellow</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="genrelabel" from="basetextarea">
+            <area>189,641,50,42</area>
+            <font>baseextrasmall</font>
+            <value>Genre:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="genre" from="basetextarea">
+            <area>249,641,331,42</area>
+            <font>baseextrasmallblue</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="systemlabel" from="genrelabel">
+            <area>580,641,60,42</area>
+            <value>System:</value>
+        </textarea>
+
+        <textarea name="system" from="genre">
+            <area>650,641,120,42</area>
+        </textarea>
+
+        <textarea name="favlabel" from="genrelabel">
+            <area>770,641,65,42</area>
+            <value>Favorite:</value>
+        </textarea>
+
+        <statetype name="favorite">
+            <state name="no">
+                <textarea name="favorite" from="basetextarea">
+                    <font>baseextrasmallblue</font>
+                    <area>840,641,30,42</area>
+                    <value>No</value>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
+            <state name="yes" from="no">
+                <textarea name="favorite">
+                    <value>Yes</value>
+                </textarea>
+            </state>
+        </statetype>
+
+        <textarea name="description" from="basetextarea">
+            <area>189,498,682,140</area>
+            <multiline>yes</multiline>
+            <cutdown>yes</cutdown>
+        </textarea>
+
+        <imagetype name="no_coverart_without_fanart" depends="!fanart">
+            <area>41,468,128,196</area>
+            <filename>images/masks/watchrecordings_coverart_mask.png</filename>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>41,468,128,196</area>
+            <mask>images/masks/watchrecordings_coverart_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="no_screenshot_without_fanart" depends="!fanart">
+            <area>891,468,348,196</area>
+            <filename>images/masks/watchrecordings_preview_mask.png</filename>
+            <preserveaspect>false</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <imagetype name="screenshot">
+            <area>891,468,348,196</area>
+            <mask>images/masks/watchrecordings_preview_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+            <alpha>255</alpha>
+        </imagetype>
+
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
+
+    </window>
+
+    <window name="gamedetailspopup">
+
+        <!-- Make window behave as a popup -->
+        <area>-1,-1,850,516</area>
+
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <!--this works around buttons being disabled in the popup-->
+        <textarea name="fix" from="basetextarea">
+            <area>0,0,1,1</area>
+            <scroll direction="left" startdelay="0"/>
+            <value>_</value>
+        </textarea>
+
+        <shape name="detail-popup-backdrop" from="base_popup_backdrop">
+            <area>0,0,850,516</area>
+        </shape>
+
+        <shape name="detail-popup-backdrop-line" from="base_backdrop_line">
+            <area>1,1,571,406</area>
+        </shape>
+
+        <shape name="detail-popup-top-line" from="base_highlight_line">
+            <area>2,2,569,2</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-line" from="base_highlight_line">
+            <area>2,404,569,2</area>
+        </shape>
+
+        <shape name="detail-popup-left-line" from="base_highlight_vertical_line">
+            <area>2,4,2,400</area>
+        </shape>
+
+        <shape name="detail-popup-right-line" from="base_highlight_vertical_line">
+            <area>569,4,2,400</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-first-line" from="base_line">
+            <area>22,45,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-second-line" from="base_line">
+            <area>22,278,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-third-line" from="base_line">
+            <area>22,303,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-fourth-line" from="base_line">
+            <area>22,328,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-fifth-line" from="base_line">
+            <area>22,353,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-seperator-sixth-line" from="base_line">
+            <area>22,378,529,2</area>
+        </shape>
+
+        <shape name="detail-popup-coverart-backdrop-line" from="base_backdrop_line">
+            <area>575,1,274,406</area>
+        </shape>
+
+        <shape name="detail-popup-coverart-top-line" from="base_highlight_line">
+            <area>576,2,272,2</area>
+        </shape>
+
+        <shape name="detail-popup-coverart-bottom-line" from="base_highlight_line">
+            <area>576,404,272,2</area>
+        </shape>
+
+        <shape name="detail-popup-coverart-left-line" from="base_highlight_vertical_line">
+            <area>576,4,2,400</area>
+        </shape>
+
+        <shape name="detail-popup-coverart-right-line" from="base_highlight_vertical_line">
+            <area>846,4,2,400</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-backdrop-line" from="base_backdrop_line">
+            <area>1,411,848,104</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-top-line" from="base_highlight_line">
+            <area>2,412,846,2</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-bottom-line" from="base_highlight_line">
+            <area>2,512,846,2</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-left-line" from="base_highlight_vertical_line">
+            <area>2,414,2,98</area>
+        </shape>
+
+        <shape name="detail-popup-bottom-right-line" from="base_highlight_vertical_line">
+            <area>846,414,2,98</area>
+        </shape>
+
+        <textarea name="title" from="basetextarea">
+            <area>9,4,555,40</area>
+            <multiline>no</multiline>
+            <font>basesmalldarkyellow</font>
+            <scroll direction="left" startdelay="1" />
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="description" from="basetextarea">
+            <area>23,54,527,214</area>
+            <multiline>yes</multiline>
+            <font>basesmaller</font>
+        </textarea>
+
+        <imagetype name="coverart">
+            <area>580,6,264,396</area>
+            <mask>images/masks/item_detail_popup_coverart_mask.png</mask>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <textarea name="gametype_lab" from="basetextarea">
+            <area>23,279,50,24</area>
+            <font>basesmaller</font>
+            <value>Type:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="gametype" from="basetextarea">
+            <area>83,280,150,24</area>
+            <font>basesmallerblue</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="allsystems_lab" from="basetextarea">
+            <area>243,279,100,24</area>
+            <font>basesmaller</font>
+            <value>System(s):</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="allsystems" from="basetextarea">
+            <area>353,280,197,24</area>
+            <font>basesmallerblue</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="rompath_lab" from="basetextarea">
+            <area>23,304,46,24</area>
+            <font>basesmaller</font>
+            <value>Path:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="rompath" from="basetextarea">
+            <area>79,305,327,24</area>
+            <font>basesmallerblue</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="romname_lbl" from="basetextarea">
+            <area>390,304,46,24</area>
+            <font>basesmaller</font>
+            <value>File:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="romname" from="basetextarea">
+            <area>436,305,114,24</area>
+            <font>basesmallerblue</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="genre_lab" from="basetextarea">
+            <area>23,329,70,24</area>
+            <font>basesmaller</font>
+            <value>Genre:</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="genre" from="basetextarea">
+            <area>103,330,447,24</area>
+            <font>basesmallerblue</font>
+            <scroll direction="left" startdelay="1" />
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="year_lab" from="basetextarea">
+            <area>23,354,46,24</area>
+            <font>basesmaller</font>
+            <align>left,vcenter</align>
+            <value>Year:</value>
+        </textarea>
+
+        <textarea name="year" from="basetextarea">
+            <area>79,356,80,24</area>
+            <font>basesmallerblue</font>
+        </textarea>
+
+        <textarea name="crc_lab" from="basetextarea">
+            <area>342,354,84,24</area>
+            <font>basesmaller</font>
+            <align>right,vcenter</align>
+            <value>CRC:</value>
+        </textarea>
+
+        <textarea name="crc" from="basetextarea">
+            <area>436,355,114,24</area>
+            <font>basesmallerblue</font>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="country_lab" from="basetextarea">
+            <area>88,382,90,20</area>
+            <font>baseextrasmall</font>
+            <value>Country:</value>
+            <align>right,vcenter</align>
+        </textarea>
+
+        <textarea name="country" from="basetextarea">
+            <area>188,382,110,20</area>
+            <font>baseextrasmallblue</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <textarea name="publisher_lab" from="basetextarea">
+            <area>331,382,94,20</area>
+            <font>baseextrasmall</font>
+            <align>right,vcenter</align>
+            <value>Publisher:</value>
+        </textarea>
+
+        <textarea name="publisher" from="basetextarea">
+            <area>435,382,110,20</area>
+            <font>baseextrasmallblue</font>
+            <align>vcenter</align>
+        </textarea>
+
+        <button name="play_button">
+            <position>435,443</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,390,40</area>
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>10,0,370,40</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <value>Play</value>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+        </button>
+
+        <button name="done_button">
+            <position>25,443</position>
+            <statetype name="buttonstate">
+                <state name="active">
+                    <shape name="background" from="base_button_background_active">
+                        <area>0,0,390,40</area>
+                    </shape>
+                    <textarea name="buttontext">
+                        <area>10,0,370,40</area>
+                        <align>allcenter</align>
+                        <font>basesmall</font>
+                        <value>Done</value>
+                    </textarea>
+                </state>
+                <state name="selected" from="active">
+                    <shape name="background" from="base_button_background_selected">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+                <state name="pushed" from="active">
+                    <shape name="background" from="base_button_background_pushed">
+                        <area>0,0,100%,100%</area>
+                    </shape>
+                </state>
+            </statetype>
+        </button>
+
+    </window>
+
+    <window name="edit_metadata">
+
+        <group name="fanart-group" from="base_fanart_group" />
+
+        <textarea name="heading" from="base_heading">
+            <value>Edit Game Information</value>
+        </textarea>
+
+        <shape name="edit-metadata-backdrop" from="base_backdrop">
+            <area>190,36,900,648</area>
+        </shape>
+
+        <shape name="edit-metadata-backdrop-line" from="base_backdrop_line">
+            <area>191,37,898,646</area>
+        </shape>
+
+        <shape name="edit-metadata-top-line" from="base_highlight_line">
+            <area>192,38,896,2</area>
+        </shape>
+
+        <shape name="edit-metadata-bottom-line" from="base_highlight_line">
+            <area>192,680,896,2</area>
+        </shape>
+
+        <shape name="edit-metadata-left-line" from="base_highlight_vertical_line">
+            <area>192,40,2,640</area>
+        </shape>
+
+        <shape name="edit-metadata-right-line" from="base_highlight_vertical_line">
+            <area>1086,40,2,640</area>
+        </shape>
+
+        <shape name="edit-metadata-buttons-top-line" from="base_line">
+            <area>213,604,854,2</area>
+        </shape>
+
+        <textarea name="gamename_label" from="basetextarea">
+            <area>164,66,230,32</area>
+            <font>basemedium</font>
+            <align>right,vcenter</align>
+            <value>Title:</value>
+        </textarea>
+
+        <textedit name="title_edit" from="base_wide_textedit">
+            <area>414,66,580,32</area>
+        </textedit>
+
+        <textarea name="genre_label" from="gamename_label">
+            <position>164,123</position>
+            <value>Genre:</value>
+        </textarea>
+
+        <textedit name="genre_edit" from="title_edit">
+            <position>414,123</position>
+        </textedit>
+
+        <textarea name="country_label" from="gamename_label">
+            <position>164,180</position>
+            <value>Country:</value>
+        </textarea>
+
+        <textedit name="country_edit" from="title_edit">
+            <position>414,180</position>
+        </textedit>
+
+        <textarea name="publisher_label" from="gamename_label">
+            <position>164,237</position>
+            <value>Publisher:</value>
+        </textarea>
+
+        <textedit name="publisher_edit" from="title_edit">
+            <position>414,237</position>
+        </textedit>
+
+        <textarea name="plot_label" from="gamename_label">
+            <position>164,294</position>
+            <value>Description:</value>
+        </textarea>
+
+        <textedit name="description_edit" from="title_edit">
+            <position>414,294</position>
+        </textedit>
+
+        <textarea name="year_label" from="gamename_label">
+            <position>164,351</position>
+            <value>Year:</value>
+        </textarea>
+
+        <textedit name="year_edit" from="title_edit">
+            <area>414,351,120,32</area>
+            <textarea name="text">
+                <area>0,0,120,32</area>
+                <align>allcenter</align>
+            </textarea>
+        </textedit>
+
+        <textarea name="fav_label" from="gamename_label">
+            <position>845,351</position>
+            <align>left,vcenter</align>
+            <value>Favorite:</value>
+        </textarea>
+
+        <checkbox name="favorite_check" from="base_checkbox">
+            <position>960,351</position>
+        </checkbox>
+
+        <textarea name="coverart_label" from="gamename_label">
+            <position>164,408</position>
+            <value>Coverart:</value>
+        </textarea>
+
+        <button name="coverart_button" from="base_searchbutton">
+            <area>414,408,30,30</area>
+        </button>
+
+        <textarea name="coverart_text" from="basetextarea">
+            <area>456,408,545,32</area>
+            <font>basesmaller</font>
+            <cutdown>left</cutdown>
+            <value>/path/to/the/thing.jpg</value>
+            <align>left,vcenter</align>
+        </textarea>
+
+        <textarea name="fanart_label" from="gamename_label">
+            <position>164,465</position>
+            <value>Fanart:</value>
+        </textarea>
+
+        <button name="fanart_button" from="coverart_button">
+            <position>414,465</position>
+        </button>
+
+        <textarea name="fanart_text" from="coverart_text">
+            <position>456,465</position>
+        </textarea>
+
+        <textarea name="screenshot_label" from="gamename_label">
+            <position>164,522</position>
+            <value>Screenshot:</value>
+        </textarea>
+
+        <button name="screenshot_button" from="coverart_button">
+            <area>414,522,30,30</area>
+        </button>
+
+        <textarea name="screenshot_text" from="coverart_text">
+            <position>456,522</position>
+        </textarea>
+
+        <button name="done_button" from="base_wide_button">
+            <position>400,623</position>
+            <value>Done</value>
+        </button>
+
+        <!-- Widgets -->
+
+        <group name="clock-backdrop-group" from="base_clock_backdrop_group" />
+
+        <clock name="clock" from="base_clock" />
+
+    </window>
+
+</mythuitheme>
