@@ -840,7 +840,7 @@ MythArchive GUI theme
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>987,200</position>
+                <position>987,199</position>
                 <state type="off">
                     <imagetype name="upoff">
                         <filename>images/lists_up_arrow.png</filename>
@@ -855,7 +855,7 @@ MythArchive GUI theme
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1007,200</position>
+                <position>1007,199</position>
                 <state type="off">
                     <imagetype name="dnoff">
                         <filename>images/lists_down_arrow.png</filename>
@@ -880,7 +880,7 @@ MythArchive GUI theme
         </shape>
 
         <imagetype name="frameimage">
-            <area>144,306,359,202</area>
+            <area>143,307,360,200</area>
             <filename>images/no_preview.png</filename>
             <preserveaspect>false</preserveaspect>
             <alpha>255</alpha>
@@ -891,7 +891,7 @@ MythArchive GUI theme
             <statetype name="buttonstate">
                 <state name="active">
                     <area>0,0,370,210</area>
-                    <shape name="background-line" from="base_backdrop_line">
+                    <shape name="buttonbackground-line" from="base_backdrop_line">
                         <area>1,1,368,208</area>
                     </shape>
                 </state>
@@ -951,7 +951,7 @@ MythArchive GUI theme
         </imagetype>
 
         <textarea name="currentpos" from="basetextarea">
-            <area>531,411,601,24</area>
+            <area>531,412,601,24</area>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
