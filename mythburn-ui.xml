@@ -609,29 +609,29 @@ MythArchive GUI theme
         </textarea>
 
         <textarea name="title_label" from="basetextarea">
-            <area>23,100,120,32</area>
+            <area>19,100,124,32</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textarea name="subtitle_label" from="title_label">
-            <area>23,164,120,32</area>
+            <area>19,164,124,32</area>
             <value>Subtitle:</value>
         </textarea>
 
         <textarea name="startdate_label" from="title_label">
-            <area>23,228,120,32</area>
+            <area>19,228,124,32</area>
             <value>Start Date:</value>
         </textarea>
 
         <textarea name="starttime_label" from="title_label">
-            <area>23,292,120,32</area>
+            <area>19,292,124,32</area>
             <value>Time:</value>
         </textarea>
 
         <textarea name="description_label" from="title_label">
-            <area>23,356,120,32</area>
+            <area>19,356,124,32</area>
             <value>Description:</value>
         </textarea>
 
