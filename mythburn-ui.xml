@@ -365,7 +365,7 @@ MythArchive GUI theme
         </shape>
 
         <shape name="add-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1112,534,50,11</area>
+            <area>1112,534,50,12</area>
         </shape>
 
         <shape name="add-bottom-backdrop" from="base_backdrop">

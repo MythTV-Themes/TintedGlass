@@ -966,11 +966,11 @@
         </textarea>
 
         <shape name="viewer-backdrop" from="base_backdrop">
-            <area>115,36,1050,498</area>
+            <area>115,36,1050,488</area>
         </shape>
 
         <shape name="viewer-backdrop-line" from="base_backdrop_line">
-            <area>116,37,1048,496</area>
+            <area>116,37,1048,486</area>
         </shape>
 
         <shape name="viewer-top-line" from="base_highlight_line">
@@ -978,7 +978,7 @@
         </shape>
 
         <shape name="viewer-bottom-line" from="base_highlight_line">
-            <area>117,531,1046,2</area>
+            <area>117,520,1046,2</area>
         </shape>
 
         <shape name="viewer-left-line" from="base_highlight_vertical_line">
@@ -990,19 +990,19 @@
         </shape>
 
         <shape name="viewer-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1112,534,50,11</area>
+            <area>1112,523,50,12</area>
         </shape>
 
         <shape name="viewer-bottom-backdrop" from="base_backdrop">
-            <area>115,545,1050,140</area>
+            <area>115,534,1050,151</area>
         </shape>
 
         <shape name="viewer-bottom-backdrop-line" from="base_backdrop_line">
-            <area>116,546,1048,138</area>
+            <area>116,535,1048,149</area>
         </shape>
 
         <shape name="viewer-bottom-top-line" from="base_highlight_line">
-            <area>117,547,1046,2</area>
+            <area>117,536,1046,2</area>
         </shape>
 
         <shape name="viewer-bottom-bottom-line" from="base_highlight_line">
@@ -1010,11 +1010,11 @@
         </shape>
 
         <shape name="viewer-bottom-left-line" from="base_highlight_vertical_line">
-            <area>117,550,2,131</area>
+            <area>117,538,2,143</area>
         </shape>
 
         <shape name="viewer-bottom-right-line" from="base_highlight_vertical_line">
-            <area>1161,550,2,131</area>
+            <area>1161,538,2,143</area>
         </shape>
 
         <shape name="viewer-bottom-seperator-first-line" from="base_line">
@@ -1022,7 +1022,7 @@
         </shape>
 
         <buttonlist name="loglist" from="base_list">
-            <area>123,49,1034,488</area>
+            <area>123,44,1034,488</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1034,30</area>
@@ -1049,15 +1049,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>997,487</position>
+                <position>997,481</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1017,487</position>
+                <position>1017,481</position>
             </statetype>
         </buttonlist>
 
         <textarea name="logitem_text" from="basetextarea">
-            <area>139,552,1003,66</area>
+            <area>139,538,1003,82</area>
             <font>basesmallerblue</font>
             <cutdown>yes</cutdown>
             <align>allcenter</align>

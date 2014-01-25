@@ -47,7 +47,7 @@ MythTV Archive GUI theme
         </shape>
 
         <shape name="add-arrows-backdrop" from="base_arrows_backdrop">
-            <area>1112,534,50,11</area>
+            <area>1112,534,50,12</area>
         </shape>
 
         <shape name="add-bottom-backdrop" from="base_backdrop">
@@ -92,6 +92,7 @@ MythTV Archive GUI theme
             <area>123,122,1034,406</area>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>
+            <align>center</align>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,1034,30</area>
@@ -133,7 +134,7 @@ MythTV Archive GUI theme
         </textarea>
 
         <textarea name="progtitle" from="basetextarea">
-             <area>131,294,926,30</area>
+             <area>132,295,926,30</area>
              <font>basesmallyellow</font>
              <align>left,vcenter</align>
         </textarea>
