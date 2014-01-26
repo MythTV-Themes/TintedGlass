@@ -750,7 +750,7 @@ MythArchive GUI theme
         </shape>
 
         <shape name="position-right-line" from="base_highlight_vertical_line">
-            <area>1140,377,2,62</area>
+            <area>1139,377,2,62</area>
         </shape>
 
         <buttonlist name="thumblist">
