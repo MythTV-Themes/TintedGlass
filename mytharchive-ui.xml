@@ -323,9 +323,9 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,898,30</area>
-                    <shape name="buttonbackground" from="base_select_bar_active">
+                    <group name="select_bar" from="base_select_bar_active_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                     <statetype name="buttoncheck">
                         <area>8,5,20,20</area>
                         <state type="off">
@@ -358,9 +358,9 @@
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active" >
                     <area>0,0,898,64</area>
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                     <statetype name="cutlist">
                         <state name="no">
                             <textarea name="cutlistoff" from="basetextarea">
@@ -586,6 +586,12 @@
                  </state>
                 <state name="selectedactive">
                     <area>0,0,599,112</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                     <statetype name="buttoncheck">
                         <area>10,46,20,20</area>
                     </statetype>
@@ -606,9 +612,12 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

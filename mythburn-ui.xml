@@ -486,9 +486,9 @@ MythArchive GUI theme
                     <statetype name="movestate" />
                 </state>
                <state name="selectedinactive" from="selectedactive">
-                   <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                   <group name="select_bar" from="base_select_bar_selectedinactive_group">
                        <area>0,0,100%,100%</area>
-                   </shape>
+                   </group>
                </state>
             </statetype>
             <statetype name="upscrollarrow">

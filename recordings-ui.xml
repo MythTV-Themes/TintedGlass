@@ -1009,7 +1009,7 @@
             <area>696,4,2,446</area>
         </shape>
 
-        <shape name="icon-help-selectbar" from="base_select_bar_active">
+        <group name="icon-help-selectbar" from="base_select_bar_active_group">
             <area>8,8,684,24</area>
         </shape>
 
@@ -1354,9 +1354,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

@@ -104,9 +104,9 @@
             <area>230,78,385,2</area>
         </shape>
 
-        <shape name="edit-keys-leftdesc-selectbar" from="base_select_bar_active">
+        <group name="edit-keys-leftdesc-selectbar" from="base_select_bar_active_group">
             <area>213,44,419,30</area>
-        </shape>
+        </group>
 
         <shape name="edit-keys-contexts-arrows-backdrop" from="base_arrows_backdrop">
             <area>586,495,50,11</area>
@@ -136,9 +136,9 @@
             <area>665,78,385,2</area>
         </shape>
 
-        <shape name="edit-keys-rightdesc-selectbar" from="base_select_bar_active">
+        <group name="edit-keys-rightdesc-selectbar" from="base_select_bar_active_group">
             <area>648,44,419,30</area>
-        </shape>
+        </group>
 
         <shape name="edit-keys-actions-arrows-backdrop" from="base_arrows_backdrop">
             <area>1021,495,50,11</area>

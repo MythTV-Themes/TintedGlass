@@ -320,6 +320,12 @@ MythTV Archive GUI theme
                  </state>
                 <state name="selectedactive">
                     <area>0,0,599,112</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                     <statetype name="buttoncheck">
                         <area>10,46,20,20</area>
                     </statetype>
@@ -340,9 +346,12 @@ MythTV Archive GUI theme
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

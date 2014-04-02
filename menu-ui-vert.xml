@@ -148,9 +148,9 @@
                 </state>
                 <state name="selectedactive"> 
                     <area>-10,0,330,64</area>
-                    <shape name="background" from="base_select_bar_selectedactive">
+                    <group name="select_bar" from="base_select_bar_selectedactive_group"
                         <area>0,0,330,100%</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext">
                         <area>5,0,320,64</area>
                         <font>basemediumlargerdarkyellow</font>

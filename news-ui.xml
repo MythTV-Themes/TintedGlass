@@ -363,9 +363,9 @@
             <area>516,40,2,641</area>
         </shape>
 
-        <shape name="news-config-categories-selectbar" from="base_select_bar_active">
+        <group name="news-config-categories-selectbar" from="base_select_bar_active_group">
             <area>28,44,484,15</area>
-        </shape>
+        </group>
 
         <shape name="news-config-categories-seperator-first-line" from="base_line">
             <area>48,63,444,2</area>
@@ -399,9 +399,9 @@
             <area>1256,40,2,641</area>
         </shape>
 
-        <shape name="news-config-feeds-selectbar" from="base_select_bar_active">
+        <group name="news-config-feeds-selectbar" from="base_select_bar_active_group">
             <area>538,44,714,15</area>
-        </shape>
+        </group>
 
         <shape name="news-config-feeds-seperator-first-line" from="base_line">
             <area>553,63,684,2</area>

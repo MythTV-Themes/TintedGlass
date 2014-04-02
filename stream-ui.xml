@@ -158,9 +158,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -234,9 +234,9 @@
                     </state>
                     <state name="selectedactive">
                         <area>0,0,100%,64</area>
-                        <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                        <group name="select_bar" from="base_select_bar_selectedactive_group"
                             <area>0,0,100%,100%</area>
-                        </shape>
+                        </group>
                         <imagetype name="buttonimage">
                             <area>15,3,58,58</area>
                             <filename>mythmusic/mm_icecast.png</filename>
@@ -260,9 +260,9 @@
                         </textarea>
                     </state>
                     <state name="selectedinactive" from="selectedactive">
-                        <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                        <group name="select_bar" from="base_select_bar_selectedinactive_group">
                             <area>0,0,100%,100%</area>
-                        </shape>
+                        </group>
                     </state>
                 </statetype>
                 <statetype name="upscrollarrow">
@@ -729,9 +729,9 @@
                     </statetype>                    
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

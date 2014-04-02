@@ -488,33 +488,267 @@
         <alpha>255</alpha>
     </clock>
 
-    <shape name="base_select_bar_active">
-        <type>roundbox</type>
-        <fill color="#444444" alpha="90" />
-        <line color="#444444" alpha="180" width="0" />
-        <cornerradius>5</cornerradius>
-    </shape>
+    <!-- Base group definition for base select bar active -->
+    <group name="base_select_bar_active_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#444444" alpha="90" />
+            <line color="#444444" alpha="180" width="0" />
+            <cornerradius>5</cornerradius>
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="25" color="#d6d6d6" alpha="0" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="75" color="#d6d6d6" alpha="0"/>
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
 
-    <shape name="base_select_bar_selectedactive">
-        <type>roundbox</type>
-        <fill style="gradient">
-            <gradient direction="vertical" alpha="255">
-                <stop position="0" color="#1d1d21" />
-                <stop position="50" color="#313136" alpha="255" />
-                <stop position="51" color="#0a0a0e" alpha="255" />
-                <stop position="100" color="#0a0a0e" alpha="255" />
-            </gradient>
-        </fill>
-        <line color="#d6d6d6" alpha="200" width="2" />
-        <cornerradius>5</cornerradius>
-    </shape>
+    <!-- Base group definition for base select bar selected active -->
+    <group name="base_select_bar_selectedactive_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="140" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="25" color="#d6d6d6" alpha="255" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="75" color="#d6d6d6" alpha="255"/>
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
 
-    <shape name="base_select_bar_selectedinactive">
-        <type>roundbox</type>
-        <fill color="#222222" alpha="175" />
-        <line color="#666666" alpha="200" width="2" />
-        <cornerradius>5</cornerradius>
-    </shape>
+    <!-- Base group definition for base select bar selected inactive -->
+    <group name="base_select_bar_selectedinactive_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#444444" alpha="90" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="75" color="#d6d6d6" alpha="255"/>
+                    <stop position="100" color="#d6d6d6"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6"/>
+                    <stop position="25" color="#d6d6d6" alpha="255"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#d6d6d6"/>
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <!-- Base group definitions for base select bar selected active states -->
+    <group name="base_select_bar_selectedactive_disabled_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="140" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#808080" />
+                    <stop position="25" color="#808080" alpha="255" />
+                    <stop position="50" color="#808080" />
+                    <stop position="100" color="#808080" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#808080" />
+                    <stop position="50" color="#808080" />
+                    <stop position="75" color="#808080" alpha="255"/>
+                    <stop position="100" color="808080" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <group name="base_select_bar_selectedactive_error_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="0" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d93636" />
+                    <stop position="25" color="#d93636" alpha="255" />
+                    <stop position="50" color="#d93636" />
+                    <stop position="100" color="#d93636" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d93636" />
+                    <stop position="50" color="#d93636" />
+                    <stop position="75" color="#d93636" alpha="255"/>
+                    <stop position="100" color="#d93636" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <group name="base_select_bar_selectedactive_warning_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="0" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d9d900" />
+                    <stop position="25" color="#d9d900" alpha="255" />
+                    <stop position="50" color="#d9d900" />
+                    <stop position="100" color="#d9d900" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d9d900" />
+                    <stop position="50" color="#d9d900" />
+                    <stop position="75" color="#d9d900" alpha="255"/>
+                    <stop position="100" color="#d9d900" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <group name="base_select_bar_selectedactive_normal_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="0" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="25" color="#d6d6d6" alpha="255" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#d6d6d6" />
+                    <stop position="50" color="#d6d6d6" />
+                    <stop position="75" color="#d6d6d6" alpha="255"/>
+                    <stop position="100" color="#d6d6d6" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <group name="base_select_bar_selectedactive_running_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>box</type>
+            <fill color="#000000" alpha="0" />
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#80d400" />
+                    <stop position="25" color="#80d400" alpha="255" />
+                    <stop position="50" color="#80d400" />
+                    <stop position="100" color="#80d400" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,62,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="50">
+                    <stop position="0" color="#80d400" />
+                    <stop position="50" color="#80d400" />
+                    <stop position="75" color="#80d400" alpha="255"/>
+                    <stop position="100" color="#80d400" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
 
     <!-- Base definition of a selected button background -->
     <shape name="base_button_background_selected">
@@ -662,9 +896,9 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <shape name="buttonbackground" from="base_select_bar_active">
+                <group name="select_bar" from="base_select_bar_active_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext" from="basetextarea">
                     <align>left,vcenter</align>
                 </textarea>
@@ -687,9 +921,10 @@
                 </statetype>
             </state>
             <state name="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                <area>0,0,100%,100%</area>
+                <group name="select_bar" from="base_select_bar_selectedactive_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext" from="basetextarea">
                     <font>basesmallyellow</font>
                     <multiline>yes</multiline>
@@ -716,15 +951,14 @@
                     <filename>images/lists_right_arrow.png</filename>
                 </imagetype>
             </state>
-            <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+            <state name="selectedinactive" from="selectedactive">
+                <group name="select_bar" from="base_select_bar_selectedinactive_group">
                     <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="buttontext" from="basetextarea">
-                    <font>basesmallyellow</font>
-                    <multiline>yes</multiline>
-                    <align>left,vcenter</align>
-                </textarea>
+                </group>
+                <imagetype name="buttonarrow">
+                    <filename>images/lists_right_arrow.png</filename>
+                    <alpha>0</alpha>
+                </imagetype>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
@@ -767,9 +1001,9 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <shape name="buttonbackground" from="base_select_bar_active">
+                <group name="select_bar" from="base_select_bar_active_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext" from="base_text_font_state_small">
                 </textarea>
                 <statetype name="buttoncheck">
@@ -794,30 +1028,30 @@
                     <statetype name="status">
                         <state name="disabled">
                             <area>0,0,100%,100%</area>
-                            <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                            <group name="select_bar" from="base_select_bar_selectedactive_disabled_group">
                                 <area>0,0,100%,100%</area>
-                                <line color="#808080" alpha="200" width="2" />
-                            </shape>
+                            </group>
                         </state>
                         <state name="error" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d93636" alpha="200" width="2" />
-                            </shape>
+                            <group name="select_bar" from="base_select_bar_selectedactive_error_group">
+                                <area>0,0,100%,100%</area>
+                            </group>
                         </state>
                         <state name="warning" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d9d900" alpha="200" width="2" />
-                            </shape>
+                            <group name="select_bar" from="base_select_bar_selectedactive_warning_group">
+                                <area>0,0,100%,100%</area>
+                            </group>
                         </state>
                         <state name="normal" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#d6d6d6" alpha="200" width="2" />
-                            </shape>
+                            <area>0,0,100%,100%</area>
+                            <group name="select_bar" from="base_select_bar_selectedactive_normal_group">
+                                <area>0,0,100%,100%</area>
+                            </group>
                         </state>
                         <state name="running" from="disabled">
-                            <shape name="buttonbackground">
-                                <line color="#80d400" alpha="200" width="2" />
-                            </shape>
+                            <group name="select_bar" from="base_select_bar_selectedactive_running_group">
+                                <area>0,0,100%,100%</area>
+                            </group>
                         </state>
                     </statetype>
                 <textarea name="buttontext" from="base_text_font_state_small">
@@ -843,15 +1077,7 @@
                     <filename>images/lists_right_arrow.png</filename>
                 </imagetype>
             </state>
-            <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
-                <textarea name="buttontext" from="base_text_font_state_small">
-                    <font>basesmall</font>
-                    <font state="normal">basesmall</font>
-                </textarea>
-            </state>
+            <state name="selectedinactive" from="active" />
         </statetype>
         <statetype name="upscrollarrow">
             <state type="off">
@@ -2051,6 +2277,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,599,112</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                     <imagetype name="buttonimage">
                         <area>15,4,185,104</area>
                         <preserveaspect>true</preserveaspect>
@@ -2093,9 +2325,12 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,110,100%,2</area>
+                        </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -2242,9 +2477,9 @@
             <area>1236,4,2,641</area>
         </shape>
 
-        <shape name="metadata-results-selectbar" from="base_select_bar_active">
+        <group name="metadata-results-selectbar" from="base_select_bar_active_group">
             <area>8,8,1224,35</area>
-        </shape>
+        </group>
 
         <shape name="metadata-results-seperator-first-line" from="base_line">
             <area>21,47,1198,2</area>
@@ -2294,6 +2529,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1224,228</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,226,100%,2</area>
+                        </shape>
+                    </group>
                     <imagetype name="buttonimage">
                         <area>10,4,147,220</area>
                         <preserveaspect>true</preserveaspect>
@@ -2339,9 +2580,12 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,226,100%,2</area>
+                        </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -2394,9 +2638,9 @@
             <area>612,4,2,641</area>
         </shape>
 
-        <shape name="artwork-selectbar" from="base_select_bar_active">
+        <group name="artwork-selectbar" from="base_select_bar_active_group">
             <area>8,8,600,37</area>
-        </shape>
+        </group>
 
         <shape name="artwork-seperator-first-line" from="base_line">
             <area>18,49,580,2</area>
@@ -2440,6 +2684,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,600,114</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,112,100%,2</area>
+                        </shape>
+                    </group>
                     <imagetype name="buttonimage">
                         <area>10,4,189,106</area>
                         <alpha>255</alpha>
@@ -2460,9 +2710,12 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,112,100%,2</area>
+                        </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

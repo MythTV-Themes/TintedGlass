@@ -158,9 +158,9 @@
             <area>37,75,581,2</area>
         </shape>
 
-        <shape name="theme-chooser-icon-status-selectbar" from="base_select_bar_active">
+        <group name="theme-chooser-icon-status-selectbar" from="base_select_bar_active_group">
             <area>28,44,599,27</area>
-        </shape>
+        </group>
 
         <shape name="theme-chooser-arrows-backdrop" from="base_arrows_backdrop">
             <area>582,685,50,11</area>
@@ -315,6 +315,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,96</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,94,100%,2</area>
+                        </shape>
+                    </group>
                     <!-- State to show whether a theme is locally installed or remotely downloadable -->
                     <statetype name="themelocation">
                         <area>15,40,16,16</area>

@@ -115,9 +115,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -247,9 +247,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -394,9 +394,9 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,55</area>
-                    <shape name="buttonbackground" from="base_select_bar_active">
+                    <group name="select_bar" from="base_select_bar_active_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                     <imagetype name="buttonimage">
                         <area>5,7,60,40</area>
                     </imagetype>
@@ -415,9 +415,9 @@
                 </state>
                 <state name="inactive" from="active"/>
                 <state name="selectedactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext" from="basetextarea">
                         <area>70,0,90%,30</area>
                         <font>basemediumyellow</font>
@@ -432,9 +432,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="inactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -496,9 +496,9 @@
                 </state>
                 <state name="inactive" from="active" />
                 <state name="selectedactive" from="active">
-                    <shape name="buttonbackground" from="base_select_bar_selectedactive">
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,0,90%,30</area>
                         <font>basemediumyellow</font>
@@ -513,9 +513,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="inactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <helptext>Select your language.</helptext>

@@ -137,9 +137,9 @@
             <area>1256,90,2,591</area>
         </shape>
 
-        <shape name="bookmark-label-selectbar" from="base_select_bar_active">
+        <group name="bookmark-label-selectbar" from="base_select_bar_active_group">
             <area>28,94,1224,33</area>
-        </shape>
+        </group>
 
         <shape name="bookmark-seperator-first-line" from="base_line">
             <area>42,131,1196,2</area>

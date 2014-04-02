@@ -190,9 +190,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -887,9 +887,9 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -2281,10 +2281,12 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,400,164</area>
-                    <shape name="buttonbackground" from="base_select_bar_active">
+                    <group name="select_bar" from="base_select_bar_active_group">
                         <area>0,0,100%,100%</area>
-                        <cornerradius>12</cornerradius>
-                    </shape>
+                        <shape name="select_bar">
+                            <cornerradius>12</cornerradius>
+                        </shape>
+                    </group>
                     <imagetype name="buttonimage">
                         <area>15,5,154,154</area>
                         <preserveaspect>no</preserveaspect>
@@ -3506,9 +3508,9 @@
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                <shape name="buttonbackground" from="base_select_bar_selectedinactive">
-                    <area>0,0,100%,100%</area>
-                </shape>
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
+                        <area>0,0,100%,100%</area>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">

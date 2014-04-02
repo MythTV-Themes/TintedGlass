@@ -328,9 +328,9 @@
             <area>1001,40,2,641</area>
         </shape>
 
-        <shape name="manage-sites-selectbar" from="base_select_bar_active">
+        <group name="manage-sites-selectbar" from="base_select_bar_active_group">
             <area>283,44,714,51</area>
-        </shape>
+        </group>
 
         <shape name="manage-sites-seperator-first-line" from="base_line">
             <area>298,99,684,2</area>
@@ -371,9 +371,9 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -535,9 +535,9 @@
                     </statetype>
                 </state>
                 <state name="selectedinactive" from="selectedactive">
-                    <shape name="buttonbackground" from="base_select_bar_selectedinactive">
+                    <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
