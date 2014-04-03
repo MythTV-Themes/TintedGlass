@@ -1011,7 +1011,7 @@
 
         <group name="icon-help-selectbar" from="base_select_bar_active_group">
             <area>8,8,684,24</area>
-        </shape>
+        </group>
 
         <shape name="icon-help-seperator-first-line" from="base_line">
             <area>24,36,652,2</area>

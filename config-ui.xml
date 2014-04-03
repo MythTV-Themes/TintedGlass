@@ -104,6 +104,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,788,76</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,74,100%,2</area>
+                        </shape>
+                    </group>
                     <imagetype name="icon">
                         <area>10,4,91,68</area>
                         <preserveaspect>true</preserveaspect>
@@ -117,6 +123,9 @@
                 <state name="selectedinactive" from="selectedactive">
                     <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,74,100%,2</area>
+                        </shape>
                     </group>
                 </state>
             </statetype>
@@ -226,6 +235,12 @@
                 </state>
                 <state name="selectedactive">
                     <area>0,0,1224,72</area>
+                    <group name="select_bar" from="base_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,70,100%,2</area>
+                        </shape>
+                    </group>
                     <textarea name="channum" from="buttontext">
                         <area>8,0,70,72</area>
                         <align>vcenter</align>
@@ -249,6 +264,9 @@
                 <state name="selectedinactive" from="selectedactive">
                     <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,70,100%,2</area>
+                        </shape>
                     </group>
                 </state>
             </statetype>
@@ -417,6 +435,9 @@
                 <state name="selectedactive" from="active">
                     <group name="select_bar" from="base_select_bar_selectedactive_group">
                         <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,53,100%,2</area>
+                        </shape>
                     </group>
                     <textarea name="buttontext" from="basetextarea">
                         <area>70,0,90%,30</area>
@@ -498,6 +519,9 @@
                 <state name="selectedactive" from="active">
                     <group name="select_bar" from="base_select_bar_selectedactive_group">
                         <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,53,100%,2</area>
+                        </shape>
                     </group>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,0,90%,30</area>
@@ -515,6 +539,9 @@
                 <state name="selectedinactive" from="inactive">
                     <group name="select_bar" from="base_select_bar_selectedinactive_group">
                         <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,53,100%,2</area>
+                        </shape>
                     </group>
                 </state>
             </statetype>
