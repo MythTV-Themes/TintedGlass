@@ -1460,52 +1460,56 @@
         </shape>
 
         <shape name="phrase-popup-seperator-first-line" from="base_line">
-            <area>23,50,556,2</area>
+            <area>23,42,556,2</area>
         </shape>
 
         <shape name="phrase-popup-seperator-second-line" from="base_line">
+            <area>23,390,556,2</area>
+        </shape>
+
+        <shape name="phrase-popup-seperator-third-line" from="base_line">
             <area>23,436,556,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>10,4,582,46</area>
+            <area>10,4,582,38</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Search Term</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>16,62,570,324</area>
+            <area>8,46,586,340</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,326</position>
+                <position>0,350</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,326</position>
+                <position>20,350</position>
             </statetype>
         </buttonlist>
 
         <textedit name="phrase_edit" from="base_wide_textedit">
-            <area>66,394,470,32</area>
+            <area>66,398,470,32</area>
         </textedit>
 
         <button name="ok_button" from="base_button">
@@ -1567,62 +1571,62 @@
         </shape>
 
         <shape name="power-search-seperator-first-line" from="base_line">
-            <area>23,63,556,2</area>
+            <area>23,69,556,2</area>
         </shape>
 
         <shape name="power-search-seperator-second-line" from="base_line">
-            <area>23,423,556,2</area>
+            <area>23,417,556,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>10,4,582,59</area>
+            <area>10,4,582,65</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Select Search</value>
         </textarea>
 
         <buttonlist name="phrase_list" from="base_button_list">
-            <area>16,81,570,324</area>
+            <area>8,73,586,340</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>                     
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                 <area>0,0,100%,34</area>
                 <textarea name="buttontext">
-                    <area>15,0,540,34</area>
+                    <area>15,0,556,34</area>
                 </textarea>
             </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,329</position>
+                <position>0,350</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,329</position>
+                <position>20,350</position>
             </statetype>
         </buttonlist>
 
         <button name="edit_button" from="base_button">
-            <position>15,437</position>
+            <position>15,434</position>
             <value>Edit</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>226,437</position>
+            <position>226,434</position>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>437,437</position>
+            <position>437,434</position>
             <value>Record</value>
         </button>
 

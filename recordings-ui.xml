@@ -926,43 +926,47 @@
         </shape>
 
         <shape name="group-selector-seperator-first-line" from="base_line">
-            <area>23,50,556,2</area>
+            <area>23,60,556,2</area>
+        </shape>
+
+        <shape name="group-selector-arrows-backdrop" from="base_arrows_backdrop">
+            <area>3,488,50,13</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>10,4,582,46</area>
+            <area>10,4,582,56</area>
             <align>allcenter</align>
             <font>basesmalldarkyellow</font>
         </textarea>
 
         <buttonlist name="groups" from="base_button_list">
-            <area>16,68,570,398</area>
+            <area>8,64,586,416</area>
             <drawfrombottom>yes</drawfrombottom>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,349,40</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,402</position>
+                <position>0,426</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,402</position>
+                <position>20,426</position>
             </statetype>
         </buttonlist>
 

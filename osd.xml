@@ -1602,7 +1602,7 @@
         </fontdef>
 
         <fontdef name="smallgrey" from="small">
-            <color>#808080</color>
+            <color>#aaaaaa</color>
         </fontdef>
 
         <fontdef name="smallyellow" from="small">
@@ -1657,7 +1657,7 @@
         </shape>
 
         <shape name="message-area-seperator-line">
-            <area>362,326,556,2</area>
+            <area>362,328,556,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="45">
@@ -1668,17 +1668,24 @@
             </fill>
         </shape>
 
+        <shape name="mythpopup-box-arrows-backdrop">
+            <area>342,604,50,13</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="200" />
+            <cornerradius>90</cornerradius>
+        </shape>
+
         <textarea name="messagearea">
-            <area>355,126,570,194</area>
+            <area>355,126,570,196</area>
             <font>smallyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list">
-            <area>355,337,570,252</area>
+            <area>347,332,586,264</area>
             <layout>vertical</layout>
-            <spacing>2</spacing>
+            <spacing>4</spacing>
             <showarrow>yes</showarrow>
             <scrollstyle>free</scrollstyle>
             <arrange>stack</arrange>
@@ -1688,39 +1695,78 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
-                    <shape name="buttonbackground">
-                        <area>0,0,570,34</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
                         <type>roundbox</type>
-                        <fill color="#000000" alpha="80" />
-                        <line color="#454545" alpha="180" width="2" />
-                        <cornerradius>90</cornerradius>
+                        <fill color="#444444" alpha="90" />
+                        <line color="#444444" alpha="180" width="0" />
+                        <cornerradius>5</cornerradius>
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="25" color="#3a9aff" alpha="0" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="100" color="#3a9aff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,32,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="75" color="#3a9aff" alpha="0"/>
+                                <stop position="100" color="#3a9aff" />
+                            </gradient>
+                        </fill>
                     </shape>
                     <textarea name="buttontext">
                         <font>smallgrey</font>
                         <cutdown>yes</cutdown>
                         <align>allcenter</align>
-                        <area>8,0,570,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <area>544,8,11,18</area>
+                        <area>560,8,11,18</area>
                         <filename>images/osd/lists_right_arrow.png</filename>
                         <alpha>80</alpha>
                     </imagetype>
                 </state>
                 <state name="selectedactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,570,34</area>
-                        <type>roundbox</type>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                        <fill color="#000000" alpha="140" />
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
                         <fill style="gradient">
-                            <gradient direction="vertical" alpha="255">
-                                <stop position="0" color="#1d1d21" />
-                                <stop position="50" color="#313136" alpha="255" />
-                                <stop position="51" color="#0a0a0e" alpha="255" />
-                                <stop position="100" color="#0a0a0e" alpha="255" />
+                            <gradient direction="horizontal" alpha="50">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="25" color="#3a9aff" alpha="255" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="100" color="#3a9aff" />
                             </gradient>
                         </fill>
-                        <line color="#3a9aff" alpha="200" width="2" />
-                        <cornerradius>90</cornerradius>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,32,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="50">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="75" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff" />
+                            </gradient>
+                        </fill>
                     </shape>
                     <textarea name="buttontext">
                         <font>small</font>
@@ -1730,20 +1776,42 @@
                     </imagetype>
                 </state>
                 <state name="selectedinactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,570,34</area>
-                        <type>roundbox</type>
-                        <fill color="#333333" alpha="175" />
-                        <line color="#454545" alpha="180" width="2" />
-                        <cornerradius>90</cornerradius>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
+                        <type>box</type>
+                        <fill color="#444444" alpha="90" />
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="50">
+                                <stop position="0" color="#d6d6d6"/>
+                                <stop position="50" color="#d6d6d6"/>
+                                <stop position="75" color="#d6d6d6" alpha="255"/>
+                                <stop position="100" color="#d6d6d6"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,32,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="50">
+                                <stop position="0" color="#d6d6d6"/>
+                                <stop position="25" color="#d6d6d6" alpha="255"/>
+                                <stop position="50" color="#d6d6d6"/>
+                                <stop position="100" color="#d6d6d6"/>
+                            </gradient>
+                        </fill>
                     </shape>
                     <textarea name="buttontext">
-                        <font>smallgrey</font>
+                        <font>small</font>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,253</position>
+                <position>2,274</position>
                 <state type="off">
                     <imagetype name="upon">
                         <filename>images/osd/lists_up_arrow.png</filename>
@@ -1757,7 +1825,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,253</position>
+                <position>22,274</position>
                 <state type="off">
                     <imagetype name="dnon">
                         <filename>images/osd/lists_down_arrow.png</filename>

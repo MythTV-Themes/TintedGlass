@@ -48,53 +48,65 @@
         </shape>
 
         <shape name="cast-popup-seperator-first-line" from="base_line">
-            <area>23,52,517,2</area>
+            <area>23,74,517,2</area>
         </shape>
 
         <shape name="cast-popup-seperator-second-line" from="base_line">
-            <area>23,448,517,2</area>
+            <area>23,440,517,2</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>10,4,543,48</area>
+            <area>10,4,543,70</area>
             <align>allcenter</align>
-            <font>basesmalldarkyellow</font>
+            <font>baselargedarkyellow</font>
             <value>Cast Members</value>
         </textarea>
 
         <buttonlist name="cast" from="base_button_list">
-            <area>20,82,523,342</area>
-            <buttonarea>0,0,523,342</buttonarea>
+            <area>8,78,547,358</area>
+            <buttonarea>0,0,547,358</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,523,35</area>
+                    <area>0,0,100%,36</area>
                     <textarea name="buttontext">
-                        <area>10,-1,503,35</area>
+                        <area>15,0,517,36</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,523,35</area>
+                    <area>0,0,100%,36</area>
+                    <group name="select_bar" from="base_button_list_select_bar_selectedactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,34,100%,2</area>
+                        </shape>
+                    </group>
                     <textarea name="buttontext">
-                        <area>10,-1,503,35</area>
+                        <area>15,0,517,36</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,523,35</area>
+                    <area>0,0,100%,36</area>
+                    <group name="select_bar" from="base_button_list_select_bar_selectedinactive_group">
+                        <area>0,0,100%,100%</area>
+                        <shape name="select_bar_bottom_highlight">
+                            <area>0,34,100%,2</area>
+                        </shape>
+                    </group>
                     <textarea name="buttontext">
-                        <area>10,-1,503,35</area>
+                        <area>15,0,517,36</area>
                     </textarea>
                 </state>
             </statetype>
         <statetype name="upscrollarrow">
-            <position>0,348</position>
+            <position>0,368</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>20,348</position>
+            <position>20,368</position>
         </statetype>
         </buttonlist>
 
         <button name="ok" from="base_wide_button">
-            <area>20,461,523,40</area>
+            <area>20,457,523,40</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <shape name="background" from="base_button_background_active">
