@@ -873,12 +873,6 @@
         <line color="#454545" alpha="180" width="2" />
     </shape>
 
-    <!-- Base definition of a active button list background -->
-    <shape name="base_button_list_background_active" from="base_button_background_selected">
-        <fill color="#1a1a1a" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
-    </shape>
-
     <!-- Base definition of a disabled button background -->
     <shape name="base_button_background_disabled" from="base_button_background_selected">
         <fill color="#333333" alpha="175" />
@@ -1726,10 +1720,10 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>2,208</position>
+                <position>2,198</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>22,208</position>
+                <position>22,198</position>
             </statetype>
         </buttonlist>
     </window>

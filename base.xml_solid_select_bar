@@ -756,6 +756,118 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base button list select bar active -->
+    <group name="base_button_list_select_bar_active_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#1a1a1a" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#3a9aff" />
+                    <stop position="25" color="#3a9aff" alpha="0" />
+                    <stop position="50" color="#3a9aff" />
+                    <stop position="100" color="#3a9aff" />
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,30,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#3a9aff" />
+                    <stop position="50" color="#3a9aff" />
+                    <stop position="75" color="#3a9aff" alpha="0"/>
+                    <stop position="100" color="#3a9aff" />
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <!-- Base group definition for base button list select bar selectedactive -->
+    <group name="base_button_list_select_bar_selectedactive_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#1d1d21" />
+                    <stop position="50" color="#313136" alpha="255" />
+                    <stop position="51" color="#0a0a0e" alpha="255" />
+                    <stop position="100" color="#0a0a0e" alpha="255" />
+                </gradient>
+            </fill>
+            <line color="#3a9aff" alpha="200" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#3a9aff"/>
+                    <stop position="25" color="#3a9aff" alpha="0"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="100" color="#3a9aff"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,32,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#3a9aff"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="75" color="#3a9aff" alpha="0"/>
+                    <stop position="100" color="#3a9aff"/>
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <!-- Base group definition for base button list select bar selectedinactive -->
+    <group name="base_button_list_select_bar_selectedinactive_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#333333" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,0,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#d6d6d6"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="75" color="#d6d6d6" alpha="0"/>
+                    <stop position="100" color="#d6d6d6"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,32,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="0">
+                    <stop position="0" color="#d6d6d6"/>
+                    <stop position="25" color="#d6d6d6" alpha="0"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#d6d6d6"/>
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
     <!-- Base definition of a selected button background -->
     <shape name="base_button_background_selected">
         <type>roundbox</type>
@@ -777,12 +889,6 @@
         <line color="#454545" alpha="180" width="2" />
     </shape>
 
-    <!-- Base definition of a active button list background -->
-    <shape name="base_button_list_background_active" from="base_button_background_selected">
-        <fill color="#1a1a1a" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
-    </shape>
-
     <!-- Base definition of a disabled button background -->
     <shape name="base_button_background_disabled" from="base_button_background_selected">
         <fill color="#333333" alpha="175" />
@@ -795,22 +901,10 @@
         <line color="#666666" alpha="200" width="1" />
     </shape>
 
-    <!-- Base definition of a active button background list style -->
-    <shape name="base_button_background_active_list_style" from="base_button_background_selected">
-        <fill color="#666666" alpha="0" />
-        <line color="#FFFFFF" alpha="0" width="1" /> 
-    </shape>
-
-    <!-- Base definition of a inactve button background list style -->
-    <shape name="base_button_background_inactive_list_style" from="base_button_background_selected">
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
-    </shape>
-
     <!-- Base definition of a button list -->
     <buttonlist name="base_button_list">
         <layout>vertical</layout>
-        <spacing>2</spacing>
+        <spacing>4</spacing>
         <scrollstyle>free</scrollstyle>
         <arrange>stack</arrange>
         <wrapstyle>items</wrapstyle>
@@ -818,9 +912,9 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <shape name="buttonbackground" from="base_button_list_background_active">
+                <group name="select_bar" from="base_button_list_select_bar_active_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext">
                     <font>basesmallgrey</font>
                     <cutdown>yes</cutdown>
@@ -848,17 +942,17 @@
                 </imagetype>
             </state>
             <state name="selectedactive" from="active">
-                <shape name="buttonbackground" from="base_button_background_selected">
+                <group name="select_bar" from="base_button_list_select_bar_selectedactive_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext">
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
-                <shape name="buttonbackground" from="base_button_background_inactive_list_style">
+                <group name="select_bar" from="base_button_list_select_bar_selectedinactive_group">
                     <area>0,0,100%,100%</area>
-                </shape>
+                </group>
                 <textarea name="buttontext">
                     <font>basesmall</font>
                 </textarea>
@@ -1495,8 +1589,8 @@
             <area>2,2,596,2</area>
         </shape>
 
-        <shape name="popup-second-line" from="base_line">
-            <area>23,210,556,2</area>
+        <shape name="popup-seperator-line" from="base_line">
+            <area>23,212,556,2</area>
         </shape>
 
         <shape name="popup-third-line" from="base_highlight_line">
@@ -1511,49 +1605,53 @@
             <area>598,4,2,480</area>
         </shape>
 
+        <shape name="popup-arrows-backdrop" from="base_arrows_backdrop">
+            <area>3,488,50,13</area>
+        </shape>
+
         <textarea name="messagearea" from="basetextarea">
-            <area>16,10,570,194</area>
+            <area>16,10,570,196</area>
             <font>basesmalldarkyellow</font>
             <multiline>yes</multiline>
             <align>allcenter</align>     
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>16,221,570,252</area>
+            <area>8,216,586,264</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <position>544,8</position>
+                        <position>560,8</position>
                     </imagetype>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <position>544,8</position>
+                        <position>560,8</position>
                     </imagetype>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>8,0,570,34</area>
+                        <area>8,0,586,34</area>
                     </textarea>
                     <imagetype name="buttonarrow">
-                        <position>544,8</position>
+                        <position>560,8</position>
                     </imagetype>
                 </state>
             </statetype>
         <statetype name="upscrollarrow">
-            <position>0,253</position>
+            <position>2,274</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>20,253</position>
+            <position>22,274</position>
         </statetype>
         </buttonlist>
     </window>
@@ -1601,43 +1699,47 @@
         </shape>
 
         <shape name="large-dialogbox-seperator-first-line" from="base_line">
-            <area>23,278,768,2</area>
+            <area>23,288,768,2</area>
+        </shape>
+
+        <shape name="large-dialogbox-arrows-backdrop" from="base_arrows_backdrop">
+            <area>3,488,50,13</area>
         </shape>
 
         <textarea name="messagearea" from="basetextarea">
-            <area>16,10,782,262</area>
+            <area>16,10,782,272</area>
             <multiline>yes</multiline>
             <font>basesmalldarkyellow</font>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="base_button_list">
-            <area>16,291,783,180</area>
+            <area>8,292,798,188</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,783,34</area>
+                    <area>0,0,798,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,753,34</area>
+                        <area>15,0,768,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,783,34</area>
+                    <area>0,0,798,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,753,34</area>
+                        <area>15,0,768,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,783,34</area>
+                    <area>0,0,798,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,753,34</area>
+                        <area>15,0,768,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,182</position>
+                <position>2,198</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,182</position>
+                <position>22,198</position>
             </statetype>
         </buttonlist>
     </window>
@@ -2077,6 +2179,10 @@
         </shape>
 
         <shape name="search-dialog-seperator-second-line" from="base_line">
+            <area>23,144,556,2</area>
+        </shape>
+
+        <shape name="search-dialog-seperator-third-line" from="base_line">
             <area>23,416,556,2</area>
         </shape>
 
@@ -2088,36 +2194,36 @@
         </textarea>
 
         <textedit name="input" from="base_wide_textedit">
-            <area>66,93,470,32</area>
+            <area>66,92,470,32</area>
         </textedit>
 
         <buttonlist name="itemlist" from="base_button_list">
-            <area>16,145,570,252</area>
+            <area>8,150,586,262</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>15,0,540,34</area>
+                        <area>15,0,556,34</area>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,257</position>
+                <position>0,272</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,257</position>
+                <position>20,272</position>
             </statetype>
         </buttonlist>
 
