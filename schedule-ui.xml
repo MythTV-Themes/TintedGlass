@@ -3262,27 +3262,27 @@
         </shape>
 
         <shape name="schedule-filter-editor-seperator-first-line" from="base_line">
-            <area>23,62,556,2</area>
+            <area>23,69,556,2</area>
         </shape>
 
         <shape name="schedule-filter-editor-seperator-second-line" from="base_line">
-            <area>23,424,556,2</area>
+            <area>23,417,556,2</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
-            <area>10,4,582,58</area>
+            <area>10,4,582,65</area>
             <font>basemediumlargerdarkyellow</font>
             <align>allcenter</align>
             <value>Schedule Filter Editor</value>
         </textarea>
 
         <buttonlist name="filters" from="base_button_list">
-            <area>16,81,570,324</area>
+            <area>8,73,586,340</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>40,0,490,34</area>                     
+                        <area>40,0,506,34</area>                     
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,7</position>
@@ -3291,7 +3291,7 @@
                 <state name="selectedactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>40,0,490,34</area>
+                        <area>40,0,506,34</area>
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,7</position>
@@ -3300,7 +3300,7 @@
                 <state name="selectedinactive">
                     <area>0,0,100%,34</area>
                     <textarea name="buttontext">
-                        <area>40,0,490,34</area>
+                        <area>40,0,506,34</area>
                     </textarea>
                     <statetype name="buttoncheck">
                         <position>15,7</position>
@@ -3308,15 +3308,15 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,329</position>
+                <position>0,350</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>20,329</position>
+                <position>20,350</position>
             </statetype>
         </buttonlist>
 
         <button name="back" from="base_wide_button">
-            <position>60,435</position>
+            <position>60,432</position>
             <value>Back</value>
         </button>
 
