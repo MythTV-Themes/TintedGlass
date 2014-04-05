@@ -1597,12 +1597,12 @@
         <area>0,0,1280,720</area>
 
         <fontdef name="small" face="DejaVu Sans">
-            <color>#e6e6e6</color>
+            <color>#ffffff</color>
             <pixelsize>21</pixelsize>
         </fontdef>
 
         <fontdef name="smallgrey" from="small">
-            <color>#aaaaaa</color>
+            <color>#999999</color>
         </fontdef>
 
         <fontdef name="smallyellow" from="small">
