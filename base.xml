@@ -750,6 +750,7 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base button list select bar active -->
     <group name="base_button_list_select_bar_active_group">
         <shape name="select_bar">
             <area>0,0,100%,100%</area>
@@ -784,6 +785,7 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base button list select bar selectedactive -->
     <group name="base_button_list_select_bar_selectedactive_group">
         <shape name="select_bar">
             <area>0,0,100%,100%</area>
@@ -817,6 +819,7 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base button list select bar selectedinactive -->
     <group name="base_button_list_select_bar_selectedinactive_group">
         <shape name="select_bar">
             <area>0,0,100%,100%</area>
@@ -886,18 +889,6 @@
     <shape name="base_button_background_pushed" from="base_button_background_selected">
         <fill color="#4d4d4d" alpha="200" />
         <line color="#666666" alpha="200" width="1" />
-    </shape>
-
-    <!-- Base definition of a active button background list style -->
-    <shape name="base_button_background_active_list_style" from="base_button_background_selected">
-        <fill color="#666666" alpha="0" />
-        <line color="#FFFFFF" alpha="0" width="1" /> 
-    </shape>
-
-    <!-- Base definition of a inactve button background list style -->
-    <shape name="base_button_background_inactive_list_style" from="base_button_background_selected">
-        <fill color="#333333" alpha="175" />
-        <line color="#454545" alpha="180" width="2" />
     </shape>
 
     <!-- Base definition of a button list -->
