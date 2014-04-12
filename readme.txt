@@ -21,6 +21,10 @@ There is an alternate main menu using a vertical layout rather than the default 
 To use just backup main-ui.xml. Example cp menu-ui.xml menu-ui.xml.bak.
 Then cp menu-ui-vert.xml to menu-ui.xml.
 
+Old solid select bar.
+If you liked the old select bar look you can still get it by copying base.xml_solid_select_bar to base.xml
+and copying osd.xml_solid_select_bar osd.xml.
+
 Color text in lists.
 
 There are two types of lists in the theme.
