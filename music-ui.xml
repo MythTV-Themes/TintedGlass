@@ -426,11 +426,13 @@
                 <statetype name="buttonitem">
                     <area>0,0,1224,274</area>
                     <state name="active">
-                        <shape name="buttonbackground" from="base_button_background_disabled">
+                        <group name="select_bar" from="base_button_select_bar_disabled_group">
                             <area>0,0,136,136</area>
-                            <fill color="#333333" alpha="0" />
-                            <cornerradius>8</cornerradius>
-                        </shape>
+                            <shape name="select_bar">
+                                <fill color="#333333" alpha="0" />
+                                <cornerradius>8</cornerradius>
+                            </shape>
+                        </group>
                         <imagetype name="buttonimage">
                             <area>8,8,120,120</area>
                             <filename>mythmusic/mm_nothumb.png</filename>
@@ -577,11 +579,13 @@
                         </shape>
                     </state>
                     <state name="selectedinactive" from="active">
-                        <shape name="buttonbackground" from="base_button_background_disabled">
+                        <group name="select_bar" from="base_button_select_bar_disabled_group">
                             <area>0,0,136,136</area>
-                            <fill color="#333333" alpha="255" />
-                            <cornerradius>8</cornerradius>
-                        </shape>
+                            <shape name="select_bar">
+                                <fill color="#333333" alpha="255" />
+                                <cornerradius>8</cornerradius>
+                            </shape>
+                        </group>
                         <imagetype name="buttonimage">
                             <area>8,8,120,120</area>
                             <filename>mythmusic/mm_nothumb.png</filename>

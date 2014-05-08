@@ -1370,18 +1370,17 @@
             <area>80,380,1120,150</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,1120,150</area>
-                        <type>roundbox</type>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                        <shape name="select_bar">
+                            <cornerradius>5</cornerradius>
+                        </shape>
+                    </group>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,1120,150</area>
-                        <type>roundbox</type>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -2617,10 +2616,9 @@
             </statetype>
         </buttonlist>
 
-        <shape name="custom-record-rules-clausetext-background" from="base_button_background_active">
+        <group name="custom-record-rules-clausetext-select-bar" from="base_button_select_bar_active_group">
             <area>50,220,1180,40</area>
-            <cornerradius>90</cornerradius>
-        </shape>
+        </group>
 
         <textarea name="clausetext" from="ruleslabel">
             <area>70,223,1140,34</area>
@@ -2632,16 +2630,17 @@
             <area>100,277,1080,150</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,1080,150</area>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                        <shape name="select_bar">
+                            <cornerradius>5</cornerradius>
+                        </shape>
+                    </group>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,1080,150</area>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>
@@ -2666,16 +2665,17 @@
             <area>300,445,880,85</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,880,85</area>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                        <shape name="select_bar">
+                            <cornerradius>5</cornerradius>
+                        </shape>
+                    </group>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,880,85</area>
-                        <cornerradius>5</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="inactive" from="active" />
             </statetype>

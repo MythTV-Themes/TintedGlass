@@ -109,9 +109,9 @@
             <area>20,457,523,40</area>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,523,40</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext">
                         <area>10,5,503,30</area>
                         <align>allcenter</align>
@@ -120,10 +120,11 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,523,40</area>
-                    </shape>
+                    </group>
                 </state>
+                <state name="pushed" from="selected"/>
             </statetype>
         </button>
 
@@ -195,9 +196,9 @@
             <area>23,461,517,40</area>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,517,40</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext">
                         <area>10,5,497,30</area>
                         <align>allcenter</align>
@@ -206,10 +207,11 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,517,40</area>
-                    </shape>
+                    </group>
                 </state>
+                <state name="pushed" from="selected"/>
             </statetype>
         </button>
 
@@ -3132,9 +3134,9 @@
             <position>25,443</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,390,40</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext">
                         <area>10,0,370,40</area>
                         <align>allcenter</align>
@@ -3143,14 +3145,17 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
                 <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                    <group name="select_bar" from="base_button_select_bar_pushed_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
+                    <textarea name="buttontext">
+                        <font>basesmallblack</font>
+                    </textarea>
                 </state>
             </statetype>
         </button>
@@ -3159,9 +3164,9 @@
             <position>435,443</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_button_select_bar_active_group">
                         <area>0,0,390,40</area>
-                    </shape>
+                    </group>
                     <textarea name="buttontext">
                         <area>10,0,370,40</area>
                         <align>allcenter</align>
@@ -3170,14 +3175,17 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_button_select_bar_selected_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
                 </state>
                 <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                    <group name="select_bar" from="base_button_select_bar_pushed_group">
                         <area>0,0,100%,100%</area>
-                    </shape>
+                    </group>
+                    <textarea name="buttontext">
+                        <font>basesmallblack</font>
+                    </textarea>
                 </state>
             </statetype>
         </button>

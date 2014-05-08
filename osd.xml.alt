@@ -941,6 +941,10 @@
             <pixelsize>21</pixelsize>
         </fontdef>
 
+        <fontdef name="smallblack" from="small">
+            <color>#000000</color>
+        </fontdef>
+
         <fontdef name="smallblue" from="small">
             <color>#3a9ade</color>
         </fontdef>
@@ -1041,28 +1045,94 @@
             <area>522,298,403,55</area>
             <statetype name="background">
                 <state name="active">
-                    <shape name="background">
-                        <area>0,0,403,55</area>
+                    <area>0,0,403,55</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
                         <type>roundbox</type>
-                        <fill color="#333333" alpha="175" />
+                        <fill color="#1a1a1a" alpha="175" />
                         <line color="#454545" alpha="180" width="2" />
                         <cornerradius>90</cornerradius>
                     </shape>
-                </state>
-                <state name="selected" from="active">
-                    <shape name="background">
-                        <area>0,0,403,55</area>
-                        <type>roundbox</type>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
                         <fill style="gradient">
-                            <gradient direction="vertical" alpha="255">
-                                <stop position="0" color="#1d1d21" />
-                                <stop position="50" color="#313136" alpha="255" />
-                                <stop position="51" color="#0a0a0e" alpha="255" />
-                                <stop position="100" color="#0a0a0e" alpha="255" />
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="25" color="#3a9aff" alpha="0" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="100" color="#3a9aff" />
                             </gradient>
                         </fill>
-                        <line color="#3a9aff" alpha="200" width="2" />
-                        <cornerradius>90</cornerradius>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,100%-2,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff" />
+                                <stop position="50" color="#3a9aff" />
+                                <stop position="75" color="#3a9aff" alpha="0"/>
+                                <stop position="100" color="#3a9aff" />
+                            </gradient>
+                        </fill>
+                    </shape>
+                </state>
+                <state name="selected" from="active">
+                    <area>0,0,403,55</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="140"/>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="25" color="#3a9aff" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#d6d6d6" alpha="255"/>
+                                <stop position="100" color="#d6d6d6"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,100%-2,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#d6d6d6"/>
+                                <stop position="25" color="#d6d6d6" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_left_highlight">
+                        <area>0,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_right_highlight">
+                        <area>100%-2,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
@@ -1119,8 +1189,9 @@
             <value>Probe</value>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,150,40</area>
+                    <area>0,0,150,40</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
                         <type>roundbox</type>
                         <fill color="#000000" alpha="80" />
                         <line color="#454545" alpha="180" width="2" />
@@ -1135,23 +1206,128 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="buttonbackground">
-                        <area>0,0,150,40</area>
+                    <area>0,0,150,40</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
                         <type>roundbox</type>
+                        <fill color="#000000" alpha="140"/>
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
                         <fill style="gradient">
-                            <gradient direction="vertical" alpha="255">
-                                <stop position="0" color="#1d1d21" />
-                                <stop position="50" color="#313136" alpha="255" />
-                                <stop position="51" color="#0a0a0e" alpha="255" />
-                                <stop position="100" color="#0a0a0e" alpha="255" />
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="25" color="#3a9aff" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#d6d6d6" alpha="255"/>
+                                <stop position="100" color="d6d6d6"/>
                             </gradient>
                         </fill>
-                        <line color="#3a9aff" alpha="200" width="2" />
-                        <cornerradius>90</cornerradius>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,100%-2,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#d6d6d6"/>
+                                <stop position="25" color="#d6d6d6" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_left_highlight">
+                        <area>0,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_right_highlight">
+                        <area>100%-2,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
                     </shape>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active" />
+                <state name="pushed">
+                    <area>0,0,150,40</area>
+                    <shape name="select_bar">
+                        <area>0,0,100%,100%</area>
+                        <type>roundbox</type>
+                        <fill color="#aaaaaa" alpha="200"/>
+                        <line color="#000000" alpha="140" width="2" />
+                        <cornerradius>0</cornerradius>
+                    </shape>
+                    <shape name="select_bar_top_highlight">
+                        <area>0,0,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#d6d6d6"/>
+                                <stop position="25" color="#d6d6d6" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_bottom_highlight">
+                        <area>0,100%-2,100%,2</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="horizontal" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="25" color="#3a9aff" alpha="255"/>
+                                <stop position="50" color="#3a9aff"/>
+                                <stop position="75" color="#d6d6d6" alpha="255"/>
+                                <stop position="100" color="d6d6d6"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_left_highlight">
+                        <area>0,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <shape name="select_bar_right_highlight">
+                        <area>100%-2,0,2,100%</area>
+                        <type>box</type>
+                        <fill style="gradient">
+                            <gradient direction="vertical" alpha="0">
+                                <stop position="0" color="#3a9aff"/>
+                                <stop position="50" color="#3a9aff" alpha="255"/>
+                                <stop position="100" color="#3a9aff"/>
+                            </gradient>
+                        </fill>
+                    </shape>
+                    <textarea name="text">
+                        <area>5,5,140,30</area>
+                        <align>allcenter</align>
+                        <font>smallblack</font>
+                        <font state="selected">small</font>
+                        <font state="disabled">small</font>
+                    </textarea>
+                </state>
             </statetype>
         </button>
 
