@@ -176,6 +176,7 @@
 
         <button name="ok" from="base_button">
             <area>23,461,517,40</area>
+            <value>OK</value>
         </button>
 
     </window>
