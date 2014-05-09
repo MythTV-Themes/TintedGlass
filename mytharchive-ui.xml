@@ -98,7 +98,7 @@
         </textarea>
 
         <button name="find_button" from="base_button">
-            <position>408,140</position>
+            <area>408,140,150,35</area>
             <value>File...</value>
         </button>
 
@@ -143,18 +143,18 @@
             <position>578,377</position>
         </checkbox>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="prev_button" from="base_small_button">
-            <position>722,631</position>
+        <button name="prev_button" from="base_button">
+            <area>722,631,200,40</area>
             <value>Previous</value>
         </button>
 
-        <button name="next_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="next_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Next</value>
         </button>
 
@@ -456,12 +456,12 @@
         </imagetype>
 
         <button name="cancel_button" from="base_button">
-            <position>37,640</position>
+            <area>37,640,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok_button" from="base_button">
-            <position>1093,640</position>
+            <area>1093,640,150,35</area>
             <value>OK</value>
         </button>
 
@@ -646,22 +646,22 @@
         </imagetype>
 
         <button name="back_button" from="base_button">
-            <position>252,493</position>
+            <area>252,493,150,35</area>
             <value>Up Level</value>
         </button>
 
         <button name="home_button" from="base_button">
-            <position>252,540</position>
+            <area>252,540,150,35</area>
             <value>Home</value>
         </button>
 
         <button name="cancel_button" from="base_button">
-            <position>252,587</position>
+            <area>252,587,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok_button" from="base_button">
-            <position>252,634</position>
+            <area>252,634,150,35</area>
             <value>OK</value>
         </button>
 
@@ -956,12 +956,12 @@
         </textarea>
 
         <button name="cancel_button" from="base_button">
-            <position>39,643</position>
+            <area>39,643,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok_button" from="base_button">
-            <position>892,643</position>
+            <area>892,643,150,35</area>
             <value>OK</value>
         </button>
 
@@ -1073,18 +1073,18 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel Job</value>
         </button>
 
-        <button name="update_button" from="base_small_button">
-            <position>540,631</position>
+        <button name="update_button" from="base_button">
+            <area>540,631,200,40</area>
             <value>Update</value>
         </button>
 
-        <button name="exit_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="exit_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Exit</value>
         </button>
 

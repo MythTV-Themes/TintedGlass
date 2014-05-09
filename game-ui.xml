@@ -706,8 +706,8 @@
             <position>456,522</position>
         </textarea>
 
-        <button name="done_button" from="base_wide_button">
-            <position>400,623</position>
+        <button name="done_button" from="base_button">
+            <area>400,623,480,40</area>
             <value>Done</value>
         </button>
 

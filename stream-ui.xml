@@ -464,8 +464,8 @@
             </textarea>
         </textedit>
 
-        <button name="searchbutton" from="base_medium_button">
-            <position>465,136</position>
+        <button name="searchbutton" from="base_button">
+            <area>465,136,350,40</area>
             <value>Search for Stream</value>
         </button>
 
@@ -514,13 +514,13 @@
             <position>343,472</position>
         </textedit>
 
-        <button name="cancelbutton" from="base_medium_button">
-            <position>233,632</position>
+        <button name="cancelbutton" from="base_button">
+            <area>233,632,350,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="savebutton" from="base_medium_button">
-            <position>697,632</position>
+        <button name="savebutton" from="base_button">
+            <area>697,632,350,40</area>
             <value>Save</value>
         </button>
 

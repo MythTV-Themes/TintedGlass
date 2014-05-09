@@ -348,13 +348,13 @@
             <align>allcenter</align>
         </textarea>
 
-        <button name="cancel" from="base_medium_button">
-            <position>266,628</position>
+        <button name="cancel" from="base_button">
+            <area>266,628,350,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="ok" from="base_medium_button">
-            <position>660,628</position>
+        <button name="ok" from="base_button">
+            <area>660,628,350,40</area>
             <value>OK</value>
         </button>
 
@@ -442,7 +442,7 @@
         </textedit>
 
         <button name="findcategory" from="base_button">
-            <position>586,107</position>
+            <area>586,107,150,35</area>
             <value>Find</value>
         </button>
 
@@ -466,13 +466,13 @@
             <area>160,307,580,32</area>
         </textedit>
 
-        <button name="cancel" from="base_medium_button">
-            <position>38,443</position>
+        <button name="cancel" from="base_button">
+            <area>38,443,350,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="ok" from="base_medium_button">
-            <position>427,443</position>
+        <button name="ok" from="base_button">
+            <area>427,443,350,40</area>
             <value>OK</value>
         </button>
 

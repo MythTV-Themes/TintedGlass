@@ -320,13 +320,13 @@
             <position>405,424</position>
         </checkbox>
 
-        <button name="ok" from="base_medium_button">
-            <position>272,627</position>
+        <button name="ok" from="base_button">
+            <area>272,627,350,40</area>
             <value>OK</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>657,627</position>
+        <button name="cancel" from="base_button">
+            <area>657,627,350,40</area>
             <value>Cancel</value>
         </button>
 

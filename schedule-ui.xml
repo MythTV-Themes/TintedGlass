@@ -751,13 +751,13 @@
             <position>649,548</position>
         </spinbox>
 
-        <button name="cancel" from="base_medium_button">
-            <position>261,623</position>
+        <button name="cancel" from="base_button">
+            <area>261,623,350,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="next" from="base_medium_button">
-            <position>669,623</position>
+        <button name="next" from="base_button">
+            <area>669,623,350,40</area>
             <value>Next</value>
         </button>
 
@@ -1362,7 +1362,7 @@
         </buttonlist>
 
         <button name="add" from="base_button">
-            <position>990,317</position>
+            <area>990,317,150,35</area>
             <value>Add Clause</value>
         </button>
 
@@ -1396,22 +1396,22 @@
         </textedit>
 
         <button name="cancel" from="base_button">
-            <position>78,636</position>
+            <area>78,636,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="delete" from="base_button">
-            <position>400,636</position>
+            <area>400,636,150,35</area>
             <value>Delete</value>
         </button>
 
         <button name="test" from="base_button">
-            <position>732,636</position>
+            <area>732,636,150,35</area>
             <value>Test</value>
         </button>
 
         <button name="install" from="base_button">
-            <position>1054,636</position>
+            <area>1054,636,150,35</area>
             <value>Install</value>
         </button>
 
@@ -1512,17 +1512,17 @@
         </textedit>
 
         <button name="ok_button" from="base_button">
-            <position>15,444</position>
+            <area>15,444,150,35</area>
             <value>OK</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>226,444</position>
+            <area>226,444,150,35</area>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>437,444</position>
+            <area>437,444,150,35</area>
             <value>Record</value>
         </button>
 
@@ -1615,17 +1615,17 @@
         </buttonlist>
 
         <button name="edit_button" from="base_button">
-            <position>15,434</position>
+            <area>15,434,150,35</area>
             <value>Edit</value>
         </button>
 
         <button name="delete_button" from="base_button">
-            <position>226,434</position>
+            <area>226,434,150,35</area>
             <value>Delete</value>
         </button>
 
         <button name="record_button" from="base_button">
-            <position>437,434</position>
+            <area>437,434,150,35</area>
             <value>Record</value>
         </button>
 
@@ -1753,8 +1753,8 @@
             <area>16,383,553,40</area>
         </buttonlist>
 
-        <button name="ok_button" from="base_wide_button">
-            <position>61,441</position>
+        <button name="ok_button" from="base_button">
+            <area>61,441,480,40</area>
             <value>OK</value>
         </button>
 
@@ -2030,7 +2030,7 @@
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>831,9</position>
+            <area>831,9,150,35</area>
             <value>Close</value>
         </button>
 
@@ -2691,22 +2691,22 @@
         </textedit>
 
         <button name="test" from="base_button">
-            <position>78,635</position>
+            <area>78,635,150,35</area>
             <value>Test</value>
         </button>
 
         <button name="record" from="base_button">
-            <position>400,635</position>
+            <area>400,635,150,35</area>
             <value>Record</value>
         </button>
 
         <button name="store" from="base_button">
-            <position>732,635</position>
+            <area>732,635,150,35</area>
             <value>Store</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>1054,635</position>
+            <area>1054,635,150,35</area>
             <value>Cancel</value>
         </button>
 
@@ -2900,12 +2900,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>150,615</position>
+            <area>150,615,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="save" from="base_button">
-            <position>426,615</position>
+            <area>426,615,150,35</area>
             <value>Save</value>
         </button>
 
@@ -3174,8 +3174,8 @@
             <value>Recording Rule Active</value>
         </textarea>
 
-        <button name="back" from="base_medium_button">
-            <position>188,604</position>
+        <button name="back" from="base_button">
+            <area>188,604,350,40</area>
             <value>Back</value>
         </button>
 
@@ -3315,8 +3315,8 @@
             </statetype>
         </buttonlist>
 
-        <button name="back" from="base_wide_button">
-            <position>60,432</position>
+        <button name="back" from="base_button">
+            <area>60,432,480,40</area>
             <value>Back</value>
         </button>
 
@@ -3580,8 +3580,8 @@
             <value>Allow recordings to expire?</value>
         </textarea>
 
-        <button name="back" from="base_medium_button">
-            <position>188,604</position>
+        <button name="back" from="base_button">
+            <area>188,604,350,40</area>
             <value>Back</value>
         </button>
 
@@ -3792,8 +3792,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <button name="back" from="base_medium_button">
-            <position>188,612</position>
+        <button name="back" from="base_button">
+            <area>188,612,350,40</area>
             <value>Back</value>
         </button>
 
@@ -3948,43 +3948,43 @@
             <position>538,119</position>
         </spinbox>
 
-        <button name="query_button" from="base_medium_button">
-            <position>188,181</position>
+        <button name="query_button" from="base_button">
+            <area>188,181,350,40</area>
             <value>Perform Query</value>
         </button>
 
-        <button name="online_coverart_button" from="base_medium_button">
-            <position>188,258</position>
+        <button name="online_coverart_button" from="base_button">
+            <area>188,258,350,40</area>
             <value>Find Coverart Online</value>
         </button>
 
-        <button name="local_coverart_button" from="base_medium_button">
-            <position>188,314</position>
+        <button name="local_coverart_button" from="base_button">
+            <area>188,314,350,40</area>
             <value>Select Local Coverart</value>
         </button>
 
-        <button name="online_fanart_button" from="base_medium_button">
-            <position>188,370</position>
+        <button name="online_fanart_button" from="base_button">
+            <area>188,370,350,40</area>
             <value>Find Fanart Online</value>
         </button>
 
-        <button name="local_fanart_button" from="base_medium_button">
-            <position>188,426</position>
+        <button name="local_fanart_button" from="base_button">
+            <area>188,426,350,40</area>
             <value>Select Local Fanart</value>
         </button>
 
-        <button name="online_banner_button" from="base_medium_button">
-            <position>188,482</position>
+        <button name="online_banner_button" from="base_button">
+            <area>188,482,350,40</area>
             <value>Find Banners Online</value>
         </button>
 
-        <button name="local_banner_button" from="base_medium_button">
-            <position>188,538</position>
+        <button name="local_banner_button" from="base_button">
+            <area>188,538,350,40</area>
             <value>Select Local Banner</value>
         </button>
 
-        <button name="back" from="base_medium_button">
-            <position>188,615</position>
+        <button name="back" from="base_button">
+            <area>188,615,350,40</area>
             <value>Back</value>
         </button>
 

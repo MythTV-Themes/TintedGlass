@@ -58,12 +58,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>66,245</position>
+            <area>66,245,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>283,245</position>
+            <area>283,245,150,35</area>
             <value>OK</value>
         </button>
 
@@ -231,7 +231,7 @@
         </textarea>
 
         <button name="action_0" from="base_button">
-            <position>273,621</position>
+            <area>273,621,150,35</area>
         </button>
 
         <button name="action_1" from="action_0">

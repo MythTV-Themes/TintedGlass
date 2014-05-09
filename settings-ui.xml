@@ -111,13 +111,13 @@
             <area>243,555,794,40</area>
         </textedit>
 
-        <button name="cancel" from="base_medium_button">
-            <position>270,626</position>
+        <button name="cancel" from="base_button">
+            <area>270,626,350,40</area>
             <value>Cancel</value>
         </button>
     
-        <button name="save" from="base_medium_button">
-            <position>660,626</position>
+        <button name="save" from="base_button">
+            <area>660,626,350,40</area>
             <value>Save</value>
         </button>
 

@@ -1219,17 +1219,17 @@
 
         <!-- Push buttons -->
         <button name="cancelbutton" from="base_button">
-            <position>217,640</position>
+            <area>217,640,150,35</area>
             <value>Cancel</value>
         </button>
 
-        <button name="showresultsbutton" from="base_medium_button">
-            <position>465,638</position>
+        <button name="showresultsbutton" from="base_button">
+            <area>465,638,350,40</area>
             <value>Show Results</value>
         </button>
 
         <button name="savebutton" from="base_button">
-            <position>913,640</position>
+            <area>913,640,150,35</area>
             <value>Save</value>
         </button>
 
@@ -1424,12 +1424,12 @@
 
         <!-- Push buttons -->
         <button name="cancelbutton" from="base_button">
-            <position>68,449</position>
+            <area>68,449,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="savebutton" from="base_button">
-            <position>286,449</position>
+            <area>286,449,150,35</area>
             <value>Save</value>
         </button>
 
@@ -1570,12 +1570,12 @@
 
         <!-- Push buttons -->
         <button name="cancelbutton" from="base_button">
-            <position>68,449</position>
+            <area>68,449,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="okbutton" from="base_button">
-            <position>286,449</position>
+            <area>286,449,150,35</area>
             <value>OK</value>
         </button>
 
@@ -1734,8 +1734,8 @@
         </buttonlist>
 
         <!-- Push buttons -->
-        <button name="addbutton" from="base_small_button">
-            <position>23,275</position>
+        <button name="addbutton" from="base_button">
+            <area>23,275,200,40</area>
             <value>Add</value>
         </button>
 
@@ -2176,13 +2176,13 @@
             </statetype>
         </button>
 
-        <button name="albumartbutton" from="base_medium_button">
-            <position>258,623</position>
+        <button name="albumartbutton" from="base_button">
+            <area>258,623,350,40</area>
             <value>Album Art</value>
         </button>
 
-        <button name="donebutton" from="base_medium_button">
-            <position>672,623</position>
+        <button name="donebutton" from="base_button">
+            <area>672,623,350,40</area>
             <value>Done</value>
         </button>
 
@@ -2382,13 +2382,13 @@
             <value></value>
         </textarea>
 
-        <button name="metadatabutton" from="base_medium_button">
-            <position>250,636</position>
+        <button name="metadatabutton" from="base_button">
+            <area>250,636,350,40</area>
             <value>Metadata</value>
         </button>
 
-        <button name="donebutton" from="base_medium_button">
-            <position>680,636</position>
+        <button name="donebutton" from="base_button">
+            <area>680,636,350,40</area>
             <value>Done</value>
         </button>
 
@@ -2469,12 +2469,12 @@
         <!-- Push buttons -->
 
         <button name="metadata" from="base_button">
-            <position>20,540</position>
+            <area>20,540,150,35</area>
             <value>Metadata</value>
         </button>
 
         <button name="done" from="base_button">
-            <position>630,540</position>
+            <area>630,540,150,35</area>
             <value>Done</value>
         </button>
 
@@ -2637,7 +2637,7 @@
         </textarea>
 
         <button name="copy" from="base_button">
-            <position>390,370</position>
+            <area>390,370,150,35</area>
             <value>Copy</value>
         </button>
 
@@ -2692,7 +2692,7 @@
         </textarea>
 
         <button name="exit" from="base_button">
-            <position>565,632</position>
+            <area>565,632,150,35</area>
             <value>Done</value>
         </button>
 
@@ -2791,7 +2791,7 @@
         </button>
 
         <button name="scan" from="base_button">
-            <position>566,106</position>
+            <area>566,106,150,35</area>
             <value>Search</value>
         </button>
 
@@ -2886,17 +2886,17 @@
         </textarea>
 
         <button name="coverart" from="base_button">
-            <position>565,507</position>
+            <area>565,507,150,35</area>
             <value>Cover Art</value>
         </button>
 
         <button name="play" from="base_button">
-            <position>265,579</position>
+            <area>265,579,150,35</area>
             <value>Play</value>
         </button>
 
         <button name="add" from="base_button">
-            <position>265,629</position>
+            <area>265,629,150,35</area>
             <value>Add</value>
         </button>
 
@@ -2955,12 +2955,12 @@
         </textarea>
 
         <button name="nextnew" from="base_button">
-            <position>864,579</position>
+            <area>864,579,150,35</area>
             <value>Next New</value>
         </button>
 
         <button name="addallnew" from="base_button">
-            <position>864,629</position>
+            <area>864,629,150,35</area>
             <value>Add New</value>
         </button>
 
@@ -3339,7 +3339,7 @@
         </textarea>
 
         <button name="scan" from="base_button">
-            <position>565,50</position>
+            <area>565,50,150,35</area>
             <value>Scan CD</value>
         </button>
 
@@ -3434,8 +3434,8 @@
             <position>847,248</position>
         </checkbox>
 
-        <button name="switch" from="base_medium_button">
-            <position>892,242</position>
+        <button name="switch" from="base_button">
+            <area>892,242,350,40</area>
             <value>Switch Titles</value>
         </button>
 
@@ -3526,7 +3526,7 @@
         </buttonlist>
 
         <button name="rip" from="base_button">
-            <position>565,640</position>
+            <area>565,640,150,35</area>
             <value>Rip CD</value>
         </button>
 

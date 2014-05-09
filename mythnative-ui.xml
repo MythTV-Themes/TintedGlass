@@ -78,13 +78,13 @@ MythTV Archive GUI theme
             <area>138,620,1004,2</area>
         </shape>
 
-        <button name="addrecording_button" from="base_small_button">
-            <position>165,58</position>
+        <button name="addrecording_button" from="base_button">
+            <area>165,58,200,40</area>
             <value>Add Recording</value>
         </button>
 
-        <button name="addvideo_button" from="base_small_button">
-            <position>915,58</position>
+        <button name="addvideo_button" from="base_button">
+            <area>915,58,200,40</area>
             <value>Add Video</value>
         </button>
 
@@ -181,18 +181,18 @@ MythTV Archive GUI theme
             <font>basesmallred</font>
         </textarea>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="prev_button" from="base_small_button">
-            <position>722,631</position>
+        <button name="prev_button" from="base_button">
+            <area>722,631,200,40</area>
             <value>Previous</value>
         </button>
 
-        <button name="next_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="next_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Finish</value>
         </button>
 
@@ -367,12 +367,12 @@ MythTV Archive GUI theme
         </textedit>
 
         <button name="back_button" from="base_button">
-            <position>252,493</position>
+            <area>252,493,150,35</area>
             <value>Up Level</value>
         </button>
 
         <button name="home_button" from="base_button">
-            <position>252,540</position>
+            <area>252,540,150,35</area>
             <value>Home</value>
         </button>
 
@@ -408,17 +408,17 @@ MythTV Archive GUI theme
         </textarea>
 
         <button name="cancel_button" from="base_button">
-            <position>52,634</position>
+            <area>52,634,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="prev_button" from="base_button">
-            <position>252,634</position>
+            <area>252,634,150,35</area>
             <value>Previous</value>
         </button>
 
         <button name="next_button" from="base_button">
-            <position>452,634</position>
+            <area>452,634,150,35</area>
             <value>Next</value>
         </button>
 
@@ -634,18 +634,18 @@ MythTV Archive GUI theme
             <value>Search Name</value>
         </button>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="prev_button" from="base_small_button">
-            <position>722,631</position>
+        <button name="prev_button" from="base_button">
+            <area>722,631,200,40</area>
             <value>Previous</value>
         </button>
 
-        <button name="finish_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="finish_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Finish</value>
         </button>
 

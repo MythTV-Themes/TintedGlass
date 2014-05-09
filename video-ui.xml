@@ -105,27 +105,9 @@
         </statetype>
         </buttonlist>
 
-        <button name="ok" from="base_wide_button">
+        <button name="ok" from="base_button">
             <area>20,457,523,40</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <group name="select_bar" from="base_button_select_bar_active_group">
-                        <area>0,0,523,40</area>
-                    </group>
-                    <textarea name="buttontext">
-                        <area>10,5,503,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>OK</value>
-                    </textarea>
-                </state>
-                <state name="selected" from="active">
-                    <group name="select_bar" from="base_button_select_bar_selected_group">
-                        <area>0,0,523,40</area>
-                    </group>
-                </state>
-                <state name="pushed" from="selected"/>
-            </statetype>
+            <value>OK</value>
         </button>
 
     </window>
@@ -192,27 +174,8 @@
             <font>basesmall</font>
         </textarea>
 
-        <button name="ok" from="base_wide_button">
+        <button name="ok" from="base_button">
             <area>23,461,517,40</area>
-            <statetype name="buttonstate">
-                <state name="active">
-                    <group name="select_bar" from="base_button_select_bar_active_group">
-                        <area>0,0,517,40</area>
-                    </group>
-                    <textarea name="buttontext">
-                        <area>10,5,497,30</area>
-                        <align>allcenter</align>
-                        <font>basesmall</font>
-                        <value>OK</value>
-                    </textarea>
-                </state>
-                <state name="selected" from="active">
-                    <group name="select_bar" from="base_button_select_bar_selected_group">
-                        <area>0,0,517,40</area>
-                    </group>
-                </state>
-                <state name="pushed" from="selected"/>
-            </statetype>
         </button>
 
     </window>
@@ -2282,17 +2245,17 @@
         </checkbox>
         
         <button name="done_button" from="base_button">
-            <position>320,624</position>
+            <area>320,624,150,35</area>
             <value>Done</value>
         </button>
         
         <button name="new_button" from="base_button">
-            <position>565,624</position>
+            <area>565,624,150,35</area>
             <value>New</value>
         </button>
         
         <button name="delete_button" from="base_button">
-            <position>810,624</position>
+            <area>810,624,150,35</area>
             <value>Delete</value>
         </button>
         
@@ -2602,7 +2565,7 @@
         </textarea>
 
         <button name="net_coverart_button" from="base_button">
-            <position>1084,337</position>
+            <area>1084,337,150,35</area>
             <value>Find OnNet</value>
         </button>
 
@@ -2624,7 +2587,7 @@
         </textarea>
 
         <button name="net_banner_button" from="base_button">
-            <position>1084,384</position>
+            <area>1084,384,150,35</area>
             <value>Find OnNet</value>
         </button>
         
@@ -2656,7 +2619,7 @@
         </textarea>
 
         <button name="net_fanart_button" from="base_button">
-            <position>1084,477</position>
+            <area>1084,477,150,35</area>
             <value>Find OnNet</value>
         </button>
 
@@ -2678,7 +2641,7 @@
         </textarea>
         
         <button name="net_screenshot_button" from="base_button">
-            <position>1084,525</position>
+            <area>1084,525,150,35</area>
             <value>Find OnNet</value>
         </button>
 
@@ -2710,7 +2673,7 @@
         </checkbox>
 
         <button name="done_button" from="base_button">
-            <position>1084,616</position>
+            <area>1084,616,150,35</area>
             <value>Done</value>
         </button>
 
@@ -2926,12 +2889,12 @@
         </textarea>
         
         <button name="done_button" from="base_button">
-            <position>425,567</position>
+            <area>425,567,150,35</area>
             <value>Done</value>
         </button>
         
         <button name="save_button" from="base_button">
-            <position>225,567</position>
+            <area>225,567,150,35</area>
             <value>Save</value>
         </button>
         
@@ -3345,13 +3308,13 @@
             <align>allcenter</align>
         </textarea>
 
-        <button name="ok" from="base_medium_button">
-            <position>273,628</position>
+        <button name="ok" from="base_button">
+            <area>273,628,350,40</area>
             <value>OK</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>657,628</position>
+        <button name="cancel" from="base_button">
+            <area>657,628,350,40</area>
             <value>Cancel</value>
         </button>
 
@@ -3469,13 +3432,13 @@
             <align>allcenter</align>
         </textarea>
 
-        <button name="ok" from="base_medium_button">
-            <position>273,622</position>
+        <button name="ok" from="base_button">
+            <area>273,622,350,40</area>
             <value>OK</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>657,622</position>
+        <button name="cancel" from="base_button">
+            <area>657,622,350,40</area>
             <value>Cancel</value>
         </button>
 

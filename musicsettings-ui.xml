@@ -135,12 +135,12 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>233,632</position>
+        <button name="save" from="base_button">
+            <area>233,632,350,40</area>
             <value>Save</value>
         </button>
-        <button name="cancel" from="base_medium_button">
-            <position>697,632</position>
+        <button name="cancel" from="base_button">
+            <area>697,632,350,40</area>
             <value>Cancel</value>
         </button>
     </window>
@@ -351,13 +351,13 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>233,632</position>
+        <button name="save" from="base_button">
+            <area>233,632,350,40</area>
             <value>Save</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>697,632</position>
+        <button name="cancel" from="base_button">
+            <area>697,632,350,40</area>
             <value>Cancel</value>
         </button>
     </window>
@@ -486,12 +486,12 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>273,628</position>
+        <button name="save" from="base_button">
+            <area>273,628,350,40</area>
             <value>Save</value>
         </button>
-        <button name="cancel" from="base_medium_button">
-            <position>657,628</position>
+        <button name="cancel" from="base_button">
+            <area>657,628,350,40</area>
             <value>Cancel</value>
         </button>
     </window>
@@ -599,13 +599,13 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>273,628</position>
+        <button name="save" from="base_button">
+            <area>273,628,350,40</area>
             <value>Save</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>657,628</position>
+        <button name="cancel" from="base_button">
+            <area>657,628,350,40</area>
             <value>Cancel</value>
         </button>
 
@@ -714,13 +714,13 @@
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="save" from="base_medium_button">
-            <position>273,628</position>
+        <button name="save" from="base_button">
+            <area>273,628,350,40</area>
             <value>Save</value>
         </button>
 
-        <button name="cancel" from="base_medium_button">
-            <position>657,628</position>
+        <button name="cancel" from="base_button">
+            <area>657,628,350,40</area>
             <value>Cancel</value>
         </button>
     </window>

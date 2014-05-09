@@ -1584,16 +1584,16 @@
 
     <!-- Base definition of a button -->
     <button name="base_button">
-        <position>0,0</position>
+        <area>0,0,150,35</area>
         <statetype name="buttonstate">
-            <area>0,0,150,35</area>
+            <area>0,0,100%,100%</area>
             <state name="active">
                 <area>0,0,100%,100%</area>
                 <group name="select_bar" from="base_button_select_bar_active_group">
                     <area>0,0,100%,100%</area>
                 </group>
                 <textarea name="text">
-                    <area>7%,1,93%,100%</area>
+                    <area>15,1,100%-15,100%</area>
                     <align>allcenter</align>
                     <font>basemedium</font>
                     <font state="selected">basemedium</font>
@@ -1615,34 +1615,13 @@
                     <area>0,0,100%,100%</area>
                 </group>
                 <textarea name="text">
-                    <area>7%,1,93%,100%</area>
+                    <area>15,1,100%-15,100%</area>
                     <align>allcenter</align>
                     <font>basemediumblack</font>
                     <font state="selected">basemedium</font>
                     <font state="disabled">basemediumdarkgrey</font>
                 </textarea>
             </state>
-        </statetype>
-    </button>
-
-    <!-- Base definition of a small button -->
-    <button name="base_small_button" from="base_button">
-        <statetype name="buttonstate">
-            <area>0,0,200,40</area>
-        </statetype>
-    </button>
-
-    <!-- Base definition of a medium button -->
-    <button name="base_medium_button" from="base_button">     
-        <statetype name="buttonstate">
-            <area>0,0,350,40</area>
-        </statetype>
-    </button>
-
-    <!-- Base definition of a wide button -->
-    <button name="base_wide_button" from="base_button">
-        <statetype name="buttonstate">
-            <area>0,0,480,40</area>
         </statetype>
     </button>
 
@@ -2358,12 +2337,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>99,151</position>
+            <area>99,151,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>338,151</position>
+            <area>338,151,150,35</area>
             <value>OK</value>
         </button>
     </window>
@@ -2422,12 +2401,12 @@
         </textedit>
 
         <button name="prevbutton" from="base_button">
-            <position>84,78</position>
+            <area>84,78,150,35</area>
             <value>Previous</value>
         </button>
 
         <button name="nextbutton" from="base_button">
-            <position>405,78</position>
+            <area>405,78,150,35</area>
             <value>Next</value>
         </button>
 
@@ -2504,7 +2483,7 @@
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>218,116</position>
+            <area>218,116,150,35</area>
             <value>OK</value>
         </button>
     </window>
@@ -2588,7 +2567,7 @@
         </buttonlist>
 
         <button name="ok" from="base_button">
-            <position>220,118</position>
+            <area>220,118,150,35</area>
             <value>OK</value>
         </button>
 
@@ -2688,13 +2667,13 @@
             </statetype>
         </buttonlist>
 
-        <button name="cancel" from="base_small_button">
-            <position>69,432</position>
+        <button name="cancel" from="base_button">
+            <area>69,432,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="ok" from="base_small_button">
-            <position>333,432</position>
+        <button name="ok" from="base_button">
+            <area>333,432,200,40</area>
             <value>OK</value>
         </button>
     </window>
@@ -2932,22 +2911,22 @@
         </imagetype>
 
         <button name="back" from="base_button">
-            <position>252,493</position>
+            <area>252,493,150,35</area>
             <value>Up Level</value>
         </button>
 
         <button name="home" from="base_button">
-            <position>252,540</position>
+            <area>252,540,150,35</area>
             <value>Home</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>252,587</position>
+            <area>252,587,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>252,634</position>
+            <area>252,634,150,35</area>
             <value>OK</value>
         </button>
 

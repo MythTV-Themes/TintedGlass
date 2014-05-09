@@ -123,8 +123,8 @@ MythArchive GUI theme
             <area>311,360,281,32</area>
         </textarea>
 
-        <button name="ok_button" from="base_medium_button">
-            <position>126,441</position>
+        <button name="ok_button" from="base_button">
+            <area>126,441,350,40</area>
             <value>OK</value>
         </button>
     </window>
@@ -306,18 +306,18 @@ MythArchive GUI theme
             <multiline>yes</multiline>
         </textarea>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="prev_button" from="base_small_button">
-            <position>722,631</position>
+        <button name="prev_button" from="base_button">
+            <area>722,631,200,40</area>
             <value>Previous</value>
         </button>
 
-        <button name="next_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="next_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Next</value>
         </button>
 
@@ -396,18 +396,18 @@ MythArchive GUI theme
             <area>138,620,1004,2</area>
         </shape>
 
-        <button name="addrecording_button" from="base_small_button">
-            <position>165,58</position>
+        <button name="addrecording_button" from="base_button">
+            <area>165,58,200,40</area>
             <value>Add Recording</value>
         </button>
 
-        <button name="addvideo_button" from="base_small_button">
-            <position>540,58</position>
+        <button name="addvideo_button" from="base_button">
+            <area>540,58,200,40</area>
             <value>Add Video</value>
         </button>
 
-        <button name="addfile_button" from="base_small_button">
-            <position>915,58</position>
+        <button name="addfile_button" from="base_button">
+            <area>915,58,200,40</area>
             <value>Add File</value>
         </button>
 
@@ -529,18 +529,18 @@ MythArchive GUI theme
             <font>basesmallred</font>
         </textarea>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="basebutton">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="prev_button" from="base_small_button">
-            <position>722,631</position>
+        <button name="prev_button" from="base_button">
+            <area>722,631,200,40</area>
             <value>Previous</value>
         </button>
 
-        <button name="next_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="next_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Finish</value>
         </button>
 
@@ -655,12 +655,12 @@ MythArchive GUI theme
             <area>160,356,419,32</area>
         </textedit>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>63,441</position>
+        <button name="cancel_button" from="base_button">
+            <area>63,441,200,40</area>
             <value>Cancel</value>
         </button>
-        <button name="ok_button" from="base_small_button">
-            <position>325,441</position>
+        <button name="ok_button" from="base_button">
+            <area>325,441,200,40</area>
             <value>OK</value>
         </button>
 
@@ -966,13 +966,13 @@ MythArchive GUI theme
 LEFT/RIGHT jumps forward/backward by the seek amount, and SELECT chooses the current preview image for the selected thumb image.</value>
         </textarea>
 
-        <button name="cancel_button" from="base_small_button">
-            <position>138,631</position>
+        <button name="cancel_button" from="base_button">
+            <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
 
-        <button name="save_button" from="base_small_button">
-            <position>942,631</position>
+        <button name="save_button" from="base_button">
+            <area>942,631,200,40</area>
             <value>Save</value>
         </button>
 

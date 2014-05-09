@@ -1094,8 +1094,8 @@
             <position>770,362</position>
         </spinbox>
 
-        <button name="finishbutton" from="base_medium_button">
-            <position>465,593</position>
+        <button name="finishbutton" from="base_button">
+            <area>465,593,350,40</area>
         </button>
 
     </window>
@@ -1290,8 +1290,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <button name="finishbutton" from="base_medium_button">
-            <position>465,626</position>
+        <button name="finishbutton" from="base_button">
+            <area>465,626,350,40</area>
         </button>
 
     </window>
@@ -1443,8 +1443,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <button name="finishbutton" from="base_medium_button">
-            <position>465,622</position>
+        <button name="finishbutton" from="base_button">
+            <area>465,622,350,40</area>
         </button>
 
     </window>
@@ -1558,8 +1558,8 @@
             <area>584,153,287,32</area>
         </textedit>
 
-        <button name="searchbtn" from="base_medium_button">
-            <position>465,622</position>
+        <button name="searchbtn" from="base_button">
+            <area>465,622,350,40</area>
         </button>
 
         <buttonlist name="results" from="base_list">

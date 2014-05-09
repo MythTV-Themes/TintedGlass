@@ -98,8 +98,8 @@
         <!--
             start frontend button
         -->
-        <button name="startfrontend_button" from="base_medium_button">
-            <position>465,624</position>
+        <button name="startfrontend_button" from="base_button">
+            <area>465,624,350,40</area>
             <value>Start Frontend</value>
         </button>
 

@@ -809,8 +809,8 @@
             <value>Show LiveTV</value>
         </textarea>
 
-        <button name="save" from="base_wide_button">
-            <position>60,440</position>
+        <button name="save" from="base_button">
+            <area>60,440,480,40</area>
             <value>Save</value>
         </button>
 
@@ -878,7 +878,7 @@
         </textedit>
 
         <button name="ok" from="base_button">
-            <position>218,214</position>
+            <area>218,214,150,35</area>
             <value>OK</value>
         </button>
 
@@ -1492,8 +1492,8 @@
             <position>320,464</position>
         </spinbox>
 
-        <button name="ok" from="base_medium_button">
-            <position>135,550</position>
+        <button name="ok" from="base_button">
+            <area>135,550,350,40</area>
             <value>OK</value>
         </button>
     </window>

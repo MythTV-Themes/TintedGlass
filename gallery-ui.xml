@@ -343,8 +343,8 @@
             </statetype>
         </buttonlist>
 
-        <button name="check_button" from="base_medium_button">
-            <position>465,431</position>
+        <button name="check_button" from="base_button">
+            <area>465,431,350,40</area>
             <value>Check Filter</value>
         </button>
 
@@ -356,13 +356,13 @@
             <value>NumImages_Text</value>
         </textarea>
 
-        <button name="save_button" from="base_medium_button">
-            <position>273,628</position>
+        <button name="save_button" from="base_button">
+            <area>273,628,350,40</area>
             <value>Save as default</value>
         </button>
 
-        <button name="done_button" from="base_medium_button">
-            <position>657,628</position>
+        <button name="done_button" from="base_button">
+            <area>657,628,350,40</area>
             <value>Done</value>
         </button>
 

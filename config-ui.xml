@@ -73,12 +73,12 @@
         </textedit>
 
         <button name="search" from="base_button">
-            <position>404,96</position>
+            <area>404,96,150,35</area>
             <value>Search</value>
         </button>
 
         <button name="skip" from="base_button">
-            <position>722,96</position>
+            <area>722,96,150,35</area>
             <value>Skip</value>
         </button>
 
@@ -335,7 +335,7 @@
         </buttonlist>
 
         <button name="delete" from="base_button">
-            <position>1030,517</position>
+            <area>1030,517,150,35</area>
             <value>Delete</value>
         </button>
 
@@ -348,18 +348,18 @@
             <position>410,572</position>
         </checkbox>
 
-        <button name="scan" from="base_medium_button">
-            <position>68,630</position>
+        <button name="scan" from="base_button">
+            <area>68,630,350,40</area>
             <value>Channel Scan</value>
         </button>
 
-        <button name="importicons" from="base_medium_button">
-            <position>465,630</position>
+        <button name="importicons" from="base_button">
+            <area>465,630,350,40</area>
             <value>Icon Download</value>
         </button>
 
-        <button name="edittransport" from="base_medium_button">
-            <position>862,630</position>
+        <button name="edittransport" from="base_button">
+            <area>862,630,350,40</area>
             <value>Edit Transports</value>
         </button>
 
@@ -554,12 +554,12 @@
         </textarea>
 
         <button name="save" from="base_button">
-            <position>1090,643</position>
+            <area>1090,643,150,35</area>
             <value>Save</value>
         </button>
 
         <button name="cancel" from="base_button">
-            <position>40,643</position>
+            <area>40,643,150,35</area>
             <value>Cancel</value>
         </button>
 
@@ -734,12 +734,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>403,628</position>
+            <area>403,628,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="base_button">
-            <position>727,628</position>
+            <area>727,628,150,35</area>
             <value>OK</value>
         </button>
 
@@ -800,18 +800,18 @@
             <area>238,607,804,2</area>
         </shape>
 
-        <button name="submit" from="base_wide_button">
-            <position>400,90</position>
+        <button name="submit" from="base_button">
+            <area>400,90,480,40</area>
             <value>Submit your hardware profile</value>
         </button>
 
-        <button name="view" from="base_wide_button">
-            <position>400,177</position>
+        <button name="view" from="base_button">
+            <area>400,177,480,40</area>
             <value>View your hardware profile</value>
         </button>
 
-        <button name="delete" from="base_wide_button">
-            <position>400,264</position>
+        <button name="delete" from="base_button">
+            <area>400,264,480,40</area>
             <value>Delete your hardware profile</value>
         </button>
 
@@ -823,12 +823,12 @@
         </textarea>
 
         <button name="cancel" from="base_button">
-            <position>403,628</position>
+            <area>403,628,150,35</area>
             <value>Cancel</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>727,628</position>
+            <area>727,628,150,35</area>
             <value>Next</value>
         </button>
 
@@ -1020,8 +1020,8 @@
             </statetype>
         </buttonlist>
 
-        <button name="testspeakers" from="base_medium_button">
-            <position>465,411</position>
+        <button name="testspeakers" from="base_button">
+            <area>465,411,350,40</area>
         </button>
 
         <textarea name="helptext" from="basetextarea">
@@ -1032,12 +1032,12 @@
         </textarea>
 
         <button name="previous" from="base_button">
-            <position>401,627</position>
+            <area>401,627,150,35</area>
             <value>Previous</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>729,627</position>
+            <area>729,627,150,35</area>
             <value>Next</value>
         </button>
 
@@ -1134,13 +1134,13 @@
             </statetype>
         </buttonlist>
 
-        <button name="testsd" from="base_wide_button">
-            <position>400,215</position>
+        <button name="testsd" from="base_button">
+            <area>400,215,480,40</area>
             <value>Test Standard Definition</value>
         </button>
 
-        <button name="testhd" from="base_wide_button">
-            <position>400,285</position>
+        <button name="testhd" from="base_button">
+            <area>400,285,480,40</area>
             <value>Test High Definition</value>
         </button>
 
@@ -1152,12 +1152,12 @@
         </textarea>
 
         <button name="previous" from="base_button">
-            <position>401,627</position>
+            <area>401,627,150,35</area>
             <value>Previous</value>
         </button>
 
         <button name="next" from="base_button">
-            <position>729,627</position>
+            <area>729,627,150,35</area>
             <value>Finish</value>
         </button>
 
