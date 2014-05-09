@@ -541,15 +541,16 @@
                             </textarea>
                         </group>
                     </state>
-                    <state name="selectedactive" from="active">
-                        <shape name="buttonbackground">
-                            <area>0,0,136,136</area>
+                    <state name="selectedactive">
+                        <area>0,0,136,136</area>
+                        <shape name="select_bar">
+                            <area>0,0,100%,100%</area>
                             <type>roundbox</type>
                             <fill color="#101017" alpha="255" />
                             <line color="#ffffff" alpha="45" width="4" />
                             <cornerradius>8</cornerradius>
                         </shape>
-                        <shape name="buttonbackground-top-highlight-line">
+                        <shape name="select_bar_top_highlight_line">
                             <area>8,2,120,4</area>
                             <type>box</type>
                             <fill style="gradient">
@@ -560,10 +561,10 @@
                                 </gradient>
                             </fill>
                         </shape>
-                        <shape name="buttonbackground-bottom-highlight-line" from="buttonbackground-top-highlight-line">
+                        <shape name="select_bar_bottom_highlight_line" from="select_bar_top_highlight_line">
                             <area>8,130,120,4</area>
                         </shape>
-                        <shape name="buttonbackground-left-highlight-line">
+                        <shape name="select_bar_left_highlight_line">
                             <area>2,8,4,120</area>
                             <type>box</type>
                             <fill style="gradient">
@@ -574,11 +575,118 @@
                                 </gradient>
                             </fill>
                         </shape>
-                        <shape name="buttonbackground-right-highlight-line" from="buttonbackground-left-highlight-line">
+                        <shape name="select_bar_right_highlight_line" from="select_bar_left_highlight_line">
                             <area>130,8,4,120</area>
                         </shape>
+                        <imagetype name="buttonimage">
+                            <area>8,8,120,120</area>
+                            <filename>mythmusic/mm_nothumb.png</filename>
+                        </imagetype>
+                        <statetype name="nodetype">
+                            <position>8,8</position>
+                            <state name="default" />
+                            <state name="alltracks">
+                                <imagetype name="alltracks">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="genres">
+                                <imagetype name="genres">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="albums">
+                                <imagetype name="albums">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="artists">
+                                <imagetype name="artists">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="compartists">
+                                <imagetype name="compartists">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="ratings">
+                                <imagetype name="ratings">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="years">
+                                <imagetype name="years">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="compilations">
+                                <imagetype name="compilations">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="cd">
+                                <imagetype name="cd">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="directory">
+                                <imagetype name="directory">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="playlists">
+                                <imagetype name="playlists">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                            <state name="smartplaylists">
+                                <imagetype name="smartplaylists">
+                                    <area>0,0,120,120</area>
+                                    <filename>mythmusic/mm_category.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <statetype name="buttoncheck">
+                            <position>8,8</position>
+                            <showempty>yes</showempty>
+                            <state type="full">
+                                <imagetype name="marked">
+                                    <filename>mythmusic/playlist_yes.png</filename>
+                                </imagetype>
+                            </state>
+                        </statetype>
+                        <group name="variable-size-text-backdrop-group">
+                            <area>8,10,-8,-10</area>
+                            <minsize vanish="true">20,20</minsize>
+                            <shape name="text-backdrop">
+                                <area>1,1,-1,-1</area>
+                                <minsize vanish="true">5,5</minsize>
+                                <type>roundbox</type>
+                                <cornerradius>5</cornerradius>
+                                <fill color="#000000" alpha="140" />
+                            </shape>
+                            <textarea name="buttontext" from="basetextarea">
+                                <area>5,1,-5,-3</area>
+                                <align>bottom,hcenter</align>
+                                <minsize shrink="short" vanish="true">5,5</minsize>
+                                <font>baseextrasmall</font>
+                                <multiline>yes</multiline>
+                            </textarea>
+                        </group>
                     </state>
-                    <state name="selectedinactive" from="active">
+                    <state name="selectedinactive">
                         <group name="select_bar" from="base_button_select_bar_disabled_group">
                             <area>0,0,136,136</area>
                             <shape name="select_bar">
