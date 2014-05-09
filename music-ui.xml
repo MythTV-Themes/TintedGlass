@@ -914,42 +914,48 @@
         </shape>
 
         <buttonlist name="field_list" from="base_selector">
-            <area>39,39,280,30</area>
+            <area>39,41,280,26</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,280,30</area>
+                    <area>0,0,280,26</area>
                     <textarea name="buttontext">
-                        <area>15,0,250,30</area>
+                        <area>15,0,250,26</area>
+                        <font>basesmaller</font>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,280,30</area>
+                    <area>0,0,280,26</area>
                     <textarea name="buttontext">
-                        <area>15,0,250,30</area>
+                        <area>15,0,250,26</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>281,6</position>
+                <position>281,4</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>-12,6</position>
+                <position>-12,4</position>
             </statetype>
         </buttonlist>
 
         <textedit name="criteria_edit" from="base_wide_textedit">
-            <area>350,39,580,30</area>
+            <area>350,41,580,26</area>
+            <textarea name="text">
+                <font>basesmaller</font>
+            </textarea>
         </textedit>
 
         <textarea name="matcheslable" from="basetextarea">
             <area>970,39,150,30</area>
+            <font>basesmaller</font>
             <align>right,vcenter</align>
             <value>Matches:</value>
         </textarea>
 
         <textarea name="matches_text" from="basetextarea">
             <area>1130,39,120,30</area>
+            <font>basesmaller</font>
             <align>right,vcenter</align>
         </textarea>
 
