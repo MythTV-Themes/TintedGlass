@@ -107,7 +107,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <textedit name="settingvalue" from="base_wide_textedit">
+        <textedit name="settingvalue" from="base_textedit">
             <area>243,555,794,40</area>
         </textedit>
 

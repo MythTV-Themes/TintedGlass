@@ -68,7 +68,7 @@
             <value>Search Terms:</value>
         </textarea>
 
-        <textedit name="manualsearch" from="base_wide_textedit">
+        <textedit name="manualsearch" from="base_textedit">
             <area>430,56,577,32</area>
         </textedit>
 

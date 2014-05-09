@@ -2221,7 +2221,7 @@
             <align>right,vcenter</align>
         </textarea>
         
-        <textedit name="command" from="base_wide_textedit">
+        <textedit name="command" from="base_textedit">
             <area>435,220,580,32</area>
         </textedit>
         
@@ -2403,7 +2403,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="tagline_edit" from="base_wide_textedit">
+        <textedit name="tagline_edit" from="base_textedit">
             <area>177,168,885,32</area>
         </textedit>
 
@@ -2413,7 +2413,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="homepage_edit" from="base_wide_textedit">
+        <textedit name="homepage_edit" from="base_textedit">
             <area>177,208,885,32</area>
         </textedit>
 
@@ -2423,7 +2423,7 @@
             <value>Player:</value>
         </textarea>
 
-        <textedit name="player_edit" from="base_wide_textedit">
+        <textedit name="player_edit" from="base_textedit">
             <area>177,248,885,32</area>
         </textedit>
 
@@ -3217,7 +3217,7 @@
             <value>Default Player:</value>
         </textarea>
 
-        <textedit name="defaultplayer" from="base_wide_textedit">
+        <textedit name="defaultplayer" from="base_textedit">
             <area>442,69,580,32</area>
         </textedit>
 
@@ -3227,7 +3227,7 @@
             <value>DVD Player:</value>
         </textarea>
 
-        <textedit name="dvdplayer" from="base_wide_textedit">
+        <textedit name="dvdplayer" from="base_textedit">
             <area>442,139,580,32</area>
         </textedit>
 
@@ -3237,7 +3237,7 @@
             <value>DVD Drive:</value>
         </textarea>
 
-        <textedit name="dvddrive" from="base_wide_textedit">
+        <textedit name="dvddrive" from="base_textedit">
             <area>442,209,580,32</area>
         </textedit>
 
@@ -3247,7 +3247,7 @@
             <value>Blu-ray Mount:</value>
         </textarea>
 
-        <textedit name="bluraymount" from="base_wide_textedit">
+        <textedit name="bluraymount" from="base_textedit">
             <area>442,279,580,32</area>
         </textedit>
 
@@ -3298,7 +3298,7 @@
             <value>Alternate Player:</value>
         </textarea>
 
-        <textedit name="altplayer" from="base_wide_textedit">
+        <textedit name="altplayer" from="base_textedit">
             <area>442,479,580,32</area>
         </textedit>
 

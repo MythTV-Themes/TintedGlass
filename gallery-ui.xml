@@ -277,7 +277,7 @@
             <value>Directory filter:</value>
         </textarea>
 
-        <textedit name="dirfilter_text" from="base_wide_textedit">
+        <textedit name="dirfilter_text" from="base_textedit">
             <area>442,109,580,32</area>
         </textedit>
 

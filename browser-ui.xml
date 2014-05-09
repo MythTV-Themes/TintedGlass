@@ -317,7 +317,7 @@
             <value>Browser Command:</value>
         </textarea>
 
-        <textedit name="command" from="base_wide_textedit">
+        <textedit name="command" from="base_textedit">
             <area>460,110,580,32</area>
         </textedit>
 
@@ -327,7 +327,7 @@
             <value>Text Size:</value>
         </textarea>
 
-        <textedit name="zoom" from="base_wide_textedit">
+        <textedit name="zoom" from="base_textedit">
             <area>460,232,580,32</area>
         </textedit>
 
@@ -452,7 +452,7 @@
             <value>Name:</value>
         </textarea>
 
-        <textedit name="name" from="base_wide_textedit">
+        <textedit name="name" from="base_textedit">
             <area>160,207,580,32</area>
         </textedit>
 
@@ -462,7 +462,7 @@
             <value>URL:</value>
         </textarea>
 
-        <textedit name="url" from="base_wide_textedit">
+        <textedit name="url" from="base_textedit">
             <area>160,307,580,32</area>
         </textedit>
 

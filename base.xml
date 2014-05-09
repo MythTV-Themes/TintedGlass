@@ -1873,7 +1873,7 @@
 
     <!-- Base definition of a textedit (DONT USE POSITION ALWAYS USE AREA)-->
     <textedit name="base_textedit">
-        <area>0,0,287,32</area>
+        <area>0,0,287,40</area>
         <statetype name="background">
            <area>0,0,100%,100%</area>
            <state name="active">
@@ -1891,21 +1891,13 @@
             <state name="inactive" from="active" />
         </statetype>
         <imagetype name="cursor">
-            <area>0,0,4,32</area>
+            <area>0,0,4,40</area>
             <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
-            <area>15,0,94%,100%</area>
+            <area>15,0,100%-15,100%</area>
             <font>basesmall</font>
             <align>vcenter</align>
-        </textarea>
-    </textedit>
-
-    <!-- Base definition of a wide textedit (DONT USE POSITION ALWAYS USE AREA)-->
-    <textedit name="base_wide_textedit" from="base_textedit">
-        <area>0,0,580,32</area>
-        <textarea name="text">
-            <area>15,0,97%,100%</area>
         </textarea>
     </textedit>
 
@@ -2396,7 +2388,7 @@
             <value>Search List</value>
         </textarea>
 
-        <textedit name="searchedit" from="base_wide_textedit">
+        <textedit name="searchedit" from="base_textedit">
             <area>30,44,580,32</area>
         </textedit>
 
@@ -2633,7 +2625,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <textedit name="input" from="base_wide_textedit">
+        <textedit name="input" from="base_textedit">
             <area>66,92,470,32</area>
         </textedit>
 
@@ -2893,7 +2885,7 @@
             </statetype>
         </buttonlist>
 
-        <textedit name="location" from="base_wide_textedit">
+        <textedit name="location" from="base_textedit">
             <area>40,107,575,40</area>
         </textedit>
 

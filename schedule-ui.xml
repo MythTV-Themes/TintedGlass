@@ -672,7 +672,7 @@
             <value>Title (Optional):</value>
         </textarea>
 
-        <textedit name="title" from="base_wide_textedit">
+        <textedit name="title" from="base_textedit">
             <area>467,76,580,32</area>
         </textedit>
 
@@ -1317,7 +1317,7 @@
             <value>Rule Name:</value>
         </textarea>
 
-        <textedit name="title" from="base_wide_textedit">
+        <textedit name="title" from="base_textedit">
             <area>435,123,580,32</area>
         </textedit>
 
@@ -1507,7 +1507,7 @@
             </statetype>
         </buttonlist>
 
-        <textedit name="phrase_edit" from="base_wide_textedit">
+        <textedit name="phrase_edit" from="base_textedit">
             <area>66,398,470,32</area>
         </textedit>
 
@@ -1694,7 +1694,7 @@
             <value>Optional title phrase:</value>
         </textarea>
 
-        <textedit name="title_edit" from="base_wide_textedit">
+        <textedit name="title_edit" from="base_textedit">
             <area>66,87,470,32</area>
         </textedit>
 
@@ -1705,7 +1705,7 @@
             <value>Optional subtitle phrase:</value>
         </textarea>
 
-        <textedit name="subtitle_edit" from="base_wide_textedit">
+        <textedit name="subtitle_edit" from="base_textedit">
             <area>66,161,470,32</area>
         </textedit>
 
@@ -1716,7 +1716,7 @@
             <value>Optional description phrase:</value>
         </textarea>
 
-        <textedit name="desc_edit" from="base_wide_textedit">
+        <textedit name="desc_edit" from="base_textedit">
             <area>66,235,470,32</area>
         </textedit>
 
@@ -2025,7 +2025,7 @@
             <value>Enter Search Text</value>
         </textarea>
 
-        <textedit name="input" from="base_wide_textedit">
+        <textedit name="input" from="base_textedit">
             <area>225,10,580,32</area>
         </textedit>
 
@@ -2587,7 +2587,7 @@
             <value>Rule Name:</value>
         </textarea>
 
-        <textedit name="title" from="base_wide_textedit">
+        <textedit name="title" from="base_textedit">
             <area>440,116,580,32</area>
         </textedit>
 

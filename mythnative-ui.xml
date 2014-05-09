@@ -362,7 +362,7 @@ MythTV Archive GUI theme
             </statetype>
         </buttonlist>
 
-        <textedit name="location_edit" from="base_wide_textedit">
+        <textedit name="location_edit" from="base_textedit">
             <area>40,107,575,40</area>
         </textedit>
 

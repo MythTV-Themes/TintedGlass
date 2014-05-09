@@ -63,7 +63,7 @@
             <value>Directory to hold music:</value>
         </textarea>
 
-        <textedit name="musiclocation" from="base_wide_textedit">
+        <textedit name="musiclocation" from="base_textedit">
             <area>567,74,550,32</area>
         </textedit>
 
@@ -73,7 +73,7 @@
             <value>CD device:</value>
         </textarea>
 
-        <textedit name="musiccddevice" from="base_wide_textedit">
+        <textedit name="musiccddevice" from="base_textedit">
             <area>567,140,550,32</area>
         </textedit>
 
@@ -83,7 +83,7 @@
             <value>Audio device:</value>
         </textarea>
 
-        <textedit name="musicaudiodevice" from="base_wide_textedit">
+        <textedit name="musicaudiodevice" from="base_textedit">
             <area>567,206,550,32</area>
         </textedit>
 
@@ -103,7 +103,7 @@
             <value>Filename Format:</value>
         </textarea>
 
-        <textedit name="nonid3filenameformat" from="base_wide_textedit">
+        <textedit name="nonid3filenameformat" from="base_textedit">
             <area>567,339,550,32</area>
         </textedit>
 
@@ -237,7 +237,7 @@
             <value>File storage location:</value>
         </textarea>
 
-        <textedit name="filenametemplate" from="base_wide_textedit">
+        <textedit name="filenametemplate" from="base_textedit">
             <area>568,126,550,32</area>
         </textedit>
 
@@ -339,7 +339,7 @@
             <value>Script Path:</value>
         </textarea>
 
-        <textedit name="postcdripscript" from="base_wide_textedit">
+        <textedit name="postcdripscript" from="base_textedit">
             <area>568,480,550,32</area>
         </textedit>
 

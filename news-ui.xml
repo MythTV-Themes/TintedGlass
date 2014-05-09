@@ -289,7 +289,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="name" from="base_wide_textedit">
+        <textedit name="name" from="base_textedit">
             <area>405,126,580,32</area>
         </textedit>
 
@@ -298,7 +298,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="url" from="base_wide_textedit">
+        <textedit name="url" from="base_textedit">
             <area>405,226,580,32</area>
         </textedit>
 
@@ -307,7 +307,7 @@
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="icon" from="base_wide_textedit">
+        <textedit name="icon" from="base_textedit">
             <area>405,326,580,32</area>
         </textedit>
 

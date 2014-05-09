@@ -163,7 +163,7 @@
             <value>Search Term:</value>
         </textarea>
 
-        <textedit name="search" from="base_wide_textedit">
+        <textedit name="search" from="base_textedit">
             <area>430,54,580,32</area>
         </textedit>
 
@@ -648,7 +648,7 @@
             <value>Feed Name:</value>
         </textarea>
 
-        <textedit name="title" from="base_wide_textedit">
+        <textedit name="title" from="base_textedit">
             <area>442,72,580,32</area>
         </textedit>
 
@@ -658,7 +658,7 @@
             <value>Feed URL:</value>
         </textarea>
 
-        <textedit name="url" from="base_wide_textedit">
+        <textedit name="url" from="base_textedit">
             <area>442,147,580,32</area>
         </textedit>
 
@@ -668,7 +668,7 @@
             <value>Site Description:</value>
         </textarea>
 
-        <textedit name="description" from="base_wide_textedit">
+        <textedit name="description" from="base_textedit">
             <area>442,218,580,32</area>
         </textedit>
 
@@ -678,7 +678,7 @@
             <value>Feed Author:</value>
         </textarea>
 
-        <textedit name="author" from="base_wide_textedit">
+        <textedit name="author" from="base_textedit">
             <area>442,289,580,32</area>
         </textedit>
 

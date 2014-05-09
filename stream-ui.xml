@@ -457,11 +457,8 @@
             <value>Station:</value>
         </textarea>
 
-        <textedit name="stationedit" from="base_wide_textedit">
+        <textedit name="stationedit" from="base_textedit">
             <area>343,68,800,40</area>
-            <textarea name="text">
-                <area>20,0,97%,100%</area>
-            </textarea>
         </textedit>
 
         <button name="searchbutton" from="base_button">

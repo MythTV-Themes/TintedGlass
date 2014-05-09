@@ -1435,7 +1435,7 @@
             <value>Title:</value>
         </textarea>
 
-        <textedit name="title" from="base_wide_textedit">
+        <textedit name="title" from="base_textedit">
             <area>20,94,580,32</area>
         </textedit>
 
@@ -1445,7 +1445,7 @@
             <value>Subtitle:</value>
         </textarea>
 
-        <textedit name="subtitle" from="base_wide_textedit">
+        <textedit name="subtitle" from="base_textedit">
             <area>20,166,580,32</area>
         </textedit>
 
@@ -1455,7 +1455,7 @@
             <value>Description:</value>
         </textarea>
 
-        <textedit name="description" from="base_wide_textedit">
+        <textedit name="description" from="base_textedit">
             <area>20,238,580,32</area>
         </textedit>
 

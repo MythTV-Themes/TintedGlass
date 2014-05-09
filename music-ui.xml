@@ -939,7 +939,7 @@
             </statetype>
         </buttonlist>
 
-        <textedit name="criteria_edit" from="base_wide_textedit">
+        <textedit name="criteria_edit" from="base_textedit">
             <area>350,41,580,26</area>
             <textarea name="text">
                 <font>basesmaller</font>
@@ -1171,7 +1171,7 @@
             <value>Title:</value>
         </textarea>
 
-        <textedit name="titleedit" from="base_wide_textedit">
+        <textedit name="titleedit" from="base_textedit">
             <area>382,159,500,40</area>
         </textedit>
  
@@ -2137,7 +2137,7 @@
             <value>Comp. Artist:</value>
         </textarea>
 
-        <textedit name="compartistedit" from="base_wide_textedit">
+        <textedit name="compartistedit" from="base_textedit">
             <area>404,123,580,32</area>
         </textedit>
 
@@ -2213,7 +2213,7 @@
             <value>Genre:</value>
         </textarea>
 
-        <textedit name="genreedit" from="base_wide_textedit">
+        <textedit name="genreedit" from="base_textedit">
             <area>404,416,580,32</area>
         </textedit>
 
@@ -2896,7 +2896,7 @@
             <value>Location:</value>
         </textarea>
 
-        <textedit name="location" from="base_wide_textedit">
+        <textedit name="location" from="base_textedit">
             <area>380,58,580,32</area>
         </textedit>
 
@@ -3496,7 +3496,7 @@
             <value>Artist:</value>
         </textarea>
 
-        <textedit name="artist" from="base_wide_textedit">
+        <textedit name="artist" from="base_textedit">
             <area>364,136,580,32</area>
         </textedit>
 
@@ -3509,7 +3509,7 @@
             <value>Album:</value>
         </textarea>
 
-        <textedit name="album" from="base_wide_textedit">
+        <textedit name="album" from="base_textedit">
             <area>364,173,580,32</area>
         </textedit>
 
@@ -3522,7 +3522,7 @@
             <value>Genre:</value>
         </textarea>
 
-        <textedit name="genre" from="base_wide_textedit">
+        <textedit name="genre" from="base_textedit">
             <area>364,209,580,32</area>
         </textedit>
 
