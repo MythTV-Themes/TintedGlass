@@ -1138,8 +1138,8 @@
                 <state name="inactive" from="active" />
             </statetype>
             <imagetype name="cursor">
-                <area>0,0,3,55</area>
-                <filename>images/osd/cursor.png</filename>
+                <area>0,0,5,40</area>
+                <filename>images/osd/cursor_large.png</filename>
             </imagetype>
             <textarea name="text">
                 <area>20,0,363,100%</area>
@@ -1155,9 +1155,6 @@
 
         <textedit name="channum" from="callsign">
             <area>522,359,403,55</area>
-            <imagetype name="cursor">   
-                <area>0,0,3,100%</area>
-            </imagetype>
         </textedit>
 
         <textarea name="channame_label" from="callsign_label">
@@ -1167,9 +1164,6 @@
 
         <textedit name="channame" from="callsign">
             <area>522,420,403,55</area>
-            <imagetype name="cursor">
-                <area>0,0,3,100%</area>    
-            </imagetype>
         </textedit>
 
         <textarea name="xmltv_label" from="callsign_label">
@@ -1179,9 +1173,6 @@
 
         <textedit name="XMLTV" from="callsign">
             <area>522,481,403,55</area>
-            <imagetype name="cursor">
-                <area>0,0,3,100%</area>
-            </imagetype>
         </textedit>
 
         <button name="probe">

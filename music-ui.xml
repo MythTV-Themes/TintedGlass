@@ -941,6 +941,10 @@
 
         <textedit name="criteria_edit" from="base_textedit">
             <area>350,41,580,26</area>
+            <imagetype name="cursor">
+                <area>0,0,4,22</area>
+                <filename>images/cursor_small.png</filename>
+            </imagetype>
             <textarea name="text">
                 <font>basesmaller</font>
             </textarea>

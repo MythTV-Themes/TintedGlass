@@ -1891,7 +1891,7 @@
             <state name="inactive" from="active" />
         </statetype>
         <imagetype name="cursor">
-            <area>0,0,4,40</area>
+            <area>0,0,4,30</area>
             <filename>images/cursor.png</filename>
         </imagetype>
         <textarea name="text">
