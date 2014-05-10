@@ -418,64 +418,64 @@
         </shape>
 
         <textarea name="resumemode_label" from="basetextarea">
-            <area>315,114,300,32</area>
+            <area>315,112,300,40</area>
             <align>right,vcenter</align>
             <value>Resume mode:</value>
         </textarea>
 
         <buttonlist name="resumemode" from="base_selector">
-            <area>625,114,300,32</area>
+            <area>625,112,300,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>304,-2</position>
+                <position>304,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>304,15</position>
+                <position>304,21</position>
             </statetype>
         </buttonlist>
 
         <textarea name="exitaction_label" from="basetextarea">
-            <area>315,220,300,32</area>
+            <area>315,224,300,40</area>
             <align>right,vcenter</align>
             <value>Action on exit:</value>
         </textarea>
 
         <buttonlist name="exitaction" from="resumemode">
-            <area>625,220,300,32</area>
+            <area>625,224,300,40</area>
         </buttonlist>
 
         <textarea name="autolookupcd_label" from="basetextarea">
-            <area>315,326,300,32</area>
+            <area>315,336,300,30</area>
             <align>right,vcenter</align>
             <value>Automatically lookup CDs:</value>
         </textarea>
 
         <checkbox name="autolookupcd" from="base_checkbox">
-            <position>625,328</position>
+            <position>625,336</position>
         </checkbox>
 
         <textarea name="autoplaycd_label" from="basetextarea">
-            <area>315,433,300,32</area>
+            <area>315,438,300,30</area>
             <align>right,vcenter</align>
             <value>Automatically Play CDs:</value>
         </textarea>
 
         <checkbox name="autoplaycd" from="base_checkbox">
-            <position>625,435</position>
+            <position>625,438</position>
         </checkbox>
 
         <textarea name="helptext" from="basetextarea">

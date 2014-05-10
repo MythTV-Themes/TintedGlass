@@ -2146,7 +2146,7 @@
         </textedit>
 
         <button name="searchcompartistbutton">
-            <area>994,116,32,32</area>
+            <area>994,116,30,30</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -2154,9 +2154,54 @@
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
+                    <area>0,0,100%,100%</area>
                     <imagetype name="background">
                         <filename>mythmusic/mm_blankbutton_on.png</filename>
                     </imagetype>
+                <shape name="select_bar_top_highlight">
+                    <area>0,-1,100%,2</area>
+                    <type>box</type>
+                    <fill style="gradient">
+                        <gradient direction="horizontal" alpha="255">
+                            <stop position="0" color="#000000"/>
+                            <stop position="50" color="#d6d6d6"/>
+                            <stop position="100" color="#000000"/>
+                        </gradient>
+                    </fill>
+                </shape>
+                <shape name="select_bar_bottom_highlight">
+                    <area>0,100%-1,100%,2</area>
+                    <type>box</type>
+                    <fill style="gradient">
+                        <gradient direction="horizontal" alpha="255">
+                            <stop position="0" color="#000000"/>
+                            <stop position="50" color="#d6d6d6"/>
+                            <stop position="100" color="#000000"/>
+                        </gradient>
+                    </fill>
+                </shape>
+                <shape name="select_bar_left_highlight">
+                    <area>-1,0,2,100%</area>
+                    <type>box</type>
+                    <fill style="gradient">
+                        <gradient direction="vertical" alpha="255">
+                            <stop position="0" color="#000000"/>
+                            <stop position="50" color="#3a9aff"/>
+                            <stop position="100" color="#000000"/>
+                        </gradient>
+                    </fill>
+                </shape>
+                <shape name="select_bar_right_highlight">
+                    <area>100%-1,0,2,100%</area>
+                    <type>box</type>
+                    <fill style="gradient">
+                        <gradient direction="vertical" alpha="255">
+                            <stop position="0" color="#000000"/>
+                            <stop position="50" color="#3a9aff"/>
+                            <stop position="100" color="#000000"/>
+                        </gradient>
+                    </fill>
+                </shape>
                 </state>
                 <state name="disabled" from="active" />
                 <state name="pushed" from="active">

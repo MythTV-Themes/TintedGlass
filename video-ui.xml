@@ -2804,7 +2804,7 @@
         </textarea>
 
         <textarea name="filter_text" from="category_text">
-            <area>10,390,300,40</area>
+            <area>14,390,150,40</area>
             <align>right,vcenter</align>
             <value>Text Filter :</value>
         </textarea>
@@ -2881,7 +2881,7 @@
         </buttonlist>
         
         <textedit name="textfilter_input" from="base_textedit">
-            <area>320,390,287,40</area>
+            <area>174,390,572,40</area>
         </textedit>
 
         <textarea name="numvideos_text" from="basetextarea">
