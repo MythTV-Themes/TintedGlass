@@ -666,23 +666,23 @@
         </shape>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>197,77,260,30</area>
+            <area>197,90,260,40</area>
             <font>basemedium</font>
-            <align>right</align>
+            <align>right,vcenter</align>
             <value>Title (Optional):</value>
         </textarea>
 
         <textedit name="title" from="base_textedit">
-            <area>467,76,580,32</area>
+            <area>467,90,580,40</area>
         </textedit>
 
         <textarea name="channellabel" from="titlelabel">
-            <area>197,179,260,30</area>
+            <area>197,179,260,40</area>
             <value>Channel:</value>
         </textarea>
 
         <buttonlist name="channel" from="base_selector">
-            <area>467,175,580,40</area>
+            <area>467,179,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -707,12 +707,12 @@
         </buttonlist>
 
         <textarea name="datelabel" from="titlelabel">
-            <area>197,281,260,30</area>
+            <area>197,268,260,40</area>
             <value>Date, or day of week:</value>
         </textarea>
 
         <buttonlist name="startdate" from="channel">
-            <area>467,277,580,40</area>
+            <area>467,268,580,40</area>
         </buttonlist>
 
         <textarea name="timelabel">
@@ -1281,14 +1281,14 @@
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
-            <area>235,60,190,30</area>
+            <area>235,62,190,40</area>
             <font>basemedium</font>
             <align>right</align>
             <value>Existing Rules:</value>
         </textarea>
 
         <buttonlist name="rules" from="base_selector">
-            <area>435,58,580,40</area>
+            <area>435,62,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -1313,31 +1313,31 @@
         </buttonlist>
 
         <textarea name="titlelabel" from="ruleslabel">
-            <position>235,122</position>
+            <position>235,125</position>
             <value>Rule Name:</value>
         </textarea>
 
         <textedit name="title" from="base_textedit">
-            <area>435,123,580,32</area>
+            <area>435,125,580,40</area>
         </textedit>
 
         <textarea name="prioritylabel" from="ruleslabel">
-            <position>235,185</position>
+            <position>235,188</position>
             <value>Priority Change:</value>
         </textarea>
 
         <spinbox name="priority" from="base_spinbox">
-            <position>435,182</position>
+            <position>435,188</position>
         </spinbox>
 
         <textarea name="clauseslabel" from="ruleslabel">
-            <area>338,255,600,40</area>
+            <area>338,251,600,40</area>
             <value>Select a clause from the list.</value>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="clauses" from="base_selector">
-            <area>150,314,780,40</area>
+            <area>135,313,780,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,780,40</area>
@@ -1362,12 +1362,12 @@
         </buttonlist>
 
         <button name="add" from="base_button">
-            <area>990,317,150,35</area>
+            <area>975,313,170,40</area>
             <value>Add Clause</value>
         </button>
 
         <textedit name="description">
-            <area>80,380,1120,150</area>
+            <area>80,376,1120,150</area>
             <statetype name="background">
                 <state name="active">
                     <group name="select_bar" from="base_button_select_bar_active_group">
@@ -2551,14 +2551,14 @@
         </shape>
 
         <textarea name="ruleslabel" from="basetextarea">
-            <area>240,60,190,30</area>
+            <area>240,56,190,40</area>
             <font>basemedium</font>
-            <align>right</align>
+            <align>right,vcenter</align>
             <value>Existing Rules:</value>
         </textarea>
 
         <buttonlist name="rules" from="base_selector">
-            <area>440,58,580,40</area>
+            <area>440,56,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -2583,16 +2583,16 @@
         </buttonlist>
 
         <textarea name="titlelabel" from="ruleslabel">
-            <position>240,119</position>
+            <position>240,112</position>
             <value>Rule Name:</value>
         </textarea>
 
         <textedit name="title" from="base_textedit">
-            <area>440,116,580,32</area>
+            <area>440,112,580,40</area>
         </textedit>
 
         <buttonlist name="clauses" from="base_selector">
-            <area>250,164,780,40</area>
+            <area>250,168,780,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,780,40</area>
@@ -2617,17 +2617,17 @@
         </buttonlist>
 
         <group name="custom-record-rules-clausetext-select-bar" from="base_button_select_bar_active_group">
-            <area>50,220,1180,40</area>
+            <area>50,224,1180,40</area>
         </group>
 
         <textarea name="clausetext" from="ruleslabel">
-            <area>70,223,1140,34</area>
+            <area>70,224,1140,40</area>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textedit name="description">
-            <area>100,277,1080,150</area>
+            <area>100,280,1080,150</area>
             <statetype name="background">
                 <state name="active">
                     <group name="select_bar" from="base_button_select_bar_active_group">
@@ -2656,13 +2656,13 @@
         </textedit>
 
         <textarea name="subtitlelabel" from="ruleslabel">
-            <area>70,445,220,85</area>
+            <area>70,446,220,86</area>
             <value>Additional Tables:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="subtitle">
-            <area>300,445,880,85</area>
+            <area>300,446,880,86</area>
             <statetype name="background">
                 <state name="active">
                     <group name="select_bar" from="base_button_select_bar_active_group">
@@ -3916,70 +3916,70 @@
         </shape>
 
         <textarea name="inet" from="basetextarea">
-            <area>112,62,180,40</area>
+            <area>112,65,180,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>TMDB/TVDB #:</value>
         </textarea>
 
         <textedit name="inetref_edit" from="base_textedit">
-            <area>312,65,287,32</area>
+            <area>312,65,287,40</area>
         </textedit>
 
         <textarea name="seas" from="basetextarea">
-            <area>24,119,160,40</area>
+            <area>24,127,160,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season_spinbox" from="base_spinbox">
-            <position>204,119</position>
+            <position>204,127</position>
         </spinbox>
 
         <textarea name="ep" from="basetextarea">
-            <area>358,119,160,40</area>
+            <area>358,127,160,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode_spinbox" from="base_spinbox">
-            <position>538,119</position>
+            <position>538,127</position>
         </spinbox>
 
         <button name="query_button" from="base_button">
-            <area>188,181,350,40</area>
+            <area>188,189,350,40</area>
             <value>Perform Query</value>
         </button>
 
         <button name="online_coverart_button" from="base_button">
-            <area>188,258,350,40</area>
+            <area>188,262,350,40</area>
             <value>Find Coverart Online</value>
         </button>
 
         <button name="local_coverart_button" from="base_button">
-            <area>188,314,350,40</area>
+            <area>188,318,350,40</area>
             <value>Select Local Coverart</value>
         </button>
 
         <button name="online_fanart_button" from="base_button">
-            <area>188,370,350,40</area>
+            <area>188,374,350,40</area>
             <value>Find Fanart Online</value>
         </button>
 
         <button name="local_fanart_button" from="base_button">
-            <area>188,426,350,40</area>
+            <area>188,430,350,40</area>
             <value>Select Local Fanart</value>
         </button>
 
         <button name="online_banner_button" from="base_button">
-            <area>188,482,350,40</area>
+            <area>188,486,350,40</area>
             <value>Find Banners Online</value>
         </button>
 
         <button name="local_banner_button" from="base_button">
-            <area>188,538,350,40</area>
+            <area>188,542,350,40</area>
             <value>Select Local Banner</value>
         </button>
 

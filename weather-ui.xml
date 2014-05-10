@@ -1549,13 +1549,13 @@
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>394,130,180,78</area>
+            <area>328,149,180,40</area>
             <value>Enter Location:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="loc-edit" from="base_textedit">
-            <area>584,153,287,32</area>
+            <area>518,149,407,40</area>
         </textedit>
 
         <button name="searchbtn" from="base_button">

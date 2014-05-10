@@ -312,33 +312,33 @@
         </shape>
 
         <textarea name="commandlabel" from="basetextarea">
-            <area>240,111,210,30</area>
+            <area>240,106,210,40</area>
             <align>right,vcenter</align>
             <value>Browser Command:</value>
         </textarea>
 
         <textedit name="command" from="base_textedit">
-            <area>460,110,580,32</area>
+            <area>460,106,580,40</area>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
-            <area>240,233,210,30</area>
+            <area>240,232,210,40</area>
             <align>right,vcenter</align>
             <value>Text Size:</value>
         </textarea>
 
         <textedit name="zoom" from="base_textedit">
-            <area>460,232,580,32</area>
+            <area>460,232,580,40</area>
         </textedit>
 
         <textarea name="pluginlabel" from="basetextarea">
-            <area>240,355,210,30</area>
+            <area>240,359,210,30</area>
             <align>right,vcenter</align>
             <value>Enable Plugins:</value>
         </textarea>
 
         <checkbox name="enablepluginscheck" from="base_checkbox">
-            <position>460,357</position>
+            <position>460,361</position>
         </checkbox>
 
         <textarea name="description" from="basetextarea">
@@ -432,38 +432,38 @@
         </textarea>
 
         <textarea name="categorylabel" from="basetextarea">
-            <area>78,108,104,30</area>
+            <area>78,101,104,40</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <textedit name="category" from="base_textedit">
-            <area>192,107,287,32</area>
+            <area>192,101,287,40</area>
         </textedit>
 
         <button name="findcategory" from="base_button">
-            <area>586,107,150,35</area>
+            <area>586,101,150,40</area>
             <value>Find</value>
         </button>
 
         <textarea name="namelabel" from="basetextarea">
-            <area>50,208,100,30</area>
+            <area>50,203,100,40</area>
             <align>right,vcenter</align>
             <value>Name:</value>
         </textarea>
 
         <textedit name="name" from="base_textedit">
-            <area>160,207,580,32</area>
+            <area>160,203,580,40</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>50,308,100,30</area>
+            <area>50,305,100,40</area>
             <align>right,vcenter</align>
             <value>URL:</value>
         </textarea>
 
         <textedit name="url" from="base_textedit">
-            <area>160,307,580,32</area>
+            <area>160,305,580,40</area>
         </textedit>
 
         <button name="cancel" from="base_button">

@@ -285,39 +285,39 @@
         </shape>
 
         <textarea name="namelabel" from="basetextarea">
-            <area>295,125,100,30</area>
+            <area>295,109,100,40</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="name" from="base_textedit">
-            <area>405,126,580,32</area>
+            <area>405,109,580,40</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>295,226,100,30</area>
+            <area>295,219,100,40</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="url" from="base_textedit">
-            <area>405,226,580,32</area>
+            <area>405,219,580,40</area>
         </textedit>
 
         <textarea name="iconlabel" from="basetextarea">
-            <area>295,326,100,30</area>
+            <area>295,329,100,40</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="icon" from="base_textedit">
-            <area>405,326,580,32</area>
+            <area>405,329,580,40</area>
         </textedit>
 
         <textarea name="podcastlabel" from="basetextarea">
-            <area>295,422,100,30</area>
+            <area>295,439,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <checkbox name="podcast_check" from="base_checkbox">
-            <position>405,424</position>
+            <position>405,439</position>
         </checkbox>
 
         <button name="ok" from="base_button">

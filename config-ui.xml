@@ -62,23 +62,23 @@
         </shape>
 
         <textarea name="manuallabel" from="basetextarea">
-            <area>268,55,150,30</area>
+            <area>268,48,150,40</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Search Terms:</value>
         </textarea>
 
         <textedit name="manualsearch" from="base_textedit">
-            <area>430,56,577,32</area>
+            <area>430,48,577,40</area>
         </textedit>
 
         <button name="search" from="base_button">
-            <area>404,96,150,35</area>
+            <area>404,96,150,40</area>
             <value>Search</value>
         </button>
 
         <button name="skip" from="base_button">
-            <area>722,96,150,35</area>
+            <area>722,96,150,40</area>
             <value>Skip</value>
         </button>
 

@@ -2122,27 +2122,27 @@
         </shape>
 
         <textarea name="compilation_label" >
-            <area>164,66,250,32</area>
+            <area>164,62,250,30</area>
             <font>basemedium</font>
             <align>right,vcenter</align>
             <value>Compilation:</value>
         </textarea>
 
         <checkbox name="compilationcheck" from="base_checkbox">
-            <position>424,68</position>
+            <position>424,62</position>
         </checkbox>
 
         <textarea name="compilation_artist_label" from="compilation_label">
-            <area>144,123,250,32</area>
+            <area>144,112,250,40</area>
             <value>Comp. Artist:</value>
         </textarea>
 
         <textedit name="compartistedit" from="base_textedit">
-            <area>404,123,580,32</area>
+            <area>404,112,580,40</area>
         </textedit>
 
         <button name="searchcompartistbutton">
-            <area>994,123,32,32</area>
+            <area>994,116,32,32</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -2164,57 +2164,57 @@
         </button>
 
         <textarea name="artist_label" from="compilation_label">
-            <area>144,180,250,32</area>
+            <area>144,172,250,40</area>
             <value>Artist:</value>
         </textarea>
 
         <textedit name="artistedit" from="base_textedit">
-            <area>404,180,580,32</area>
+            <area>404,172,580,40</area>
         </textedit>
 
         <button name="searchartistbutton" from="searchcompartistbutton">
-            <position>994,180</position>
+            <position>994,176</position>
         </button>
 
         <textarea name="album_label" from="compilation_label">
-            <area>144,237,250,32</area>
+            <area>144,232,250,40</area>
             <value>Album:</value>
         </textarea>
 
         <textedit name="albumedit" from="base_textedit">
-            <area>404,237,580,32</area>
+            <area>404,232,580,40</area>
         </textedit>
 
         <button name="searchalbumbutton" from="searchcompartistbutton">
-            <position>994,237</position>
+            <position>994,236</position>
         </button>
 
         <textarea name="title_text" from="compilation_label">
-            <area>144,294,250,32</area>
+            <area>144,292,250,40</area>
             <value>Title:</value>
         </textarea>
 
         <textedit name="titleedit" from="base_textedit">
-            <area>404,294,580,32</area>
+            <area>404,292,580,40</area>
         </textedit>
 
         <textarea name="track_label" from="compilation_label">
-            <area>144,351,250,40</area>
+            <area>144,352,250,40</area>
             <value>Track No.:</value>
         </textarea>
 
         <spinbox name="tracknumspin" from="base_spinbox">
-            <position>404,351</position>
+            <position>404,352</position>
             <template type="zero">N/A</template>
         </spinbox>
 
         <textarea name="genre_label" from="compilation_label">
-            <area>144,416,250,32</area>
+            <area>144,412,250,40</area>
             <value>Genre:</value>
         </textarea>
 
         <textedit name="genreedit" from="base_textedit">
-            <area>404,416,580,32</area>
+            <area>404,412,580,40</area>
         </textedit>
 
         <button name="searchgenrebutton" from="searchcompartistbutton">
@@ -2222,26 +2222,26 @@
         </button>
 
         <textarea name="year_label" from="compilation_label">
-            <area>144,473,250,40</area>
+            <area>144,472,250,40</area>
             <value>Year:</value>
         </textarea>
 
         <spinbox name="yearspin" from="base_spinbox">
-            <position>404,473</position>
+            <position>404,472</position>
             <template type="zero">N/A</template>
         </spinbox>
 
         <textarea name="rating_label" from="compilation_label">
-            <area>144,538,250,40</area>
+            <area>144,537,250,40</area>
             <value>Rating:</value>
         </textarea>
 
         <statetype name="ratingstate" from="base_rating_state">
-            <position>481,548</position>
+            <position>481,547</position>
         </statetype>
 
         <button name="decratingbutton">
-            <area>435,533,50,50</area>
+            <area>435,532,50,50</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -2266,7 +2266,7 @@
         </button>
 
         <button name="incratingbutton">
-            <area>687,533,50,50</area>
+            <area>687,532,50,50</area>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -2892,12 +2892,13 @@
         </shape>
 
         <textarea name="location_label" from="basetextarea">
-            <area>280,60,170,30</area>
+            <area>280,54,170,40</area>
+            <align>left,vcenter</align>
             <value>Location:</value>
         </textarea>
 
         <textedit name="location" from="base_textedit">
-            <area>380,58,580,32</area>
+            <area>380,54,580,40</area>
         </textedit>
 
         <button name="directoryfinder" from="base_searchbutton">
@@ -2905,7 +2906,7 @@
         </button>
 
         <button name="scan" from="base_button">
-            <area>566,106,150,35</area>
+            <area>566,108,150,36</area>
             <value>Search</value>
         </button>
 

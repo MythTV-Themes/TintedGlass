@@ -858,27 +858,27 @@
         </shape>
 
         <textarea name="oldlabel" from="basetextarea">
-            <area>0,58,230,30</area>
+            <area>0,39,230,40</area>
             <align>right,vcenter</align>
             <value>Old Password:</value>
         </textarea>
 
         <textedit name="oldpassword" from="base_textedit">
-            <area>237,59,287,32</area>
+            <area>237,39,287,40</area>
         </textedit>
 
         <textarea name="newlabel" from="basetextarea">
-            <area>0,158,230,30</area>
+            <area>0,115,230,40</area>
             <align>right,vcenter</align>
             <value>New Password:</value>
         </textarea>
 
         <textedit name="newpassword" from="base_textedit">
-            <area>237,159,287,32</area>
+            <area>237,115,287,40</area>
         </textedit>
 
         <button name="ok" from="base_button">
-            <area>218,214,150,35</area>
+            <area>218,191,150,40</area>
             <value>OK</value>
         </button>
 
@@ -1429,14 +1429,14 @@
         </textarea>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>24,60,300,30</area>
+            <area>24,56,300,30</area>
             <font>basmesmall</font>
             <align>left,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="title" from="base_textedit">
-            <area>20,94,580,32</area>
+            <area>20,90,580,40</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="basetextarea">
@@ -1446,50 +1446,50 @@
         </textarea>
 
         <textedit name="subtitle" from="base_textedit">
-            <area>20,166,580,32</area>
+            <area>20,166,580,40</area>
         </textedit>
 
         <textarea name="descriptionlabel" from="basetextarea">
-            <area>24,204,300,30</area>
+            <area>24,208,300,30</area>
             <align>left,vcenter</align>
             <value>Description:</value>
         </textarea>
 
         <textedit name="description" from="base_textedit">
-            <area>20,238,580,32</area>
+            <area>20,242,580,40</area>
         </textedit>
 
         <textarea name="inetreflabel" from="basetextarea">
-            <area>114,306,86,40</area>
+            <area>114,317,86,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Inetref:</value>
         </textarea>
 
         <textedit name="inetref" from="base_textedit">
-            <area>219,310,287,32</area>
+            <area>219,317,287,40</area>
         </textedit>
 
         <textarea name="seaslabel" from="basetextarea">
-            <area>4,382,296,40</area>
+            <area>4,392,296,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season" from="base_spinbox">
-            <position>320,384</position>
+            <position>320,392</position>
         </spinbox>
 
         <textarea name="eplabel" from="basetextarea">
-            <area>4,462,296,40</area>
+            <area>4,467,296,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode" from="base_spinbox">
-            <position>320,464</position>
+            <position>320,467</position>
         </spinbox>
 
         <button name="ok" from="base_button">

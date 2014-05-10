@@ -59,33 +59,33 @@
         </shape>
 
         <textarea name="destination_label" from="basetextarea">
-            <area>128,67,430,32</area>
+            <area>128,83,430,40</area>
             <align>right,vcenter</align>
             <value>Destination:</value>
         </textarea>
 
         <buttonlist name="destination_selector" from="base_selector">
-            <area>578,67,300,32</area>
+            <area>578,83,300,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>304,-2</position>
+                <position>304,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>304,15</position>
+                <position>304,21</position>
             </statetype>
         </buttonlist>
 
@@ -98,49 +98,49 @@
         </textarea>
 
         <button name="find_button" from="base_button">
-            <area>408,140,150,35</area>
+            <area>408,166,150,40</area>
             <value>File...</value>
         </button>
 
         <textedit name="filename_edit" from="base_textedit">
-            <area>578,140,450,35</area>
+            <area>578,166,450,40</area>
         </textedit>
 
         <textarea name="freespace_label" from="destination_label">
-            <position>128,206</position>
+            <area>128,249,430,30</area>
             <value>Destination Free Space:</value>
         </textarea>
 
         <textarea name="freespace_text" from="basetextarea">
-            <area>578,206,200,32</area>
+            <area>578,249,200,30</area>
             <align>left,vcenter</align>
         </textarea>
 
         <textarea name="iso_label" from="destination_label">
-            <position>128,263</position>
+            <area>128,322,430,30</area>
             <value>Create ISO Image:</value>
         </textarea>
 
         <checkbox name="makeisoimage_check" from="base_checkbox">
-            <position>578,263</position>
+            <position>578,322</position>
         </checkbox>
 
         <textarea name="burntodvdr_text" from="destination_label">
-            <position>128,320</position>
+            <area>128,395,430,30</area>
             <value>Burn to DVD:</value>
         </textarea>
 
         <checkbox name="burntodvdr_check" from="base_checkbox">
-            <position>578,320</position>
+            <position>578,395</position>
         </checkbox>
 
         <textarea name="erasedvdrw_text" from="destination_label">
-            <position>128,377</position>
+            <area>128,468,430,30</area>
             <value>Overwrite DVD-RW Media:</value>
         </textarea>
 
         <checkbox name="erasedvdrw_check" from="base_checkbox">
-            <position>578,377</position>
+            <position>578,468</position>
         </checkbox>
 
         <button name="cancel_button" from="base_button">

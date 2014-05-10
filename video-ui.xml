@@ -2185,13 +2185,13 @@
         </shape>
 
         <textarea name="extension_text" from="basetextarea">
-            <area>245,107,185,40</area>
+            <area>245,106,185,40</area>
             <value>Extension:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <buttonlist name="extension_select" from="base_selector">
-            <area>435,107,580,40</area>
+            <area>435,106,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -2216,33 +2216,33 @@
         </buttonlist>
 
         <textarea name="command_text" from="basetextarea">
-            <area>238,216,192,40</area>
+            <area>238,213,192,40</area>
             <value>Player Command:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <textedit name="command" from="base_textedit">
-            <area>435,220,580,32</area>
+            <area>435,213,580,40</area>
         </textedit>
         
         <textarea name="default_text" from="basetextarea">
-            <area>560,324,280,40</area>
+            <area>560,320,280,30</area>
             <value>Use default player</value>
             <align>vcenter</align>
         </textarea>
 
         <checkbox name="default_check" from="base_checkbox">
-            <position>520,327</position>
+            <position>520,320</position>
         </checkbox>
         
         <textarea name="ignore_text" from="basetextarea">
-            <area>560,417,100,40</area>
+            <area>560,417,100,30</area>
             <value>Ignore:</value>
             <align>vcenter</align>
         </textarea>
 
         <checkbox name="ignore_check" from="base_checkbox">
-            <position>520,419</position>
+            <position>520,417</position>
         </checkbox>
         
         <button name="done_button" from="base_button">
@@ -2368,83 +2368,83 @@
         </imagetype>
         
         <textarea name="title_text" from="basetextarea">
-            <area>40,48,124,32</area>
+            <area>40,46,124,36</area>
             <value>Title:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <textedit name="title_edit" from="base_textedit">
-            <area>177,48,366,32</area>
+            <area>177,46,366,36</area>
         </textedit>
 
         <textarea name="subtitle_text" from="basetextarea">
-            <area>40,88,124,32</area>
+            <area>40,86,124,36</area>
             <value>Subtitle:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <area>177,88,366,32</area>
+            <area>177,86,366,36</area>
         </textedit>
 
         <textarea name="director_text" from="basetextarea">
-            <area>40,128,124,32</area>
+            <area>40,126,124,36</area>
             <value>Director:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="director_edit" from="base_textedit">
-            <area>177,128,366,32</area>
+            <area>177,126,366,36</area>
         </textedit>
 
         <textarea name="tagline_text" from="basetextarea">
-            <area>40,168,124,32</area>
+            <area>40,166,124,36</area>
             <value>Tagline:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="tagline_edit" from="base_textedit">
-            <area>177,168,885,32</area>
+            <area>177,166,885,36</area>
         </textedit>
 
         <textarea name="homepage_text_label" from="basetextarea">
-            <area>40,208,124,32</area>
+            <area>40,206,124,36</area>
             <value>Homepage:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="homepage_edit" from="base_textedit">
-            <area>177,208,885,32</area>
+            <area>177,206,885,36</area>
         </textedit>
 
         <textarea name="player_text" from="basetextarea">
-            <area>40,248,124,32</area>
+            <area>40,246,124,36</area>
             <align>right,vcenter</align>
             <value>Player:</value>
         </textarea>
 
         <textedit name="player_edit" from="base_textedit">
-            <area>177,248,885,32</area>
+            <area>177,246,885,36</area>
         </textedit>
 
         <textarea name="rating_text" from="basetextarea">
-            <area>556,48,124,32</area>
+            <area>556,46,124,36</area>
             <value>Rating:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="rating_edit" from="base_textedit">
-            <area>696,48,366,32</area>
+            <area>696,46,366,36</area>
         </textedit>
 
         <textarea name="inetref_text" from="basetextarea">
-            <area>556,88,124,32</area>
+            <area>556,86,124,36</area>
             <value>TMDB:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="inetref_edit" from="base_textedit">
-            <area>696,88,366,32</area>
+            <area>696,86,366,36</area>
         </textedit>
 
         <textarea name="season_text" from="basetextarea">
@@ -2804,7 +2804,8 @@
         </textarea>
 
         <textarea name="filter_text" from="category_text">
-            <area>10,395,300,40</area>
+            <area>10,390,300,40</area>
+            <align>right,vcenter</align>
             <value>Text Filter :</value>
         </textarea>
 
@@ -2880,7 +2881,7 @@
         </buttonlist>
         
         <textedit name="textfilter_input" from="base_textedit">
-            <area>320,394,287,32</area>
+            <area>320,390,287,40</area>
         </textedit>
 
         <textarea name="numvideos_text" from="basetextarea">
@@ -2890,12 +2891,12 @@
         </textarea>
         
         <button name="done_button" from="base_button">
-            <area>425,567,150,35</area>
+            <area>425,564,150,40</area>
             <value>Done</value>
         </button>
         
         <button name="save_button" from="base_button">
-            <area>225,567,150,35</area>
+            <area>225,564,150,40</area>
             <value>Save</value>
         </button>
         
@@ -3212,94 +3213,94 @@
         </shape>
 
         <textarea name="default_text" from="basetextarea">
-            <area>242,71,190,30</area>
-            <align>right</align>
+            <area>242,68,190,40</area>
+            <align>right,vcenter</align>
             <value>Default Player:</value>
         </textarea>
 
         <textedit name="defaultplayer" from="base_textedit">
-            <area>442,69,580,32</area>
+            <area>442,68,580,40</area>
         </textedit>
 
         <textarea name="dvd_text" from="basetextarea">
-            <area>242,141,190,30</area>
-            <align>right</align>
+            <area>242,137,190,40</area>
+            <align>right,vcenter</align>
             <value>DVD Player:</value>
         </textarea>
 
         <textedit name="dvdplayer" from="base_textedit">
-            <area>442,139,580,32</area>
+            <area>442,137,580,40</area>
         </textedit>
 
         <textarea name="dvddrive_text" from="basetextarea">
-            <area>242,211,190,30</area>
-            <align>right</align>
+            <area>242,206,190,40</area>
+            <align>right,vcenter</align>
             <value>DVD Drive:</value>
         </textarea>
 
         <textedit name="dvddrive" from="base_textedit">
-            <area>442,209,580,32</area>
+            <area>442,206,580,40</area>
         </textedit>
 
         <textarea name="bluraymount_text" from="basetextarea">
-            <area>242,281,190,30</area>
-            <align>right</align>
+            <area>242,275,190,40</area>
+            <align>right,vcenter</align>
             <value>Blu-ray Mount:</value>
         </textarea>
 
         <textedit name="bluraymount" from="base_textedit">
-            <area>442,279,580,32</area>
+            <area>442,275,580,40</area>
         </textedit>
 
         <textarea name="blureg_text" from="basetextarea">
-            <area>242,351,190,30</area>
-            <align>right</align>
+            <area>242,344,190,40</area>
+            <align>right,vcenter</align>
             <value>Blu-ray Region:</value>
         </textarea>
 
         <buttonlist name="blurayregionlist" from="base_selector">
-            <area>442,350,580,30</area>
+            <area>442,344,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,580,30</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,550,30</area>
+                        <area>15,0,550,40</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,580,30</area>
+                    <area>0,0,580,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,550,30</area>
+                        <area>15,0,550,40</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>584,-3</position>
+                <position>584,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>584,16</position>
+                <position>584,21</position>
             </statetype>
         </buttonlist>
 
         <checkbox name="altcheck" from="base_checkbox">
-            <position>750,419</position>
+            <position>750,413</position>
         </checkbox>
 
         <textarea name="altcheck_text" from="basetextarea">
-            <area>475,421,265,30</area>
-            <align>right</align>
+            <area>475,413,265,30</area>
+            <align>right,vcenter</align>
             <value>Enable Alternate Player:</value>
         </textarea>
 
         <textarea name="alt_text" from="basetextarea">
-            <area>242,481,190,30</area>
-            <align>right</align>
+            <area>242,472,190,40</area>
+            <align>right,vcenter</align>
             <value>Alternate Player:</value>
         </textarea>
 
         <textedit name="altplayer" from="base_textedit">
-            <area>442,479,580,32</area>
+            <area>442,472,580,40</area>
         </textedit>
 
         <textarea name="helptext" from="basetextarea">

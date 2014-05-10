@@ -157,14 +157,14 @@
         </shape>
 
         <textarea name="searchlab" from="basetextarea">
-            <area>270,46,144,48</area>
+            <area>270,50,144,40</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <value>Search Term:</value>
         </textarea>
 
         <textedit name="search" from="base_textedit">
-            <area>430,54,580,32</area>
+            <area>430,50,580,40</area>
         </textedit>
 
         <buttonlist name="sites" from="base_list">
@@ -643,62 +643,62 @@
         </shape>
 
         <textarea name="title-label" from="basetextarea">
-            <area>242,74,190,30</area>
-            <align>right</align>
+            <area>242,78,190,40</area>
+            <align>right,vcenter</align>
             <value>Feed Name:</value>
         </textarea>
 
         <textedit name="title" from="base_textedit">
-            <area>442,72,580,32</area>
+            <area>442,78,580,40</area>
         </textedit>
 
         <textarea name="url-label" from="basetextarea">
-            <area>242,149,190,30</area>
-            <align>right</align>
+            <area>242,157,190,40</area>
+            <align>right,vcenter</align>
             <value>Feed URL:</value>
         </textarea>
 
         <textedit name="url" from="base_textedit">
-            <area>442,147,580,32</area>
+            <area>442,157,580,40</area>
         </textedit>
 
         <textarea name="desc-label" from="basetextarea">
-            <area>242,220,190,30</area>
-            <align>right</align>
+            <area>242,236,190,40</area>
+            <align>right,vcenter</align>
             <value>Site Description:</value>
         </textarea>
 
         <textedit name="description" from="base_textedit">
-            <area>442,218,580,32</area>
+            <area>442,236,580,40</area>
         </textedit>
 
         <textarea name="author-label" from="basetextarea">
-            <area>242,291,190,30</area>
-            <align>right</align>
+            <area>242,315,190,40</area>
+            <align>right,vcenter</align>
             <value>Feed Author:</value>
         </textarea>
 
         <textedit name="author" from="base_textedit">
-            <area>442,289,580,32</area>
+            <area>442,315,580,40</area>
         </textedit>
 
         <textarea name="download-label" from="basetextarea">
-            <area>425,384,365,30</area>
-            <align>right</align>
+            <area>425,394,365,30</area>
+            <align>right,vcenter</align>
             <value>Download this feed automatically:</value>
         </textarea>
 
         <checkbox name="download" from="base_checkbox">
-            <position>800,382</position>
+            <position>800,394</position>
         </checkbox>
 
         <button name="preview_browse" from="base_button">
-            <area>465,470,350,40</area>
+            <area>465,463,350,40</area>
             <value>Choose Image</value>
         </button>
 
         <imagetype name="preview">
-            <area>890,424,90,90</area>
+            <area>862,417,152,114</area>
         </imagetype>
 
         <button name="ok" from="base_button">

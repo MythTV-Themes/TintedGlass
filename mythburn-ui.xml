@@ -189,33 +189,33 @@ MythArchive GUI theme
         </shape>
 
         <textarea name="themetitle" from="basetextarea">
-            <area>208,67,300,32</area>
+            <area>208,67,300,40</area>
             <align>right,vcenter</align>
             <value>Theme:</value>
         </textarea>
 
         <buttonlist name="theme_selector" from="base_selector">
-            <area>528,67,300,32</area>
+            <area>528,67,300,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,300,32</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,32</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>304,-2</position>
+                <position>304,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>304,15</position>
+                <position>304,21</position>
             </statetype>
         </buttonlist>
 
@@ -529,7 +529,7 @@ MythArchive GUI theme
             <font>basesmallred</font>
         </textarea>
 
-        <button name="cancel_button" from="basebutton">
+        <button name="cancel_button" from="base_button">
             <area>138,631,200,40</area>
             <value>Cancel</value>
         </button>
@@ -609,57 +609,57 @@ MythArchive GUI theme
         </textarea>
 
         <textarea name="title_label" from="basetextarea">
-            <area>19,100,124,32</area>
+            <area>19,82,124,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textarea name="subtitle_label" from="title_label">
-            <area>19,164,124,32</area>
+            <area>19,153,124,40</area>
             <value>Subtitle:</value>
         </textarea>
 
         <textarea name="startdate_label" from="title_label">
-            <area>19,228,124,32</area>
+            <area>19,224,124,40</area>
             <value>Start Date:</value>
         </textarea>
 
         <textarea name="starttime_label" from="title_label">
-            <area>19,292,124,32</area>
+            <area>19,295,124,40</area>
             <value>Time:</value>
         </textarea>
 
         <textarea name="description_label" from="title_label">
-            <area>19,356,124,32</area>
+            <area>19,366,124,40</area>
             <value>Description:</value>
         </textarea>
 
         <textedit name="title_edit" from="base_textedit">
-            <area>160,100,419,32</area>
+            <area>160,82,419,40</area>
         </textedit>
 
         <textedit name="subtitle_edit" from="base_textedit">
-            <area>160,164,419,32</area>
+            <area>160,153,419,40</area>
         </textedit>
 
         <textedit name="startdate_edit" from="base_textedit">
-            <area>160,228,419,32</area>
+            <area>160,224,419,40</area>
         </textedit>
 
         <textedit name="starttime_edit" from="base_textedit">
-            <area>160,292,419,32</area>
+            <area>160,295,419,40</area>
         </textedit>
 
         <textedit name="description_edit" from="base_textedit">
-            <area>160,356,419,32</area>
+            <area>160,366,419,40</area>
         </textedit>
 
         <button name="cancel_button" from="base_button">
             <area>63,441,200,40</area>
             <value>Cancel</value>
         </button>
-        <button name="ok_button" from="base_button">
+        <button name="ok_button"	 from="base_button">
             <area>325,441,200,40</area>
             <value>OK</value>
         </button>

@@ -272,23 +272,23 @@
         </shape>
 
         <textarea name="filter_text" from="basetextarea">
-            <area>242,109,190,32</area>
+            <area>242,109,190,40</area>
             <align>right,vcenter</align>
             <value>Directory filter:</value>
         </textarea>
 
         <textedit name="dirfilter_text" from="base_textedit">
-            <area>442,109,580,32</area>
+            <area>442,109,580,40</area>
         </textedit>
 
         <textarea name="type_filter" from="basetextarea">
-            <area>242,211,190,40</area>
+            <area>242,217,190,40</area>
             <align>right,vcenter</align>
             <value>Type filter:</value>
         </textarea>
 
         <buttonlist name="typefilter_select" from="base_selector">
-            <area>442,211,580,40</area>
+            <area>442,217,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -313,13 +313,13 @@
         </buttonlist>
 
         <textarea name="sort_text" from="basetextarea">
-            <area>242,321,190,40</area>
+            <area>242,325,190,40</area>
             <align>right,vcenter</align>
             <value>Sort by :</value>
         </textarea>
 
         <buttonlist name="sort_select" from="base_selector">
-            <area>442,321,580,40</area>
+            <area>442,325,580,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,580,40</area>
@@ -344,7 +344,7 @@
         </buttonlist>
 
         <button name="check_button" from="base_button">
-            <area>465,431,350,40</area>
+            <area>465,433,350,40</area>
             <value>Check Filter</value>
         </button>
 
