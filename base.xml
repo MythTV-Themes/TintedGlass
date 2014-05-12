@@ -1274,6 +1274,120 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base keyboard select bar active -->
+    <group name="base_keyboard_select_bar_active_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#1a1a1a" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>0</cornerradius>
+        </shape>
+    </group>
+
+    <!-- Base group definition for base keyboard select bar selected -->
+    <group name="base_keyboard_select_bar_selected_group">
+        <shape name="select_bar_top_highlight">
+            <area>0,1,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,100%-3,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_left_highlight">
+            <area>1,0,2,100%</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_right_highlight">
+            <area>100%-3,0,2,100%</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
+    <!-- Base group definition for base keyboard select bar pushed -->
+    <group name="base_keyboard_select_bar_pushed_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#aaaaaa" alpha="200"/>
+            <line color="#000000" alpha="140" width="2" />
+            <cornerradius>0</cornerradius>
+        </shape>
+        <shape name="select_bar_top_highlight">
+            <area>0,1,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_bottom_highlight">
+            <area>0,100%-3,100%,2</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="horizontal" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#d6d6d6"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_left_highlight">
+            <area>1,0,2,100%</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+        <shape name="select_bar_right_highlight">
+            <area>100%-3,0,2,100%</area>
+            <type>box</type>
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#000000"/>
+                    <stop position="50" color="#3a9aff"/>
+                    <stop position="100" color="#000000"/>
+                </gradient>
+            </fill>
+        </shape>
+    </group>
+
     <!-- Base definition of a button list -->
     <buttonlist name="base_button_list">
         <layout>vertical</layout>

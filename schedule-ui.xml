@@ -2649,7 +2649,7 @@
                 <filename>images/cursor.png</filename>
             </imagetype>
             <textarea name="text">
-                <area>10,10,1060,130</area>
+                <area>7,6,1066,100%</area>
                 <font>basesmall</font>
                 <multiline>yes</multiline>
             </textarea>

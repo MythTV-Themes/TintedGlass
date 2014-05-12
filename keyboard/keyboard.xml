@@ -53,11 +53,9 @@
             <position>13,13</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,35,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
-
+                    </group>
                     <textarea name="text">
                         <area>0,0,35,35</area>
                         <align>allcenter</align>
@@ -67,19 +65,23 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <area>0,0,35,35</area>
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,35,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <area>0,0,35,35</area>
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,35,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,35,35</area>
+                        <align>allcenter</align>
+                        <font>basemediumblack</font>
+                        <font state="selected">basemediumblack</font>
+                        <font state="disabled">basemediumgrey</font>
                     </textarea>
                 </state>
             </statetype>
@@ -238,10 +240,9 @@
             <position>173,161</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,103,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,158,35</area>
                         <align>allcenter</align>
@@ -251,19 +252,21 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,103,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,103,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,158,35</area>
+                        <align>allcenter</align>
+                        <font>basemediumblack</font>
+                        <font state="selected">basemediumblack</font>
+                        <font state="disabled">basemediumgrey</font>
                     </textarea>
                 </state>
             </statetype>
@@ -274,10 +277,9 @@
             <position>13,161</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,78,35</area>
                         <align>allcenter</align>
@@ -291,35 +293,37 @@
                     </imagetype>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
-                        <position>26,6</position>
-                        <filename>keyboard/shiftarrow.png</filename>
+                        <position>24,4</position>
+                        <filename>keyboard/shiftarrow_inverted.png</filename>
                     </imagetype>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_lock">
             <position>93,161</position>
                 <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,78,35</area>
                         <align>allcenter</align>
@@ -329,31 +333,33 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_moveleft">
             <position>358,161</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
                         <position>6,12</position>
                         <filename>keyboard/leftarrow.png</filename>
@@ -367,36 +373,40 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
-                        <position>6,12</position>
-                        <filename>keyboard/leftarrow.png</filename>
+                        <position>5,11</position>
+                        <filename>keyboard/leftarrow_inverted.png</filename>
                     </imagetype>
-
+                    <textarea name="text">
+                        <area>-1,-1,53,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
+                    </textarea>
                     <textarea name="text">
                         <position>1,1</position>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_moveright">
             <position>413,161</position>
                 <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
                         <position>6,12</position>
                         <filename>keyboard/rightarrow.png</filename>
@@ -410,36 +420,37 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,53,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
-                        <position>6,12</position>
-                        <filename>keyboard/rightarrow.png</filename>
+                        <position>5,11</position>
+                        <filename>keyboard/rightarrow_inverted.png</filename>
                     </imagetype>
-
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,53,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_rshift">
             <position>468,161</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
                         <position>22,5</position>
                         <filename>keyboard/shiftarrow.png</filename>
@@ -453,35 +464,37 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
-                        <position>24,6</position>
-                        <filename>keyboard/shiftarrow.png</filename>
+                        <position>21,4</position>
+                        <filename>keyboard/shiftarrow_inverted.png</filename>
                     </imagetype>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,72,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_back">
             <position>468,50</position>
                     <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,72,35</area>
                         <align>allcenter</align>
@@ -491,34 +504,37 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,72,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,72,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_comp" from="key_back">
             <position>420,124</position>
         </button>
+
         <button name="key_del">
             <position>494,124</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,46,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,47,35</area>
                         <align>allcenter</align>
@@ -528,31 +544,33 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,46,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,46,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,47,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_done">
             <position>443,87</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,97,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
                         <position>23,10</position>
                         <filename>keyboard/returnarrow.png</filename>
@@ -566,35 +584,37 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,97,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,97,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <imagetype name="arrow">
-                        <position>24,11</position>
-                        <filename>keyboard/returnarrow.png</filename>
+                        <position>22,9</position>
+                        <filename>keyboard/returnarrow_inverted.png</filename>
                     </imagetype>
                     <textarea name="text">
-                        <position>8,8</position>
+                        <area>-1,-1,97,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
         </button>
+
         <button name="key_alt">
             <position>278,161</position>
             <statetype name="buttonstate">
                 <state name="active">
-                    <shape name="background" from="base_button_background_active">
+                    <group name="select_bar" from="base_keyboard_select_bar_active_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
                         <area>0,0,78,35</area>
                         <align>allcenter</align>
@@ -604,19 +624,21 @@
                     </textarea>
                 </state>
                 <state name="selected" from="active">
-                    <shape name="background" from="base_button_background_selected">
+                    <group name="select_bar" from="base_keyboard_select_bar_selected_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                 </state>
                 <state name="disabled" from="active" />
-                <state name="pushed" from="active">
-                    <shape name="background" from="base_button_background_pushed">
+                <state name="pushed">
+                    <group name="select_bar" from="base_keyboard_select_bar_pushed_group">
                         <area>0,0,78,35</area>
-                        <cornerradius>0</cornerradius>
-                    </shape>
+                    </group>
                     <textarea name="text">
-                        <position>1,1</position>
+                        <area>-1,-1,78,35</area>
+                        <align>allcenter</align>
+                        <font>basesmallblack</font>
+                        <font state="selected">basesmallblack</font>
+                        <font state="disabled">basesmallgrey</font>
                     </textarea>
                 </state>
             </statetype>
