@@ -723,32 +723,32 @@
         </textarea>
 
         <textarea name="hourlabel" from="basetextarea">
-            <area>539,430,100,24</area>
+            <area>537,430,100,24</area>
             <font>basesmall</font>
             <value>Hour:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <spinbox name="starthour" from="base_spinbox">
-            <position>649,424</position>
+            <position>647,424</position>
         </spinbox>
 
         <textarea name="minutelabel" from="hourlabel">
-            <position>539,492</position>
+            <position>537,492</position>
             <value>Minute:</value>
         </textarea>
 
         <spinbox name="startminute" from="base_spinbox">
-            <position>649,486</position>
+            <position>647,486</position>
         </spinbox>
 
         <textarea name="durationlabel" from="hourlabel">
-            <position>539,554</position>
+            <position>537,554</position>
             <value>Duration:</value>
         </textarea>
 
         <spinbox name="duration" from="base_spinbox">
-            <position>649,548</position>
+            <position>647,548</position>
         </spinbox>
 
         <button name="cancel" from="base_button">
@@ -1283,7 +1283,7 @@
         <textarea name="ruleslabel" from="basetextarea">
             <area>235,62,190,40</area>
             <font>basemedium</font>
-            <align>right</align>
+            <align>right,vcenter</align>
             <value>Existing Rules:</value>
         </textarea>
 
@@ -3927,25 +3927,25 @@
         </textedit>
 
         <textarea name="seas" from="basetextarea">
-            <area>24,127,160,40</area>
+            <area>24,127,158,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season_spinbox" from="base_spinbox">
-            <position>204,127</position>
+            <position>202,127</position>
         </spinbox>
 
         <textarea name="ep" from="basetextarea">
-            <area>358,127,160,40</area>
+            <area>358,127,158,40</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode_spinbox" from="base_spinbox">
-            <position>538,127</position>
+            <position>536,127</position>
         </spinbox>
 
         <button name="query_button" from="base_button">

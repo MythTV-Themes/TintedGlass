@@ -2448,63 +2448,63 @@
         </textedit>
 
         <textarea name="season_text" from="basetextarea">
-            <area>48,334,132,40</area>
+            <area>48,327,132,40</area>
             <value>Season:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <spinbox name="season" from="base_spinbox">
-            <position>188,334</position>
+            <position>188,327</position>
         </spinbox>
 
         <textarea name="episode_text" from="basetextarea">
-            <area>48,374,132,40</area>
+            <area>48,369,132,40</area>
             <value>Episode:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <spinbox name="episode" from="base_spinbox">
-            <position>188,374</position>
+            <position>188,369</position>
         </spinbox>
 
         <textarea name="year_text" from="basetextarea">
-            <area>48,414,132,40</area>
+            <area>48,411,132,40</area>
             <align>right,vcenter</align>
             <value>Year:</value>
         </textarea>
         
         <spinbox name="year_spin" from="base_spinbox">
-            <position>188,414</position>
+            <position>188,411</position>
         </spinbox>
 
         <textarea name="userrating_text" from="basetextarea">
-            <area>48,454,132,40</area>
+            <area>48,453,132,40</area>
             <align>right,vcenter</align>
             <value>User Rating:</value>
         </textarea>
         
         <spinbox name="userrating_spin" from="base_spinbox">
-            <position>188,454</position>
+            <position>188,453</position>
         </spinbox>
 
         <textarea name="length_text" from="basetextarea">
-            <area>48,494,132,40</area>
+            <area>48,495,132,40</area>
             <align>right,vcenter</align>
             <value>Length:</value>
         </textarea>
 
         <spinbox name="length_spin" from="base_spinbox">
-            <position>188,494</position>
+            <position>188,495</position>
         </spinbox>
         
         <textarea name="parent_text" from="basetextarea">
-            <area>48,534,132,40</area>
+            <area>48,537,132,40</area>
             <align>right,vcenter</align>
             <value>Parental Lvl:</value>
         </textarea>
         
         <buttonlist name="level_select" from="base_selector">
-            <area>188,534,200,40</area>
+            <area>188,537,200,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,200,40</area>
@@ -2529,77 +2529,77 @@
         </buttonlist>
 
         <textarea name="category_text" from="basetextarea">
-            <area>48,574,132,40</area>
+            <area>48,579,132,40</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <buttonlist name="category_select" from="level_select">
-            <area>188,574,200,40</area>
+            <area>188,579,200,40</area>
         </buttonlist>
 
         <textarea name="child_text" from="basetextarea">
-            <area>48,614,132,40</area>
+            <area>48,621,132,40</area>
             <align>right,vcenter</align>
             <value>Next File:</value>
         </textarea>
 
         <buttonlist name="child_select" from="level_select">
-            <area>188,614,200,40</area>
+            <area>188,621,200,40</area>
         </buttonlist>
 
         <textarea name="coverart_text_label" from="basetextarea">
-            <area>452,334,130,40</area>
+            <area>452,325,130,40</area>
             <value>Cover Art:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <button name="coverart_button" from="base_searchbutton">
-            <area>594,339,30,30</area>
+            <area>594,330,30,30</area>
         </button>
 
         <textarea name="coverart_text" from="basetextarea">
-            <area>636,334,416,40</area>
+            <area>636,325,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
         </textarea>
 
         <button name="net_coverart_button" from="base_button">
-            <area>1084,337,150,35</area>
+            <area>1084,327,150,36</area>
             <value>Find OnNet</value>
         </button>
 
         <textarea name="banner_text_label" from="basetextarea">
-            <area>452,381,130,40</area>
+            <area>452,375,130,40</area>
             <value>Banner:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <button name="banner_button" from="base_searchbutton">
-            <area>594,386,30,30</area>
+            <area>594,380,30,30</area>
         </button>
 
         <textarea name="banner_text" from="basetextarea">
-            <area>636,381,416,40</area>
+            <area>636,375,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
         </textarea>
 
         <button name="net_banner_button" from="base_button">
-            <area>1084,384,150,35</area>
+            <area>1084,377,150,36</area>
             <value>Find OnNet</value>
         </button>
         
         <textarea name="browse_text" from="basetextarea">
-            <area>452,428,130,40</area>
+            <area>452,425,130,40</area>
             <value>Browseable:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <checkbox name="browse_check" from="base_checkbox">
-            <position>594,433</position>
+            <position>594,430</position>
         </checkbox>
 
         <textarea name="fanart_text_label" from="basetextarea">
@@ -2620,61 +2620,61 @@
         </textarea>
 
         <button name="net_fanart_button" from="base_button">
-            <area>1084,477,150,35</area>
+            <area>1084,477,150,36</area>
             <value>Find OnNet</value>
         </button>
 
         <textarea name="screenshot_text_label" from="basetextarea">
-            <area>452,522,130,40</area>
+            <area>452,525,130,40</area>
             <value>Screenshot:</value>
             <align>right,vcenter</align>
         </textarea>
         
         <button name="screenshot_button" from="base_searchbutton">
-            <area>594,527,30,30</area>
+            <area>594,530,30,30</area>
         </button>
 
         <textarea name="screenshot_text" from="basetextarea">
-            <area>636,522,416,40</area>
+            <area>636,525,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
         </textarea>
         
         <button name="net_screenshot_button" from="base_button">
-            <area>1084,525,150,35</area>
+            <area>1084,527,150,36</area>
             <value>Find OnNet</value>
         </button>
 
         <textarea name="trailer_text_label" from="basetextarea">
-            <area>452,569,130,40</area>
+            <area>452,575,130,40</area>
             <value>Trailer:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <button name="trailer_button" from="base_searchbutton">
-            <area>594,574,30,30</area>
+            <area>594,580,30,30</area>
         </button>
         
         <textarea name="trailer_text" from="basetextarea">
-            <area>636,569,416,40</area>
+            <area>636,575,416,40</area>
             <font>basesmaller</font>
             <value>/path/to/the/thing.jpg</value>
             <align>vcenter</align>
         </textarea>
 
         <textarea name="watched_text" from="basetextarea">
-            <area>452,616,130,40</area>
+            <area>452,623,130,40</area>
             <value>Watched:</value>
             <align>right,vcenter</align>
         </textarea>
 
         <checkbox name="watched_check" from="base_checkbox">
-            <position>594,621</position>
+            <position>594,628</position>
         </checkbox>
 
         <button name="done_button" from="base_button">
-            <area>1084,616,150,35</area>
+            <area>1084,625,150,36</area>
             <value>Done</value>
         </button>
 

@@ -894,10 +894,10 @@
     <!-- Base group definition for base spinbox select bar selectedactive -->
     <group name="base_spinbox_select_bar_selectedactive_group">
         <shape name="select_bar">
-            <area>0,0,100%,100%</area>
+            <area>-1,-1,100%+1,100%+1</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140"/>
-            <cornerradius>0</cornerradius>
+            <cornerradius>5</cornerradius>
         </shape>
         <shape name="select_bar_top_highlight">
             <area>0,0,100%,2</area>
@@ -987,10 +987,10 @@
     <!-- Base group definition for base selector select bar selectedactive -->
     <group name="base_selector_select_bar_selectedactive_group">
         <shape name="select_bar">
-            <area>0,0,100%,100%</area>
+            <area>-1,-1,100%+1,100%+1</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140"/>
-            <cornerradius>0</cornerradius>
+            <cornerradius>5</cornerradius>
         </shape>
         <shape name="select_bar_top_highlight">
             <area>0,0,100%,2</area>
@@ -1080,10 +1080,10 @@
     <!-- Base group definition for base textedit select bar selectedactive -->
     <group name="base_textedit_select_bar_selectedactive_group">
         <shape name="select_bar">
-            <area>0,0,100%,100%</area>
+            <area>-1,-1,100%+1,100%+1</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140"/>
-            <cornerradius>0</cornerradius>
+            <cornerradius>5</cornerradius>
         </shape>
         <shape name="select_bar_top_highlight">
             <area>0,0,100%,2</area>
@@ -1149,10 +1149,10 @@
     <!-- Base group definition for base button select bar selected -->
     <group name="base_button_select_bar_selected_group">
         <shape name="select_bar">
-            <area>0,0,100%,100%</area>
+            <area>-1,-1,100%+1,100%+1</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="140"/>
-            <cornerradius>0</cornerradius>
+            <cornerradius>5</cornerradius>
         </shape>
         <shape name="select_bar_top_highlight">
             <area>0,0,100%,2</area>
@@ -1220,9 +1220,9 @@
         <shape name="select_bar">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#aaaaaa" alpha="200"/>
+            <fill color="#aaaaaa" alpha="255"/>
             <line color="#000000" alpha="140" width="2" />
-            <cornerradius>0</cornerradius>
+            <cornerradius>5</cornerradius>
         </shape>
         <shape name="select_bar_top_highlight">
             <area>0,0,100%,2</area>
@@ -1729,7 +1729,7 @@
                     <area>0,0,100%,100%</area>
                 </group>
                 <textarea name="text">
-                    <area>15,1,100%-15,100%</area>
+                    <area>14,0,100%-15,100%</area>
                     <align>allcenter</align>
                     <font>basemediumblack</font>
                     <font state="selected">basemedium</font>
@@ -1898,7 +1898,7 @@
             <state name="selectedinactive" from="active" />
         </statetype>
         <statetype name="downscrollarrow">
-            <position>100%,2</position>
+            <position>100%+4,2</position>
             <state type="off">
                 <imagetype name="dnoff">
                     <filename>images/lb-rtarrow-reg.png</filename>
@@ -1911,7 +1911,7 @@
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>100%,21</position>
+            <position>100%+4,21</position>
             <state type="off">
                 <imagetype name="upoff">
                     <filename>images/lb-ltarrow-reg.png</filename>

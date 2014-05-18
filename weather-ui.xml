@@ -1085,13 +1085,13 @@
         </checkbox>
 
         <textarea name="timeout_text" from="basetextarea">
-            <area>420,351,340,60</area>
+            <area>418,351,340,60</area>
             <align>right,vcenter</align>
             <value>Seconds to display each page:</value>
         </textarea>
 
         <spinbox name="timeout_spinbox" from="base_spinbox">
-            <position>770,362</position>
+            <position>768,362</position>
         </spinbox>
 
         <button name="finishbutton" from="base_button">
@@ -1415,25 +1415,25 @@
         </buttonlist>
 
         <textarea name="updatetxt" from="basetextarea">
-            <area>684,154,310,40</area>
+            <area>682,154,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
         <textarea name="retrievetxt" from="basetextarea">
-            <area>684,308,310,40</area>
+            <area>682,308,310,40</area>
             <font>basesmaller</font>
             <align>left,vcenter</align>
             <value>Source Update Timeout (seconds):</value>
         </textarea>
 
         <spinbox name="update_spinbox" from="base_spinbox">
-            <position>1004,154</position>
+            <position>1002,154</position>
         </spinbox>
 
         <spinbox name="retrieve_spinbox" from="base_spinbox">
-            <position>1004,308</position>
+            <position>1002,308</position>
         </spinbox>
 
         <textarea name="srcinfo" from="basetextarea">
