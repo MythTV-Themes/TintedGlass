@@ -1055,11 +1055,11 @@
         </textarea>
 
         <shape name="smart-playlist-editor-top-backdrop" from="base_backdrop">
-            <area>115,36,1050,207</area>
+            <area>115,36,1050,181</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-backdrop-line" from="base_backdrop_line">
-            <area>116,37,1048,205</area>
+            <area>116,37,1048,179</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-top-line" from="base_highlight_line">
@@ -1067,27 +1067,27 @@
         </shape>
 
         <shape name="smart-playlist-editor-top-bottom-line" from="base_highlight_line">
-            <area>117,239,1046,2</area>
+            <area>117,213,1046,2</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-left-line" from="base_highlight_vertical_line">
-            <area>117,40,2,206</area>
+            <area>117,40,2,173</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-right-line" from="base_highlight_vertical_line">
-            <area>1161,40,2,206</area>
+            <area>1161,40,2,173</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-backdrop" from="base_backdrop">
-            <area>115,253,1050,214</area>
+            <area>115,227,1050,240</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-backdrop-line" from="base_backdrop_line">
-            <area>116,254,1048,212</area>
+            <area>116,228,1048,238</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-top-line" from="base_highlight_line">
-            <area>117,255,1046,2</area>
+            <area>117,229,1046,2</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-bottom-line" from="base_highlight_line">
@@ -1103,7 +1103,11 @@
         </shape>
 
         <shape name="smart-playlist-editor-middle-seperator-first-line" from="base_line">
-            <area>130,295,1020,2</area>
+            <area>130,277,1020,2</area>
+        </shape>
+
+        <shape name="smart-playlist-editor-middle-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1112,466,50,12</area>
         </shape>
 
         <shape name="smart-playlist-editor-bottom-backdrop" from="base_backdrop">
@@ -1135,13 +1139,13 @@
         </shape>
 
         <textarea name="categorylbl"  from="basetextarea">
-            <area>192,80,170,40</area>
+            <area>192,71,170,40</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <buttonlist name="categoryselector" from="base_selector">
-            <area>382,80,500,40</area>
+            <area>382,71,500,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,500,40</area>
@@ -1166,101 +1170,101 @@
         </buttonlist>
 
         <button name="categorybutton" from="base_searchbutton">
-            <position>917,85</position>
+            <position>917,76</position>
         </button>
 
         <textarea name="titlelbl"  from="basetextarea">
-            <area>192,159,170,40</area>
+            <area>192,142,170,40</area>
             <align>right,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="titleedit" from="base_textedit">
-            <area>382,159,500,40</area>
+            <area>382,142,500,40</area>
         </textedit>
  
         <textarea name="matchlbl"  from="basetextarea">
-            <area>132,257,284,38</area>
+            <area>132,231,284,46</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Match</value>
         </textarea>
 
         <buttonlist name="matchselector" from="base_selector">
-            <area>482,258,300,36</area>
+            <area>482,234,300,40</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,300,36</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,36</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,300,36</area>
+                    <area>0,0,300,40</area>
                     <textarea name="buttontext">
-                        <area>15,0,270,36</area>
+                        <area>15,0,270,40</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>304,0</position>
+                <position>304,2</position>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>304,18</position>
+                <position>304,21</position>
             </statetype>
         </buttonlist>
 
         <textarea name="match2lbl"  from="basetextarea">
-            <area>849,257,300,38</area>
+            <area>849,234,300,46</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Of The Following Conditions</value>
         </textarea>
 
         <buttonlist name="criterialist" from="base_list">
-            <area>130,304,1020,150</area>
-            <buttonarea>0,0,1020,150</buttonarea>
+            <area>123,283,1034,176</area>
+            <buttonarea>0,0,1034,176</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1020,32</area>
+                    <area>0,0,1034,32</area>
                     <imagetype name="buttonimage">
                         <area>15,3,26,26</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,954,32</area>
+                        <area>51,0,968,32</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1020,32</area>
+                    <area>0,0,1034,32</area>
                     <imagetype name="buttonimage">
                         <area>15,3,26,26</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,954,32</area>
+                        <area>51,0,968,32</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,1020,32</area>
+                    <area>0,0,1034,32</area>
                     <imagetype name="buttonimage">
                         <area>15,3,26,26</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,954,32</area>
+                        <area>51,0,968,32</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1015,-6</position>
+                <position>996,185</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1015,151</position>
+                <position>1016,185</position>
             </statetype>
         </buttonlist>
 
@@ -1305,13 +1309,9 @@
             <value>Matches:</value>
         </textarea>
 
-        <shape name="matches-backdrop">
+        <group name="matches-backdrop" from="base_button_select_bar_active_group">
             <area>382,570,100,40</area>
-            <type>roundbox</type>
-            <fill color="#333333" alpha="175" />
-            <line color="#454545" alpha="180" width="2" />
-            <cornerradius>90</cornerradius>
-        </shape>
+        </group>
 
         <textarea name="matchestext"  from="basetextarea">
             <area>382,570,100,40</area>
