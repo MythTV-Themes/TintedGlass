@@ -1055,11 +1055,11 @@
         </textarea>
 
         <shape name="smart-playlist-editor-top-backdrop" from="base_backdrop">
-            <area>115,36,1050,181</area>
+            <area>115,36,1050,157</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-backdrop-line" from="base_backdrop_line">
-            <area>116,37,1048,179</area>
+            <area>116,37,1048,155</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-top-line" from="base_highlight_line">
@@ -1067,27 +1067,27 @@
         </shape>
 
         <shape name="smart-playlist-editor-top-bottom-line" from="base_highlight_line">
-            <area>117,213,1046,2</area>
+            <area>117,189,1046,2</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-left-line" from="base_highlight_vertical_line">
-            <area>117,40,2,173</area>
+            <area>117,40,2,149</area>
         </shape>
 
         <shape name="smart-playlist-editor-top-right-line" from="base_highlight_vertical_line">
-            <area>1161,40,2,173</area>
+            <area>1161,40,2,149</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-backdrop" from="base_backdrop">
-            <area>115,227,1050,240</area>
+            <area>115,203,1050,264</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-backdrop-line" from="base_backdrop_line">
-            <area>116,228,1048,238</area>
+            <area>116,204,1048,262</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-top-line" from="base_highlight_line">
-            <area>117,229,1046,2</area>
+            <area>117,205,1046,2</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-bottom-line" from="base_highlight_line">
@@ -1095,15 +1095,15 @@
         </shape>
 
         <shape name="smart-playlist-editor-middle-left-line" from="base_highlight_vertical_line">
-            <area>117,257,2,206</area>
+            <area>117,233,2,230</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-right-line" from="base_highlight_vertical_line">
-            <area>1161,257,2,206</area>
+            <area>1161,233,2,230</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-seperator-first-line" from="base_line">
-            <area>130,277,1020,2</area>
+            <area>130,253,1020,2</area>
         </shape>
 
         <shape name="smart-playlist-editor-middle-arrows-backdrop" from="base_arrows_backdrop">
@@ -1139,13 +1139,13 @@
         </shape>
 
         <textarea name="categorylbl"  from="basetextarea">
-            <area>192,71,170,40</area>
+            <area>192,63,170,40</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <buttonlist name="categoryselector" from="base_selector">
-            <area>382,71,500,40</area>
+            <area>382,63,500,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,500,40</area>
@@ -1170,28 +1170,28 @@
         </buttonlist>
 
         <button name="categorybutton" from="base_searchbutton">
-            <position>917,76</position>
+            <position>917,68</position>
         </button>
 
         <textarea name="titlelbl"  from="basetextarea">
-            <area>192,142,170,40</area>
+            <area>192,126,170,40</area>
             <align>right,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textedit name="titleedit" from="base_textedit">
-            <area>382,142,500,40</area>
+            <area>382,126,500,40</area>
         </textedit>
  
         <textarea name="matchlbl"  from="basetextarea">
-            <area>132,231,284,46</area>
+            <area>132,207,284,46</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Match</value>
         </textarea>
 
         <buttonlist name="matchselector" from="base_selector">
-            <area>482,234,300,40</area>
+            <area>482,210,300,40</area>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,300,40</area>
@@ -1216,55 +1216,55 @@
         </buttonlist>
 
         <textarea name="match2lbl"  from="basetextarea">
-            <area>849,234,300,46</area>
+            <area>849,207,300,46</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
             <value>Of The Following Conditions</value>
         </textarea>
 
         <buttonlist name="criterialist" from="base_list">
-            <area>123,283,1034,176</area>
-            <buttonarea>0,0,1034,176</buttonarea>
+            <area>123,259,1034,202</area>
+            <buttonarea>0,0,1034,202</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1034,32</area>
+                    <area>0,0,1034,30</area>
                     <imagetype name="buttonimage">
-                        <area>15,3,26,26</area>
+                        <area>15,2,26,26</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,968,32</area>
+                        <area>51,0,968,30</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,1034,32</area>
+                    <area>0,0,1034,64</area>
                     <imagetype name="buttonimage">
-                        <area>15,3,26,26</area>
+                        <area>15,4,56,56</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,968,32</area>
+                        <area>81,0,938,64</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
-                    <area>0,0,1034,32</area>
+                    <area>0,0,1034,64</area>
                     <imagetype name="buttonimage">
-                        <area>15,3,26,26</area>
+                        <area>15,4,56,56</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>51,0,968,32</area>
+                        <area>81,0,938,64</area>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>996,185</position>
+                <position>996,209</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1016,185</position>
+                <position>1016,209</position>
             </statetype>
         </buttonlist>
 
@@ -1927,57 +1927,62 @@
         </shape>
 
         <shape name="smart-play-result-viewer-seperator-first-line" from="base_line">
-            <area>35,65,1210,2</area>
+            <area>35,87,1210,2</area>
+        </shape>
+
+        <shape name="smart-play-result-viewer-arrows-backdrop" from="base_arrows_backdrop">
+            <area>1207,684,50,12</area>
         </shape>
 
          <!-- optional - shows current position in the list eg '1 of 123' -->
         <textarea name="position" from="basetextarea">
-            <area>22,40,1238,26</area>
+            <area>22,40,1238,47</area>
             <align>allcenter</align>
-            <font>basesmallyellow</font>
+            <font>basemediumyellow</font>
         </textarea>
 
         <buttonlist name="tracklist" from="base_list">
-            <area>30,73,1220,604</area>
-            <buttonarea>0,0,1220,604</buttonarea>
+            <area>28,93,1224,586</area>
+            <buttonarea>0,0,1224,586</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,42</area>
+                    <area>0,0,100%,38</area>
                     <imagetype name="buttonimage">
-                        <area>15,5,32,32</area>
+                        <area>15,4,30,30</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="title" from="buttontext">
-                        <area>57,0,1038,42</area>
+                        <area>60,0,1034,38</area>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1105,0,100,42</area>
+                        <area>1109,0,100,38</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive">
-                    <area>0,0,100%,42</area>
+                    <area>0,0,100%,80</area>
                     <imagetype name="buttonimage">
-                        <area>15,5,32,32</area>
+                        <area>15,4,72,72</area>
                         <filename>mythmusic/mm_nothumb.png</filename>
                     </imagetype>
                     <textarea name="title" from="buttontext">
-                        <area>57,0,1038,42</area>
+                        <area>102,0,992,80</area>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                        <multiline>yes</multiline>
                     </textarea>
                     <textarea name="length" from="buttontext">
-                        <area>1105,0,100,42</area>
+                        <area>1109,0,100,80</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1210,-5</position>
+                <position>1186,593</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1210,600</position>
+                <position>1206,593</position>
             </statetype>
         </buttonlist>
 
