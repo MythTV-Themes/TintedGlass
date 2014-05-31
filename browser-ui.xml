@@ -43,27 +43,6 @@
 
         <buttonlist name="pagelist" from="base_selector">
             <area>34,46,589,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,583,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,553,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,583,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,553,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>583,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>583,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="status" from="basetextarea">

@@ -949,6 +949,17 @@
         </shape>
     </group>
 
+    <!-- Base group definition for base spinbox select bar disabled -->
+    <group name="base_spinbox_select_bar_disabled_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#333333" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+     </group>
+
     <!-- Base group definition for base selector select bar active -->
     <group name="base_selector_select_bar_active_group">
         <shape name="select_bar">
@@ -1041,6 +1052,17 @@
             </fill>
         </shape>
     </group>
+
+    <!-- Base group definition for base selector select bar disabled -->
+    <group name="base_selector_select_bar_disabled_group">
+        <shape name="select_bar">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <fill color="#333333" alpha="175" />
+            <line color="#454545" alpha="180" width="2" />
+            <cornerradius>90</cornerradius>
+        </shape>
+     </group>
 
     <!-- Base group definition for base textedit select bar active -->
     <group name="base_textedit_select_bar_active_group">
@@ -1884,7 +1906,7 @@
                     <area>0,0,100%,100%</area>
                 </group>
                 <textarea name="buttontext">
-                    <area>11%,0,89%,100%</area>
+                    <area>10,0,100%-10,100%</area>
                     <font>basesmall</font>
                     <cutdown>yes</cutdown>
                     <align>allcenter</align>
@@ -1896,6 +1918,18 @@
                 </group>
             </state>
             <state name="selectedinactive" from="active" />
+            <state name="disabled" from="active">
+                <area>0,0,100%,100%</area>
+                <group name="select_bar" from="base_spinbox_select_bar_disabled_group">
+                    <area>0,0,100%,100%</area>
+                </group>
+                <textarea name="buttontext">
+                    <area>10,0,100%-10,100%</area>
+                    <font>basesmalldarkgrey</font>
+                    <cutdown>yes</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
         </statetype>
         <statetype name="downscrollarrow">
             <position>100%+4,2</position>
@@ -1943,10 +1977,12 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
+                <area>0,0,100%,100%</area>
                 <group name="select_bar" from="base_selector_select_bar_active_group">
                     <area>0,0,100%,100%</area>
                 </group>
                 <textarea name="buttontext">
+                    <area>15,0,100%-15,100%</area>
                     <font>basesmall</font>
                     <cutdown>no</cutdown>
                     <align>allcenter</align>
@@ -1958,26 +1994,44 @@
                 </group>
             </state>
             <state name="selectedinactive" from="active" />
+            <state name="disabled">
+                <area>0,0,100%,100%</area>
+                <group name="select_bar" from="base_selector_select_bar_disabled_group">
+                    <area>0,0,100%,100%</area>
+                </group>
+                <textarea name="buttontext">
+                    <area>15,0,100%-15,100%</area>
+                    <font>basesmalldarkgrey</font>
+                    <cutdown>no</cutdown>
+                    <align>allcenter</align>
+                </textarea>
+            </state>
         </statetype>
         <statetype name="downscrollarrow">
+            <area>0,0,100%,100%</area>
             <state type="off">
+                <position>100%+4,2</position>
                 <imagetype name="dnoff">
                     <filename>images/lb-rtarrow-reg.png</filename>
                 </imagetype>
             </state>
             <state type="full">
+                <position>100%+4,2</position>
                 <imagetype name="dnon">
                     <filename>images/lb-rtarrow-sel.png</filename>
                 </imagetype>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
+            <area>0,0,100%,100%</area>
             <state type="off">
+                <position>100%+4,100%-19</position>
                 <imagetype name="upoff">
                     <filename>images/lb-ltarrow-reg.png</filename>
                 </imagetype>
             </state>
             <state type="full">
+                <position>100%+4,100%-19</position>
                 <imagetype name="upon">
                     <filename>images/lb-ltarrow-sel.png</filename>
                 </imagetype>
@@ -2645,27 +2699,6 @@
 
         <buttonlist name="dates" from="base_selector">
             <area>40,60,200,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>205,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>205,21</position>
-            </statetype>
         </buttonlist>
 
         <buttonlist name="times" from="dates">

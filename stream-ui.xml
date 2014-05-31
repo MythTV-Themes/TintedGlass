@@ -605,27 +605,6 @@
 
         <buttonlist name="stationlist" from="base_selector">
             <area>470,64,376,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,376,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,346,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,376,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,346,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>380,0</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>380,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="genrelabel" from="stationlabel">

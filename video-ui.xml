@@ -2192,27 +2192,6 @@
         
         <buttonlist name="extension_select" from="base_selector">
             <area>435,106,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="command_text" from="basetextarea">
@@ -2505,27 +2484,6 @@
         
         <buttonlist name="level_select" from="base_selector">
             <area>188,537,200,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>205,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>205,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="category_text" from="basetextarea">
@@ -2813,70 +2771,49 @@
         
         <buttonlist name="category_select" from="base_selector">
             <area>180,70,200,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,200,40</area>
-                    <textarea name="buttontext">
-                        <area>10,8,180,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>205,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>205,21</position>
-            </statetype>
         </buttonlist>
         
-        <buttonlist name="genre_select" from="category_select">
+        <buttonlist name="genre_select" from="base_selector">
             <area>180,114,200,40</area>
         </buttonlist>
         
-        <buttonlist name="country_select" from="category_select">
+        <buttonlist name="country_select" from="base_selector">
             <area>180,158,200,40</area>
         </buttonlist>
         
-        <buttonlist name="cast_select" from="category_select">
+        <buttonlist name="cast_select" from="base_selector">
             <area>180,202,200,40</area>
         </buttonlist>
         
-        <buttonlist name="year_select" from="category_select">
+        <buttonlist name="year_select" from="base_selector">
             <area>180,246,200,40</area>
         </buttonlist>
         
-        <buttonlist name="runtime_select" from="category_select">
+        <buttonlist name="runtime_select" from="base_selector">
             <area>180,290,200,40</area>
         </buttonlist>
         
-        <buttonlist name="userrating_select" from="category_select">
+        <buttonlist name="userrating_select" from="base_selector">
             <area>568,70,200,40</area>
         </buttonlist>
         
-        <buttonlist name="browse_select" from="category_select">
+        <buttonlist name="browse_select" from="base_selector">
             <area>568,114,200,40</area>
         </buttonlist>
         
-        <buttonlist name="inetref_select" from="category_select">
+        <buttonlist name="inetref_select" from="base_selector">
             <area>568,158,200,40</area>
         </buttonlist>
         
-        <buttonlist name="coverfile_select" from="category_select">
+        <buttonlist name="coverfile_select" from="base_selector">
             <area>568,202,200,40</area>
         </buttonlist>
         
-        <buttonlist name="orderby_select" from="category_select">
+        <buttonlist name="orderby_select" from="base_selector">
             <area>568,246,200,40</area>
         </buttonlist>
 
-        <buttonlist name="watched_select" from="category_select">
+        <buttonlist name="watched_select" from="base_selector">
             <area>568,290,200,40</area>
         </buttonlist>
         
@@ -3260,27 +3197,6 @@
 
         <buttonlist name="blurayregionlist" from="base_selector">
             <area>442,344,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,550,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,550,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <checkbox name="altcheck" from="base_checkbox">

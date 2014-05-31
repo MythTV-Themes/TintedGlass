@@ -683,27 +683,6 @@
 
         <buttonlist name="channel" from="base_selector">
             <area>467,179,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="datelabel" from="titlelabel">
@@ -1289,27 +1268,6 @@
 
         <buttonlist name="rules" from="base_selector">
             <area>435,62,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="titlelabel" from="ruleslabel">
@@ -1338,27 +1296,6 @@
 
         <buttonlist name="clauses" from="base_selector">
             <area>135,313,780,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,780,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,750,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,780,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,750,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>784,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>784,21</position>
-            </statetype>
         </buttonlist>
 
         <button name="add" from="base_button">
@@ -1722,27 +1659,6 @@
 
         <buttonlist name="category_list" from="base_selector">
             <area>16,279,553,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,100%,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,523,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,100%,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,523,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>558,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>558,21</position>
-            </statetype>
         </buttonlist>
 
         <buttonlist name="genre_list" from="category_list">
@@ -2559,27 +2475,6 @@
 
         <buttonlist name="rules" from="base_selector">
             <area>440,56,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="titlelabel" from="ruleslabel">
@@ -2593,27 +2488,6 @@
 
         <buttonlist name="clauses" from="base_selector">
             <area>250,168,780,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,780,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,750,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,780,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,750,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>784,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>784,21</position>
-            </statetype>
         </buttonlist>
 
         <group name="custom-record-rules-clausetext-select-bar" from="base_button_select_bar_active_group">
@@ -2803,27 +2677,6 @@
 
         <buttonlist name="rules" from="base_selector">
             <area>73,121,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="recgroup_label" from="basetextarea">
@@ -3048,27 +2901,6 @@
 
         <buttonlist name="input" from="base_selector">
             <area>73,154,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="startoffset_label" from="basetextarea">
@@ -3108,27 +2940,6 @@
 
         <buttonlist name="dupmethod" from="base_selector">
             <area>73,385,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="dupscope_label" from="basetextarea">
@@ -3140,27 +2951,6 @@
 
         <buttonlist name="dupscope" from="base_selector">
             <area>73,462,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <checkbox name="ruleactive" from="base_checkbox">
@@ -3406,27 +3196,6 @@
 
         <buttonlist name="recprofile" from="base_selector">
             <area>73,77,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="recgroup_label" from="basetextarea">
@@ -3438,27 +3207,6 @@
 
         <buttonlist name="recgroup" from="base_selector">
             <area>73,154,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="storagegroup_label" from="basetextarea">
@@ -3470,27 +3218,6 @@
 
         <buttonlist name="storagegroup" from="base_selector">
             <area>73,231,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="playgroup_label" from="basetextarea">
@@ -3502,27 +3229,6 @@
 
         <buttonlist name="playgroup" from="base_selector">
             <area>73,308,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>584,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>584,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="maxepisodes_label" from="basetextarea">
@@ -3547,27 +3253,6 @@
 
         <buttonlist name="maxnewest" from="base_selector">
             <area>73,462,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>580,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>580,21</position>
-            </statetype>
         </buttonlist>
 
         <checkbox name="autoexpire" from="base_checkbox">
@@ -3733,27 +3418,6 @@
 
         <buttonlist name="transcodeprofile" from="base_selector">
             <area>73,272,580,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,580,40</area>
-                    <textarea name="buttontext">
-                        <area>15,8,550,24</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>580,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>580,21</position>
-            </statetype>
         </buttonlist>
 
         <checkbox name="userjob1" from="base_checkbox">

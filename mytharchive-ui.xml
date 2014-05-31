@@ -66,27 +66,6 @@
 
         <buttonlist name="destination_selector" from="base_selector">
             <area>578,83,300,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,300,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,300,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>304,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>304,21</position>
-            </statetype>
         </buttonlist>
 
         <textarea name="destination_text" from="basetextarea">

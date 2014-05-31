@@ -71,21 +71,6 @@ MythArchive GUI theme
 
         <buttonlist name="profile_list" from="base_selector">
             <area>149,142,300,32</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,300,32</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,32</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,300,32</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,32</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
             <statetype name="downscrollarrow">
                 <position>304,-2</position>
             </statetype>
@@ -196,27 +181,6 @@ MythArchive GUI theme
 
         <buttonlist name="theme_selector" from="base_selector">
             <area>528,67,300,40</area>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <area>0,0,300,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <area>0,0,300,40</area>
-                    <textarea name="buttontext">
-                        <area>15,0,270,40</area>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>304,2</position>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>304,21</position>
-            </statetype>
         </buttonlist>
 
         <imagetype name="theme_image" >
