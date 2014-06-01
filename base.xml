@@ -2008,30 +2008,26 @@
             </state>
         </statetype>
         <statetype name="downscrollarrow">
-            <area>0,0,100%,100%</area>
+            <position>100%+4,2</position>
             <state type="off">
-                <position>100%+4,2</position>
                 <imagetype name="dnoff">
                     <filename>images/lb-rtarrow-reg.png</filename>
                 </imagetype>
             </state>
             <state type="full">
-                <position>100%+4,2</position>
                 <imagetype name="dnon">
                     <filename>images/lb-rtarrow-sel.png</filename>
                 </imagetype>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <area>0,0,100%,100%</area>
+            <position>100%+4,21</position>
             <state type="off">
-                <position>100%+4,100%-19</position>
                 <imagetype name="upoff">
                     <filename>images/lb-ltarrow-reg.png</filename>
                 </imagetype>
             </state>
             <state type="full">
-                <position>100%+4,100%-19</position>
                 <imagetype name="upon">
                     <filename>images/lb-ltarrow-sel.png</filename>
                 </imagetype>
