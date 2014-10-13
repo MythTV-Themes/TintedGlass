@@ -36,7 +36,7 @@
         <major>4</major>
 
         <!-- Minor version changes are backwards compatible -->
-        <minor>54</minor>
+        <minor>55</minor>
     </version>
 
     <!-- Theme Details (Required) -->
