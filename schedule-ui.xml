@@ -140,10 +140,10 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>240,40,1015,41</area>
+            <area>238,40,1019,41</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1015,41</buttonarea>
+            <buttonarea>0,0,1019,41</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>-1,0,203,41</area>
@@ -186,10 +186,10 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>24,83,214,366</area>
+            <area>24,82,214,370</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,214,366</buttonarea>
+            <buttonarea>0,0,214,370</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,214,61</area>
@@ -455,10 +455,10 @@
         </guidegrid>
 
         <buttonlist name="timelist">
-            <area>240,40,1015,42</area>
+            <area>238,40,1019,42</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1015,42</buttonarea>
+            <buttonarea>0,0,1019,42</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>-1,0,203,42</area>
@@ -501,10 +501,10 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>30,84,214,305</area>
+            <area>30,84,214,309</area>
             <layout>vertical</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,214,305</buttonarea>
+            <buttonarea>0,0,214,309</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,214,61</area>

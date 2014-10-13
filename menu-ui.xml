@@ -126,12 +126,12 @@
         </statetype>
 
         <buttonlist name="menu">
-            <area>20,528,1240,64</area>
+            <area>18,528,1244,64</area>
             <layout>horizontal</layout>
             <spacing>20</spacing>
             <scrollstyle>center</scrollstyle>
             <wrapstyle>items</wrapstyle>	
-            <buttonarea>0,0,1240,64</buttonarea>
+            <buttonarea>0,0,1244,64</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,232,64</area>

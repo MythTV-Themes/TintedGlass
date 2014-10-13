@@ -46,10 +46,10 @@
         </textarea>
 
         <buttonlist name="images">
-            <area>20,86,1240,600</area>
+            <area>18,86,1244,600</area>
             <layout>grid</layout>
             <spacing>2</spacing>
-            <buttonarea>0,0,1240,600</buttonarea>
+            <buttonarea>0,0,1244,600</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,205,188</area>

@@ -717,11 +717,11 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>0,41,1280,299</area>
+            <area>-2,41,1280,299</area>
             <layout>horizontal</layout>
             <spacing>0</spacing>
             <scrollstyle>center</scrollstyle>
-            <buttonarea>0,0,1282,299</buttonarea>
+            <buttonarea>0,0,1284,299</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,183,275</area>
@@ -832,7 +832,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1216,305</position>
+                <position>1218,305</position>
                 <state type="off">
                     <imagetype name="upoff">
                         <filename>images/lists_left_arrow.png</filename>
@@ -847,7 +847,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1237,305</position>
+                <position>1239,305</position>
                 <state type="off">
                     <imagetype name="dnoff">
                         <filename>images/lists_right_arrow.png</filename>
@@ -1207,10 +1207,10 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>0,88,1280,250</area>
+            <area>0,88,1280,254</area>
             <layout>grid</layout>
             <spacing>0</spacing>
-            <buttonarea>0,0,1280,250</buttonarea>
+            <buttonarea>0,0,1280,254</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,80,125</area>
