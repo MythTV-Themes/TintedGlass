@@ -572,15 +572,15 @@
         </shape>
 
         <shape name="preview-backdrop-line" from="title-backdrop-line">
-            <area>65,487,168,196</area>
+            <area>65,487,131,196</area>
         </shape>
 
         <shape name="preview-highlight-top-line" from="title-highlight-top-line">
-            <area>66,488,166,2</area>
+            <area>66,488,129,2</area>
         </shape>
 
         <shape name="preview-highlight-bottom-line" from="title-highlight-bottom-line">
-            <area>66,680,166,2</area>
+            <area>66,680,129,2</area>
         </shape>
 
         <shape name="preview-highlight-left-line" from="title-highlight-left-line">
@@ -588,19 +588,19 @@
         </shape>
 
         <shape name="preview-highlight-right-line" from="title-highlight-left-line">
-            <area>230,490,2,190</area>
+            <area>193,490,2,190</area>
         </shape>
 
         <shape name="description-backdrop-line" from="title-backdrop-line">
-            <area>237,487,978,196</area>
+            <area>200,487,1015,196</area>
         </shape>
 
         <shape name="description-highlight-top-line" from="title-highlight-top-line">
-            <area>238,488,976,2</area>
+            <area>201,488,1013,2</area>
         </shape>
 
         <shape name="description-seperator-first-line">
-            <area>256,518,940,2</area>
+            <area>219,518,977,2</area>
             <type>box</type>
             <fill style="gradient">
                 <gradient direction="horizontal" alpha="45">
@@ -612,15 +612,15 @@
         </shape>
 
         <shape name="description-seperator-second-line" from="description-seperator-first-line">
-            <area>256,651,940,2</area>
+            <area>219,651,977,2</area>
         </shape>
 
         <shape name="description-highlight-bottom-line" from="title-highlight-top-line">
-            <area>238,680,976,2</area>
+            <area>201,680,1013,2</area>
         </shape>
 
         <shape name="description-highlight-left-line" from="title-highlight-left-line">
-            <area>238,490,2,190</area>
+            <area>201,490,2,190</area>
         </shape> 
 
         <shape name="description-highlight-right-line" from="title-highlight-left-line">
@@ -975,43 +975,48 @@
             <template>%LONGREPEAT%     Size: %FILESIZE_STR%</template>
         </textarea>
 
-        <textarea name="channum">
-            <font>large</font>
-            <area>68,490,162,46</area>
-            <align>allcenter</align>
-        </textarea>
+        <imagetype name="coverart">
+            <area>69,491,123,188</area>
+            <mask>images/osd/masks/osd_program_coverart_mask.png</mask>
+            <alpha>255</alpha>
+        </imagetype>
 
-        <textarea name="callsign">
-            <font>large</font>
-            <area>68,634,162,46</area>
-            <align>allcenter</align>
-        </textarea>
-
-        <imagetype name="iconpath">
-            <area>84,536,130,98</area>
+        <imagetype name="iconpath" depends="!coverart">
+            <area>69,539,123,92</area>
             <preserveaspect>true</preserveaspect>
             <mask>images/osd/masks/osd_program_icon_mask.png</mask>
             <alpha>225</alpha>
         </imagetype>
 
-<!-- Commit 6216029d2 makes this show up in both recordings and video. --> 
-<!-- Since I only want it in video and there is no way to control it. I have no choice but to disable it. -->
-<!--
-        <imagetype name="coverart">
-            <area>70,492,158,186</area>
+        <textarea name="channum" depends="iconpath&amp;!coverart">
+            <font>large</font>
+            <area>68,491,125,46</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <textarea name="callsign" depends="iconpath&amp;!coverart">
+            <font>large</font>
+            <area>68,632,125,46</area>
+            <align>allcenter</align>
+        </textarea>
+
+        <imagetype name="no_coverart" depends="!coverart&amp;!iconpath">
+            <area>69,491,123,188</area>
+            <filename>images/no_coverart.png</filename>
+            <mask>images/osd/masks/osd_program_coverart_mask.png</mask>
             <alpha>255</alpha>
         </imagetype>
--->
+
 	<textarea name="category">
             <font>supersmallblue</font>
-            <area>257,490,937,28</area>
+            <area>220,490,974,28</area>
             <align>allcenter</align>
             <template>Category: %CATEGORY%               PlayBackGroup: %PLAYGROUP%               RecGroup: %RECORDINGGROUP%               StorageGroup: %STORAGEGROUP%</template>
         </textarea>
 
         <textarea name="description">
             <font>small</font>
-            <area>257,523,937,126</area>
+            <area>220,523,974,126</area>
             <align>left,top</align>
             <multiline>yes</multiline>
             <template>%YEARSTARS| %%DESCRIPTION%</template>
@@ -1019,7 +1024,7 @@
 
         <textarea name="programid">
             <font>supersmallblue</font>
-            <area>257,653,937,27</area>
+            <area>220,653,974,27</area>
             <align>allcenter</align>
             <template>Season/Episode: %s00e00%               ProgramID: %PROGRAMID%               SeriesID: %SERIESID%</template>
         </textarea>
