@@ -426,7 +426,7 @@
             <alpha>255</alpha>
         </imagetype>
 
-        <textarea name="titlesubtitle">
+        <textarea name="title">
             <font>title</font>
             <area>229,467,820,30</area>
             <align>vcenter</align>
@@ -786,7 +786,7 @@
             <area>229,562,986,106</area>
             <align>left,top</align>
             <multiline>yes</multiline>
-            <template>%YEARSTARS| %%DESCRIPTION%</template>
+            <template>%"|SUBTITLE|"  %%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <textarea name="programid">
