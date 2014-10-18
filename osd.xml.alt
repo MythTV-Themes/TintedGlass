@@ -404,19 +404,19 @@
         </imagetype>
 
         <imagetype name="iconpath" depends="!coverart">
-            <area>64,516,145,109</area>
+            <area>64,521,145,109</area>
             <alpha>255</alpha>
         </imagetype>
 
         <textarea name="channum" depends="iconpath&amp;!coverart">
             <font>large</font>
-            <area>64,467,145,59</area>
-            <align>hcenter,top</align>
+            <area>64,467,145,54</area>
+            <align>allcenter</align>
         </textarea>
 
         <textarea name="callsign" depends="iconpath&amp;!coverart">
             <font>large</font>
-            <area>64,625,145,59</area>
+            <area>64,630,145,54</area>
             <align>hcenter,bottom</align>
         </textarea>
 
