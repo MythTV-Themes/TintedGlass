@@ -411,7 +411,7 @@
         <textarea name="channum" depends="iconpath&amp;!coverart">
             <font>large</font>
             <area>64,467,145,54</area>
-            <align>allcenter</align>
+            <align>hcenter,top</align>
         </textarea>
 
         <textarea name="callsign" depends="iconpath&amp;!coverart">
