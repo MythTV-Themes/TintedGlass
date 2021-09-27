@@ -2879,78 +2879,89 @@
         </shape>
 
         <textarea name="priority_label" from="basetextarea">
-            <area>73,59,580,18</area>
+            <area>73,54,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>Priority:</value>
         </textarea>
 
         <spinbox name="priority" from="base_wide_spinbox">
-            <position>73,77</position>
+            <position>73,72</position>
             <template type="negative">Reduce priority by %n</template>
             <template type="zero">Normal recording priority</template>
             <template type="positive">Raise priority by %n</template>
         </spinbox>
 
         <textarea name="input_label" from="basetextarea">
-            <area>73,136,580,18</area>
+            <area>73,121,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>Input:</value>
         </textarea>
 
         <buttonlist name="input" from="base_selector">
-            <area>73,154,580,40</area>
+            <area>73,139,580,40</area>
         </buttonlist>
 
         <textarea name="startoffset_label" from="basetextarea">
-            <area>73,213,580,18</area>
+            <area>73,188,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>Start Offset:</value>
         </textarea>
 
         <spinbox name="startoffset" from="base_wide_spinbox">
-            <position>73,231</position>
+            <position>73,206</position>
             <template type="negative">Start recording %n minute(s) late</template>
             <template type="zero">Start recording on time</template>
             <template type="positive">Start recording %n minute(s) early</template>
         </spinbox>
 
         <textarea name="endoffset_label" from="basetextarea">
-            <area>73,290,580,18</area>
+            <area>73,255,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>End Offset:</value>
         </textarea>
 
         <spinbox name="endoffset" from="base_wide_spinbox">
-            <position>73,308</position>
+            <position>73,273</position>
             <template type="negative">End recording %n minute(s) early</template>
             <template type="zero">End recording on time</template>
             <template type="positive">End recording %n minute(s) late</template>
         </spinbox>
 
         <textarea name="dupmethod_label" from="basetextarea">
-            <area>73,367,580,18</area>
+            <area>73,322,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>Duplicate Method:</value>
         </textarea>
 
         <buttonlist name="dupmethod" from="base_selector">
-            <area>73,385,580,40</area>
+            <area>73,340,580,40</area>
         </buttonlist>
 
         <textarea name="dupscope_label" from="basetextarea">
-            <area>73,444,580,18</area>
+            <area>73,389,580,18</area>
             <font>baseextrasmallyellow</font>
             <align>allcenter</align>
             <value>Duplicate Scope:</value>
         </textarea>
 
         <buttonlist name="dupscope" from="base_selector">
-            <area>73,462,580,40</area>
+            <area>73,407,580,40</area>
+        </buttonlist>
+
+        <textarea name="autoextend_label" from="basetextarea">
+            <area>73,456,580,18</area>
+            <font>baseextrasmallyellow</font>
+            <align>allcenter</align>
+            <value>Auto extend:</value>
+        </textarea>
+
+        <buttonlist name="autoextend" from="base_selector">
+            <area>73,474,580,40</area>
         </buttonlist>
 
         <checkbox name="ruleactive" from="base_checkbox">
